@@ -1,30 +1,24 @@
 {
-  "title": "待核对的语言资源线索",
+  "title": "已核查但暂未进入主目录的资源线索",
   "updated_on": "2026-10-17",
-  "candidate_count": 22,
-  "description": "保留有研究价值但尚未满足主目录数据发布依据的线索；不是已验证可下载清单。",
+  "candidate_count": 12,
+  "description": "原22条已逐条复核；已确认公开数据的10条转入主目录。本清单保留其余12条，包括公开数据仍待确认、仅确认材料、受限访问或旧链接更换。",
   "candidates": [
-    {
-      "id": "C001",
-      "name": "挪威语依存类型与岛效应",
-      "category": "syntax",
-      "source_url": "https://osf.io/gwy9s/",
-      "osf_id": "gwy9s",
-      "status": "preregistration_only",
-      "reason": "所指记录明确写数据收集尚未开始；需从已发表论文另找最终数据版本。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
     {
       "id": "C002",
       "name": "墨西哥西班牙语岛效应",
       "category": "syntax",
       "source_url": "https://osf.io/ma27h/",
       "osf_id": "ma27h",
-      "status": "release_unconfirmed",
-      "reason": "检索到实验计划与研究简介，尚未取得最终数据文件发布证据。",
+      "status": "materials_only",
+      "reason": "正式论文和cs5z3确认实验刺激、填充项、背景问卷及统计输出；尚未确认逐被试判断数据公开文件。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s11049-024-09633-5",
+        "https://osf.io/cs5z3/"
+      ],
+      "next_verification_step": "检查cs5z3是否存在可复用的原始/清洗后判断表；统计输出PDF不等于逐试次数据。"
     },
     {
       "id": "C003",
@@ -32,10 +26,15 @@
       "category": "syntax",
       "source_url": "https://osf.io/hcdqe/",
       "osf_id": "hcdqe",
-      "status": "preregistration_only",
-      "reason": "页面描述拟招募人数与未来实验；不据此认定已开放数据。",
+      "status": "release_unconfirmed",
+      "reason": "已在爱丁堡博士论文第五章找到与hcdqe对应的完成实验；不再描述成尚未实施，但仍未定位独立公开数据包。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://era.ed.ac.uk/bitstreams/efcc725d-232c-41f7-ba0b-a18541735b81/download",
+        "https://osf.io/hcdqe/"
+      ],
+      "next_verification_step": "从项目最终组件或论文补充入口确认原始数据、代码和公开访问范围。"
     },
     {
       "id": "C004",
@@ -44,20 +43,14 @@
       "source_url": "https://osf.io/qehr4/",
       "osf_id": "qehr4",
       "status": "release_unconfirmed",
-      "reason": "有研究与实验说明，尚未核实最终数据包。",
+      "reason": "已定位Hou 2023正式论文；公开页面仅有摘要和参考文献，OSF Wiki访问失败，未获得数据发布声明或文件证据。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C005",
-      "name": "中文体动词补语强制转换",
-      "category": "syntax",
-      "source_url": "https://osf.io/wd2g7/",
-      "osf_id": "wd2g7",
-      "status": "release_unconfirmed",
-      "reason": "公开项目存在，但本次页面未显示数据文件清单或明确数据声明。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://doi.org/10.1017/S0142716423000103",
+        "https://osf.io/qehr4/"
+      ],
+      "next_verification_step": "核对作者最终数据说明与公开文件；论文已发表不作为数据开放证明。"
     },
     {
       "id": "C006",
@@ -66,9 +59,14 @@
       "source_url": "https://osf.io/5aynd/",
       "osf_id": "5aynd",
       "status": "release_unconfirmed",
-      "reason": "已定位项目，仍需文件或出版方数据声明确认。",
+      "reason": "目前确认CUNY 2020海报和5aynd项目；未确认可复用的阅读时数据表或正式数据声明。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://osf.io/5aynd/",
+        "https://osf.io/wq2g7/"
+      ],
+      "next_verification_step": "找到原始/清洗后SPR数据和分析脚本，避免把其他相近句法适应研究代入。"
     },
     {
       "id": "C007",
@@ -76,32 +74,15 @@
       "category": "syntax",
       "source_url": "https://osf.io/qe865/",
       "osf_id": "qe865",
-      "status": "release_unconfirmed",
-      "reason": "项目线索待补全原始文件入口与许可。",
+      "status": "obsolete_link",
+      "reason": "Oxford机构存档论文说明曾公开额外评分、反应时和分析资料，但旧官网现返回与研究无关内容；qe865的最终数据文件尚未重新定位。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C008",
-      "name": "西班牙语关系从句岛效应",
-      "category": "syntax",
-      "source_url": "https://osf.io/t9vpq/",
-      "osf_id": "t9vpq",
-      "status": "release_unconfirmed",
-      "reason": "论文与公开项目已定位；尚未核实可复用的数据范围。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C009",
-      "name": "事件结构与题元角色的结构启动",
-      "category": "syntax",
-      "source_url": "https://osf.io/zx6wv/",
-      "osf_id": "zx6wv",
-      "status": "release_unconfirmed",
-      "reason": "已定位研究项目；需要明确原始行为数据的发布范围。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://ora.ox.ac.uk/objects/uuid:b276ec98-5f65-468b-b481-f3d9356d86a2",
+        "https://osf.io/qe865/"
+      ],
+      "next_verification_step": "寻找作者新的正式托管或OSF数据文件；不把其后来SAD数据集当作2015博士论文数据。"
     },
     {
       "id": "C010",
@@ -109,10 +90,16 @@
       "category": "syntax",
       "source_url": "https://osf.io/2s8hm/",
       "osf_id": "2s8hm",
-      "status": "release_unconfirmed",
-      "reason": "Wiki描述已完成的1,127人判断研究；本次仍未确认公开反应数据文件。",
+      "status": "materials_only",
+      "reason": "作者NELS论文明确链接5kr8s的刺激和问卷；2s8hm Wiki描述完成研究，仍未确认公开的1,127人反应数据。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://www.byronahn.com/pub/Conrod-Schultz-Ahn-NELS52.pdf",
+        "https://osf.io/5kr8s/",
+        "https://osf.io/2s8hm/wiki/home"
+      ],
+      "next_verification_step": "查找匿名评分表及变量字典；不将其他作者的同名Reddit研究当作此调查数据。"
     },
     {
       "id": "C011",
@@ -120,10 +107,15 @@
       "category": "child-language",
       "source_url": "https://osf.io/j5epb/",
       "osf_id": "j5epb",
-      "status": "preregistration_only",
-      "reason": "当前定位内容主要为注册假设；尚无数据发布证据。",
+      "status": "release_unconfirmed",
+      "reason": "j5epb仍主要为预注册。相关2026儿童ERP论文明确数据因隐私/伦理不公开、需向作者申请；未将相近论文自动视作该注册的完整公开数据。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://osf.io/j5epb/overview",
+        "https://www.mdpi.com/2076-328X/16/2/294"
+      ],
+      "next_verification_step": "确认原注册对应的数据版本与访问条件；附录刺激或相关研究不能替代该项目原始EEG数据。"
     },
     {
       "id": "C012",
@@ -131,10 +123,16 @@
       "category": "child-language",
       "source_url": "https://osf.io/9z5qn/",
       "osf_id": "9z5qn",
-      "status": "preregistration_only",
-      "reason": "当前定位为计划和注册；最终数据版本待找。",
+      "status": "access_restricted",
+      "reason": "注册明确ECOLANG视频及照护者转写须申请用户许可；儿童新增转写/标注当时尚未开放，不能标为匿名直接下载。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://osf.io/9z5qn/overview",
+        "https://www.nature.com/articles/s41597-025-04405-1",
+        "https://doi.org/10.5522/04/28087613"
+      ],
+      "next_verification_step": "按官方流程申请ECOLANG访问，并另确认新增儿童转写是否已发布。"
     },
     {
       "id": "C013",
@@ -143,31 +141,13 @@
       "source_url": "https://osf.io/kuqfe/",
       "osf_id": "kuqfe",
       "status": "preregistration_only",
-      "reason": "当前内容主要为预注册与假设，不能计作已开放实验数据。",
+      "reason": "该法英双语研究的当前公开描述仍使用将来时；未定位同一项目的最终数据。相关跨语言习语论文不是自动等同的数据版本。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C014",
-      "name": "Taboo互动：熟人与陌生人",
-      "category": "social-interaction",
-      "source_url": "https://osf.io/hcya6/",
-      "osf_id": "hcya6",
-      "status": "release_unconfirmed",
-      "reason": "研究计划和分析描述已找到，需另确认原始对话与行为数据开放情况。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C015",
-      "name": "烹饪场景中的人类与AI礼貌",
-      "category": "social-interaction",
-      "source_url": "https://osf.io/mp3dt/",
-      "osf_id": "mp3dt",
-      "status": "preregistration_only",
-      "reason": "主要找到预注册说明。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://osf.io/kuqfe/"
+      ],
+      "next_verification_step": "确认完成研究与最终数据仓库，不能以相近主题实验替代。"
     },
     {
       "id": "C016",
@@ -175,43 +155,16 @@
       "category": "social-interaction",
       "source_url": "https://osf.io/sa8ep/",
       "osf_id": "sa8ep",
-      "status": "insufficient_description",
-      "reason": "公开页面信息不足，无法核实可复用数据。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C017",
-      "name": "大语言模型方式含意",
-      "category": "social-interaction",
-      "source_url": "https://osf.io/jp35t/",
-      "osf_id": "jp35t",
       "status": "release_unconfirmed",
-      "reason": "项目说明以研究结果为主；需区分模型输出、刺激及人类行为数据。",
+      "reason": "原sa8ep是标量含意自定步速阅读；找到同主题2026论文公开v98dt，但其注册号6284d和判断任务不同，未把它当作原项目已解决。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C018",
-      "name": "波兰语语义相关度",
-      "category": "lexical-cognition",
-      "source_url": "https://osf.io/2x8ka/",
-      "osf_id": "2x8ka",
-      "status": "platform_unavailable",
-      "reason": "本次检索所见主要为维护页，未形成足够数据范围证据。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C019",
-      "name": "无意识语义加工界限",
-      "category": "lexical-cognition",
-      "source_url": "https://osf.io/wc7by/",
-      "osf_id": "wc7by",
-      "status": "release_unconfirmed",
-      "reason": "研究简介较充分，数据文件发布范围仍待核对。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://osf.io/sa8ep/",
+        "https://direct.mit.edu/opmi/article/doi/10.1162/OPMI.a.343/135919/Does-It-Matter-What-Is-Said-and-Who-Said-It-The",
+        "https://osf.io/v98dt/"
+      ],
+      "next_verification_step": "核实sa8ep的最终数据或建立明确同源关系；相关公开数据可另行查阅。"
     },
     {
       "id": "C020",
@@ -220,20 +173,14 @@
       "source_url": "https://osf.io/vmdwt/",
       "osf_id": "vmdwt",
       "status": "release_unconfirmed",
-      "reason": "页面显示0字节与研究描述；不能据公开项目名称推断数据可取。",
+      "reason": "确认vmdwt公开项目和fcdtj预印本，但尚未看到原始/清洗后眼动数据文件；项目曾显示0字节不能据此判永久失效。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
-    },
-    {
-      "id": "C021",
-      "name": "元音时长与辅音清浊研究中心",
-      "category": "speech-phonetics",
-      "source_url": "https://osf.io/w92me/",
-      "osf_id": "w92me",
-      "status": "collection_needs_expansion",
-      "reason": "研究中心含多语种和多实验线索；本次未将其全部组件当作独立数据集。",
-      "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://osf.io/vmdwt/",
+        "https://doi.org/10.31234/osf.io/fcdtj"
+      ],
+      "next_verification_step": "寻找作者最终数据发布或对应文件清单；不能把其他复合词MEG实验当作此研究。"
     },
     {
       "id": "C022",
@@ -241,10 +188,15 @@
       "category": "morphology",
       "source_url": "https://osf.io/4stgu/",
       "osf_id": "4stgu",
-      "status": "release_unconfirmed",
-      "reason": "需明确注册计划与实际分析数据的区别。",
+      "status": "materials_only",
+      "reason": "正式论文将4stgu用于森林图和补充统计表；其Data Availability声明数据共享不适用。未确认可重分析的研究编码/效应量表。",
       "checked_on": "2026-10-17",
-      "counts_as_main_resource": false
+      "counts_as_main_resource": false,
+      "evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9856828/",
+        "https://osf.io/4stgu/"
+      ],
+      "next_verification_step": "检查是否另有机器可读研究编码及效应量数据；不把其他作者2025年Figshare元分析数据当作此项目。"
     }
   ]
 }

@@ -20,7 +20,7 @@
       "type": "string"
     },
     "schema_version": {
-      "const": "1.1.0"
+      "const": "1.2.0"
     },
     "catalog_version": {
       "type": "string",
@@ -227,7 +227,10 @@
               "format": "date"
             },
             "scope": {
-              "const": "resource_description_and_access_documentation"
+              "enum": [
+                "resource_description_and_access_documentation",
+                "resource_documentation_and_selected_file_checks"
+              ]
             },
             "download_tested": {
               "type": "boolean"
@@ -258,6 +261,41 @@
             "note": {
               "type": "string",
               "minLength": 1
+            },
+            "file_checks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "url",
+                  "read_scope",
+                  "result",
+                  "blob_sha"
+                ],
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https?://"
+                  },
+                  "read_scope": {
+                    "enum": [
+                      "first_8_lines",
+                      "first_4_lines",
+                      "complete_small_csv"
+                    ]
+                  },
+                  "result": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "blob_sha": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{40}$"
+                  }
+                }
+              }
             }
           }
         },

@@ -8,6 +8,14 @@
       "result": "返回HTML维护通知而非节点JSON；未能进行实时节点及文件清单批量核验。",
       "inference_limit": "不能据此次维护认定各项目永久失效或私有，也不能声称对OSF全库进行了穷尽抓取。",
       "status_url": "https://status.cos.io/"
+    },
+    {
+      "platform": "osf",
+      "url": "https://api.osf.io/v2/nodes/w92me/files/osfstorage/?page%5Bsize%5D=100",
+      "observed_on": "2026-10-17",
+      "result": "候选逐项复核时以安全TLS连接请求公开文件列表，返回HTTP 503及HTML维护页。",
+      "inference_limit": "仅确认本次公开接口不可用；不据此断言项目永久失效或私有。论文发布声明与实际文件读取分开记录。",
+      "status_url": "https://status.cos.io/"
     }
   ]
 }

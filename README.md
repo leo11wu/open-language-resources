@@ -2,9 +2,9 @@
 
 用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。
 
-主目录 **169个资源入口、14类**，其中 **63条关联OSF**；[句法专类](catalog/syntax.md)有 **32条**。更新：**2026-10-17**。
+主目录 **179个资源入口、14类**，其中 **73条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-10-17**。
 
-另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的22条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
+另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的12条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
 ## 快速入口
 
@@ -15,21 +15,23 @@
 
 OSF接口本次返回维护通知，因此本目录核对的是项目说明、作者仓库、Wiki索引或出版方数据声明；没有完成全库抓取或所有原始文件的下载验收。逐条核对范围保留在元数据中。
 
+[原22条候选的逐项复核](catalog/candidate-audit.md)：10条补入主目录，12条保留具体限制或待确认事项。
+
 ## 按主题浏览
 
 | 分类 | 条目数 | 入口 |
 | --- | ---: | --- |
 | 儿童语言与发展 | 16 | [查看](catalog/child-language.md) |
 | 自然口语与社会变异 | 7 | [查看](catalog/spoken-variation.md) |
-| 社会互动与语用 | 14 | [查看](catalog/social-interaction.md) |
-| 词汇认知与语义常模 | 18 | [查看](catalog/lexical-cognition.md) |
+| 社会互动与语用 | 17 | [查看](catalog/social-interaction.md) |
+| 词汇认知与语义常模 | 20 | [查看](catalog/lexical-cognition.md) |
 | 中文、二语与双语 | 19 | [查看](catalog/chinese-l2-bilingual.md) |
 | 跨语言结构与社会文化 | 10 | [查看](catalog/crossling-cultural.md) |
 | 手语、成语与抽象意义 | 10 | [查看](catalog/sign-figurative.md) |
 | 历时与平行语料 | 4 | [查看](catalog/diachronic-parallel-syntax.md) |
-| 句法、可接受度与句子加工 | 32 | [查看](catalog/syntax.md) |
+| 句法、可接受度与句子加工 | 36 | [查看](catalog/syntax.md) |
 | 形态、构词与形态加工 | 6 | [查看](catalog/morphology.md) |
-| 语音、音系与声学 | 9 | [查看](catalog/speech-phonetics.md) |
+| 语音、音系与声学 | 10 | [查看](catalog/speech-phonetics.md) |
 | 阅读、眼动与神经语言 | 13 | [查看](catalog/reading-neuro.md) |
 | 继续发现资源的平台与索引 | 8 | [查看](catalog/resource-portals.md) |
 | 临床语言、沟通与语言障碍 | 3 | [查看](catalog/clinical-language.md) |
@@ -215,6 +217,16 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R167 | [ASDBank（自闭症谱系沟通语料）](catalog/clinical-language.md#r167) | 临床语言、沟通与语言障碍 | 有数据发布说明 |
 | R168 | [AphasiaBank（失语症沟通资料）](catalog/clinical-language.md#r168) | 临床语言、沟通与语言障碍 | 有数据发布说明 |
 | R169 | [DementiaBank（认知障碍沟通资料）](catalog/clinical-language.md#r169) | 临床语言、沟通与语言障碍 | 有数据发布说明 |
+| R170 | [挪威语wh抽取与关系化岛效应数据](catalog/syntax.md#r170) | 句法、可接受度与句子加工 | 有数据发布说明 |
+| R171 | [中文体动词补语强制转换：自定步速阅读](catalog/syntax.md#r171) | 句法、可接受度与句子加工 | 有数据发布说明 |
+| R172 | [西班牙语关系从句岛效应：实验数据与代码](catalog/syntax.md#r172) | 句法、可接受度与句子加工 | 有数据发布说明 |
+| R173 | [事件结构、习语与轻动词的结构启动](catalog/syntax.md#r173) | 句法、可接受度与句子加工 | 有数据发布说明 |
+| R174 | [SCARFS：熟人与陌生人的指称互动](catalog/social-interaction.md#r174) | 社会互动与语用 | 有数据发布说明 |
+| R175 | [烹饪对话礼貌：公开标注、模拟样例与分析](catalog/social-interaction.md#r175) | 社会互动与语用 | 有数据发布说明 |
+| R176 | [LLM方式含意：目标刺激集与分析脚本](catalog/social-interaction.md#r176) | 社会互动与语用 | 有数据发布说明 |
+| R177 | [波兰语语义相关度、启动与语义向量](catalog/lexical-cognition.md#r177) | 词汇认知与语义常模 | 有数据发布说明 |
+| R178 | [无意识语义加工：空间—时间隐喻启动](catalog/lexical-cognition.md#r178) | 词汇认知与语义常模 | 有数据发布说明 |
+| R179 | [Coretta元音时长与辅音清浊研究集合](catalog/speech-phonetics.md#r179) | 语音、音系与声学 | 有数据发布说明 |
 
 ## 本地筛选
 

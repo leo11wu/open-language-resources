@@ -21,6 +21,8 @@ def generated_files(c):
     osf=[r for r in resources if 'osf' in r['platforms']]
     source=json.loads((ROOT/'data/source-indexes/norare.json').read_text())
     candidates=json.loads((ROOT/'data/discovery-candidates.json').read_text())
+    audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
+    audit=json.loads(audit_paths[-1].read_text()) if audit_paths else None
     lines=['# 公开语言资源目录\n\n',
         '用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。\n\n',
         f"主目录 **{len(resources)}个资源入口、{len(labels)}类**，其中 **{len(osf)}条关联OSF**；[句法专类](catalog/syntax.md)有 **{counts['syntax']}条**。更新：**{c['updated_on']}**。\n\n",
@@ -51,6 +53,9 @@ def generated_files(c):
         '```sh\npython3 scripts/build.py\npython3 scripts/validate.py\npython3 scripts/build.py --check\n```\n\n',
         '方法见 [CONTRIBUTING.md](CONTRIBUTING.md)。原有R001–R060编号保留；UD移入句法专类。\n']
     files={'README.md':''.join(lines),'data/resources.jsonl':''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in resources)}
+    if audit:
+        insertion=f"[原{audit['reviewed_count']}条候选的逐项复核](catalog/candidate-audit.md)：{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留具体限制或待确认事项。\n\n"
+        files['README.md']=files['README.md'].replace('## 按主题浏览\n\n',insertion+'## 按主题浏览\n\n',1)
     lookup={r['id']:r for r in resources}
     for x in c['categories']:
         subset=[r for r in resources if r['category']==x['id']]
@@ -89,10 +94,33 @@ def generated_files(c):
     out+=['\n## 来源与署名\n\n',source['provenance']['citation']+'\n\n',
         '元数据经重新组织：当前[norare-data源库许可](https://github.com/concepticon/norare-data/blob/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/LICENSE)为[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)，较早[norare-cldf快照许可](https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/LICENSE)为[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。两者分别保留；合并索引不能统一视为允许商业使用。本目录的组织与标签不代表NoRaRe作者背书，各原始资源许可另行核对。\n']
     files['catalog/norare-source-index.md']=''.join(out)
-    reason={'preregistration_only':'仅确认注册计划','release_unconfirmed':'数据发布范围待确认','insufficient_description':'公开说明不足','platform_unavailable':'平台访问不足','collection_needs_expansion':'研究集合待细分'}
-    out=['# 待核对语言资源线索\n\n','[首页](../README.md) · [OSF已收录入口](osf.md)\n\n','这些线索保留以减少遗漏，但没有作为已验证可下载数据加入主目录。未来应优先查找最终数据包、正式数据声明与许可。\n\n','| 编号 | 项目 | 方向 | 当前依据 | 需要补齐 |\n| --- | --- | --- | --- | --- |\n']
+    reason={'preregistration_only':'仅确认注册计划','release_unconfirmed':'公开数据仍待确认','insufficient_description':'公开说明不足','platform_unavailable':'平台访问不足','collection_needs_expansion':'研究集合待细分','materials_only':'仅确认材料/统计输出','access_restricted':'须申请访问','obsolete_link':'旧入口更换内容'}
+    out=['# 已核查但暂未进入主目录的线索\n\n','[首页](../README.md) · [OSF已收录入口](osf.md) · [原22条完整复核](candidate-audit.md)\n\n',f"现保留{candidates['candidate_count']}条。已确认公开数据的候选已转入主目录；此处保留仍缺少数据证据、只确认材料、需申请或旧链接更换的项目。未找到数据不表示数据永久不存在。\n\n",'| 编号 | 项目 | 方向 | 当前结论 | 依据与限制 |\n| --- | --- | --- | --- | --- |\n']
     for r in candidates['candidates']: out.append(f"| {r['id']} | [{md(r['name'])}]({r['source_url']}) | {labels[r['category']]} | {reason[r['status']]} | {md(r['reason'])} |\n")
     files['catalog/discovery-candidates.md']=''.join(out)
+    if audit:
+        outcome={'promoted':'已补入主目录','materials_only':'仅确认材料/统计输出','release_unconfirmed':'公开数据仍待确认','restricted_access':'须申请访问','link_changed':'旧入口更换内容'}
+        report=['# 原22条候选的逐项核查\n\n','[首页](../README.md) · [剩余线索](discovery-candidates.md) · [结构化审计记录](../data/'+audit_paths[-1].name+')\n\n',
+            f"核查日期：{audit['checked_on']}。共复核{audit['reviewed_count']}条，{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留在暂未纳入清单。\n\n",
+            '确认依据包括正式论文的数据声明、项目对数据范围和许可的明确说明，以及作者仓库实际公开的CSV。',
+            '相近主题论文、只公开刺激或统计表、只有预注册，均不自动替代原项目数据。\n\n',
+            'OSF API本次仍返回503维护通知；“确认有发布说明”与“实时下载验收”分别记录。GitHub部分文件已实际读取，完整解析的小CSV也标出具体范围。\n\n',
+            '| 原编号 | 项目 | 结论 | 主目录编号 |\n| --- | --- | --- | --- |\n']
+        for a in audit['records']:
+            rid=a['main_resource_id']; main=f"[{rid}]({link(lookup[rid],'../')})" if rid else '—'
+            report.append(f"| [{a['candidate_id']}](#{a['candidate_id'].lower()}) | {md(a['name'])} | {outcome[a['outcome']]} | {main} |\n")
+        report.append('\n## 逐条依据\n\n')
+        for a in audit['records']:
+            report+=[f"<a id=\"{a['candidate_id'].lower()}\"></a>\n\n",f"### {a['candidate_id']} {a['name']}\n\n",f"**{outcome[a['outcome']]}**。{a['findings']}\n\n"]
+            if a['main_resource_id']:
+                rid=a['main_resource_id'];report.append(f"[主目录 {rid}]({link(lookup[rid],'../')}) · [确认的数据入口]({a['verified_data_url']})\n\n")
+            if a.get('next_verification_step'): report.append('后续需确认：'+a['next_verification_step']+'\n\n')
+            for i,url in enumerate(a['evidence_urls'],1): report.append(f'- [核对来源 {i}]({url})\n')
+            if a.get('file_checks'):
+                report.append('\n实际文件读取范围：\n\n')
+                for f in a['file_checks']:report.append(f"- [{f['read_scope']}]({f['url']})：{f['result']}\n")
+            report.append('\n')
+        files['catalog/candidate-audit.md']=''.join(report)
     return files
 
 def main():

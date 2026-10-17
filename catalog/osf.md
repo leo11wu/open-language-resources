@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [句法](syntax.md) · [待核对线索](discovery-candidates.md)
 
-主目录中63条资源关联OSF项目或其正式替代入口。项目、组件与冻结版本尽量按同一数据家族归并。
+主目录中73条资源关联OSF项目或其正式替代入口。项目、组件与冻结版本尽量按同一数据家族归并。
 
 2026-10-17：OSF API返回维护通知。本表保留项目说明、出版方数据声明、作者仓库或Wiki索引等发布依据；未取得所有项目的实时文件清单。
 
@@ -27,6 +27,9 @@
 | R139 | [手势、音效与表情符号的共语言推论](../catalog/social-interaction.md#r139) | n4ks9 | 项目说明 | 有数据发布说明 |
 | R140 | [自由选择推论与同质性实验](../catalog/social-interaction.md#r140) | 56qvw | 项目说明 | 有数据发布说明 |
 | R142 | [叙事自由回忆数据集](../catalog/social-interaction.md#r142) | h2pkv | 项目说明 | 有数据发布说明 |
+| R174 | [SCARFS：熟人与陌生人的指称互动](../catalog/social-interaction.md#r174) | hcya6 | 作者仓库说明 | 有数据发布说明 |
+| R175 | [烹饪对话礼貌：公开标注、模拟样例与分析](../catalog/social-interaction.md#r175) | mp3dt | 作者仓库说明 | 有数据发布说明 |
+| R176 | [LLM方式含意：目标刺激集与分析脚本](../catalog/social-interaction.md#r176) | jp35t | 出版方/机构数据声明 | 有数据发布说明 |
 
 ## 词汇认知与语义常模
 
@@ -44,6 +47,8 @@
 | R098 | [Body–Object Interaction（9,000余英语词）](../catalog/lexical-cognition.md#r098) | 6syf3 | 项目说明 | 有数据发布说明 |
 | R099 | [Humor of English Words（英语变体比较）](../catalog/lexical-cognition.md#r099) | pg3fr | 项目说明 | 已描述资源，文件范围待核对 |
 | R100 | [Three Terms Task（3TT）](../catalog/lexical-cognition.md#r100) | at8cs | 项目说明 | 已描述资源，文件范围待核对 |
+| R177 | [波兰语语义相关度、启动与语义向量](../catalog/lexical-cognition.md#r177) | 2x8ka | 出版方/机构数据声明 | 有数据发布说明 |
+| R178 | [无意识语义加工：空间—时间隐喻启动](../catalog/lexical-cognition.md#r178) | wc7by | 出版方/机构数据声明 | 有数据发布说明 |
 
 ## 中文、二语与双语
 
@@ -86,6 +91,10 @@
 | R089 | [不同一致依存的预测加工](../catalog/syntax.md#r089) | mbtcd | 项目说明 | 有数据发布说明 |
 | R090 | [捷克语花园路径句：开放式理解问题](../catalog/syntax.md#r090) | 98g26 | 出版方/机构数据声明 | 有数据发布说明 |
 | R091 | [大样本英语语法学习年龄数据（Hartshorne等）](../catalog/syntax.md#r091) | pyb8s | 项目说明 | 有数据发布说明 |
+| R170 | [挪威语wh抽取与关系化岛效应数据](../catalog/syntax.md#r170) | ma9jp, gwy9s | 出版方/机构数据声明 | 有数据发布说明 |
+| R171 | [中文体动词补语强制转换：自定步速阅读](../catalog/syntax.md#r171) | wd2g7 | 出版方/机构数据声明 | 有数据发布说明 |
+| R172 | [西班牙语关系从句岛效应：实验数据与代码](../catalog/syntax.md#r172) | t9vpq | 出版方/机构数据声明 | 有数据发布说明 |
+| R173 | [事件结构、习语与轻动词的结构启动](../catalog/syntax.md#r173) | zx6wv | 出版方/机构数据声明 | 有数据发布说明 |
 
 ## 形态、构词与形态加工
 
@@ -107,6 +116,7 @@
 | R135 | [线上、线下及口罩条件的VOT与元音共振峰](../catalog/speech-phonetics.md#r135) | xyh3k | 项目说明 | 有数据发布说明 |
 | R136 | [语音趋同AXB知觉的贝叶斯元分析](../catalog/speech-phonetics.md#r136) | 8s9r5 | 项目说明 | 有数据发布说明 |
 | R137 | [多语言学习者VOT知觉：数据与代码](../catalog/speech-phonetics.md#r137) | m7a43 | 项目说明 | 有数据发布说明 |
+| R179 | [Coretta元音时长与辅音清浊研究集合](../catalog/speech-phonetics.md#r179) | w92me | 项目Wiki的索引内容 | 有数据发布说明 |
 
 ## 阅读、眼动与神经语言
 

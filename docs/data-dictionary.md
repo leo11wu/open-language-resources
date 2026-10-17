@@ -51,7 +51,9 @@
 | `repository_documentation` | 作者仓库中的README或发布说明 |
 | `indexed_project_wiki` | 项目Wiki的可检索索引内容；OSF本次维护限制了实时文件核对 |
 
-所有主目录条目的 `download_tested` 与 `data_files_validated` 本次均为 `false`。`documentation_checked_on` 是说明核对日期。HTTP成功、公开项目名称、论文已发表或有预注册，都不足以单独证明原始文件可解析或数据质量合格。
+`documentation_checked_on` 是说明核对日期。多数条目仍只核对文档，两个文件验收标志均为 `false`。候选复核中，R175完整读取并解析了一份30行15列的小CSV，故其 `download_tested=true`；这只对应选定文件，`data_files_validated` 仍为 `false`，不代表全部模拟对话、标注和分析均已验收。
+
+当 `scope=resource_documentation_and_selected_file_checks` 时，核对包含选定文件读取。可选的 `file_checks` 逐项保留文件URL、读取范围、结果和Git blob标识；`first_8_lines`、`first_4_lines` 是头部样例，`complete_small_csv` 是完整的小CSV。头部样例或一次成功读取均不足以证明全部数据可解析、内容准确或分析可复现。
 
 ## NoRaRe来源索引
 
@@ -65,4 +67,6 @@
 
 ## 待核对线索
 
-`data/discovery-candidates.json` 中的C编号不进入主目录数量。计划性注册、简介不足、未确认数据发布或本次平台访问不足，都在 `status` 和 `reason` 中保留。冻结注册若明确包含完成数据，可以进入主目录；不能仅按注册标签机械排除。
+`data/discovery-candidates.json` 中的C编号不进入主目录数量。原22条复核后，已确认公开数据的10条转入R170–R179；剩余12条保留具体状态、证据URL和下一步需确认事项。完整映射和历史状态保存在 `data/candidate-audit-2026-10-17.json`，避免晋升后丢失来源。
+
+`materials_only` 表示当前只确认材料或统计输出，`access_restricted` 表示须申请，`obsolete_link` 表示旧入口已更换内容；其余记录仍可能有未找到的数据。冻结注册若明确包含完成数据，可以进入主目录；不能仅按注册标签机械排除。已经完成实验但缺少公开数据证据的项目，也不再简单写成“只有计划”。

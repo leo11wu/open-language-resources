@@ -71,6 +71,19 @@ def main():
     check(len({x['id'] for x in candidate['candidates']})==len(candidate['candidates']),'Duplicate candidate IDs')
     for row in candidate['candidates']:
         check(row['category'] in categories and row['counts_as_main_resource'] is False,'Candidate categorization invalid')
+    audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
+    for path in audit_paths:
+        audit=json.loads(path.read_text())
+        rows=audit['records']; promoted=[x for x in rows if x['outcome']=='promoted']; remaining=[x for x in rows if x['outcome']!='promoted']
+        check(audit['reviewed_count']==len(rows),'Candidate audit total mismatch')
+        check(audit['promoted_count']==len(promoted) and audit['remaining_count']==len(remaining),'Candidate audit outcome count mismatch')
+        check(len({x['candidate_id'] for x in rows})==len(rows),'Duplicate candidate audit IDs')
+        for row in promoted:
+            check(row['main_resource_id'] in ids,'Promoted candidate main ID missing')
+            check(row['verified_data_url'] and row['evidence_urls'],'Promoted candidate lacks data/evidence URL')
+        if path==audit_paths[-1]:
+            check({x['candidate_id'] for x in remaining}=={x['id'] for x in candidate['candidates']},'Latest audit and remaining candidate list disagree')
+            check(not ({x['candidate_id'] for x in promoted}&{x['id'] for x in candidate['candidates']}),'Promoted candidates still counted as pending')
     # Public catalog metadata must not embed anonymous-review or access tokens.
     for path in ROOT.rglob('*'):
         if path.is_file() and path.suffix in ['.json','.jsonl','.md']:

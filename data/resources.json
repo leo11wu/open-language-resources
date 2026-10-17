@@ -1,0 +1,2231 @@
+{
+  "$schema": "../schema/resources.schema.json",
+  "schema_version": "1.0.0",
+  "catalog_version": "1.0.0",
+  "updated_on": "2026-10-17",
+  "title": "公开语言资源目录",
+  "description": "按研究现象查找语言数据、语料与常模；保留来源、访问条件、测量边界与核对状态。",
+  "resource_count": 60,
+  "access_modes": {
+    "open_data": "公开数据入口",
+    "free_registration": "免费注册",
+    "application_required": "需要申请",
+    "mixed_access": "部分开放或分层访问",
+    "license_review": "公开仓库，许可需核对"
+  },
+  "categories": [
+    {
+      "id": "child-language",
+      "label": "儿童语言与发展"
+    },
+    {
+      "id": "spoken-variation",
+      "label": "自然口语与社会变异"
+    },
+    {
+      "id": "social-interaction",
+      "label": "社会互动与语用"
+    },
+    {
+      "id": "lexical-cognition",
+      "label": "词汇认知与语义常模"
+    },
+    {
+      "id": "chinese-l2-bilingual",
+      "label": "中文、二语与双语"
+    },
+    {
+      "id": "crossling-cultural",
+      "label": "跨语言结构与社会文化"
+    },
+    {
+      "id": "sign-figurative",
+      "label": "手语、成语与抽象意义"
+    },
+    {
+      "id": "diachronic-parallel-syntax",
+      "label": "历时、多语语料与句法"
+    }
+  ],
+  "resources": [
+    {
+      "id": "R001",
+      "name": "Wordbank",
+      "category": "child-language",
+      "entry_type": "dataset",
+      "language_scope": "多语种，含汉语相关CDI数据",
+      "language_codes": [
+        "mul",
+        "zh"
+      ],
+      "data_type": "家长报告／词汇发展",
+      "description": "儿童逐词理解与产出报告、月龄、部分家庭背景；可导出儿童、词语及儿童×词语数据。",
+      "access_mode": "open_data",
+      "access_notes": "公开下载",
+      "license_note": "多数数据为CC BY 4.0；部分贡献数据为CC BY-NC 4.0，以所选子集为准。",
+      "limitations": "CDI家长报告不等于自然产出中的首次使用年龄；各语言样本与变量覆盖不同，个别数据为非商业许可。",
+      "source_url": "https://wordbank.stanford.edu/faq/",
+      "additional_urls": [
+        "https://wordbank.stanford.edu/"
+      ],
+      "tags": [
+        "词汇习得",
+        "儿童",
+        "跨语言",
+        "动词",
+        "家庭背景"
+      ],
+      "related_ids": [
+        "R002",
+        "R003",
+        "R024"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R002",
+      "name": "CHILDES（附childes-db接口）",
+      "category": "child-language",
+      "entry_type": "collection",
+      "language_scope": "多语种，含英语、普通话、粤语等",
+      "language_codes": [
+        "mul",
+        "en",
+        "cmn",
+        "yue"
+      ],
+      "data_type": "自然互动语料／纵向与横断面",
+      "description": "儿童与照料者的会话转写，部分有录音、视频、形态和句法标注；childes-db提供表格化与版本化接口。",
+      "access_mode": "mixed_access",
+      "access_notes": "多数数据注册后免费；部分受控",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "GlobalTales及部分子库视频需要额外审批；childes-db是同源接口，不能算独立复制样本。",
+      "source_url": "https://talkbank.org/childes/access/",
+      "additional_urls": [
+        "https://talkbank.org/childes/access.html",
+        "https://langcog.github.io/childes-db-website/"
+      ],
+      "tags": [
+        "儿童",
+        "照料者输入",
+        "句法",
+        "词频",
+        "纵向",
+        "汉语"
+      ],
+      "related_ids": [
+        "R001",
+        "R003",
+        "R004",
+        "R007",
+        "R059"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R003",
+      "name": "Peekbank",
+      "category": "child-language",
+      "entry_type": "dataset",
+      "language_scope": "多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "儿童词语识别／逐试次行为",
+      "description": "Looking-while-listening实验的注视时序、词语识别、儿童月龄及实验条件；统一为可比较的数据结构。",
+      "access_mode": "open_data",
+      "access_notes": "公开数据；通过项目接口取得",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "这是实验情境中的在线理解测量；不同研究的刺激和样本并非天然等价。",
+      "source_url": "https://peekbank.github.io/peekbank-website/",
+      "additional_urls": [],
+      "tags": [
+        "儿童",
+        "词义理解",
+        "眼动",
+        "加工速度",
+        "语义竞争"
+      ],
+      "related_ids": [
+        "R001",
+        "R002"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R004",
+      "name": "PhonBank",
+      "category": "child-language",
+      "entry_type": "collection",
+      "language_scope": "多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "儿童语音与音系语料",
+      "description": "儿童发音转写、目标音与实际产出及对应媒体，可用于音系发展、语音变异和产出误差分析。",
+      "access_mode": "free_registration",
+      "access_notes": "注册后免费",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "不少子库只有儿童发音材料，未包含完整互动；部分资料与CHILDES重叠。",
+      "source_url": "https://talkbank.org/phon/",
+      "additional_urls": [
+        "https://talkbank.org/phon/access.html"
+      ],
+      "tags": [
+        "儿童",
+        "语音",
+        "音系",
+        "词形",
+        "产出"
+      ],
+      "related_ids": [
+        "R002"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R005",
+      "name": "ManyBabies 1（MB1）",
+      "category": "child-language",
+      "entry_type": "dataset",
+      "language_scope": "跨国家、跨语言背景；任务刺激须查协议",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "多实验室婴儿实验",
+      "description": "婴儿对婴儿导向语与成人导向语的偏好数据、月龄、语言背景、实验方法与实验室信息，以及分析代码。",
+      "access_mode": "open_data",
+      "access_notes": "数据与代码公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "这里指已发布的MB1项目，不能假定ManyBabies所有项目均已开放；实验方法差异要单独处理。",
+      "source_url": "https://github.com/manybabies/mb1-analysis-public",
+      "additional_urls": [
+        "https://manybabies.org/MB1/",
+        "https://osf.io/re95x/"
+      ],
+      "tags": [
+        "儿童",
+        "婴儿导向语",
+        "跨实验室",
+        "重复研究"
+      ],
+      "related_ids": [
+        "R006"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R006",
+      "name": "MetaLab",
+      "category": "child-language",
+      "entry_type": "aggregate",
+      "language_scope": "多语种研究汇总",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "研究层面的效应量数据库",
+      "description": "儿童语言与认知发展研究的效应量、样本量及研究特征，可用于证据综合与发展趋势比较。",
+      "access_mode": "open_data",
+      "access_notes": "公开浏览与数据入口",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "核心单位是研究或效应量，并非每个儿童的原始反应；同一研究的效应量可能相依。",
+      "source_url": "https://metalab.stanford.edu/",
+      "additional_urls": [],
+      "tags": [
+        "儿童",
+        "词汇",
+        "元分析",
+        "发展",
+        "效应量"
+      ],
+      "related_ids": [
+        "R005"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R007",
+      "name": "HomeBank",
+      "category": "child-language",
+      "entry_type": "collection",
+      "language_scope": "多语种，按子库",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "家庭自然录音与部分转写",
+      "description": "儿童日常家庭语言环境的长时录音、分段与部分转写，可寻找输入分布和照料者互动资料。",
+      "access_mode": "mixed_access",
+      "access_notes": "部分转写公开；大量音频需成员资格",
+      "license_note": "公开转写为CC BY-NC-SA 3.0；未审查录音适用独立数据使用协议。",
+      "limitations": "公开转写与未审查录音使用不同规则；不可把全部原始家庭音频列作无门槛开放数据。",
+      "source_url": "https://talkbank.org/homebank/access/",
+      "additional_urls": [],
+      "tags": [
+        "儿童",
+        "家庭",
+        "语言输入",
+        "自然录音",
+        "社会背景"
+      ],
+      "related_ids": [
+        "R002",
+        "R008"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R008",
+      "name": "SAYCam",
+      "category": "child-language",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "儿童第一视角纵向影音",
+      "description": "少数儿童的头戴摄像机视频、部分语音转写、活动标签与发展资料，连接词语输入和可见场景。",
+      "access_mode": "application_required",
+      "access_notes": "受控共享；视频通过Databrary申请",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "原始视频需研究者和机构授权；样本为少数家庭，不能代表一般儿童总体。本次未取得受控数据。",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8412186/",
+      "additional_urls": [
+        "https://nyu.databrary.org/volume/564",
+        "https://databrary.org/about/agreement"
+      ],
+      "tags": [
+        "儿童",
+        "多模态",
+        "词义落地",
+        "纵向",
+        "视觉场景"
+      ],
+      "related_ids": [
+        "R007"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R009",
+      "name": "CORAAL",
+      "category": "spoken-variation",
+      "entry_type": "dataset",
+      "language_scope": "美国非裔英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "社会语言学访谈",
+      "description": "不同地区、年代的访谈音频及时间对齐转写，并有说话人社会背景资料。",
+      "access_mode": "open_data",
+      "access_notes": "公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "社区、年代与抽样方式需按组件核对；已有音段对齐属于派生标注。",
+      "source_url": "https://oraal.github.io/coraal",
+      "additional_urls": [
+        "http://lingtools.uoregon.edu/coraal"
+      ],
+      "tags": [
+        "社会语言学",
+        "身份",
+        "地区",
+        "年龄",
+        "语音变异"
+      ],
+      "related_ids": [
+        "R010",
+        "R011",
+        "R012"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R010",
+      "name": "Santa Barbara Corpus of Spoken American English",
+      "category": "spoken-variation",
+      "entry_type": "dataset",
+      "language_scope": "美国英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "自然会话与其他口语体裁",
+      "description": "自然互动的音频、按语调单位对齐的转写，以及说话人和交际场景元数据。",
+      "access_mode": "open_data",
+      "access_notes": "官网免费提供转写、元数据和音频",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "样本较精细但规模有限；不同交际活动需分开考虑。LDC光盘售价不代表官网文件收费。",
+      "source_url": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "additional_urls": [],
+      "tags": [
+        "自然会话",
+        "话轮",
+        "语调",
+        "社会背景",
+        "语用"
+      ],
+      "related_ids": [
+        "R015"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R011",
+      "name": "Spoken BNC2014",
+      "category": "spoken-variation",
+      "entry_type": "dataset",
+      "language_scope": "英国英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "日常朋友与家庭会话",
+      "description": "约1150万词的口语转写及社会背景资料，适合按人群和情境比较语言使用。",
+      "access_mode": "free_registration",
+      "access_notes": "免费注册并接受许可；按官网取得文本",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "本条针对口语转写；不要据此假定原始音频或Written BNC2014具有同样开放条件。本次未实测注册和批量下载。",
+      "source_url": "https://corpora.lancs.ac.uk/bnc2014/",
+      "additional_urls": [
+        "https://cass.lancs.ac.uk/cass-projects/spoken-bnc2014/"
+      ],
+      "tags": [
+        "社会语言学",
+        "日常会话",
+        "年龄",
+        "性别",
+        "英国英语"
+      ],
+      "related_ids": [
+        "R010",
+        "R015"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R012",
+      "name": "Buckeye Corpus",
+      "category": "spoken-variation",
+      "entry_type": "dataset",
+      "language_scope": "美国英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "访谈语音／音段对齐",
+      "description": "40位说话人的自发访谈语音、正字转写与时间对齐音标，适合语音缩减和时长研究。",
+      "access_mode": "free_registration",
+      "access_notes": "注册后非商业免费",
+      "license_note": "非商业使用免费，取得数据前按官网注册。",
+      "limitations": "来自特定城市和访谈情境；音段标注与实际语音测量仍需结合检查。",
+      "source_url": "https://buckeyecorpus.osu.edu/",
+      "additional_urls": [
+        "https://buckeyecorpus.osu.edu/php/login.php"
+      ],
+      "tags": [
+        "简短律",
+        "语音缩减",
+        "词频",
+        "时长",
+        "年龄"
+      ],
+      "related_ids": [
+        "R009"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R013",
+      "name": "CANDOR",
+      "category": "spoken-variation",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "陌生人视频会话／社会互动",
+      "description": "视频会话、转写及会前会后问卷，包含年龄、教育、政治立场、交谈体验等信息。",
+      "access_mode": "application_required",
+      "access_notes": "研究共享；需要向项目方申请",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "ConvoKit文档明确要求先申请原始资料；它提供转换代码，不等于全部原始影音可直接下载。本次未申请。",
+      "source_url": "https://convokit.cornell.edu/documentation/candor.html",
+      "additional_urls": [
+        "https://guscooney.com/candor-dataset/",
+        "https://www.betterup.com/research/candor-research"
+      ],
+      "tags": [
+        "社会互动",
+        "话轮",
+        "关系感受",
+        "人口背景",
+        "多模态"
+      ],
+      "related_ids": [
+        "R015"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R014",
+      "name": "HCRC Map Task Corpus",
+      "category": "spoken-variation",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "合作任务对话",
+      "description": "128段地图协作对话的录音、转写、地图与多层标注，可分析指称、澄清、信息分配和对话协调。",
+      "access_mode": "open_data",
+      "access_notes": "项目官网提供研究下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "这是诱发的合作任务，不能直接代表无任务日常会话；下载版本与标注层需记录。",
+      "source_url": "https://groups.inf.ed.ac.uk/maptask/",
+      "additional_urls": [],
+      "tags": [
+        "语用",
+        "共同知识",
+        "指称",
+        "对话",
+        "合作"
+      ],
+      "related_ids": [
+        "R019"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R015",
+      "name": "CABank",
+      "category": "spoken-variation",
+      "entry_type": "collection",
+      "language_scope": "多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "自然互动语料集合入口",
+      "description": "会话分析材料的索引，含日常会话、机构互动、电话和其他场景，部分有精细互动转写和同步媒体。",
+      "access_mode": "free_registration",
+      "access_notes": "注册后免费访问；按子库说明",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "这是资源集合入口；与Santa Barbara、CANDOR等可能重叠，不能把重复子库当作独立证据。",
+      "source_url": "https://talkbank.org/ca/access/",
+      "additional_urls": [
+        "https://talkbank.org/ca/access.html"
+      ],
+      "tags": [
+        "会话分析",
+        "互动",
+        "机构话语",
+        "多语种"
+      ],
+      "related_ids": [
+        "R010",
+        "R013"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R016",
+      "name": "Stanford Politeness Corpus（Wikipedia）",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "请求语句与人工礼貌评分",
+      "description": "Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研究请求表达与礼貌判断。",
+      "access_mode": "open_data",
+      "access_notes": "公开下载；遵循该语料许可",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "特定平台中的请求语句样本；其礼貌分数不等于普遍适用的跨文化礼貌程度。",
+      "source_url": "https://convokit.cornell.edu/documentation/wiki_politeness.html",
+      "additional_urls": [],
+      "tags": [
+        "礼貌",
+        "请求",
+        "社会语用",
+        "人工判断"
+      ],
+      "related_ids": [
+        "R017"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R017",
+      "name": "Conversations Gone Awry（CGA-WIKI）",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "网络讨论与人身攻击标注",
+      "description": "讨论串、回复关系、攻击标签及配对信息，可分析互动怎样从正常讨论转向冲突。",
+      "access_mode": "open_data",
+      "access_notes": "公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "来自Wikipedia讨论页，标注目标是人身攻击；不能泛化为所有社会冲突。",
+      "source_url": "https://convokit.cornell.edu/documentation/awry.html",
+      "additional_urls": [],
+      "tags": [
+        "冲突",
+        "不礼貌",
+        "互动演变",
+        "网络话语"
+      ],
+      "related_ids": [
+        "R016",
+        "R018"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R018",
+      "name": "Winning Arguments（ChangeMyView）",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "说服讨论与平台结果标签",
+      "description": "讨论文本、回复树及改变发帖者观点的delta相关标签；有成功与未成功论证的配对信息。",
+      "access_mode": "open_data",
+      "access_notes": "公开发布的数据快照可下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "delta是平台记录的认可结果，并非随机实验识别的说服因果效应；部分评论缺失。",
+      "source_url": "https://convokit.cornell.edu/documentation/winning.html",
+      "additional_urls": [],
+      "tags": [
+        "说服",
+        "立场",
+        "论证",
+        "社会互动"
+      ],
+      "related_ids": [
+        "R017",
+        "R019"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R019",
+      "name": "Deception in Diplomacy",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "谈判游戏消息与双侧标签",
+      "description": "游戏中消息发送者的真实／欺骗意图，以及接收者对其真实性的判断，可区分意图与感知。",
+      "access_mode": "open_data",
+      "access_notes": "公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "游戏角色、激励和关系结构特定；数据里的country是游戏所扮国家，不是参与者国籍。",
+      "source_url": "https://convokit.cornell.edu/documentation/diplomacy.html",
+      "additional_urls": [],
+      "tags": [
+        "欺骗",
+        "意图",
+        "推断",
+        "信任",
+        "语用"
+      ],
+      "related_ids": [
+        "R018",
+        "R014"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R020",
+      "name": "Parliament Question Time Corpus",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "英国英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "议会问答与政治身份元数据",
+      "description": "英国议会质询的问答文本、回复关系、时间及议员和政党信息。",
+      "access_mode": "open_data",
+      "access_notes": "公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "政治制度话语不同于日常交谈；历史元数据有缺失，语料结束时间不等于当前政治状态。",
+      "source_url": "https://convokit.cornell.edu/documentation/parliament.html",
+      "additional_urls": [],
+      "tags": [
+        "政治话语",
+        "权力",
+        "提问",
+        "修辞",
+        "社会身份"
+      ],
+      "related_ids": [
+        "R021"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R021",
+      "name": "ParlaMint",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "多种欧洲语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "可比较议会语料",
+      "description": "议会发言、语言标注及说话人背景，适合跨语言、跨国家及跨时间的话语比较。",
+      "access_mode": "open_data",
+      "access_notes": "公开发布；官网注明CC BY",
+      "license_note": "项目官网注明CC BY；使用具体发布版本的许可说明。",
+      "limitations": "国家、时期和政治制度的可比性需另行建立；使用具体版本的数据和元数据说明。",
+      "source_url": "https://www.clarin.eu/parlamint",
+      "additional_urls": [],
+      "tags": [
+        "社会语言学",
+        "政治话语",
+        "跨文化",
+        "多语种",
+        "历时"
+      ],
+      "related_ids": [
+        "R020",
+        "R047"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R022",
+      "name": "Small World of Words（SWOW）",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语及其他分语种发布的数据",
+      "language_codes": [
+        "mul",
+        "en"
+      ],
+      "data_type": "人类词汇联想",
+      "description": "提示词与联想反应及由此形成的关系强度，可建立人类语义关联网络并与模型表示比较。",
+      "access_mode": "open_data",
+      "access_notes": "正式发布数据可取得；英语页列CC BY-NC-ND 3.0",
+      "license_note": "英语正式数据页注明CC BY-NC-ND 3.0；其他语种和版本分别核对。",
+      "limitations": "联想关系不等于纯语义相似；各语种应分别核对发布版本、参与者变量和使用条件。",
+      "source_url": "https://smallworldofwords.org/en/project/research",
+      "additional_urls": [
+        "https://simondedeyne.me/data/"
+      ],
+      "tags": [
+        "语义网络",
+        "联想",
+        "词汇",
+        "跨语言",
+        "人类与模型"
+      ],
+      "related_ids": [
+        "R029",
+        "R043"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R023",
+      "name": "English Lexicon Project（ELP）",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "词汇判断与命名行为",
+      "description": "约4万词和匹配非词的词汇特征、词汇判断与命名反应时；官网提供逐试次行为数据入口。",
+      "access_mode": "open_data",
+      "access_notes": "官网公开查询和数据入口",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "词均值与逐试次原始反应不是同一分析层级；清洗规则和参与者差异会影响结果。",
+      "source_url": "https://elexicon.wustl.edu/",
+      "additional_urls": [
+        "https://osf.io/n63s2/"
+      ],
+      "tags": [
+        "词汇加工",
+        "反应时",
+        "词频",
+        "词长",
+        "人类与模型"
+      ],
+      "related_ids": [
+        "R024",
+        "R025",
+        "R026",
+        "R027"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R024",
+      "name": "英语习得年龄常模（Kuperman等及相关扩展）",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "成人回溯评分／测试估计",
+      "description": "英语词语的主观习得年龄评分；同一项目亦提供不同来源的扩展和测试型习得年龄文件。",
+      "access_mode": "open_data",
+      "access_notes": "OSF公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "文件之间的测量不同；成人回溯评分不能当作儿童纵向观察到的首次习得时间。",
+      "source_url": "https://osf.io/d7x6q/",
+      "additional_urls": [],
+      "tags": [
+        "词汇习得",
+        "AoA",
+        "加工",
+        "常模",
+        "控制变量"
+      ],
+      "related_ids": [
+        "R001",
+        "R023"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R025",
+      "name": "英语具体性常模（Brysbaert等）",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "词语具体性人工评分",
+      "description": "约4万词语和短语的具体性评分；另有公开的逐试次评分项目，可寻找评分者层面信息。",
+      "access_mode": "open_data",
+      "access_notes": "OSF公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "具体性与意象性、感觉运动强度相关但不等同；按词条和评分层级区分文件。",
+      "source_url": "https://osf.io/kj76e/",
+      "additional_urls": [
+        "https://osf.io/qpmf4/"
+      ],
+      "tags": [
+        "抽象词",
+        "具体词",
+        "概念",
+        "语义",
+        "常模"
+      ],
+      "related_ids": [
+        "R026",
+        "R027"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R026",
+      "name": "Lancaster Sensorimotor Norms",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "感觉运动强度人工评分",
+      "description": "近4万个概念在视觉、听觉、触觉等6种感知维度和5种动作效应器上的评分。",
+      "access_mode": "open_data",
+      "access_notes": "项目页与OSF提供公开资料",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "衡量词语所指概念的主观感觉运动经验，不是实际动作或神经活动记录。",
+      "source_url": "https://www.lancaster.ac.uk/psychology/lsnorms/",
+      "additional_urls": [
+        "https://osf.io/7emr6/"
+      ],
+      "tags": [
+        "具身语义",
+        "动作",
+        "感知",
+        "词汇",
+        "多模态"
+      ],
+      "related_ids": [
+        "R025",
+        "R050"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R027",
+      "name": "Glasgow Norms",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "多维词汇人工评分",
+      "description": "5553词的9维评分，含情绪、具体性、意象性、熟悉度、AoA、语义大小与性别联想；部分词义有区分。",
+      "access_mode": "open_data",
+      "access_notes": "论文及补充资料公开",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "词义区分只覆盖部分词；性别联想是评分者感知，不是客观性别属性。",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-018-1099-3",
+      "additional_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6538586/"
+      ],
+      "tags": [
+        "词汇",
+        "多义",
+        "性别联想",
+        "情绪",
+        "语义大小"
+      ],
+      "related_ids": [
+        "R028",
+        "R043"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R028",
+      "name": "Warriner情感常模",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "情绪词汇人工评分",
+      "description": "13915个英语词的效价、唤醒度与支配感评分，可作为情感词汇描述和刺激控制变量。",
+      "access_mode": "open_data",
+      "access_notes": "公开常模；NoRaRe提供整合入口",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "词语常模不等于句子或语境中的实际情绪强度；需引用原始数据来源。",
+      "source_url": "https://norare.clld.org/contributions/Warriner-2013-AffectiveRatings",
+      "additional_urls": [
+        "https://link.springer.com/article/10.3758/s13428-012-0314-x"
+      ],
+      "tags": [
+        "情绪",
+        "词义",
+        "效价",
+        "唤醒度",
+        "支配感"
+      ],
+      "related_ids": [
+        "R027",
+        "R043"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R029",
+      "name": "SimLex-999",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语原版",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "词对语义相似人工判断",
+      "description": "999组词对的语义相似度评分，明确区分相似性与一般关联性，附词类等信息。",
+      "access_mode": "open_data",
+      "access_notes": "项目页公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "不是自由联想规范；原版覆盖词对有限，不能当作整个词汇系统的随机样本。",
+      "source_url": "https://fh295.github.io/simlex.html",
+      "additional_urls": [],
+      "tags": [
+        "语义相似",
+        "语义关联",
+        "人类与模型",
+        "词对"
+      ],
+      "related_ids": [
+        "R022",
+        "R030"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R030",
+      "name": "THINGS资源体系",
+      "category": "lexical-cognition",
+      "entry_type": "collection",
+      "language_scope": "以英语物体概念为基础",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "概念、图像与人类判断",
+      "description": "1854个物体概念、配套图像及多个行为相似性和语义属性数据集，可连接语言和非语言概念表征。",
+      "access_mode": "open_data",
+      "access_notes": "多项数据公开；各数据包分别遵循许可",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "属于物体概念与多模态资源，不是纯文本语料；图像、行为和神经数据应分别核对。",
+      "source_url": "https://things-initiative.org/",
+      "additional_urls": [],
+      "tags": [
+        "概念",
+        "语义",
+        "多模态",
+        "相似性",
+        "人类与模型"
+      ],
+      "related_ids": [
+        "R029"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R031",
+      "name": "SUBTLEX-CH",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "简体中文",
+      "language_codes": [
+        "zh-Hans"
+      ],
+      "data_type": "字幕词频与字频",
+      "description": "词频、字频、语境分布相关指标及词性频率；官方页面提供压缩文件和变量说明。",
+      "access_mode": "open_data",
+      "access_notes": "官网公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "开放的是统计表，不代表原始影视字幕文本同时开放；字幕频率不能直接代表儿童输入频率。",
+      "source_url": "https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch",
+      "additional_urls": [],
+      "tags": [
+        "中文",
+        "词频",
+        "字频",
+        "语境多样性",
+        "词性"
+      ],
+      "related_ids": [
+        "R032",
+        "R033",
+        "R034"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R032",
+      "name": "Chinese Lexical Database（CLD）",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "简体中文",
+      "language_codes": [
+        "zh-Hans"
+      ],
+      "data_type": "词汇与分布特征表",
+      "description": "48644个词的269项变量，提供TXT、CSV、R等数据文件，适合构词、正字法和加工研究。",
+      "access_mode": "open_data",
+      "access_notes": "官网公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "大量指标为语料或形式派生变量，不是48644词各自的儿童习得或行为测量。",
+      "source_url": "https://chineselexicaldatabase.com/download.php",
+      "additional_urls": [],
+      "tags": [
+        "中文",
+        "词汇",
+        "词形",
+        "构词",
+        "刺激筛选"
+      ],
+      "related_ids": [
+        "R031"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R033",
+      "name": "MELD-SCH",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "简体中文",
+      "language_codes": [
+        "zh-Hans"
+      ],
+      "data_type": "中文词汇判断行为常模",
+      "description": "1至4字词的词汇判断反应时、错误率和字词层面变量，来自504名中文使用者。",
+      "access_mode": "open_data",
+      "access_notes": "论文页ESM 1提供XLSX补充数据",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "论文正文付费与补充数据可访问是两件事；本条已核对补充文件入口，未下载核验整表。",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-017-0944-0",
+      "additional_urls": [],
+      "tags": [
+        "中文",
+        "词汇加工",
+        "反应时",
+        "词长",
+        "构词"
+      ],
+      "related_ids": [
+        "R031",
+        "R032",
+        "R034"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R034",
+      "name": "Chinese Lexicon Project（Tse等，双字词）",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "繁体中文；香港粤语母语参与者",
+      "language_codes": [
+        "zh-Hant"
+      ],
+      "data_type": "中文双字词词汇判断常模",
+      "description": "超过25000个繁体双字词的词汇判断反应时、准确性及词汇变量。",
+      "access_mode": "open_data",
+      "access_notes": "论文页ESM 1提供XLSX补充数据",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "不要与简体单字CLP混为同一个数据集；繁简、母语和任务差异需分别处理。未核验整表。",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-016-0810-5",
+      "additional_urls": [],
+      "tags": [
+        "中文",
+        "粤语",
+        "词汇加工",
+        "双字词",
+        "常模"
+      ],
+      "related_ids": [
+        "R031",
+        "R033"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R035",
+      "name": "ICNALE",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "亚洲多母语背景的英语学习者及对照",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "受控主题学习者写作与口语",
+      "description": "学习者作文、独白和对话等模块，以及语言水平和参与者背景资料。",
+      "access_mode": "free_registration",
+      "access_notes": "注册后取得下载文件密码",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "各模块设计不同；官网提示在线检索版不再更新，正式研究优先使用下载版并记录版本。",
+      "source_url": "https://language.sakura.ne.jp/icnale/download.html",
+      "additional_urls": [],
+      "tags": [
+        "二语",
+        "亚洲",
+        "学习者",
+        "写作",
+        "口语",
+        "水平"
+      ],
+      "related_ids": [
+        "R036",
+        "R037",
+        "R038"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R036",
+      "name": "EFCAMDAT",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "多母语背景的英语学习者",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "在线英语学习写作",
+      "description": "按课程任务和水平组织的学习者作文，以及公开说明中的清洗子库和错误标注。",
+      "access_mode": "application_required",
+      "access_notes": "学术研究者申请；需学术身份及Google账号",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "官网现要求机构邮箱相关认证；课程水平、题目与学习者进程相互关联。本次未申请数据。",
+      "source_url": "https://ef-lab.mmll.cam.ac.uk/EFCAMDAT.html",
+      "additional_urls": [],
+      "tags": [
+        "二语",
+        "写作发展",
+        "纵向",
+        "错误",
+        "任务",
+        "学习者"
+      ],
+      "related_ids": [
+        "R035"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R037",
+      "name": "MERLIN",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "德语、意大利语、捷克语学习者",
+      "language_codes": [
+        "de",
+        "it",
+        "cs"
+      ],
+      "data_type": "语言考试写作与错误标注",
+      "description": "与CEFR联系的学习者文本、评分、错误标注及学习者和考试元数据。",
+      "access_mode": "open_data",
+      "access_notes": "官网免费完整下载；CC BY-SA 4.0",
+      "license_note": "CC BY-SA 4.0。",
+      "limitations": "考试任务和语言间评分体系需要核对；CEFR标签不自动保证所有子库完全等价。",
+      "source_url": "https://www.merlin-platform.eu/C_data.php",
+      "additional_urls": [
+        "https://www.merlin-platform.eu/"
+      ],
+      "tags": [
+        "二语",
+        "跨语言",
+        "写作",
+        "CEFR",
+        "错误",
+        "评分"
+      ],
+      "related_ids": [
+        "R035",
+        "R038"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R038",
+      "name": "CEDEL2",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "多母语背景西班牙语学习者及母语对照",
+      "language_codes": [
+        "es",
+        "mul"
+      ],
+      "data_type": "学习者书面与口语语料",
+      "description": "西班牙语学习者及多语种母语对照材料，包含不同母语背景和任务。",
+      "access_mode": "open_data",
+      "access_notes": "官网免费查询与下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "以具体子库与版本为准；学习者和对照的任务及人口背景需检查。",
+      "source_url": "https://cedel2.learnercorpora.com/",
+      "additional_urls": [],
+      "tags": [
+        "二语",
+        "母语迁移",
+        "跨语言",
+        "西班牙语",
+        "对照"
+      ],
+      "related_ids": [
+        "R035",
+        "R037"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R039",
+      "name": "GECO",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "dataset",
+      "language_scope": "荷兰语与英语",
+      "language_codes": [
+        "nl",
+        "en"
+      ],
+      "data_type": "单语与双语阅读眼动",
+      "description": "单语者与双语者阅读长文本时的眼动数据和材料，适合跨语言阅读与词汇加工研究。",
+      "access_mode": "open_data",
+      "access_notes": "项目页提供数据文件",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "读者、语言与阅读条件需按设计区分；不是随机抽取的日常阅读行为。",
+      "source_url": "https://expsy.ugent.be/downloads/geco/",
+      "additional_urls": [],
+      "tags": [
+        "双语",
+        "阅读",
+        "眼动",
+        "词频",
+        "语言熟练度"
+      ],
+      "related_ids": [
+        "R040"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R040",
+      "name": "MECO",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "collection",
+      "language_scope": "多语种；已发布部分含中文",
+      "language_codes": [
+        "mul",
+        "zh",
+        "en"
+      ],
+      "data_type": "跨语言及L2阅读眼动",
+      "description": "相对可比较的阅读材料、眼动和个体差异测量，分L1、L2和多轮发布。",
+      "access_mode": "open_data",
+      "access_notes": "已发布数据公开；经官网进入具体发布页",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "正在收集的波次不等于已经公开；跨语言文本可比性与个体测量需按发布说明检查。",
+      "source_url": "https://meco-read.com/",
+      "additional_urls": [
+        "https://osf.io/3527a/"
+      ],
+      "tags": [
+        "双语",
+        "跨语言",
+        "阅读",
+        "眼动",
+        "个体差异"
+      ],
+      "related_ids": [
+        "R039"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R041",
+      "name": "Lexibank",
+      "category": "crossling-cultural",
+      "entry_type": "collection",
+      "language_scope": "全球多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "标准化跨语言词表集合",
+      "description": "概念—词形对应、语音转写与部分派生特征，适合词形、共词化和词汇结构比较。",
+      "access_mode": "open_data",
+      "access_notes": "公开仓库与Zenodo版本下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "聚合资源；不同版本所含词表和语言有变化，必须同时记录底层数据与聚合版本。",
+      "source_url": "https://lexibank.clld.org/",
+      "additional_urls": [
+        "https://github.com/lexibank/"
+      ],
+      "tags": [
+        "跨语言",
+        "共词化",
+        "词形",
+        "音系",
+        "词汇"
+      ],
+      "related_ids": [
+        "R042",
+        "R044",
+        "R049"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R042",
+      "name": "CLICS",
+      "category": "crossling-cultural",
+      "entry_type": "derived",
+      "language_scope": "全球多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "跨语言共词化与网络",
+      "description": "不同概念由相同词形表达的跨语言模式、网络和来源资料；当前站点显示CLICS⁴。",
+      "access_mode": "open_data",
+      "access_notes": "官网链接Zenodo提供数据与聚合程序",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "由底层词表汇集而来；与Lexibank等可能重叠，不能作为完全独立证据计数。",
+      "source_url": "https://clics.clld.org/download",
+      "additional_urls": [],
+      "tags": [
+        "共词化",
+        "多义",
+        "语义网络",
+        "跨语言"
+      ],
+      "related_ids": [
+        "R041",
+        "R044"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R043",
+      "name": "NoRaRe",
+      "category": "crossling-cultural",
+      "entry_type": "aggregate",
+      "language_scope": "多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "词语与概念常模整合库",
+      "description": "把不同研究的词汇常模、评分和关系与概念相连接，便于发现可关联的数据和来源。",
+      "access_mode": "open_data",
+      "access_notes": "CLDF数据与版本公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "整合库不是一项新的独立实验；关联的词形、概念和测量来源仍需逐项核对。",
+      "source_url": "https://norare.clld.org/",
+      "additional_urls": [
+        "https://norare.clld.org/download"
+      ],
+      "tags": [
+        "词汇常模",
+        "跨语言",
+        "概念",
+        "资源整合"
+      ],
+      "related_ids": [
+        "R022",
+        "R024",
+        "R025",
+        "R027",
+        "R028",
+        "R044"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R044",
+      "name": "Concepticon",
+      "category": "crossling-cultural",
+      "entry_type": "alignment",
+      "language_scope": "多语种概念列表",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "概念对齐与标识资源",
+      "description": "把不同词表中的概念标签对齐至统一概念集合，可辅助连接跨语言词表和常模。",
+      "access_mode": "open_data",
+      "access_notes": "CLDF数据与版本公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "提供对齐基础而非新的行为观察；相同概念编号不保证所有语言的词义边界相同。",
+      "source_url": "https://concepticon.clld.org/download",
+      "additional_urls": [],
+      "tags": [
+        "跨语言",
+        "概念对齐",
+        "词表",
+        "数据连接"
+      ],
+      "related_ids": [
+        "R041",
+        "R043",
+        "R049"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R045",
+      "name": "WALS",
+      "category": "crossling-cultural",
+      "entry_type": "aggregate",
+      "language_scope": "全球多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "语言类型特征数据库",
+      "description": "不同语言的类型学特征及来源，可寻找词序、形态和其他结构变量。",
+      "access_mode": "open_data",
+      "access_notes": "官网链接版本化公开数据",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "特征间覆盖率不同；缺失值不等于该语言没有某特征，地理与谱系非独立性要处理。",
+      "source_url": "https://wals.info/download",
+      "additional_urls": [
+        "https://wals.info/"
+      ],
+      "tags": [
+        "类型学",
+        "语序",
+        "形态",
+        "跨语言",
+        "控制变量"
+      ],
+      "related_ids": [
+        "R046",
+        "R047"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R046",
+      "name": "Grambank",
+      "category": "crossling-cultural",
+      "entry_type": "aggregate",
+      "language_scope": "全球多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "语法特征数据库",
+      "description": "195项语法特征，覆盖词序、时态、数等，适合大范围语法模式与功能关系研究。",
+      "access_mode": "open_data",
+      "access_notes": "官网链接仓库和Zenodo公开版本",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "编码体系与WALS不同；不能在未检查定义时直接合并同名变量。",
+      "source_url": "https://grambank.clld.org/",
+      "additional_urls": [
+        "https://grambank.clld.org/download"
+      ],
+      "tags": [
+        "语法",
+        "类型学",
+        "跨语言",
+        "文化",
+        "功能解释"
+      ],
+      "related_ids": [
+        "R045",
+        "R047"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R047",
+      "name": "D-PLACE",
+      "category": "crossling-cultural",
+      "entry_type": "aggregate",
+      "language_scope": "全球社会群体及语言联系",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "社会、文化与环境编码",
+      "description": "文化实践、社会组织、地理和环境资料，可与语言标识关联，用于语言—社会文化比较。",
+      "access_mode": "open_data",
+      "access_notes": "CLDF仓库与Zenodo公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "单位是特定时间和地点的社会资料，不能直接视作现代国家或所有语言使用者的共同属性。",
+      "source_url": "https://d-place.org/",
+      "additional_urls": [
+        "https://d-place.org/download"
+      ],
+      "tags": [
+        "社会文化",
+        "环境",
+        "亲属",
+        "社会组织",
+        "跨文化"
+      ],
+      "related_ids": [
+        "R045",
+        "R046"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R048",
+      "name": "PHOIBLE",
+      "category": "crossling-cultural",
+      "entry_type": "aggregate",
+      "language_scope": "全球多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "音位库存与音段特征",
+      "description": "跨语言音位库存、音段区别特征和描述来源，适合词形和音系结构的跨语言比较。",
+      "access_mode": "open_data",
+      "access_notes": "官网提供CLDF和其他数据下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "同一语言可能有来自不同描述文献且不一致的音位分析；不能未经决策全部视为独立语言。",
+      "source_url": "https://phoible.org/",
+      "additional_urls": [
+        "https://phoible.org/download"
+      ],
+      "tags": [
+        "音系",
+        "语音",
+        "跨语言",
+        "词形",
+        "库存"
+      ],
+      "related_ids": [
+        "R041"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R049",
+      "name": "Intercontinental Dictionary Series（IDS）",
+      "category": "crossling-cultural",
+      "entry_type": "collection",
+      "language_scope": "全球多语种",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "跨语言语义分类词表",
+      "description": "按语义领域组织的概念和词汇材料，可寻找跨语言词义划分、词汇缺口和形式对应。",
+      "access_mode": "open_data",
+      "access_notes": "官网提供底层数据与CLDF发布入口",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "与其他词表聚合库可能重叠；资料来源、概念粒度与缺项需逐库核对。",
+      "source_url": "https://ids.clld.org/",
+      "additional_urls": [
+        "https://ids.clld.org/download"
+      ],
+      "tags": [
+        "跨语言",
+        "词汇",
+        "词义",
+        "语义分类",
+        "词典学"
+      ],
+      "related_ids": [
+        "R041",
+        "R044"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R050",
+      "name": "ASL-LEX",
+      "category": "sign-figurative",
+      "entry_type": "dataset",
+      "language_scope": "美国手语",
+      "language_codes": [
+        "ase"
+      ],
+      "data_type": "手语词汇与音系常模",
+      "description": "ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性和词形等指标。",
+      "access_mode": "open_data",
+      "access_notes": "数据库公开；CC BY-NC 4.0；示范视频另有规则",
+      "license_note": "数据库与可视化为CC BY-NC 4.0；手语示范视频不包含在该授权内。",
+      "limitations": "主观频率不等于自然语料词频；孤立示范形式的时长不等于自然会话中的时长。",
+      "source_url": "https://asl-lex.org/download.html",
+      "additional_urls": [
+        "https://asl-lex.org/"
+      ],
+      "tags": [
+        "手语",
+        "词频",
+        "象似性",
+        "简短律",
+        "词汇"
+      ],
+      "related_ids": [
+        "R026",
+        "R051",
+        "R052"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R051",
+      "name": "Multilingual Sign Language Wordnet",
+      "category": "sign-figurative",
+      "entry_type": "alignment",
+      "language_scope": "多种手语",
+      "language_codes": [
+        "sgn",
+        "mul"
+      ],
+      "data_type": "手语词与同义词集对齐",
+      "description": "手语条目、概念同义词集及链接置信类型，可连接不同手语和词义资源；提供CSV等格式。",
+      "access_mode": "mixed_access",
+      "access_notes": "对齐表公开下载；原始视频权限分别处理",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "人工确认、弱确认和自动确认的链接需要区分；部分条目链接到受限原始资源。",
+      "source_url": "https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/download.html",
+      "additional_urls": [],
+      "tags": [
+        "手语",
+        "跨语言",
+        "词义",
+        "概念对齐",
+        "多义"
+      ],
+      "related_ids": [
+        "R050",
+        "R052"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R052",
+      "name": "Public DGS Corpus（MEINE DGS）",
+      "category": "sign-figurative",
+      "entry_type": "dataset",
+      "language_scope": "德国手语",
+      "language_codes": [
+        "gsg"
+      ],
+      "data_type": "自然与诱发手语影音及标注",
+      "description": "公开部分含约50小时手语视频和标注，可下载转写与媒体，查询手语词型及语料实例。",
+      "access_mode": "open_data",
+      "access_notes": "公开部分可下载；仅限许可中的语言学研究用途",
+      "license_note": "公开部分仅限源站许可中的语言学研究用途，其他用途另行联系项目方。",
+      "limitations": "不等于全量DGS档案开放；其他研究或应用、高分辨率资料须另联络项目方。",
+      "source_url": "https://www.sign-lang.uni-hamburg.de/meinedgs_r4/ling/start_en.html",
+      "additional_urls": [
+        "https://www.sign-lang.uni-hamburg.de/meinedgs_r4/ling/license_en.html"
+      ],
+      "tags": [
+        "手语",
+        "自然产出",
+        "话语",
+        "词频",
+        "变异"
+      ],
+      "related_ids": [
+        "R050",
+        "R051"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R053",
+      "name": "ChID",
+      "category": "sign-figurative",
+      "entry_type": "dataset",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "成语完形填空语境数据",
+      "description": "含成语空缺的篇章、候选项与正确答案，可用于语境搭配和成语选择研究。",
+      "access_mode": "open_data",
+      "access_notes": "作者仓库链接公开数据下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "是语境任务数据，不是儿童习得或人类反应时数据；版本与训练／测试泄漏需分开检查。",
+      "source_url": "https://github.com/chujiezheng/ChID-Dataset",
+      "additional_urls": [
+        "https://huggingface.co/datasets/thu-coai/chid"
+      ],
+      "tags": [
+        "成语",
+        "中文",
+        "语境",
+        "搭配",
+        "语言模型"
+      ],
+      "related_ids": [
+        "R054",
+        "R055"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R054",
+      "name": "Chengyu-Bench",
+      "category": "sign-figurative",
+      "entry_type": "dataset",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "成语理解与使用评测",
+      "description": "褒贬判断、语境使用恰当性和开放式填空三类任务；作者仓库含data目录。",
+      "access_mode": "license_review",
+      "access_notes": "数据在公开仓库；再分发许可须另核对",
+      "license_note": "仓库公开可读；本次未确认明确的数据再分发许可。",
+      "limitations": "仓库公开可读不等于任意用途授权；材料来源与任务难度需要在使用前检查。",
+      "source_url": "https://github.com/sofyc/ChengyuBench",
+      "additional_urls": [
+        "https://aclanthology.org/2025.emnlp-main.119/"
+      ],
+      "tags": [
+        "成语",
+        "语用",
+        "褒贬",
+        "恰当性",
+        "语言模型"
+      ],
+      "related_ids": [
+        "R053",
+        "R055"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R055",
+      "name": "ePiC",
+      "category": "sign-figurative",
+      "entry_type": "dataset",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "谚语—叙事对齐",
+      "description": "众包叙事、对应谚语及细粒度对齐片段，突出低词面重合条件下的抽象关系理解。",
+      "access_mode": "open_data",
+      "access_notes": "项目官网公开数据下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "叙事是众包构建材料，不是自然日常语料；谚语推荐、片段对齐和关系迁移是不同任务。",
+      "source_url": "https://epic-benchmark.github.io/",
+      "additional_urls": [],
+      "tags": [
+        "谚语",
+        "抽象意义",
+        "类比",
+        "叙事",
+        "语言模型"
+      ],
+      "related_ids": [
+        "R053",
+        "R054"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R056",
+      "name": "Google Books Ngrams",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "dataset",
+      "language_scope": "多语种，按发布版本",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "按年份汇总的n-gram频次",
+      "description": "词与短语逐年频数、书籍计数及年度总量，可用于频率轨迹与部分历时变化分析。",
+      "access_mode": "open_data",
+      "access_notes": "官方分片公开下载",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "不是完整书籍全文，也没有完整篇章语境；OCR、图书构成和版本差异会影响趋势。",
+      "source_url": "https://books.google.com/ngrams/datasets",
+      "additional_urls": [],
+      "tags": [
+        "历时",
+        "词频",
+        "文化变化",
+        "语义变化",
+        "多语种"
+      ],
+      "related_ids": [
+        "R057",
+        "R060"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R057",
+      "name": "HistWords",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "derived",
+      "language_scope": "英语、法语、德语、中文等发布部分",
+      "language_codes": [
+        "en",
+        "fr",
+        "de",
+        "zh"
+      ],
+      "data_type": "预计算历时词向量",
+      "description": "按年代训练的词向量及分析工具，可探索词义邻域及语义变化候选。",
+      "access_mode": "open_data",
+      "access_notes": "作者项目页公开向量和代码",
+      "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
+      "limitations": "属于派生表示，未自动开放所有原始训练语料；向量漂移不必然就是词义变化。",
+      "source_url": "https://nlp.stanford.edu/projects/histwords/",
+      "additional_urls": [],
+      "tags": [
+        "语义变化",
+        "历时",
+        "词向量",
+        "多语种"
+      ],
+      "related_ids": [
+        "R056"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R058",
+      "name": "OPUS",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "collection",
+      "language_scope": "多语种，含中英",
+      "language_codes": [
+        "mul",
+        "zh",
+        "en"
+      ],
+      "data_type": "平行与对齐语料集合",
+      "description": "字幕、议会、新闻和其他来源的双语对齐文本，可按语言对和子库选择。",
+      "access_mode": "open_data",
+      "access_notes": "大量子库提供公开下载；许可逐库核对",
+      "license_note": "集合不提供覆盖全部子库的统一使用许可，逐子库核对。",
+      "limitations": "OPUS是集合入口，不具有覆盖全部子库的单一使用许可；机器对齐与翻译方向质量不同。",
+      "source_url": "https://opus.nlpl.eu/",
+      "additional_urls": [],
+      "tags": [
+        "翻译",
+        "双语",
+        "平行语料",
+        "跨语言",
+        "字幕"
+      ],
+      "related_ids": [
+        "R039",
+        "R040"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R059",
+      "name": "Universal Dependencies（UD）",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "collection",
+      "language_scope": "全球多语种，含中文",
+      "language_codes": [
+        "mul",
+        "zh"
+      ],
+      "data_type": "词性、形态与依存句法树库",
+      "description": "CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标注语料比较。",
+      "access_mode": "open_data",
+      "access_notes": "版本化公开下载；许可逐树库核对",
+      "license_note": "许可逐树库而异，以每个树库的LICENSE为准。",
+      "limitations": "人工金标准与自动分析资料要区分；不同树库体裁、规模和许可不同，不是自然平衡的跨语言样本。",
+      "source_url": "https://universaldependencies.org/download.html",
+      "additional_urls": [
+        "https://universaldependencies.org/contributing/licensing.html"
+      ],
+      "tags": [
+        "句法",
+        "依存",
+        "跨语言",
+        "中文",
+        "语料标注"
+      ],
+      "related_ids": [
+        "R002",
+        "R045",
+        "R046"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    },
+    {
+      "id": "R060",
+      "name": "Project Gutenberg",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "collection",
+      "language_scope": "多语种，以英语文学材料较多",
+      "language_codes": [
+        "mul",
+        "en"
+      ],
+      "data_type": "可下载电子书全文",
+      "description": "文学和历史书籍的TXT、EPUB等全文，可构建作者、体裁或时期相关的研究语料。",
+      "access_mode": "open_data",
+      "access_notes": "免费逐书下载；版权状态与使用地区需核对",
+      "license_note": "多数作品在美国属于公版；逐书及使用地区的版权状态分别核对。",
+      "limitations": "多数作品是在美国的公版资料；作者年代不等于该电子文本所依版本年代，不能默认是平衡历时语料。",
+      "source_url": "https://www.gutenberg.org/ebooks/",
+      "additional_urls": [
+        "https://www.gutenberg.org/policy/permission.html"
+      ],
+      "tags": [
+        "文学",
+        "历时",
+        "作者",
+        "翻译",
+        "体裁"
+      ],
+      "related_ids": [
+        "R056"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false
+      }
+    }
+  ]
+}

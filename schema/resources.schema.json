@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Language Resource Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schema_version",
+    "catalog_version",
+    "updated_on",
+    "title",
+    "description",
+    "resource_count",
+    "access_modes",
+    "categories",
+    "resources"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "catalog_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "resource_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "access_modes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/resource"
+      }
+    }
+  },
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "category",
+        "entry_type",
+        "language_scope",
+        "language_codes",
+        "data_type",
+        "description",
+        "access_mode",
+        "access_notes",
+        "license_note",
+        "limitations",
+        "source_url",
+        "additional_urls",
+        "tags",
+        "related_ids",
+        "verification"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^R[0-9]{3,}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "enum": [
+            "child-language",
+            "spoken-variation",
+            "social-interaction",
+            "lexical-cognition",
+            "chinese-l2-bilingual",
+            "crossling-cultural",
+            "sign-figurative",
+            "diachronic-parallel-syntax"
+          ]
+        },
+        "entry_type": {
+          "enum": [
+            "dataset",
+            "collection",
+            "aggregate",
+            "alignment",
+            "derived"
+          ]
+        },
+        "language_scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 2
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "data_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "access_mode": {
+          "enum": [
+            "open_data",
+            "free_registration",
+            "application_required",
+            "mixed_access",
+            "license_review"
+          ]
+        },
+        "access_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "additional_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "uniqueItems": true
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "related_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^R[0-9]{3,}$"
+          },
+          "uniqueItems": true
+        },
+        "verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "documentation_checked_on",
+            "scope",
+            "download_tested",
+            "data_files_validated"
+          ],
+          "properties": {
+            "documentation_checked_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "scope": {
+              "const": "resource_description_and_access_documentation"
+            },
+            "download_tested": {
+              "type": "boolean"
+            },
+            "data_files_validated": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,12 +6,13 @@
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的12条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：169条仅核对说明、1条读取头部样例、1条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：164条仅核对说明、0条读取头部样例、7条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
 - [核验进度与待检查清单](catalog/verification-status.md)：全部179条逐项状态、OSF恢复后的待办。
+- [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
 - [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。
 - [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。
@@ -100,22 +101,22 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R047 | [D-PLACE](catalog/crossling-cultural.md#r047) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R048 | [PHOIBLE](catalog/crossling-cultural.md#r048) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R049 | [Intercontinental Dictionary Series（IDS）](catalog/crossling-cultural.md#r049) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R050 | [ASL-LEX](catalog/sign-figurative.md#r050) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R050 | [ASL-LEX](catalog/sign-figurative.md#r050) | 手语、成语与抽象意义 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R051 | [Multilingual Sign Language Wordnet](catalog/sign-figurative.md#r051) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R052 | [Public DGS Corpus（MEINE DGS）](catalog/sign-figurative.md#r052) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R053 | [ChID](catalog/sign-figurative.md#r053) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R054 | [Chengyu-Bench](catalog/sign-figurative.md#r054) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R054 | [Chengyu-Bench](catalog/sign-figurative.md#r054) | 手语、成语与抽象意义 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R055 | [ePiC](catalog/sign-figurative.md#r055) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R056 | [Google Books Ngrams](catalog/diachronic-parallel-syntax.md#r056) | 历时与平行语料 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R057 | [HistWords](catalog/diachronic-parallel-syntax.md#r057) | 历时与平行语料 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R058 | [OPUS](catalog/diachronic-parallel-syntax.md#r058) | 历时与平行语料 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R059 | [Universal Dependencies（UD）](catalog/syntax.md#r059) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R060 | [Project Gutenberg](catalog/diachronic-parallel-syntax.md#r060) | 历时与平行语料 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R061 | [UD-English-CHILDES（儿童及成人互动依存树库）](catalog/syntax.md#r061) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R061 | [UD-English-CHILDES（儿童及成人互动依存树库）](catalog/syntax.md#r061) | 句法、可接受度与句子加工 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R062 | [CHILDES Treebank / Pearl–Sprouse（成分句法）](catalog/syntax.md#r062) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R063 | [CoLA（英语可接受度语料）](catalog/syntax.md#r063) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R064 | [CoLAC（中文可接受度语料）](catalog/syntax.md#r064) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R065 | [BLiMP（英语句法最小对立）](catalog/syntax.md#r065) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R065 | [BLiMP（英语句法最小对立）](catalog/syntax.md#r065) | 句法、可接受度与句子加工 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R066 | [CLiMP（中文语言模型句法评测）](catalog/syntax.md#r066) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R067 | [SLING（中文句法语义评测）](catalog/syntax.md#r067) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R068 | [ZhoBLiMP（中文35k最小对立）](catalog/syntax.md#r068) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -197,7 +198,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R144 | [CLAPI（法语自然互动音视频）](catalog/social-interaction.md#r144) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R145 | [MultiWOZ（任务型人际文字对话）](catalog/social-interaction.md#r145) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R146 | [SpokenWOZ（任务型真实语音对话）](catalog/social-interaction.md#r146) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R147 | [SPAML（多语言语义启动）](catalog/lexical-cognition.md#r147) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R147 | [SPAML（多语言语义启动）](catalog/lexical-cognition.md#r147) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R148 | [TROLLing / DataverseNO（语言学数据仓库）](catalog/resource-portals.md#r148) | 继续发现资源的平台与索引 | 发现入口 | 发现入口；不作为数据文件验收 |
 | R149 | [CLARIN Virtual Language Observatory（VLO）](catalog/resource-portals.md#r149) | 继续发现资源的平台与索引 | 发现入口 | 发现入口；不作为数据文件验收 |
 | R150 | [CLARIN Resource Families](catalog/resource-portals.md#r150) | 继续发现资源的平台与索引 | 发现入口 | 发现入口；不作为数据文件验收 |
@@ -224,7 +225,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R171 | [中文体动词补语强制转换：自定步速阅读](catalog/syntax.md#r171) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R172 | [西班牙语关系从句岛效应：实验数据与代码](catalog/syntax.md#r172) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R173 | [事件结构、习语与轻动词的结构启动](catalog/syntax.md#r173) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R174 | [SCARFS：熟人与陌生人的指称互动](catalog/social-interaction.md#r174) | 社会互动与语用 | 有数据发布说明 | 已读文件头部样例 |
+| R174 | [SCARFS：熟人与陌生人的指称互动](catalog/social-interaction.md#r174) | 社会互动与语用 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R175 | [烹饪对话礼貌：公开标注、模拟样例与分析](catalog/social-interaction.md#r175) | 社会互动与语用 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R176 | [LLM方式含意：目标刺激集与分析脚本](catalog/social-interaction.md#r176) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R177 | [波兰语语义相关度、启动与语义向量](catalog/lexical-cognition.md#r177) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |

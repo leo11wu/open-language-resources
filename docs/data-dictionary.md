@@ -51,7 +51,7 @@
 | `repository_documentation` | 作者仓库中的README或发布说明 |
 | `indexed_project_wiki` | 项目Wiki的可检索索引内容；OSF本次维护限制了实时文件核对 |
 
-`documentation_checked_on` 是说明核对日期。多数条目仍只核对文档，两个文件验收标志均为 `false`。候选复核中，R175完整读取并解析了一份30行15列的小CSV，故其 `download_tested=true`；这只对应选定文件，`data_files_validated` 仍为 `false`，不代表全部模拟对话、标注和分析均已验收。
+`documentation_checked_on` 是说明核对日期。多数条目仍只核对文档，两个文件验收标志均为 `false`。候选复核中，早期R175完整读取并解析了一份30行15列的小CSV，故其 `download_tested=true`；这只对应选定文件，`data_files_validated` 仍为 `false`，不代表全部模拟对话、标注和分析均已验收。
 
 当 `scope=resource_documentation_and_selected_file_checks` 时，核对包含选定文件读取。可选的 `file_checks` 逐项保留文件URL、读取范围、结果和Git blob标识；`first_8_lines`、`first_4_lines` 是头部样例，`complete_small_csv` 是完整的小CSV。头部样例或一次成功读取均不足以证明全部数据可解析、内容准确或分析可复现。
 
@@ -80,3 +80,11 @@
 结构化清单的 `main_resources` 覆盖全部R编号；`remaining_candidates` 保留未纳入候选的具体问题；`norare_sources` 保留全部来源记录及原始入口。后两组与主目录可能重叠，不相加计数。`next_steps` 是后续任务，不是已经完成的操作。
 
 平台维护信息保存在 `data/platform-observations.json`。`evidence_type=user_supplied_official_notice` 明确表示官网通知正文由用户提供，`notice_firsthand_checked=false` 表示本次未独立取得实时正文；计划恢复时间与实际恢复结果分开记录。
+
+## 选定文件检查的新增类型（Schema 1.3.0）
+
+`complete_csv`、`complete_json`、`complete_jsonl`、`complete_conllu` 表示完整读取并解析所指文件；`complete_xlsx_sheet` 表示读取指定翻译工作表，实际核对列在结果中另列。它们均不是整套资源验收，也不等于人工标签审核或分析复现。`complete_small_csv` 仍保留旧记录。
+
+`file_checks` 至少提供 `blob_sha` 或 `sha256`：前者是源文件Git blob标识，后者用于GitHub正式发布资产等不直接对应仓库文件的内容校验。
+
+本轮不依赖OSF的组合探索和逐文件记录见 `research/nonosf-opportunities-2026-10-17.md` 与 `data/nonosf-combination-audit-2026-10-17.json`。机械对齐、全局键唯一性、人工语义等价与正式效果分析分开报告。

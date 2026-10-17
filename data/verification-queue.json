@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_on": "2026-10-17",
-  "catalog_version": "2.1.1",
+  "catalog_version": "2.2.0",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -13,14 +13,14 @@
   "summary": {
     "main_resource_count": 179,
     "main_by_check_state": {
-      "documentation_only": 169,
-      "file_preview": 1,
-      "selected_file_checked": 1,
+      "documentation_only": 164,
+      "file_preview": 0,
+      "selected_file_checked": 7,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 2,
-    "main_without_recorded_file_reads": 177,
+    "main_with_recorded_file_reads": 7,
+    "main_without_recorded_file_reads": 172,
     "osf_associated_main_count": 73,
     "remaining_candidate_count": 12,
     "norare_source_record_count": 182,
@@ -985,16 +985,24 @@
       "category": "sign-figurative",
       "source_url": "https://asl-lex.org/download.html",
       "platforms": [
-        "project_website"
+        "project_website",
+        "github"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/ASL-LEX/asl-lex/blob/master/visualization/data/scatterplot_data.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：2768条记录、5列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "96e8498369a9795d576c5120b50ef0843bf2d43f"
+        }
+      ],
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1065,13 +1073,32 @@
         "github"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/sofyc/ChengyuBench/blob/main/dataset/dataset-connotation.json",
+          "read_scope": "complete_json",
+          "result": "完整读取并解析选定文件：540条记录、3列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "4a99007132a064095b6b3333e2aaf0c000a434b3"
+        },
+        {
+          "url": "https://github.com/sofyc/ChengyuBench/blob/main/dataset/dataset-appropriateness.json",
+          "read_scope": "complete_json",
+          "result": "完整读取并解析选定文件：572条记录、4列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "3c021c1ab28a7bcf99e44711126815777a71aea6"
+        },
+        {
+          "url": "https://github.com/sofyc/ChengyuBench/blob/main/dataset/dataset-use.json",
+          "read_scope": "complete_json",
+          "result": "完整读取并解析选定文件：1825条记录、4列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "cec791b7f666de59751fd6af6ffb5b76989203e1"
+        }
+      ],
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1198,13 +1225,20 @@
         "github"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/UniversalDependencies/UD_English-CHILDES/blob/master/en_childes-ud-dev.conllu",
+          "read_scope": "complete_conllu",
+          "result": "完整解析开发集：3860句、24310个整数编号词元，7名目标儿童，整数词元行均10列；保留年龄、角色及原始句子编号，不代表全树库验收。",
+          "blob_sha": "46eb2cf9b596aa716720300734471c4eb1064067"
+        }
+      ],
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1274,13 +1308,20 @@
         "github"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/alexwarstadt/blimp/blob/master/data/determiner_noun_agreement_1.jsonl",
+          "read_scope": "complete_jsonl",
+          "result": "完整读取并解析选定文件：1000条记录、13列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "0371d50db2793a9c8e8c595b03bde41f5005a931"
+        }
+      ],
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -3009,13 +3050,56 @@
         "github"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/en_prime_summary.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：1000条记录、37列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "sha256": "4c6241279f57933f48a7f8a63ea54560534e76ae74d0d52314b7d62bddab60a1"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/finalize_stimuli/en/en_trials_final.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：5000条记录、6列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "e1dee2e0b9a09d3a3288804a1d39f99ddebf9cee"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/matched_stimuli/en_trial_unique.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：1000条记录、5列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "ff86d9bd00bdaf3af921488ff3453ec2acda5e28"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/zh_prime_summary.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：1000条记录、37列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "sha256": "f6ff4205d759f566edf228a8ce4f4a347e0ba2180340ac72fb4528c1df5810e3"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/finalize_stimuli/zh/simplified/zh_trials_final.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：5000条记录、6列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "9b7a5fb20e14c2555c0eeb72fd227654c0e72de2"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/matched_stimuli/zh_trial_unique.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：1000条记录、5列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "0b266449ea4f3a319e5a575cd60bb883492cdc59"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/finalize_stimuli/zh/simplified/zh_translated_final.xlsx",
+          "read_scope": "complete_xlsx_sheet",
+          "result": "完整读取唯一翻译工作表1,000行，核对id、英文提示词/目标词、最终中文提示词/目标词5个对齐字段；尚未完成人工语义等价核对。",
+          "blob_sha": "965388d39e787abeec10853cc1c58ce25672d284"
+        }
+      ],
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -3533,21 +3617,33 @@
       "osf_ids": [
         "hcya6"
       ],
-      "check_state": "file_preview",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
       "recorded_file_checks": [
         {
           "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
-          "read_scope": "first_8_lines",
-          "result": "公开读取表头及前7行，含rt、pair_type、trial_result和伙伴/轮次字段；未读取全表。",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：5000条记录、21列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
           "blob_sha": "3e123e34ce429bb92a7195cbdd0b002c2a54f67b"
+        },
+        {
+          "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/full_nps.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：4701条记录、12列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "c9ea3aa27247f815ab57fbfe457a2b5ac403ff78"
+        },
+        {
+          "url": "https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/item_data.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析选定文件：558条记录、12列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+          "blob_sha": "ca6224480ec3788a5b1469b324f37a25cc5d2fe3"
         }
       ],
       "next_steps": [
         "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "头部样例已读取；完整读取代表性数据表，核对行列、缺失值、变量及发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -3583,7 +3679,7 @@
       ],
       "next_steps": [
         "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "已验收范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },

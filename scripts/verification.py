@@ -34,7 +34,7 @@ def next_steps(resource):
     if 'osf' in resource['platforms']:
         steps.append('OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。')
     if state == 'selected_file_checked':
-        steps.append('已验收范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。')
+        steps.append('已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。')
     elif state == 'file_preview':
         steps.append('头部样例已读取；完整读取代表性数据表，核对行列、缺失值、变量及发布范围。')
     else:

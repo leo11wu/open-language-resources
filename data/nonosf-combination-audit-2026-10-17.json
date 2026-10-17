@@ -1,0 +1,623 @@
+{
+  "checked_on": "2026-10-17",
+  "purpose": "非OSF下载路径的资源组合探索；仅检查选定文件、字段和对齐可行性，未运行论文主分析或模型实验。",
+  "inventory": {
+    "main_resource_count": 179,
+    "main_entries_without_osf_platform_tag": 106,
+    "classification_note": "按真实获取路径判断独立于OSF；SCARFS虽关联OSF，但有作者维护的独立GitHub公开数据。",
+    "main_resources_with_selected_file_checks_this_round": [
+      "R050",
+      "R054",
+      "R061",
+      "R065",
+      "R147",
+      "R174"
+    ],
+    "selected_files_read": 16
+  },
+  "selected_file_inspections": [
+    {
+      "repo": "seantrott/scarfs",
+      "path": "data/processed/behavioral_results_public.csv",
+      "sha": "3e123e34ce429bb92a7195cbdd0b002c2a54f67b",
+      "read_scope": "complete_csv",
+      "row_count": 5000,
+      "column_count": 21,
+      "headers": [
+        "rt",
+        "session_id",
+        "button_pressed",
+        "card",
+        "critical_trial",
+        "color",
+        "pair_type",
+        "trial_result",
+        "trial_with_partner",
+        "Participant ID",
+        "Session Number",
+        "Deck Color",
+        "Order",
+        "MINT_Score_Uncued_Correct",
+        "ppt_id",
+        "Gender",
+        "Native_Speaker",
+        "Played_before",
+        "Taboo_expertise",
+        "partner_id",
+        "partner_closeness"
+      ],
+      "target_count": 471,
+      "ppt_count": 76,
+      "pair_types": [
+        "Friend",
+        "Stranger"
+      ]
+    },
+    {
+      "repo": "seantrott/scarfs",
+      "path": "data/processed/full_nps.csv",
+      "sha": "c9ea3aa27247f815ab57fbfe457a2b5ac403ff78",
+      "read_scope": "complete_csv",
+      "row_count": 4701,
+      "column_count": 12,
+      "headers": [
+        "",
+        "ppt_id",
+        "head_noun",
+        "card",
+        "pair_type",
+        "trial_result",
+        "head_noun_tag",
+        "dep",
+        "AoA",
+        "Conc.M",
+        "Dom_Pos",
+        "Lg10WF"
+      ],
+      "target_count": 416,
+      "ppt_count": 65,
+      "pair_types": [
+        "Friend",
+        "Stranger"
+      ]
+    },
+    {
+      "repo": "seantrott/scarfs",
+      "path": "data/lexical_statistics/item_data.csv",
+      "sha": "ca6224480ec3788a5b1469b324f37a25cc5d2fe3",
+      "read_scope": "complete_csv",
+      "row_count": 558,
+      "column_count": 12,
+      "headers": [
+        "Item #",
+        "Deck color",
+        "Word to be explained",
+        "eliminated because...",
+        "cue 1",
+        "cue 2",
+        "cue 3 ",
+        "cue 4",
+        "cue 5",
+        "Notes",
+        "Coarse_grained_LZ",
+        "Coarse_grained_EW"
+      ],
+      "target_count": 0,
+      "ppt_count": 0
+    },
+    {
+      "repo": "ASL-LEX/asl-lex",
+      "path": "visualization/data/scatterplot_data.csv",
+      "sha": "96e8498369a9795d576c5120b50ef0843bf2d43f",
+      "read_scope": "complete_csv",
+      "row_count": 2768,
+      "column_count": 5,
+      "headers": [
+        "Code",
+        "SignFrequency(M)",
+        "Iconicity(M)",
+        "LexicalClass",
+        "SignType"
+      ]
+    },
+    {
+      "repo": "sofyc/ChengyuBench",
+      "path": "dataset/dataset-connotation.json",
+      "sha": "4a99007132a064095b6b3333e2aaf0c000a434b3",
+      "read_scope": "complete_json",
+      "row_count": 540,
+      "headers": [
+        "idiom",
+        "sentiment",
+        "index"
+      ],
+      "unique_idioms": 540,
+      "idiom_lengths": [
+        4
+      ]
+    },
+    {
+      "repo": "sofyc/ChengyuBench",
+      "path": "dataset/dataset-appropriateness.json",
+      "sha": "3c021c1ab28a7bcf99e44711126815777a71aea6",
+      "read_scope": "complete_json",
+      "row_count": 572,
+      "headers": [
+        "sentence",
+        "correct",
+        "index",
+        "idiom"
+      ],
+      "unique_idioms": 441,
+      "idiom_lengths": [
+        4,
+        5,
+        9,
+        11,
+        6
+      ]
+    },
+    {
+      "repo": "UniversalDependencies/UD_English-CHILDES",
+      "path": "en_childes-ud-dev.conllu",
+      "sha": "46eb2cf9b596aa716720300734471c4eb1064067",
+      "read_scope": "complete_conllu",
+      "sentences": 3860,
+      "tokens": 24310,
+      "children": [
+        "Abe",
+        "Lily",
+        "Laura",
+        "Adam",
+        "Roman",
+        "Sarah",
+        "Naima"
+      ],
+      "roles": {
+        "Target_Child": 1483,
+        "Mother": 1749,
+        "Father": 330,
+        "Investigator": 276,
+        "Sister": 10,
+        "Playmate": 3,
+        "Grandmother": 2,
+        "Child": 3,
+        "Relative": 2,
+        "Media": 1,
+        "Student": 1
+      },
+      "age_field": "child_age (months)",
+      "age_min": 14.230271668822768,
+      "age_max": 84.46169325858847,
+      "all_have_original_sent_id": true,
+      "all_rows_10_cols": true,
+      "metadata_fields": [
+        "sent_id",
+        "original_sent_id",
+        "childes_toks",
+        "child_name",
+        "corpus_name",
+        "gold_annotation",
+        "child_age",
+        "child_gender",
+        "speaker_role",
+        "type",
+        "text",
+        "s_24_sent_id"
+      ]
+    },
+    {
+      "repo": "alexwarstadt/blimp",
+      "path": "data/determiner_noun_agreement_1.jsonl",
+      "sha": "0371d50db2793a9c8e8c595b03bde41f5005a931",
+      "read_scope": "complete_jsonl",
+      "row_count": 1000,
+      "headers": [
+        "sentence_good",
+        "sentence_bad",
+        "one_prefix_prefix",
+        "one_prefix_word_good",
+        "one_prefix_word_bad",
+        "field",
+        "linguistics_term",
+        "UID",
+        "simple_LM_method",
+        "one_prefix_method",
+        "two_prefix_method",
+        "lexically_identical",
+        "pairID"
+      ]
+    },
+    {
+      "repo": "sofyc/ChengyuBench",
+      "path": "dataset/dataset-use.json",
+      "sha": "cec791b7f666de59751fd6af6ffb5b76989203e1",
+      "read_scope": "complete_json",
+      "row_count": 1825,
+      "headers": [
+        "text",
+        "idiom",
+        "source",
+        "index"
+      ],
+      "unique_idioms": 1067
+    },
+    {
+      "repo": "SemanticPriming/SPAML",
+      "path": "en_prime_summary.csv",
+      "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/en_prime_summary.csv",
+      "version": "v1.0.2",
+      "sha256": "4c6241279f57933f48a7f8a63ea54560534e76ae74d0d52314b7d62bddab60a1",
+      "read_scope": "complete_csv",
+      "row_count": 1000,
+      "headers": [
+        "target_word_unique",
+        "avgRT_related",
+        "avgRT_unrelated",
+        "avgZ_RT_related",
+        "avgZ_RT_unrelated",
+        "seRT_related",
+        "seRT_unrelated",
+        "seZ_RT_related",
+        "seZ_RT_unrelated",
+        "target_answeredN_related",
+        "target_answeredN_unrelated",
+        "target_timeoutN_related",
+        "target_timeoutN_unrelated",
+        "target_correct_keep_related",
+        "target_correct_keep_unrelated",
+        "target_answeredN_keep_related",
+        "target_answeredN_keep_unrelated",
+        "target_timeoutN_keep_related",
+        "target_timeoutN_keep_unrelated",
+        "target_prop_correct_keep_related",
+        "target_prop_correct_keep_unrelated",
+        "cue_answeredN_related",
+        "cue_answeredN_unrelated",
+        "cue_timeoutN_related",
+        "cue_timeoutN_unrelated",
+        "cue_correct_keep_related",
+        "cue_correct_keep_unrelated",
+        "cue_answeredN_keep_related",
+        "cue_answeredN_keep_unrelated",
+        "cue_timeoutN_keep_related",
+        "cue_timeoutN_keep_unrelated",
+        "cue_prop_correct_keep_related",
+        "cue_prop_correct_keep_unrelated",
+        "target_sample_keep_related",
+        "target_sample_keep_unrelated",
+        "avgRT_prime",
+        "avgZ_prime"
+      ]
+    },
+    {
+      "repo": "SemanticPriming/SPAML",
+      "path": "03_Materials/finalize_stimuli/en/en_trials_final.csv",
+      "sha": "e1dee2e0b9a09d3a3288804a1d39f99ddebf9cee",
+      "read_scope": "complete_csv",
+      "row_count": 5000,
+      "headers": [
+        "en_cue",
+        "en_target",
+        "type",
+        "cue_type",
+        "target_type",
+        "en_cosine"
+      ]
+    },
+    {
+      "path": "03_Materials/matched_stimuli/en_trial_unique.csv",
+      "sha": "ff86d9bd00bdaf3af921488ff3453ec2acda5e28",
+      "rows": 1000,
+      "columns": [
+        "target_word_unique",
+        "word_combo_related",
+        "word_combo_unrelated",
+        "cue_word_related",
+        "cue_word_unrelated"
+      ],
+      "matched_summary_keys": 1000,
+      "repo": "SemanticPriming/SPAML",
+      "read_scope": "complete_csv"
+    },
+    {
+      "repo": "SemanticPriming/SPAML",
+      "path": "zh_prime_summary.csv",
+      "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/zh_prime_summary.csv",
+      "version": "v1.0.2",
+      "sha256": "f6ff4205d759f566edf228a8ce4f4a347e0ba2180340ac72fb4528c1df5810e3",
+      "read_scope": "complete_csv",
+      "row_count": 1000,
+      "headers": [
+        "target_word_unique",
+        "avgRT_related",
+        "avgRT_unrelated",
+        "avgZ_RT_related",
+        "avgZ_RT_unrelated",
+        "seRT_related",
+        "seRT_unrelated",
+        "seZ_RT_related",
+        "seZ_RT_unrelated",
+        "target_answeredN_related",
+        "target_answeredN_unrelated",
+        "target_timeoutN_related",
+        "target_timeoutN_unrelated",
+        "target_correct_keep_related",
+        "target_correct_keep_unrelated",
+        "target_answeredN_keep_related",
+        "target_answeredN_keep_unrelated",
+        "target_timeoutN_keep_related",
+        "target_timeoutN_keep_unrelated",
+        "target_prop_correct_keep_related",
+        "target_prop_correct_keep_unrelated",
+        "cue_answeredN_related",
+        "cue_answeredN_unrelated",
+        "cue_timeoutN_related",
+        "cue_timeoutN_unrelated",
+        "cue_correct_keep_related",
+        "cue_correct_keep_unrelated",
+        "cue_answeredN_keep_related",
+        "cue_answeredN_keep_unrelated",
+        "cue_timeoutN_keep_related",
+        "cue_timeoutN_keep_unrelated",
+        "cue_prop_correct_keep_related",
+        "cue_prop_correct_keep_unrelated",
+        "target_sample_keep_related",
+        "target_sample_keep_unrelated",
+        "avgRT_prime",
+        "avgZ_prime"
+      ]
+    },
+    {
+      "repo": "SemanticPriming/SPAML",
+      "path": "03_Materials/finalize_stimuli/zh/simplified/zh_trials_final.csv",
+      "sha": "9b7a5fb20e14c2555c0eeb72fd227654c0e72de2",
+      "read_scope": "complete_csv",
+      "row_count": 5000,
+      "headers": [
+        "zh_cue",
+        "zh_target",
+        "type",
+        "cue_type",
+        "target_type",
+        "zh_cosine"
+      ]
+    },
+    {
+      "path": "03_Materials/matched_stimuli/zh_trial_unique.csv",
+      "sha": "0b266449ea4f3a319e5a575cd60bb883492cdc59",
+      "rows": 1000,
+      "columns": [
+        "target_word_unique",
+        "word_combo_related",
+        "word_combo_unrelated",
+        "cue_word_related",
+        "cue_word_unrelated"
+      ],
+      "matched_summary_keys": 1000,
+      "repo": "SemanticPriming/SPAML",
+      "read_scope": "complete_csv"
+    },
+    {
+      "repo": "SemanticPriming/SPAML",
+      "path": "03_Materials/finalize_stimuli/zh/simplified/zh_translated_final.xlsx",
+      "sha": "965388d39e787abeec10853cc1c58ce25672d284",
+      "read_scope": "complete_xlsx_sheet",
+      "row_count": 1000,
+      "selected_fields": [
+        "id",
+        "en_cue",
+        "en_target",
+        "zh_cue_Melinna",
+        "zh_target_Melinna"
+      ],
+      "note": "完整读取唯一工作表并核对上述对齐字段；不表示所有历史译法列完成语义验收。",
+      "selected_field_count": 5
+    }
+  ],
+  "join_checks": {
+    "spaml_within_language": {
+      "en": {
+        "stimulus_rows": 5000,
+        "related_pairs": 1000,
+        "unique_related_targets": 1000,
+        "raw_target_to_summary_keys": 1000,
+        "exact_key_overlap": 1000,
+        "suffixed_summary_keys": 0,
+        "cosine_field": "en_cosine"
+      },
+      "zh": {
+        "stimulus_rows": 5000,
+        "related_pairs": 1000,
+        "unique_related_targets": 955,
+        "raw_target_to_summary_keys": 1000,
+        "exact_key_overlap": 955,
+        "suffixed_summary_keys": 45,
+        "cosine_field": "zh_cosine"
+      }
+    },
+    "spaml_chinese_duplicates": {
+      "relatedPairs": 1000,
+      "targetsWithSinglePair": 912,
+      "targetsWithMultiplePairs": 43,
+      "rowsInAmbiguousTargetGroups": 88
+    },
+    "spaml_crosslanguage": {
+      "translation_rows": 1000,
+      "english_pair_exact_unique_matches": 1000,
+      "chinese_pair_exact_unique_matches": 995,
+      "both_languages_exact_unique_matches": 995,
+      "chinese_pair_ambiguous_matches": 5,
+      "chinese_pair_no_match": 0,
+      "english_pair_no_match": 0,
+      "rule": "Unicode NFC, trim, lowercase; author translation workbook final fields plus explicit related/unrelated matched-stimuli files; reject zero or multiple pair matches; no row-order join.",
+      "manual_semantic_review_completed": false,
+      "unique_english_keys_retained": 995,
+      "unique_chinese_keys_retained": 994,
+      "one_to_one_retained_row_count": 993,
+      "one_to_one_unique_english_keys": 993,
+      "one_to_one_unique_chinese_keys": 993,
+      "shared_key_rows_removed": 2
+    },
+    "scarfs_behavioral_np": {
+      "nps_rows": 4701,
+      "keys_with_no_behavioral_match": 0,
+      "keys_with_multiple_behavioral_matches": 0,
+      "behavioral_rows": 5000,
+      "missing_trial_session_fields_in_nps": true
+    },
+    "scarfs_target_inventory": {
+      "np_rows": 4701,
+      "unique_behavioral_keys": 2193,
+      "unique_targets": 416,
+      "targets_in_item_file": 415,
+      "duplicate_item_target_names": 34
+    },
+    "chengyu_task_overlap": {
+      "connotation": 540,
+      "appropriateness": 441,
+      "open_cloze": 1067,
+      "connotation_appropriateness": 82,
+      "all_three": 17,
+      "no_three_character_items": true
+    },
+    "spaml_identity_pairs": {
+      "en": {
+        "related_pairs": 1000,
+        "normalized_cue_equals_target": 0,
+        "examples": []
+      },
+      "zh": {
+        "related_pairs": 1000,
+        "normalized_cue_equals_target": 2,
+        "examples": [
+          {
+            "zh_cue": "影响",
+            "zh_target": "影响",
+            "type": "related",
+            "cue_type": "word",
+            "target_type": "word",
+            "zh_cosine": "1"
+          },
+          {
+            "zh_cue": "国家",
+            "zh_target": "国家",
+            "type": "related",
+            "cue_type": "word",
+            "target_type": "word",
+            "zh_cosine": "1"
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "995条候选行可分别唯一匹配中英词对，但其中2行共享同一中文键；进一步要求两端全局一对一后保留993组，7条留待人工复核。这是词面与作者映射核对，不等于语义等价人工验收。",
+    "SWOW本轮只核对官网资源说明和当前下载要求；尚未获取原始关联表，未计算与SPAML或SCARFS的实际联想覆盖率。",
+    "SCARFS完整aligned_results_public.csv读取未成功；已完整读取行为表、缩减NP表和项目卡片表，不以此代替全语料时序验收。",
+    "4701条NP映射到2193个行为试次键；多条NP共享同一试次结果，不能当作4701个独立试次。",
+    "UD-English-CHILDES仅完整检查开发集；随机分割的句子行序不代表原始会话顺序。",
+    "BLiMP本轮只检查一个1000对的范式；刺激为专家规则生成，与儿童自然话语的数据性质不同。",
+    "没有读取本人的既有项目原始文件或重跑既有分析；研究经历的对应依据此前工作记录。",
+    "本次检索为定向探索，不是穷尽综述，未确定首创性或承诺期刊层级。"
+  ],
+  "sources": [
+    "https://github.com/SemanticPriming/SPAML/releases/tag/v1.0.2",
+    "https://www.nature.com/articles/s41562-025-02254-x",
+    "https://users.ugent.be/~wduyck/articles/Buchananetal2025.pdf",
+    "https://www.smallworldofwords.org/en/project/research",
+    "https://www.nature.com/articles/s41597-025-05156-9",
+    "https://github.com/UniversalDependencies/UD_English-CHILDES",
+    "https://github.com/alexwarstadt/blimp",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5894936/",
+    "https://github.com/seantrott/scarfs",
+    "https://link.springer.com/article/10.1007/s10579-022-09619-y",
+    "https://github.com/sofyc/ChengyuBench",
+    "https://epic-benchmark.github.io/",
+    "https://asl-lex.org/download.html",
+    "https://github.com/UniversalDependencies/UD_English-ESL"
+  ],
+  "schema_version": "1.0.0",
+  "opportunities": [
+    {
+      "id": "O01",
+      "priority": 1,
+      "title": "翻译等价是否意味着联想等价",
+      "main_resource_ids": [
+        "R147",
+        "R022"
+      ],
+      "prior_research_links": [
+        "中英启动",
+        "人—模型比较",
+        "双语词典"
+      ],
+      "claim_status": [
+        "measurement-sensitive",
+        "resource-limited"
+      ],
+      "decision": "revise",
+      "next_gate": "人工语义核对；取得正式联想版本并测两个条件的覆盖率和解释分离能力。"
+    },
+    {
+      "id": "O02",
+      "priority": 2,
+      "title": "词类线索与结构关系线索能否分离",
+      "main_resource_ids": [
+        "R061",
+        "R065"
+      ],
+      "prior_research_links": [
+        "功能词支架",
+        "有效探测",
+        "句法指标"
+      ],
+      "claim_status": [
+        "mixed",
+        "untested_in_this_exploration"
+      ],
+      "decision": "revise",
+      "next_gate": "标签误差抽查；留儿童和词项验证；检查与直接先例的区别。"
+    },
+    {
+      "id": "O03",
+      "priority": 3,
+      "title": "朋友能否理解更不典型的描述",
+      "main_resource_ids": [
+        "R174",
+        "R022"
+      ],
+      "prior_research_links": [
+        "简短律",
+        "语言效率",
+        "社会互动"
+      ],
+      "claim_status": [
+        "partial",
+        "resource-limited"
+      ],
+      "decision": "revise",
+      "next_gate": "常模覆盖、禁用词校正、完整时序表与试次单位验收。"
+    },
+    {
+      "id": "O04",
+      "priority": 4,
+      "title": "成语理解是否对关系改变敏感",
+      "main_resource_ids": [
+        "R054",
+        "R055"
+      ],
+      "prior_research_links": [
+        "成语",
+        "抽象情境映射",
+        "人—LLM评测"
+      ],
+      "claim_status": [
+        "partial",
+        "resource-limited"
+      ],
+      "decision": "revise",
+      "next_gate": "补充受控关系最小对立与人工标注；不能仅用17个三任务共同条目替代。"
+    }
+  ]
+}

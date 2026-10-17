@@ -74,6 +74,13 @@ def main():
         check(row['category'] in categories and row['counts_as_main_resource'] is False,'Candidate categorization invalid')
     queue=json.loads((ROOT/'data/verification-queue.json').read_text())
     check(queue==verification_queue(catalog,source,candidate),'Verification queue differs from recorded resource evidence')
+    for path in (ROOT/'data').glob('nonosf-combination-audit-*.json'):
+        audit=json.loads(path.read_text())
+        check(audit['inventory']['selected_files_read']==len(audit['selected_file_inspections']),'Selected-file research audit count mismatch')
+        check(all(rid in ids for rid in audit['inventory']['main_resources_with_selected_file_checks_this_round']),'Research audit refers to missing main resource')
+        check(all(rid in ids for row in audit.get('opportunities',[]) for rid in row['main_resource_ids']),'Research opportunity refers to missing main resource')
+        alignment=audit['join_checks']['spaml_crosslanguage']
+        check(alignment['one_to_one_retained_row_count']==alignment['one_to_one_unique_english_keys']==alignment['one_to_one_unique_chinese_keys'],'Retained bilingual pairs are not one-to-one')
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
     for path in audit_paths:
         audit=json.loads(path.read_text())

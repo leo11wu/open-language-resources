@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/resources.schema.json",
-  "schema_version": "1.2.0",
-  "catalog_version": "2.1.1",
+  "schema_version": "1.3.0",
+  "catalog_version": "2.2.0",
   "updated_on": "2026-10-17",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
@@ -1086,9 +1086,9 @@
       ],
       "data_type": "人类词汇联想",
       "description": "提示词与联想反应及由此形成的关系强度，可建立人类语义关联网络并与模型表示比较。",
-      "access_mode": "open_data",
-      "access_notes": "正式发布数据可取得；英语页列CC BY-NC-ND 3.0",
-      "license_note": "英语正式数据页注明CC BY-NC-ND 3.0；其他语种和版本分别核对。",
+      "access_mode": "free_registration",
+      "access_notes": "官网下载页现要求提供姓名和邮箱；非商业研究用途免费。按语言及正式版本选择原始/预处理数据或有向联想表；当前展示页面不等于完整发布数据。",
+      "license_note": "项目官网限制未获许可的再分发及商业使用；页面列有CC BY-NC-ND 3.0，各语言/版本仍需核对。",
       "limitations": "联想关系不等于纯语义相似；各语种应分别核对发布版本、参与者变量和使用条件。",
       "source_url": "https://smallworldofwords.org/en/project/research",
       "additional_urls": [
@@ -1113,9 +1113,10 @@
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://smallworldofwords.org/en/project/research",
-          "https://simondedeyne.me/data/"
+          "https://simondedeyne.me/data/",
+          "https://www.smallworldofwords.org/en/project/research"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "本轮读取实时官网说明，确认正式语种版本与下载表单的姓名/邮箱要求；未提交个人信息、未取得联想原表，未计算与其他资源的实际覆盖率。"
       },
       "platforms": [
         "project_website"
@@ -2462,18 +2463,27 @@
       ],
       "verification": {
         "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://asl-lex.org/download.html",
           "https://asl-lex.org/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "本轮完整读取2,768行5列的可视化子表，核对Code、主观频率与象似性等字段；该子表不含时长，不代替原始完整数据或自然使用语料。",
+        "file_checks": [
+          {
+            "url": "https://github.com/ASL-LEX/asl-lex/blob/master/visualization/data/scatterplot_data.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：2768条记录、5列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "96e8498369a9795d576c5120b50ef0843bf2d43f"
+          }
+        ]
       },
       "platforms": [
-        "project_website"
+        "project_website",
+        "github"
       ],
       "osf_ids": [],
       "data_status": "released_data",
@@ -2657,15 +2667,35 @@
       ],
       "verification": {
         "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://github.com/sofyc/ChengyuBench",
           "https://aclanthology.org/2025.emnlp-main.119/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "本轮完整解析三个JSON：540条贬褒、572条适切性、1,825条开放填空记录；三任务共同成语17个。未重跑模型或逐条人工验收标签。",
+        "file_checks": [
+          {
+            "url": "https://github.com/sofyc/ChengyuBench/blob/main/dataset/dataset-connotation.json",
+            "read_scope": "complete_json",
+            "result": "完整读取并解析选定文件：540条记录、3列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "4a99007132a064095b6b3333e2aaf0c000a434b3"
+          },
+          {
+            "url": "https://github.com/sofyc/ChengyuBench/blob/main/dataset/dataset-appropriateness.json",
+            "read_scope": "complete_json",
+            "result": "完整读取并解析选定文件：572条记录、4列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "3c021c1ab28a7bcf99e44711126815777a71aea6"
+          },
+          {
+            "url": "https://github.com/sofyc/ChengyuBench/blob/main/dataset/dataset-use.json",
+            "read_scope": "complete_json",
+            "result": "完整读取并解析选定文件：1825条记录、4列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "cec791b7f666de59751fd6af6ffb5b76989203e1"
+          }
+        ]
       },
       "platforms": [
         "github"
@@ -2998,15 +3028,23 @@
       "osf_ids": [],
       "verification": {
         "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "repository_documentation",
         "evidence_urls": [
           "https://universaldependencies.org/treebanks/en_childes/",
           "https://github.com/UniversalDependencies/UD_English-CHILDES"
         ],
-        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+        "note": "本轮完整解析开发集3,860句、24,310个整数编号词元，核对年龄、儿童身份、说话者角色、原始句子编号及10列结构。未验收其余切分；句子行序不代表会话顺序。",
+        "file_checks": [
+          {
+            "url": "https://github.com/UniversalDependencies/UD_English-CHILDES/blob/master/en_childes-ud-dev.conllu",
+            "read_scope": "complete_conllu",
+            "result": "完整解析开发集：3860句、24310个整数编号词元，7名目标儿童，整数词元行均10列；保留年龄、角色及原始句子编号，不代表全树库验收。",
+            "blob_sha": "46eb2cf9b596aa716720300734471c4eb1064067"
+          }
+        ]
       }
     },
     {
@@ -3173,14 +3211,22 @@
       "osf_ids": [],
       "verification": {
         "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "repository_documentation",
         "evidence_urls": [
           "https://github.com/alexwarstadt/blimp"
         ],
-        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+        "note": "本轮完整解析一个限定词—名词一致范式的1,000对JSONL刺激；数据为规则生成的受控材料，未验收所有范式或重跑模型。",
+        "file_checks": [
+          {
+            "url": "https://github.com/alexwarstadt/blimp/blob/master/data/determiner_noun_agreement_1.jsonl",
+            "read_scope": "complete_jsonl",
+            "result": "完整读取并解析选定文件：1000条记录、13列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "0371d50db2793a9c8e8c595b03bde41f5005a931"
+          }
+        ]
       }
     },
     {
@@ -6838,15 +6884,60 @@
       "osf_ids": [],
       "verification": {
         "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "repository_documentation",
         "evidence_urls": [
           "https://github.com/SemanticPriming/SPAML",
-          "https://www.nature.com/articles/s41562-025-02254-x"
+          "https://www.nature.com/articles/s41562-025-02254-x",
+          "https://github.com/SemanticPriming/SPAML/releases/tag/v1.0.2"
         ],
-        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+        "note": "本轮完整读取v1.0.2的中英启动汇总、刺激表、作者匹配表及翻译工作表，共7个选定文件。各语言1,000条汇总均可接作者键；跨语言全局一对一保留993组，7条待人工复核；不等于语义等价或全部数据验收。",
+        "file_checks": [
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/en_prime_summary.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：1000条记录、37列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "sha256": "4c6241279f57933f48a7f8a63ea54560534e76ae74d0d52314b7d62bddab60a1"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/finalize_stimuli/en/en_trials_final.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：5000条记录、6列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "e1dee2e0b9a09d3a3288804a1d39f99ddebf9cee"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/matched_stimuli/en_trial_unique.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：1000条记录、5列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "ff86d9bd00bdaf3af921488ff3453ec2acda5e28"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/zh_prime_summary.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：1000条记录、37列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "sha256": "f6ff4205d759f566edf228a8ce4f4a347e0ba2180340ac72fb4528c1df5810e3"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/finalize_stimuli/zh/simplified/zh_trials_final.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：5000条记录、6列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "9b7a5fb20e14c2555c0eeb72fd227654c0e72de2"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/matched_stimuli/zh_trial_unique.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：1000条记录、5列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "0b266449ea4f3a319e5a575cd60bb883492cdc59"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/blob/master/03_Materials/finalize_stimuli/zh/simplified/zh_translated_final.xlsx",
+            "read_scope": "complete_xlsx_sheet",
+            "result": "完整读取唯一翻译工作表1,000行，核对id、英文提示词/目标词、最终中文提示词/目标词5个对齐字段；尚未完成人工语义等价核对。",
+            "blob_sha": "965388d39e787abeec10853cc1c58ce25672d284"
+          }
+        ]
       }
     },
     {
@@ -8024,8 +8115,8 @@
       "data_status": "released_data",
       "verification": {
         "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "repository_documentation",
         "evidence_urls": [
@@ -8034,13 +8125,25 @@
           "https://link.springer.com/article/10.1007/s10579-022-09619-y",
           "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv"
         ],
-        "note": "README明确命名完整匿名指称表及游戏行为表；GitHub文件元数据确认两表存在，并实际读取行为表前8行。",
+        "note": "本轮完整读取5,000行行为表、4,701行缩减NP表及558行卡片表；NP按4字段均可唯一匹配行为记录，对应2,193个不同记录键。未成功读取完整带时序语料，不把多个NP当成独立试次。",
         "file_checks": [
           {
             "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
-            "read_scope": "first_8_lines",
-            "result": "公开读取表头及前7行，含rt、pair_type、trial_result和伙伴/轮次字段；未读取全表。",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：5000条记录、21列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
             "blob_sha": "3e123e34ce429bb92a7195cbdd0b002c2a54f67b"
+          },
+          {
+            "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/full_nps.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：4701条记录、12列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "c9ea3aa27247f815ab57fbfe457a2b5ac403ff78"
+          },
+          {
+            "url": "https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/item_data.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析选定文件：558条记录、12列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
+            "blob_sha": "ca6224480ec3788a5b1469b324f37a25cc5d2fe3"
           }
         ]
       }

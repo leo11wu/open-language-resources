@@ -20,7 +20,7 @@
       "type": "string"
     },
     "schema_version": {
-      "const": "1.2.0"
+      "const": "1.3.0"
     },
     "catalog_version": {
       "type": "string",
@@ -270,8 +270,7 @@
                 "required": [
                   "url",
                   "read_scope",
-                  "result",
-                  "blob_sha"
+                  "result"
                 ],
                 "properties": {
                   "url": {
@@ -283,7 +282,12 @@
                     "enum": [
                       "first_8_lines",
                       "first_4_lines",
-                      "complete_small_csv"
+                      "complete_small_csv",
+                      "complete_csv",
+                      "complete_json",
+                      "complete_jsonl",
+                      "complete_conllu",
+                      "complete_xlsx_sheet"
                     ]
                   },
                   "result": {
@@ -293,8 +297,24 @@
                   "blob_sha": {
                     "type": "string",
                     "pattern": "^[a-f0-9]{40}$"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
                   }
-                }
+                },
+                "anyOf": [
+                  {
+                    "required": [
+                      "blob_sha"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "sha256"
+                    ]
+                  }
+                ]
               }
             }
           }

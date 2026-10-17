@@ -27,7 +27,7 @@
 | R139 | [手势、音效与表情符号的共语言推论](../catalog/social-interaction.md#r139) | n4ks9 | 项目说明 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R140 | [自由选择推论与同质性实验](../catalog/social-interaction.md#r140) | 56qvw | 项目说明 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R142 | [叙事自由回忆数据集](../catalog/social-interaction.md#r142) | h2pkv | 项目说明 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R174 | [SCARFS：熟人与陌生人的指称互动](../catalog/social-interaction.md#r174) | hcya6 | 作者仓库说明 | 有数据发布说明 | 已读文件头部样例 |
+| R174 | [SCARFS：熟人与陌生人的指称互动](../catalog/social-interaction.md#r174) | hcya6 | 作者仓库说明 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R175 | [烹饪对话礼貌：公开标注、模拟样例与分析](../catalog/social-interaction.md#r175) | mp3dt | 作者仓库说明 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R176 | [LLM方式含意：目标刺激集与分析脚本](../catalog/social-interaction.md#r176) | jp35t | 出版方/机构数据声明 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 

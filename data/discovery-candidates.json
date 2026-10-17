@@ -1,0 +1,250 @@
+{
+  "title": "待核对的语言资源线索",
+  "updated_on": "2026-10-17",
+  "candidate_count": 22,
+  "description": "保留有研究价值但尚未满足主目录数据发布依据的线索；不是已验证可下载清单。",
+  "candidates": [
+    {
+      "id": "C001",
+      "name": "挪威语依存类型与岛效应",
+      "category": "syntax",
+      "source_url": "https://osf.io/gwy9s/",
+      "osf_id": "gwy9s",
+      "status": "preregistration_only",
+      "reason": "所指记录明确写数据收集尚未开始；需从已发表论文另找最终数据版本。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C002",
+      "name": "墨西哥西班牙语岛效应",
+      "category": "syntax",
+      "source_url": "https://osf.io/ma27h/",
+      "osf_id": "ma27h",
+      "status": "release_unconfirmed",
+      "reason": "检索到实验计划与研究简介，尚未取得最终数据文件发布证据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C003",
+      "name": "中英双语合理性与结构重分析启动",
+      "category": "syntax",
+      "source_url": "https://osf.io/hcdqe/",
+      "osf_id": "hcdqe",
+      "status": "preregistration_only",
+      "reason": "页面描述拟招募人数与未来实验；不据此认定已开放数据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C004",
+      "name": "中文把字句二语句法阻断",
+      "category": "syntax",
+      "source_url": "https://osf.io/qehr4/",
+      "osf_id": "qehr4",
+      "status": "release_unconfirmed",
+      "reason": "有研究与实验说明，尚未核实最终数据包。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C005",
+      "name": "中文体动词补语强制转换",
+      "category": "syntax",
+      "source_url": "https://osf.io/wd2g7/",
+      "osf_id": "wd2g7",
+      "status": "release_unconfirmed",
+      "reason": "公开项目存在，但本次页面未显示数据文件清单或明确数据声明。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C006",
+      "name": "简化关系从句的句法适应",
+      "category": "syntax",
+      "source_url": "https://osf.io/5aynd/",
+      "osf_id": "5aynd",
+      "status": "release_unconfirmed",
+      "reason": "已定位项目，仍需文件或出版方数据声明确认。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C007",
+      "name": "Acceptability Judgement Tasks and Grammatical Theory",
+      "category": "syntax",
+      "source_url": "https://osf.io/qe865/",
+      "osf_id": "qe865",
+      "status": "release_unconfirmed",
+      "reason": "项目线索待补全原始文件入口与许可。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C008",
+      "name": "西班牙语关系从句岛效应",
+      "category": "syntax",
+      "source_url": "https://osf.io/t9vpq/",
+      "osf_id": "t9vpq",
+      "status": "release_unconfirmed",
+      "reason": "论文与公开项目已定位；尚未核实可复用的数据范围。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C009",
+      "name": "事件结构与题元角色的结构启动",
+      "category": "syntax",
+      "source_url": "https://osf.io/zx6wv/",
+      "osf_id": "zx6wv",
+      "status": "release_unconfirmed",
+      "reason": "已定位研究项目；需要明确原始行为数据的发布范围。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C010",
+      "name": "themself/themselves社会句法判断",
+      "category": "syntax",
+      "source_url": "https://osf.io/2s8hm/",
+      "osf_id": "2s8hm",
+      "status": "release_unconfirmed",
+      "reason": "Wiki描述已完成的1,127人判断研究；本次仍未确认公开反应数据文件。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C011",
+      "name": "双语儿童EEG研究",
+      "category": "child-language",
+      "source_url": "https://osf.io/j5epb/",
+      "osf_id": "j5epb",
+      "status": "preregistration_only",
+      "reason": "当前定位内容主要为注册假设；尚无数据发布证据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C012",
+      "name": "儿童与照护者协调",
+      "category": "child-language",
+      "source_url": "https://osf.io/9z5qn/",
+      "osf_id": "9z5qn",
+      "status": "preregistration_only",
+      "reason": "当前定位为计划和注册；最终数据版本待找。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C013",
+      "name": "跨语言习语激活",
+      "category": "sign-figurative",
+      "source_url": "https://osf.io/kuqfe/",
+      "osf_id": "kuqfe",
+      "status": "preregistration_only",
+      "reason": "当前内容主要为预注册与假设，不能计作已开放实验数据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C014",
+      "name": "Taboo互动：熟人与陌生人",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/hcya6/",
+      "osf_id": "hcya6",
+      "status": "release_unconfirmed",
+      "reason": "研究计划和分析描述已找到，需另确认原始对话与行为数据开放情况。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C015",
+      "name": "烹饪场景中的人类与AI礼貌",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/mp3dt/",
+      "osf_id": "mp3dt",
+      "status": "preregistration_only",
+      "reason": "主要找到预注册说明。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C016",
+      "name": "政治信念与标量推论",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/sa8ep/",
+      "osf_id": "sa8ep",
+      "status": "insufficient_description",
+      "reason": "公开页面信息不足，无法核实可复用数据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C017",
+      "name": "大语言模型方式含意",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/jp35t/",
+      "osf_id": "jp35t",
+      "status": "release_unconfirmed",
+      "reason": "项目说明以研究结果为主；需区分模型输出、刺激及人类行为数据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C018",
+      "name": "波兰语语义相关度",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/2x8ka/",
+      "osf_id": "2x8ka",
+      "status": "platform_unavailable",
+      "reason": "本次检索所见主要为维护页，未形成足够数据范围证据。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C019",
+      "name": "无意识语义加工界限",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/wc7by/",
+      "osf_id": "wc7by",
+      "status": "release_unconfirmed",
+      "reason": "研究简介较充分，数据文件发布范围仍待核对。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C020",
+      "name": "复合词形式与意义分解",
+      "category": "morphology",
+      "source_url": "https://osf.io/vmdwt/",
+      "osf_id": "vmdwt",
+      "status": "release_unconfirmed",
+      "reason": "页面显示0字节与研究描述；不能据公开项目名称推断数据可取。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C021",
+      "name": "元音时长与辅音清浊研究中心",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/w92me/",
+      "osf_id": "w92me",
+      "status": "collection_needs_expansion",
+      "reason": "研究中心含多语种和多实验线索；本次未将其全部组件当作独立数据集。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    },
+    {
+      "id": "C022",
+      "name": "二语形态启动元分析",
+      "category": "morphology",
+      "source_url": "https://osf.io/4stgu/",
+      "osf_id": "4stgu",
+      "status": "release_unconfirmed",
+      "reason": "需明确注册计划与实际分析数据的区别。",
+      "checked_on": "2026-10-17",
+      "counts_as_main_resource": false
+    }
+  ]
+}

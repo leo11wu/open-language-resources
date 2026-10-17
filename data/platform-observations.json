@@ -1,0 +1,13 @@
+{
+  "updated_on": "2026-10-17",
+  "observations": [
+    {
+      "platform": "osf",
+      "url": "https://api.osf.io/v2/nodes/d7x6q/",
+      "observed_on": "2026-10-17",
+      "result": "返回HTML维护通知而非节点JSON；未能进行实时节点及文件清单批量核验。",
+      "inference_limit": "不能据此次维护认定各项目永久失效或私有，也不能声称对OSF全库进行了穷尽抓取。",
+      "status_url": "https://status.cos.io/"
+    }
+  ]
+}

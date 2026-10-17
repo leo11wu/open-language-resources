@@ -46,6 +46,35 @@ def main():
         check(date<=datetime.date.fromisoformat(catalog['updated_on']),prefix+'Check date is later than catalog update')
         check(type(r['verification']['download_tested']) is bool,prefix+'Invalid download status')
         check(type(r['verification']['data_files_validated']) is bool,prefix+'Invalid validation status')
+        check(r['data_status'] in schema['$defs']['resource']['properties']['data_status']['enum'],prefix+'Unknown resource status')
+        check(r['data_origin'] in schema['$defs']['resource']['properties']['data_origin']['enum'],prefix+'Unknown data origin')
+        check(len(r['platforms'])==len(set(r['platforms'])) and bool(r['platforms']),prefix+'Invalid platforms')
+        check(len(r['osf_ids'])==len(set(r['osf_ids'])),prefix+'Duplicate OSF IDs')
+        check(all(re.fullmatch('[a-z0-9]{5}',oid) for oid in r['osf_ids']),prefix+'Invalid OSF ID')
+        check(('osf' in r['platforms'])==bool(r['osf_ids']),prefix+'OSF platform and node identifiers disagree')
+        for url in r['verification']['evidence_urls']:
+            parsed=urlparse(url)
+            check(parsed.scheme in ['http','https'] and bool(parsed.netloc),prefix+'Invalid evidence URL')
+    source=json.loads((ROOT/'data/source-indexes/norare.json').read_text())
+    source_rows=source['records']
+    source_ids=[r['source_id'] for r in source_rows]
+    check(source['record_count']==len(source_rows),'Source index count mismatch')
+    check(len(source_ids)==len(set(source_ids)),'Duplicate source identifiers')
+    check(source['current_source_metadata_count']==sum('source_metadata_2026' in r['found_in'] for r in source_rows),'Current source count mismatch')
+    check(source['cldf_snapshot_count']==sum('cldf_snapshot_2025' in r['found_in'] for r in source_rows),'CLDF snapshot count mismatch')
+    for r in source_rows:
+        check(r['evidence_type']=='source_catalog_metadata' and r['original_files_checked'] is False,'Source index overstates verification')
+        check(all(rid in ids for rid in r['related_main_ids']),'Source index has invalid main ID')
+        check(all(sid in source_ids for sid in r['possible_successor_source_ids']),'Source index has invalid successor ID')
+    candidate=json.loads((ROOT/'data/discovery-candidates.json').read_text())
+    check(candidate['candidate_count']==len(candidate['candidates']),'Candidate count mismatch')
+    check(len({x['id'] for x in candidate['candidates']})==len(candidate['candidates']),'Duplicate candidate IDs')
+    for row in candidate['candidates']:
+        check(row['category'] in categories and row['counts_as_main_resource'] is False,'Candidate categorization invalid')
+    # Public catalog metadata must not embed anonymous-review or access tokens.
+    for path in ROOT.rglob('*'):
+        if path.is_file() and path.suffix in ['.json','.jsonl','.md']:
+            check(not re.search(r'(?:view_only|access_token|auth_token)=',path.read_text(),re.I),'Review/access token embedded in '+str(path.relative_to(ROOT)))
     lines = [json.loads(line) for line in (ROOT/'data/resources.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
     check(lines==resources,'JSONL differs from canonical JSON')
     try:
@@ -61,7 +90,7 @@ def main():
     if errors:
         print('\n'.join(errors),file=sys.stderr)
         return 1
-    print(f'Valid: {len(resources)} resources, {len(categories)} categories; JSON/JSONL agree. Full JSON Schema: {full_schema}.')
+    print(f'Valid: {len(resources)} resources, {len(categories)} categories, {len(source_rows)} source records, {candidate["candidate_count"]} candidates; JSON/JSONL agree. Full JSON Schema: {full_schema}.')
     return 0
 
 

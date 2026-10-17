@@ -1,17 +1,17 @@
 {
   "$schema": "../schema/resources.schema.json",
-  "schema_version": "1.0.0",
-  "catalog_version": "1.0.0",
+  "schema_version": "1.1.0",
+  "catalog_version": "2.0.0",
   "updated_on": "2026-10-17",
   "title": "公开语言资源目录",
-  "description": "按研究现象查找语言数据、语料与常模；保留来源、访问条件、测量边界与核对状态。",
-  "resource_count": 60,
+  "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
+  "resource_count": 169,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
     "application_required": "需要申请",
     "mixed_access": "部分开放或分层访问",
-    "license_review": "公开仓库，许可需核对"
+    "license_review": "开放说明或许可需进一步核对"
   },
   "categories": [
     {
@@ -44,7 +44,31 @@
     },
     {
       "id": "diachronic-parallel-syntax",
-      "label": "历时、多语语料与句法"
+      "label": "历时与平行语料"
+    },
+    {
+      "id": "syntax",
+      "label": "句法、可接受度与句子加工"
+    },
+    {
+      "id": "morphology",
+      "label": "形态、构词与形态加工"
+    },
+    {
+      "id": "speech-phonetics",
+      "label": "语音、音系与声学"
+    },
+    {
+      "id": "reading-neuro",
+      "label": "阅读、眼动与神经语言"
+    },
+    {
+      "id": "resource-portals",
+      "label": "继续发现资源的平台与索引"
+    },
+    {
+      "id": "clinical-language",
+      "label": "临床语言、沟通与语言障碍"
     }
   ],
   "resources": [
@@ -84,8 +108,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://wordbank.stanford.edu/faq/",
+          "https://wordbank.stanford.edu/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R002",
@@ -129,8 +165,21 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://talkbank.org/childes/access/",
+          "https://talkbank.org/childes/access.html",
+          "https://langcog.github.io/childes-db-website/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R003",
@@ -164,8 +213,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://peekbank.github.io/peekbank-website/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R004",
@@ -200,8 +260,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://talkbank.org/phon/",
+          "https://talkbank.org/phon/access.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R005",
@@ -236,8 +308,24 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://github.com/manybabies/mb1-analysis-public",
+          "https://manybabies.org/MB1/",
+          "https://osf.io/re95x/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "github",
+        "osf"
+      ],
+      "osf_ids": [
+        "re95x"
+      ],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R006",
@@ -270,8 +358,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://metalab.stanford.edu/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R007",
@@ -305,8 +404,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://talkbank.org/homebank/access/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R008",
@@ -342,8 +452,21 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC8412186/",
+          "https://nyu.databrary.org/volume/564",
+          "https://databrary.org/about/agreement"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R009",
@@ -380,8 +503,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://oraal.github.io/coraal",
+          "http://lingtools.uoregon.edu/coraal"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R010",
@@ -414,8 +549,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R011",
@@ -451,8 +597,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://corpora.lancs.ac.uk/bnc2014/",
+          "https://cass.lancs.ac.uk/cass-projects/spoken-bnc2014/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R012",
@@ -487,8 +645,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://buckeyecorpus.osu.edu/",
+          "https://buckeyecorpus.osu.edu/php/login.php"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R013",
@@ -524,8 +694,21 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://convokit.cornell.edu/documentation/candor.html",
+          "https://guscooney.com/candor-dataset/",
+          "https://www.betterup.com/research/candor-research"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R014",
@@ -558,8 +741,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://groups.inf.ed.ac.uk/maptask/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R015",
@@ -594,8 +788,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://talkbank.org/ca/access/",
+          "https://talkbank.org/ca/access.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R016",
@@ -627,8 +833,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://convokit.cornell.edu/documentation/wiki_politeness.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R017",
@@ -661,8 +878,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://convokit.cornell.edu/documentation/awry.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R018",
@@ -695,8 +923,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://convokit.cornell.edu/documentation/winning.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R019",
@@ -730,8 +969,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://convokit.cornell.edu/documentation/diplomacy.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R020",
@@ -764,8 +1014,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://convokit.cornell.edu/documentation/parliament.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R021",
@@ -799,8 +1060,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.clarin.eu/parlamint"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R022",
@@ -837,8 +1109,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://smallworldofwords.org/en/project/research",
+          "https://simondedeyne.me/data/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R023",
@@ -876,8 +1160,22 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://elexicon.wustl.edu/",
+          "https://osf.io/n63s2/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "n63s2"
+      ],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R024",
@@ -911,8 +1209,21 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://osf.io/d7x6q/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "d7x6q"
+      ],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R025",
@@ -948,8 +1259,23 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://osf.io/kj76e/",
+          "https://osf.io/qpmf4/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "kj76e",
+        "qpmf4"
+      ],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R026",
@@ -985,8 +1311,22 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.lancaster.ac.uk/psychology/lsnorms/",
+          "https://osf.io/7emr6/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "7emr6"
+      ],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R027",
@@ -1022,8 +1362,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.3758/s13428-018-1099-3",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC6538586/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R028",
@@ -1059,8 +1411,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://norare.clld.org/contributions/Warriner-2013-AffectiveRatings",
+          "https://link.springer.com/article/10.3758/s13428-012-0314-x"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R029",
@@ -1093,8 +1457,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://fh295.github.io/simlex.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R030",
@@ -1127,8 +1502,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://things-initiative.org/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R031",
@@ -1163,8 +1549,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R032",
@@ -1197,8 +1594,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://chineselexicaldatabase.com/download.php"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R033",
@@ -1233,8 +1641,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.3758/s13428-017-0944-0"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R034",
@@ -1268,8 +1687,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.3758/s13428-016-0810-5"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R035",
@@ -1305,8 +1735,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://language.sakura.ne.jp/icnale/download.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R036",
@@ -1340,8 +1781,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://ef-lab.mmll.cam.ac.uk/EFCAMDAT.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R037",
@@ -1380,8 +1832,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.merlin-platform.eu/C_data.php",
+          "https://www.merlin-platform.eu/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R038",
@@ -1416,8 +1880,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://cedel2.learnercorpora.com/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R039",
@@ -1451,8 +1926,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://expsy.ugent.be/downloads/geco/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R040",
@@ -1489,8 +1975,22 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://meco-read.com/",
+          "https://osf.io/3527a/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "3527a"
+      ],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R041",
@@ -1527,8 +2027,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://lexibank.clld.org/",
+          "https://github.com/lexibank/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R042",
@@ -1561,8 +2073,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://clics.clld.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R043",
@@ -1601,8 +2124,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://norare.clld.org/",
+          "https://norare.clld.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R044",
@@ -1636,8 +2171,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://concepticon.clld.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R045",
@@ -1673,8 +2219,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://wals.info/download",
+          "https://wals.info/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R046",
@@ -1710,8 +2268,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://grambank.clld.org/",
+          "https://grambank.clld.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R047",
@@ -1747,8 +2317,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://d-place.org/",
+          "https://d-place.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R048",
@@ -1783,8 +2365,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://phoible.org/",
+          "https://phoible.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R049",
@@ -1820,8 +2414,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://ids.clld.org/",
+          "https://ids.clld.org/download"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R050",
@@ -1858,8 +2464,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://asl-lex.org/download.html",
+          "https://asl-lex.org/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R051",
@@ -1894,8 +2512,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/download.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R052",
@@ -1931,8 +2560,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.sign-lang.uni-hamburg.de/meinedgs_r4/ling/start_en.html",
+          "https://www.sign-lang.uni-hamburg.de/meinedgs_r4/ling/license_en.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R053",
@@ -1968,8 +2609,21 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://github.com/chujiezheng/ChID-Dataset",
+          "https://huggingface.co/datasets/thu-coai/chid"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "github",
+        "huggingface"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R054",
@@ -2005,8 +2659,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://github.com/sofyc/ChengyuBench",
+          "https://aclanthology.org/2025.emnlp-main.119/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R055",
@@ -2040,8 +2706,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://epic-benchmark.github.io/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R056",
@@ -2075,8 +2752,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://books.google.com/ngrams/datasets"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R057",
@@ -2111,8 +2799,19 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://nlp.stanford.edu/projects/histwords/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R058",
@@ -2148,13 +2847,24 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://opus.nlpl.eu/"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R059",
       "name": "Universal Dependencies（UD）",
-      "category": "diachronic-parallel-syntax",
+      "category": "syntax",
       "entry_type": "collection",
       "language_scope": "全球多语种，含中文",
       "language_codes": [
@@ -2187,8 +2897,20 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
-      }
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://universaldependencies.org/download.html",
+          "https://universaldependencies.org/contributing/licensing.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
     },
     {
       "id": "R060",
@@ -2224,7 +2946,4846 @@
         "documentation_checked_on": "2026-10-17",
         "scope": "resource_description_and_access_documentation",
         "download_tested": false,
-        "data_files_validated": false
+        "data_files_validated": false,
+        "evidence_type": "documentation_reviewed",
+        "evidence_urls": [
+          "https://www.gutenberg.org/ebooks/",
+          "https://www.gutenberg.org/policy/permission.html"
+        ],
+        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+      },
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified"
+    },
+    {
+      "name": "UD-English-CHILDES（儿童及成人互动依存树库）",
+      "category": "syntax",
+      "language_scope": "英语；儿童与照护者",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "依存树、词性、转写",
+      "description": "将既有CHILDES树库统一为UD标注；区分人工校订的gold部分与自动标注的silver部分。",
+      "source_url": "https://universaldependencies.org/treebanks/en_childes/",
+      "tags": [
+        "句法",
+        "儿童语言",
+        "依存句法",
+        "标注语料"
+      ],
+      "limitations": "由CHILDES派生，与原始转写并非独立样本；不同标注层的人工校订程度不同。",
+      "entry_type": "derived",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "项目页标注CC BY-SA 4.0；仍须引用原始CHILDES语料。",
+      "additional_urls": [
+        "https://github.com/UniversalDependencies/UD_English-CHILDES"
+      ],
+      "related_ids": [
+        "R002",
+        "R059"
+      ],
+      "data_status": "released_data",
+      "id": "R061",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://universaldependencies.org/treebanks/en_childes/",
+          "https://github.com/UniversalDependencies/UD_English-CHILDES"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CHILDES Treebank / Pearl–Sprouse（成分句法）",
+      "category": "syntax",
+      "language_scope": "英语；儿童导向言语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "成分树及部分空位、生命度和题元标注",
+      "description": "对CHILDES部分儿童导向转写进行成分分析，并经过人工复核；部分文件专门抽取含wh词的话语。",
+      "source_url": "https://sites.socsci.uci.edu/~lpearl/CoLaLab/CHILDESTreebank/childestreebank.html",
+      "tags": [
+        "句法",
+        "儿童语言",
+        "成分句法",
+        "长距离依存"
+      ],
+      "limitations": "自动分析后人工复核；全量话语与wh子样本须分别识别，不能合并当作无偏总体。",
+      "entry_type": "derived",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://talkbank.org/childes/access/Derived/Pearl_Sprouse.html"
+      ],
+      "related_ids": [
+        "R002",
+        "R059"
+      ],
+      "data_status": "released_data",
+      "id": "R062",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://sites.socsci.uci.edu/~lpearl/CoLaLab/CHILDESTreebank/childestreebank.html",
+          "https://talkbank.org/childes/access/Derived/Pearl_Sprouse.html"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CoLA（英语可接受度语料）",
+      "category": "syntax",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "专家可接受度标签与句子",
+      "description": "从语言学出版物提取句子及其可接受度标签；官网提供训练和开发集。",
+      "source_url": "https://nyu-mll.github.io/CoLA/",
+      "tags": [
+        "句法",
+        "可接受度",
+        "语法判断",
+        "模型评测"
+      ],
+      "limitations": "公开部分为9,594句；原版测试集另有评估安排。专家二元标签不等于独立招募被试的连续评分。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R063",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://nyu-mll.github.io/CoLA/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CoLAC（中文可接受度语料）",
+      "category": "syntax",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "语言学家标签、众包标签与句子",
+      "description": "7,495个中文例句，保留语言学家标签和由母语者评分得到的众包标签。",
+      "source_url": "https://github.com/huhailinguist/CoLAC",
+      "tags": [
+        "句法",
+        "中文",
+        "可接受度",
+        "语法判断"
+      ],
+      "limitations": "两种标签有不同来源，需按问题选择；例句来自既有出版物，须留意素材来源。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R064",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/huhailinguist/CoLAC"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "BLiMP（英语句法最小对立）",
+      "category": "syntax",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "67类自动生成最小对立句",
+      "description": "依照专家编写规则生成句法、形态和语义最小对立，附人类验证结果。",
+      "source_url": "https://github.com/alexwarstadt/blimp",
+      "tags": [
+        "句法",
+        "最小对立",
+        "形态",
+        "模型评测"
+      ],
+      "limitations": "67,000对主要是规则生成刺激；验证子样本的人类表现不能视为全体句子的逐试次常模。",
+      "entry_type": "dataset",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R065",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/alexwarstadt/blimp"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CLiMP（中文语言模型句法评测）",
+      "category": "syntax",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "16组最小对立句范式",
+      "description": "覆盖中文9类语言现象，以半自动生成的最小对立句测试语法知识。",
+      "source_url": "https://github.com/beileixiang/CLiMP",
+      "tags": [
+        "句法",
+        "中文",
+        "最小对立",
+        "模型评测"
+      ],
+      "limitations": "半自动生成刺激及抽样验证，不能代替自然语料分布。",
+      "entry_type": "dataset",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R066",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/beileixiang/CLiMP"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SLING（中文句法语义评测）",
+      "category": "syntax",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "最小对立句、现象标签与评测代码",
+      "description": "提供中文多类句法及句法语义界面现象的最小对立数据和代码。",
+      "source_url": "https://github.com/Yixiao-Song/SLING_Data_Code",
+      "tags": [
+        "句法",
+        "中文",
+        "反身代词",
+        "最小对立"
+      ],
+      "limitations": "不同版本可能增加子集；应固定版本并检查与CLiMP等基准的重叠。",
+      "entry_type": "dataset",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "作者仓库标注MIT；使用素材时仍保留原论文与源语料引用。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R067",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/Yixiao-Song/SLING_Data_Code"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "ZhoBLiMP（中文35k最小对立）",
+      "category": "syntax",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "最小对立句及现象类别",
+      "description": "提供约35,000对中文最小对立句，用于细分句法现象与模型语言知识。",
+      "source_url": "https://github.com/sjtu-compling/ZhoBLiMP",
+      "tags": [
+        "句法",
+        "中文",
+        "最小对立",
+        "模型评测"
+      ],
+      "limitations": "句长与词项差异可能影响比较；按现象和数据来源控制重复。",
+      "entry_type": "dataset",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R068",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/sjtu-compling/ZhoBLiMP"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "JCoLA（日语可接受度语料）",
+      "category": "syntax",
+      "language_scope": "日语",
+      "language_codes": [
+        "ja"
+      ],
+      "data_type": "专家二元判断及部分现象标签",
+      "description": "从期刊、手册和教材提取10,020个日语句子，提供可接受度标签及数据划分。",
+      "source_url": "https://github.com/osekilab/JCoLA",
+      "tags": [
+        "句法",
+        "日语",
+        "可接受度",
+        "语法判断"
+      ],
+      "limitations": "出版物例句与实验母语者评分有不同测量意义。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "作者仓库标注CC BY-SA 4.0。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R069",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/osekilab/JCoLA"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "JBLiMP（日语人工验证最小对立）",
+      "category": "syntax",
+      "language_scope": "日语",
+      "language_codes": [
+        "ja"
+      ],
+      "data_type": "331对验证后句子、11类现象",
+      "description": "从语言学文献构造日语最小对立，并保留验证前与验证后的版本。",
+      "source_url": "https://github.com/osekilab/JBLiMP",
+      "tags": [
+        "句法",
+        "日语",
+        "最小对立",
+        "可接受度"
+      ],
+      "limitations": "367对初始材料与331对验证后材料须区分。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "作者仓库标注CC BY-SA 4.0。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R070",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/osekilab/JBLiMP"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "KBLiMP（韩语句法最小对立）",
+      "category": "syntax",
+      "language_scope": "韩语",
+      "language_codes": [
+        "ko"
+      ],
+      "data_type": "韩语句法测试集",
+      "description": "提供面向韩语句法现象的最小对立测试集与相关说明。",
+      "source_url": "https://github.com/kusonglab/kblimp",
+      "tags": [
+        "句法",
+        "韩语",
+        "最小对立",
+        "模型评测"
+      ],
+      "limitations": "核对具体范式、验证方式与版本；不能默认跨语言基准具有同等难度。",
+      "entry_type": "dataset",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R071",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/kusonglab/kblimp"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "RuCoLA（俄语可接受度）",
+      "category": "syntax",
+      "language_scope": "俄语",
+      "language_codes": [
+        "ru"
+      ],
+      "data_type": "专家例句与机器生成句子的判断",
+      "description": "同时包含语言学资料中的句子与机器生成句子，附二元可接受度标签。",
+      "source_url": "https://github.com/RussianNLP/RuCoLA",
+      "tags": [
+        "句法",
+        "俄语",
+        "可接受度",
+        "模型评测"
+      ],
+      "limitations": "混合数据来源，应分开检查专家例句和机器生成子集。",
+      "entry_type": "dataset",
+      "data_origin": "mixed_or_unspecified",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "作者仓库标注Apache 2.0；原例句仍需按来源引用。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R072",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/RussianNLP/RuCoLA"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "MELA（十语言可接受度集合）",
+      "category": "syntax",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "约46k句子及语言标签",
+      "description": "整合英语、中文、意大利语、俄语等既有资源，并补充其他语言的可接受度句子。",
+      "source_url": "https://github.com/sjtu-compling/MELA",
+      "tags": [
+        "句法",
+        "跨语言",
+        "可接受度",
+        "模型评测"
+      ],
+      "limitations": "与CoLA、CoLAC、RuCoLA等共享材料，不能作为独立重复验证。作者公开说明压缩包解压方式。",
+      "entry_type": "aggregate",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R073",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/sjtu-compling/MELA"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SyntaxGym（句法测试套件库）",
+      "category": "syntax",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "句法测试套件、条件与区域定义",
+      "description": "可浏览、下载和复用针对模型的句子加工与句法测试套件。",
+      "source_url": "https://syntaxgym.org/",
+      "tags": [
+        "句法",
+        "句子加工",
+        "花园路径",
+        "模型评测"
+      ],
+      "limitations": "套件是材料和预测的集合；每套材料的来源、许可与人类数据需单独核对。",
+      "entry_type": "collection",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R074",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://syntaxgym.org/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Marvin–Linzen Targeted Syntactic Evaluation",
+      "category": "syntax",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "一致、反身照应与否定极性最小对立",
+      "description": "仓库提供模板、数据与评测代码，用于结构敏感的英语语言模型评测。",
+      "source_url": "https://github.com/beckymarvin/lm_syneval",
+      "tags": [
+        "句法",
+        "主谓一致",
+        "反身代词",
+        "否定极性"
+      ],
+      "limitations": "规则生成刺激；词项和模板重复应进入训练污染与泛化检查。",
+      "entry_type": "dataset",
+      "data_origin": "synthetic_stimuli",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R075",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/beckymarvin/lm_syneval"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Colorless Green RNNs（一致关系测试集）",
+      "category": "syntax",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "自然及无意义句子的一致关系测试",
+      "description": "作者仓库提供训练语料、预训练模型与一致关系测试集。",
+      "source_url": "https://github.com/facebookresearch/colorlessgreenRNNs",
+      "tags": [
+        "句法",
+        "主谓一致",
+        "跨语言",
+        "结构依赖"
+      ],
+      "limitations": "自然句与替换内容词的刺激须区分；训练语料与测试语料不是独立实验样本。",
+      "entry_type": "dataset",
+      "data_origin": "mixed_or_unspecified",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R076",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/facebookresearch/colorlessgreenRNNs"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Natural Stories Corpus",
+      "category": "syntax",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "故事、逐词自定步速阅读与句法标注",
+      "description": "有意增加低频句法结构的故事语料，提供词项对齐、阅读时和其他标注。",
+      "source_url": "https://github.com/languageMIT/naturalstories",
+      "tags": [
+        "句法",
+        "句子加工",
+        "自定步速阅读",
+        "故事"
+      ],
+      "limitations": "作者2025年修正SPR数据位置错位；务必使用修正后的版本。故事也不是未经干预的自然文本样本。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R077",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/languageMIT/naturalstories"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Syntactic Ambiguity Processing Benchmark（SAP）",
+      "category": "syntax",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "句法歧义眼动、自定步速阅读及材料",
+      "description": "OSF保存材料和原始数据；作者GitHub保存分析与输出，涵盖句法歧义加工。",
+      "source_url": "https://osf.io/b6rqh/",
+      "tags": [
+        "句法",
+        "句法歧义",
+        "眼动",
+        "自定步速阅读"
+      ],
+      "limitations": "同一基准内可能整合多个研究；以研究、被试和实验为单位识别层级。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://github.com/caplabnyu/sapbenchmark"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R078",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "b6rqh"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/b6rqh/",
+          "https://github.com/caplabnyu/sapbenchmark"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "冰岛语主语开头V3结构可接受度",
+      "category": "syntax",
+      "language_scope": "冰岛语",
+      "language_codes": [
+        "is"
+      ],
+      "data_type": "问卷原始数据及R脚本",
+      "description": "在线判断实验比较不同副词从句中主语开头V3结构的可接受度。",
+      "source_url": "https://osf.io/mg2r8/",
+      "tags": [
+        "句法",
+        "语序",
+        "可接受度",
+        "副词从句"
+      ],
+      "limitations": "调查样本、评分尺度与从句类别须从原问卷核实。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R079",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "mg2r8"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/mg2r8/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Agreement Attraction：语法句判断数据",
+      "category": "syntax",
+      "language_scope": "多语言；语言以实验材料为准",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "一致吸引的可接受度判断",
+      "description": "数据项目明确作为较大预注册研究的一部分，提供语法句的一致吸引判断数据。",
+      "source_url": "https://osf.io/eawg5/",
+      "tags": [
+        "句法",
+        "主谓一致",
+        "一致吸引",
+        "可接受度"
+      ],
+      "limitations": "与同一研究的注册和其他组件同源；不得把每个OSF编号当成新样本。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://osf.io/pd8ky/"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R080",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "eawg5",
+        "pd8ky"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/eawg5/",
+          "https://osf.io/pd8ky/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Hierarchical Structure and Memory in Agreement Attraction",
+      "category": "syntax",
+      "language_scope": "多语言；见原实验",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "一致吸引行为数据及RMarkdown",
+      "description": "项目说明明确提供同名PLOS ONE论文的数据和分析代码，用于层级结构与记忆机制分析。",
+      "source_url": "https://osf.io/j85sp/",
+      "tags": [
+        "句法",
+        "一致吸引",
+        "工作记忆",
+        "句子加工"
+      ],
+      "limitations": "需按原实验语言、任务与被试结构建模，不能只把条件均值合并。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R081",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "j85sp"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/j85sp/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "从主语抽取与话语功能：英法七个实验",
+      "category": "syntax",
+      "language_scope": "多语言；英语、法语",
+      "language_codes": [
+        "mul",
+        "en",
+        "fr"
+      ],
+      "data_type": "可接受度实验数据及脚本",
+      "description": "作者公开5个英语实验和2个法语实验的数据与脚本，研究主语抽取和构式话语功能。",
+      "source_url": "https://osf.io/mtngd/",
+      "tags": [
+        "句法",
+        "主语岛",
+        "长距离依存",
+        "话语"
+      ],
+      "limitations": "语言、构式和任务之间的差异需要保留，多个实验不能当作单一同质样本。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R082",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "mtngd"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/mtngd/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "矩阵动词重复与PO/DO结构启动",
+      "category": "syntax",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "四个结构启动实验数据及分析",
+      "description": "比较矩阵动词与中心动词重复对双及物结构启动的影响；大学研究门户把OSF条目标为数据集。",
+      "source_url": "https://osf.io/p8f2c/",
+      "tags": [
+        "句法",
+        "结构启动",
+        "双及物",
+        "词汇提升"
+      ],
+      "limitations": "重复动词的句法地位不同；材料中的矩阵与嵌入结构必须区分。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R083",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "p8f2c"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://rke.abertay.ac.uk/en/publications/the-head-or-the-verb-is-the-lexical-boost-restricted-to-the-head-/datasets/",
+          "https://osf.io/p8f2c/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "西班牙语理解中的岛效应",
+      "category": "syntax",
+      "language_scope": "西班牙语",
+      "language_codes": [
+        "es"
+      ],
+      "data_type": "限时可接受度与工作记忆任务",
+      "description": "比较主语、复杂名词短语、附加语和疑问从句抽取，附数据与分析资料入口。",
+      "source_url": "https://osf.io/ckxaw/",
+      "tags": [
+        "句法",
+        "岛效应",
+        "可接受度",
+        "工作记忆"
+      ],
+      "limitations": "按具体结构报告效应，不能把所有岛域合并；OSF文件在维护期间未能逐一验收。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R084",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ckxaw"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/ckxaw/wiki/home/",
+          "https://osf.io/ckxaw/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Wordform Boost in Structural Priming",
+      "category": "syntax",
+      "language_scope": "多语言；见原材料",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "结构启动材料、数据与分析脚本",
+      "description": "OSF说明明确包括实验材料、数据和分析脚本，研究词形重复与结构启动。",
+      "source_url": "https://osf.io/sbvfy/",
+      "tags": [
+        "句法",
+        "结构启动",
+        "词形",
+        "语言产生"
+      ],
+      "limitations": "关联冻结注册为同一项目记录；数据公开说明与原始文件质量验收分开。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R085",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "sbvfy"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/sbvfy/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "中文嵌入wh问句作用域眼动实验",
+      "category": "syntax",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "嵌入问句眼动与理解数据",
+      "description": "比较中文隐性依存和嵌入wh问句的作用域解释；PLOS数据声明指向该OSF项目。",
+      "source_url": "https://osf.io/as4h7/",
+      "tags": [
+        "句法",
+        "中文",
+        "疑问句",
+        "作用域",
+        "眼动"
+      ],
+      "limitations": "作用域、嵌入层数与距离条件需按材料区分。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R086",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "as4h7"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0285873",
+          "https://osf.io/as4h7/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "18月龄婴儿非局部句法依存数据",
+      "category": "syntax",
+      "language_scope": "英语；18月龄婴儿",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "匿名化婴儿实验数据",
+      "description": "Perkins与Lidz的PNAS研究数据项目明确提供匿名化数据，研究婴儿对非局部句法依存的表征。",
+      "source_url": "https://osf.io/4sz9w/",
+      "tags": [
+        "句法",
+        "儿童语言",
+        "非局部依存",
+        "语法发展"
+      ],
+      "limitations": "婴儿任务的测量单位与成人句法判断不同；依原实验的剔除和编码规则解释。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R087",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "4sz9w"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/4sz9w/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "英荷双及物构式抽样数据",
+      "category": "syntax",
+      "language_scope": "多语言；英语、荷兰语",
+      "language_codes": [
+        "mul",
+        "en",
+        "nl"
+      ],
+      "data_type": "语料抽样与构式编码",
+      "description": "收录从ICE、GloWbE和CSD抽取的英语、荷兰语双及物构式数据。",
+      "source_url": "https://osf.io/7ntmk/",
+      "tags": [
+        "句法",
+        "双及物",
+        "构式",
+        "语料抽样"
+      ],
+      "limitations": "派生抽样而非完整母语料；访问母语料的许可和抽样方式仍需独立核对。",
+      "entry_type": "derived",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R088",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "7ntmk"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/7ntmk/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "不同一致依存的预测加工",
+      "category": "syntax",
+      "language_scope": "多语言；见原实验",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "一致关系行为数据及代码",
+      "description": "项目说明明确提供研究数据和分析代码，用于比较不同语法一致依存的预测加工。",
+      "source_url": "https://osf.io/mbtcd/",
+      "tags": [
+        "句法",
+        "主谓一致",
+        "预测",
+        "句子加工"
+      ],
+      "limitations": "任务、依存类型与语言范围应从所用发布版本确认。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R089",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "mbtcd"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/mbtcd/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "捷克语花园路径句：开放式理解问题",
+      "category": "syntax",
+      "language_scope": "捷克语",
+      "language_codes": [
+        "cs"
+      ],
+      "data_type": "理解反应与分析脚本",
+      "description": "PLOS发表研究的数据声明指向该项目，用开放式问题检查花园路径误分析的持续影响。",
+      "source_url": "https://osf.io/98g26/",
+      "tags": [
+        "句法",
+        "花园路径",
+        "句子加工",
+        "理解"
+      ],
+      "limitations": "项目早期简介保留计划时态；此处收录依据是后续论文明确的数据发布声明。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R090",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "98g26"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288817",
+          "https://osf.io/98g26/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "大样本英语语法学习年龄数据（Hartshorne等）",
+      "category": "syntax",
+      "language_scope": "英语；不同学习年龄与母语背景",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "在线语法测验与语言经历",
+      "description": "研究约三分之二百万英语使用者的语法学习与年龄关系，OSF数据项目提供该研究的数据。",
+      "source_url": "https://osf.io/pyb8s/",
+      "tags": [
+        "句法",
+        "二语",
+        "习得年龄",
+        "语法发展"
+      ],
+      "limitations": "横断面在线自选样本；学习年龄、当前年龄和接触时间不能简单当作可随机操控因果变量。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R091",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "pyb8s"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/pyb8s/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "CONcreTEXT（语境具体性常模）",
+      "category": "lexical-cognition",
+      "language_scope": "多语言；英语、意大利语",
+      "language_codes": [
+        "mul",
+        "en",
+        "it"
+      ],
+      "data_type": "语境中的具体性评分与刺激",
+      "description": "在句子语境中对目标词具体性进行评分，项目活动列有两种语言的刺激表。",
+      "source_url": "https://osf.io/u3pc4/",
+      "tags": [
+        "词汇认知",
+        "具体性",
+        "语境",
+        "常模"
+      ],
+      "limitations": "语境评分不同于孤立词常模；同一词的多个语境不能视为互不相关的词。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R092",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "u3pc4"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/u3pc4/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "GLEAN（德语外推情感常模）",
+      "category": "lexical-cognition",
+      "language_scope": "德语",
+      "language_codes": [
+        "de"
+      ],
+      "data_type": "词汇预测常模与句子验证评分",
+      "description": "提供90万以上德语词的外推效价、唤醒、意象性和具体性指标，并附锚定词及句子验证评分。",
+      "source_url": "https://osf.io/a6w53/",
+      "tags": [
+        "情感",
+        "效价",
+        "唤醒",
+        "意象性",
+        "具体性",
+        "模型派生"
+      ],
+      "limitations": "主体为计算外推值，须与324句的人工验证评分区分。",
+      "entry_type": "derived",
+      "data_origin": "derived_data",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R093",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "a6w53"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/a6w53/overview",
+          "https://osf.io/a6w53/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "西班牙语1,252条习语心理语言与情感常模",
+      "category": "sign-figurative",
+      "language_scope": "西班牙语",
+      "language_codes": [
+        "es"
+      ],
+      "data_type": "习语心理语言与情感评分",
+      "description": "公开西班牙语习语的心理语言属性和情感常模，可用于选择材料与控制习语差异。",
+      "source_url": "https://osf.io/p75c3/",
+      "tags": [
+        "习语",
+        "熟悉度",
+        "情感",
+        "常模"
+      ],
+      "limitations": "习语整体评分不等于组成词的评分；逐项核对评分维度及缺失。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R094",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "p75c3"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/p75c3/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Six Semantic Dimension Database（六维语义）",
+      "category": "lexical-cognition",
+      "language_scope": "中文；含英语计算扩展",
+      "language_codes": [
+        "en",
+        "zh"
+      ],
+      "data_type": "六维人工语义评分及计算扩展",
+      "description": "对17,940个常用中文词或短语评定视觉、动作、社会性、情感、时间和空间，并提供大规模计算扩展。",
+      "source_url": "https://osf.io/n5vke/",
+      "tags": [
+        "中文",
+        "社会性",
+        "感知",
+        "动作",
+        "情感",
+        "语义维度"
+      ],
+      "limitations": "人工中文评分与百万级中英预测值有不同证据性质；不得合称为人工常模。",
+      "entry_type": "dataset",
+      "data_origin": "mixed_or_unspecified",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R095",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "n5vke"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/n5vke/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Socialness Norms（8,388英语词社会性）",
+      "category": "lexical-cognition",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "词项平均社会性评分",
+      "description": "提供8,388个英语词的平均社会性评分及测量说明，可研究社会语义与词汇加工。",
+      "source_url": "https://osf.io/yjz85/",
+      "tags": [
+        "社会性",
+        "社会语义",
+        "常模",
+        "词汇认知"
+      ],
+      "limitations": "平均评分是词项级常模；不能直接推断个人社会认知差异。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "项目页明确标注CC BY 4.0。",
+      "additional_urls": [
+        "https://osf.io/2dqnj/"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R096",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "yjz85",
+        "2dqnj"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/yjz85/",
+          "https://osf.io/2dqnj/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "English Semantic Feature Production Norms（4,436概念）",
+      "category": "lexical-cognition",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "概念语义特征产出与加工文档",
+      "description": "提供扩展英语概念特征常模；OSF明确说明大量小文件已转移至作者GitHub，需从关联网站进入当前资料。",
+      "source_url": "https://osf.io/cjyzw/",
+      "tags": [
+        "语义特征",
+        "概念",
+        "特征产出",
+        "常模"
+      ],
+      "limitations": "不能把OSF空文件面板误判为资料不存在；原始产出与清洗后的特征表应区分。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "open_data",
+      "access_notes": "OSF说明已迁往作者GitHub；通过wordnorms官网获取当前入口。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "http://www.wordnorms.com/"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R097",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "cjyzw"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/cjyzw/",
+          "http://www.wordnorms.com/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Body–Object Interaction（9,000余英语词）",
+      "category": "lexical-cognition",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "身体与物体互动难易评分",
+      "description": "提供9,000余个英语词的BOI评分，用于具身语义、可操控性和词汇认知分析。",
+      "source_url": "https://osf.io/6syf3/",
+      "tags": [
+        "具身语义",
+        "身体互动",
+        "常模",
+        "词汇认知"
+      ],
+      "limitations": "BOI与感知运动、具体性高度相关；不能把相关常模当作独立构念。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R098",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "6syf3"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/6syf3/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Humor of English Words（英语变体比较）",
+      "category": "lexical-cognition",
+      "language_scope": "英语；北美、英国、新加坡",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "词语幽默评分与变体比较",
+      "description": "比较不同英语变体使用者对词语幽默程度的评分，适合词汇社会变异研究。",
+      "source_url": "https://osf.io/pg3fr/",
+      "tags": [
+        "幽默",
+        "社会变异",
+        "英语变体",
+        "常模"
+      ],
+      "limitations": "与Engelthaler–Hills早期幽默常模不同；词项选择和不同方言的频率控制须保留。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "license_review",
+      "access_notes": "已确认公开项目与研究/基准描述；原始数据文件范围及许可继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R099",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "pg3fr"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/pg3fr/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Three Terms Task（3TT）",
+      "category": "lexical-cognition",
+      "language_scope": "多语言；具体语言见材料",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "三词语义比较基准",
+      "description": "公开用于比较人类与人工语义表征的三词任务基准。",
+      "source_url": "https://osf.io/at8cs/",
+      "tags": [
+        "语义相似",
+        "三词任务",
+        "人类与模型"
+      ],
+      "limitations": "核对具体刺激及人类判断文件；项目称为开放基准不代表所有衍生模型输出均人工验证。",
+      "entry_type": "dataset",
+      "data_origin": "mixed_or_unspecified",
+      "access_mode": "license_review",
+      "access_notes": "已确认公开项目与研究/基准描述；原始数据文件范围及许可继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R100",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "at8cs"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/at8cs/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "语言输入的内容与时间：3岁词汇预测",
+      "category": "child-language",
+      "language_scope": "英语；3岁儿童及照护者",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "语言输入时间特征、词汇及R分析",
+      "description": "项目明确提供数据文件和R脚本，复现输入语言与时间特征对3岁词汇的分析。",
+      "source_url": "https://osf.io/sgjbh/",
+      "tags": [
+        "儿童语言",
+        "语言输入",
+        "词汇发展",
+        "时间结构"
+      ],
+      "limitations": "观察性数据；输入量、时间分布和家庭变量的相关性不直接确立因果。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R101",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "sgjbh"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/sgjbh/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "六大洲1,001名儿童日常语言输入与产出",
+      "category": "child-language",
+      "language_scope": "多语言；六大洲儿童",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "跨样本自然语言输入与产出指标",
+      "description": "大型跨文化项目汇集儿童日常语言输入和产出资料，供语言环境比较。",
+      "source_url": "https://osf.io/9v2m5/",
+      "tags": [
+        "儿童语言",
+        "跨文化",
+        "语言输入",
+        "自然录音"
+      ],
+      "limitations": "公开衍生指标与原始录音可能有不同访问条件；不能把项目体积当作可公开使用的全部音频。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "mixed_access",
+      "access_notes": "公开项目提供研究资料；逐数据类型检查衍生指标、录音及各贡献样本的访问条件。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R102",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "9v2m5"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/9v2m5/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "成人对婴儿发声的自然回应",
+      "category": "child-language",
+      "language_scope": "英语；婴儿与成人",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "自然互动编码、词汇指标与分析",
+      "description": "PLOS数据声明明确完整数据与分析语法存于OSF，研究成人回应婴儿发声与早期词汇。",
+      "source_url": "https://osf.io/a6vps/",
+      "tags": [
+        "儿童语言",
+        "照护互动",
+        "发声",
+        "词汇发展"
+      ],
+      "limitations": "行为编码与家长报告有不同测量误差；互动片段应保留家庭和婴儿层级。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R103",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "a6vps"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0242232",
+          "https://osf.io/a6vps/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "斯瓦希里语早期词汇纵向CDI数据",
+      "category": "child-language",
+      "language_scope": "斯瓦希里语；12、18、24月龄",
+      "language_codes": [
+        "sw"
+      ],
+      "data_type": "纵向词汇、数据字典及CDI问卷",
+      "description": "肯尼亚沿海儿童的纵向词汇资料；项目说明提供Excel、CSV、数据字典和斯瓦希里语CDI。",
+      "source_url": "https://osf.io/rey6m/",
+      "tags": [
+        "儿童语言",
+        "CDI",
+        "词汇发展",
+        "纵向",
+        "非西方样本"
+      ],
+      "limitations": "不同月龄问卷的词项和变量名需用字典对齐；与其他CDI版本的可比性需额外确认。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R104",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "rey6m"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/rey6m/overview",
+          "https://osf.io/rey6m/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "儿童词义习得：CHILDES义项聚类与人工评价",
+      "category": "child-language",
+      "language_scope": "英语；儿童及儿童导向话语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "义项聚类、习得指标及评价代码",
+      "description": "以CHILDES话语进行词义聚类，公开义项习得数据表和回归、稳健性、人工评分分析代码。",
+      "source_url": "https://osf.io/86yxz/",
+      "tags": [
+        "儿童语言",
+        "多义词",
+        "词义习得",
+        "模型派生"
+      ],
+      "limitations": "义项主要由计算模型抽取并经评价；与CHILDES转写同源，不能当作独立采集样本。",
+      "entry_type": "derived",
+      "data_origin": "derived_data",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [
+        "R002"
+      ],
+      "data_status": "released_data",
+      "id": "R105",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "86yxz"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/86yxz/overview",
+          "https://osf.io/86yxz/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "2月龄婴儿类别匹配词汇学习眼动",
+      "category": "child-language",
+      "language_scope": "多语言；2月龄婴儿，任务语言见材料",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "婴儿眼动、刺激与分析脚本",
+      "description": "公开词汇类别匹配研究的材料、数据和图形分析脚本。",
+      "source_url": "https://osf.io/arfqv/",
+      "tags": [
+        "儿童语言",
+        "婴儿",
+        "眼动",
+        "词汇学习"
+      ],
+      "limitations": "婴儿注视指标与成人词义知识不可等同；需核实任务语言、编码和排除标准。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R106",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "arfqv"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/arfqv/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "儿童非相邻依存学习：刺激与分析材料",
+      "category": "child-language",
+      "language_scope": "多语言；1至3岁儿童",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "ERP预处理脚本与刺激材料",
+      "description": "非相邻依存学习研究的OSF材料说明提供预处理和分析脚本，以及刺激和示例实验流程。",
+      "source_url": "https://osf.io/43t9q/",
+      "tags": [
+        "儿童语言",
+        "非相邻依存",
+        "ERP",
+        "句法发展"
+      ],
+      "limitations": "目前核对到脚本和刺激说明，未确认全部原始ERP数据开放；作为研究材料入口收录。",
+      "entry_type": "collection",
+      "data_origin": "materials_only",
+      "access_mode": "open_data",
+      "access_notes": "已确认刺激及分析脚本说明；原始被试ERP数据的公开范围待核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "materials_only",
+      "id": "R107",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "43t9q"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/43t9q/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "UniMorph（跨语言屈折范式）",
+      "category": "morphology",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "词元、屈折词形与形态句法特征",
+      "description": "跨语言屈折范式以统一形态特征系统标注，官网链接各语言数据仓库。",
+      "source_url": "https://unimorph.github.io/",
+      "tags": [
+        "形态",
+        "屈折",
+        "跨语言",
+        "范式"
+      ],
+      "limitations": "覆盖度和来源因语言而异，不能将缺失形式直接解读为语言中不存在。",
+      "entry_type": "collection",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://github.com/unimorph"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R108",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://unimorph.github.io/",
+          "https://github.com/unimorph"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SIGMORPHON–UniMorph 2023屈折生成",
+      "category": "morphology",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "屈折训练、开发与测试划分",
+      "description": "共享任务提供词元、目标词形和形态特征三元组，以及固定的数据划分。",
+      "source_url": "https://github.com/sigmorphon/2023InflectionST",
+      "tags": [
+        "形态",
+        "屈折",
+        "跨语言",
+        "泛化"
+      ],
+      "limitations": "继承UniMorph等来源；按词元划分与按词形划分有不同泛化含义。",
+      "entry_type": "derived",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R109",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/sigmorphon/2023InflectionST"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SIGMORPHON 2022形态切分",
+      "category": "morphology",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "语素切分与训练评测数据",
+      "description": "整合屈折、派生、复合词等形态资料，用于语素切分任务。",
+      "source_url": "https://github.com/sigmorphon/2022SegmentationST",
+      "tags": [
+        "形态",
+        "构词",
+        "语素切分",
+        "复合词"
+      ],
+      "limitations": "来源包括UniMorph、MorphyNet、UD和Wiktionary；与这些数据库存在同源重叠。",
+      "entry_type": "aggregate",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R110",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/sigmorphon/2022SegmentationST"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "L2英语在线掩蔽形态启动",
+      "category": "morphology",
+      "language_scope": "英语；二语使用者",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "匿名原始反应时、正确率及R脚本",
+      "description": "项目明确提供L2英语形态分解实验的匿名原始数据、完整R分析与模型输出。",
+      "source_url": "https://osf.io/ty4wd/",
+      "tags": [
+        "形态",
+        "二语",
+        "掩蔽启动",
+        "词汇判断"
+      ],
+      "limitations": "在线呈现时长、重复与屈折启动条件以及参与者熟练度需分别控制。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R111",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ty4wd"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/ty4wd/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "L1意大利语–L2英语形态启动与熟练度",
+      "category": "morphology",
+      "language_scope": "多语言；意大利语、英语",
+      "language_codes": [
+        "mul",
+        "en",
+        "it"
+      ],
+      "data_type": "掩蔽启动与多维熟练度测量",
+      "description": "研究80余名意英双语者，结合词汇、形态、音韵、拼写和语义能力测量比较形态与正字法启动。",
+      "source_url": "https://osf.io/62bek/",
+      "tags": [
+        "形态",
+        "二语",
+        "熟练度",
+        "形义一致性"
+      ],
+      "limitations": "熟练度指标之间可能相关；词形相似启动与真正形态启动应区分。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "license_review",
+      "access_notes": "已确认公开项目与研究/基准描述；原始数据文件范围及许可继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R112",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "62bek"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/62bek/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "俄德双语屈折加工与习得年龄",
+      "category": "morphology",
+      "language_scope": "多语言；俄语、德语",
+      "language_codes": [
+        "mul",
+        "ru",
+        "de"
+      ],
+      "data_type": "跨模态启动与语言经历",
+      "description": "比较不同德语习得年龄的俄德双语者对德语动词词干变体的跨模态启动。",
+      "source_url": "https://osf.io/ugbsd/",
+      "tags": [
+        "形态",
+        "双语",
+        "习得年龄",
+        "屈折"
+      ],
+      "limitations": "语言经历是观察性差异；公开材料范围与参与者层级需在复用时逐项核对。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "license_review",
+      "access_notes": "已确认公开项目与研究/基准描述；原始数据文件范围及许可继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R113",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ugbsd"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/ugbsd/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "自由句子产生中的提示与自愿语码转换",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "多语言；见原任务",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "完整行为数据、README、R脚本和补充材料",
+      "description": "项目说明逐项列出完整数据、数据说明、实验指令、模型诊断与主分析脚本。",
+      "source_url": "https://osf.io/73vfx/",
+      "tags": [
+        "双语",
+        "语码转换",
+        "句子产生",
+        "语言控制"
+      ],
+      "limitations": "自愿转换与提示转换有不同选择机制；分析需区分试次和参与者层级。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R114",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "73vfx"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/73vfx/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "L1–L2相似性与词汇编码",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "多语言；韩语、德语及目标语言",
+      "language_codes": [
+        "mul",
+        "ko",
+        "de"
+      ],
+      "data_type": "词汇编码数据及分析代码",
+      "description": "项目说明提供比较韩语与德语数据集的词汇量、词汇编码和语言相似性分析资料。",
+      "source_url": "https://osf.io/e637k/",
+      "tags": [
+        "二语",
+        "词汇量",
+        "跨语言相似",
+        "词汇编码"
+      ],
+      "limitations": "不同L1样本的熟练度与经历可能不同；语言相似性不是随机分配因素。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "项目页明确标注CC BY 4.0。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R115",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "e637k"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/e637k/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "L2到L1同源词与跨语言同形词启动",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "多语言；英语、荷兰语",
+      "language_codes": [
+        "mul",
+        "en",
+        "nl"
+      ],
+      "data_type": "原始数据、加工数据与完整分析链",
+      "description": "英语启动、荷兰语测试的语义相关判断；Wiki分别链接原始数据、加工脚本与分析脚本组件。",
+      "source_url": "https://osf.io/2swyg/",
+      "tags": [
+        "双语",
+        "同源词",
+        "同形词",
+        "启动"
+      ],
+      "limitations": "主项目与raw/processed组件只计一个资源；2021重上传版本删除了平台参与者ID，应使用更新版。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R116",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "2swyg"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/2swyg/wiki/home/",
+          "https://osf.io/2swyg/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "英意晚期双语者L1磨蚀与L2习得",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "多语言；英语、意大利语",
+      "language_codes": [
+        "mul",
+        "en",
+        "it"
+      ],
+      "data_type": "词汇、句法语用、韵律数据与模型输出",
+      "description": "公开项目说明包括研究材料、数据和Jamovi模型输出，用于L1磨蚀与L2习得。",
+      "source_url": "https://osf.io/bm3tj/",
+      "tags": [
+        "双语",
+        "语言磨蚀",
+        "句法语用",
+        "韵律"
+      ],
+      "limitations": "多构念测量有不同任务单位；不能以单个任务概括总体语言磨蚀。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R117",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "bm3tj"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/bm3tj/overview",
+          "https://osf.io/bm3tj/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Provo Corpus（预测度与眼动）",
+      "category": "reading-neuro",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "逐词眼动与完形预测度",
+      "description": "Wiki明确列出预测度和眼动CSV文件，并有原始EyeLink资料。",
+      "source_url": "https://osf.io/sjefs/",
+      "tags": [
+        "阅读",
+        "眼动",
+        "预测度",
+        "词汇加工"
+      ],
+      "limitations": "词项规范与阅读被试不同；使用修正版本并保留文本、词项和被试层级。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R118",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "sjefs"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/sjefs/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "ZuCo（联合EEG与眼动，含版本入口）",
+      "category": "reading-neuro",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "同步脑电、眼动、文本与预处理脚本",
+      "description": "提供自然英语句子阅读中的同步EEG和眼动数据；项目说明链接后续ZuCo 2.0。",
+      "source_url": "https://osf.io/q3zws/",
+      "tags": [
+        "阅读",
+        "眼动",
+        "EEG",
+        "人类与模型"
+      ],
+      "limitations": "版本与阅读任务不同，不能把ZuCo 1和2或加工副本当作相互独立的同质样本。",
+      "entry_type": "collection",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R119",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "q3zws"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/q3zws/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "CopCo（丹麦语自然阅读眼动）",
+      "category": "reading-neuro",
+      "language_scope": "丹麦语",
+      "language_codes": [
+        "da"
+      ],
+      "data_type": "原始EDF、逐词特征与理解反应",
+      "description": "公开自然丹麦语阅读数据，Wiki说明RawData、ExtractedFeatures及匿名参与者信息的组织。",
+      "source_url": "https://osf.io/ud8s5/",
+      "tags": [
+        "阅读",
+        "眼动",
+        "自然文本",
+        "丹麦语"
+      ],
+      "limitations": "区分原始眼动和提取特征；群体差异与阅读困难相关分析需按具体参与者定义。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R120",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ud8s5"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/ud8s5/overview",
+          "https://osf.io/ud8s5/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "TiNT（荷兰语同步EEG与自定步速阅读）",
+      "category": "reading-neuro",
+      "language_scope": "荷兰语",
+      "language_codes": [
+        "nl"
+      ],
+      "data_type": "自然文本SPR、EEG与理解反应",
+      "description": "71名荷兰语母语者阅读自然文本的联合EEG和自定步速阅读语料。",
+      "source_url": "https://osf.io/g32rp/",
+      "tags": [
+        "阅读",
+        "EEG",
+        "自定步速阅读",
+        "自然文本"
+      ],
+      "limitations": "SPR的刺激时序与自然眼动阅读不同；不能直接合并为同一种时程指标。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://github.com/saraoe/natural-stories-dutch"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R121",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "g32rp"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/g32rp/",
+          "https://github.com/saraoe/natural-stories-dutch"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "g-Rel-READER（阅读相关性判断）",
+      "category": "reading-neuro",
+      "language_scope": "多语言；见刺激文本",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "眼动、EEG、交互日志与文字坐标",
+      "description": "Wiki列出interaction_log、eye_fixations、eeg及text_coords等表，用于信息相关性判断。",
+      "source_url": "https://osf.io/3bvtx/",
+      "tags": [
+        "阅读",
+        "眼动",
+        "EEG",
+        "信息检索"
+      ],
+      "limitations": "需要按interaction_id和时间戳对齐，不可直接按行拼接多模态数据。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R122",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "3bvtx"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/3bvtx/overview",
+          "https://osf.io/3bvtx/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "OneStop All Regimes（英语阅读方式比较）",
+      "category": "reading-neuro",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "普通、信息搜寻与重复阅读眼动",
+      "description": "提供四种阅读条件的数据，并说明question_preview、repeated_reading_trial等筛选字段。",
+      "source_url": "https://osf.io/azj2g/",
+      "tags": [
+        "阅读",
+        "眼动",
+        "重复阅读",
+        "信息搜寻"
+      ],
+      "limitations": "同一参与者或段落的多次阅读有依赖；实践试次和问题预览需明确筛选。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R123",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "azj2g"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/azj2g/overview",
+          "https://osf.io/azj2g/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "中文阅读词眼动指标数据库",
+      "category": "reading-neuro",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "8,551词的九项眼动汇总指标",
+      "description": "整合57个实验、1,718名参与者的中文阅读数据，形成词项层面的眼动指标库。",
+      "source_url": "https://www.nature.com/articles/s41597-022-01464-6",
+      "tags": [
+        "中文",
+        "阅读",
+        "眼动",
+        "词汇加工"
+      ],
+      "limitations": "词项汇总常模与逐被试逐试次数据不同；先核对数据发布的粒度。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R124",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41597-022-01464-6"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Le Petit Prince多语自然听故事fMRI",
+      "category": "reading-neuro",
+      "language_scope": "多语言；英语、中文、法语",
+      "language_codes": [
+        "mul",
+        "en",
+        "zh",
+        "fr"
+      ],
+      "data_type": "fMRI、时间对齐词项与句法标注",
+      "description": "三种语言的母语者听相同故事译本，提供脑成像与时间对齐的语言预测指标。",
+      "source_url": "https://openneuro.org/datasets/ds003643",
+      "tags": [
+        "神经语言",
+        "fMRI",
+        "中文",
+        "跨语言",
+        "句法"
+      ],
+      "limitations": "语言译本的时长和结构不同；跨语言比较需对齐内容、被试与扫描参数。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://www.nature.com/articles/s41597-022-01625-7",
+        "https://github.com/OpenNeuroDatasets/ds003643"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R125",
+      "platforms": [
+        "openneuro",
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41597-022-01625-7",
+          "https://openneuro.org/datasets/ds003643",
+          "https://github.com/OpenNeuroDatasets/ds003643"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "LPPHK（老年粤语故事fMRI与EEG）",
+      "category": "reading-neuro",
+      "language_scope": "中文；粤语、65岁以上成人",
+      "language_codes": [
+        "zh",
+        "yue"
+      ],
+      "data_type": "fMRI、EEG、语言经历与认知测量",
+      "description": "公开粤语老年人听《小王子》的多模态神经数据和语言认知背景资料。",
+      "source_url": "https://openneuro.org/datasets/ds004718",
+      "tags": [
+        "神经语言",
+        "粤语",
+        "老年",
+        "EEG",
+        "fMRI"
+      ],
+      "limitations": "不同于年轻成人LPP样本；年龄、语言和采集方式不能同时无条件归因。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://www.nature.com/articles/s41597-024-03745-8",
+        "https://github.com/OpenNeuroDatasets/ds004718"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R126",
+      "platforms": [
+        "openneuro",
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41597-024-03745-8",
+          "https://openneuro.org/datasets/ds004718",
+          "https://github.com/OpenNeuroDatasets/ds004718"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Narratives（自然故事理解fMRI）",
+      "category": "reading-neuro",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "多故事、多被试fMRI及元数据",
+      "description": "作者维护的Narratives集合提供故事听觉理解fMRI及BIDS元数据。",
+      "source_url": "https://openneuro.org/datasets/ds002345/",
+      "tags": [
+        "神经语言",
+        "故事",
+        "fMRI",
+        "自然语言"
+      ],
+      "limitations": "不同快照的故事数和扫描数不同，须固定版本；不要与相似编号的其他故事数据混淆。",
+      "entry_type": "collection",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://snastase.github.io/datasets/ds002345"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R127",
+      "platforms": [
+        "openneuro"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://snastase.github.io/datasets/ds002345",
+          "https://openneuro.org/datasets/ds002345/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Alice Datasets（故事理解与语言预测指标）",
+      "category": "reading-neuro",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "fMRI、EEG及逐词语言标注入口",
+      "description": "研究组公开《爱丽丝梦游仙境》的神经语言数据，含原始和预处理fMRI、代码与刺激入口。",
+      "source_url": "https://cnllab.github.io/posts/data-alice-v2/index.html",
+      "tags": [
+        "神经语言",
+        "句法",
+        "故事",
+        "fMRI",
+        "EEG"
+      ],
+      "limitations": "不同模态可能来自不同参与者；应分别确认各数据包而非视作人人同步测量。",
+      "entry_type": "collection",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://aclanthology.org/2020.lrec-1.15/"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R128",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://cnllab.github.io/posts/data-alice-v2/index.html",
+          "https://aclanthology.org/2020.lrec-1.15/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SMN4Lang（中文同被试fMRI与MEG）",
+      "category": "reading-neuro",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "同被试fMRI、MEG与时间对齐语言标注",
+      "description": "12名参与者听中文故事，提供神经影像、词频、词性、句法树和时间对齐信息。",
+      "source_url": "https://openneuro.org/datasets/ds004078",
+      "tags": [
+        "中文",
+        "神经语言",
+        "MEG",
+        "fMRI",
+        "句法"
+      ],
+      "limitations": "跨模态是同被试不同采集时段，不能将采集顺序或模态差异等同语言机制。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://github.com/OpenNeuroDatasets/ds004078"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R129",
+      "platforms": [
+        "openneuro",
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/OpenNeuroDatasets/ds004078",
+          "https://openneuro.org/datasets/ds004078"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "VoxCommunis（多语言强制对齐语音）",
+      "category": "speech-phonetics",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "声学模型、词典与音素/词级TextGrid",
+      "description": "从Common Voice派生强制对齐，OSF明确说明当前版本已转移至Hugging Face。",
+      "source_url": "https://huggingface.co/datasets/pacscilab/VoxCommunis/",
+      "tags": [
+        "语音",
+        "音素",
+        "强制对齐",
+        "跨语言"
+      ],
+      "limitations": "自动对齐存在误差；与Common Voice同源，训练测试划分须避免说话人与录音重叠。",
+      "entry_type": "derived",
+      "data_origin": "derived_data",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "OSF说明Common Voice及该派生语料为CC0；以所选当前版本文件声明为准。",
+      "additional_urls": [
+        "https://osf.io/t957v/"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R130",
+      "platforms": [
+        "huggingface",
+        "osf"
+      ],
+      "osf_ids": [
+        "t957v"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/t957v/",
+          "https://huggingface.co/datasets/pacscilab/VoxCommunis/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "Audio-BNC / SPADE子集",
+      "category": "speech-phonetics",
+      "language_scope": "英语；英国口语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "声音、转写、TextGrid与筛选子集",
+      "description": "对旧版BNC口语强制对齐，项目说明列出SPADE为提高对齐可靠性选择的子集。",
+      "source_url": "https://osf.io/dgn2a/",
+      "tags": [
+        "语音",
+        "社会变异",
+        "强制对齐",
+        "自然口语"
+      ],
+      "limitations": "旧版BNC与Spoken BNC2014不同；需去除缺失方言信息并保留自动筛选规则。",
+      "entry_type": "derived",
+      "data_origin": "derived_data",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [
+        "R011"
+      ],
+      "data_status": "released_data",
+      "id": "R131",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "dgn2a"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "indexed_project_wiki",
+        "evidence_urls": [
+          "https://osf.io/dgn2a/overview",
+          "https://osf.io/dgn2a/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "英语与韩语母语者英语韵尾清浊声学数据",
+      "category": "speech-phonetics",
+      "language_scope": "多语言；英语、韩语背景L2英语",
+      "language_codes": [
+        "mul",
+        "en",
+        "ko"
+      ],
+      "data_type": "VOT、元音时长、F0、F1及F2",
+      "description": "12名英语母语者与24名韩国英语学习者产生CVC词的声学测量，含韵律和焦点条件。",
+      "source_url": "https://osf.io/fbms4/",
+      "tags": [
+        "语音",
+        "二语",
+        "VOT",
+        "韵律",
+        "清浊"
+      ],
+      "limitations": "公开的是声学测量值，不能默认包含可重测的原始音频；多次产出须按说话人建模。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R132",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "fbms4"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/fbms4/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "高保真消声多方向语音实验语料",
+      "category": "speech-phonetics",
+      "language_scope": "英语；见原句子材料",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "多方向录音、句子、数字与叙事",
+      "description": "公开高采样率消声环境录音，包含BKB句、数字和非脚本叙事，用于语音知觉。",
+      "source_url": "https://osf.io/w4h9f/",
+      "tags": [
+        "语音",
+        "语音知觉",
+        "声学",
+        "实验刺激"
+      ],
+      "limitations": "录制方向、话者和任务有不同子集；材料属于实验控制录音。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R133",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "w4h9f"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/w4h9f/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "德语词末清化不完全中和：数据与脚本",
+      "category": "speech-phonetics",
+      "language_scope": "德语",
+      "language_codes": [
+        "de"
+      ],
+      "data_type": "产生、知觉实验数据与R脚本",
+      "description": "Roettger等研究的三个产生实验及一个知觉实验资料，用于词末清化的不完全中和问题。",
+      "source_url": "https://osf.io/y7tdq/",
+      "tags": [
+        "语音",
+        "音系",
+        "词末清化",
+        "产生",
+        "知觉"
+      ],
+      "limitations": "不同实验的词项、正字法与功效操控需区分；不能把无显著差异自动解释为完全中和。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R134",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "y7tdq"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/y7tdq/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "线上、线下及口罩条件的VOT与元音共振峰",
+      "category": "speech-phonetics",
+      "language_scope": "多语言；英语、西班牙语、巴斯克语",
+      "language_codes": [
+        "mul",
+        "en",
+        "es",
+        "eu"
+      ],
+      "data_type": "声学数据与R分析",
+      "description": "项目列出VOT、英语元音和西班牙语–巴斯克语元音空间三组数据与代码。",
+      "source_url": "https://osf.io/xyh3k/",
+      "tags": [
+        "语音",
+        "VOT",
+        "共振峰",
+        "在线实验"
+      ],
+      "limitations": "录音环境和口罩条件影响测量；研究不同数据组的语言及采集条件不可混淆。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R135",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "xyh3k"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/xyh3k/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "语音趋同AXB知觉的贝叶斯元分析",
+      "category": "speech-phonetics",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "元分析资料、数据与R脚本",
+      "description": "项目明确公开采用AXB相似性判断的语音趋同研究元分析数据和补充材料。",
+      "source_url": "https://osf.io/8s9r5/",
+      "tags": [
+        "语音",
+        "语音趋同",
+        "社会互动",
+        "元分析"
+      ],
+      "limitations": "汇总或获授权的研究数据不等于所有原始录音；重复研究与共享样本需识别。",
+      "entry_type": "aggregate",
+      "data_origin": "derived_data",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R136",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "8s9r5"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/8s9r5/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "多语言学习者VOT知觉：数据与代码",
+      "category": "speech-phonetics",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "词首塞音VOT知觉数据",
+      "description": "作者公开“Crossing the boundaries”研究的数据与代码，分析多语言学习者的VOT知觉。",
+      "source_url": "https://osf.io/m7a43/",
+      "tags": [
+        "语音",
+        "语音知觉",
+        "多语言",
+        "VOT"
+      ],
+      "limitations": "任务语言、学习顺序及熟练度的具体范围需依据原始材料确认。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R137",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "m7a43"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/m7a43/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "间接请求的策略礼貌：207人实验",
+      "category": "social-interaction",
+      "language_scope": "英语；美国母语者",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "四项任务的匿名反应数据",
+      "description": "操控权力差与施加负担，收集207名美国英语母语者的间接请求礼貌策略反应。",
+      "source_url": "https://osf.io/xsq3p/",
+      "tags": [
+        "语用",
+        "礼貌",
+        "间接请求",
+        "社会关系"
+      ],
+      "limitations": "实验化情境选择与自然会话行为有不同外部效度。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R138",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "xsq3p"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/xsq3p/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "手势、音效与表情符号的共语言推论",
+      "category": "social-interaction",
+      "language_scope": "多语言；具体语言见材料",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "设计文件、刺激、行为数据与脚本",
+      "description": "项目明确提供共语言内容推论研究的完整设计、材料、数据与分析，并在论文接收后冻结。",
+      "source_url": "https://osf.io/n4ks9/",
+      "tags": [
+        "语用",
+        "手势",
+        "表情符号",
+        "多模态"
+      ],
+      "limitations": "冻结注册本身可以包含完成的数据；不能仅凭registration标签排除，也不能仅凭注册认定有数据。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R139",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "n4ks9"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/n4ks9/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "自由选择推论与同质性实验",
+      "category": "social-interaction",
+      "language_scope": "多语言；见原实验",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "行为数据及R脚本",
+      "description": "提供Tieu、Bill与Romoli关于自由选择推论和同质性分析的实验数据及代码。",
+      "source_url": "https://osf.io/56qvw/",
+      "tags": [
+        "语用",
+        "自由选择",
+        "同质性",
+        "推论"
+      ],
+      "limitations": "任务反应与理论构念之间的对应须按原实验设计解释。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R140",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "56qvw"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/56qvw/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "非典型习语语境：人类与LLM判断",
+      "category": "sign-figurative",
+      "language_scope": "多语言；见原刺激",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "人类与LLM可接受度、刺激及分析",
+      "description": "项目明确提供习语语境下的人类与LLM评分、实验材料、模型生成和统计分析代码。",
+      "source_url": "https://osf.io/zq6ht/",
+      "tags": [
+        "习语",
+        "人类与模型",
+        "可接受度",
+        "语境"
+      ],
+      "limitations": "两类评分有不同产生过程；固定模型版本、提示和人类任务条件再比较。",
+      "entry_type": "dataset",
+      "data_origin": "mixed_or_unspecified",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R141",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "zq6ht"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/zq6ht/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "叙事自由回忆数据集",
+      "category": "social-interaction",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "故事回忆转写与分析代码",
+      "description": "公开故事自由回忆数据的OSF仓库，作者GitHub提供处理与复现分析。",
+      "source_url": "https://osf.io/h2pkv/",
+      "tags": [
+        "叙事",
+        "自由回忆",
+        "语篇",
+        "记忆"
+      ],
+      "limitations": "重复叙述、原故事与听者背景有层级依赖；不能将所有句子视为独立被试。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://github.com/phoebsc/Naturalistic-Free-Recall-Dataset"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R142",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "h2pkv"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://osf.io/h2pkv/",
+          "https://github.com/phoebsc/Naturalistic-Free-Recall-Dataset"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "AMI Meeting Corpus",
+      "category": "social-interaction",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "会议音视频、转写和互动标注",
+      "description": "约100小时多模态会议，含角色设计任务和自然会议，提供话语行为等标注。",
+      "source_url": "https://groups.inf.ed.ac.uk/ami/corpus/",
+      "tags": [
+        "社会互动",
+        "会议",
+        "多模态",
+        "话语行为"
+      ],
+      "limitations": "约三分之二来自情境诱发设计会议；与自然发生会议的比较须标记来源。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R143",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://groups.inf.ed.ac.uk/ami/corpus/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CLAPI（法语自然互动音视频）",
+      "category": "social-interaction",
+      "language_scope": "法语",
+      "language_codes": [
+        "fr"
+      ],
+      "data_type": "自然会话录音、视频与转写",
+      "description": "下载页提供家庭、朋友、工作及服务等互动语料的录音和不同格式转写。",
+      "source_url": "http://clapi.icar.cnrs.fr/V3_Telecharger.php?interface_langue=EN",
+      "tags": [
+        "社会互动",
+        "会话分析",
+        "语用",
+        "多模态"
+      ],
+      "limitations": "情境和转写规范不完全一致；分析需识别会话来源及可比性。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "下载页声明CC BY-NC-SA 4.0。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R144",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "http://clapi.icar.cnrs.fr/V3_Telecharger.php?interface_langue=EN"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "MultiWOZ（任务型人际文字对话）",
+      "category": "social-interaction",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "人际文字对话、对话状态与任务标注",
+      "description": "多个旅游服务领域的人工任务对话；作者仓库链接不同版本及修正版。",
+      "source_url": "https://github.com/budzianowski/multiwoz/",
+      "tags": [
+        "对话",
+        "任务型对话",
+        "话语行为",
+        "模型评测"
+      ],
+      "limitations": "由任务引导的人际文字对话；不是未经引导的日常自然会话。各修正版同源。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R145",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/budzianowski/multiwoz/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SpokenWOZ（任务型真实语音对话）",
+      "category": "social-interaction",
+      "language_scope": "英语",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "语音、转写与跨轮次任务标注",
+      "description": "约249小时、5,700段人际语音任务对话，提供文本与语音资料。",
+      "source_url": "https://spokenwoz.github.io/",
+      "tags": [
+        "对话",
+        "自然口语",
+        "任务型对话",
+        "语音"
+      ],
+      "limitations": "含任务诱发与特定领域设置；音频、转写和状态标注的可用性需按版本确认。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R146",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://spokenwoz.github.io/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "SPAML（多语言语义启动）",
+      "category": "lexical-cognition",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "多实验室语义启动数据、材料与代码",
+      "description": "Psychological Science Accelerator的多语言语义启动项目，仓库链接数据和2025年发表记录。",
+      "source_url": "https://github.com/SemanticPriming/SPAML",
+      "tags": [
+        "语义启动",
+        "跨语言",
+        "多实验室",
+        "词汇加工"
+      ],
+      "limitations": "多实验室、翻译与词对间存在层级结构；预注册阶段与已发表数据版本须区分。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [
+        "https://www.nature.com/articles/s41562-025-02254-x"
+      ],
+      "related_ids": [],
+      "data_status": "released_data",
+      "id": "R147",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/SemanticPriming/SPAML",
+          "https://www.nature.com/articles/s41562-025-02254-x"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "TROLLing / DataverseNO（语言学数据仓库）",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "按语言、现象、作者和论文寻找语言学原始数据、统计代码与复现材料。",
+      "source_url": "https://dataverse.no/dataverse/trolling",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "不同数据集有独立版本、文件说明与许可；平台本身不构成单一数据集。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R148",
+      "platforms": [
+        "dataverseno"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://dataverse.no/dataverse/trolling"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CLARIN Virtual Language Observatory（VLO）",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "跨机构检索语言资源元数据，可按语言、资源类型与访问条件筛选。",
+      "source_url": "https://vlo.clarin.eu/",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "检索到记录不等于其数据全部免费；需进入原托管机构核对权限。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R149",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://vlo.clarin.eu/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "CLARIN Resource Families",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "按学习者语料、口语、议会、历时、平行和词汇等资源家族继续查漏补缺。",
+      "source_url": "https://www.clarin.eu/resource-families",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "目录层资料；具体资源的下载范围、许可与版本需单独确认。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R150",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://www.clarin.eu/resource-families"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "TalkBank研究领域总入口",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "从儿童、双语、会话、失语等研究板块继续寻找转写及媒体资料。",
+      "source_url": "https://talkbank.org/",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "已有CHILDES、PhonBank、CABank和HomeBank条目是其组成部分；避免重复计数。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R151",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://talkbank.org/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "OpenNeuro（语言相关神经数据检索）",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "按任务和语言关键词寻找BIDS格式fMRI、EEG、MEG等数据，保留数据集编号与快照。",
+      "source_url": "https://openneuro.org/",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "数据库涵盖全部神经科学；必须筛选有语言任务、刺激文本和时间对齐说明的记录。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R152",
+      "platforms": [
+        "openneuro"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://openneuro.org/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Databrary（儿童与互动视频）",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "查找儿童发展、照护互动及行为研究的视频、编码和元数据。",
+      "source_url": "https://databrary.org/",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "许多视频需要研究者及机构授权协议；不能归类为人人匿名可下载。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "application_required",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R153",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://databrary.org/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "ORTOLANG（法语及多语言资源）",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "检索语料、词典和语言资源；按资源自己的描述和访问级别继续筛选。",
+      "source_url": "https://www.ortolang.fr/",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "公开元数据与受限媒体可能并存；本次未逐项展开其全部馆藏。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R154",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://www.ortolang.fr/"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "OpenSLR（语音资源目录）",
+      "category": "resource-portals",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "平台、索引或跨项目发现入口",
+      "description": "按编号寻找多语言语音、转写、亲子互动和对话语料。",
+      "source_url": "https://www.openslr.org/resources.php",
+      "tags": [
+        "资源检索",
+        "发现入口",
+        "跨语言"
+      ],
+      "limitations": "每个SLR资源有独立许可；镜像、辅助转写与完整录音不是同一个开放范围。",
+      "entry_type": "collection",
+      "data_origin": "discovery_portal",
+      "access_mode": "mixed_access",
+      "access_notes": "用于继续查找具体数据集；访问与许可逐项目确认。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "discovery_portal",
+      "id": "R155",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://www.openslr.org/resources.php"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "NHB形义规律性研究：分析复现包",
+      "category": "crossling-cultural",
+      "language_scope": "多语言",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "公开语言数据的加工、模型与分析代码",
+      "description": "用户提供论文的Code availability指向此OSF项目，提供词级及词以下形义规律性分析的复现资料。",
+      "source_url": "https://osf.io/qzaxk/",
+      "tags": [
+        "共词化",
+        "形义映射",
+        "语义网络",
+        "复现"
+      ],
+      "limitations": "由Lexibank、SWOW及词向量等资源派生，不能把复现包当作独立采集的原始语言样本。",
+      "entry_type": "derived",
+      "data_origin": "derived_data",
+      "access_mode": "open_data",
+      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [
+        "R022",
+        "R041",
+        "R042"
+      ],
+      "data_status": "released_data",
+      "id": "R156",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "qzaxk"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_data_statement",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41562-026-02488-3",
+          "https://osf.io/qzaxk/"
+        ],
+        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+      }
+    },
+    {
+      "name": "11,310简体中文词效价与唤醒常模",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "词项情感评分",
+      "description": "涵盖双字、三字与四字词的效价和唤醒评分，大多数词与MELD-SCH重合。",
+      "source_url": "https://doi.org/10.3758/s13428-021-01607-4",
+      "tags": [
+        "中文",
+        "常模",
+        "效价",
+        "唤醒"
+      ],
+      "limitations": "常模词项与MELD-SCH高度重合；相关数据库不构成独立抽样。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R157",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.3758/s13428-021-01607-4"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "24,325简体中文词熟悉度常模",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "七点熟悉度评分",
+      "description": "1,300名普通话使用者对双字、三字与四字词进行熟悉度评分；论文明确指向补充材料。",
+      "source_url": "https://doi.org/10.3758/s13428-022-01878-5",
+      "tags": [
+        "中文",
+        "熟悉度",
+        "常模",
+        "词汇加工"
+      ],
+      "limitations": "熟悉度不同于客观频率或词汇知识；保留每词评分人数和缺失值。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R158",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.3758/s13428-022-01878-5"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "中文小学教材字词属性库",
+      "category": "child-language",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "教材词表及心理语言属性",
+      "description": "以小学教材收录字词为基础，提供词汇加工与习得研究用的字词属性。",
+      "source_url": "https://doi.org/10.3758/s13428-023-02214-1",
+      "tags": [
+        "中文",
+        "儿童语言",
+        "教材",
+        "字词属性"
+      ],
+      "limitations": "教材选词不等于儿童个人的实际词汇或真实首次习得年龄。",
+      "entry_type": "dataset",
+      "data_origin": "corpus_annotation",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R159",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.3758/s13428-023-02214-1"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "GECO-CN（中英双语小说阅读眼动）",
+      "category": "reading-neuro",
+      "language_scope": "多语言；中文、英语",
+      "language_codes": [
+        "mul",
+        "en",
+        "zh"
+      ],
+      "data_type": "双语自然阅读眼动",
+      "description": "中英双语者分段阅读完整小说，跨被试交换语言阅读顺序，形成自然阅读眼动语料。",
+      "source_url": "https://doi.org/10.3758/s13428-022-01931-3",
+      "tags": [
+        "中文",
+        "双语",
+        "眼动",
+        "自然阅读"
+      ],
+      "limitations": "中文和英文阅读顺序有实验安排；与原荷英GECO属于不同采集项目，仍共享研究框架。",
+      "entry_type": "dataset",
+      "data_origin": "human_observations",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R160",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.3758/s13428-022-01931-3"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "DoWLS-MAN（普通话词级统计）",
+      "category": "speech-phonetics",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "多方案音节及音韵指标",
+      "description": "为普通话词及非词提供多种音节分析方案对应的音韵特征和词级统计。",
+      "source_url": "https://doi.org/10.3758/s13428-021-01620-7",
+      "tags": [
+        "中文",
+        "音韵",
+        "词级统计",
+        "音节"
+      ],
+      "limitations": "16种音节表示方案体现不同分析选择，不能将其指标无区分混用。",
+      "entry_type": "dataset",
+      "data_origin": "derived_data",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R161",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.3758/s13428-021-01620-7"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "Chinese Onomatopoeia Database（COD）",
+      "category": "sign-figurative",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "拟声词多维人工常模",
+      "description": "751个中文拟声词的具体性、意象性、习得年龄、熟悉度、透明度、语境与情感评分。",
+      "source_url": "https://doi.org/10.57760/sciencedb.14749",
+      "tags": [
+        "中文",
+        "拟声词",
+        "象似性",
+        "常模"
+      ],
+      "limitations": "规范化主观评分不能直接替代儿童纵向习得或声学相似测量。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R162",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.57760/sciencedb.14749"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "500条中文三字习语情感与心理语言常模",
+      "category": "sign-figurative",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "习语多维评分",
+      "description": "提供三字习语的效价、唤醒、熟悉度、透明度、歧义及习得年龄等评分。",
+      "source_url": "https://doi.org/10.3758/s13428-025-02633-2",
+      "tags": [
+        "中文",
+        "习语",
+        "熟悉度",
+        "透明度",
+        "情感"
+      ],
+      "limitations": "三字习语不同于四字成语；不能把不同类型熟语合并为同一语言单位。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R163",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.3758/s13428-025-02633-2"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "name": "3,783简体双字词心理语言常模",
+      "category": "chinese-l2-bilingual",
+      "language_scope": "中文",
+      "language_codes": [
+        "zh"
+      ],
+      "data_type": "多维心理语言指标",
+      "description": "提供双字词的多项心理语言属性，涵盖熟悉度、具体性、意象性、组合性及语义透明度等。",
+      "source_url": "https://doi.org/10.1177/21582440211054495",
+      "tags": [
+        "中文",
+        "双字词",
+        "组合性",
+        "透明度",
+        "常模"
+      ],
+      "limitations": "各指标可能来自评分与外部词典等不同来源；先核实每列定义再做联合分析。",
+      "entry_type": "dataset",
+      "data_origin": "human_norms",
+      "access_mode": "license_review",
+      "access_notes": "已核对出版方或正式数据记录的资源描述；下载入口、文件范围与许可在复用前继续核对。",
+      "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
+      "additional_urls": [],
+      "related_ids": [],
+      "data_status": "described_resource",
+      "id": "R164",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://doi.org/10.1177/21582440211054495"
+        ],
+        "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
+      }
+    },
+    {
+      "id": "R165",
+      "name": "BilingBank（多语言会话）",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "collection",
+      "language_scope": "多语言；覆盖范围以子语料为准",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "会话转写、多媒体与子语料集合",
+      "description": "TalkBank的多语言语料板块，提供多语言沟通研究所需的会话转写与相关媒体入口。",
+      "access_mode": "free_registration",
+      "access_notes": "主页要求注册TalkBank账号；具体媒体和子库按访问级别确认。",
+      "license_note": "遵守TalkBank及具体贡献语料的使用规则和引用要求；不推定统一再分发许可。",
+      "limitations": "语种和可用媒体依子语料变化；与TalkBank其他板块可能共享来源，不能默认独立样本。",
+      "source_url": "https://biling.talkbank.org/",
+      "additional_urls": [
+        "https://talkbank.org/"
+      ],
+      "tags": [
+        "二语",
+        "双语",
+        "会话",
+        "自然口语"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://biling.talkbank.org/",
+          "https://talkbank.org/"
+        ],
+        "note": "核对TalkBank官方主页与访问要求；未申请权限或下载受限资料。"
+      }
+    },
+    {
+      "id": "R166",
+      "name": "SLABank（二语习得语料）",
+      "category": "chinese-l2-bilingual",
+      "entry_type": "collection",
+      "language_scope": "多语言；覆盖范围以子语料为准",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "会话转写、多媒体与子语料集合",
+      "description": "TalkBank的二语习得语料板块，提供学习者语言转写、媒体和数据库检索入口。",
+      "access_mode": "free_registration",
+      "access_notes": "主页要求注册TalkBank账号；具体媒体和子库按访问级别确认。",
+      "license_note": "遵守TalkBank及具体贡献语料的使用规则和引用要求；不推定统一再分发许可。",
+      "limitations": "不同学习者群体、任务和转写版本不能无条件合并；需引用具体子语料。",
+      "source_url": "https://slabank.talkbank.org/",
+      "additional_urls": [
+        "https://talkbank.org/"
+      ],
+      "tags": [
+        "二语",
+        "双语",
+        "会话",
+        "自然口语"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://slabank.talkbank.org/",
+          "https://talkbank.org/"
+        ],
+        "note": "核对TalkBank官方主页与访问要求；未申请权限或下载受限资料。"
+      }
+    },
+    {
+      "id": "R167",
+      "name": "ASDBank（自闭症谱系沟通语料）",
+      "category": "clinical-language",
+      "entry_type": "collection",
+      "language_scope": "多语言；覆盖范围以子语料为准",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "会话转写、多媒体与子语料集合",
+      "description": "TalkBank的自闭症谱系沟通研究多媒体语料，首页说明需建立TalkBank账号访问。",
+      "access_mode": "free_registration",
+      "access_notes": "主页要求注册TalkBank账号；具体媒体和子库按访问级别确认。",
+      "license_note": "遵守TalkBank及具体贡献语料的使用规则和引用要求；不推定统一再分发许可。",
+      "limitations": "具体子库的访问级别与人群定义须进一步核对；不能以诊断标签直接推断统一语言特征。",
+      "source_url": "https://asd.talkbank.org/",
+      "additional_urls": [
+        "https://talkbank.org/"
+      ],
+      "tags": [
+        "临床语言",
+        "沟通",
+        "语言障碍"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://asd.talkbank.org/",
+          "https://talkbank.org/"
+        ],
+        "note": "核对TalkBank官方主页与访问要求；未申请权限或下载受限资料。"
+      }
+    },
+    {
+      "id": "R168",
+      "name": "AphasiaBank（失语症沟通资料）",
+      "category": "clinical-language",
+      "entry_type": "collection",
+      "language_scope": "多语言；覆盖范围以子语料为准",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "会话转写、多媒体与子语料集合",
+      "description": "失语症沟通的多媒体共享资料，包含会话、协议与研究工具入口。",
+      "access_mode": "application_required",
+      "access_notes": "需注册并获得研究者/机构或联盟授权；学生申请由导师负责。",
+      "license_note": "遵守TalkBank及具体贡献语料的使用规则和引用要求；不推定统一再分发许可。",
+      "limitations": "访问限获准的联盟成员，学生需通过导师申请；部分转写的时长和停顿计算有官方提示的编码边界。",
+      "source_url": "https://aphasia.talkbank.org/",
+      "additional_urls": [
+        "https://talkbank.org/"
+      ],
+      "tags": [
+        "临床语言",
+        "沟通",
+        "语言障碍"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://aphasia.talkbank.org/",
+          "https://talkbank.org/"
+        ],
+        "note": "核对TalkBank官方主页与访问要求；未申请权限或下载受限资料。"
+      }
+    },
+    {
+      "id": "R169",
+      "name": "DementiaBank（认知障碍沟通资料）",
+      "category": "clinical-language",
+      "entry_type": "collection",
+      "language_scope": "多语言；覆盖范围以子语料为准",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "会话转写、多媒体与子语料集合",
+      "description": "研究认知障碍沟通的多媒体共享资料；研究数据与教学展示有不同访问条件。",
+      "access_mode": "application_required",
+      "access_notes": "需注册并获得研究者/机构或联盟授权；学生申请由导师负责。",
+      "license_note": "遵守TalkBank及具体贡献语料的使用规则和引用要求；不推定统一再分发许可。",
+      "limitations": "研究数据受联盟成员权限保护，学生需导师申请；不把账号注册当作已获研究数据权限。",
+      "source_url": "https://dementia.talkbank.org/",
+      "additional_urls": [
+        "https://talkbank.org/"
+      ],
+      "tags": [
+        "临床语言",
+        "沟通",
+        "语言障碍"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-10-17",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://dementia.talkbank.org/",
+          "https://talkbank.org/"
+        ],
+        "note": "核对TalkBank官方主页与访问要求；未申请权限或下载受限资料。"
       }
     }
   ]

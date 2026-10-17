@@ -2,9 +2,11 @@
 """Generate the browsable resource directory and discovery indexes from JSON."""
 import argparse
 from collections import Counter
+from datetime import datetime
 import json
 from pathlib import Path
 import sys
+from verification import CHECK_LABELS, check_state, next_steps, verification_queue
 
 ROOT=Path(__file__).resolve().parents[1]
 ROLE={'dataset':'数据集','collection':'资源集合','aggregate':'整合资料','alignment':'对齐资料','derived':'派生资料'}
@@ -21,14 +23,20 @@ def generated_files(c):
     osf=[r for r in resources if 'osf' in r['platforms']]
     source=json.loads((ROOT/'data/source-indexes/norare.json').read_text())
     candidates=json.loads((ROOT/'data/discovery-candidates.json').read_text())
+    observation=json.loads((ROOT/'data/platform-observations.json').read_text())
+    notice=observation.get('scheduled_maintenance')
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
     audit=json.loads(audit_paths[-1].read_text()) if audit_paths else None
+    queue=verification_queue(c,source,candidates)
+    check_counts=queue['summary']['main_by_check_state']
     lines=['# 公开语言资源目录\n\n',
         '用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。\n\n',
         f"主目录 **{len(resources)}个资源入口、{len(labels)}类**，其中 **{len(osf)}条关联OSF**；[句法专类](catalog/syntax.md)有 **{counts['syntax']}条**。更新：**{c['updated_on']}**。\n\n",
         f"另附 [NoRaRe的{source['record_count']}条具体来源记录](catalog/norare-source-index.md)和 [待核对的{candidates['candidate_count']}条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。\n\n",
+        f"**文件核验进度：{check_counts['documentation_only']}条仅核对说明、{check_counts['file_preview']}条读取头部样例、{check_counts['selected_file_checked']}条完整检查选定文件、{check_counts['fully_validated']}条完成资源文件验收；另有{check_counts['discovery_portal']}个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。\n\n",
         '## 快速入口\n\n',
         '- [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。\n',
+        f'- [核验进度与待检查清单](catalog/verification-status.md)：全部{len(resources)}条逐项状态、OSF恢复后的待办。\n',
         '- [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。\n',
         '- [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。\n',
         '- [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。\n\n',
@@ -41,11 +49,12 @@ def generated_files(c):
         '- [字段与核对类型](docs/data-dictionary.md) · [JSON Schema](schema/resources.schema.json) · [收录范围](docs/scope.md)。\n\n',
         '“有数据发布说明”表示来源说明提供数据，不表示本目录已验证文件可解析、变量无误或分析可复现。',
         '公开、注册、申请和混合访问分别标明；各原始数据的许可保持独立。\n\n',
-        '## 全部资源速览\n\n| 编号 | 资源 | 分类 | 资料状态 |\n| --- | --- | --- | --- |\n']
-    for r in resources: lines.append(f"| {r['id']} | [{md(r['name'])}]({link(r)}) | {labels[r['category']]} | {STATUS[r['data_status']]} |\n")
+        '## 全部资源速览\n\n| 编号 | 资源 | 分类 | 资料状态 | 实际文件核验 |\n| --- | --- | --- | --- | --- |\n']
+    for r in resources: lines.append(f"| {r['id']} | [{md(r['name'])}]({link(r)}) | {labels[r['category']]} | {STATUS[r['data_status']]} | {CHECK_LABELS[check_state(r)]} |\n")
     lines+=['\n## 本地筛选\n\n无需第三方依赖，使用Python 3：\n\n```sh\n',
         'python3 scripts/query.py --category syntax\npython3 scripts/query.py --platform osf\n',
         'python3 scripts/query.py --platform osf --category syntax\npython3 scripts/query.py --lang zh\n',
+        'python3 scripts/query.py --check-state documentation_only --platform osf\n',
         'python3 scripts/query.py --tag 结构启动\npython3 scripts/query.py --index norare 习得年龄\n',
         'python3 scripts/query.py --index norare --lang zh\npython3 scripts/query.py --index candidates --category syntax\n',
         'python3 scripts/query.py --origin human_norms --format json\n```\n\n',
@@ -53,6 +62,7 @@ def generated_files(c):
         '```sh\npython3 scripts/build.py\npython3 scripts/validate.py\npython3 scripts/build.py --check\n```\n\n',
         '方法见 [CONTRIBUTING.md](CONTRIBUTING.md)。原有R001–R060编号保留；UD移入句法专类。\n']
     files={'README.md':''.join(lines),'data/resources.jsonl':''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in resources)}
+    files['data/verification-queue.json']=json.dumps(queue,ensure_ascii=False,indent=2)+'\n'
     if audit:
         insertion=f"[原{audit['reviewed_count']}条候选的逐项复核](catalog/candidate-audit.md)：{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留具体限制或待确认事项。\n\n"
         files['README.md']=files['README.md'].replace('## 按主题浏览\n\n',insertion+'## 按主题浏览\n\n',1)
@@ -63,7 +73,7 @@ def generated_files(c):
         for r in subset:
             v=r['verification']
             out += [f'<a id="{r["id"].lower()}"></a>\n\n',f"## {r['name']}\n\n",f"**{r['id']}** · {ROLE[r['entry_type']]} · {STATUS[r['data_status']]}\n\n",f"{r['description']}\n\n",'| 字段 | 内容 |\n| --- | --- |\n',
-                f"| 语言与人群 | {md(r['language_scope'])} |\n",f"| 数据性质 | {md(r['data_type'])}；{ORIGIN[r['data_origin']]} |\n",f"| 获取方式 | {md(c['access_modes'][r['access_mode']])}：{md(r['access_notes'])} |\n",f"| 许可 | {md(r['license_note'])} |\n",f"| 使用边界 | {md(r['limitations'])} |\n",f"| 标签 | {md('、'.join(r['tags']))} |\n",f"| 平台 | {', '.join(r['platforms'])} |\n",f"| 核对依据 | {EVIDENCE[v['evidence_type']]}；{v['documentation_checked_on']} |\n",f"| 核对范围 | {md(v['note'])} |\n",f"\n[项目或数据入口]({r['source_url']})\n"]
+                f"| 语言与人群 | {md(r['language_scope'])} |\n",f"| 数据性质 | {md(r['data_type'])}；{ORIGIN[r['data_origin']]} |\n",f"| 获取方式 | {md(c['access_modes'][r['access_mode']])}：{md(r['access_notes'])} |\n",f"| 许可 | {md(r['license_note'])} |\n",f"| 使用边界 | {md(r['limitations'])} |\n",f"| 标签 | {md('、'.join(r['tags']))} |\n",f"| 平台 | {', '.join(r['platforms'])} |\n",f"| 核对依据 | {EVIDENCE[v['evidence_type']]}；{v['documentation_checked_on']} |\n",f"| 实际文件核验 | **{CHECK_LABELS[check_state(r)]}** |\n",f"| 核对范围 | {md(v['note'])} |\n",f"| 下一步 | {md('；'.join(step.rstrip('。') for step in next_steps(r))+'。')} |\n",f"\n[项目或数据入口]({r['source_url']})\n"]
             extras=list(dict.fromkeys([*r['additional_urls'],*v['evidence_urls']]))
             extras=[u for u in extras if u!=r['source_url']]
             if extras:
@@ -77,8 +87,8 @@ def generated_files(c):
     for x in c['categories']:
         subset=[r for r in osf if r['category']==x['id']]
         if not subset: continue
-        out+=[f"## {x['label']}\n\n",'| 编号 | 资源 | OSF编号 | 依据 | 资料状态 |\n| --- | --- | --- | --- | --- |\n']
-        for r in subset: out.append(f"| {r['id']} | [{md(r['name'])}]({link(r,'../')}) | {', '.join(r['osf_ids'])} | {EVIDENCE[r['verification']['evidence_type']]} | {STATUS[r['data_status']]} |\n")
+        out+=[f"## {x['label']}\n\n",'| 编号 | 资源 | OSF编号 | 依据 | 资料状态 | 实际文件核验 |\n| --- | --- | --- | --- | --- | --- |\n']
+        for r in subset: out.append(f"| {r['id']} | [{md(r['name'])}]({link(r,'../')}) | {', '.join(r['osf_ids'])} | {EVIDENCE[r['verification']['evidence_type']]} | {STATUS[r['data_status']]} | {CHECK_LABELS[check_state(r)]} |\n")
         out.append('\n')
     files['catalog/osf.md']=''.join(out)
     out=['# NoRaRe具体数据集来源索引\n\n','[首页](../README.md) · [结构化来源数据](../data/source-indexes/norare.json)\n\n',f"共{source['record_count']}条历年来源记录；当前源库元数据{source['current_source_metadata_count']}条，较早CLDF快照{source['cldf_snapshot_count']}条。",'这不是独立数据集的去重计数，不能与主目录数量相加。旧标识可能重命名或拆分，原始论文也可能产生多个语言或测量子表。\n\n',
@@ -121,6 +131,30 @@ def generated_files(c):
                 for f in a['file_checks']:report.append(f"- [{f['read_scope']}]({f['url']})：{f['result']}\n")
             report.append('\n')
         files['catalog/candidate-audit.md']=''.join(report)
+    report=['# 文件核验进度与待检查清单\n\n',
+        '[首页](../README.md) · [OSF索引](osf.md) · [结构化清单](../data/verification-queue.json) · [平台访问与维护记录](../data/platform-observations.json)\n\n',
+        f"记录日期：{c['updated_on']}。本页按既有核对证据生成，**此次整理清单没有新增原始数据文件核验**。说明核对、文件读取、全资源验收分别计数。\n\n",
+        '| 当前文件核验范围 | 主目录条数 |\n| --- | ---: |\n']
+    for state,label in CHECK_LABELS.items():report.append(f'| {label} | {check_counts[state]} |\n')
+    report += [f"\n主目录共{len(resources)}个入口；{queue['summary']['main_without_recorded_file_reads']}个尚无数据文件读取记录，其中{check_counts['discovery_portal']}个是发现平台。已有{queue['summary']['main_with_recorded_file_reads']}条记录选定文件读取范围；具体文件见各条目的核对来源及结构化清单。\n\n",
+        '## OSF维护与恢复后的检查顺序\n\n']
+    if notice:
+        eastern=datetime.fromisoformat(notice['scheduled_end_edt'])
+        taipei=datetime.fromisoformat(notice['scheduled_end_asia_taipei'])
+        report.append(f"用户提供的官网通知称，OSF为云基础设施迁移计划于**{eastern:%Y年%m月%d日%H:%M} EDT（UTC−04:00）**结束维护，对应**北京时间／台北时间{taipei:%m月%d日%H:%M}（UTC+08:00）**。这是计划结束时间，实际恢复须另行检查；本次未独立取得该条通知的实时正文。\n\n")
+    report += [
+        f'1. 先确认OSF页面、公开API和文件端点分别恢复；页面能打开不等于数据可下载。\n2. 优先检查主目录中{len(osf)}条OSF关联资源的文件清单、子组件和版本，核对数据与材料范围。\n3. 继续核对剩余{candidates["candidate_count"]}条候选；只公开刺激、统计输出或需申请的仍保留对应限制。\n4. 继续核对其他主目录资源；NoRaRe的{source["record_count"]}条来源记录单列，不作为新增独立数据集计数。\n\n',
+        '## 主目录逐项待办\n\n',
+        '| 编号 | 资源 | 实际文件核验 | OSF恢复后复核 | 下一步 |\n| --- | --- | --- | --- | --- |\n']
+    for r in resources:
+        follow='、'.join(r['osf_ids']) if 'osf' in r['platforms'] else '—'
+        report.append(f"| {r['id']} | [{md(r['name'])}]({link(r,'../')}) | {CHECK_LABELS[check_state(r)]} | {follow} | {md('；'.join(step.rstrip('。') for step in next_steps(r))+'。')} |\n")
+    report += ['\n## 剩余候选的具体问题\n\n','| 编号 | 项目 | 下一步核验 |\n| --- | --- | --- |\n']
+    for r in candidates['candidates']:
+        report.append(f"| {r['id']} | [{md(r['name'])}]({r['source_url']}) | {md(r['next_verification_step'])} |\n")
+    report += ['\n## NoRaRe来源记录\n\n',
+        f"{source['record_count']}条来源目前都只有上游元数据核对，未逐项读取原始文件。逐条入口见[来源索引](norare-source-index.md)，待办也保留在[结构化清单](../data/verification-queue.json)的`norare_sources`中。来源与主目录可能重叠；实际采用某项测量前需回到原始发布版本，核对词项、被试或样本单位、测量定义及许可。\n"]
+    files['catalog/verification-status.md']=''.join(report)
     return files
 
 def main():

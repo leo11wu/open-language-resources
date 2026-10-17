@@ -6,6 +6,8 @@
 4. 运行 `python3 scripts/build.py`，更新首页、分类目录和JSONL。
 5. 运行 `python3 scripts/validate.py` 和 `python3 scripts/build.py --check`。
 
+文件核验进度页和 `data/verification-queue.json` 也由构建脚本生成，不手工打勾。根据实际证据编辑各资源的 `verification`，保留读取范围和版本；网页能打开、论文声明有数据或只读文件头部，均不能标成全资源文件已验收。发现入口按平台用途检查，不按数据集验收。
+
 NoRaRe来源记录编辑 `data/source-indexes/norare.json`；未确认发布的数据线索编辑 `data/discovery-candidates.json`。两组不计入主目录数量。维护来源索引时记录上游固定版本和署名；不能因聚合库中有一行元数据就把原始文件标为已验收。
 
 候选晋升时保留原C编号并分配新的R编号，写入 `data/candidate-audit-日期.json`，保存前后状态、数据入口及证据。已晋升记录移出当前候选列表；只有刺激、补表、申请访问或相近研究时，不自动当作该候选的公开原始数据。实际文件读取应注明范围，不能用小样例代替全库验收。

@@ -3,6 +3,7 @@
 import argparse
 import json
 from pathlib import Path
+from verification import CHECK_LABELS, check_state
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -21,10 +22,11 @@ def main():
     parser.add_argument('--origin',choices=['human_observations','human_norms','corpus_annotation','synthetic_stimuli','derived_data','mixed_or_unspecified','materials_only','discovery_portal'])
     parser.add_argument('--status',choices=['released_data','described_resource','materials_only','discovery_portal'])
     parser.add_argument('--evidence',help='Evidence type, e.g. publisher_data_statement (main only)')
+    parser.add_argument('--check-state',choices=list(CHECK_LABELS),help='Recorded file-check scope, independent of data release status (main only)')
     parser.add_argument('--format',choices=['text','json'],default='text')
     args = parser.parse_args()
     if args.index!='main':
-        unsupported=args.access or args.origin or args.status or args.evidence or args.platform
+        unsupported=args.access or args.origin or args.status or args.evidence or args.platform or args.check_state
         if unsupported: parser.error('Access, platform, origin, status and evidence filters apply to the main catalog only.')
         if args.index=='norare' and args.category: parser.error('The NoRaRe source index has measure/language tags, not main-catalog categories.')
         if args.index=='norare':
@@ -62,6 +64,7 @@ def main():
         if args.origin and r['data_origin']!=args.origin: continue
         if args.status and r['data_status']!=args.status: continue
         if args.evidence and r['verification']['evidence_type']!=args.evidence: continue
+        if args.check_state and check_state(r)!=args.check_state: continue
         if args.lang and not any(code.casefold()==args.lang.casefold() or code.casefold().startswith(args.lang.casefold()+'-') for code in r['language_codes']):
             continue
         if args.tag and args.tag not in r['tags']:
@@ -75,7 +78,7 @@ def main():
     else:
         print(f'{len(selected)} resources')
         for r in selected:
-            print(f"\n{r['id']} {r['name']}\n{r['description']}\n获取：{r['access_notes']}\n{r['source_url']}")
+            print(f"\n{r['id']} {r['name']}\n{r['description']}\n文件核验：{CHECK_LABELS[check_state(r)]}\n获取：{r['access_notes']}\n{r['source_url']}")
     return 0
 
 

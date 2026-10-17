@@ -70,3 +70,13 @@
 `data/discovery-candidates.json` 中的C编号不进入主目录数量。原22条复核后，已确认公开数据的10条转入R170–R179；剩余12条保留具体状态、证据URL和下一步需确认事项。完整映射和历史状态保存在 `data/candidate-audit-2026-10-17.json`，避免晋升后丢失来源。
 
 `materials_only` 表示当前只确认材料或统计输出，`access_restricted` 表示须申请，`obsolete_link` 表示旧入口已更换内容；其余记录仍可能有未找到的数据。冻结注册若明确包含完成数据，可以进入主目录；不能仅按注册标签机械排除。已经完成实验但缺少公开数据证据的项目，也不再简单写成“只有计划”。
+
+## 文件核验台账与待办
+
+`data/verification-queue.json` 与 `catalog/verification-status.md` 从已有记录自动生成。生成时间只表示整理日期，不刷新资源的说明核对日期，也不构成新的下载或文件验收。
+
+`check_state` 是派生字段：`documentation_only` 仅核对说明，`file_preview` 已读头部样例，`selected_file_checked` 已完整读取选定文件但全库未验收，`fully_validated` 表示资源文件已验收。`discovery_portal` 单列发现入口，不当作有待下载的数据集。查询可使用 `--check-state`，并与平台、主题和语言筛选组合。
+
+结构化清单的 `main_resources` 覆盖全部R编号；`remaining_candidates` 保留未纳入候选的具体问题；`norare_sources` 保留全部来源记录及原始入口。后两组与主目录可能重叠，不相加计数。`next_steps` 是后续任务，不是已经完成的操作。
+
+平台维护信息保存在 `data/platform-observations.json`。`evidence_type=user_supplied_official_notice` 明确表示官网通知正文由用户提供，`notice_firsthand_checked=false` 表示本次未独立取得实时正文；计划恢复时间与实际恢复结果分开记录。

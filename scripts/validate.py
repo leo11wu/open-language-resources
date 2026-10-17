@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import urlparse
+from verification import verification_queue
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -71,6 +72,8 @@ def main():
     check(len({x['id'] for x in candidate['candidates']})==len(candidate['candidates']),'Duplicate candidate IDs')
     for row in candidate['candidates']:
         check(row['category'] in categories and row['counts_as_main_resource'] is False,'Candidate categorization invalid')
+    queue=json.loads((ROOT/'data/verification-queue.json').read_text())
+    check(queue==verification_queue(catalog,source,candidate),'Verification queue differs from recorded resource evidence')
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
     for path in audit_paths:
         audit=json.loads(path.read_text())

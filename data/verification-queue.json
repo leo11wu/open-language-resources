@@ -1,0 +1,5082 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-10-17",
+  "catalog_version": "2.1.1",
+  "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
+  "state_labels": {
+    "documentation_only": "仅核对说明；未读数据文件",
+    "file_preview": "已读文件头部样例",
+    "selected_file_checked": "已完整检查选定文件；全库未验收",
+    "fully_validated": "资源文件已验收",
+    "discovery_portal": "发现入口；不作为数据文件验收"
+  },
+  "summary": {
+    "main_resource_count": 179,
+    "main_by_check_state": {
+      "documentation_only": 169,
+      "file_preview": 1,
+      "selected_file_checked": 1,
+      "fully_validated": 0,
+      "discovery_portal": 8
+    },
+    "main_with_recorded_file_reads": 2,
+    "main_without_recorded_file_reads": 177,
+    "osf_associated_main_count": 73,
+    "remaining_candidate_count": 12,
+    "norare_source_record_count": 182,
+    "norare_original_files_checked_count": 0
+  },
+  "counting_note": "主目录、候选与NoRaRe来源记录层级不同且可能重叠，不相加为独立数据集数量。",
+  "main_resources": [
+    {
+      "resource_id": "R001",
+      "name": "Wordbank",
+      "category": "child-language",
+      "source_url": "https://wordbank.stanford.edu/faq/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R002",
+      "name": "CHILDES（附childes-db接口）",
+      "category": "child-language",
+      "source_url": "https://talkbank.org/childes/access/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R003",
+      "name": "Peekbank",
+      "category": "child-language",
+      "source_url": "https://peekbank.github.io/peekbank-website/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R004",
+      "name": "PhonBank",
+      "category": "child-language",
+      "source_url": "https://talkbank.org/phon/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R005",
+      "name": "ManyBabies 1（MB1）",
+      "category": "child-language",
+      "source_url": "https://github.com/manybabies/mb1-analysis-public",
+      "platforms": [
+        "github",
+        "osf"
+      ],
+      "osf_ids": [
+        "re95x"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R006",
+      "name": "MetaLab",
+      "category": "child-language",
+      "source_url": "https://metalab.stanford.edu/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R007",
+      "name": "HomeBank",
+      "category": "child-language",
+      "source_url": "https://talkbank.org/homebank/access/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R008",
+      "name": "SAYCam",
+      "category": "child-language",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8412186/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R009",
+      "name": "CORAAL",
+      "category": "spoken-variation",
+      "source_url": "https://oraal.github.io/coraal",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R010",
+      "name": "Santa Barbara Corpus of Spoken American English",
+      "category": "spoken-variation",
+      "source_url": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R011",
+      "name": "Spoken BNC2014",
+      "category": "spoken-variation",
+      "source_url": "https://corpora.lancs.ac.uk/bnc2014/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R012",
+      "name": "Buckeye Corpus",
+      "category": "spoken-variation",
+      "source_url": "https://buckeyecorpus.osu.edu/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R013",
+      "name": "CANDOR",
+      "category": "spoken-variation",
+      "source_url": "https://convokit.cornell.edu/documentation/candor.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R014",
+      "name": "HCRC Map Task Corpus",
+      "category": "spoken-variation",
+      "source_url": "https://groups.inf.ed.ac.uk/maptask/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R015",
+      "name": "CABank",
+      "category": "spoken-variation",
+      "source_url": "https://talkbank.org/ca/access/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R016",
+      "name": "Stanford Politeness Corpus（Wikipedia）",
+      "category": "social-interaction",
+      "source_url": "https://convokit.cornell.edu/documentation/wiki_politeness.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R017",
+      "name": "Conversations Gone Awry（CGA-WIKI）",
+      "category": "social-interaction",
+      "source_url": "https://convokit.cornell.edu/documentation/awry.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R018",
+      "name": "Winning Arguments（ChangeMyView）",
+      "category": "social-interaction",
+      "source_url": "https://convokit.cornell.edu/documentation/winning.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R019",
+      "name": "Deception in Diplomacy",
+      "category": "social-interaction",
+      "source_url": "https://convokit.cornell.edu/documentation/diplomacy.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R020",
+      "name": "Parliament Question Time Corpus",
+      "category": "social-interaction",
+      "source_url": "https://convokit.cornell.edu/documentation/parliament.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R021",
+      "name": "ParlaMint",
+      "category": "social-interaction",
+      "source_url": "https://www.clarin.eu/parlamint",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R022",
+      "name": "Small World of Words（SWOW）",
+      "category": "lexical-cognition",
+      "source_url": "https://smallworldofwords.org/en/project/research",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R023",
+      "name": "English Lexicon Project（ELP）",
+      "category": "lexical-cognition",
+      "source_url": "https://elexicon.wustl.edu/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "n63s2"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R024",
+      "name": "英语习得年龄常模（Kuperman等及相关扩展）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/d7x6q/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "d7x6q"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R025",
+      "name": "英语具体性常模（Brysbaert等）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/kj76e/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "kj76e",
+        "qpmf4"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R026",
+      "name": "Lancaster Sensorimotor Norms",
+      "category": "lexical-cognition",
+      "source_url": "https://www.lancaster.ac.uk/psychology/lsnorms/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "7emr6"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R027",
+      "name": "Glasgow Norms",
+      "category": "lexical-cognition",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-018-1099-3",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R028",
+      "name": "Warriner情感常模",
+      "category": "lexical-cognition",
+      "source_url": "https://norare.clld.org/contributions/Warriner-2013-AffectiveRatings",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R029",
+      "name": "SimLex-999",
+      "category": "lexical-cognition",
+      "source_url": "https://fh295.github.io/simlex.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R030",
+      "name": "THINGS资源体系",
+      "category": "lexical-cognition",
+      "source_url": "https://things-initiative.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R031",
+      "name": "SUBTLEX-CH",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R032",
+      "name": "Chinese Lexical Database（CLD）",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://chineselexicaldatabase.com/download.php",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R033",
+      "name": "MELD-SCH",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-017-0944-0",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R034",
+      "name": "Chinese Lexicon Project（Tse等，双字词）",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-016-0810-5",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R035",
+      "name": "ICNALE",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://language.sakura.ne.jp/icnale/download.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R036",
+      "name": "EFCAMDAT",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://ef-lab.mmll.cam.ac.uk/EFCAMDAT.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R037",
+      "name": "MERLIN",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://www.merlin-platform.eu/C_data.php",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R038",
+      "name": "CEDEL2",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://cedel2.learnercorpora.com/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R039",
+      "name": "GECO",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://expsy.ugent.be/downloads/geco/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R040",
+      "name": "MECO",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://meco-read.com/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "3527a"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R041",
+      "name": "Lexibank",
+      "category": "crossling-cultural",
+      "source_url": "https://lexibank.clld.org/",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R042",
+      "name": "CLICS",
+      "category": "crossling-cultural",
+      "source_url": "https://clics.clld.org/download",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R043",
+      "name": "NoRaRe",
+      "category": "crossling-cultural",
+      "source_url": "https://norare.clld.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R044",
+      "name": "Concepticon",
+      "category": "crossling-cultural",
+      "source_url": "https://concepticon.clld.org/download",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R045",
+      "name": "WALS",
+      "category": "crossling-cultural",
+      "source_url": "https://wals.info/download",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R046",
+      "name": "Grambank",
+      "category": "crossling-cultural",
+      "source_url": "https://grambank.clld.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R047",
+      "name": "D-PLACE",
+      "category": "crossling-cultural",
+      "source_url": "https://d-place.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R048",
+      "name": "PHOIBLE",
+      "category": "crossling-cultural",
+      "source_url": "https://phoible.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R049",
+      "name": "Intercontinental Dictionary Series（IDS）",
+      "category": "crossling-cultural",
+      "source_url": "https://ids.clld.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R050",
+      "name": "ASL-LEX",
+      "category": "sign-figurative",
+      "source_url": "https://asl-lex.org/download.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R051",
+      "name": "Multilingual Sign Language Wordnet",
+      "category": "sign-figurative",
+      "source_url": "https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/download.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R052",
+      "name": "Public DGS Corpus（MEINE DGS）",
+      "category": "sign-figurative",
+      "source_url": "https://www.sign-lang.uni-hamburg.de/meinedgs_r4/ling/start_en.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R053",
+      "name": "ChID",
+      "category": "sign-figurative",
+      "source_url": "https://github.com/chujiezheng/ChID-Dataset",
+      "platforms": [
+        "github",
+        "huggingface"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R054",
+      "name": "Chengyu-Bench",
+      "category": "sign-figurative",
+      "source_url": "https://github.com/sofyc/ChengyuBench",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R055",
+      "name": "ePiC",
+      "category": "sign-figurative",
+      "source_url": "https://epic-benchmark.github.io/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R056",
+      "name": "Google Books Ngrams",
+      "category": "diachronic-parallel-syntax",
+      "source_url": "https://books.google.com/ngrams/datasets",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R057",
+      "name": "HistWords",
+      "category": "diachronic-parallel-syntax",
+      "source_url": "https://nlp.stanford.edu/projects/histwords/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R058",
+      "name": "OPUS",
+      "category": "diachronic-parallel-syntax",
+      "source_url": "https://opus.nlpl.eu/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R059",
+      "name": "Universal Dependencies（UD）",
+      "category": "syntax",
+      "source_url": "https://universaldependencies.org/download.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R060",
+      "name": "Project Gutenberg",
+      "category": "diachronic-parallel-syntax",
+      "source_url": "https://www.gutenberg.org/ebooks/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R061",
+      "name": "UD-English-CHILDES（儿童及成人互动依存树库）",
+      "category": "syntax",
+      "source_url": "https://universaldependencies.org/treebanks/en_childes/",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R062",
+      "name": "CHILDES Treebank / Pearl–Sprouse（成分句法）",
+      "category": "syntax",
+      "source_url": "https://sites.socsci.uci.edu/~lpearl/CoLaLab/CHILDESTreebank/childestreebank.html",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R063",
+      "name": "CoLA（英语可接受度语料）",
+      "category": "syntax",
+      "source_url": "https://nyu-mll.github.io/CoLA/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R064",
+      "name": "CoLAC（中文可接受度语料）",
+      "category": "syntax",
+      "source_url": "https://github.com/huhailinguist/CoLAC",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R065",
+      "name": "BLiMP（英语句法最小对立）",
+      "category": "syntax",
+      "source_url": "https://github.com/alexwarstadt/blimp",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R066",
+      "name": "CLiMP（中文语言模型句法评测）",
+      "category": "syntax",
+      "source_url": "https://github.com/beileixiang/CLiMP",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R067",
+      "name": "SLING（中文句法语义评测）",
+      "category": "syntax",
+      "source_url": "https://github.com/Yixiao-Song/SLING_Data_Code",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R068",
+      "name": "ZhoBLiMP（中文35k最小对立）",
+      "category": "syntax",
+      "source_url": "https://github.com/sjtu-compling/ZhoBLiMP",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R069",
+      "name": "JCoLA（日语可接受度语料）",
+      "category": "syntax",
+      "source_url": "https://github.com/osekilab/JCoLA",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R070",
+      "name": "JBLiMP（日语人工验证最小对立）",
+      "category": "syntax",
+      "source_url": "https://github.com/osekilab/JBLiMP",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R071",
+      "name": "KBLiMP（韩语句法最小对立）",
+      "category": "syntax",
+      "source_url": "https://github.com/kusonglab/kblimp",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R072",
+      "name": "RuCoLA（俄语可接受度）",
+      "category": "syntax",
+      "source_url": "https://github.com/RussianNLP/RuCoLA",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R073",
+      "name": "MELA（十语言可接受度集合）",
+      "category": "syntax",
+      "source_url": "https://github.com/sjtu-compling/MELA",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R074",
+      "name": "SyntaxGym（句法测试套件库）",
+      "category": "syntax",
+      "source_url": "https://syntaxgym.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R075",
+      "name": "Marvin–Linzen Targeted Syntactic Evaluation",
+      "category": "syntax",
+      "source_url": "https://github.com/beckymarvin/lm_syneval",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R076",
+      "name": "Colorless Green RNNs（一致关系测试集）",
+      "category": "syntax",
+      "source_url": "https://github.com/facebookresearch/colorlessgreenRNNs",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R077",
+      "name": "Natural Stories Corpus",
+      "category": "syntax",
+      "source_url": "https://github.com/languageMIT/naturalstories",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R078",
+      "name": "Syntactic Ambiguity Processing Benchmark（SAP）",
+      "category": "syntax",
+      "source_url": "https://osf.io/b6rqh/",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "b6rqh"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R079",
+      "name": "冰岛语主语开头V3结构可接受度",
+      "category": "syntax",
+      "source_url": "https://osf.io/mg2r8/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "mg2r8"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R080",
+      "name": "Agreement Attraction：语法句判断数据",
+      "category": "syntax",
+      "source_url": "https://osf.io/eawg5/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "eawg5",
+        "pd8ky"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R081",
+      "name": "Hierarchical Structure and Memory in Agreement Attraction",
+      "category": "syntax",
+      "source_url": "https://osf.io/j85sp/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "j85sp"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R082",
+      "name": "从主语抽取与话语功能：英法七个实验",
+      "category": "syntax",
+      "source_url": "https://osf.io/mtngd/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "mtngd"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R083",
+      "name": "矩阵动词重复与PO/DO结构启动",
+      "category": "syntax",
+      "source_url": "https://osf.io/p8f2c/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "p8f2c"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R084",
+      "name": "西班牙语理解中的岛效应",
+      "category": "syntax",
+      "source_url": "https://osf.io/ckxaw/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ckxaw"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R085",
+      "name": "Wordform Boost in Structural Priming",
+      "category": "syntax",
+      "source_url": "https://osf.io/sbvfy/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "sbvfy"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R086",
+      "name": "中文嵌入wh问句作用域眼动实验",
+      "category": "syntax",
+      "source_url": "https://osf.io/as4h7/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "as4h7"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R087",
+      "name": "18月龄婴儿非局部句法依存数据",
+      "category": "syntax",
+      "source_url": "https://osf.io/4sz9w/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "4sz9w"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R088",
+      "name": "英荷双及物构式抽样数据",
+      "category": "syntax",
+      "source_url": "https://osf.io/7ntmk/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "7ntmk"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R089",
+      "name": "不同一致依存的预测加工",
+      "category": "syntax",
+      "source_url": "https://osf.io/mbtcd/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "mbtcd"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R090",
+      "name": "捷克语花园路径句：开放式理解问题",
+      "category": "syntax",
+      "source_url": "https://osf.io/98g26/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "98g26"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R091",
+      "name": "大样本英语语法学习年龄数据（Hartshorne等）",
+      "category": "syntax",
+      "source_url": "https://osf.io/pyb8s/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "pyb8s"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R092",
+      "name": "CONcreTEXT（语境具体性常模）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/u3pc4/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "u3pc4"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R093",
+      "name": "GLEAN（德语外推情感常模）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/a6w53/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "a6w53"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R094",
+      "name": "西班牙语1,252条习语心理语言与情感常模",
+      "category": "sign-figurative",
+      "source_url": "https://osf.io/p75c3/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "p75c3"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R095",
+      "name": "Six Semantic Dimension Database（六维语义）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/n5vke/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "n5vke"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R096",
+      "name": "Socialness Norms（8,388英语词社会性）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/yjz85/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "yjz85",
+        "2dqnj"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R097",
+      "name": "English Semantic Feature Production Norms（4,436概念）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/cjyzw/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "cjyzw"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R098",
+      "name": "Body–Object Interaction（9,000余英语词）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/6syf3/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "6syf3"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R099",
+      "name": "Humor of English Words（英语变体比较）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/pg3fr/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "pg3fr"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R100",
+      "name": "Three Terms Task（3TT）",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/at8cs/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "at8cs"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R101",
+      "name": "语言输入的内容与时间：3岁词汇预测",
+      "category": "child-language",
+      "source_url": "https://osf.io/sgjbh/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "sgjbh"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R102",
+      "name": "六大洲1,001名儿童日常语言输入与产出",
+      "category": "child-language",
+      "source_url": "https://osf.io/9v2m5/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "9v2m5"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R103",
+      "name": "成人对婴儿发声的自然回应",
+      "category": "child-language",
+      "source_url": "https://osf.io/a6vps/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "a6vps"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R104",
+      "name": "斯瓦希里语早期词汇纵向CDI数据",
+      "category": "child-language",
+      "source_url": "https://osf.io/rey6m/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "rey6m"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R105",
+      "name": "儿童词义习得：CHILDES义项聚类与人工评价",
+      "category": "child-language",
+      "source_url": "https://osf.io/86yxz/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "86yxz"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R106",
+      "name": "2月龄婴儿类别匹配词汇学习眼动",
+      "category": "child-language",
+      "source_url": "https://osf.io/arfqv/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "arfqv"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R107",
+      "name": "儿童非相邻依存学习：刺激与分析材料",
+      "category": "child-language",
+      "source_url": "https://osf.io/43t9q/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "43t9q"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R108",
+      "name": "UniMorph（跨语言屈折范式）",
+      "category": "morphology",
+      "source_url": "https://unimorph.github.io/",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R109",
+      "name": "SIGMORPHON–UniMorph 2023屈折生成",
+      "category": "morphology",
+      "source_url": "https://github.com/sigmorphon/2023InflectionST",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R110",
+      "name": "SIGMORPHON 2022形态切分",
+      "category": "morphology",
+      "source_url": "https://github.com/sigmorphon/2022SegmentationST",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R111",
+      "name": "L2英语在线掩蔽形态启动",
+      "category": "morphology",
+      "source_url": "https://osf.io/ty4wd/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ty4wd"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R112",
+      "name": "L1意大利语–L2英语形态启动与熟练度",
+      "category": "morphology",
+      "source_url": "https://osf.io/62bek/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "62bek"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R113",
+      "name": "俄德双语屈折加工与习得年龄",
+      "category": "morphology",
+      "source_url": "https://osf.io/ugbsd/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ugbsd"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R114",
+      "name": "自由句子产生中的提示与自愿语码转换",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://osf.io/73vfx/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "73vfx"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R115",
+      "name": "L1–L2相似性与词汇编码",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://osf.io/e637k/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "e637k"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R116",
+      "name": "L2到L1同源词与跨语言同形词启动",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://osf.io/2swyg/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "2swyg"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R117",
+      "name": "英意晚期双语者L1磨蚀与L2习得",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://osf.io/bm3tj/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "bm3tj"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R118",
+      "name": "Provo Corpus（预测度与眼动）",
+      "category": "reading-neuro",
+      "source_url": "https://osf.io/sjefs/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "sjefs"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R119",
+      "name": "ZuCo（联合EEG与眼动，含版本入口）",
+      "category": "reading-neuro",
+      "source_url": "https://osf.io/q3zws/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "q3zws"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R120",
+      "name": "CopCo（丹麦语自然阅读眼动）",
+      "category": "reading-neuro",
+      "source_url": "https://osf.io/ud8s5/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ud8s5"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R121",
+      "name": "TiNT（荷兰语同步EEG与自定步速阅读）",
+      "category": "reading-neuro",
+      "source_url": "https://osf.io/g32rp/",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "g32rp"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R122",
+      "name": "g-Rel-READER（阅读相关性判断）",
+      "category": "reading-neuro",
+      "source_url": "https://osf.io/3bvtx/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "3bvtx"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R123",
+      "name": "OneStop All Regimes（英语阅读方式比较）",
+      "category": "reading-neuro",
+      "source_url": "https://osf.io/azj2g/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "azj2g"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R124",
+      "name": "中文阅读词眼动指标数据库",
+      "category": "reading-neuro",
+      "source_url": "https://www.nature.com/articles/s41597-022-01464-6",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R125",
+      "name": "Le Petit Prince多语自然听故事fMRI",
+      "category": "reading-neuro",
+      "source_url": "https://openneuro.org/datasets/ds003643",
+      "platforms": [
+        "openneuro",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R126",
+      "name": "LPPHK（老年粤语故事fMRI与EEG）",
+      "category": "reading-neuro",
+      "source_url": "https://openneuro.org/datasets/ds004718",
+      "platforms": [
+        "openneuro",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R127",
+      "name": "Narratives（自然故事理解fMRI）",
+      "category": "reading-neuro",
+      "source_url": "https://openneuro.org/datasets/ds002345/",
+      "platforms": [
+        "openneuro"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R128",
+      "name": "Alice Datasets（故事理解与语言预测指标）",
+      "category": "reading-neuro",
+      "source_url": "https://cnllab.github.io/posts/data-alice-v2/index.html",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R129",
+      "name": "SMN4Lang（中文同被试fMRI与MEG）",
+      "category": "reading-neuro",
+      "source_url": "https://openneuro.org/datasets/ds004078",
+      "platforms": [
+        "openneuro",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R130",
+      "name": "VoxCommunis（多语言强制对齐语音）",
+      "category": "speech-phonetics",
+      "source_url": "https://huggingface.co/datasets/pacscilab/VoxCommunis/",
+      "platforms": [
+        "huggingface",
+        "osf"
+      ],
+      "osf_ids": [
+        "t957v"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R131",
+      "name": "Audio-BNC / SPADE子集",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/dgn2a/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "dgn2a"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R132",
+      "name": "英语与韩语母语者英语韵尾清浊声学数据",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/fbms4/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "fbms4"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R133",
+      "name": "高保真消声多方向语音实验语料",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/w4h9f/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "w4h9f"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R134",
+      "name": "德语词末清化不完全中和：数据与脚本",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/y7tdq/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "y7tdq"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R135",
+      "name": "线上、线下及口罩条件的VOT与元音共振峰",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/xyh3k/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "xyh3k"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R136",
+      "name": "语音趋同AXB知觉的贝叶斯元分析",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/8s9r5/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "8s9r5"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R137",
+      "name": "多语言学习者VOT知觉：数据与代码",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/m7a43/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "m7a43"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R138",
+      "name": "间接请求的策略礼貌：207人实验",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/xsq3p/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "xsq3p"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R139",
+      "name": "手势、音效与表情符号的共语言推论",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/n4ks9/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "n4ks9"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R140",
+      "name": "自由选择推论与同质性实验",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/56qvw/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "56qvw"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R141",
+      "name": "非典型习语语境：人类与LLM判断",
+      "category": "sign-figurative",
+      "source_url": "https://osf.io/zq6ht/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "zq6ht"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R142",
+      "name": "叙事自由回忆数据集",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/h2pkv/",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "h2pkv"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R143",
+      "name": "AMI Meeting Corpus",
+      "category": "social-interaction",
+      "source_url": "https://groups.inf.ed.ac.uk/ami/corpus/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R144",
+      "name": "CLAPI（法语自然互动音视频）",
+      "category": "social-interaction",
+      "source_url": "http://clapi.icar.cnrs.fr/V3_Telecharger.php?interface_langue=EN",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R145",
+      "name": "MultiWOZ（任务型人际文字对话）",
+      "category": "social-interaction",
+      "source_url": "https://github.com/budzianowski/multiwoz/",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R146",
+      "name": "SpokenWOZ（任务型真实语音对话）",
+      "category": "social-interaction",
+      "source_url": "https://spokenwoz.github.io/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R147",
+      "name": "SPAML（多语言语义启动）",
+      "category": "lexical-cognition",
+      "source_url": "https://github.com/SemanticPriming/SPAML",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R148",
+      "name": "TROLLing / DataverseNO（语言学数据仓库）",
+      "category": "resource-portals",
+      "source_url": "https://dataverse.no/dataverse/trolling",
+      "platforms": [
+        "dataverseno"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R149",
+      "name": "CLARIN Virtual Language Observatory（VLO）",
+      "category": "resource-portals",
+      "source_url": "https://vlo.clarin.eu/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R150",
+      "name": "CLARIN Resource Families",
+      "category": "resource-portals",
+      "source_url": "https://www.clarin.eu/resource-families",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R151",
+      "name": "TalkBank研究领域总入口",
+      "category": "resource-portals",
+      "source_url": "https://talkbank.org/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R152",
+      "name": "OpenNeuro（语言相关神经数据检索）",
+      "category": "resource-portals",
+      "source_url": "https://openneuro.org/",
+      "platforms": [
+        "openneuro"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R153",
+      "name": "Databrary（儿童与互动视频）",
+      "category": "resource-portals",
+      "source_url": "https://databrary.org/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R154",
+      "name": "ORTOLANG（法语及多语言资源）",
+      "category": "resource-portals",
+      "source_url": "https://www.ortolang.fr/",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R155",
+      "name": "OpenSLR（语音资源目录）",
+      "category": "resource-portals",
+      "source_url": "https://www.openslr.org/resources.php",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "discovery_portal",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
+      ]
+    },
+    {
+      "resource_id": "R156",
+      "name": "NHB形义规律性研究：分析复现包",
+      "category": "crossling-cultural",
+      "source_url": "https://osf.io/qzaxk/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "qzaxk"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R157",
+      "name": "11,310简体中文词效价与唤醒常模",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://doi.org/10.3758/s13428-021-01607-4",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R158",
+      "name": "24,325简体中文词熟悉度常模",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://doi.org/10.3758/s13428-022-01878-5",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R159",
+      "name": "中文小学教材字词属性库",
+      "category": "child-language",
+      "source_url": "https://doi.org/10.3758/s13428-023-02214-1",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R160",
+      "name": "GECO-CN（中英双语小说阅读眼动）",
+      "category": "reading-neuro",
+      "source_url": "https://doi.org/10.3758/s13428-022-01931-3",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R161",
+      "name": "DoWLS-MAN（普通话词级统计）",
+      "category": "speech-phonetics",
+      "source_url": "https://doi.org/10.3758/s13428-021-01620-7",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R162",
+      "name": "Chinese Onomatopoeia Database（COD）",
+      "category": "sign-figurative",
+      "source_url": "https://doi.org/10.57760/sciencedb.14749",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R163",
+      "name": "500条中文三字习语情感与心理语言常模",
+      "category": "sign-figurative",
+      "source_url": "https://doi.org/10.3758/s13428-025-02633-2",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R164",
+      "name": "3,783简体双字词心理语言常模",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://doi.org/10.1177/21582440211054495",
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R165",
+      "name": "BilingBank（多语言会话）",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://biling.talkbank.org/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R166",
+      "name": "SLABank（二语习得语料）",
+      "category": "chinese-l2-bilingual",
+      "source_url": "https://slabank.talkbank.org/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R167",
+      "name": "ASDBank（自闭症谱系沟通语料）",
+      "category": "clinical-language",
+      "source_url": "https://asd.talkbank.org/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R168",
+      "name": "AphasiaBank（失语症沟通资料）",
+      "category": "clinical-language",
+      "source_url": "https://aphasia.talkbank.org/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R169",
+      "name": "DementiaBank（认知障碍沟通资料）",
+      "category": "clinical-language",
+      "source_url": "https://dementia.talkbank.org/",
+      "platforms": [
+        "talkbank"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R170",
+      "name": "挪威语wh抽取与关系化岛效应数据",
+      "category": "syntax",
+      "source_url": "https://osf.io/ma9jp/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "ma9jp",
+        "gwy9s"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R171",
+      "name": "中文体动词补语强制转换：自定步速阅读",
+      "category": "syntax",
+      "source_url": "https://osf.io/wd2g7/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "wd2g7"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R172",
+      "name": "西班牙语关系从句岛效应：实验数据与代码",
+      "category": "syntax",
+      "source_url": "https://osf.io/t9vpq/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "t9vpq"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R173",
+      "name": "事件结构、习语与轻动词的结构启动",
+      "category": "syntax",
+      "source_url": "https://osf.io/zx6wv/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "zx6wv"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R174",
+      "name": "SCARFS：熟人与陌生人的指称互动",
+      "category": "social-interaction",
+      "source_url": "https://github.com/seantrott/scarfs",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "hcya6"
+      ],
+      "check_state": "file_preview",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
+          "read_scope": "first_8_lines",
+          "result": "公开读取表头及前7行，含rt、pair_type、trial_result和伙伴/轮次字段；未读取全表。",
+          "blob_sha": "3e123e34ce429bb92a7195cbdd0b002c2a54f67b"
+        }
+      ],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "头部样例已读取；完整读取代表性数据表，核对行列、缺失值、变量及发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R175",
+      "name": "烹饪对话礼貌：公开标注、模拟样例与分析",
+      "category": "social-interaction",
+      "source_url": "https://github.com/delsweil/CHIIR2026_politeness",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "mp3dt"
+      ],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/user_code_matrix_scaled.csv",
+          "read_scope": "complete_small_csv",
+          "result": "完整读取并用CSV解析器核对：30数据行、15列，各行列数一致；不代表内容准确性或其他文件均验收。",
+          "blob_sha": "be5013c92a95d2965e0e4ba45e472f8aff1f1533"
+        },
+        {
+          "url": "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/Anna_annotation_01_08_25.csv",
+          "read_scope": "first_4_lines",
+          "result": "读取分号分隔的人工标注表头与开头，含编码、文本片段和文档名；未解析全表。",
+          "blob_sha": "67d89a9793e8556a4a7fcc4d9f0821a9d68aca5d"
+        }
+      ],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "已验收范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R176",
+      "name": "LLM方式含意：目标刺激集与分析脚本",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/jp35t/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "jp35t"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R177",
+      "name": "波兰语语义相关度、启动与语义向量",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/2x8ka/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "2x8ka"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R178",
+      "name": "无意识语义加工：空间—时间隐喻启动",
+      "category": "lexical-cognition",
+      "source_url": "https://osf.io/wc7by/",
+      "platforms": [
+        "osf"
+      ],
+      "osf_ids": [
+        "wc7by"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R179",
+      "name": "Coretta元音时长与辅音清浊研究集合",
+      "category": "speech-phonetics",
+      "source_url": "https://osf.io/w92me/",
+      "platforms": [
+        "osf",
+        "github"
+      ],
+      "osf_ids": [
+        "w92me"
+      ],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-10-17",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "next_steps": [
+        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    }
+  ],
+  "remaining_candidates": [
+    {
+      "candidate_id": "C002",
+      "name": "墨西哥西班牙语岛效应",
+      "category": "syntax",
+      "source_url": "https://osf.io/ma27h/",
+      "current_status": "materials_only",
+      "next_verification_step": "检查cs5z3是否存在可复用的原始/清洗后判断表；统计输出PDF不等于逐试次数据。"
+    },
+    {
+      "candidate_id": "C003",
+      "name": "中英双语合理性与结构重分析启动",
+      "category": "syntax",
+      "source_url": "https://osf.io/hcdqe/",
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "从项目最终组件或论文补充入口确认原始数据、代码和公开访问范围。"
+    },
+    {
+      "candidate_id": "C004",
+      "name": "中文把字句二语句法阻断",
+      "category": "syntax",
+      "source_url": "https://osf.io/qehr4/",
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "核对作者最终数据说明与公开文件；论文已发表不作为数据开放证明。"
+    },
+    {
+      "candidate_id": "C006",
+      "name": "简化关系从句的句法适应",
+      "category": "syntax",
+      "source_url": "https://osf.io/5aynd/",
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "找到原始/清洗后SPR数据和分析脚本，避免把其他相近句法适应研究代入。"
+    },
+    {
+      "candidate_id": "C007",
+      "name": "Acceptability Judgement Tasks and Grammatical Theory",
+      "category": "syntax",
+      "source_url": "https://osf.io/qe865/",
+      "current_status": "obsolete_link",
+      "next_verification_step": "寻找作者新的正式托管或OSF数据文件；不把其后来SAD数据集当作2015博士论文数据。"
+    },
+    {
+      "candidate_id": "C010",
+      "name": "themself/themselves社会句法判断",
+      "category": "syntax",
+      "source_url": "https://osf.io/2s8hm/",
+      "current_status": "materials_only",
+      "next_verification_step": "查找匿名评分表及变量字典；不将其他作者的同名Reddit研究当作此调查数据。"
+    },
+    {
+      "candidate_id": "C011",
+      "name": "双语儿童EEG研究",
+      "category": "child-language",
+      "source_url": "https://osf.io/j5epb/",
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "确认原注册对应的数据版本与访问条件；附录刺激或相关研究不能替代该项目原始EEG数据。"
+    },
+    {
+      "candidate_id": "C012",
+      "name": "儿童与照护者协调",
+      "category": "child-language",
+      "source_url": "https://osf.io/9z5qn/",
+      "current_status": "access_restricted",
+      "next_verification_step": "按官方流程申请ECOLANG访问，并另确认新增儿童转写是否已发布。"
+    },
+    {
+      "candidate_id": "C013",
+      "name": "跨语言习语激活",
+      "category": "sign-figurative",
+      "source_url": "https://osf.io/kuqfe/",
+      "current_status": "preregistration_only",
+      "next_verification_step": "确认完成研究与最终数据仓库，不能以相近主题实验替代。"
+    },
+    {
+      "candidate_id": "C016",
+      "name": "政治信念与标量推论",
+      "category": "social-interaction",
+      "source_url": "https://osf.io/sa8ep/",
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "核实sa8ep的最终数据或建立明确同源关系；相关公开数据可另行查阅。"
+    },
+    {
+      "candidate_id": "C020",
+      "name": "复合词形式与意义分解",
+      "category": "morphology",
+      "source_url": "https://osf.io/vmdwt/",
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "寻找作者最终数据发布或对应文件清单；不能把其他复合词MEG实验当作此研究。"
+    },
+    {
+      "candidate_id": "C022",
+      "name": "二语形态启动元分析",
+      "category": "morphology",
+      "source_url": "https://osf.io/4stgu/",
+      "current_status": "materials_only",
+      "next_verification_step": "检查是否另有机器可读研究编码及效应量数据；不把其他作者2025年Figshare元分析数据当作此项目。"
+    }
+  ],
+  "norare_sources": [
+    {
+      "source_id": "Abdaoui-2017-EmoLex",
+      "source_url": "https://doi.org/10.1007/s10579-016-9364-5",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Alonso-2011-OralFrequency",
+      "source_url": "https://doi.org/10.3758/s13428-011-0062-3",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Alonso-2015-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-014-0454-2",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Alonso-2016-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-015-0675-z",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Alzahrani-2025a-Concreteness",
+      "source_url": "https://doi.org/10.3758/s13428-025-02692-5",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Alzahrani-2025b-Concreteness",
+      "source_url": "https://doi.org/10.3758/s13428-025-02692-5",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Alzahrani-2026-LexicalDecision",
+      "source_url": "https://doi.org/10.3758/s13428-026-03115-9",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Amenta-2025-LexicalRecognition",
+      "source_url": "https://doi.org/10.3758/s13428-024-02548-4",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Babelnet",
+      "source_url": "http://babelnet.org",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Baroni-2011-200",
+      "source_url": "https://sites.google.com/site/geometricalmodels/shared-evaluation",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "BermudezMargaretto-2026-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-026-03159-x",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Binder-2016-AffectiveRatings",
+      "source_url": "https://doi.org/10.1080/02643294.2016.1147426",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Bird-2001-ImageabilityAoA",
+      "source_url": "https://doi.org/10.3758/BF03195349",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Blomberg-2020-160",
+      "source_url": "https://www.jbe-platform.com/content/journals/10.1075/ml.19021.blo",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Bolognesi-2022-Specificity",
+      "source_url": "https://doi.org/10.3758/s13428-022-01974-6",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Bond-2013-OMW",
+      "source_url": "http://compling.hss.ntu.edu.sg/omw/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Bonin-2018-Concreteness",
+      "source_url": "https://doi.org/10.3758/s13428-018-1014-y",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Briesemeister-2011-DiscreteEmotions",
+      "source_url": "https://doi.org/10.3758/s13428-011-0059-y",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2009-Frequency",
+      "source_url": "https://doi.org/10.3758/BRM.41.4.977",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2011-Frequency",
+      "source_url": "https://www.ncbi.nlm.nih.gov/pubmed/21768069",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2014-AoA",
+      "source_url": "https://doi.org/10.1016/j.actpsy.2014.04.010",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2014-Concreteness",
+      "source_url": "https://doi.org/10.3758/s13428-013-0403-5",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R025"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2014a-Concreteness",
+      "source_url": "https://doi.org/10.3758/s13428-013-0403-5",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2014b-Concreteness",
+      "source_url": "https://doi.org/10.1016/j.actpsy.2014.04.011",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2019-Prevalence",
+      "source_url": "https://doi.org/10.3758/s13428-018-1077-9",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Brysbaert-2025-Familiarity",
+      "source_url": "https://doi.org/10.3758/s13428-024-02561-7",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Cai-2010-Frequency",
+      "source_url": "http://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch/cai.pdf",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R031"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Calude-2011-200",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Cameirao-2010-AoA",
+      "source_url": "https://doi.org/10.3758/BRM.42.2.474",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Carling-2019-99",
+      "source_url": "https://doi.org/10.1371/journal.pone.0223588.s005",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Chedid-2019-AuditoryStrength",
+      "source_url": "https://doi.org/10.3758/s13428-019-01254-w",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Chedid-2019-Familiarity",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Chedid-2019-Familiarity",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Chedid-2019-VisualStrength",
+      "source_url": "https://doi.org/10.3758/s13428-019-01254-w",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Chen-2019-171",
+      "source_url": "https://figshare.com/articles/dataset/Mandarin_Chinese_modality_exclusivity_norms/7747022",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Chen-2019-61",
+      "source_url": "https://figshare.com/articles/dataset/Mandarin_Chinese_modality_exclusivity_norms/7747022",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Clark-2004-ImageryFamiliarity",
+      "source_url": "https://doi.org/10.3758/BF03195584",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Cortese-2008-AoA",
+      "source_url": "https://doi.org/10.3758/BRM.40.3.791",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Coso-2023-Emotions",
+      "source_url": "https://doi.org/10.3758/s13428-022-02003-2",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Crepaldi-2015-Frequency",
+      "source_url": "https://lrlac.sissa.it/publications/subtlex-it-subtitle-based-word-frequency-estimates-italian",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Cuetos-2011-Frequency",
+      "source_url": "http://crr.ugent.be/papers/CUETOS%20et%20al%202011.pdf",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DellaRosa-2010-417",
+      "source_url": "https://doi.org/10.3758/BRM.42.4.1042",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dellert-2018-1016",
+      "source_url": "https://figshare.com/s/c9cf9057614928909d86",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Desrochers-2009-SubjFrequency",
+      "source_url": "https://doi.org/10.3758/BRM.41.2.546",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Desrochers-2010-330",
+      "source_url": "https://link.springer.com/article/10.3758/BRM.42.1.109#SecESM1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiNatale-2021a-AffectiveColexifications",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/DiNatale-2021a-AffectiveColexifications",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiNatale-2021b-AffectiveColexifications",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/DiNatale-2021b-AffectiveColexifications",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiNatale-2021c-AffectiveColexifications",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/DiNatale-2021c-AffectiveColexifications",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiNatale-2021d-AffectiveColexifications",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/DiNatale-2021d-AffectiveColexifications",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiNatale-2021e-AffectiveColexifications",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/DiNatale-2021e-AffectiveColexifications",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiNatale-2021f-AffectiveColexifications",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/DiNatale-2021f-AffectiveColexifications",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "DiezAlamo-2018-750",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-017-0970-y#SupplementaryMaterial",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dimitropoulou-2010-Frequency",
+      "source_url": "https://doi.org/10.3389/fpsyg.2010.00218",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dingemanse-2020-IconicityHumor",
+      "source_url": "https://doi.org/10.1017/langcog.2019.49",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dulay-2026a-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-025-02876-z",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dulay-2026b-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-025-02876-z",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dunabeitia-2022-MultiPic",
+      "source_url": "https://figshare.com/articles/dataset/Untitled_Item/19328939",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dyen-1964-154",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Dyen-1964-196",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Engelthaler-2018-Humor",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-017-0930-6",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Feng-2026-Frequency",
+      "source_url": "https://doi.org/10.3758/s13428-025-02931-9",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Ferrand-2010-LexicalDecision",
+      "source_url": "https://doi.org/10.3758/BRM.42.2.488",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Ferre-2017-DiscreteEmotions",
+      "source_url": "https://doi.org/10.3758/s13428-016-0768-3",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Ferre-2022-160",
+      "source_url": "https://figshare.com/ndownloader/files/34091276",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Gampe-2017-48",
+      "source_url": "http://journals.sagepub.com/doi/full/10.1177/0142723717736450",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Gilhooly-1980-Ratings",
+      "source_url": "https://link.springer.com/content/pdf/10.3758/BF03201693.pdf",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "GonzalezNosti-2014-LexicalDecision",
+      "source_url": "https://doi.org/10.3758/s13428-013-0383-5",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Goz-2017-600",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Grandy-2020-EmotionImageability",
+      "source_url": "https://doi.org/10.3758/s13428-019-01294-2",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Green-2025a-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-025-02843-8",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Green-2025b-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-025-02843-8",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Green-2025c-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-025-02843-9",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Gruehn-2008-200",
+      "source_url": "https://doi.org/10.3758/BRM.40.4.1088",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Guasch-2016-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-015-0684-y",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Haspelmath-2009-1460",
+      "source_url": "http://wold.clld.org/meaning/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Hill-2015-999",
+      "source_url": "https://fh295.github.io/simlex.html",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R029"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Hinojosa-2024-Emotions",
+      "source_url": "https://doi.org/10.3758/s13428-023-02229-8",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Iaroshenko-2025-EmoLex",
+      "source_url": "https://doi.org/10.22363/2687-0088-44439",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Imbault-2021-AffectiveRatings",
+      "source_url": "https://doi.org/10.1017/S1366728920000474",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Imbir-2021-Ratings",
+      "source_url": "https://doi.org/10.3389/fpsyg.2021.707540",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Izura-2005-499",
+      "source_url": "https://link.springer.com/article/10.3758/BF03192708#SupplementaryMaterial",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Jackson-2019-24",
+      "source_url": "https://science.sciencemag.org/content/366/6472/1517",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Jiang-2026-Frequency",
+      "source_url": "https://doi.org/10.3758/s13428-026-03012-1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Johansson-2020-344",
+      "source_url": "https://doi.org/10.1515/lingty-2020-2034",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Juhasz-2013-SER",
+      "source_url": "https://doi.org/10.3758/s13428-012-0242-9",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Jung-2026-TranslationalEquivalence",
+      "source_url": "https://doi.org/10.48550/arXiv.2602.10414",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Kapucu-2018-EmotionRatings",
+      "source_url": "https://doi.org/10.1177/0033294118814722",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Keuleers-2010-Frequency",
+      "source_url": "https://doi.org/10.3758/BRM.42.3.643",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Keuleers-2012-LexicalDecision",
+      "source_url": "https://doi.org/10.3758/s13428-011-0118-4",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Keuleers-2015-Prevalence",
+      "source_url": "https://doi.org/10.1080/17470218.2015.1022560",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Kiritchenko-2017a-Valence",
+      "source_url": "https://doi.org/10.18653/v1/P17-2074",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Kiritchenko-2017b-Valence",
+      "source_url": "https://doi.org/10.18653/v1/P17-2074",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Kiss-1973-EAT",
+      "source_url": "http://vlado.fmf.uni-lj.si/pub/networks/data/dic/eat/Eat.htm",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Kuperman-2012-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-012-0210-4",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R024"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Lapesa-2014-772",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Lewis-2016-499",
+      "source_url": "http://www.sciencedirect.com/science/article/pii/S0010027716300919",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "List-2014-1280",
+      "source_url": "http://clics.lingpy.org",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R042"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "List-2018-1105",
+      "source_url": "http://clics.clld.org",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R042"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "List-2018-Colexifications",
+      "source_url": "http://clics.clld.org",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R042"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "List-2023-Colexifications",
+      "source_url": "https://doi.org/10.3389/fpsyg.2023.1156540",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Ljubesic-2020-Emotions",
+      "source_url": "https://aclanthology.org/2020.peoples-1.15/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Luniewska-2016-299",
+      "source_url": "https://link.springer.com/article/10.3758%2Fs13428-015-0636-6",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Luniewska-2019-299",
+      "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0220611",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Lynott-2009-423",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-012-0267-0#SupplementaryMaterial",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Lynott-2013-400",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-012-0267-0",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Lynott-2020-Sensorimotor",
+      "source_url": "https://doi.org/10.3758/s13428-019-01316-z",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R026"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Maciejewski-2016-100",
+      "source_url": "https://osf.io/7k3eh/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Mandera-2015-Frequency",
+      "source_url": "https://doi.org/10.3758/s13428-014-0489-4",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Martinez-2025-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-024-02515-z",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "MartinezTomas-2026-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-026-02976-4",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Matisoff-2015-STEDT",
+      "source_url": "https://stedt.berkeley.edu/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Medler-2005-Perceptual",
+      "source_url": "http://www.neuro.mcw.edu/ratings/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Miklashevsky-2018-506",
+      "source_url": "https://doi.org/10.1007/s10936-017-9548-1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Mochizuki-2026-Sensorimotor",
+      "source_url": "https://doi.org/10.3758/s13428-025-02939-1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Mohammad-2018-AffectiveRatings",
+      "source_url": "https://doi.org/10.18653/v1/P18-1017",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Mohammad-2018-EmotionIntensity",
+      "source_url": "https://www.aclweb.org/anthology/L18-1027.pdf",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Monnier-2014-1031",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-013-0431-1#SupplementaryMaterial",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Montefinese-2014-AffectiveRatings",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Montefinese-2014-AffectiveRatings",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Montefinese-2019-AoA",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Montefinese-2019-AoA",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Moors-2013-Ratings",
+      "source_url": "https://doi.org/10.3758/s13428-012-0243-8",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Morucci-2019-643",
+      "source_url": "https://osf.io/a3bjm/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Muraki-2026-Specificity",
+      "source_url": "https://doi.org/10.3758/s13428-026-02949-7",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Numerals",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Numerals",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "OmegaWiki",
+      "source_url": "http://www.omegawiki.org",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Pagel-2007-200",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Pagel-2018-200",
+      "source_url": "http://rstb.royalsocietypublishing.org/highwire/filestream/38234/field_highwire_adjunct_files/0/rstb20160517supp1.pdf",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Pexman-2019-Sensorimotor",
+      "source_url": "https://doi.org/10.3758/s13428-018-1171-z",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R098"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Pozdniakov-2014-100b",
+      "source_url": "http://jolr.ru/files/(144)jlr2014-11(187-237).pdf",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Ravelli-2025-Specificity",
+      "source_url": "https://doi.org/10.1007/s10339-024-01239-4",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Redondo-2007-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/BF03193031",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Repetto-2023-Sensorimotor",
+      "source_url": "https://doi.org/10.3758/s13428-022-02004-1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Riegel-2015-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-014-0552-1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Rubehn-2025-ConceptEmbeddings",
+      "source_url": "https://aclanthology.org/2025.acl-long.1004/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Rzymski-2020-1624",
+      "source_url": "http://clics.clld.org",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R042"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Rzymski-2020-Colexifications",
+      "source_url": "http://clics.clld.org",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R042"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "SanMiguelAbella-2020-MotorContent",
+      "source_url": "https://doi.org/10.3758/s13428-019-01241-1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Scheible-2014-1755",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Schmidtke-2014-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-013-0426-y",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Schroeder-2012-824",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-011-0164-y#SupplementaryMaterial",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Scott-2019-Ratings",
+      "source_url": "https://doi.org/10.3758/s13428-018-1099-3",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R027"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Soares-2012-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-011-0131-7",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Song-2026-Emotions",
+      "source_url": "https://doi.org/10.3758/s13428-026-03010-3",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Speed-2017-485",
+      "source_url": "https://doi.org/10.3758/s13428-017-0852-3",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Speed-2021-Sensorimotor",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Speed-2022-Sensorimotor",
+      "source_url": "https://doi.org/10.3758/s13428-021-01656-9",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Speed-2024-Emotions",
+      "source_url": "https://doi.org/10.3758/s13428-023-02239-6",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "StadthagenGonzalez-2017-ValenceArousal",
+      "source_url": "https://doi.org/10.3758/s13428-015-0700-2",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "StadthagenGonzalez-2018-DiscreteEmotions",
+      "source_url": "https://doi.org/10.3758/s13428-017-0962-y",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Starostin-2000-Sense",
+      "source_url": "http://starling.rinet.ru/program.php?lan=en",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Starostin-2007-110",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Su-2023-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-022-01928-y",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Swadesh-1955-215",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Syssau-2009-Valence",
+      "source_url": "https://doi.org/10.3758/BRM.41.1.213",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Tadmor-2009-100",
+      "source_url": "http://wold.clld.org/meaning",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Thomas-1960-168",
+      "source_url": "https://github.com/concepticon/norare-cldf/blob/895b055b9e5dd339bbd2b67509802d85aea72126/cldf/datasets.csv",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Tsang-2018-LexicalDecision",
+      "source_url": "https://doi.org/10.3758/s13428-017-0944-0",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R033"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Urban-2011-OvertMarking",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Urban-2011-OvertMarking",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "VanHeuven-2014-Frequency",
+      "source_url": "http://crr.ugent.be/archives/1423",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Vankrunkelsven-2024-SemanticGender",
+      "source_url": "https://doi.org/10.3758/s13428-022-02032-x",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Vejdemo-2016-167",
+      "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0147924#pone.0147924.ref032",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Vergallito-2020-1121",
+      "source_url": "https://osf.io/zdg59/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Verheyen-2020-1000",
+      "source_url": "https://osf.io/nyg8v/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Vulic-2020-2244",
+      "source_url": "https://multisimlex.com/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wang-2021-90",
+      "source_url": "https://doi.org/10.1177/09567976211003877",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wang-2022-AffectiveRatings",
+      "source_url": "https://doi.org/10.18112/openneuro.ds004301.v1.0.0",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wang-2026-Utility",
+      "source_url": "https://doi.org/10.3758/s13428-026-03051-8",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Warriner-2013-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-012-0314-x",
+      "original_files_checked": false,
+      "related_main_ids": [
+        "R028"
+      ],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wierzba-2015-DiscreteEmotions",
+      "source_url": "https://doi.org/10.1371/journal.pone.0132305",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wikidata",
+      "source_url": "https://www.wikidata.org/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Winter-2016-300",
+      "source_url": "https://github.com/bodowinter/iconicity_senses/tree/master/data",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Winter-2022-SemanticChange",
+      "source_url": "https://doi.org/10.1080/10926488.2021.1945419",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Winter-2024-Iconicity",
+      "source_url": "https://doi.org/10.3758/s13428-023-02112-6",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wu-2020-150",
+      "source_url": "https://www.aclweb.org/anthology/2020.lrec-1.519",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Wu-2020-CoreVocabulary",
+      "source_url": "https://www.aclweb.org/anthology/2020.lrec-1.519.pdf",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Xiao-2012-213",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-012-0191-3#SecESM1",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Xu-2020-Concreteness",
+      "source_url": "https://doi.org/10.1371/journal.pone.0232133",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Xu-2021-AoA",
+      "source_url": "https://doi.org/10.3758/s13428-020-01455-8",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Yao-2017-1100",
+      "source_url": "https://link.springer.com/article/10.3758/s13428-016-0793-2#Sec12",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Yi-2025-AffectiveRatings",
+      "source_url": "https://doi.org/10.3758/s13428-024-02580-4",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Zalizniak-2020-2590",
+      "source_url": "http://datsemshift.ru/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Zalizniak-2020-SemanticShifts",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Zalizniak-2020-SemanticShifts",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Zalizniak-2024-DatSemShift",
+      "source_url": "https://github.com/concepticon/norare-data/tree/4b8901d6fa3d6cc14afbde6bf2fb061d4a4ab2c4/datasets/Zalizniak-2024-DatSemShift",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    },
+    {
+      "source_id": "Zhong-2022-664",
+      "source_url": "https://osf.io/bgkyp/",
+      "original_files_checked": false,
+      "related_main_ids": [],
+      "next_step": "回到原始发布页核对文件、测量、版本与许可；聚合库元数据不代替原始文件核验。"
+    }
+  ]
+}

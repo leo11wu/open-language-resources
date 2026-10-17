@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.2.0",
-  "catalog_version": "2.1.0",
+  "catalog_version": "2.1.1",
   "updated_on": "2026-10-17",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",

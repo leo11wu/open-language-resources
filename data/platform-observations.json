@@ -17,5 +17,19 @@
       "inference_limit": "仅确认本次公开接口不可用；不据此断言项目永久失效或私有。论文发布声明与实际文件读取分开记录。",
       "status_url": "https://status.cos.io/"
     }
-  ]
+  ],
+  "scheduled_maintenance": {
+    "evidence_type": "user_supplied_official_notice",
+    "notice_received_on": "2026-10-17",
+    "notice_source": "用户在聊天中提供的OSF官网公告正文；本次未独立取得该条公告实时正文。",
+    "status_url": "https://status.cos.io/",
+    "notice_firsthand_checked": false,
+    "reason": "计划将OSF云基础设施从Google Cloud Platform迁移至Oracle Cloud Infrastructure。",
+    "scheduled_start_edt": "2026-10-16T09:00:00-04:00",
+    "scheduled_end_edt": "2026-10-19T09:00:00-04:00",
+    "scheduled_end_utc": "2026-10-19T13:00:00+00:00",
+    "scheduled_end_asia_taipei": "2026-10-19T21:00:00+08:00",
+    "actual_restoration_confirmed": false,
+    "inference_limit": "计划结束时间不是实际恢复证明；页面、公开API与数据文件读取须分别检查。"
+  }
 }

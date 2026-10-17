@@ -1,0 +1,563 @@
+{
+  "schema_version": "1.0.0",
+  "checked_on": "2026-10-17",
+  "stage": "exploratory_feasibility_not_confirmatory",
+  "resource_ids": [
+    "R022",
+    "R147"
+  ],
+  "decision": "revise",
+  "normalization": "NFC and surrounding whitespace only; case preserved; no synonym or traditional/simplified remapping",
+  "association_measure": "P(target|cue) from balanced R1 or R123 responses, conditional on valid responses; all-trial denominator is sensitivity only",
+  "zero_policy": "Cue absent/no valid responses = unavailable; observed cue with no target response = sample zero, not a population zero",
+  "material_inconsistencies": {
+    "en": [],
+    "zh": [
+      {
+        "target_word_unique": "危险.1",
+        "reason": "cue/target concatenation inconsistent across conditions"
+      }
+    ]
+  },
+  "input_releases": {
+    "en": {
+      "archive": "SWOW-EN18.zip",
+      "archive_sha256": "69ee1f4f19c657bb2f6e1bc27abd2becbcd01d83d1fdade94a0455b4e66eb093",
+      "archive_bytes": 80349486,
+      "checksum_matches_official": true,
+      "balanced_member": "SWOW-EN.R100.20180827.csv",
+      "balanced_rows": 1228200,
+      "balanced_cues": 12282,
+      "trials_per_cue_min": 100,
+      "trials_per_cue_max": 100,
+      "missing_marker_counts": {
+        "R1": {
+          "NA": 31044
+        },
+        "R2": {
+          "NA": 79713
+        },
+        "R3": {
+          "NA": 170053
+        }
+      },
+      "cue_metadata_count": {
+        "R1": 12176,
+        "R123": 12216
+      },
+      "packaged_strength_diagnostics": [
+        {
+          "response_set": "R1",
+          "edges": 483636,
+          "cue_count": 12217,
+          "response_count": 64631,
+          "response_types_outside_cue_vocabulary": 52453,
+          "outgoing_strength_sum_min": 0.9999999999999978,
+          "outgoing_strength_sum_max": 1.0000000000000027
+        },
+        {
+          "response_set": "R123",
+          "edges": 978908,
+          "cue_count": 8661,
+          "response_count": 108947,
+          "response_types_outside_cue_vocabulary": 100298,
+          "outgoing_strength_sum_min": 0.2206896551724096,
+          "outgoing_strength_sum_max": 1.00000015
+        }
+      ],
+      "files_examined": [
+        {
+          "member": "SWOW-EN.R100.20180827.csv",
+          "bytes": 144368565,
+          "sha256": "d74cbb7fe857d7be49ea0109164eaa48d95bef6584fb760230ac8564cd0d5056",
+          "rows": 1228200,
+          "columns_in_file": 13,
+          "columns_examined": [
+            "cue",
+            "R1",
+            "R2",
+            "R3"
+          ]
+        },
+        {
+          "member": "cueStats.SWOW-EN.R1.20180827.csv",
+          "bytes": 635727,
+          "sha256": "f70d648c2d197c176eb5766547e663e0b1991039df85548bed32ab907ee9dfc8",
+          "rows": 12176,
+          "columns_in_file": 6,
+          "columns_examined": [
+            "Unnamed: 0",
+            "cue",
+            "coverage",
+            "H",
+            "unknown",
+            "N"
+          ]
+        },
+        {
+          "member": "cueStats.SWOW-EN.R123.20180827.csv",
+          "bytes": 742819,
+          "sha256": "f0d836e81a4d1f32ac114d78db6135ca5136581c7d9bf3d5443fbdc3da584f25",
+          "rows": 12216,
+          "columns_in_file": 8,
+          "columns_examined": [
+            "Unnamed: 0",
+            "cue",
+            "coverage",
+            "H",
+            "unknown",
+            "xR2",
+            "xR3",
+            "N"
+          ]
+        },
+        {
+          "member": "strength.SWOW-EN.R1.20180827.csv",
+          "bytes": 17053996,
+          "sha256": "55afc854d584bb8a4c5c81ef104689e1e961b16d60ae26012ec8698d20703881",
+          "rows": 483636,
+          "columns_in_file": 5,
+          "columns_examined": [
+            "cue",
+            "response",
+            "R1",
+            "N",
+            "R1.Strength"
+          ]
+        },
+        {
+          "member": "strength.SWOW-EN.R123.20180827.csv",
+          "bytes": 53588332,
+          "sha256": "45b16785d2af3de4533646a09af81075ae9acbb0f94d44e958ad07bffd528cd0",
+          "rows": 978908,
+          "columns_in_file": 5,
+          "columns_examined": [
+            "cue",
+            "response",
+            "R123",
+            "N",
+            "R123.Strength"
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "archive": "SWOW-ZH23.zip",
+      "archive_sha256": "7f5e3defdfa29a40f13ad02104b6b37e85f896d382764cef490685fe86bd43b8",
+      "archive_bytes": 48715908,
+      "checksum_matches_official": true,
+      "balanced_member": "SWOW-ZH24/SWOWZH.R55.20230424.csv",
+      "balanced_rows": 551320,
+      "balanced_cues": 10024,
+      "trials_per_cue_min": 55,
+      "trials_per_cue_max": 55,
+      "missing_marker_counts": {
+        "R1": {
+          "#Unknown": 4648,
+          "#Missing": 2897
+        },
+        "R2": {
+          "#Missing": 80591,
+          "#Unknown": 4648
+        },
+        "R3": {
+          "#Missing": 141119,
+          "#Unknown": 4648
+        }
+      },
+      "cue_metadata_count": {
+        "R123": 9989,
+        "R1": 9814
+      },
+      "packaged_strength_diagnostics": [
+        {
+          "response_set": "R123",
+          "edges": 516639,
+          "cue_count": 10024,
+          "response_count": 9991,
+          "response_types_outside_cue_vocabulary": 0,
+          "outgoing_strength_sum_min": 0.848837209302326,
+          "outgoing_strength_sum_max": 1.0000000000000024
+        },
+        {
+          "response_set": "R1",
+          "edges": 202335,
+          "cue_count": 10024,
+          "response_count": 9841,
+          "response_types_outside_cue_vocabulary": 0,
+          "outgoing_strength_sum_min": 0.694444444444445,
+          "outgoing_strength_sum_max": 1.000000000000002
+        }
+      ],
+      "files_examined": [
+        {
+          "member": "SWOW-ZH24/SWOWZH.R55.20230424.csv",
+          "bytes": 72889020,
+          "sha256": "1dfe94b9a7c5b877e90e04e9871924c08dd5446dbba5e1c90fd8ee1371be0963",
+          "rows": 551320,
+          "columns_in_file": 18,
+          "columns_examined": [
+            "cue",
+            "R1",
+            "R2",
+            "R3"
+          ]
+        },
+        {
+          "member": "SWOW-ZH24/strength.SWOWZH.R123.20230423.csv",
+          "bytes": 16784909,
+          "sha256": "e408c00c47663d8c6becc0062cbb91e807d3b7c026c09f0a1a143b5187b8170d",
+          "rows": 516639,
+          "columns_in_file": 3,
+          "columns_examined": [
+            "cue",
+            "response",
+            "R123.Strength"
+          ]
+        },
+        {
+          "member": "SWOW-ZH24/cueStats.SWOWZH.R123.20230423.csv",
+          "bytes": 688958,
+          "sha256": "165a8d46423c928d98312a522d061808d9a0d0db8594a448f6f3f731feb8f18e",
+          "rows": 9989,
+          "columns_in_file": 6,
+          "columns_examined": [
+            "Cues",
+            "Coverage",
+            "Unknown",
+            "R1missing",
+            "R2missing",
+            "R3missing"
+          ]
+        },
+        {
+          "member": "SWOW-ZH24/strength.SWOWZH.R1.20230423.csv",
+          "bytes": 6307229,
+          "sha256": "190e7ce535eafc4f541ae757eb9f25646845791941d517271988be03db844c63",
+          "rows": 202335,
+          "columns_in_file": 3,
+          "columns_examined": [
+            "cue",
+            "response",
+            "R1.Strength"
+          ]
+        },
+        {
+          "member": "SWOW-ZH24/cueStats.SWOWZH.R1.20230423.csv",
+          "bytes": 357399,
+          "sha256": "48183c1cda09ac2c6d0f7d1c3fae6e78700a11b27592bca1511ee66fc8fcc999",
+          "rows": 9814,
+          "columns_in_file": 4,
+          "columns_examined": [
+            "Cues",
+            "Coverage",
+            "Unknown",
+            "R1missing"
+          ]
+        }
+      ]
+    }
+  },
+  "diagnostics": {
+    "R1": {
+      "per_language_1000_items": {
+        "en": {
+          "related": 955,
+          "unrelated": 955,
+          "target": 946,
+          "both_condition_cues": 912,
+          "material_rows_examined": 1000,
+          "material_rows_consistent": 1000
+        },
+        "zh": {
+          "related": 765,
+          "unrelated": 765,
+          "target": 780,
+          "both_condition_cues": 583,
+          "material_rows_examined": 1000,
+          "material_rows_consistent": 999
+        }
+      },
+      "aligned_candidate_n": 993,
+      "complete_four_condition_cues": 531,
+      "complete_without_repetition": 530,
+      "distinct_zh_targets_without_repetition": 517,
+      "complete_including_backward": 420,
+      "complete_with_cues_in_published_cue_metadata": 525,
+      "target_seen_among_all_responses_both_languages": 515,
+      "nonzero_association_contrast": {
+        "en": 364,
+        "zh": 182
+      },
+      "zero_contrast_both_languages": 128,
+      "contrast_nonzero_both_languages": 144,
+      "crosslanguage_delta_association_correlation": {
+        "n": 530,
+        "pearson_r": 0.3418024596321856,
+        "spearman_rho": 0.21234742213238397
+      },
+      "association_difference_vs_behavior_difference": {
+        "n": 530,
+        "pearson_r": -0.018229290580332364,
+        "spearman_rho": -0.02392014332033984
+      },
+      "trial_denominator_difference_vs_behavior_difference": {
+        "n": 530,
+        "pearson_r": -0.018366035606839262,
+        "spearman_rho": -0.023193014515893475
+      },
+      "within_language_association_vs_priming": {
+        "en": {
+          "n": 530,
+          "pearson_r": 0.0452866652012957,
+          "spearman_rho": 0.03152630215183365
+        },
+        "zh": {
+          "n": 530,
+          "pearson_r": 0.16397976126893288,
+          "spearman_rho": 0.10242462376067835
+        }
+      },
+      "association_shift_at_least_0_10": {
+        "zh_greater": 21,
+        "en_greater": 131
+      },
+      "minimum_valid_responses_per_condition": {
+        "en": {
+          "min": 92,
+          "median": 99.0
+        },
+        "zh": {
+          "min": 48,
+          "median": 54.0
+        }
+      }
+    },
+    "R123": {
+      "per_language_1000_items": {
+        "en": {
+          "related": 955,
+          "unrelated": 955,
+          "target": 946,
+          "both_condition_cues": 912,
+          "material_rows_examined": 1000,
+          "material_rows_consistent": 1000
+        },
+        "zh": {
+          "related": 765,
+          "unrelated": 765,
+          "target": 780,
+          "both_condition_cues": 583,
+          "material_rows_examined": 1000,
+          "material_rows_consistent": 999
+        }
+      },
+      "aligned_candidate_n": 993,
+      "complete_four_condition_cues": 531,
+      "complete_without_repetition": 530,
+      "distinct_zh_targets_without_repetition": 517,
+      "complete_including_backward": 420,
+      "complete_with_cues_in_published_cue_metadata": 530,
+      "target_seen_among_all_responses_both_languages": 515,
+      "nonzero_association_contrast": {
+        "en": 447,
+        "zh": 260
+      },
+      "zero_contrast_both_languages": 63,
+      "contrast_nonzero_both_languages": 240,
+      "crosslanguage_delta_association_correlation": {
+        "n": 530,
+        "pearson_r": 0.30125564372058494,
+        "spearman_rho": 0.2410082097390851
+      },
+      "association_difference_vs_behavior_difference": {
+        "n": 530,
+        "pearson_r": 0.004414599786285314,
+        "spearman_rho": -0.004330007708864358
+      },
+      "trial_denominator_difference_vs_behavior_difference": {
+        "n": 530,
+        "pearson_r": -0.0005874964435241601,
+        "spearman_rho": -0.01056856163553207
+      },
+      "within_language_association_vs_priming": {
+        "en": {
+          "n": 530,
+          "pearson_r": 0.01967372055292624,
+          "spearman_rho": 0.017074473380973884
+        },
+        "zh": {
+          "n": 530,
+          "pearson_r": 0.14996492733787134,
+          "spearman_rho": 0.13208041495493164
+        }
+      },
+      "association_shift_at_least_0_10": {
+        "zh_greater": 6,
+        "en_greater": 67
+      },
+      "minimum_valid_responses_per_condition": {
+        "en": {
+          "min": 238,
+          "median": 284.0
+        },
+        "zh": {
+          "min": 111,
+          "median": 138.0
+        }
+      }
+    }
+  },
+  "all_993_crosslanguage_behavior_correlation": {
+    "n": 993,
+    "pearson_r": 0.18953558772553114,
+    "spearman_rho": 0.21177034186406818
+  },
+  "limits": [
+    "No manual semantic-equivalence acceptance",
+    "No trial-level reanalysis, sample-size equalization, covariate controls or crossvalidation",
+    "No model scoring or mechanism/causal inference",
+    "R1 and R123 are dependent sensitivity measures",
+    "Exploratory subset chosen by resource coverage; correlations do not constitute a confirmatory test"
+  ],
+  "research_note": "research/semantic-priming-feasibility-2026-10-17.md",
+  "decision_reason": "实际可组合530组非重复材料；初步跨语言联想差异与启动差异相关接近零，直接先例也要求收窄贡献。",
+  "personal_information_included": false,
+  "swow_individual_data_redistributed": false,
+  "official_release_metadata_url": "https://smallworldofwords.org/api/project/research/releases",
+  "processing_code": {
+    "path": "scripts/semantic_priming_feasibility.py",
+    "sha256": "10842d9c5ff69ad40f9568ab46fc528687d71e1605b0102b5084afa67b54b155"
+  },
+  "source_search": {
+    "queries": [
+      "\"Semantic Priming Across Many Languages\" \"Small World of Words\"",
+      "\"word associations\" \"Chinese\" \"English\" \"translation\" priming norms",
+      "\"SPAML\" \"language models\" semantic priming"
+    ],
+    "directions": [
+      "direct_precedent",
+      "crosslanguage_extension",
+      "measurement_choice",
+      "contrary_evidence"
+    ],
+    "scope": "targeted searches and relevant full-text methods/results/limits; not an exhaustive systematic review"
+  },
+  "precedents": [
+    {
+      "source_id": "P1",
+      "title": "Measuring the semantic priming effect across many languages",
+      "url": "https://www.nature.com/articles/s41562-025-02254-x",
+      "type": "journal_article",
+      "read_scope": "relevant_full_text_and_author_data_code",
+      "relevance": "SPAML behavior, task, reliability"
+    },
+    {
+      "source_id": "P2",
+      "title": "Semantic Priming: Comparing LLMs, Human Feature Norms and Associative Strength",
+      "author": "Figen Ulusal",
+      "url": "https://theses.liacs.nl/pdf/2024-2025-UlusalFFigen.pdf",
+      "type": "bachelor_thesis",
+      "read_scope": "relevant_full_text_methods_results_limitations",
+      "relevance": "English SPAML plus SWOW; cosine-based association predictor; missing unrelated cue sometimes assigned zero"
+    },
+    {
+      "source_id": "P3",
+      "title": "Predicting Human Semantic Priming Using Multilingual Large Language Models",
+      "author": "Nina Rojewska",
+      "url": "https://theses.liacs.nl/pdf/2025-2026-RojewskaNNina.pdf",
+      "type": "bachelor_thesis",
+      "read_scope": "relevant_full_text_methods_results_limitations",
+      "relevance": "English/Polish SPAML, models, native-language association norms as a stated limitation"
+    },
+    {
+      "source_id": "P4",
+      "title": "Large language model tokens are psychologically salient",
+      "url": "https://escholarship.org/uc/item/13k625dx",
+      "type": "conference_paper",
+      "read_scope": "relevant_full_text_methods_results",
+      "relevance": "SPAML tokenization/orthographic priming and English SWOW associations"
+    },
+    {
+      "source_id": "P5",
+      "title": "Strong Associations Can Be Weak: Some Thoughts on Cross-lingual Word Webs for Translation",
+      "url": "https://aclanthology.org/Y16-2023/",
+      "type": "conference_paper",
+      "read_scope": "full_text",
+      "relevance": "English/Chinese association and translation equivalence"
+    },
+    {
+      "source_id": "P6",
+      "title": "Evaluating Monolingual and Crosslingual Embeddings on Datasets of Word Association Norms",
+      "url": "https://aclanthology.org/2022.bucc-1.1/",
+      "type": "conference_paper",
+      "read_scope": "relevant_full_text_methods_results",
+      "relevance": "Multilingual association norms and embedding comparisons including Mandarin"
+    }
+  ],
+  "author_archived_item_reliability": {
+    "source_url": "https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/supplemental/reliability_item.RData",
+    "blob_sha": "a2de3a648c81b87fb38b51d581012ac742b6f215",
+    "sha256": "809314cf1ff5161035b26e89ce658d506b60325c39aa3ac97d7156151b78d2e2",
+    "random_splits": 100,
+    "method": "2 * mean(r) / (1 + mean(r))",
+    "reestimated_from_current_trials": false,
+    "reliability_of_530_subset_estimated": false,
+    "values": {
+      "original_accuracy": {
+        "en": {
+          "mean_split_half_r": 0.558848728102095,
+          "spearman_brown": 0.717001871993694
+        },
+        "zh": {
+          "mean_split_half_r": 0.355179835702779,
+          "spearman_brown": 0.524181110647336
+        }
+      },
+      "rescored_accuracy": {
+        "en": {
+          "mean_split_half_r": 0.56176509597218,
+          "spearman_brown": 0.719397683327643
+        },
+        "zh": {
+          "mean_split_half_r": 0.358059981480165,
+          "spearman_brown": 0.527310997103253
+        }
+      }
+    }
+  },
+  "prior_all_item_sampling_diagnostic": {
+    "stage": "exploratory_measurement_diagnostic_not_primary_test",
+    "paired_rows": 993,
+    "pearson_cross_language_zpriming": 0.18953558772553114,
+    "spearman_cross_language_zpriming": 0.21177034186406818,
+    "en": {
+      "rows": 1000,
+      "min_correct_trials_per_condition": {
+        "target_correct_keep_related": 96,
+        "target_correct_keep_unrelated": 80
+      },
+      "median_correct_trials_per_condition": {
+        "target_correct_keep_related": 361.0,
+        "target_correct_keep_unrelated": 356.0
+      },
+      "z_priming_mean": 0.09119978265512498,
+      "z_priming_sd": 0.11466066900946331,
+      "missing_any_zpriming": 0
+    },
+    "zh": {
+      "rows": 1000,
+      "min_correct_trials_per_condition": {
+        "target_correct_keep_related": 14,
+        "target_correct_keep_unrelated": 10
+      },
+      "median_correct_trials_per_condition": {
+        "target_correct_keep_related": 49.0,
+        "target_correct_keep_unrelated": 47.0
+      },
+      "z_priming_mean": 0.15010464741705934,
+      "z_priming_sd": 0.2519037541678902,
+      "missing_any_zpriming": 0
+    }
+  }
+}

@@ -14,26 +14,29 @@
 
 | 字段 | 内容 |
 | --- | --- |
-| 语言与人群 | 英语及其他分语种发布的数据 |
-| 数据性质 | 人类词汇联想；混合来源或待细分 |
-| 获取方式 | 免费注册：官网下载页现要求提供姓名和邮箱；非商业研究用途免费。按语言及正式版本选择原始/预处理数据或有向联想表；当前展示页面不等于完整发布数据。 |
-| 许可 | 项目官网限制未获许可的再分发及商业使用；页面列有CC BY-NC-ND 3.0，各语言/版本仍需核对。 |
-| 使用边界 | 联想关系不等于纯语义相似；各语种应分别核对发布版本、参与者变量和使用条件。 |
+| 语言与人群 | 英语、普通话简体中文及其他分语种发布的数据 |
+| 数据性质 | 人类词汇联想；人类行为或生理观测 |
+| 获取方式 | 免费注册：官网下载要求姓名和邮箱，非商业科学研究免费。本次已领取并校验SWOW-EN18及SWOW-ZH23（登记标识ZH24）；原表仅本地分析，不随目录再分发。 |
+| 许可 | 官网列CC BY-NC-ND 3.0，允许非商业研究、内部分析及署名后的派生统计；原始/预处理数据再分发、商业使用、训练模型或公开派生向量等须依官网另获许可。 |
+| 使用边界 | 显性联想产出不同于识别启动；语言/版本的平衡反应、提示词统计和预制图表词汇域不同。缺少提示词不作零值，观察零值不等于总体没有联想。 |
 | 标签 | 语义网络、联想、词汇、跨语言、人类与模型 |
 | 平台 | project_website |
-| 核对依据 | 沿用首版文档核对；2026-10-17 |
-| 实际文件核验 | **仅核对说明；未读数据文件** |
-| 核对范围 | 本轮读取实时官网说明，确认正式语种版本与下载表单的姓名/邮箱要求；未提交个人信息、未取得联想原表，未计算与其他资源的实际覆盖率。 |
-| 下一步 | 定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+| 核对依据 | 项目说明；2026-10-17 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 本次领取两份正式包并通过官方SHA-256校验；检查10个选定CSV，平衡反应文件遍历全部行且检查cue/R1/R2/R3四列，其余选定表完整解析。中英全条件可接531组，排除1组重复启动后530组；未完成语义等价、人口变量及全库验收。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://smallworldofwords.org/en/project/research)
 
 补充及核对来源：
 
 - [来源 1](https://simondedeyne.me/data/)
-- [来源 2](https://www.smallworldofwords.org/en/project/research)
+- [来源 2](https://smallworldofwords.org/zh/project/research)
+- [来源 3](https://smallworldofwords.org/api/project/research/releases)
+- [来源 4](https://github.com/lib314a/SWOWZH)
+- [来源 5](https://www.smallworldofwords.org/en/project/research)
 
-关联：[R029 SimLex-999](../catalog/lexical-cognition.md#r029)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。
+关联：[R029 SimLex-999](../catalog/lexical-cognition.md#r029)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)、[R147 SPAML（多语言语义启动）](../catalog/lexical-cognition.md#r147)。
 
 <a id="r023"></a>
 
@@ -479,14 +482,14 @@ Psychological Science Accelerator的多语言语义启动项目，仓库链接�
 | --- | --- |
 | 语言与人群 | 多语言 |
 | 数据性质 | 多实验室语义启动数据、材料与代码；人类行为或生理观测 |
-| 获取方式 | 公开数据入口：项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。 |
+| 获取方式 | 公开数据入口：作者GitHub正式发布数据与材料；已读取中英v1.0.2汇总及选定材料，尚未重分析全量试次。 |
 | 许可 | 许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。 |
 | 使用边界 | 多实验室、翻译与词对间存在层级结构；预注册阶段与已发表数据版本须区分。 |
 | 标签 | 语义启动、跨语言、多实验室、词汇加工 |
 | 平台 | github |
 | 核对依据 | 作者仓库说明；2026-10-17 |
 | 实际文件核验 | **已完整检查选定文件；全库未验收** |
-| 核对范围 | 本轮完整读取v1.0.2的中英启动汇总、刺激表、作者匹配表及翻译工作表，共7个选定文件。各语言1,000条汇总均可接作者键；跨语言全局一对一保留993组，7条待人工复核；不等于语义等价或全部数据验收。 |
+| 核对范围 | 已完整读取所列7个选定汇总/刺激/匹配/翻译文件，各语言1,000条汇总可接作者键；跨语言全局一对一保留993组，7条未决。本次另读取作者分半可靠性RData存档与方法代码，非从当前试次重估；与SWOW相接得到530组非重复候选，人工语义等价审核及全资源验收未完成。 |
 | 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://github.com/SemanticPriming/SPAML)
@@ -495,6 +498,10 @@ Psychological Science Accelerator的多语言语义启动项目，仓库链接�
 
 - [来源 1](https://www.nature.com/articles/s41562-025-02254-x)
 - [来源 2](https://github.com/SemanticPriming/SPAML/releases/tag/v1.0.2)
+- [来源 3](https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/supplemental/reliability_item.RData)
+- [来源 4](https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/descriptive_statistics_priming.Rmd)
+
+关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)。
 
 <a id="r177"></a>
 

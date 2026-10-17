@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_on": "2026-10-17",
-  "catalog_version": "2.2.0",
+  "catalog_version": "2.2.1",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -13,14 +13,14 @@
   "summary": {
     "main_resource_count": 179,
     "main_by_check_state": {
-      "documentation_only": 164,
+      "documentation_only": 163,
       "file_preview": 0,
-      "selected_file_checked": 7,
+      "selected_file_checked": 8,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 7,
-    "main_without_recorded_file_reads": 172,
+    "main_with_recorded_file_reads": 8,
+    "main_without_recorded_file_reads": 171,
     "osf_associated_main_count": 73,
     "remaining_candidate_count": 12,
     "norare_source_record_count": 182,
@@ -440,13 +440,74 @@
         "project_website"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
+      "check_state": "selected_file_checked",
       "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
+          "read_scope": "complete_csv",
+          "result": "SWOW-EN18.zip内SWOW-EN.R100.20180827.csv：遍历全部1228200行；文件共13列，检查4列（cue, R1, R2, R3）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "d74cbb7fe857d7be49ea0109164eaa48d95bef6584fb760230ac8564cd0d5056"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
+          "read_scope": "complete_csv",
+          "result": "SWOW-EN18.zip内cueStats.SWOW-EN.R1.20180827.csv：遍历全部12176行；文件共6列，检查6列（Unnamed: 0, cue, coverage, H, unknown, N）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "f70d648c2d197c176eb5766547e663e0b1991039df85548bed32ab907ee9dfc8"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
+          "read_scope": "complete_csv",
+          "result": "SWOW-EN18.zip内cueStats.SWOW-EN.R123.20180827.csv：遍历全部12216行；文件共8列，检查8列（Unnamed: 0, cue, coverage, H, unknown, xR2, xR3, N）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "f0d836e81a4d1f32ac114d78db6135ca5136581c7d9bf3d5443fbdc3da584f25"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
+          "read_scope": "complete_csv",
+          "result": "SWOW-EN18.zip内strength.SWOW-EN.R1.20180827.csv：遍历全部483636行；文件共5列，检查5列（cue, response, R1, N, R1.Strength）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "55afc854d584bb8a4c5c81ef104689e1e961b16d60ae26012ec8698d20703881"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
+          "read_scope": "complete_csv",
+          "result": "SWOW-EN18.zip内strength.SWOW-EN.R123.20180827.csv：遍历全部978908行；文件共5列，检查5列（cue, response, R123, N, R123.Strength）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "45b16785d2af3de4533646a09af81075ae9acbb0f94d44e958ad07bffd528cd0"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-ZH24",
+          "read_scope": "complete_csv",
+          "result": "SWOW-ZH23.zip内SWOW-ZH24/SWOWZH.R55.20230424.csv：遍历全部551320行；文件共18列，检查4列（cue, R1, R2, R3）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "1dfe94b9a7c5b877e90e04e9871924c08dd5446dbba5e1c90fd8ee1371be0963"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-ZH24",
+          "read_scope": "complete_csv",
+          "result": "SWOW-ZH23.zip内SWOW-ZH24/strength.SWOWZH.R123.20230423.csv：遍历全部516639行；文件共3列，检查3列（cue, response, R123.Strength）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "e408c00c47663d8c6becc0062cbb91e807d3b7c026c09f0a1a143b5187b8170d"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-ZH24",
+          "read_scope": "complete_csv",
+          "result": "SWOW-ZH23.zip内SWOW-ZH24/cueStats.SWOWZH.R123.20230423.csv：遍历全部9989行；文件共6列，检查6列（Cues, Coverage, Unknown, R1missing, R2missing, R3missing）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "165a8d46423c928d98312a522d061808d9a0d0db8594a448f6f3f731feb8f18e"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-ZH24",
+          "read_scope": "complete_csv",
+          "result": "SWOW-ZH23.zip内SWOW-ZH24/strength.SWOWZH.R1.20230423.csv：遍历全部202335行；文件共3列，检查3列（cue, response, R1.Strength）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "190e7ce535eafc4f541ae757eb9f25646845791941d517271988be03db844c63"
+        },
+        {
+          "url": "https://smallworldofwords.org/en/project/research#SWOW-ZH24",
+          "read_scope": "complete_csv",
+          "result": "SWOW-ZH23.zip内SWOW-ZH24/cueStats.SWOWZH.R1.20230423.csv：遍历全部9814行；文件共4列，检查4列（Cues, Coverage, Unknown, R1missing）。仅验收记录范围，不代表全资源或语义/人口变量验收。",
+          "sha256": "48183c1cda09ac2c6d0f7d1c3fae6e78700a11b27592bca1511ee66fc8fcc999"
+        }
+      ],
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },

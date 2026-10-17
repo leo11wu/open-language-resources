@@ -6,13 +6,14 @@
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的12条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：164条仅核对说明、0条读取头部样例、7条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：163条仅核对说明、0条读取头部样例、8条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
 - [核验进度与待检查清单](catalog/verification-status.md)：全部179条逐项状态、OSF恢复后的待办。
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
+- [第一条想法的实际可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：530组非重复译词可组合；核心简单相关接近零，暂需修订。
 - [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。
 - [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。
@@ -73,7 +74,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R019 | [Deception in Diplomacy](catalog/social-interaction.md#r019) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R020 | [Parliament Question Time Corpus](catalog/social-interaction.md#r020) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R021 | [ParlaMint](catalog/social-interaction.md#r021) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R022 | [Small World of Words（SWOW）](catalog/lexical-cognition.md#r022) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R022 | [Small World of Words（SWOW）](catalog/lexical-cognition.md#r022) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R023 | [English Lexicon Project（ELP）](catalog/lexical-cognition.md#r023) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R024 | [英语习得年龄常模（Kuperman等及相关扩展）](catalog/lexical-cognition.md#r024) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R025 | [英语具体性常模（Brysbaert等）](catalog/lexical-cognition.md#r025) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |

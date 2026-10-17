@@ -82,6 +82,18 @@ def main():
         alignment=audit['join_checks']['spaml_crosslanguage']
         check(alignment['one_to_one_retained_row_count']==alignment['one_to_one_unique_english_keys']==alignment['one_to_one_unique_chinese_keys'],'Retained bilingual pairs are not one-to-one')
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
+    for path in (ROOT/'data').glob('semantic-priming-feasibility-*.json'):
+        feasibility=json.loads(path.read_text())
+        check(feasibility['stage']=='exploratory_feasibility_not_confirmatory','Feasibility evidence stage overstated')
+        check(feasibility['personal_information_included'] is False and feasibility['swow_individual_data_redistributed'] is False,'Feasibility report embeds restricted input data')
+        for release in feasibility['input_releases'].values():
+            check(release['checksum_matches_official'] is True,'SWOW archive checksum not verified')
+            check(release['balanced_rows']==release['balanced_cues']*release['trials_per_cue_min']==release['balanced_cues']*release['trials_per_cue_max'],'Balanced input counts disagree')
+        for diagnostic in feasibility['diagnostics'].values():
+            check(diagnostic['aligned_candidate_n']>=diagnostic['complete_four_condition_cues']>=diagnostic['complete_without_repetition']>=diagnostic['distinct_zh_targets_without_repetition'],'Feasibility coverage counts disagree')
+            for result in [diagnostic['association_difference_vs_behavior_difference'],diagnostic['trial_denominator_difference_vs_behavior_difference']]:
+                check(result['n']==diagnostic['complete_without_repetition'],'Feasibility correlation sample size disagrees')
+                check(all(-1<=result[k]<=1 for k in ['pearson_r','spearman_rho']),'Invalid feasibility correlation')
     for path in audit_paths:
         audit=json.loads(path.read_text())
         rows=audit['records']; promoted=[x for x in rows if x['outcome']=='promoted']; remaining=[x for x in rows if x['outcome']!='promoted']

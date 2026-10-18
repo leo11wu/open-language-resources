@@ -2,7 +2,7 @@
 
 用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。
 
-主目录 **179个资源入口、14类**，其中 **73条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-10-17**。
+主目录 **179个资源入口、14类**，其中 **73条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-10-18**。
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的12条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
@@ -13,7 +13,8 @@
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
 - [核验进度与待检查清单](catalog/verification-status.md)：全部179条逐项状态、OSF恢复后的待办。
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
-- [第一条想法的实际可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：530组非重复译词可组合；核心简单相关接近零，暂需修订。
+- [第一条想法的初次可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：原覆盖530组；后续事件审计另排除1组，见下列pilot。
+- [中英联想—启动pilot结果](research/semantic-priming-pilot-2026-10-18.md)：原试次复原、60组语义初筛、测量稳定性、受控模型与词汇排除预测；建议调整后再决定主实验。
 - [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。
 - [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。

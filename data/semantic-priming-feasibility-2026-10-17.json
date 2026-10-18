@@ -559,5 +559,10 @@
       "z_priming_sd": 0.2519037541678902,
       "missing_any_zpriming": 0
     }
+  },
+  "followup": {
+    "checked_on": "2026-10-18",
+    "report": "research/semantic-priming-pilot-2026-10-18.md",
+    "note": "原530组是词面覆盖/非重复启动候选量；追加物理事件审计隔离1组后，严格pilot529组，完整控制主模型454组。原有10月17日数值保留为历史探索记录。"
   }
 }

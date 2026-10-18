@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_on": "2026-10-17",
-  "catalog_version": "2.2.1",
+  "generated_on": "2026-10-18",
+  "catalog_version": "2.2.2",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -3112,7 +3112,7 @@
       ],
       "osf_ids": [],
       "check_state": "selected_file_checked",
-      "documentation_checked_on": "2026-10-17",
+      "documentation_checked_on": "2026-10-18",
       "download_tested": true,
       "data_files_validated": false,
       "recorded_file_checks": [
@@ -3157,6 +3157,18 @@
           "read_scope": "complete_xlsx_sheet",
           "result": "完整读取唯一翻译工作表1,000行，核对id、英文提示词/目标词、最终中文提示词/目标词5个对齐字段；尚未完成人工语义等价核对。",
           "blob_sha": "965388d39e787abeec10853cc1c58ce25672d284"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/en_prime_trials.csv",
+          "read_scope": "complete_csv",
+          "sha256": "71a5bf133956fb514b2306be9171f7142f537c9ba0591eb52926220ef08e2497",
+          "result": "完整解析842031行、19列；按原始保留/正确反应标记得到711045试次、5121名参与者，核对本语言2,000格均值和样本量，与发布汇总一致；未验证原始网页任务或全部资源。"
+        },
+        {
+          "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/zh_prime_trials.csv",
+          "read_scope": "complete_csv",
+          "sha256": "731688434462065bfcbfbbe8fe09192de6929d5abc3ff9cf04007667a1fa0224",
+          "result": "完整解析123225行、19列；按原始保留/正确反应标记得到99366试次、729名参与者，核对本语言2,000格均值和样本量，与发布汇总一致；未验证原始网页任务或全部资源。"
         }
       ],
       "next_steps": [

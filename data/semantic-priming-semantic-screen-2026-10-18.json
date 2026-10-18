@@ -1,0 +1,531 @@
+{
+  "checked_on": "2026-10-18",
+  "stage": "assistant_single_pass_semantic_screen_not_human_gold",
+  "selection": "60 of the original 530 candidates, uniform without replacement, seed 20261018; material text only, no item association or priming scores",
+  "statuses": {
+    "compatible": "核心译义可接受；不保证完全词汇/文化等价",
+    "sense_sensitive": "义项、范围、词类或关系需要复核，不自动作为错误剔除",
+    "mismatch": "在该提示—目标语境下存在明显的不等价候选，须独立人工裁定"
+  },
+  "human_independently_verified": false,
+  "used_to_claim_full_cohort_semantic_validation": false,
+  "annotations": [
+    {
+      "translation_id": 4,
+      "status": "compatible",
+      "relation_screen": "taxonomic_related",
+      "reason": "AIDS与HIV的疾病/病毒关系基本保留；中文目标使用同一缩写。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 26,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "海湾与港口的地理/功能联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 28,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "蜜蜂与蚂蚁同属昆虫的并列关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 38,
+      "status": "sense_sensitive",
+      "relation_screen": "hierarchical",
+      "reason": "Christian与基督教在宗教、信徒和中国语境中的范围需区分。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 39,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "名人与明星的近义关系基本保留；巨星比star略窄。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 43,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "变化与提升的过程/结果联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 52,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "煤炭与石油的燃料并列关系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 73,
+      "status": "sense_sensitive",
+      "relation_screen": "antonym_related",
+      "reason": "creation译创作偏向创作活动，原词也可指一般创造/生成，反义关系范围可能改变。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 81,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "描述与表达的语言行为联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 125,
+      "status": "sense_sensitive",
+      "relation_screen": "coordinate",
+      "reason": "orange多义；中文明确选颜色义，不能预设英文联想任务也使用该义。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 132,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "帮忙与协助的近义关系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 146,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "国际与世界的语义领域联系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 155,
+      "status": "mismatch",
+      "relation_screen": "sense_shift",
+      "reason": "look提供视觉动作语境，watch译手表把动词义换成名词义。",
+      "rater": "assistant_single_pass",
+      "human_verified": false,
+      "lexical_reference_url": "https://dictionary.cambridge.org/dictionary/english-chinese-simplified/watch"
+    },
+    {
+      "translation_id": 156,
+      "status": "sense_sensitive",
+      "relation_screen": "coordinate",
+      "reason": "lord/lady的贵族、宗教或主人称谓义，不能直接等同主人/夫人的配对。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 159,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "忠诚与诚实的品德并列关系基本保留；中文词性需结合用法。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 182,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "巢与蛋的场景关系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 187,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "一般与通常的频率用法基本相容。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 190,
+      "status": "compatible",
+      "relation_screen": "form_heavy",
+      "reason": "词义翻译可接受，但now/know的形式联系在中文现在/知道中不保留，不宜直接称相同语义关系。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 243,
+      "status": "sense_sensitive",
+      "relation_screen": "hierarchical",
+      "reason": "cousin译表哥增加性别、年龄和亲属分支限制。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 267,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "阴影与黑暗的视觉场景联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 335,
+      "status": "sense_sensitive",
+      "relation_screen": "coordinate",
+      "reason": "姐妹/兄弟常作集合或复数表达，英文词项为单数，亲属词汇化需复核。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 356,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "学院与大学的教育机构联系基本保留，但不同教育制度的范围仍可能不同。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 390,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "女儿与儿子的亲属角色对照保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 394,
+      "status": "sense_sensitive",
+      "relation_screen": "antonym_related",
+      "reason": "中文选持续时间义；英文short/long也可能主要激活空间长度。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 417,
+      "status": "mismatch",
+      "relation_screen": "sense_shift",
+      "reason": "laugh是发笑行为，开心是情绪状态，目标概念不相同。",
+      "rater": "assistant_single_pass",
+      "human_verified": false,
+      "lexical_reference_url": "https://dictionary.cambridge.org/dictionary/english-chinese-simplified/laugh"
+    },
+    {
+      "translation_id": 423,
+      "status": "sense_sensitive",
+      "relation_screen": "coordinate",
+      "reason": "grandfather/grandmother译爷爷/奶奶限定父系，原英语没有这一分支限制。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 441,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "律师与检察官的职业联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 442,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "搜索与找到的行为/结果关系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 501,
+      "status": "compatible",
+      "relation_screen": "hierarchical",
+      "reason": "圣经与书籍的实例/上位联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 506,
+      "status": "compatible",
+      "relation_screen": "antonym_related",
+      "reason": "未来与过去的时间对照保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 513,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "自由与民主的社会概念联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 539,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "跑步与走路的移动方式对照保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 569,
+      "status": "compatible",
+      "relation_screen": "hierarchical",
+      "reason": "钻石与珠宝的实例/类别关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 572,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "盾牌与盔甲的防护装备关系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 585,
+      "status": "compatible",
+      "relation_screen": "antonym_related",
+      "reason": "错误与正确的对照保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 618,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "火箭与导弹的相关器物联系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 623,
+      "status": "sense_sensitive",
+      "relation_screen": "thematic",
+      "reason": "administration可指行政管理或执政机构，行政/政府的关系依赖所选义项。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 625,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "vagina/penis所指器官基本对应，阳具带有不同语域。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 637,
+      "status": "sense_sensitive",
+      "relation_screen": "morphological",
+      "reason": "simply/simple的派生关系在简单/容易中消失，simple与easy也不能完全互换。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 638,
+      "status": "compatible",
+      "relation_screen": "hierarchical",
+      "reason": "艺术与文学的类别联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 661,
+      "status": "mismatch",
+      "relation_screen": "sense_shift",
+      "reason": "emergency指紧急事件/状况，迫切表示急切或急需，目标不对应。",
+      "rater": "assistant_single_pass",
+      "human_verified": false,
+      "lexical_reference_url": "https://dictionary.cambridge.org/dictionary/english-chinese-simplified/emergency"
+    },
+    {
+      "translation_id": 672,
+      "status": "sense_sensitive",
+      "relation_screen": "morphological",
+      "reason": "irony/ironic的派生及反讽含义，不等同讽刺/揶揄的名词或动作关系。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 697,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "徽章与制服的场景联系保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 721,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "瑜伽与按摩的活动联系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 740,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "魅力与美丽的评价关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 752,
+      "status": "sense_sensitive",
+      "relation_screen": "synonym_related",
+      "reason": "torment可为身心折磨，torture可为折磨或刑讯；苦难/酷刑更固定且范围不对称。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 782,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "错误与过失的近义关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 791,
+      "status": "sense_sensitive",
+      "relation_screen": "form_heavy",
+      "reason": "dusty是多尘状态，灰尘是物质名词；英文形式相似与中文关系可能不同。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 797,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "食物与一餐的食物/进食事件联系基本保留；一餐是数量短语。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 809,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "可笑与荒诞的近义评价关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 835,
+      "status": "mismatch",
+      "relation_screen": "sense_shift",
+      "reason": "surname指姓氏，姓名包含姓与名，目标范围不等价。",
+      "rater": "assistant_single_pass",
+      "human_verified": false,
+      "lexical_reference_url": "https://dictionary.cambridge.org/us/dictionary/english/surname"
+    },
+    {
+      "translation_id": 836,
+      "status": "compatible",
+      "relation_screen": "coordinate",
+      "reason": "丝绸与棉花的纺织材料关系基本保留，材料/制品层级仍略有区别。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 856,
+      "status": "sense_sensitive",
+      "relation_screen": "synonym_related",
+      "reason": "leave/abandon可以在离弃语境接近，离开/放弃的宾语和义项范围不同。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 864,
+      "status": "sense_sensitive",
+      "relation_screen": "thematic",
+      "reason": "office可为办公室/机构，书房限定一种房间，桌子与该空间的关系可能改变。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 900,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "烹饪与厨师的活动/施事关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 909,
+      "status": "compatible",
+      "relation_screen": "synonym_related",
+      "reason": "悲惨与可怜的负面评价关系基本相容。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 947,
+      "status": "sense_sensitive",
+      "relation_screen": "synonym_related",
+      "reason": "service在维修保养义下可与maintenance相近，单独呈现也可能激活服务等其他义。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 952,
+      "status": "sense_sensitive",
+      "relation_screen": "coordinate",
+      "reason": "lunar/solar为性质词，月球/太阳为实体词；核心天体对照保留但词汇形式与用法改变。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 963,
+      "status": "sense_sensitive",
+      "relation_screen": "synonym_related",
+      "reason": "regional/local的地理范围，不一定对应地区/局部的整体—部分范围。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    },
+    {
+      "translation_id": 981,
+      "status": "compatible",
+      "relation_screen": "thematic",
+      "reason": "字典与短语的载体/内容关系基本保留。",
+      "rater": "assistant_single_pass",
+      "human_verified": false
+    }
+  ],
+  "unresolved_seven": [
+    {
+      "translation_ids": [
+        168,
+        229,
+        586
+      ],
+      "chinese_pair": "可能→大概",
+      "reason": "三个英文词对对应同一中文相关词对，缺乏可唯一归属的独立中文刺激，不强行一对一。"
+    },
+    {
+      "translation_ids": [
+        239,
+        328
+      ],
+      "chinese_pair": "阅读→写作",
+      "reason": "名词/动词英文形式汇入相同中文词对，维持未决并标记共享观测。"
+    },
+    {
+      "translation_ids": [
+        252,
+        342
+      ],
+      "chinese_pair": "风险→危险",
+      "reason": "英文词类/派生形式汇入相同中文词对，且作者匹配表有危险.1字段不一致；维持未决。"
+    }
+  ],
+  "status_counts": {
+    "compatible": 38,
+    "sense_sensitive": 18,
+    "mismatch": 4
+  },
+  "reference_check_note": "核心疑似不等价项另参照词典出版方的检索索引正文；网页直读403，未冒称浏览器全页验收。词典支持词义区分，不独立确定实验参与者使用的义项。"
+}

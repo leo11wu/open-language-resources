@@ -82,6 +82,22 @@ def main():
         alignment=audit['join_checks']['spaml_crosslanguage']
         check(alignment['one_to_one_retained_row_count']==alignment['one_to_one_unique_english_keys']==alignment['one_to_one_unique_chinese_keys'],'Retained bilingual pairs are not one-to-one')
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
+    for path in (ROOT/'data').glob('semantic-priming-pilot-*.json'):
+        pilot=json.loads(path.read_text())
+        check(pilot['stage']=='exploratory_pilot_not_confirmatory','Pilot stage overstated')
+        check(pilot['individual_data_redistributed'] is False,'Pilot exports individual input data')
+        prep=pilot['preparation']
+        check(prep['cohort_n']==pilot['cohort_n']<=prep['candidate_cohort_n'],'Pilot cohort counts disagree')
+        check(prep['candidate_cohort_n']-prep['cohort_n']==len({r['translation_id'] for r in prep['excluded_after_event_audit']}),'Pilot event exclusions disagree')
+        for lang,qc in prep['trial_replay'].items():
+            check(qc['matched_cells']==2000 and not qc['mismatched_cells'] and not qc['missing_cells'],'Pilot source summary replay differs')
+            check(prep['cohort_matrices'][lang]['duplicate_unique_trial_extra']==0,'Duplicate physical event in pilot cohort')
+        check(pilot['semantic_screen']['sample_n']==sum(pilot['semantic_screen']['statuses'].values()),'Semantic screen count mismatch')
+        for q in pilot['target_group_cv'].values():
+            check(q['n']==sum(x['test'] for x in q['fold_diagnostics']),'Pilot CV test folds disagree')
+        import hashlib
+        for code in pilot['processing_code']+[pilot['plan']]:
+            check(hashlib.sha256((ROOT/code['path']).read_bytes()).hexdigest()==code['sha256'],'Pilot code or plan hash differs: '+code['path'])
     for path in (ROOT/'data').glob('semantic-priming-feasibility-*.json'):
         feasibility=json.loads(path.read_text())
         check(feasibility['stage']=='exploratory_feasibility_not_confirmatory','Feasibility evidence stage overstated')

@@ -1,8 +1,8 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.3.0",
-  "catalog_version": "2.2.1",
-  "updated_on": "2026-10-17",
+  "catalog_version": "2.2.2",
+  "updated_on": "2026-10-18",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
   "resource_count": 179,
@@ -6954,7 +6954,7 @@
       ],
       "osf_ids": [],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
+        "documentation_checked_on": "2026-10-18",
         "scope": "resource_documentation_and_selected_file_checks",
         "download_tested": true,
         "data_files_validated": false,
@@ -6964,9 +6964,10 @@
           "https://www.nature.com/articles/s41562-025-02254-x",
           "https://github.com/SemanticPriming/SPAML/releases/tag/v1.0.2",
           "https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/supplemental/reliability_item.RData",
-          "https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/descriptive_statistics_priming.Rmd"
+          "https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/descriptive_statistics_priming.Rmd",
+          "https://github.com/SemanticPriming/SPAML/blob/master/05_Data/codebooks/codebook_priming_trials.Rmd"
         ],
-        "note": "已完整读取所列7个选定汇总/刺激/匹配/翻译文件，各语言1,000条汇总可接作者键；跨语言全局一对一保留993组，7条未决。本次另读取作者分半可靠性RData存档与方法代码，非从当前试次重估；与SWOW相接得到530组非重复候选，人工语义等价审核及全资源验收未完成。",
+        "note": "已读取所列9个选定数据/材料文件，另读作者可靠性存档及代码。中英4,000格发布均值及样本量可从试次复原；追加事件审计隔离1组跨条件歧义，严格pilot529组、完整控制454组，效果区间跨零且留出收益不稳。语义独立人工审核及全资源验收未完成。",
         "file_checks": [
           {
             "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/en_prime_summary.csv",
@@ -7009,6 +7010,18 @@
             "read_scope": "complete_xlsx_sheet",
             "result": "完整读取唯一翻译工作表1,000行，核对id、英文提示词/目标词、最终中文提示词/目标词5个对齐字段；尚未完成人工语义等价核对。",
             "blob_sha": "965388d39e787abeec10853cc1c58ce25672d284"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/en_prime_trials.csv",
+            "read_scope": "complete_csv",
+            "sha256": "71a5bf133956fb514b2306be9171f7142f537c9ba0591eb52926220ef08e2497",
+            "result": "完整解析842031行、19列；按原始保留/正确反应标记得到711045试次、5121名参与者，核对本语言2,000格均值和样本量，与发布汇总一致；未验证原始网页任务或全部资源。"
+          },
+          {
+            "url": "https://github.com/SemanticPriming/SPAML/releases/download/v1.0.2/zh_prime_trials.csv",
+            "read_scope": "complete_csv",
+            "sha256": "731688434462065bfcbfbbe8fe09192de6929d5abc3ff9cf04007667a1fa0224",
+            "result": "完整解析123225行、19列；按原始保留/正确反应标记得到99366试次、729名参与者，核对本语言2,000格均值和样本量，与发布汇总一致；未验证原始网页任务或全部资源。"
           }
         ]
       }

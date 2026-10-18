@@ -1,0 +1,956 @@
+{
+  "schema_version": "1.0.0",
+  "checked_on": "2026-10-18",
+  "stage": "exploratory_pilot_not_confirmatory",
+  "seed": 20261018,
+  "decision": "adjust",
+  "cohort_n": 529,
+  "raw_primary": {
+    "n": 529,
+    "pearson_r": -0.019912298066978345,
+    "spearman_rho": -0.026124607597820246
+  },
+  "raw_rt_sensitivity": {
+    "n": 529,
+    "pearson_r": 0.008221717044585682,
+    "spearman_rho": -0.013276625303987983
+  },
+  "participant_bootstrap_raw_r": {
+    "repetitions": 500,
+    "mean": -0.015554815829678607,
+    "median": -0.01563503502376678,
+    "p2_5": -0.06654525170294595,
+    "p97_5": 0.03794984664866406
+  },
+  "participant_split_reliability": {
+    "en": {
+      "splits": 100,
+      "mean_split_half_r": 0.49021127076149007,
+      "spearman_brown_of_mean": 0.6579084192686245,
+      "split_r_p2_5": 0.4357105475728781,
+      "split_r_p97_5": 0.5375918824906105
+    },
+    "zh": {
+      "splits": 100,
+      "mean_split_half_r": 0.33040768977806223,
+      "spearman_brown_of_mean": 0.4967014131332638,
+      "split_r_p2_5": 0.25941252181147184,
+      "split_r_p97_5": 0.3958239048685522
+    },
+    "crosslanguage_difference": {
+      "splits": 100,
+      "mean_split_half_r": 0.28750495750724836,
+      "spearman_brown_of_mean": 0.4466079230698881,
+      "split_r_p2_5": 0.21242559645507464,
+      "split_r_p97_5": 0.35955273095945245
+    }
+  },
+  "equal_n_diagnostic": {
+    "draws": 50,
+    "rule": "per item, same minimum trial N across both conditions and languages; sampling without replacement",
+    "per_condition_n_min": 12,
+    "per_condition_n_median": 45.0,
+    "correlation_distribution_not_population_CI": {
+      "repetitions": 50,
+      "mean": -0.016742312086015582,
+      "median": -0.0170390150146624,
+      "p2_5": -0.05383298646678746,
+      "p97_5": 0.01749736624520062
+    }
+  },
+  "controlled_models": {
+    "primary_R1": {
+      "n": 454,
+      "chinese_target_groups": 441,
+      "covariates": [
+        "en_target_zipf",
+        "en_cue_zipf_delta",
+        "en_target_length",
+        "en_cue_length_delta",
+        "en_overlap_delta",
+        "zh_target_zipf",
+        "zh_cue_zipf_delta",
+        "zh_target_length",
+        "zh_cue_length_delta",
+        "zh_overlap_delta",
+        "en_cosine_delta",
+        "zh_cosine_delta"
+      ],
+      "predictor": "association_difference",
+      "effect_unit": "change in z-RT priming language difference per one SD predictor",
+      "beta_per_sd": 0.013344562340471312,
+      "target_cluster_robust_95CI": [
+        -0.0074962690055810285,
+        0.03418539368652365
+      ],
+      "participant_and_target_bootstrap_95_interval": {
+        "repetitions": 500,
+        "mean": 0.013736413631048492,
+        "median": 0.013409268880786331,
+        "p2_5": -0.019011481535703065,
+        "p97_5": 0.046695113224059316
+      },
+      "r_squared_in_sample": 0.060365130648840526,
+      "predictor_sd_raw": 0.1312715093721152
+    },
+    "frequency_form_only": {
+      "n": 488,
+      "chinese_target_groups": 475,
+      "covariates": [
+        "en_target_zipf",
+        "en_cue_zipf_delta",
+        "en_target_length",
+        "en_cue_length_delta",
+        "en_overlap_delta",
+        "zh_target_zipf",
+        "zh_cue_zipf_delta",
+        "zh_target_length",
+        "zh_cue_length_delta",
+        "zh_overlap_delta"
+      ],
+      "predictor": "association_difference",
+      "effect_unit": "change in z-RT priming language difference per one SD predictor",
+      "beta_per_sd": 0.013160721110439155,
+      "target_cluster_robust_95CI": [
+        -0.007075031582719989,
+        0.033396473803598295
+      ],
+      "participant_and_target_bootstrap_95_interval": {
+        "repetitions": 500,
+        "mean": 0.013312937317058406,
+        "median": 0.013646125452683669,
+        "p2_5": -0.018834572069466274,
+        "p97_5": 0.04381417691451004
+      },
+      "r_squared_in_sample": 0.08025284625940965,
+      "predictor_sd_raw": 0.13029965787787304
+    },
+    "unique_translated_targets": {
+      "n": 411,
+      "chinese_target_groups": 411,
+      "covariates": [
+        "en_target_zipf",
+        "en_cue_zipf_delta",
+        "en_target_length",
+        "en_cue_length_delta",
+        "en_overlap_delta",
+        "zh_target_zipf",
+        "zh_cue_zipf_delta",
+        "zh_target_length",
+        "zh_cue_length_delta",
+        "zh_overlap_delta",
+        "en_cosine_delta",
+        "zh_cosine_delta"
+      ],
+      "predictor": "association_difference",
+      "effect_unit": "change in z-RT priming language difference per one SD predictor",
+      "beta_per_sd": 0.012340198417018004,
+      "target_cluster_robust_95CI": [
+        -0.009977912037515461,
+        0.03465830887155147
+      ],
+      "participant_and_target_bootstrap_95_interval": {
+        "repetitions": 500,
+        "mean": 0.012510699512353672,
+        "median": 0.012998676910418467,
+        "p2_5": -0.02384285192027433,
+        "p97_5": 0.04936785960495622
+      },
+      "r_squared_in_sample": 0.06938979305094639,
+      "predictor_sd_raw": 0.13381270050601995
+    },
+    "R123_sensitivity": {
+      "n": 454,
+      "chinese_target_groups": 441,
+      "covariates": [
+        "en_target_zipf",
+        "en_cue_zipf_delta",
+        "en_target_length",
+        "en_cue_length_delta",
+        "en_overlap_delta",
+        "zh_target_zipf",
+        "zh_cue_zipf_delta",
+        "zh_target_length",
+        "zh_cue_length_delta",
+        "zh_overlap_delta",
+        "en_cosine_delta",
+        "zh_cosine_delta"
+      ],
+      "predictor": "association_R123_difference",
+      "effect_unit": "change in z-RT priming language difference per one SD predictor",
+      "beta_per_sd": 0.02083889945414898,
+      "target_cluster_robust_95CI": [
+        0.00018732005293907103,
+        0.04149047885535889
+      ],
+      "participant_and_target_bootstrap_95_interval": {
+        "repetitions": 500,
+        "mean": 0.020621280075652657,
+        "median": 0.019464262150706152,
+        "p2_5": -0.009959883275452405,
+        "p97_5": 0.05142190931871764
+      },
+      "r_squared_in_sample": 0.06424579064809444,
+      "predictor_sd_raw": 0.06216938012606409
+    },
+    "backward_sensitivity": {
+      "n": 383,
+      "chinese_target_groups": 370,
+      "covariates": [
+        "en_target_zipf",
+        "en_cue_zipf_delta",
+        "en_target_length",
+        "en_cue_length_delta",
+        "en_overlap_delta",
+        "zh_target_zipf",
+        "zh_cue_zipf_delta",
+        "zh_target_length",
+        "zh_cue_length_delta",
+        "zh_overlap_delta",
+        "en_cosine_delta",
+        "zh_cosine_delta"
+      ],
+      "predictor": "backward_difference",
+      "effect_unit": "change in z-RT priming language difference per one SD predictor",
+      "beta_per_sd": 0.025995945389159367,
+      "target_cluster_robust_95CI": [
+        -0.001962266135958745,
+        0.053954156914277476
+      ],
+      "participant_and_target_bootstrap_95_interval": {
+        "repetitions": 500,
+        "mean": 0.026099691720853913,
+        "median": 0.02611123207125332,
+        "p2_5": -0.011685929908868431,
+        "p97_5": 0.06209167930417243
+      },
+      "r_squared_in_sample": 0.0648281120715406,
+      "predictor_sd_raw": 0.13263891507552492
+    }
+  },
+  "target_group_cv": {
+    "primary_R1": {
+      "n": 454,
+      "folds": 5,
+      "group": "Chinese target word",
+      "ridge_alpha": 1.0,
+      "fold_seed": null,
+      "all_within_language_word_overlap_purged": false,
+      "scaling_fit_on_training_only": true,
+      "scores": {
+        "training_mean": {
+          "r_squared_oof": -0.005502983516624926,
+          "rmse_oof": 0.23401835969785786
+        },
+        "baseline": {
+          "r_squared_oof": -0.02222120280635953,
+          "rmse_oof": 0.2359558186872092
+        },
+        "plus_association": {
+          "r_squared_oof": -0.023594194392936307,
+          "rmse_oof": 0.23611422698613344
+        }
+      },
+      "delta_R2_plus_minus_baseline": -0.0013729915865767772,
+      "delta_RMSE_plus_minus_baseline": 0.00015840829892424524,
+      "fold_diagnostics": [
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 66,
+            "zh": 98
+          },
+          "training_rows_left_after_all_word_purge": 215,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 63,
+            "zh": 100
+          },
+          "training_rows_left_after_all_word_purge": 218,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 74,
+            "zh": 105
+          },
+          "training_rows_left_after_all_word_purge": 208,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 70,
+            "zh": 106
+          },
+          "training_rows_left_after_all_word_purge": 214,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 364,
+          "test": 90,
+          "training_rows_sharing_any_test_word": {
+            "en": 75,
+            "zh": 110
+          },
+          "training_rows_left_after_all_word_purge": 197,
+          "actual_training_rows": 364
+        }
+      ],
+      "claim_limit": "conditional target-group prediction; shared words across roles remain, not unseen-lexicon generalization"
+    },
+    "R123_sensitivity": {
+      "n": 454,
+      "folds": 5,
+      "group": "Chinese target word",
+      "ridge_alpha": 1.0,
+      "fold_seed": null,
+      "all_within_language_word_overlap_purged": false,
+      "scaling_fit_on_training_only": true,
+      "scores": {
+        "training_mean": {
+          "r_squared_oof": -0.005502983516624926,
+          "rmse_oof": 0.23401835969785786
+        },
+        "baseline": {
+          "r_squared_oof": -0.02222120280635953,
+          "rmse_oof": 0.2359558186872092
+        },
+        "plus_association": {
+          "r_squared_oof": -0.018820353554245273,
+          "rmse_oof": 0.2355629884945137
+        }
+      },
+      "delta_R2_plus_minus_baseline": 0.0034008492521142575,
+      "delta_RMSE_plus_minus_baseline": -0.00039283019269548136,
+      "fold_diagnostics": [
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 66,
+            "zh": 98
+          },
+          "training_rows_left_after_all_word_purge": 215,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 63,
+            "zh": 100
+          },
+          "training_rows_left_after_all_word_purge": 218,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 74,
+            "zh": 105
+          },
+          "training_rows_left_after_all_word_purge": 208,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 70,
+            "zh": 106
+          },
+          "training_rows_left_after_all_word_purge": 214,
+          "actual_training_rows": 363
+        },
+        {
+          "train": 364,
+          "test": 90,
+          "training_rows_sharing_any_test_word": {
+            "en": 75,
+            "zh": 110
+          },
+          "training_rows_left_after_all_word_purge": 197,
+          "actual_training_rows": 364
+        }
+      ],
+      "claim_limit": "conditional target-group prediction; shared words across roles remain, not unseen-lexicon generalization"
+    },
+    "backward_sensitivity": {
+      "n": 383,
+      "folds": 5,
+      "group": "Chinese target word",
+      "ridge_alpha": 1.0,
+      "fold_seed": null,
+      "all_within_language_word_overlap_purged": false,
+      "scaling_fit_on_training_only": true,
+      "scores": {
+        "training_mean": {
+          "r_squared_oof": -0.002996924116206001,
+          "rmse_oof": 0.22774490937483544
+        },
+        "baseline": {
+          "r_squared_oof": -0.019999766924695184,
+          "rmse_oof": 0.22966716733654813
+        },
+        "plus_association": {
+          "r_squared_oof": -0.008220962633232354,
+          "rmse_oof": 0.22833723572777304
+        }
+      },
+      "delta_R2_plus_minus_baseline": 0.01177880429146283,
+      "delta_RMSE_plus_minus_baseline": -0.0013299316087750923,
+      "fold_diagnostics": [
+        {
+          "train": 306,
+          "test": 77,
+          "training_rows_sharing_any_test_word": {
+            "en": 49,
+            "zh": 84
+          },
+          "training_rows_left_after_all_word_purge": 185,
+          "actual_training_rows": 306
+        },
+        {
+          "train": 306,
+          "test": 77,
+          "training_rows_sharing_any_test_word": {
+            "en": 48,
+            "zh": 74
+          },
+          "training_rows_left_after_all_word_purge": 195,
+          "actual_training_rows": 306
+        },
+        {
+          "train": 306,
+          "test": 77,
+          "training_rows_sharing_any_test_word": {
+            "en": 56,
+            "zh": 74
+          },
+          "training_rows_left_after_all_word_purge": 187,
+          "actual_training_rows": 306
+        },
+        {
+          "train": 307,
+          "test": 76,
+          "training_rows_sharing_any_test_word": {
+            "en": 47,
+            "zh": 74
+          },
+          "training_rows_left_after_all_word_purge": 198,
+          "actual_training_rows": 307
+        },
+        {
+          "train": 307,
+          "test": 76,
+          "training_rows_sharing_any_test_word": {
+            "en": 57,
+            "zh": 73
+          },
+          "training_rows_left_after_all_word_purge": 188,
+          "actual_training_rows": 307
+        }
+      ],
+      "claim_limit": "conditional target-group prediction; shared words across roles remain, not unseen-lexicon generalization"
+    },
+    "primary_R1_word_purged": {
+      "n": 454,
+      "folds": 5,
+      "group": "Chinese target word",
+      "ridge_alpha": 1.0,
+      "fold_seed": null,
+      "all_within_language_word_overlap_purged": true,
+      "scaling_fit_on_training_only": true,
+      "scores": {
+        "training_mean": {
+          "r_squared_oof": 0.001279670442904779,
+          "rmse_oof": 0.23322773481432693
+        },
+        "baseline": {
+          "r_squared_oof": -0.12331734856299215,
+          "rmse_oof": 0.24734861461045754
+        },
+        "plus_association": {
+          "r_squared_oof": -0.12460770084553263,
+          "rmse_oof": 0.2474906382540372
+        }
+      },
+      "delta_R2_plus_minus_baseline": -0.0012903522825404856,
+      "delta_RMSE_plus_minus_baseline": 0.00014202364357965291,
+      "fold_diagnostics": [
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 66,
+            "zh": 98
+          },
+          "training_rows_left_after_all_word_purge": 215,
+          "actual_training_rows": 215
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 63,
+            "zh": 100
+          },
+          "training_rows_left_after_all_word_purge": 218,
+          "actual_training_rows": 218
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 74,
+            "zh": 105
+          },
+          "training_rows_left_after_all_word_purge": 208,
+          "actual_training_rows": 208
+        },
+        {
+          "train": 363,
+          "test": 91,
+          "training_rows_sharing_any_test_word": {
+            "en": 70,
+            "zh": 106
+          },
+          "training_rows_left_after_all_word_purge": 214,
+          "actual_training_rows": 214
+        },
+        {
+          "train": 364,
+          "test": 90,
+          "training_rows_sharing_any_test_word": {
+            "en": 75,
+            "zh": 110
+          },
+          "training_rows_left_after_all_word_purge": 197,
+          "actual_training_rows": 197
+        }
+      ],
+      "claim_limit": "word-disjoint train/test within each language and fold; no claim of generalization to other tasks or languages"
+    }
+  },
+  "purged_partition_sensitivity": {
+    "partitions": 10,
+    "selection": "all seeds 20261018 through 20261027; no best-seed selection",
+    "positive_delta_R2_partitions": 3,
+    "delta_R2_partition_distribution_not_CI": {
+      "repetitions": 10,
+      "mean": -0.0031503361484448546,
+      "median": -0.00303912853268018,
+      "p2_5": -0.009942223293836224,
+      "p97_5": 0.0029364968908533857
+    },
+    "plus_association_R2_partition_distribution_not_CI": {
+      "repetitions": 10,
+      "mean": -0.04124314841629171,
+      "median": -0.04029320555612004,
+      "p2_5": -0.08775870414259111,
+      "p97_5": -0.005740514284852092
+    },
+    "all_partitions": [
+      {
+        "seed": 20261018,
+        "baseline_R2": -0.012631562693173226,
+        "plus_association_R2": -0.011206228354746273,
+        "delta_R2": 0.0014253343384269535
+      },
+      {
+        "seed": 20261019,
+        "baseline_R2": -0.059335477529578906,
+        "plus_association_R2": -0.05605399416249601,
+        "delta_R2": 0.0032814833670828936
+      },
+      {
+        "seed": 20261020,
+        "baseline_R2": -0.024450358565833108,
+        "plus_association_R2": -0.027196709306564815,
+        "delta_R2": -0.0027463507407317067
+      },
+      {
+        "seed": 20261021,
+        "baseline_R2": -0.017777251044325926,
+        "plus_association_R2": -0.016029040904929737,
+        "delta_R2": 0.001748210139396189
+      },
+      {
+        "seed": 20261022,
+        "baseline_R2": -0.027585586537723028,
+        "plus_association_R2": -0.03091749286235168,
+        "delta_R2": -0.003331906324628653
+      },
+      {
+        "seed": 20261023,
+        "baseline_R2": -0.08399072316456646,
+        "plus_association_R2": -0.0945569714038561,
+        "delta_R2": -0.010566248239289644
+      },
+      {
+        "seed": 20261024,
+        "baseline_R2": -0.05694811536797073,
+        "plus_association_R2": -0.058305984604393846,
+        "delta_R2": -0.0013578692364231149
+      },
+      {
+        "seed": 20261025,
+        "baseline_R2": 0.003639109966262599,
+        "plus_association_R2": -0.004153694071011849,
+        "delta_R2": -0.007792804037274448
+      },
+      {
+        "seed": 20261026,
+        "baseline_R2": -0.05915823308314838,
+        "plus_association_R2": -0.06434245024267837,
+        "delta_R2": -0.005184217159529991
+      },
+      {
+        "seed": 20261027,
+        "baseline_R2": -0.04268992465841137,
+        "plus_association_R2": -0.049668918249888394,
+        "delta_R2": -0.006978993591477023
+      }
+    ]
+  },
+  "lexical_dependency_full_cohort": {
+    "components": 9,
+    "largest_component": 519,
+    "largest_component_proportion": 0.9810964083175804,
+    "component_sizes_descending": [
+      519,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "lexical_dependency_primary_cohort": {
+    "components": 20,
+    "largest_component": 432,
+    "largest_component_proportion": 0.9515418502202643,
+    "component_sizes_descending": [
+      432,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "uncertainty_scope": "Participant resampling within each language plus Chinese-target resampling; SWOW estimates/covariates fixed; shared cue vocabulary and SWOW sampling error not fully modeled",
+  "semantic_gold_validation": false,
+  "new_llm_experiment_run": false,
+  "individual_data_redistributed": false,
+  "limits": [
+    "No causal or bilingual dominance identification",
+    "Wordfreq snapshot/segmentation and source cosine completeness limit coverage",
+    "Only 60 material pairs assistant-screened; no independent human consensus",
+    "CV shares cue and cross-role vocabulary",
+    "Pilot protocol was written after the previous feasibility result was known"
+  ],
+  "preparation": {
+    "checked_on": "2026-10-18",
+    "stage": "exploratory_pilot_preparation",
+    "candidate_cohort_n": 530,
+    "cohort_n": 529,
+    "excluded_after_event_audit": [
+      {
+        "translation_id": 251,
+        "language": "zh",
+        "ambiguous_trial_labels": true,
+        "same_prime_both_conditions": true
+      }
+    ],
+    "random_semantic_sample_n": 60,
+    "semantic_sampling_frame_n": 530,
+    "seed": 20261018,
+    "trial_replay": {
+      "en": {
+        "filename": "en_prime_trials.csv",
+        "bytes": 147208934,
+        "sha256": "71a5bf133956fb514b2306be9171f7142f537c9ba0591eb52926220ef08e2497",
+        "all_rows": 842031,
+        "columns": 19,
+        "all_rows_duplicate_unique_trial_extra": 0,
+        "retained_duplicate_unique_trial_extra": 0,
+        "ambiguous_event_ids": 0,
+        "ambiguous_physical_pairs": [],
+        "concatenated_key_collisions": 0,
+        "retained_trials": 711045,
+        "retained_participants": 5121,
+        "matched_cells": 2000,
+        "mismatched_cells": [],
+        "missing_cells": [],
+        "maximum_absolute_mean_error": 7.216449660063518e-16
+      },
+      "zh": {
+        "filename": "zh_prime_trials.csv",
+        "bytes": 21569059,
+        "sha256": "731688434462065bfcbfbbe8fe09192de6929d5abc3ff9cf04007667a1fa0224",
+        "all_rows": 123225,
+        "columns": 19,
+        "all_rows_duplicate_unique_trial_extra": 167,
+        "retained_duplicate_unique_trial_extra": 138,
+        "ambiguous_event_ids": 45,
+        "ambiguous_physical_pairs": [
+          "右边左边"
+        ],
+        "concatenated_key_collisions": 0,
+        "retained_trials": 99366,
+        "retained_participants": 729,
+        "matched_cells": 2000,
+        "mismatched_cells": [],
+        "missing_cells": [],
+        "maximum_absolute_mean_error": 4.440892098500626e-15
+      }
+    },
+    "cohort_matrices": {
+      "en": {
+        "participants_in_cohort": 5121,
+        "cohort_trial_incidences": 377232,
+        "physical_trials": 377232,
+        "duplicate_unique_trial_extra": 0,
+        "cells": 1058
+      },
+      "zh": {
+        "participants_in_cohort": 729,
+        "cohort_trial_incidences": 52188,
+        "physical_trials": 52188,
+        "duplicate_unique_trial_extra": 0,
+        "cells": 1058
+      }
+    },
+    "replication_max_error": {
+      "en": 6.661338147750939e-16,
+      "zh": 4.218847493575595e-15
+    },
+    "duplicated_target_candidates": {
+      "en": 0,
+      "zh": 45
+    },
+    "missing_author_cosine_delta": {
+      "en": 0,
+      "zh": 43
+    },
+    "frequency_screen": {
+      "en": {
+        "target": {
+          "missing_or_multitoken": 0,
+          "multitoken": 0
+        },
+        "related": {
+          "missing_or_multitoken": 0,
+          "multitoken": 0
+        },
+        "unrelated": {
+          "missing_or_multitoken": 0,
+          "multitoken": 0
+        }
+      },
+      "zh": {
+        "target": {
+          "missing_or_multitoken": 29,
+          "multitoken": 29
+        },
+        "related": {
+          "missing_or_multitoken": 8,
+          "multitoken": 8
+        },
+        "unrelated": {
+          "missing_or_multitoken": 7,
+          "multitoken": 7
+        }
+      }
+    },
+    "input_hashes": [
+      {
+        "filename": "spaml-author-links-one-to-one.json",
+        "bytes": 93218,
+        "sha256": "4d7010d7d89d95096a9ff7218299baa1f4c48418413c14362b56a2770bc8d670"
+      },
+      {
+        "filename": "spaml-matched-en.json",
+        "bytes": 166608,
+        "sha256": "9910e3c1d1736da50c1507c62ed90c8e8875a67da38da481c309331180425144"
+      },
+      {
+        "filename": "spaml-matched-zh.json",
+        "bytes": 164914,
+        "sha256": "0bc271eedc395625dce4b152bc21dde2dbc398dda6886e8f2b4ef22a05ab890f"
+      },
+      {
+        "filename": "en_prime_summary.csv",
+        "bytes": 331849,
+        "sha256": "4c6241279f57933f48a7f8a63ea54560534e76ae74d0d52314b7d62bddab60a1"
+      },
+      {
+        "filename": "zh_prime_summary.csv",
+        "bytes": 291777,
+        "sha256": "f6ff4205d759f566edf228a8ce4f4a347e0ba2180340ac72fb4528c1df5810e3"
+      }
+    ],
+    "private_individual_data_published": false,
+    "software": {
+      "python": "3.11.7",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "wordfreq": "3.1.1"
+    }
+  },
+  "norm_reliability": {
+    "checked_on": "2026-10-18",
+    "stage": "exploratory_measurement_diagnostic",
+    "cohort_n": 529,
+    "seed": 20261019,
+    "scope": {
+      "en": {
+        "participant_ids_in_queried_cues": 39911,
+        "query_cell_incidences": 104836,
+        "queried_cues": 741
+      },
+      "zh": {
+        "participant_ids_in_queried_cues": 18953,
+        "query_cell_incidences": 57588,
+        "queried_cues": 661
+      }
+    },
+    "reliability": {
+      "en": {
+        "splits": 100,
+        "mean_split_half_r": 0.9323760420403392,
+        "spearman_brown_of_mean": 0.9650047627954139,
+        "split_r_p2_5": 0.9188108821991928,
+        "split_r_p97_5": 0.9475826643119818
+      },
+      "zh": {
+        "splits": 100,
+        "mean_split_half_r": 0.8597170145717504,
+        "spearman_brown_of_mean": 0.9245675635975437,
+        "split_r_p2_5": 0.8256091599219714,
+        "split_r_p97_5": 0.8928047011193962
+      },
+      "crosslanguage_association_difference": {
+        "splits": 100,
+        "mean_split_half_r": 0.8792699379998496,
+        "spearman_brown_of_mean": 0.9357569343504498,
+        "split_r_p2_5": 0.8526259428007793,
+        "split_r_p97_5": 0.8976090708278367
+      }
+    },
+    "method": "100 random participant halves within each language; calculate related-minus-unrelated R1 probabilities per half",
+    "limits": [
+      "Conditional on released balanced samples and observed word forms",
+      "Shared zero edges do not establish zero association in the population",
+      "No direct disattenuation or new model/predictor selection"
+    ],
+    "individual_data_redistributed": false
+  },
+  "semantic_screen": {
+    "file": "data/semantic-priming-semantic-screen-2026-10-18.json",
+    "sample_n": 60,
+    "sampling_frame_n": 530,
+    "statuses": {
+      "compatible": 38,
+      "sense_sensitive": 18,
+      "mismatch": 4
+    },
+    "human_gold": false
+  },
+  "decision_reason": "数值可复原；隔离1组条件歧义后严格样本529、主要模型454；语义未独立验收，受控区间跨零，词汇排除和重复分割未见稳定新增预测，暂不扩大原路径。",
+  "research_note": "research/semantic-priming-pilot-2026-10-18.md",
+  "plan": {
+    "path": "research/semantic-priming-pilot-plan-2026-10-18.md",
+    "sha256": "1c9585325842c7924fb801ec3d9fb639e49385b62c2aabe368de0523eb3c1689",
+    "preregistered": false,
+    "prior_feasibility_results_known": true
+  },
+  "execution_notes": [
+    "工作方案在本轮控制模型运行前写下，已知前一轮可行性结果，非预注册。",
+    "发布前追加物理事件审计发现右边→左边跨条件复用同一unique_trial，且两条件提示词相同；隔离translation_id=251后重跑，最终529/454样本优先于先前530/455试算。",
+    "主预测量未更换；词频/形式控制而不含余弦，以及剔除重复中文目标，作为缺失和共有词项问题的有限敏感性检查。",
+    "按方案核查共享词后补做主R1逐折词汇排除；因隔离1条造成分割成绩明显变动，再固定10个种子汇报全部分割，不选最好结果。",
+    "补做SWOW参与者分半稳定性，不据此机械去衰减或改变主要假设。"
+  ],
+  "software": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.2.2",
+    "statsmodels": "0.14.0",
+    "matplotlib": "3.9.2",
+    "wordfreq": "3.1.1",
+    "jieba": "0.42.1"
+  },
+  "processing_code": [
+    {
+      "path": "scripts/semantic_priming_pilot_analyze.py",
+      "sha256": "d356b940edbb8fadf4da9668dcbcf826aa5150f99fa63c09f8c1e7c57b540f33"
+    },
+    {
+      "path": "scripts/semantic_priming_pilot_figure.py",
+      "sha256": "78474d175369f82ead45f245f1129556ae71b4290aa33321c49d5e2ab777bdd1"
+    },
+    {
+      "path": "scripts/semantic_priming_pilot_norm_reliability.py",
+      "sha256": "e194b41be6e54be627c49a26af1de84162fa7f348b720bad422c98448b37711d"
+    },
+    {
+      "path": "scripts/semantic_priming_pilot_prepare.py",
+      "sha256": "a7e24ff48d3fb3a4aff06ee681b0befff49a8801621c557550b1f3d9fba9da38"
+    }
+  ],
+  "wordfreq_sources": {
+    "version": "3.1.1",
+    "documentation": "https://github.com/rspeer/wordfreq/tree/912caf64b657478d1dff1138efdc078947d54bb1",
+    "data_period": "snapshot through about 2021",
+    "direct_data_files": [
+      {
+        "filename": "jieba_zh.txt",
+        "sha256": "cb653136f9abb53fde1f2450429aa58b8710b9f3c06cc1e69f7749e9b5489b45"
+      },
+      {
+        "filename": "large_zh.msgpack.gz",
+        "sha256": "e079d7aaff1cfb92874850cb3ffbc7b611af939d9d671c1cbda932d968467cdd"
+      },
+      {
+        "filename": "large_en.msgpack.gz",
+        "sha256": "dffae8066b78dce0a6667cf5f58e567054f902674667090a7ac8a8a44628b05c"
+      }
+    ]
+  },
+  "independent_calculation_check": {
+    "method": "R lm on the same complete-case control design with population-SD scaling",
+    "n": 454,
+    "beta_per_sd_as_printed": 0.01334456,
+    "matches_python_to_6_decimals": true
+  }
+}

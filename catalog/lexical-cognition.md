@@ -487,9 +487,9 @@ Psychological Science Accelerator的多语言语义启动项目，仓库链接�
 | 使用边界 | 多实验室、翻译与词对间存在层级结构；预注册阶段与已发表数据版本须区分。 |
 | 标签 | 语义启动、跨语言、多实验室、词汇加工 |
 | 平台 | github |
-| 核对依据 | 作者仓库说明；2026-10-17 |
+| 核对依据 | 作者仓库说明；2026-10-18 |
 | 实际文件核验 | **已完整检查选定文件；全库未验收** |
-| 核对范围 | 已完整读取所列7个选定汇总/刺激/匹配/翻译文件，各语言1,000条汇总可接作者键；跨语言全局一对一保留993组，7条未决。本次另读取作者分半可靠性RData存档与方法代码，非从当前试次重估；与SWOW相接得到530组非重复候选，人工语义等价审核及全资源验收未完成。 |
+| 核对范围 | 已读取所列9个选定数据/材料文件，另读作者可靠性存档及代码。中英4,000格发布均值及样本量可从试次复原；追加事件审计隔离1组跨条件歧义，严格pilot529组、完整控制454组，效果区间跨零且留出收益不稳。语义独立人工审核及全资源验收未完成。 |
 | 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://github.com/SemanticPriming/SPAML)
@@ -500,6 +500,7 @@ Psychological Science Accelerator的多语言语义启动项目，仓库链接�
 - [来源 2](https://github.com/SemanticPriming/SPAML/releases/tag/v1.0.2)
 - [来源 3](https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/supplemental/reliability_item.RData)
 - [来源 4](https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/descriptive_statistics_priming.Rmd)
+- [来源 5](https://github.com/SemanticPriming/SPAML/blob/master/05_Data/codebooks/codebook_priming_trials.Rmd)
 
 关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)。
 

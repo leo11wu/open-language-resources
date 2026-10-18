@@ -15,6 +15,7 @@
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
 - [第一条想法的初次可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：原覆盖530组；后续事件审计另排除1组，见下列pilot。
 - [中英联想—启动pilot结果](research/semantic-priming-pilot-2026-10-18.md)：原试次复原、60组语义初筛、测量稳定性、受控模型与词汇排除预测；建议调整后再决定主实验。
+- [pilot之后的方向比较](research/postpilot-directions-2026-10-18.md)：人类参照群体、受限交流与句法线索的先例、实际覆盖及下一步判别条件。
 - [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。
 - [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。

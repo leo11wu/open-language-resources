@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-18",
+  "stage": "exploratory_resource_probes",
+  "inference_scope": "coverage, units, keys, and structural variation only",
+  "swow_en": {
+    "rows": 1228200,
+    "cues": 12282,
+    "people": 83864,
+    "duplicate_participant_cue_rows": 1,
+    "invalid_R1_rows": 31044,
+    "group_field": "nativeLanguage (self-reported native English regional variety)",
+    "country_used_for_grouping": false,
+    "regional_groups": {
+      "United States": {
+        "rows": 647732,
+        "people": 42947,
+        "valid_R1_rows": 639269,
+        "median_valid_people_per_cue": 52.0,
+        "cues_at_least_n_people": {
+          "5": 12282,
+          "10": 12282,
+          "15": 12282,
+          "20": 12281,
+          "30": 12258
+        },
+        "missing_age_people": 0,
+        "people_country_same_as_variety": 40155
+      },
+      "United Kingdom": {
+        "rows": 168974,
+        "people": 10805,
+        "valid_R1_rows": 165994,
+        "median_valid_people_per_cue": 13.0,
+        "cues_at_least_n_people": {
+          "5": 11962,
+          "10": 9074,
+          "15": 4681,
+          "20": 1968,
+          "30": 56
+        },
+        "missing_age_people": 0,
+        "people_country_same_as_variety": 8715
+      },
+      "Canada": {
+        "rows": 133525,
+        "people": 9079,
+        "valid_R1_rows": 131683,
+        "median_valid_people_per_cue": 10.0,
+        "cues_at_least_n_people": {
+          "5": 11161,
+          "10": 6891,
+          "15": 2905,
+          "20": 460,
+          "30": 1
+        },
+        "missing_age_people": 0,
+        "people_country_same_as_variety": 5539
+      },
+      "Australia": {
+        "rows": 66831,
+        "people": 4362,
+        "valid_R1_rows": 65784,
+        "median_valid_people_per_cue": 5.0,
+        "cues_at_least_n_people": {
+          "5": 7610,
+          "10": 539,
+          "15": 11,
+          "20": 1,
+          "30": 1
+        },
+        "missing_age_people": 0,
+        "people_country_same_as_variety": 3896
+      }
+    },
+    "joint_cue_counts": {
+      "US_UK": {
+        "5": 11962,
+        "10": 9074,
+        "15": 4681,
+        "20": 1968,
+        "30": 54
+      },
+      "US_UK_CA": {
+        "5": 10850,
+        "10": 4175,
+        "15": 347,
+        "20": 2,
+        "30": 0
+      },
+      "US_UK_CA_AU": {
+        "5": 6610,
+        "10": 117,
+        "15": 0,
+        "20": 0,
+        "30": 0
+      }
+    },
+    "people_with_inconsistent_metadata_across_rows": {
+      "nativeLanguage": 0,
+      "country": 0,
+      "age": 0,
+      "gender": 0
+    }
+  },
+  "scarfs": {
+    "nre_rows_all": 20521,
+    "nre_rows_native": 19449,
+    "behavioral_rows_all": 5000,
+    "behavioral_rows_native": 4827,
+    "native_speakers_in_nre": 65,
+    "native_sessions_in_nre": 17,
+    "behavioral_key_unique": true,
+    "trial_key": [
+      "ppt_id",
+      "partner_id",
+      "trial_with_partner",
+      "card"
+    ],
+    "native_nre_trial_keys": 3393,
+    "native_nre_rows_with_behavioral_match": 19449,
+    "matched_rows_with_conflicting_outcome": 0,
+    "native_nre_trials_with_conflicting_outcome": 0,
+    "native_noun_head_proxy_rows": 9578,
+    "first_noun_head_proxy_trials": 3095,
+    "first_noun_head_proxy_trials_with_both_SWOW_cues": 2571,
+    "covered_first_noun_head_proxy_targets": 429,
+    "covered_first_noun_head_proxy_speakers": 65,
+    "native_cards_seen": 471,
+    "taboo_card_rows": 471,
+    "native_cards_with_taboo_word_table": 470,
+    "taboo_tokens": 2355,
+    "taboo_tokens_in_SWOW_cue_vocabulary": 2165,
+    "first_proxy_length_distribution": {
+      "1": 977,
+      "2": 1684,
+      "3": 347,
+      "4": 65,
+      "5": 15,
+      "6": 5,
+      "7": 2
+    },
+    "limits": [
+      "First noun-head proxy is not necessarily the first clue or the complete message.",
+      "Cue-vocabulary coverage is not an observed directed association edge or predictive validity.",
+      "Lost denotes a rule violation, not a comprehension failure; trial outcomes were not modeled.",
+      "Within-card taboo constraints do not identify the causal effect of banning words without a comparable unconstrained condition."
+    ]
+  },
+  "childes": {
+    "split": "dev only",
+    "sentences": 3860,
+    "integer_tokens": 24310,
+    "children": 7,
+    "speaker_role_sentences": {
+      "Target_Child": 1483,
+      "Mother": 1749,
+      "Father": 330,
+      "Investigator": 276,
+      "Sister": 10,
+      "Playmate": 3,
+      "Grandmother": 2,
+      "Child": 3,
+      "Relative": 2,
+      "Media": 1,
+      "Student": 1
+    },
+    "mother_father_sentences": 2079,
+    "mother_father_integer_tokens": 14368,
+    "mother_father_noun_propn_tokens": 1936,
+    "noun_dependency_counts": {
+      "root": 440,
+      "obj": 429,
+      "nsubj": 236,
+      "conj": 33,
+      "obl:unmarked": 26,
+      "nmod:poss": 27,
+      "flat": 25,
+      "compound": 84,
+      "vocative": 122,
+      "obl": 270,
+      "nmod": 110,
+      "ccomp": 25,
+      "parataxis": 23,
+      "obl:npmod": 10,
+      "iobj": 14,
+      "acl:relcl": 2,
+      "nmod:unmarked": 6,
+      "discourse": 3,
+      "advmod": 5,
+      "dislocated": 1,
+      "nsubj:outer": 1,
+      "amod": 10,
+      "nsubj:pass": 5,
+      "appos": 7,
+      "xcomp": 10,
+      "advcl": 5,
+      "list": 1,
+      "reparandum": 3,
+      "acl": 1,
+      "compound:prt": 1,
+      "nummod": 1
+    },
+    "function_word_frames_definition": "one intervening non-punctuation token; function UPOS on each side; lowercased surface anchors",
+    "function_word_frames": 1022,
+    "framed_noun_tokens": 348,
+    "frame_occurrence_thresholds": {
+      "3": {
+        "frames": 206,
+        "center_tokens": 1428,
+        "noun_center_tokens": 152,
+        "frames_with_at_least_2_noun_dependency_labels": 20,
+        "frames_with_noun_subject_and_object": 5
+      },
+      "5": {
+        "frames": 104,
+        "center_tokens": 1088,
+        "noun_center_tokens": 104,
+        "frames_with_at_least_2_noun_dependency_labels": 11,
+        "frames_with_noun_subject_and_object": 2
+      },
+      "10": {
+        "frames": 39,
+        "center_tokens": 679,
+        "noun_center_tokens": 63,
+        "frames_with_at_least_2_noun_dependency_labels": 6,
+        "frames_with_noun_subject_and_object": 1
+      }
+    },
+    "limits": [
+      "Grammatical relation is not a semantic agent/patient role.",
+      "Only structural availability in dev was checked; no corpus-wide or learning claim.",
+      "No classifier, model intervention, temporal acquisition trajectory, or held-out prediction was run."
+    ]
+  },
+  "script_sha256": "22889a2a32bb385c49b8cdbdca5371a41385c2c8eea6e883344a3d0f1a9a95c7",
+  "software": {
+    "python": "3.11.7",
+    "pandas": "2.2.2"
+  },
+  "inputs": [
+    {
+      "file": "SWOW-EN18.zip",
+      "bytes": 80349486,
+      "sha256": "69ee1f4f19c657bb2f6e1bc27abd2becbcd01d83d1fdade94a0455b4e66eb093",
+      "git_blob_sha1": "c0a20274e32f5d92863463ca10fe3d79c5663f44"
+    },
+    {
+      "file": "aligned_results_public.csv",
+      "bytes": 5934294,
+      "sha256": "7743e0fb4373ea85da544284db2685f81fa3b4251073f7b04d28cf15368a9740",
+      "git_blob_sha1": "339b41301c530d301c24baf9cf86578d7de2bc1f"
+    },
+    {
+      "file": "behavioral_results_public.csv",
+      "bytes": 499138,
+      "sha256": "18228c231ef1d0257a63d15b1fdd3d1d5e4d4f1f49f4c68523be5206efc96d1e",
+      "git_blob_sha1": "3e123e34ce429bb92a7195cbdd0b002c2a54f67b"
+    },
+    {
+      "file": "taboo_with_distances.csv",
+      "bytes": 33025,
+      "sha256": "9fe1bef252d1329bcd646160f3cf9aef36eabb1250753734cc6e6c3429b46f44",
+      "git_blob_sha1": "230c49b6f2e7cad64b386a8b227ac8d293550dfb"
+    },
+    {
+      "file": "en_childes-ud-dev.conllu",
+      "bytes": 2159081,
+      "sha256": "50233b8123256b2910b6adbf5abcaef8a58af9054affe9c95bbdc643fec87972",
+      "git_blob_sha1": "46eb2cf9b596aa716720300734471c4eb1064067"
+    }
+  ]
+}

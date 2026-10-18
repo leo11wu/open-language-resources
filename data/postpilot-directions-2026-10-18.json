@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-18",
+  "stage": "research_opportunity_exploration",
+  "recommendation": "First calibrate reference-population sensitivity within English; develop constrained communication only after verifying message-to-understanding measures.",
+  "original_pilot_decision": "adjust; no direct expansion of cross-language association-to-priming prediction",
+  "new_computation_scope": "structural coverage, unit and join checks only; no new group effects, model rankings, communication regressions, or learning experiments",
+  "probe_file": "postpilot-resource-probes-2026-10-18.json",
+  "probe_script": "../scripts/postpilot_resource_probes.py",
+  "ranked_directions": [
+    {
+      "id": "D1",
+      "priority": 1,
+      "question": "相同英语提示词下，人类参照群体和混合权重是否实质改变人机联想差距或模型排序？",
+      "decision": "proceed_to_calibration",
+      "claim_status": "untested; measurement-sensitive",
+      "core_distinction": "人类群体内部变异与混合常模；模型差异相对于匹配抽样噪声的大小",
+      "prior_establishes": "群体、任务和处理影响常模；混合英语人群与模型比较及US筛选/文化对齐已有先例。",
+      "candidate_gap": "等人数、同词表和同组抽样基准下，参照构成是否实质改变模型比较结论；不是发现英美存在任何差异。",
+      "gap_verified_as_novel": false,
+      "sources": [
+        "S01",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "main_resource_ids": [
+        "R022"
+      ],
+      "verified_coverage": {
+        "human_cues": 12282,
+        "human_people": 83864,
+        "US_UK_cues_at_least_20_valid_people_each": 1968,
+        "four_group_cues_at_least_10_valid_people_each": 117
+      },
+      "critical_unfinished": [
+        "Human subgroup reliability and demography overlap",
+        "LWOW full-file parsing and post-normalization intersection",
+        "Participant-dependence-aware, equal-N noise calibration",
+        "Robustness of absolute gaps and comparisons; no ranking result currently exists"
+      ],
+      "next_minimal_gate": "在固定共同词表和等人数条件下比较组内重抽噪声与组间差异，先于模型比较。",
+      "stop_or_downgrade_if": "组内分半不足或组间差异无法与抽样噪声区分；若模型结论对参照稳定，则报告稳定性而非宣称基准失效。",
+      "must_not_claim": [
+        "Nationality or cultural causation",
+        "Model identity or human-equivalent mechanisms",
+        "Any observed rank reversal before testing"
+      ]
+    },
+    {
+      "id": "D2",
+      "priority": 2,
+      "question": "典型线索被禁止时，易想到的允许线索是否也足以让听者反推目标？",
+      "decision": "revise_measurement_gate",
+      "claim_status": "basic directional distinction established; constrained extension untested",
+      "core_distinction": "说话者可提取性与听者可反推性；允许词集合约束与实际消息",
+      "prior_establishes": "Password已有正反向联想与策略模型；Taboo已有禁词操纵；SCARFS已有指称形式/长度及伙伴分析。 SCARFS还已用4,168条中心词—目标记录比较GloVe与Lancaster反推目标；更换表示后重复该任务不足以支撑新贡献。",
+      "candidate_gap": "给定允许线索集合时，两种方向性指标如何约束线索选择及对应理解；具体创新还需独立审核。",
+      "gap_verified_as_novel": false,
+      "sources": [
+        "S02",
+        "S03",
+        "S08",
+        "S09"
+      ],
+      "main_resource_ids": [
+        "R022",
+        "R174"
+      ],
+      "verified_coverage": {
+        "nre_rows_native": 19449,
+        "native_speakers_in_nre": 65,
+        "native_sessions_in_nre": 17,
+        "native_nre_trial_keys": 3393,
+        "native_nre_rows_with_behavioral_match": 19449,
+        "matched_rows_with_conflicting_outcome": 0,
+        "first_noun_head_proxy_trials": 3095,
+        "first_noun_head_proxy_trials_with_both_SWOW_cues": 2571,
+        "covered_first_noun_head_proxy_targets": 429
+      },
+      "critical_unfinished": [
+        "First noun head is not the complete first clue",
+        "No automatic first listener-guess outcome in current NRE table",
+        "Final success can follow multiple clues",
+        "Lost is a rule violation; no unconstrained same-target control",
+        "SCARFS already has a head-noun target-recovery benchmark; a representation swap alone is insufficient."
+      ],
+      "next_minimal_gate": "少量完整消息与理解结果的人工单位审计；无法恢复则降为线索选择观察研究或补采实验。",
+      "stop_or_downgrade_if": "不能恢复所需消息—理解对应，或只能用中心词和最终结果替代目标构念。",
+      "must_not_claim": [
+        "Directional associations are a new theory",
+        "First-clue causal effect from final trial success",
+        "Friend advantage or causal taboo effect without evidence"
+      ]
+    },
+    {
+      "id": "D3",
+      "priority": 3,
+      "question": "固定词类后，局部功能词框架还能提供多少新增句法关系信息？",
+      "decision": "proceed_as_supporting_analysis",
+      "claim_status": "category cue established; conditional role information not tested here",
+      "core_distinction": "词类归纳、依存关系与学习因果效应",
+      "prior_establishes": "频繁框架与词类归纳研究充分；词级/语素级差异限制跨语言概括。",
+      "candidate_gap": "与现有研究衔接的自然输入证据，检验词项/POS等基线以外的关系信息；不独立声称发现功能词可分类。",
+      "gap_verified_as_novel": false,
+      "sources": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "main_resource_ids": [
+        "R002",
+        "R061"
+      ],
+      "verified_coverage": {
+        "split": "dev only",
+        "sentences": 3860,
+        "integer_tokens": 24310,
+        "children": 7,
+        "mother_father_sentences": 2079,
+        "mother_father_noun_propn_tokens": 1936,
+        "framed_noun_tokens": 348,
+        "frame_occurrence_thresholds": {
+          "3": {
+            "frames": 206,
+            "center_tokens": 1428,
+            "noun_center_tokens": 152,
+            "frames_with_at_least_2_noun_dependency_labels": 20,
+            "frames_with_noun_subject_and_object": 5
+          },
+          "5": {
+            "frames": 104,
+            "center_tokens": 1088,
+            "noun_center_tokens": 104,
+            "frames_with_at_least_2_noun_dependency_labels": 11,
+            "frames_with_noun_subject_and_object": 2
+          },
+          "10": {
+            "frames": 39,
+            "center_tokens": 679,
+            "noun_center_tokens": 63,
+            "frames_with_at_least_2_noun_dependency_labels": 6,
+            "frames_with_noun_subject_and_object": 1
+          }
+        }
+      },
+      "critical_unfinished": [
+        "Other splits and alternative frame definitions",
+        "Across-child holdout",
+        "POS/lexeme and label-imbalance controls",
+        "Natural predictability does not identify learning mechanism"
+      ],
+      "next_minimal_gate": "在完整数据与跨儿童留出下比较条件新增关系信息；避免直接比较难度不同的词类和关系准确率。",
+      "stop_or_downgrade_if": "匹配与留出后没有足够重复框架或关系变异；只剩重新证明词类线索。",
+      "must_not_claim": [
+        "Subject/object equals agent/patient",
+        "Predictability establishes child learning mechanism",
+        "Current dev probe demonstrates role-prediction failure"
+      ]
+    },
+    {
+      "id": "D4",
+      "priority": 4,
+      "question": "翻译时义项与词汇化范围改变，能否解释某些关系评分的变化？",
+      "decision": "defer_independent_annotation_required",
+      "claim_status": "measurement-sensitive; resource-limited",
+      "core_distinction": "译义/范围变化与同义项内部联想差异",
+      "prior_establishes": "跨语言联想和意义图谱已有研究及项目；当前pilot显示材料对齐需要审核，但无语境常模不能直接提供义项特定金标准。",
+      "candidate_gap": "独立标注义项范围与关系类型后的测量诊断，不以恢复原正结果为目标。",
+      "gap_verified_as_novel": false,
+      "sources": [
+        "S01",
+        "S13"
+      ],
+      "main_resource_ids": [
+        "R022",
+        "R147"
+      ],
+      "verified_coverage": {
+        "assistant_screen": 60,
+        "compatible": 38,
+        "sense_or_range_sensitive": 18,
+        "needs_independent_review": 4,
+        "not_human_gold": true
+      },
+      "critical_unfinished": [
+        "Independent bilingual sense/relationship adjudication",
+        "Sense-specific human outcome when needed"
+      ],
+      "next_minimal_gate": "按独立语义标准标注材料，不查看效应后挑选修复项。",
+      "stop_or_downgrade_if": "只能将无语境混合常模当作义项金标准，或选择材料以制造正效应。",
+      "must_not_claim": [
+        "Language difference identifies culture",
+        "Corrected translations guarantee original hypothesis support"
+      ]
+    }
+  ],
+  "search_scope": {
+    "as_of": "2026-10-18",
+    "approach": [
+      "direct precedent",
+      "comparable extension",
+      "measurement and representation",
+      "limiting/contrary evidence"
+    ],
+    "exhaustive": false,
+    "queries_include": [
+      "word associations native regional large language models English",
+      "Small World of Words regional differences English associations",
+      "word association LLM population demographic benchmark",
+      "Taboo Password word association forward backward communication computational",
+      "Taboo word game semantic association speaker listener forbidden study",
+      "frequent frames child directed speech grammatical relations noun subject object local contexts dependency acquisition",
+      "LLM word association demographic ranking human norms",
+      "Abramski 2025 LWOW data github"
+    ]
+  },
+  "evidence_sources": [
+    {
+      "id": "S01",
+      "title": "The Small World of Words English word association norms",
+      "url": "https://link.springer.com/article/10.3758/s13428-018-1115-7",
+      "type": "data_paper",
+      "read_depth": "full text retrieved; participant procedure, sampling, normalization and limitations examined"
+    },
+    {
+      "id": "S02",
+      "title": "Inference and communication in the game of Password",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2010/file/766d856ef1a6b02f93d894415e6bfa0e-Paper.pdf",
+      "type": "primary_study",
+      "read_depth": "full text; game, directional associations, first clue/guess selection and time pressure examined"
+    },
+    {
+      "id": "S03",
+      "title": "Spontaneous, controlled acts of reference between friends and strangers",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9702832/",
+      "type": "data_paper",
+      "read_depth": "full text retrieved; units, outcome definitions, methods and relevant null findings examined"
+    },
+    {
+      "id": "S04",
+      "title": "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+      "url": "https://aclanthology.org/2025.acl-long.177.pdf",
+      "type": "primary_study",
+      "read_depth": "full text retrieved; pooled human sample, model, association measures and moral propagation examined"
+    },
+    {
+      "id": "S05",
+      "title": "ALIGN: Word Association Learning for Cultural Alignment in Large Language Models",
+      "url": "https://aclanthology.org/2026.acl-long.130.pdf",
+      "type": "primary_study",
+      "read_depth": "full text retrieved; US selection, model training/evaluation and within-country variation limitation examined"
+    },
+    {
+      "id": "S06",
+      "title": "LLM World of Words data descriptor",
+      "url": "https://www.nature.com/articles/s41597-025-05156-9",
+      "type": "data_paper",
+      "read_depth": "full text retrieved; generation, preprocessing, data records and validation scope examined"
+    },
+    {
+      "id": "S07",
+      "title": "LWOW author repository",
+      "url": "https://github.com/LLMWorldOfWords/LWOW",
+      "type": "data_repository",
+      "read_depth": "README, license-file existence and recursive file listing; three complete response tables NOT downloaded or parsed",
+      "tree_sha": "455ca9d475b4c3a55d48952689ba6db18cb82574"
+    },
+    {
+      "id": "S08",
+      "title": "SCARFS author repository and analysis scripts",
+      "url": "https://github.com/seantrott/scarfs",
+      "type": "data_repository",
+      "read_depth": "complete selected CSVs plus three R Markdown analysis scripts; no whole-resource validation"
+    },
+    {
+      "id": "S09",
+      "title": "Taboo: Working memory and mental control in an interactive task",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4241377/",
+      "type": "primary_study",
+      "read_depth": "full text retrieved; simple/complex conditions and mental-control measures examined"
+    },
+    {
+      "id": "S10",
+      "title": "Frequent frames as a cue for grammatical categories in child directed speech",
+      "url": "https://doi.org/10.1016/S0010-0277(03)00140-9",
+      "type": "primary_study",
+      "read_depth": "publisher/indexed abstract and study description; not a complete syntactic-learning literature review"
+    },
+    {
+      "id": "S11",
+      "title": "A universal cue for grammatical categories in the input to children: Frequent frames",
+      "url": "https://doi.org/10.1016/j.cognition.2018.02.005",
+      "type": "primary_study",
+      "read_depth": "abstract and indexed method/result excerpts; word versus morpheme boundary examined"
+    },
+    {
+      "id": "S12",
+      "title": "UD-English-CHILDES author treebank",
+      "url": "https://github.com/UniversalDependencies/UD_English-CHILDES",
+      "type": "data_repository",
+      "read_depth": "complete README and complete dev CoNLL-U; other splits not parsed",
+      "tree_sha": "92d3cf4c7c567bdebfe412573fecb7ec93332c30"
+    },
+    {
+      "id": "S13",
+      "title": "Mapping cultural differences in word meanings using cultural knowledge graphs",
+      "url": "https://www.unimelb.edu.au/mdap/research/2025-collaborations/mapping-cultural-differences-in-word-meanings-using-cultural-knowledge-graphs",
+      "type": "institutional_project",
+      "read_depth": "complete project description; ongoing project, not an empirical result"
+    }
+  ],
+  "privacy_and_license": "Only aggregate counts, decisions and provenance are included. SWOW responses, subgroup item-level distributions, participant metadata and source data files are not redistributed.",
+  "existing_study_boundary": "Links to prior research themes are contextual; progress and results of those separate projects were not revalidated."
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.3.0",
-  "catalog_version": "2.2.2",
+  "catalog_version": "2.2.3",
   "updated_on": "2026-10-18",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
@@ -1111,7 +1111,7 @@
         "R147"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
+        "documentation_checked_on": "2026-10-18",
         "scope": "resource_documentation_and_selected_file_checks",
         "download_tested": true,
         "data_files_validated": false,
@@ -1123,7 +1123,7 @@
           "https://smallworldofwords.org/api/project/research/releases",
           "https://github.com/lib314a/SWOWZH"
         ],
-        "note": "本次领取两份正式包并通过官方SHA-256校验；检查10个选定CSV，平衡反应文件遍历全部行且检查cue/R1/R2/R3四列，其余选定表完整解析。中英全条件可接531组，排除1组重复启动后530组；未完成语义等价、人口变量及全库验收。",
+        "note": "本次领取两份正式包并通过官方SHA-256校验；检查10个选定CSV，平衡反应文件遍历全部行且检查cue/R1/R2/R3四列，其余选定表完整解析。中英全条件可接531组，排除1组重复启动后530组；未完成语义等价、人口变量及全库验收。 追加英语平衡反应元数据检查：83,864个参与者，自报美式/英式英语组有1,968个共同提示词每组至少20名有效R1不重复作答者；未据此认定群体效应或测量稳定性。",
         "file_checks": [
           {
             "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
@@ -3080,7 +3080,7 @@
       "entry_type": "derived",
       "data_origin": "corpus_annotation",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "公开可下载。本轮完整解析开发集及角色元数据；其余切分和全树库尚未验收。",
       "license_note": "项目页标注CC BY-SA 4.0；仍须引用原始CHILDES语料。",
       "additional_urls": [
         "https://github.com/UniversalDependencies/UD_English-CHILDES"
@@ -3096,7 +3096,7 @@
       ],
       "osf_ids": [],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
+        "documentation_checked_on": "2026-10-18",
         "scope": "resource_documentation_and_selected_file_checks",
         "download_tested": true,
         "data_files_validated": false,
@@ -3105,7 +3105,7 @@
           "https://universaldependencies.org/treebanks/en_childes/",
           "https://github.com/UniversalDependencies/UD_English-CHILDES"
         ],
-        "note": "本轮完整解析开发集3,860句、24,310个整数编号词元，核对年龄、儿童身份、说话者角色、原始句子编号及10列结构。未验收其余切分；句子行序不代表会话顺序。",
+        "note": "本轮完整解析开发集3,860句、24,310个整数编号词元，核对年龄、儿童身份、说话者角色、原始句子编号及10列结构。未验收其余切分；句子行序不代表会话顺序。 追加父母话语/功能词框架结构覆盖统计：2,079句父母话语、348个符合当前窄框架定义的名词中心词元；仅样本与结构检查，未运行学习或预测实验。",
         "file_checks": [
           {
             "url": "https://github.com/UniversalDependencies/UD_English-CHILDES/blob/master/en_childes-ud-dev.conllu",
@@ -8183,7 +8183,7 @@
         "熟人陌生人",
         "自然口语"
       ],
-      "limitations": "已读取行为CSV头部并确认两份public数据文件存在；不推定全部原始录音开放。社区、伙伴与试次层级有依赖。",
+      "limitations": "已完整读取带时序指称表及行为表，母语者19,449条指称属于65名说话者、17个会话、3,393个不同记录键；多指称不独立。首个名词不等于完整线索，Lost为规则违规；未确认首次听者猜测数据或原始录音均公开。",
       "data_origin": "corpus_annotation",
       "entry_type": "collection",
       "category": "social-interaction",
@@ -8200,7 +8200,7 @@
       ],
       "data_status": "released_data",
       "verification": {
-        "documentation_checked_on": "2026-10-17",
+        "documentation_checked_on": "2026-10-18",
         "scope": "resource_documentation_and_selected_file_checks",
         "download_tested": true,
         "data_files_validated": false,
@@ -8209,9 +8209,11 @@
           "https://github.com/seantrott/scarfs",
           "https://osf.io/hcya6/",
           "https://link.springer.com/article/10.1007/s10579-022-09619-y",
-          "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv"
+          "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
+          "https://github.com/seantrott/scarfs/blob/main/data/processed/aligned_results_public.csv",
+          "https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/taboo_with_distances.csv"
         ],
-        "note": "本轮完整读取5,000行行为表、4,701行缩减NP表及558行卡片表；NP按4字段均可唯一匹配行为记录，对应2,193个不同记录键。未成功读取完整带时序语料，不把多个NP当成独立试次。",
+        "note": "新增完整读取20,521行带时序指称表及471行taboo_with_distances表。母语者19,449行按说话者/伙伴/试次序号/卡片四字段全部唯一匹配行为表，结果标签无冲突；对应3,393个不同记录键。此前558行item_data是另一张表，保留其既有核验记录。仅选定文件与连接单位检查，不代表全资源或交流构念验收。",
         "file_checks": [
           {
             "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
@@ -8230,6 +8232,18 @@
             "read_scope": "complete_csv",
             "result": "完整读取并解析选定文件：558条记录、12列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
             "blob_sha": "ca6224480ec3788a5b1469b324f37a25cc5d2fe3"
+          },
+          {
+            "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/aligned_results_public.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析20521行、34列，核对字节数与Git blob SHA；详见postpilot聚合检查。不代表整库验收。",
+            "blob_sha": "339b41301c530d301c24baf9cf86578d7de2bc1f"
+          },
+          {
+            "url": "https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/taboo_with_distances.csv",
+            "read_scope": "complete_csv",
+            "result": "完整读取并解析471行、11列，核对字节数与Git blob SHA；详见postpilot聚合检查。不代表整库验收。",
+            "blob_sha": "230c49b6f2e7cad64b386a8b227ac8d293550dfb"
           }
         ]
       }

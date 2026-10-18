@@ -28,6 +28,7 @@ def generated_files(c):
     research_paths=sorted((ROOT/'research').glob('nonosf-opportunities-*.md'))
     feasibility_paths=sorted((ROOT/'research').glob('semantic-priming-feasibility-*.md'))
     pilot_paths=sorted(p for p in (ROOT/'research').glob('semantic-priming-pilot-*.md') if '-plan-' not in p.name)
+    direction_paths=sorted((ROOT/'research').glob('postpilot-directions-*.md'))
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
     audit=json.loads(audit_paths[-1].read_text()) if audit_paths else None
     queue=verification_queue(c,source,candidates)
@@ -43,6 +44,7 @@ def generated_files(c):
         (f'- [不依赖OSF的资源组合与研究机会](research/{research_paths[-1].name})：结合既有研究的四条候选路线及实际对齐检查。\n' if research_paths else ''),
         (f'- [第一条想法的初次可行性试算](research/{feasibility_paths[-1].name})：原覆盖530组；后续事件审计另排除1组，见下列pilot。\n' if feasibility_paths else ''),
         (f'- [中英联想—启动pilot结果](research/{pilot_paths[-1].name})：原试次复原、60组语义初筛、测量稳定性、受控模型与词汇排除预测；建议调整后再决定主实验。\n' if pilot_paths else ''),
+        (f'- [pilot之后的方向比较](research/{direction_paths[-1].name})：人类参照群体、受限交流与句法线索的先例、实际覆盖及下一步判别条件。\n' if direction_paths else ''),
         '- [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。\n',
         '- [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。\n',
         '- [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。\n\n',

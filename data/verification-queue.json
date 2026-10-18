@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_on": "2026-10-18",
-  "catalog_version": "2.2.2",
+  "catalog_version": "2.2.3",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -441,7 +441,7 @@
       ],
       "osf_ids": [],
       "check_state": "selected_file_checked",
-      "documentation_checked_on": "2026-10-17",
+      "documentation_checked_on": "2026-10-18",
       "download_tested": true,
       "data_files_validated": false,
       "recorded_file_checks": [
@@ -1287,7 +1287,7 @@
       ],
       "osf_ids": [],
       "check_state": "selected_file_checked",
-      "documentation_checked_on": "2026-10-17",
+      "documentation_checked_on": "2026-10-18",
       "download_tested": true,
       "data_files_validated": false,
       "recorded_file_checks": [
@@ -3691,7 +3691,7 @@
         "hcya6"
       ],
       "check_state": "selected_file_checked",
-      "documentation_checked_on": "2026-10-17",
+      "documentation_checked_on": "2026-10-18",
       "download_tested": true,
       "data_files_validated": false,
       "recorded_file_checks": [
@@ -3712,6 +3712,18 @@
           "read_scope": "complete_csv",
           "result": "完整读取并解析选定文件：558条记录、12列/字段；仅验证本文件结构，不代表标签准确、整个资源验收或分析复现。",
           "blob_sha": "ca6224480ec3788a5b1469b324f37a25cc5d2fe3"
+        },
+        {
+          "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/aligned_results_public.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析20521行、34列，核对字节数与Git blob SHA；详见postpilot聚合检查。不代表整库验收。",
+          "blob_sha": "339b41301c530d301c24baf9cf86578d7de2bc1f"
+        },
+        {
+          "url": "https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/taboo_with_distances.csv",
+          "read_scope": "complete_csv",
+          "result": "完整读取并解析471行、11列，核对字节数与Git blob SHA；详见postpilot聚合检查。不代表整库验收。",
+          "blob_sha": "230c49b6f2e7cad64b386a8b227ac8d293550dfb"
         }
       ],
       "next_steps": [

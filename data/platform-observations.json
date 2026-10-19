@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-17",
+  "updated_on": "2026-10-19",
   "observations": [
     {
       "platform": "osf",
@@ -16,6 +16,15 @@
       "result": "候选逐项复核时以安全TLS连接请求公开文件列表，返回HTTP 503及HTML维护页。",
       "inference_limit": "仅确认本次公开接口不可用；不据此断言项目永久失效或私有。论文发布声明与实际文件读取分开记录。",
       "status_url": "https://status.cos.io/"
+    },
+    {
+      "observation_id": "osf-file-audit-2026-10-19",
+      "platform": "osf",
+      "observed_on": "2026-10-19",
+      "url": "https://osf.io/zq6ht/",
+      "result": "公开API清单及多个实际文件可读，批量查询随后返回HTTP429；网页浏览器核验仍为空白壳。",
+      "actual_file_reads_report": "catalog/osf-file-audit-2026-10-19.md",
+      "inference_limit": "只能确认本轮成功文件的可读性，不能宣称OSF全平台或全部85项已恢复并验收。"
     }
   ],
   "scheduled_maintenance": {
@@ -30,6 +39,7 @@
     "scheduled_end_utc": "2026-10-19T13:00:00+00:00",
     "scheduled_end_asia_taipei": "2026-10-19T21:00:00+08:00",
     "actual_restoration_confirmed": false,
-    "inference_limit": "计划结束时间不是实际恢复证明；页面、公开API与数据文件读取须分别检查。"
+    "inference_limit": "计划时间保留为历史通知；2026-10-19已确认部分公开API和数据文件可读，完整网页和所有项目恢复未确认。",
+    "partial_file_access_confirmed_on": "2026-10-19"
   }
 }

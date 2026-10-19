@@ -1,24 +1,29 @@
 {
   "title": "已核查但暂未进入主目录的资源线索",
-  "updated_on": "2026-10-17",
+  "updated_on": "2026-10-19",
   "candidate_count": 12,
-  "description": "原22条已逐条复核；已确认公开数据的10条转入主目录。本清单保留其余12条，包括公开数据仍待确认、仅确认材料、受限访问或旧链接更换。",
+  "description": "原22条的10条已在2026-10-17进入主目录；本轮继续核查剩余12条的实际附件和源项目。尚未取得新增公开观测数据证据，12条暂保留，其中5个原项目受API限流待查。",
   "candidates": [
     {
       "id": "C002",
       "name": "墨西哥西班牙语岛效应",
       "category": "syntax",
-      "source_url": "https://osf.io/ma27h/",
-      "osf_id": "ma27h",
+      "source_url": "https://osf.io/cs5z3/",
+      "osf_id": "cs5z3",
       "status": "materials_only",
-      "reason": "正式论文和cs5z3确认实验刺激、填充项、背景问卷及统计输出；尚未确认逐被试判断数据公开文件。",
-      "checked_on": "2026-10-17",
+      "reason": "ma27h实际题名是西英语码转换岛效应；与原审核论文相符的cs5z3为单语西班牙语项目。本轮5个附件均成功下载：两份Qualtrics问卷、两份Word问卷和5工作表刺激/拉丁方安排；未见逐被试判断或评分表。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://link.springer.com/article/10.1007/s11049-024-09633-5",
-        "https://osf.io/cs5z3/"
+        "https://osf.io/cs5z3/",
+        "https://osf.io/download/crhfb/",
+        "https://osf.io/download/mbjzg/",
+        "https://osf.io/download/ghab8/",
+        "https://osf.io/download/7d4pm/",
+        "https://osf.io/download/q26va/"
       ],
-      "next_verification_step": "检查cs5z3是否存在可复用的原始/清洗后判断表；统计输出PDF不等于逐试次数据。"
+      "next_verification_step": "原目标继续采用cs5z3；若作者另行发布匿名判断数据再核对。"
     },
     {
       "id": "C003",
@@ -27,14 +32,14 @@
       "source_url": "https://osf.io/hcdqe/",
       "osf_id": "hcdqe",
       "status": "release_unconfirmed",
-      "reason": "已在爱丁堡博士论文第五章找到与hcdqe对应的完成实验；不再描述成尚未实施，但仍未定位独立公开数据包。",
-      "checked_on": "2026-10-17",
+      "reason": "hcdqe为冻结注册，公开文件列表为空。registered_from明确关联vdsey，追查该原项目时返回429。先前论文中的完成实验仍成立，但当前未确认其最终数据包。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://era.ed.ac.uk/bitstreams/efcc725d-232c-41f7-ba0b-a18541735b81/download",
         "https://osf.io/hcdqe/"
       ],
-      "next_verification_step": "从项目最终组件或论文补充入口确认原始数据、代码和公开访问范围。"
+      "next_verification_step": "额度可用后优先读取vdsey文件清单；不把冻结注册0文件推成原项目没有数据。"
     },
     {
       "id": "C004",
@@ -43,14 +48,14 @@
       "source_url": "https://osf.io/qehr4/",
       "osf_id": "qehr4",
       "status": "release_unconfirmed",
-      "reason": "已定位Hou 2023正式论文；公开页面仅有摘要和参考文献，OSF Wiki访问失败，未获得数据发布声明或文件证据。",
-      "checked_on": "2026-10-17",
+      "reason": "qehr4的节点与注册API均返回404；短链网页返回200的SPA壳，未得到可用文件内容。本轮未确认正式数据入口；404不据以认定永久删除或私有。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://doi.org/10.1017/S0142716423000103",
         "https://osf.io/qehr4/"
       ],
-      "next_verification_step": "核对作者最终数据说明与公开文件；论文已发表不作为数据开放证明。"
+      "next_verification_step": "从Hou 2023正式论文或作者最终说明重新确认短编号及数据入口。"
     },
     {
       "id": "C006",
@@ -58,15 +63,16 @@
       "category": "syntax",
       "source_url": "https://osf.io/5aynd/",
       "osf_id": "5aynd",
-      "status": "release_unconfirmed",
-      "reason": "目前确认CUNY 2020海报和5aynd项目；未确认可复用的阅读时数据表或正式数据声明。",
-      "checked_on": "2026-10-17",
+      "status": "materials_only",
+      "reason": "5aynd仅列出一份CUNY2020海报，已完整下载并抽取1页文本。wq2g7是这份海报的文件短编号，已成功下载，不能把它的节点API404解释成失效项目；未见SPR试次数据。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/5aynd/",
-        "https://osf.io/wq2g7/"
+        "https://osf.io/wq2g7/",
+        "https://osf.io/download/wq2g7/"
       ],
-      "next_verification_step": "找到原始/清洗后SPR数据和分析脚本，避免把其他相近句法适应研究代入。"
+      "next_verification_step": "继续寻找同一Malone–Mauner研究的阅读时数据；海报结果不替代试次表。"
     },
     {
       "id": "C007",
@@ -74,15 +80,16 @@
       "category": "syntax",
       "source_url": "https://osf.io/qe865/",
       "osf_id": "qe865",
-      "status": "obsolete_link",
-      "reason": "Oxford机构存档论文说明曾公开额外评分、反应时和分析资料，但旧官网现返回与研究无关内容；qe865的最终数据文件尚未重新定位。",
-      "checked_on": "2026-10-17",
+      "status": "release_unconfirmed",
+      "reason": "qe865现在公开一份292页博士论文PDF，已完整下载并抽取文本；当前项目文件列表未列出评分、反应时或分析数据。旧网站的历史问题与当前OSF可读论文分别记录。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://ora.ox.ac.uk/objects/uuid:b276ec98-5f65-468b-b481-f3d9356d86a2",
-        "https://osf.io/qe865/"
+        "https://osf.io/qe865/",
+        "https://osf.io/download/hcktp/"
       ],
-      "next_verification_step": "寻找作者新的正式托管或OSF数据文件；不把其后来SAD数据集当作2015博士论文数据。"
+      "next_verification_step": "寻找该2015论文的独立数据附件或作者正式迁移入口；不以论文PDF或后续SAD数据替代。"
     },
     {
       "id": "C010",
@@ -91,15 +98,19 @@
       "source_url": "https://osf.io/2s8hm/",
       "osf_id": "2s8hm",
       "status": "materials_only",
-      "reason": "作者NELS论文明确链接5kr8s的刺激和问卷；2s8hm Wiki描述完成研究，仍未确认公开的1,127人反应数据。",
-      "checked_on": "2026-10-17",
+      "reason": "2s8hm的4个公开PDF均已下载并抽取文本：摘要、海报幻灯、刺激和意识形态/人口学问卷；未见1,127人反应表。5kr8s是可下载的刺激PDF短编号，节点API404不是附件失效。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://www.byronahn.com/pub/Conrod-Schultz-Ahn-NELS52.pdf",
         "https://osf.io/5kr8s/",
-        "https://osf.io/2s8hm/wiki/home"
+        "https://osf.io/2s8hm/wiki/home",
+        "https://osf.io/download/esvhj/",
+        "https://osf.io/download/bufq7/",
+        "https://osf.io/download/5kr8s/",
+        "https://osf.io/download/nm6zs/"
       ],
-      "next_verification_step": "查找匿名评分表及变量字典；不将其他作者的同名Reddit研究当作此调查数据。"
+      "next_verification_step": "定位同一调查的匿名反应表和变量字典后再考虑晋升。"
     },
     {
       "id": "C011",
@@ -108,14 +119,14 @@
       "source_url": "https://osf.io/j5epb/",
       "osf_id": "j5epb",
       "status": "release_unconfirmed",
-      "reason": "j5epb仍主要为预注册。相关2026儿童ERP论文明确数据因隐私/伦理不公开、需向作者申请；未将相近论文自动视作该注册的完整公开数据。",
-      "checked_on": "2026-10-17",
+      "reason": "j5epb冻结EEG预注册的公开文件列表为空；registered_from指向7qk6u，原项目本轮返回429。相关ERP论文的受限声明不自动等于该注册数据的访问规则。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/j5epb/overview",
         "https://www.mdpi.com/2076-328X/16/2/294"
       ],
-      "next_verification_step": "确认原注册对应的数据版本与访问条件；附录刺激或相关研究不能替代该项目原始EEG数据。"
+      "next_verification_step": "额度可用后检查7qk6u的实际数据和访问条件。"
     },
     {
       "id": "C012",
@@ -124,15 +135,15 @@
       "source_url": "https://osf.io/9z5qn/",
       "osf_id": "9z5qn",
       "status": "access_restricted",
-      "reason": "注册明确ECOLANG视频及照护者转写须申请用户许可；儿童新增转写/标注当时尚未开放，不能标为匿名直接下载。",
-      "checked_on": "2026-10-17",
+      "reason": "9z5qn冻结注册公开文件列表为空；registered_from指向rjdqb，本轮受429限制。既有ECOLANG视频/照护者转写申请限制保留，尚不能确认新增儿童转写是否已开放。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/9z5qn/overview",
         "https://www.nature.com/articles/s41597-025-04405-1",
         "https://doi.org/10.5522/04/28087613"
       ],
-      "next_verification_step": "按官方流程申请ECOLANG访问，并另确认新增儿童转写是否已发布。"
+      "next_verification_step": "只读复查rjdqb及ECOLANG发布说明；申请数据另按用户授权处理。"
     },
     {
       "id": "C013",
@@ -141,13 +152,14 @@
       "source_url": "https://osf.io/kuqfe/",
       "osf_id": "kuqfe",
       "status": "preregistration_only",
-      "reason": "该法英双语研究的当前公开描述仍使用将来时；未定位同一项目的最终数据。相关跨语言习语论文不是自动等同的数据版本。",
-      "checked_on": "2026-10-17",
+      "reason": "kuqfe是冻结预注册，唯一公开附件为习语材料Word文件，已完整下载并解析文档XML。registered_from指向96ype，本轮429；未确认同一研究的最终反应时/准确率数据。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
-        "https://osf.io/kuqfe/"
+        "https://osf.io/kuqfe/",
+        "https://osf.io/download/6j4bs/"
       ],
-      "next_verification_step": "确认完成研究与最终数据仓库，不能以相近主题实验替代。"
+      "next_verification_step": "额度可用后检查96ype是否已有完成研究数据。"
     },
     {
       "id": "C016",
@@ -156,15 +168,15 @@
       "source_url": "https://osf.io/sa8ep/",
       "osf_id": "sa8ep",
       "status": "release_unconfirmed",
-      "reason": "原sa8ep是标量含意自定步速阅读；找到同主题2026论文公开v98dt，但其注册号6284d和判断任务不同，未把它当作原项目已解决。",
-      "checked_on": "2026-10-17",
+      "reason": "sa8ep为标量含意阅读实验的冻结注册，公开文件列表为空；原项目jzu2q本轮429。不同任务的v98dt仍不充作原项目数据。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/sa8ep/",
         "https://direct.mit.edu/opmi/article/doi/10.1162/OPMI.a.343/135919/Does-It-Matter-What-Is-Said-and-Who-Said-It-The",
         "https://osf.io/v98dt/"
       ],
-      "next_verification_step": "核实sa8ep的最终数据或建立明确同源关系；相关公开数据可另行查阅。"
+      "next_verification_step": "先查jzu2q最终文件并核实研究身份，保留原任务边界。"
     },
     {
       "id": "C020",
@@ -173,14 +185,14 @@
       "source_url": "https://osf.io/vmdwt/",
       "osf_id": "vmdwt",
       "status": "release_unconfirmed",
-      "reason": "确认vmdwt公开项目和fcdtj预印本，但尚未看到原始/清洗后眼动数据文件；项目曾显示0字节不能据此判永久失效。",
-      "checked_on": "2026-10-17",
+      "reason": "vmdwt元数据可读、项目公开并标注CC BY 4.0，但公开存储文件列表与子组件列表均为空。许可声明不能代替眼动数据文件；本轮仍无可下载数据。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/vmdwt/",
         "https://doi.org/10.31234/osf.io/fcdtj"
       ],
-      "next_verification_step": "寻找作者最终数据发布或对应文件清单；不能把其他复合词MEG实验当作此研究。"
+      "next_verification_step": "等待或寻找作者对这两项复合词阅读实验的正式数据发布。"
     },
     {
       "id": "C022",
@@ -189,14 +201,16 @@
       "source_url": "https://osf.io/4stgu/",
       "osf_id": "4stgu",
       "status": "materials_only",
-      "reason": "正式论文将4stgu用于森林图和补充统计表；其Data Availability声明数据共享不适用。未确认可重分析的研究编码/效应量表。",
-      "checked_on": "2026-10-17",
+      "reason": "4stgu只有6页Supplemental Materials.pdf和Forest Plot.png，两者已下载，PDF文本和图像像素均可解码。内容是效应量公式、分组汇总和统计比较；未见研究级编码/效应量工作表。",
+      "checked_on": "2026-10-19",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC9856828/",
-        "https://osf.io/4stgu/"
+        "https://osf.io/4stgu/",
+        "https://osf.io/download/3uvhs/",
+        "https://osf.io/download/u6zrk/"
       ],
-      "next_verification_step": "检查是否另有机器可读研究编码及效应量数据；不把其他作者2025年Figshare元分析数据当作此项目。"
+      "next_verification_step": "只有补充统计与图形，继续保留候选；若另发布研究级编码表再晋升。"
     }
   ]
 }

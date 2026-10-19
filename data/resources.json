@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/resources.schema.json",
-  "schema_version": "1.3.0",
-  "catalog_version": "2.3.0",
+  "schema_version": "1.4.0",
+  "catalog_version": "2.3.1",
   "updated_on": "2026-10-19",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
@@ -287,7 +287,7 @@
       "data_type": "多实验室婴儿实验",
       "description": "婴儿对婴儿导向语与成人导向语的偏好数据、月龄、语言背景、实验方法与实验室信息，以及分析代码。",
       "access_mode": "open_data",
-      "access_notes": "数据与代码公开下载",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
       "limitations": "这里指已发布的MB1项目，不能假定ManyBabies所有项目均已开放；实验方法差异要单独处理。",
       "source_url": "https://github.com/manybabies/mb1-analysis-public",
@@ -305,17 +305,47 @@
         "R006"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://github.com/manybabies/mb1-analysis-public",
           "https://manybabies.org/MB1/",
-          "https://osf.io/re95x/"
+          "https://osf.io/re95x/",
+          "https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/processed_data/03_data_trial_main.csv",
+          "https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/metadata/Variable_Dictionary_mb1.csv"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "作者GitHub固定版本的逐试次注视时长表完整解析：37,264行、16列，另读200行变量字典。OSF子组件未全部枚举；这次验证的是作者正式替代入口。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 1,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/processed_data/03_data_trial_main.csv",
+            "read_scope": "complete_csv",
+            "result": "完整表：37,264行、16列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "a4eb8e27ae40833172009e5e681aba3f07eb3cf56d78fddd373d9ee9510110e4",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/metadata/Variable_Dictionary_mb1.csv",
+            "read_scope": "complete_csv",
+            "result": "完整表：200行、7列。辅助资料；不代表全资源验收。",
+            "sha256": "8fdcb82f4dccd877095fd3f50a1f12987432eb5ee5b643a581115aa5b532a9b3",
+            "checked_on": "2026-10-19",
+            "file_role": "documentation_or_materials"
+          }
+        ]
       },
       "platforms": [
         "github",
@@ -1207,7 +1237,7 @@
       "data_type": "词汇判断与命名行为",
       "description": "约4万词和匹配非词的词汇特征、词汇判断与命名反应时；官网提供逐试次行为数据入口。",
       "access_mode": "open_data",
-      "access_notes": "官网公开查询和数据入口",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
       "limitations": "词均值与逐试次原始反应不是同一分析层级；清洗规则和参与者差异会影响结果。",
       "source_url": "https://elexicon.wustl.edu/",
@@ -1228,16 +1258,55 @@
         "R027"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://elexicon.wustl.edu/",
-          "https://osf.io/n63s2/"
+          "https://osf.io/n63s2/",
+          "https://osf.io/download/598st/",
+          "https://osf.io/download/eu5ca/",
+          "https://osf.io/download/rd632/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "完整下载命名和词汇判断两份ZIP；目录分别470和820个成员。各解压并按官方变量键解析4个行为日志的6字段试次区段；未解析全部1,290个日志，也未运行2022年补丁。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 5,
+          "inventory_complete_within_bounded_scope": true,
+          "downloaded_file_count": 3,
+          "readable_empirical_file_count": 2,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/598st/",
+            "read_scope": "archive_selected_members",
+            "result": "完整下载ZIP，目录470个成员；Data3888.NMG 2530条试次；Data3878.NMG 2530条试次；99DATA.NMG 2530条试次；325DATA.NMG 2530条试次。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "97159329c9318f667e9a917a1755ae2357f6827a83b8f59ca2ba143a9beb43c6",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/eu5ca/",
+            "read_scope": "archive_selected_members",
+            "result": "完整下载ZIP，目录820个成员；169DATA.LDT 3374条试次；Data2140.LDT 3372条试次；Data797.LDT 3374条试次；350DATA.LDT 3374条试次。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "f57f793896d38ccec369f25157685c9879c14c81bed513b7e0a510552614b210",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/rd632/",
+            "read_scope": "complete_text",
+            "result": "全文解码，1,510字符；没有据此声明表格解析。辅助资料；不代表全资源验收。",
+            "sha256": "81343116f673e103f753e351658118b67de8d3f1b054132c4caaf2443c4163c4",
+            "checked_on": "2026-10-19",
+            "file_role": "documentation_or_materials"
+          }
+        ]
       },
       "platforms": [
         "osf"
@@ -1260,7 +1329,7 @@
       "data_type": "成人回溯评分／测试估计",
       "description": "英语词语的主观习得年龄评分；同一项目亦提供不同来源的扩展和测试型习得年龄文件。",
       "access_mode": "open_data",
-      "access_notes": "OSF公开下载",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
       "limitations": "文件之间的测量不同；成人回溯评分不能当作儿童纵向观察到的首次习得时间。",
       "source_url": "https://osf.io/d7x6q/",
@@ -1277,15 +1346,45 @@
         "R023"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
-          "https://osf.io/d7x6q/"
+          "https://osf.io/d7x6q/",
+          "https://osf.io/download/vb9je/",
+          "https://osf.io/download/2s8yx/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "完整读取两份工作簿：Kuperman常模31,124行、8列；另一份测验型AoA主表43,991行、8列。51,715词扩展表尚未读，两个已读表不能直接当成相同测量。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 3,
+          "inventory_complete_within_bounded_scope": true,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 2,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/vb9je/",
+            "read_scope": "complete_xlsx_workbook",
+            "result": "完整工作簿：Sheet1 31,124行×8列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "a2a24ad3b0a918c6260f7e8c2949a729968ca68a6508229ac8fceeba21fdd770",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/2s8yx/",
+            "read_scope": "complete_xlsx_workbook",
+            "result": "完整工作簿：a 43,991行×8列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "0b929a3998096782272cc33c7b851a79cbe98fe13dae36293dfcc221b85dff62",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       },
       "platforms": [
         "osf"
@@ -1308,7 +1407,7 @@
       "data_type": "词语具体性人工评分",
       "description": "约4万词语和短语的具体性评分；另有公开的逐试次评分项目，可寻找评分者层面信息。",
       "access_mode": "open_data",
-      "access_notes": "OSF公开下载",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
       "limitations": "具体性与意象性、感觉运动强度相关但不等同；按词条和评分层级区分文件。",
       "source_url": "https://osf.io/kj76e/",
@@ -1327,16 +1426,46 @@
         "R027"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://osf.io/kj76e/",
-          "https://osf.io/qpmf4/"
+          "https://osf.io/qpmf4/",
+          "https://osf.io/download/8ne54/",
+          "https://osf.io/download/qz9vx/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "完整读取具体性词项表39,954行、9列，以及R序列化的2,008,857行、14列逐次评分数据。只证明可读取和结构范围；未验收清洗规则、缺失机制或所有文件。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 5,
+          "inventory_complete_within_bounded_scope": true,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 2,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/8ne54/",
+            "read_scope": "complete_xlsx_workbook",
+            "result": "完整工作簿：Sheet1 39,954行×9列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "1c9d26d0e63c59cf0673c2556b9bded8365981e59445c56c8938eccd29c8ec65",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/qz9vx/",
+            "read_scope": "complete_r_serialization",
+            "result": "R对象已读取：concreteness.participant 2,008,857行×14列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "7f4da4934c035c14a10a3f5eb95d4d83df7b18955c8f53189561112871b4210c",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       },
       "platforms": [
         "osf"
@@ -1360,7 +1489,7 @@
       "data_type": "感觉运动强度人工评分",
       "description": "近4万个概念在视觉、听觉、触觉等6种感知维度和5种动作效应器上的评分。",
       "access_mode": "open_data",
-      "access_notes": "项目页与OSF提供公开资料",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
       "limitations": "衡量词语所指概念的主观感觉运动经验，不是实际动作或神经活动记录。",
       "source_url": "https://www.lancaster.ac.uk/psychology/lsnorms/",
@@ -1379,16 +1508,46 @@
         "R050"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://www.lancaster.ac.uk/psychology/lsnorms/",
-          "https://osf.io/7emr6/"
+          "https://osf.io/7emr6/",
+          "https://osf.io/download/48wsc/",
+          "https://osf.io/download/7c9gr/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "完整解析39,707词、45列的感知运动常模，并读取2024年更新的试次说明。1GB以上的逐次CSV和59MB试次RDS未下载，本轮常模检查不代表逐次表验收。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 45,
+          "inventory_complete_within_bounded_scope": true,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 1,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/48wsc/",
+            "read_scope": "complete_csv",
+            "result": "完整表：39,707行、45列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "445d363fb1f9f3e50b86d88e2f46cdc9a22b5dd8a713ce4e7be2a773d57f43c5",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/7c9gr/",
+            "read_scope": "complete_text",
+            "result": "全文解码，4,746字符；没有据此声明表格解析。辅助资料；不代表全资源验收。",
+            "sha256": "8168ea0c0c7e0804e5127fc14060c45ed4c2f29e3a216b0bb8f820a77ccc6b5b",
+            "checked_on": "2026-10-19",
+            "file_role": "documentation_or_materials"
+          }
+        ]
       },
       "platforms": [
         "osf"
@@ -2025,7 +2184,7 @@
       "data_type": "跨语言及L2阅读眼动",
       "description": "相对可比较的阅读材料、眼动和个体差异测量，分L1、L2和多轮发布。",
       "access_mode": "open_data",
-      "access_notes": "已发布数据公开；经官网进入具体发布页",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
       "limitations": "正在收集的波次不等于已经公开；跨语言文本可比性与个体测量需按发布说明检查。",
       "source_url": "https://meco-read.com/",
@@ -2043,16 +2202,46 @@
         "R039"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://meco-read.com/",
-          "https://osf.io/3527a/"
+          "https://osf.io/3527a/",
+          "https://osf.io/download/kxqeh/",
+          "https://osf.io/download/jahw9/"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "实际读取最新目录中的主数据说明和4页start_here文档；清单因限流/目录范围而不完整，尚未下载MECO眼动主体数据。文档列出的数据文件不能当作已读文件。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "auxiliary_only_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 21,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/kxqeh/",
+            "read_scope": "complete_document_text",
+            "result": "PDF已抽取全部4页文本。辅助资料；不代表全资源验收。",
+            "sha256": "e3f3a401bd4eeff5c9dc7e050ccca8394c1f5988f8bbcfd727ca1bac5fed14fd",
+            "checked_on": "2026-10-19",
+            "file_role": "documentation_or_materials"
+          },
+          {
+            "url": "https://osf.io/download/jahw9/",
+            "read_scope": "complete_text",
+            "result": "全文解码，3,789字符；没有据此声明表格解析。辅助资料；不代表全资源验收。",
+            "sha256": "6b4b0910a4a682f30d3c52d3d68d66faac31f03cdc2de1761f72105f515a1a16",
+            "checked_on": "2026-10-19",
+            "file_role": "documentation_or_materials"
+          }
+        ]
       },
       "platforms": [
         "osf"
@@ -3823,7 +4012,7 @@
       "entry_type": "dataset",
       "data_origin": "human_observations",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
       "additional_urls": [
         "https://github.com/caplabnyu/sapbenchmark"
@@ -3839,16 +4028,46 @@
         "b6rqh"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "project_documentation",
         "evidence_urls": [
           "https://osf.io/b6rqh/",
-          "https://github.com/caplabnyu/sapbenchmark"
+          "https://github.com/caplabnyu/sapbenchmark",
+          "https://osf.io/download/q7yfx/",
+          "https://osf.io/download/3p98t/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "完整读取2025眼动分支的清洗后长表802,271行、17列，以及RDS宽表32,094行、164列。并非2024 SPR分支或全版本验收；模型预测大文件未下载。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 79,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 2,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/q7yfx/",
+            "read_scope": "complete_r_serialization",
+            "result": "R对象已读取：rds_object 32,094行×164列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "adb5cdca5ba11ec27ee478a6d4459ee5be159cd6b34139e27421782e9006839f",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/3p98t/",
+            "read_scope": "complete_csv",
+            "result": "完整表：802,271行、17列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "1e6614805ef10aaf51c502fc8026af229b1a226f655126fb6b39b8daa2225873",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       }
     },
     {
@@ -3871,7 +4090,7 @@
       "entry_type": "dataset",
       "data_origin": "human_observations",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
       "additional_urls": [],
       "related_ids": [],
@@ -3884,15 +4103,36 @@
         "mg2r8"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "project_documentation",
         "evidence_urls": [
-          "https://osf.io/mg2r8/"
+          "https://osf.io/mg2r8/",
+          "https://osf.io/download/k87ta/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "完整读取407行、390列原始宽表，列数一致；行数不自动等于最终有效被试数，筛选、问卷字段和缺失值仍须按分析代码核对。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 3,
+          "inventory_complete_within_bounded_scope": true,
+          "downloaded_file_count": 1,
+          "readable_empirical_file_count": 1,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/k87ta/",
+            "read_scope": "complete_csv",
+            "result": "完整表：407行、390列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "ab4d915033f4381c0af776d3982e50dcecf10fe7ce8d07ebc4057ce92a34ae1c",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       }
     },
     {
@@ -3915,7 +4155,7 @@
       "entry_type": "dataset",
       "data_origin": "human_observations",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
       "additional_urls": [
         "https://osf.io/pd8ky/"
@@ -3931,16 +4171,46 @@
         "pd8ky"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "project_documentation",
         "evidence_urls": [
           "https://osf.io/eawg5/",
-          "https://osf.io/pd8ky/"
+          "https://osf.io/pd8ky/",
+          "https://osf.io/download/6a8wp/",
+          "https://osf.io/download/xs72e/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "完整读取eawg5的清洗判断表292,128行、8列，以及pd8ky冻结注册中的预试表2,209行、7列；其他组件仍受限流影响。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 8,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 2,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/6a8wp/",
+            "read_scope": "complete_csv",
+            "result": "完整表：292,128行、8列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "91773ad16a3e8970936a12ae61dbfcefeecab705c0f84b5721a690ebb48b2abc",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://osf.io/download/xs72e/",
+            "read_scope": "complete_csv",
+            "result": "完整表：2,209行、7列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "3fbe54f948fffac306743fa517bd3db7a4d51f454f24436e9f709b4002180b4d",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       }
     },
     {
@@ -3984,7 +4254,17 @@
         "evidence_urls": [
           "https://osf.io/j85sp/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮接口请求遇到429，未取得可用文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "access_unresolved",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4030,7 +4310,17 @@
         "evidence_urls": [
           "https://osf.io/mtngd/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮接口请求遇到429，未取得可用文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "access_unresolved",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4075,7 +4365,17 @@
           "https://rke.abertay.ac.uk/en/publications/the-head-or-the-verb-is-the-lexical-boost-restricted-to-the-head-/datasets/",
           "https://osf.io/p8f2c/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4120,7 +4420,17 @@
           "https://osf.io/ckxaw/wiki/home/",
           "https://osf.io/ckxaw/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4164,7 +4474,17 @@
         "evidence_urls": [
           "https://osf.io/sbvfy/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4210,7 +4530,17 @@
           "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0285873",
           "https://osf.io/as4h7/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4254,7 +4584,17 @@
         "evidence_urls": [
           "https://osf.io/4sz9w/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4300,7 +4640,17 @@
         "evidence_urls": [
           "https://osf.io/7ntmk/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4344,7 +4694,17 @@
         "evidence_urls": [
           "https://osf.io/mbtcd/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4389,7 +4749,17 @@
           "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288817",
           "https://osf.io/98g26/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4433,7 +4803,17 @@
         "evidence_urls": [
           "https://osf.io/pyb8s/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4479,7 +4859,17 @@
         "evidence_urls": [
           "https://osf.io/u3pc4/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4526,7 +4916,17 @@
           "https://osf.io/a6w53/overview",
           "https://osf.io/a6w53/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4570,7 +4970,17 @@
         "evidence_urls": [
           "https://osf.io/p75c3/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4617,7 +5027,17 @@
         "evidence_urls": [
           "https://osf.io/n5vke/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4665,7 +5085,17 @@
           "https://osf.io/yjz85/",
           "https://osf.io/2dqnj/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4712,7 +5142,17 @@
           "https://osf.io/cjyzw/",
           "http://www.wordnorms.com/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4756,7 +5196,17 @@
         "evidence_urls": [
           "https://osf.io/6syf3/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4800,7 +5250,17 @@
         "evidence_urls": [
           "https://osf.io/pg3fr/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4843,7 +5303,17 @@
         "evidence_urls": [
           "https://osf.io/at8cs/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4887,7 +5357,17 @@
         "evidence_urls": [
           "https://osf.io/sgjbh/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4931,7 +5411,17 @@
         "evidence_urls": [
           "https://osf.io/9v2m5/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -4976,7 +5466,17 @@
           "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0242232",
           "https://osf.io/a6vps/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5022,7 +5522,17 @@
           "https://osf.io/rey6m/overview",
           "https://osf.io/rey6m/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5069,7 +5579,17 @@
           "https://osf.io/86yxz/overview",
           "https://osf.io/86yxz/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5113,7 +5633,17 @@
         "evidence_urls": [
           "https://osf.io/arfqv/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5157,7 +5687,17 @@
         "evidence_urls": [
           "https://osf.io/43t9q/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5330,7 +5870,17 @@
         "evidence_urls": [
           "https://osf.io/ty4wd/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5376,7 +5926,17 @@
         "evidence_urls": [
           "https://osf.io/62bek/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5422,7 +5982,17 @@
         "evidence_urls": [
           "https://osf.io/ugbsd/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5466,7 +6036,17 @@
         "evidence_urls": [
           "https://osf.io/73vfx/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5512,7 +6092,17 @@
         "evidence_urls": [
           "https://osf.io/e637k/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5559,7 +6149,17 @@
           "https://osf.io/2swyg/wiki/home/",
           "https://osf.io/2swyg/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5606,7 +6206,17 @@
           "https://osf.io/bm3tj/overview",
           "https://osf.io/bm3tj/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5650,7 +6260,17 @@
         "evidence_urls": [
           "https://osf.io/sjefs/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5694,7 +6314,17 @@
         "evidence_urls": [
           "https://osf.io/q3zws/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5739,7 +6369,17 @@
           "https://osf.io/ud8s5/overview",
           "https://osf.io/ud8s5/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5758,14 +6398,15 @@
         "自定步速阅读",
         "自然文本"
       ],
-      "limitations": "SPR的刺激时序与自然眼动阅读不同；不能直接合并为同一种时程指标。",
+      "limitations": "SPR的刺激时序与自然眼动阅读不同；不能直接合并为同一种时程指标。 本轮读取的cloze表为BLOOM-560m生成值，不是人类完形概率；EEG/SPR文件尚未读取。",
       "entry_type": "dataset",
       "data_origin": "human_observations",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
       "additional_urls": [
-        "https://github.com/saraoe/natural-stories-dutch"
+        "https://github.com/saraoe/natural-stories-dutch",
+        "https://doi.org/10.34894/0O5XQ7"
       ],
       "related_ids": [],
       "data_status": "released_data",
@@ -5778,16 +6419,37 @@
         "g32rp"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "project_documentation",
         "evidence_urls": [
           "https://osf.io/g32rp/",
-          "https://github.com/saraoe/natural-stories-dutch"
+          "https://github.com/saraoe/natural-stories-dutch",
+          "https://raw.githubusercontent.com/saraoe/natural-stories-dutch/73e105c095e560f60b0b213bb6a8ff1a68b2f8b1/stimuli/data/cloze.csv"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "作者GitHub的cloze.csv完整读取10,454行、6列。README明确这些值由BLOOM-560m生成，属于模型派生资料，不能标成人类完形常模；EEG/SPR主体数据仍未读取。作者另指向Dataverse DOI，API请求返回HTTP200反机器人HTML而非数据JSON。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "auxiliary_only_readable",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 1,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://raw.githubusercontent.com/saraoe/natural-stories-dutch/73e105c095e560f60b0b213bb6a8ff1a68b2f8b1/stimuli/data/cloze.csv",
+            "read_scope": "complete_csv",
+            "result": "完整表：10,454行、6列。辅助资料；不代表全资源验收。",
+            "sha256": "c01db88ac156f36219b19767ba7ef5d7e09245a822c322e9101c1d07c8a9dcce",
+            "checked_on": "2026-10-19",
+            "file_role": "model_generated_auxiliary"
+          }
+        ]
       }
     },
     {
@@ -5832,7 +6494,17 @@
           "https://osf.io/3bvtx/overview",
           "https://osf.io/3bvtx/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -5877,7 +6549,17 @@
           "https://osf.io/azj2g/overview",
           "https://osf.io/azj2g/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6207,7 +6889,17 @@
           "https://osf.io/t957v/",
           "https://huggingface.co/datasets/pacscilab/VoxCommunis/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6254,7 +6946,17 @@
           "https://osf.io/dgn2a/overview",
           "https://osf.io/dgn2a/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6301,7 +7003,17 @@
         "evidence_urls": [
           "https://osf.io/fbms4/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6345,7 +7057,17 @@
         "evidence_urls": [
           "https://osf.io/w4h9f/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6390,7 +7112,17 @@
         "evidence_urls": [
           "https://osf.io/y7tdq/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6437,7 +7169,17 @@
         "evidence_urls": [
           "https://osf.io/xyh3k/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6481,7 +7223,17 @@
         "evidence_urls": [
           "https://osf.io/8s9r5/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6525,7 +7277,17 @@
         "evidence_urls": [
           "https://osf.io/m7a43/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6569,7 +7331,17 @@
         "evidence_urls": [
           "https://osf.io/xsq3p/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6613,7 +7385,17 @@
         "evidence_urls": [
           "https://osf.io/n4ks9/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6657,7 +7439,17 @@
         "evidence_urls": [
           "https://osf.io/56qvw/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -6680,7 +7472,7 @@
       "entry_type": "dataset",
       "data_origin": "mixed_or_unspecified",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
       "additional_urls": [],
       "related_ids": [],
@@ -6693,15 +7485,36 @@
         "zq6ht"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "project_documentation",
         "evidence_urls": [
-          "https://osf.io/zq6ht/"
+          "https://osf.io/zq6ht/",
+          "https://osf.io/download/ux6rb/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "完整下载并解析人类—LLM习语评分表：6,720行、8列，大小与同日先前API清单一致。清单地址复用同一聊天提醒阶段的已核实响应，文件已在本轮重新下载取哈希。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": true,
+          "inventory_file_count_lower_bound": 1,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 1,
+          "readable_empirical_file_count": 1,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://osf.io/download/ux6rb/",
+            "read_scope": "complete_csv",
+            "result": "完整表：6,720行、8列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "518f187e8f9091b22acce92cc445630efc144206e0c1b344a2ce8136937ce2ac",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       }
     },
     {
@@ -6724,7 +7537,7 @@
       "entry_type": "dataset",
       "data_origin": "human_observations",
       "access_mode": "open_data",
-      "access_notes": "项目或出版方说明提供数据/材料；本次核对说明与发布证据，未逐文件下载验收。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
       "license_note": "许可须以所选数据文件或发布版本的原始声明为准；公开网页本身不构成无限制使用授权。",
       "additional_urls": [
         "https://github.com/phoebsc/Naturalistic-Free-Recall-Dataset"
@@ -6740,16 +7553,37 @@
         "h2pkv"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "project_documentation",
         "evidence_urls": [
           "https://osf.io/h2pkv/",
-          "https://github.com/phoebsc/Naturalistic-Free-Recall-Dataset"
+          "https://github.com/phoebsc/Naturalistic-Free-Recall-Dataset",
+          "https://raw.githubusercontent.com/phoebsc/Naturalistic-Free-Recall-Dataset/e1aea19210858b5ce6b32128e8df42b137effb8f/LMM_all.xlsx"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "作者GitHub的LMM_all.xlsx完整读取17,628行、6列，含事件、故事、参与者、中心性和是否回忆。它是分析用行为/派生表，不能据此宣称已读全部自由回忆转写或原始录音。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 1,
+          "readable_empirical_file_count": 1,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://raw.githubusercontent.com/phoebsc/Naturalistic-Free-Recall-Dataset/e1aea19210858b5ce6b32128e8df42b137effb8f/LMM_all.xlsx",
+            "read_scope": "complete_xlsx_workbook",
+            "result": "完整工作簿：Sheet1 17,628行×6列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "c6a551e57fd49d0c3271100e71dd83cc6b21048754f81274e68c74996c3bdfa3",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       }
     },
     {
@@ -7401,7 +8235,17 @@
           "https://www.nature.com/articles/s41562-026-02488-3",
           "https://osf.io/qzaxk/"
         ],
-        "note": "核对项目说明、作者仓库或出版方数据声明；OSF接口本次返回维护页，未批量获取实时文件清单。"
+        "note": "2026-10-17历史说明核对：核对项目说明、作者仓库或出版方数据声明；当时OSF接口返回维护页，未批量获取实时文件清单。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8013,7 +8857,17 @@
           "https://osf.io/ma9jp/",
           "https://osf.io/gwy9s/"
         ],
-        "note": "全文Data Availability Statement明确指向ma9jp，正文另说明项目材料和数据公开；OSF实时文件清单本次仍受503限制。"
+        "note": "全文Data Availability Statement明确指向ma9jp，正文另说明项目材料和数据公开；OSF实时文件清单本次仍受503限制。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8060,7 +8914,17 @@
           "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.643571/full",
           "https://osf.io/wd2g7/"
         ],
-        "note": "核对正式论文Data availability statement，并结合本会话已核对的公开项目主页；未保存匿名访问参数。"
+        "note": "核对正式论文Data availability statement，并结合本会话已核对的公开项目主页；未保存匿名访问参数。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8109,7 +8973,17 @@
           "https://osf.io/t9vpq/",
           "https://doi.org/10.1515/prbs-2021-0008"
         ],
-        "note": "论文脚注4明确列出materials、data和analysis code并指向t9vpq；未把只有论文摘要当作数据证据。"
+        "note": "论文脚注4明确列出materials、data和analysis code并指向t9vpq；未把只有论文摘要当作数据证据。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8159,7 +9033,17 @@
           "https://osf.io/zx6wv/",
           "https://doi.org/10.1111/cogs.12687"
         ],
-        "note": "读取作者公开论文至附录A，确认不是只保存预印本；附录明确列出zx6wv为材料、数据和分析脚本仓库。"
+        "note": "读取作者公开论文至附录A，确认不是只保存预印本；附录明确列出zx6wv为材料、数据和分析脚本仓库。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8214,7 +9098,7 @@
           "https://github.com/seantrott/scarfs/blob/main/data/processed/aligned_results_public.csv",
           "https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/taboo_with_distances.csv"
         ],
-        "note": "新增完整读取20,521行带时序指称表及471行taboo_with_distances表。母语者19,449行按说话者/伙伴/试次序号/卡片四字段全部唯一匹配行为表，结果标签无冲突；对应3,393个不同记录键。此前558行item_data是另一张表，保留其既有核验记录。仅选定文件与连接单位检查，不代表全资源或交流构念验收。",
+        "note": "新增完整读取20,521行带时序指称表及471行taboo_with_distances表。母语者19,449行按说话者/伙伴/试次序号/卡片四字段全部唯一匹配行为表，结果标签无冲突；对应3,393个不同记录键。此前558行item_data是另一张表，保留其既有核验记录。仅选定文件与连接单位检查，不代表全资源或交流构念验收。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
         "file_checks": [
           {
             "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
@@ -8246,7 +9130,17 @@
             "result": "完整读取并解析471行、11列，核对字节数与Git blob SHA；详见postpilot聚合检查。不代表整库验收。",
             "blob_sha": "230c49b6f2e7cad64b386a8b227ac8d293550dfb"
           }
-        ]
+        ],
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8299,7 +9193,7 @@
           "https://osf.io/mp3dt/",
           "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/user_code_matrix_scaled.csv"
         ],
-        "note": "论文脚注给出作者仓库；已读取标注CSV头部与模拟CSV样例，并完整读取/解析一份30行15列的特征矩阵，未验收全库。",
+        "note": "论文脚注给出作者仓库；已读取标注CSV头部与模拟CSV样例，并完整读取/解析一份30行15列的特征矩阵，未验收全库。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
         "file_checks": [
           {
             "url": "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/user_code_matrix_scaled.csv",
@@ -8313,7 +9207,17 @@
             "result": "读取分号分隔的人工标注表头与开头，含编码、文本片段和文档名；未解析全表。",
             "blob_sha": "67d89a9793e8556a4a7fcc4d9f0821a9d68aca5d"
           }
-        ]
+        ],
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8361,7 +9265,17 @@
           "https://www.nature.com/articles/s41598-024-80571-3",
           "https://osf.io/jp35t/"
         ],
-        "note": "核对正式论文Data availability：目标刺激集和分析脚本指向jp35t；原基线数据另有来源。"
+        "note": "核对正式论文Data availability：目标刺激集和分析脚本指向jp35t；原基线数据另有来源。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8411,7 +9325,17 @@
           "https://osf.io/2x8ka/",
           "https://doi.org/10.1371/journal.pone.0284801"
         ],
-        "note": "虽OSF索引返回维护页，PLOS正式Data Availability仍明确列出具体发布资料；据出版方声明晋升，未声称实时下载成功。"
+        "note": "虽OSF索引返回维护页，PLOS正式Data Availability仍明确列出具体发布资料；据出版方声明晋升，未声称实时下载成功。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8461,7 +9385,17 @@
           "https://osf.io/wc7by/",
           "https://doi.org/10.31234/osf.io/6zf2n"
         ],
-        "note": "在机构存档博士论文第一章Open practices statement核实wc7by及全部数据/代码的公开说明；同时核实实验语言为意大利语。"
+        "note": "在机构存档博士论文第一章Open practices statement核实wc7by及全部数据/代码的公开说明；同时核实实验语言为意大利语。 2026-10-19：本轮因总体匿名API额度限制尚未对该入口取得文件清单。既有证据日期和文件检查保留。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "deferred_api_rate_limit",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 0,
+          "readable_empirical_file_count": 0,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        }
       }
     },
     {
@@ -8495,8 +9429,8 @@
       "entry_type": "collection",
       "category": "speech-phonetics",
       "access_mode": "open_data",
-      "access_notes": "已确认公开数据/材料的发布依据；文件范围及是否实际读取见核对说明。",
-      "license_note": "OSF Wiki明确数据为CC BY 4.0、代码为MIT；R数据包DESCRIPTION也标注CC-BY-4.0。",
+      "access_notes": "本轮已匿名下载并读取选定文件；主体数据与辅助资料的区别、具体版本和行列范围见核对说明。",
+      "license_note": "所读作者数据包1.0.1的DESCRIPTION明确标注CC-BY-4.0；OSF集合内其他子研究的具体文件仍须分别核对。",
       "related_ids": [],
       "platforms": [
         "osf",
@@ -8507,18 +9441,48 @@
       ],
       "data_status": "released_data",
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "indexed_project_wiki",
         "evidence_urls": [
           "https://osf.io/w92me/overview",
           "https://osf.io/w92me/",
           "https://github.com/stefanocoretta/coretta2018itaegg",
-          "https://stefanocoretta.github.io/phd-thesis/"
+          "https://stefanocoretta.github.io/phd-thesis/",
+          "https://raw.githubusercontent.com/stefanocoretta/coretta2018itaegg/ec1b00809244eb873f12011c0c06e7460f889947/data-raw/datasets/measurements.csv",
+          "https://raw.githubusercontent.com/stefanocoretta/coretta2018itaegg/ec1b00809244eb873f12011c0c06e7460f889947/data/formants.rda"
         ],
-        "note": "Wiki明确数据及代码范围和分开许可；作者R数据包DESCRIPTION同时确认数据内容、版本及CC BY 4.0。"
+        "note": "作者意大利语数据包1.0.1固定版本：测量CSV为3,268行、14列，formants R对象为3,053行、39列。DESCRIPTION标注CC BY 4.0；未据此验收整个多研究OSF集合。",
+        "osf_audit": {
+          "checked_on": "2026-10-19",
+          "status": "empirical_data_readable",
+          "root_metadata_read": false,
+          "inventory_file_count_lower_bound": 0,
+          "inventory_complete_within_bounded_scope": false,
+          "downloaded_file_count": 2,
+          "readable_empirical_file_count": 2,
+          "report_path": "catalog/osf-file-audit-2026-10-19.md"
+        },
+        "file_checks": [
+          {
+            "url": "https://raw.githubusercontent.com/stefanocoretta/coretta2018itaegg/ec1b00809244eb873f12011c0c06e7460f889947/data-raw/datasets/measurements.csv",
+            "read_scope": "complete_csv",
+            "result": "完整表：3,268行、14列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "f7f128c06f69a2c123ed6014f026ea8cf141b2c7d7868a34656465ac5c8706be",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/stefanocoretta/coretta2018itaegg/ec1b00809244eb873f12011c0c06e7460f889947/data/formants.rda",
+            "read_scope": "complete_r_serialization",
+            "result": "R对象已读取：formants 3,053行×39列。主体观测/常模数据；不代表全资源验收。",
+            "sha256": "7a22ca3aca65586e7655a9d5ae41db21a3dfa75ff5369bcf8946795818a58ea1",
+            "checked_on": "2026-10-19",
+            "file_role": "empirical_or_norm_data"
+          }
+        ]
       }
     },
     {

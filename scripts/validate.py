@@ -82,6 +82,37 @@ def main():
         alignment=audit['join_checks']['spaml_crosslanguage']
         check(alignment['one_to_one_retained_row_count']==alignment['one_to_one_unique_english_keys']==alignment['one_to_one_unique_chinese_keys'],'Retained bilingual pairs are not one-to-one')
     audit_paths=sorted((ROOT/'data').glob('candidate-audit-*.json'))
+    for path in (ROOT/'data').glob('osf-file-audit-*.json'):
+        import hashlib
+        audit=json.loads(path.read_text()); rows=audit['records'];summary=audit['summary']
+        main=[r for r in rows if r['kind']=='main']; pending=[r for r in rows if r['kind']=='candidate']
+        files=[f for r in rows for f in r['selected_file_checks']]
+        check(len(rows)==len({r['resource_id'] for r in rows})==audit['target']['total_records']==85,'OSF audit queue count mismatch')
+        check(len(main)==audit['target']['existing_osf_associated_main']==73,'OSF audit main count mismatch')
+        check(len(pending)==audit['target']['remaining_candidates']==12,'OSF audit candidate count mismatch')
+        check({r['resource_id'] for r in main}<={r['id'] for r in resources if 'osf' in r['platforms']},'OSF audit refers to missing catalog IDs')
+        if audit['catalog_version']==catalog['catalog_version']:
+            check({r['resource_id'] for r in pending}=={r['id'] for r in candidate['candidates']},'Current OSF audit candidates differ from queue')
+        check(summary['selected_complete_downloads']==sum(f['download_status']=='complete' for f in files),'OSF download count mismatch')
+        check(summary['selected_empirical_files_read']==sum(r['readable_empirical_file_count'] for r in rows),'OSF empirical-file count mismatch')
+        check(summary['main_with_new_file_reads']==sum(bool(r['selected_file_checks']) for r in main),'OSF resource read count mismatch')
+        check(summary['main_with_new_file_reads']+summary['main_without_new_file_reads']==73,'OSF uncompleted count mismatch')
+        check(summary['newly_promoted_candidates']==0 and summary['remaining_candidates']==12,'OSF round promotion mismatch')
+        check(audit['all_requested_verification_complete'] is False and audit['stage']=='partial_file_access_audit','Incomplete OSF audit overstated')
+        check(audit['individual_data_redistributed'] is False,'OSF audit redistributes observations')
+        for row in rows:
+            empirical=[f for f in row['selected_file_checks'] if f['file_role']=='empirical_or_norm_data']
+            check(len(empirical)==row['readable_empirical_file_count'],'OSF file-role count mismatch: '+row['resource_id'])
+            for f in row['selected_file_checks']:
+                check(f['download_status']=='complete' and bool(re.fullmatch('[a-f0-9]{64}',f.get('sha256',''))),'OSF file lacks complete download/hash')
+                check(f.get('listed_size_matches') is not False and f.get('published_sha256_matches') is not False,'OSF downloaded file differs from source size/hash')
+                check(f.get('github_blob_matches') is not False,'OSF alternative blob hash differs')
+                check(f['parse'].get('parse_status') not in ('failed','download_only_no_supported_parser'),'OSF selected file not actually read')
+                check(not f.get('html_instead_of_data'),'OSF HTML wrapper misclassified as data')
+        tint=next(r for r in rows if r['resource_id']=='R121')
+        check(tint['audit_status']=='auxiliary_only_readable' and tint['readable_empirical_file_count']==0,'Synthetic TiNT cloze misclassified as human data')
+        code=audit['processing_script']
+        check(hashlib.sha256((ROOT/code['path']).read_bytes()).hexdigest()==code['sha256'],'OSF audit processing code hash differs')
     for path in (ROOT/'data').glob('semantic-priming-pilot-*.json'):
         pilot=json.loads(path.read_text())
         check(pilot['stage']=='exploratory_pilot_not_confirmatory','Pilot stage overstated')

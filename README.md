@@ -6,12 +6,13 @@
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的12条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：163条仅核对说明、0条读取头部样例、9条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：150条仅核对说明、0条读取头部样例、20条完整检查选定数据文件、2条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
-- [核验进度与待检查清单](catalog/verification-status.md)：全部180条逐项状态、OSF恢复后的待办。
+- [核验进度与待检查清单](catalog/verification-status.md)：全部180条逐项状态与未完成检查。
+- [OSF实际文件核查](catalog/osf-file-audit-2026-10-19.md)：37个文件已下载，11条资源读到代表性观测/常模；60条主目录入口仍待本轮文件检查。
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
 - [第一条想法的初次可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：原覆盖530组；后续事件审计另排除1组，见下列pilot。
 - [中英联想—启动pilot结果](research/semantic-priming-pilot-2026-10-18.md)：原试次复原、60组语义初筛、测量稳定性、受控模型与词汇排除预测；建议调整后再决定主实验。
@@ -21,9 +22,9 @@
 - [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。
 
-OSF接口本次返回维护通知，因此本目录核对的是项目说明、作者仓库、Wiki索引或出版方数据声明；没有完成全库抓取或所有原始文件的下载验收。逐条核对范围保留在元数据中。
+2026-10-19实际文件核查已取得部分公开数据，随后受匿名API额度限制；[本轮逐项结果](catalog/osf-file-audit-2026-10-19.md)明确列出已读范围和未完成项。不能把部分可读写成全部OSF资源已验收。
 
-[原22条候选的逐项复核](catalog/candidate-audit.md)：10条补入主目录，12条保留具体限制或待确认事项。
+[原22条候选的逐项复核](catalog/candidate-audit.md)：累计10条补入主目录，12条保留具体限制或待确认事项。本轮继续核对剩余12条，新增晋升0条。
 
 ## 按主题浏览
 
@@ -60,7 +61,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R002 | [CHILDES（附childes-db接口）](catalog/child-language.md#r002) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R003 | [Peekbank](catalog/child-language.md#r003) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R004 | [PhonBank](catalog/child-language.md#r004) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R005 | [ManyBabies 1（MB1）](catalog/child-language.md#r005) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R005 | [ManyBabies 1（MB1）](catalog/child-language.md#r005) | 儿童语言与发展 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R006 | [MetaLab](catalog/child-language.md#r006) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R007 | [HomeBank](catalog/child-language.md#r007) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R008 | [SAYCam](catalog/child-language.md#r008) | 儿童语言与发展 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -78,10 +79,10 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R020 | [Parliament Question Time Corpus](catalog/social-interaction.md#r020) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R021 | [ParlaMint](catalog/social-interaction.md#r021) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R022 | [Small World of Words（SWOW）](catalog/lexical-cognition.md#r022) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
-| R023 | [English Lexicon Project（ELP）](catalog/lexical-cognition.md#r023) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R024 | [英语习得年龄常模（Kuperman等及相关扩展）](catalog/lexical-cognition.md#r024) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R025 | [英语具体性常模（Brysbaert等）](catalog/lexical-cognition.md#r025) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R026 | [Lancaster Sensorimotor Norms](catalog/lexical-cognition.md#r026) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R023 | [English Lexicon Project（ELP）](catalog/lexical-cognition.md#r023) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R024 | [英语习得年龄常模（Kuperman等及相关扩展）](catalog/lexical-cognition.md#r024) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R025 | [英语具体性常模（Brysbaert等）](catalog/lexical-cognition.md#r025) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R026 | [Lancaster Sensorimotor Norms](catalog/lexical-cognition.md#r026) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R027 | [Glasgow Norms](catalog/lexical-cognition.md#r027) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R028 | [Warriner情感常模](catalog/lexical-cognition.md#r028) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R029 | [SimLex-999](catalog/lexical-cognition.md#r029) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -95,7 +96,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R037 | [MERLIN](catalog/chinese-l2-bilingual.md#r037) | 中文、二语与双语 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R038 | [CEDEL2](catalog/chinese-l2-bilingual.md#r038) | 中文、二语与双语 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R039 | [GECO](catalog/chinese-l2-bilingual.md#r039) | 中文、二语与双语 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R040 | [MECO](catalog/chinese-l2-bilingual.md#r040) | 中文、二语与双语 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R040 | [MECO](catalog/chinese-l2-bilingual.md#r040) | 中文、二语与双语 | 有数据发布说明 | 已读辅助文件；主体观测数据未验 |
 | R041 | [Lexibank](catalog/crossling-cultural.md#r041) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R042 | [CLICS](catalog/crossling-cultural.md#r042) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R043 | [NoRaRe](catalog/crossling-cultural.md#r043) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -133,9 +134,9 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R075 | [Marvin–Linzen Targeted Syntactic Evaluation](catalog/syntax.md#r075) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R076 | [Colorless Green RNNs（一致关系测试集）](catalog/syntax.md#r076) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R077 | [Natural Stories Corpus](catalog/syntax.md#r077) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R078 | [Syntactic Ambiguity Processing Benchmark（SAP）](catalog/syntax.md#r078) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R079 | [冰岛语主语开头V3结构可接受度](catalog/syntax.md#r079) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R080 | [Agreement Attraction：语法句判断数据](catalog/syntax.md#r080) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R078 | [Syntactic Ambiguity Processing Benchmark（SAP）](catalog/syntax.md#r078) | 句法、可接受度与句子加工 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R079 | [冰岛语主语开头V3结构可接受度](catalog/syntax.md#r079) | 句法、可接受度与句子加工 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R080 | [Agreement Attraction：语法句判断数据](catalog/syntax.md#r080) | 句法、可接受度与句子加工 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R081 | [Hierarchical Structure and Memory in Agreement Attraction](catalog/syntax.md#r081) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R082 | [从主语抽取与话语功能：英法七个实验](catalog/syntax.md#r082) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R083 | [矩阵动词重复与PO/DO结构启动](catalog/syntax.md#r083) | 句法、可接受度与句子加工 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -176,7 +177,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R118 | [Provo Corpus（预测度与眼动）](catalog/reading-neuro.md#r118) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R119 | [ZuCo（联合EEG与眼动，含版本入口）](catalog/reading-neuro.md#r119) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R120 | [CopCo（丹麦语自然阅读眼动）](catalog/reading-neuro.md#r120) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R121 | [TiNT（荷兰语同步EEG与自定步速阅读）](catalog/reading-neuro.md#r121) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R121 | [TiNT（荷兰语同步EEG与自定步速阅读）](catalog/reading-neuro.md#r121) | 阅读、眼动与神经语言 | 有数据发布说明 | 已读辅助文件；主体观测数据未验 |
 | R122 | [g-Rel-READER（阅读相关性判断）](catalog/reading-neuro.md#r122) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R123 | [OneStop All Regimes（英语阅读方式比较）](catalog/reading-neuro.md#r123) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R124 | [中文阅读词眼动指标数据库](catalog/reading-neuro.md#r124) | 阅读、眼动与神经语言 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -196,8 +197,8 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R138 | [间接请求的策略礼貌：207人实验](catalog/social-interaction.md#r138) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R139 | [手势、音效与表情符号的共语言推论](catalog/social-interaction.md#r139) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R140 | [自由选择推论与同质性实验](catalog/social-interaction.md#r140) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R141 | [非典型习语语境：人类与LLM判断](catalog/sign-figurative.md#r141) | 手语、成语与抽象意义 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R142 | [叙事自由回忆数据集](catalog/social-interaction.md#r142) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R141 | [非典型习语语境：人类与LLM判断](catalog/sign-figurative.md#r141) | 手语、成语与抽象意义 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R142 | [叙事自由回忆数据集](catalog/social-interaction.md#r142) | 社会互动与语用 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R143 | [AMI Meeting Corpus](catalog/social-interaction.md#r143) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R144 | [CLAPI（法语自然互动音视频）](catalog/social-interaction.md#r144) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R145 | [MultiWOZ（任务型人际文字对话）](catalog/social-interaction.md#r145) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
@@ -234,7 +235,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R176 | [LLM方式含意：目标刺激集与分析脚本](catalog/social-interaction.md#r176) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R177 | [波兰语语义相关度、启动与语义向量](catalog/lexical-cognition.md#r177) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R178 | [无意识语义加工：空间—时间隐喻启动](catalog/lexical-cognition.md#r178) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R179 | [Coretta元音时长与辅音清浊研究集合](catalog/speech-phonetics.md#r179) | 语音、音系与声学 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R179 | [Coretta元音时长与辅音清浊研究集合](catalog/speech-phonetics.md#r179) | 语音、音系与声学 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R180 | [LLM World of Words（LWOW，模型生成英语联想）](catalog/lexical-cognition.md#r180) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 
 ## 本地筛选

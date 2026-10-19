@@ -88,3 +88,15 @@
 `file_checks` 至少提供 `blob_sha` 或 `sha256`：前者是源文件Git blob标识，后者用于GitHub正式发布资产等不直接对应仓库文件的内容校验。
 
 本轮不依赖OSF的组合探索和逐文件记录见 `research/nonosf-opportunities-2026-10-17.md` 与 `data/nonosf-combination-audit-2026-10-17.json`。机械对齐、全局键唯一性、人工语义等价与正式效果分析分开报告。
+
+## OSF实际文件核查（Schema 1.4.0）
+
+`verification.osf_audit` 记录2026-10-19的批次状态：有代表性观测/常模文件可读、仅辅助文件已读、元数据已读但未读主体数据、访问失败、或因API额度尚未检查。`root_metadata_read` 只表示已取得关联节点/注册的元数据，不能代替数据文件；`inventory_file_count_lower_bound` 是已列出的下界，只有 `inventory_complete_within_bounded_scope=true` 才说明在声明范围内的遍历未遇到中断。
+
+`downloaded_file_count` 是本轮完整下载的选定顶层文件数，ZIP仍计为一个下载；`readable_empirical_file_count` 另计其中经变量和来源说明确认的观测/常模文件。`report_path` 指向具体批次报告。主目录记录、文件、压缩包成员和NoRaRe来源的数量不能相加。
+
+`file_checks.checked_on` 为该次文件读取日期；`file_role` 区分 `empirical_or_norm_data`、`model_generated_auxiliary`、`documentation_or_materials`。新读取类型包括 `complete_xlsx_workbook`、`complete_r_serialization`、`archive_selected_members`、`complete_text`、`complete_document_text` 和 `complete_delimited_table`。ZIP只核对列明的选定成员；PDF全文文本可读也不表示有原始数据。
+
+新增派生状态 `supporting_files_checked` 表示辅助文件已读而主体观测数据未验。TiNT本轮的模型生成cloze表和MECO本轮说明文档采用此状态；不会因为文件能解析而升级成人类常模、EEG或眼动数据已读。结构化台账版本为1.1.0。
+
+本轮的完整事实、未完成项和37份文件哈希见 [OSF核查报告](../catalog/osf-file-audit-2026-10-19.md)。旧维护观察与先前候选晋升的日期保留；新的可读文件证据不追溯改写旧核查范围。

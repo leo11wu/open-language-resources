@@ -20,7 +20,7 @@
       "type": "string"
     },
     "schema_version": {
-      "const": "1.3.0"
+      "const": "1.4.0"
     },
     "catalog_version": {
       "type": "string",
@@ -287,7 +287,13 @@
                       "complete_json",
                       "complete_jsonl",
                       "complete_conllu",
-                      "complete_xlsx_sheet"
+                      "complete_xlsx_sheet",
+                      "complete_delimited_table",
+                      "complete_xlsx_workbook",
+                      "complete_r_serialization",
+                      "archive_selected_members",
+                      "complete_text",
+                      "complete_document_text"
                     ]
                   },
                   "result": {
@@ -301,6 +307,17 @@
                   "sha256": {
                     "type": "string",
                     "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "checked_on": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "file_role": {
+                    "enum": [
+                      "empirical_or_norm_data",
+                      "model_generated_auxiliary",
+                      "documentation_or_materials"
+                    ]
                   }
                 },
                 "anyOf": [
@@ -315,6 +332,58 @@
                     ]
                   }
                 ]
+              }
+            },
+            "osf_audit": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "checked_on",
+                "status",
+                "root_metadata_read",
+                "inventory_file_count_lower_bound",
+                "inventory_complete_within_bounded_scope",
+                "downloaded_file_count",
+                "readable_empirical_file_count",
+                "report_path"
+              ],
+              "properties": {
+                "checked_on": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "status": {
+                  "enum": [
+                    "empirical_data_readable",
+                    "auxiliary_only_readable",
+                    "materials_only_readable",
+                    "metadata_read_no_data_downloaded",
+                    "access_unresolved",
+                    "deferred_api_rate_limit"
+                  ]
+                },
+                "root_metadata_read": {
+                  "type": "boolean"
+                },
+                "inventory_file_count_lower_bound": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "inventory_complete_within_bounded_scope": {
+                  "type": "boolean"
+                },
+                "downloaded_file_count": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "readable_empirical_file_count": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "report_path": {
+                  "type": "string",
+                  "pattern": "^catalog/osf-file-audit-[0-9-]+\\.md$"
+                }
               }
             }
           }

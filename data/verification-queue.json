@@ -1,26 +1,28 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "generated_on": "2026-10-19",
-  "catalog_version": "2.3.0",
+  "catalog_version": "2.3.1",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
     "file_preview": "已读文件头部样例",
     "selected_file_checked": "已完整检查选定文件；全库未验收",
+    "supporting_files_checked": "已读辅助文件；主体观测数据未验",
     "fully_validated": "资源文件已验收",
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
     "main_resource_count": 180,
     "main_by_check_state": {
-      "documentation_only": 163,
+      "documentation_only": 150,
       "file_preview": 0,
-      "selected_file_checked": 9,
+      "selected_file_checked": 20,
+      "supporting_files_checked": 2,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 9,
-    "main_without_recorded_file_reads": 171,
+    "main_with_recorded_file_reads": 22,
+    "main_without_recorded_file_reads": 158,
     "osf_associated_main_count": 73,
     "remaining_candidate_count": 12,
     "norare_source_record_count": 182,
@@ -42,6 +44,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -61,6 +64,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -80,6 +84,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -99,6 +104,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -116,14 +122,41 @@
       "osf_ids": [
         "re95x"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/processed_data/03_data_trial_main.csv",
+          "read_scope": "complete_csv",
+          "result": "完整表：37,264行、16列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "a4eb8e27ae40833172009e5e681aba3f07eb3cf56d78fddd373d9ee9510110e4",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/metadata/Variable_Dictionary_mb1.csv",
+          "read_scope": "complete_csv",
+          "result": "完整表：200行、7列。辅助资料；不代表全资源验收。",
+          "sha256": "8fdcb82f4dccd877095fd3f50a1f12987432eb5ee5b643a581115aa5b532a9b3",
+          "checked_on": "2026-10-19",
+          "file_role": "documentation_or_materials"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 1,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -141,6 +174,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -160,6 +194,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -179,6 +214,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -198,6 +234,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -217,6 +254,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -236,6 +274,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -255,6 +294,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -274,6 +314,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -293,6 +334,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -312,6 +354,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -331,6 +374,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -350,6 +394,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -369,6 +414,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -388,6 +434,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -407,6 +454,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -426,6 +474,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -506,6 +555,7 @@
           "sha256": "48183c1cda09ac2c6d0f7d1c3fae6e78700a11b27592bca1511ee66fc8fcc999"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -522,14 +572,49 @@
       "osf_ids": [
         "n63s2"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/598st/",
+          "read_scope": "archive_selected_members",
+          "result": "完整下载ZIP，目录470个成员；Data3888.NMG 2530条试次；Data3878.NMG 2530条试次；99DATA.NMG 2530条试次；325DATA.NMG 2530条试次。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "97159329c9318f667e9a917a1755ae2357f6827a83b8f59ca2ba143a9beb43c6",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/eu5ca/",
+          "read_scope": "archive_selected_members",
+          "result": "完整下载ZIP，目录820个成员；169DATA.LDT 3374条试次；Data2140.LDT 3372条试次；Data797.LDT 3374条试次；350DATA.LDT 3374条试次。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "f57f793896d38ccec369f25157685c9879c14c81bed513b7e0a510552614b210",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/rd632/",
+          "read_scope": "complete_text",
+          "result": "全文解码，1,510字符；没有据此声明表格解析。辅助资料；不代表全资源验收。",
+          "sha256": "81343116f673e103f753e351658118b67de8d3f1b054132c4caaf2443c4163c4",
+          "checked_on": "2026-10-19",
+          "file_role": "documentation_or_materials"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 5,
+        "inventory_complete_within_bounded_scope": true,
+        "downloaded_file_count": 3,
+        "readable_empirical_file_count": 2,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "按实际研究用途核对所需OSF文件、子组件和版本，区分观测数据、刺激、代码与统计输出。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -544,14 +629,41 @@
       "osf_ids": [
         "d7x6q"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/vb9je/",
+          "read_scope": "complete_xlsx_workbook",
+          "result": "完整工作簿：Sheet1 31,124行×8列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "a2a24ad3b0a918c6260f7e8c2949a729968ca68a6508229ac8fceeba21fdd770",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/2s8yx/",
+          "read_scope": "complete_xlsx_workbook",
+          "result": "完整工作簿：a 43,991行×8列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "0b929a3998096782272cc33c7b851a79cbe98fe13dae36293dfcc221b85dff62",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 3,
+        "inventory_complete_within_bounded_scope": true,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 2,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "按实际研究用途核对所需OSF文件、子组件和版本，区分观测数据、刺激、代码与统计输出。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -567,14 +679,41 @@
         "kj76e",
         "qpmf4"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/8ne54/",
+          "read_scope": "complete_xlsx_workbook",
+          "result": "完整工作簿：Sheet1 39,954行×9列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "1c9d26d0e63c59cf0673c2556b9bded8365981e59445c56c8938eccd29c8ec65",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/qz9vx/",
+          "read_scope": "complete_r_serialization",
+          "result": "R对象已读取：concreteness.participant 2,008,857行×14列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "7f4da4934c035c14a10a3f5eb95d4d83df7b18955c8f53189561112871b4210c",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 5,
+        "inventory_complete_within_bounded_scope": true,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 2,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "按实际研究用途核对所需OSF文件、子组件和版本，区分观测数据、刺激、代码与统计输出。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -589,14 +728,41 @@
       "osf_ids": [
         "7emr6"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/48wsc/",
+          "read_scope": "complete_csv",
+          "result": "完整表：39,707行、45列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "445d363fb1f9f3e50b86d88e2f46cdc9a22b5dd8a713ce4e7be2a773d57f43c5",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/7c9gr/",
+          "read_scope": "complete_text",
+          "result": "全文解码，4,746字符；没有据此声明表格解析。辅助资料；不代表全资源验收。",
+          "sha256": "8168ea0c0c7e0804e5127fc14060c45ed4c2f29e3a216b0bb8f820a77ccc6b5b",
+          "checked_on": "2026-10-19",
+          "file_role": "documentation_or_materials"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 45,
+        "inventory_complete_within_bounded_scope": true,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 1,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "按实际研究用途核对所需OSF文件、子组件和版本，区分观测数据、刺激、代码与统计输出。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -614,6 +780,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -633,6 +800,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -652,6 +820,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -671,6 +840,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -690,6 +860,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -709,6 +880,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -728,6 +900,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -747,6 +920,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -766,6 +940,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -785,6 +960,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -804,6 +980,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -823,6 +1000,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -842,6 +1020,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -858,14 +1037,41 @@
       "osf_ids": [
         "3527a"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "supporting_files_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/kxqeh/",
+          "read_scope": "complete_document_text",
+          "result": "PDF已抽取全部4页文本。辅助资料；不代表全资源验收。",
+          "sha256": "e3f3a401bd4eeff5c9dc7e050ccca8394c1f5988f8bbcfd727ca1bac5fed14fd",
+          "checked_on": "2026-10-19",
+          "file_role": "documentation_or_materials"
+        },
+        {
+          "url": "https://osf.io/download/jahw9/",
+          "read_scope": "complete_text",
+          "result": "全文解码，3,789字符；没有据此声明表格解析。辅助资料；不代表全资源验收。",
+          "sha256": "6b4b0910a4a682f30d3c52d3d68d66faac31f03cdc2de1761f72105f515a1a16",
+          "checked_on": "2026-10-19",
+          "file_role": "documentation_or_materials"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "auxiliary_only_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 21,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取的说明或模型派生表属于辅助资料；继续取得并解析主体行为/生理数据。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -883,6 +1089,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -902,6 +1109,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -921,6 +1129,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -940,6 +1149,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -959,6 +1169,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -978,6 +1189,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -997,6 +1209,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1016,6 +1229,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1035,6 +1249,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1062,6 +1277,7 @@
           "blob_sha": "96e8498369a9795d576c5120b50ef0843bf2d43f"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1081,6 +1297,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1100,6 +1317,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1120,6 +1338,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1158,6 +1377,7 @@
           "blob_sha": "cec791b7f666de59751fd6af6ffb5b76989203e1"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1177,6 +1397,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1196,6 +1417,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1215,6 +1437,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1234,6 +1457,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1253,6 +1477,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1272,6 +1497,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1298,6 +1524,7 @@
           "blob_sha": "46eb2cf9b596aa716720300734471c4eb1064067"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1317,6 +1544,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1336,6 +1564,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1355,6 +1584,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1381,6 +1611,7 @@
           "blob_sha": "0371d50db2793a9c8e8c595b03bde41f5005a931"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1400,6 +1631,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1419,6 +1651,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1438,6 +1671,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1457,6 +1691,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1476,6 +1711,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1495,6 +1731,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1514,6 +1751,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1533,6 +1771,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1552,6 +1791,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1571,6 +1811,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1590,6 +1831,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1609,6 +1851,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -1626,14 +1869,41 @@
       "osf_ids": [
         "b6rqh"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/q7yfx/",
+          "read_scope": "complete_r_serialization",
+          "result": "R对象已读取：rds_object 32,094行×164列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "adb5cdca5ba11ec27ee478a6d4459ee5be159cd6b34139e27421782e9006839f",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/3p98t/",
+          "read_scope": "complete_csv",
+          "result": "完整表：802,271行、17列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "1e6614805ef10aaf51c502fc8026af229b1a226f655126fb6b39b8daa2225873",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 79,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 2,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1648,14 +1918,33 @@
       "osf_ids": [
         "mg2r8"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/k87ta/",
+          "read_scope": "complete_csv",
+          "result": "完整表：407行、390列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "ab4d915033f4381c0af776d3982e50dcecf10fe7ce8d07ebc4057ce92a34ae1c",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 3,
+        "inventory_complete_within_bounded_scope": true,
+        "downloaded_file_count": 1,
+        "readable_empirical_file_count": 1,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "按实际研究用途核对所需OSF文件、子组件和版本，区分观测数据、刺激、代码与统计输出。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1671,14 +1960,41 @@
         "eawg5",
         "pd8ky"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/6a8wp/",
+          "read_scope": "complete_csv",
+          "result": "完整表：292,128行、8列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "91773ad16a3e8970936a12ae61dbfcefeecab705c0f84b5721a690ebb48b2abc",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/xs72e/",
+          "read_scope": "complete_csv",
+          "result": "完整表：2,209行、7列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "3fbe54f948fffac306743fa517bd3db7a4d51f454f24436e9f709b4002180b4d",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 8,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 2,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1698,8 +2014,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "access_unresolved",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1720,8 +2046,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "access_unresolved",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1742,8 +2078,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1764,8 +2110,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1786,8 +2142,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1808,8 +2174,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1830,8 +2206,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1852,8 +2238,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1874,8 +2270,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1896,8 +2302,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1918,8 +2334,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1940,8 +2366,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1962,8 +2398,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -1984,8 +2430,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2006,8 +2462,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2029,8 +2495,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2051,8 +2527,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2073,8 +2559,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2095,8 +2591,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2117,8 +2623,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2139,8 +2655,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2161,8 +2687,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2183,8 +2719,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2205,8 +2751,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2227,8 +2783,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2249,8 +2815,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2271,8 +2847,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2291,6 +2877,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2310,6 +2897,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2329,6 +2917,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2350,8 +2939,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2372,8 +2971,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2394,8 +3003,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2416,8 +3035,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2438,8 +3067,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2460,8 +3099,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2482,8 +3131,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2504,8 +3163,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2526,8 +3195,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2548,8 +3227,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2566,14 +3255,33 @@
       "osf_ids": [
         "g32rp"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "supporting_files_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/saraoe/natural-stories-dutch/73e105c095e560f60b0b213bb6a8ff1a68b2f8b1/stimuli/data/cloze.csv",
+          "read_scope": "complete_csv",
+          "result": "完整表：10,454行、6列。辅助资料；不代表全资源验收。",
+          "sha256": "c01db88ac156f36219b19767ba7ef5d7e09245a822c322e9101c1d07c8a9dcce",
+          "checked_on": "2026-10-19",
+          "file_role": "model_generated_auxiliary"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "auxiliary_only_readable",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 1,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取的说明或模型派生表属于辅助资料；继续取得并解析主体行为/生理数据。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -2593,8 +3301,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2615,8 +3333,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2635,6 +3363,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2655,6 +3384,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2675,6 +3405,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2694,6 +3425,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2713,6 +3445,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2733,6 +3466,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -2755,8 +3489,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2777,8 +3521,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2799,8 +3553,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2821,8 +3585,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2843,8 +3617,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2865,8 +3649,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2887,8 +3681,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2909,8 +3713,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2931,8 +3745,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2953,8 +3777,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2975,8 +3809,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -2992,14 +3836,33 @@
       "osf_ids": [
         "zq6ht"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://osf.io/download/ux6rb/",
+          "read_scope": "complete_csv",
+          "result": "完整表：6,720行、8列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "518f187e8f9091b22acce92cc445630efc144206e0c1b344a2ce8136937ce2ac",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": true,
+        "inventory_file_count_lower_bound": 1,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 1,
+        "readable_empirical_file_count": 1,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -3015,14 +3878,33 @@
       "osf_ids": [
         "h2pkv"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/phoebsc/Naturalistic-Free-Recall-Dataset/e1aea19210858b5ce6b32128e8df42b137effb8f/LMM_all.xlsx",
+          "read_scope": "complete_xlsx_workbook",
+          "result": "完整工作簿：Sheet1 17,628行×6列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "c6a551e57fd49d0c3271100e71dd83cc6b21048754f81274e68c74996c3bdfa3",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 1,
+        "readable_empirical_file_count": 1,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -3040,6 +3922,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3059,6 +3942,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3078,6 +3962,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3097,6 +3982,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3171,6 +4057,7 @@
           "result": "完整解析123225行、19列；按原始保留/正确反应标记得到99366试次、729名参与者，核对本语言2,000格均值和样本量，与发布汇总一致；未验证原始网页任务或全部资源。"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3190,6 +4077,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3208,6 +4096,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3226,6 +4115,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3244,6 +4134,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3262,6 +4153,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3280,6 +4172,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3298,6 +4191,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3316,6 +4210,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "检查平台的实际检索及获取流程；选出的具体数据另建资源记录并核对。"
       ]
@@ -3336,8 +4231,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3356,6 +4261,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3375,6 +4281,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3394,6 +4301,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3413,6 +4321,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3432,6 +4341,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3451,6 +4361,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3470,6 +4381,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3489,6 +4401,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3508,6 +4421,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3527,6 +4441,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3546,6 +4461,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3565,6 +4481,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3584,6 +4501,7 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": null,
       "next_steps": [
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3606,8 +4524,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3628,8 +4556,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3650,8 +4588,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3672,8 +4620,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3726,8 +4684,18 @@
           "blob_sha": "230c49b6f2e7cad64b386a8b227ac8d293550dfb"
         }
       ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3762,8 +4730,18 @@
           "blob_sha": "67d89a9793e8556a4a7fcc4d9f0821a9d68aca5d"
         }
       ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3784,8 +4762,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3806,8 +4794,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3828,8 +4826,18 @@
       "download_tested": false,
       "data_files_validated": false,
       "recorded_file_checks": [],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "deferred_api_rate_limit",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 0,
+        "readable_empirical_file_count": 0,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
+        "本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
@@ -3846,14 +4854,41 @@
       "osf_ids": [
         "w92me"
       ],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/stefanocoretta/coretta2018itaegg/ec1b00809244eb873f12011c0c06e7460f889947/data-raw/datasets/measurements.csv",
+          "read_scope": "complete_csv",
+          "result": "完整表：3,268行、14列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "f7f128c06f69a2c123ed6014f026ea8cf141b2c7d7868a34656465ac5c8706be",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/stefanocoretta/coretta2018itaegg/ec1b00809244eb873f12011c0c06e7460f889947/data/formants.rda",
+          "read_scope": "complete_r_serialization",
+          "result": "R对象已读取：formants 3,053行×39列。主体观测/常模数据；不代表全资源验收。",
+          "sha256": "7a22ca3aca65586e7655a9d5ae41db21a3dfa75ff5369bcf8946795818a58ea1",
+          "checked_on": "2026-10-19",
+          "file_role": "empirical_or_norm_data"
+        }
+      ],
+      "osf_audit": {
+        "checked_on": "2026-10-19",
+        "status": "empirical_data_readable",
+        "root_metadata_read": false,
+        "inventory_file_count_lower_bound": 0,
+        "inventory_complete_within_bounded_scope": false,
+        "downloaded_file_count": 2,
+        "readable_empirical_file_count": 2,
+        "report_path": "catalog/osf-file-audit-2026-10-19.md"
+      },
       "next_steps": [
-        "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -3890,6 +4925,7 @@
           "blob_sha": "522b0d52f3111fbe26f7f10e0e29b8896348e336"
         }
       ],
+      "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
@@ -3901,9 +4937,9 @@
       "candidate_id": "C002",
       "name": "墨西哥西班牙语岛效应",
       "category": "syntax",
-      "source_url": "https://osf.io/ma27h/",
+      "source_url": "https://osf.io/cs5z3/",
       "current_status": "materials_only",
-      "next_verification_step": "检查cs5z3是否存在可复用的原始/清洗后判断表；统计输出PDF不等于逐试次数据。"
+      "next_verification_step": "原目标继续采用cs5z3；若作者另行发布匿名判断数据再核对。"
     },
     {
       "candidate_id": "C003",
@@ -3911,7 +4947,7 @@
       "category": "syntax",
       "source_url": "https://osf.io/hcdqe/",
       "current_status": "release_unconfirmed",
-      "next_verification_step": "从项目最终组件或论文补充入口确认原始数据、代码和公开访问范围。"
+      "next_verification_step": "额度可用后优先读取vdsey文件清单；不把冻结注册0文件推成原项目没有数据。"
     },
     {
       "candidate_id": "C004",
@@ -3919,23 +4955,23 @@
       "category": "syntax",
       "source_url": "https://osf.io/qehr4/",
       "current_status": "release_unconfirmed",
-      "next_verification_step": "核对作者最终数据说明与公开文件；论文已发表不作为数据开放证明。"
+      "next_verification_step": "从Hou 2023正式论文或作者最终说明重新确认短编号及数据入口。"
     },
     {
       "candidate_id": "C006",
       "name": "简化关系从句的句法适应",
       "category": "syntax",
       "source_url": "https://osf.io/5aynd/",
-      "current_status": "release_unconfirmed",
-      "next_verification_step": "找到原始/清洗后SPR数据和分析脚本，避免把其他相近句法适应研究代入。"
+      "current_status": "materials_only",
+      "next_verification_step": "继续寻找同一Malone–Mauner研究的阅读时数据；海报结果不替代试次表。"
     },
     {
       "candidate_id": "C007",
       "name": "Acceptability Judgement Tasks and Grammatical Theory",
       "category": "syntax",
       "source_url": "https://osf.io/qe865/",
-      "current_status": "obsolete_link",
-      "next_verification_step": "寻找作者新的正式托管或OSF数据文件；不把其后来SAD数据集当作2015博士论文数据。"
+      "current_status": "release_unconfirmed",
+      "next_verification_step": "寻找该2015论文的独立数据附件或作者正式迁移入口；不以论文PDF或后续SAD数据替代。"
     },
     {
       "candidate_id": "C010",
@@ -3943,7 +4979,7 @@
       "category": "syntax",
       "source_url": "https://osf.io/2s8hm/",
       "current_status": "materials_only",
-      "next_verification_step": "查找匿名评分表及变量字典；不将其他作者的同名Reddit研究当作此调查数据。"
+      "next_verification_step": "定位同一调查的匿名反应表和变量字典后再考虑晋升。"
     },
     {
       "candidate_id": "C011",
@@ -3951,7 +4987,7 @@
       "category": "child-language",
       "source_url": "https://osf.io/j5epb/",
       "current_status": "release_unconfirmed",
-      "next_verification_step": "确认原注册对应的数据版本与访问条件；附录刺激或相关研究不能替代该项目原始EEG数据。"
+      "next_verification_step": "额度可用后检查7qk6u的实际数据和访问条件。"
     },
     {
       "candidate_id": "C012",
@@ -3959,7 +4995,7 @@
       "category": "child-language",
       "source_url": "https://osf.io/9z5qn/",
       "current_status": "access_restricted",
-      "next_verification_step": "按官方流程申请ECOLANG访问，并另确认新增儿童转写是否已发布。"
+      "next_verification_step": "只读复查rjdqb及ECOLANG发布说明；申请数据另按用户授权处理。"
     },
     {
       "candidate_id": "C013",
@@ -3967,7 +5003,7 @@
       "category": "sign-figurative",
       "source_url": "https://osf.io/kuqfe/",
       "current_status": "preregistration_only",
-      "next_verification_step": "确认完成研究与最终数据仓库，不能以相近主题实验替代。"
+      "next_verification_step": "额度可用后检查96ype是否已有完成研究数据。"
     },
     {
       "candidate_id": "C016",
@@ -3975,7 +5011,7 @@
       "category": "social-interaction",
       "source_url": "https://osf.io/sa8ep/",
       "current_status": "release_unconfirmed",
-      "next_verification_step": "核实sa8ep的最终数据或建立明确同源关系；相关公开数据可另行查阅。"
+      "next_verification_step": "先查jzu2q最终文件并核实研究身份，保留原任务边界。"
     },
     {
       "candidate_id": "C020",
@@ -3983,7 +5019,7 @@
       "category": "morphology",
       "source_url": "https://osf.io/vmdwt/",
       "current_status": "release_unconfirmed",
-      "next_verification_step": "寻找作者最终数据发布或对应文件清单；不能把其他复合词MEG实验当作此研究。"
+      "next_verification_step": "等待或寻找作者对这两项复合词阅读实验的正式数据发布。"
     },
     {
       "candidate_id": "C022",
@@ -3991,7 +5027,7 @@
       "category": "morphology",
       "source_url": "https://osf.io/4stgu/",
       "current_status": "materials_only",
-      "next_verification_step": "检查是否另有机器可读研究编码及效应量数据；不把其他作者2025年Figshare元分析数据当作此项目。"
+      "next_verification_step": "只有补充统计与图形，继续保留候选；若另发布研究级编码表再晋升。"
     }
   ],
   "norare_sources": [

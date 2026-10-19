@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.3.0",
-  "catalog_version": "2.2.3",
-  "updated_on": "2026-10-18",
+  "catalog_version": "2.3.0",
+  "updated_on": "2026-10-19",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 179,
+  "resource_count": 180,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -1108,10 +1108,11 @@
       "related_ids": [
         "R029",
         "R043",
-        "R147"
+        "R147",
+        "R180"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-18",
+        "documentation_checked_on": "2026-10-19",
         "scope": "resource_documentation_and_selected_file_checks",
         "download_tested": true,
         "data_files_validated": false,
@@ -1123,7 +1124,7 @@
           "https://smallworldofwords.org/api/project/research/releases",
           "https://github.com/lib314a/SWOWZH"
         ],
-        "note": "本次领取两份正式包并通过官方SHA-256校验；检查10个选定CSV，平衡反应文件遍历全部行且检查cue/R1/R2/R3四列，其余选定表完整解析。中英全条件可接531组，排除1组重复启动后530组；未完成语义等价、人口变量及全库验收。 追加英语平衡反应元数据检查：83,864个参与者，自报美式/英式英语组有1,968个共同提示词每组至少20名有效R1不重复作答者；未据此认定群体效应或测量稳定性。",
+        "note": "本次领取两份正式包并通过官方SHA-256校验；检查10个选定CSV，平衡反应文件遍历全部行且检查cue/R1/R2/R3四列，其余选定表完整解析。中英全条件可接531组，排除1组重复启动后530组；未完成语义等价、人口变量及全库验收。 追加英语平衡反应元数据检查：83,864个参与者，自报美式/英式英语组有1,968个共同提示词每组至少20名有效R1不重复作答者；未据此认定群体效应或测量稳定性。 2026-10-19完成英美等样本R1 pilot：1,968词每组20人，参与者不重叠分半及年龄段/性别匹配均显示聚合信号；不据此宣称每词差异可靠。三模型共同1,952词的比较与评分限制见reference-group-pilot报告。",
         "file_checks": [
           {
             "url": "https://smallworldofwords.org/en/project/research#SWOW-EN18",
@@ -8519,6 +8520,76 @@
         ],
         "note": "Wiki明确数据及代码范围和分开许可；作者R数据包DESCRIPTION同时确认数据内容、版本及CC BY 4.0。"
       }
+    },
+    {
+      "id": "R180",
+      "name": "LLM World of Words（LWOW，模型生成英语联想）",
+      "category": "lexical-cognition",
+      "entry_type": "dataset",
+      "language_scope": "英语；Mistral、Llama3与Haiku存档生成反应",
+      "language_codes": [
+        "en"
+      ],
+      "data_type": "模型生成自由联想JSONL/CSV、语义网络及处理代码",
+      "description": "与SWOW提示词相衔接的三模型自由联想存档，作者提供生成、清洗、网络和分析代码；可检验模型反应分布与人类常模的关系。",
+      "access_mode": "open_data",
+      "access_notes": "作者GitHub公开下载。本轮完整解析三份原始JSONL，并核对固定提交与文件Git blob哈希；人类SWOW数据须另按其许可领取。",
+      "license_note": "作者仓库CC BY 4.0；该许可不替代SWOW原数据许可。目录不重新分发上游文件。",
+      "limitations": "原始存档已经过生成阶段解析，处理后R1还可能包含前移反应。本轮原始Llama3记录数及每词数量不均，等样本比较另取共同有效词表；旧模型/提示语不代表当前模型，人机排名依赖评分构念。",
+      "source_url": "https://github.com/LLMWorldOfWords/LWOW",
+      "additional_urls": [
+        "https://www.nature.com/articles/s41597-025-05156-9",
+        "https://github.com/LLMWorldOfWords/LWOW/tree/455ca9d475b4c3a55d48952689ba6db18cb82574"
+      ],
+      "tags": [
+        "人类与模型",
+        "联想",
+        "语义网络",
+        "英语",
+        "模型生成数据",
+        "测量校准"
+      ],
+      "related_ids": [
+        "R022"
+      ],
+      "verification": {
+        "documentation_checked_on": "2026-10-19",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://github.com/LLMWorldOfWords/LWOW",
+          "https://www.nature.com/articles/s41597-025-05156-9"
+        ],
+        "note": "完整解析三份固定版本JSONL共3,742,979行，检查cue/response结构、有效首反应覆盖及Git blob哈希；共同1,952词用于英美等样本pilot。仅选定文件与当前用途检查，未重新运行生成或复现全篇分析。",
+        "file_checks": [
+          {
+            "url": "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/data/original_datasets/mistral_free_associations.jsonl",
+            "read_scope": "complete_jsonl",
+            "result": "完整解析1,228,200行；检查首个存档反应、共同提示词覆盖，字节数78,011,131及Git blob哈希一致。非全资源或模型生成验收。",
+            "blob_sha": "7a39663e156481c190328ce26a5f3961af053116"
+          },
+          {
+            "url": "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/data/original_datasets/llama3-8b_free_associations.jsonl",
+            "read_scope": "complete_jsonl",
+            "result": "完整解析1,286,579行；检查首个存档反应、共同提示词覆盖，字节数86,925,951及Git blob哈希一致。非全资源或模型生成验收。",
+            "blob_sha": "7139885abaa8516487bbc84cdfe3ebbfb9fbb3e7"
+          },
+          {
+            "url": "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/data/original_datasets/haiku_free_associations.jsonl",
+            "read_scope": "complete_jsonl",
+            "result": "完整解析1,228,200行；检查首个存档反应、共同提示词覆盖，字节数100,263,719及Git blob哈希一致。非全资源或模型生成验收。",
+            "blob_sha": "522b0d52f3111fbe26f7f10e0e29b8896348e336"
+          }
+        ]
+      },
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "derived_data"
     }
   ]
 }

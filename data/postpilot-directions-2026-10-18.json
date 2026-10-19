@@ -264,7 +264,8 @@
       "url": "https://github.com/LLMWorldOfWords/LWOW",
       "type": "data_repository",
       "read_depth": "README, license-file existence and recursive file listing; three complete response tables NOT downloaded or parsed",
-      "tree_sha": "455ca9d475b4c3a55d48952689ba6db18cb82574"
+      "tree_sha": "b0d1634d216ef061d327d3684cc1a584ff899d5f",
+      "commit_sha": "455ca9d475b4c3a55d48952689ba6db18cb82574"
     },
     {
       "id": "S08",
@@ -311,5 +312,10 @@
     }
   ],
   "privacy_and_license": "Only aggregate counts, decisions and provenance are included. SWOW responses, subgroup item-level distributions, participant metadata and source data files are not redistributed.",
-  "existing_study_boundary": "Links to prior research themes are contextual; progress and results of those separate projects were not revalidated."
+  "existing_study_boundary": "Links to prior research themes are contextual; progress and results of those separate projects were not revalidated.",
+  "follow_up": {
+    "date": "2026-10-19",
+    "report": "../research/reference-group-pilot-2026-10-19.md",
+    "result": "Human aggregate stability passes; tested model ordering did not reverse by human reference; score calibration requires adjustment."
+  }
 }

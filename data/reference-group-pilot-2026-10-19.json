@@ -1,0 +1,1151 @@
+{
+  "date": "2026-10-19",
+  "stage": "exploratory_equal_N_reference_group_pilot",
+  "software": {
+    "python": "3.11.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2"
+  },
+  "input_audit": {
+    "all_rows": 1228200,
+    "all_cues": 12282,
+    "all_people": 83864,
+    "member": "SWOW-EN.R100.20180827.csv",
+    "duplicate_rows_beyond_first": 1,
+    "duplicate_R1_conflicting_keys": 0,
+    "ambiguous_normalized_cue_keys": 0,
+    "regional_rows_before_missing_filter": 816705,
+    "regional_missing_R1_rows": 11443,
+    "qualified_cues": 1968,
+    "regional_people_valid_all_cues": 53752,
+    "eligible_rows_by_group": {
+      "US": 87829,
+      "UK": 45464
+    },
+    "eligible_people_by_group": {
+      "UK": 5997,
+      "US": 14176
+    }
+  },
+  "inputs": [
+    {
+      "file": "SWOW-EN18.zip",
+      "bytes": 80349486,
+      "sha256": "69ee1f4f19c657bb2f6e1bc27abd2becbcd01d83d1fdade94a0455b4e66eb093",
+      "git_blob_sha1": "c0a20274e32f5d92863463ca10fe3d79c5663f44"
+    },
+    {
+      "file": "EnglishCustomDict.txt",
+      "bytes": 227376,
+      "sha256": "de2721d16eb0ab079295a74307d3b3c9afb08358b5f2ae2a0889cee91da01fd6",
+      "git_blob_sha1": "63ead07dbbadc0cf244c455c22baf43b81eb2a09"
+    }
+  ],
+  "self_tests": {
+    "unbiased_U_toy_counts": true,
+    "cross_half_identity": true,
+    "vectorized_vs_counter": true,
+    "unit_weights_agree": true
+  },
+  "human": {
+    "cues": 1968,
+    "people_per_group_per_cue": 20,
+    "seed": 20261019,
+    "resampling_iterations": 500,
+    "primary_corrected_squared_L2": 0.028777679717586636,
+    "primary_multiplier_interval95": [
+      0.023848249360491614,
+      0.03350938965015093
+    ],
+    "equal_N_allocation_distribution_not_confidence_interval": {
+      "mean": 0.028114053005990576,
+      "median": 0.028085419341035502,
+      "p025": 0.026692721705177565,
+      "p975": 0.02952941805733846,
+      "min": 0.025453706675224636,
+      "max": 0.030947662601626007,
+      "fraction_above_zero": 1.0
+    },
+    "spelling_normalized_distance": 0.028792121309370974,
+    "spelling_normalized_interval95": [
+      0.02386108055461825,
+      0.033511675909712824
+    ],
+    "primary_half_replication": {
+      "cues": 1697,
+      "people_per_cell": 8,
+      "participant_halves_disjoint": true,
+      "between_group_empirical_squared_L2": 0.2480296110783736,
+      "within_group_empirical_squared_L2": 0.21844615497937536,
+      "between_minus_within_cross_half_inner_product": 0.02958345609899823,
+      "multiplier_interval95": [
+        0.021417036844237333,
+        0.03720289018749799
+      ],
+      "contrast_vector_cosine": 0.11906367444437056,
+      "fraction_cues_with_positive_cross_half_product": 0.5662934590453742,
+      "spelling_normalized_cross_half_product": 0.029620285798467885,
+      "spelling_normalized_interval95": [
+        0.021493900169477186,
+        0.03720155422645936
+      ]
+    },
+    "ten_fixed_participant_splits": [
+      {
+        "seed": 20261019,
+        "cues": 1697,
+        "cross_half_excess": 0.02958345609899823
+      },
+      {
+        "seed": 20261020,
+        "cues": 1727,
+        "cross_half_excess": 0.028626230457440647
+      },
+      {
+        "seed": 20261021,
+        "cues": 1714,
+        "cross_half_excess": 0.02778588098016336
+      },
+      {
+        "seed": 20261022,
+        "cues": 1745,
+        "cross_half_excess": 0.02790114613180516
+      },
+      {
+        "seed": 20261023,
+        "cues": 1713,
+        "cross_half_excess": 0.02824905137186223
+      },
+      {
+        "seed": 20261024,
+        "cues": 1720,
+        "cross_half_excess": 0.027616279069767442
+      },
+      {
+        "seed": 20261025,
+        "cues": 1707,
+        "cross_half_excess": 0.028339191564147628
+      },
+      {
+        "seed": 20261026,
+        "cues": 1723,
+        "cross_half_excess": 0.026253264654672082
+      },
+      {
+        "seed": 20261027,
+        "cues": 1741,
+        "cross_half_excess": 0.02556002297530155
+      },
+      {
+        "seed": 20261028,
+        "cues": 1722,
+        "cross_half_excess": 0.025669642857142856
+      }
+    ],
+    "demographic_sensitivity": {
+      "cues": 1153,
+      "exact_age_bin_gender_counts_matched": true,
+      "matched_distance": 0.028027114620897416,
+      "matched_interval95": [
+        0.021527749595227644,
+        0.03438133357161823
+      ],
+      "unmatched_same_cues_distance": 0.027844524581184082,
+      "unmatched_same_cues_interval95": [
+        0.021297925193926318,
+        0.03438455801913812
+      ]
+    },
+    "demographics_of_primary_equal_N_sample": {
+      "US": {
+        "sampled_response_rows": {
+          "n": 39360,
+          "mean_age": 36.51064532520325,
+          "gender_proportions": {
+            "Fe": 0.7047510162601626,
+            "Ma": 0.2895071138211382,
+            "X": 0.005741869918699187
+          },
+          "year_proportions": {
+            "2011": 0.0001016260162601626,
+            "2012": 0.02352642276422764,
+            "2013": 0.004369918699186992,
+            "2014": 0.6782266260162602,
+            "2015": 0.07228150406504065,
+            "2016": 0.15556402439024392,
+            "2017": 0.06565040650406503,
+            "2018": 0.00027947154471544717
+          }
+        },
+        "unique_people": {
+          "n": 11689,
+          "mean_age": 36.77388998203439,
+          "gender_proportions": {
+            "Fe": 0.6969800667294037,
+            "Ma": 0.29523483617075885,
+            "X": 0.007785097099837454
+          },
+          "year_proportions": {
+            "2011": 0.0003422020703225255,
+            "2012": 0.07622551116434255,
+            "2013": 0.014115835400804175,
+            "2014": 0.49379758747540425,
+            "2015": 0.10454273248353152,
+            "2016": 0.22388570450851228,
+            "2017": 0.08691932586192147,
+            "2018": 0.00017110103516126274
+          }
+        },
+        "country_same_as_native_variety_fraction": 0.9149136178861789
+      },
+      "UK": {
+        "sampled_response_rows": {
+          "n": 39360,
+          "mean_age": 39.651346544715445,
+          "gender_proportions": {
+            "Fe": 0.6244410569105691,
+            "Ma": 0.3720528455284553,
+            "X": 0.00350609756097561
+          },
+          "year_proportions": {
+            "2011": 0.0001016260162601626,
+            "2012": 0.02372967479674797,
+            "2013": 0.003709349593495935,
+            "2014": 0.6826727642276422,
+            "2015": 0.04390243902439024,
+            "2016": 0.1821138211382114,
+            "2017": 0.06377032520325203
+          }
+        },
+        "unique_people": {
+          "n": 5956,
+          "mean_age": 38.61349899261249,
+          "gender_proportions": {
+            "Fe": 0.6359973136333109,
+            "Ma": 0.35980523841504364,
+            "X": 0.0041974479516454
+          },
+          "year_proportions": {
+            "2011": 0.000671591672263264,
+            "2012": 0.13213566151779718,
+            "2013": 0.019811954331766288,
+            "2014": 0.485392881128274,
+            "2015": 0.05221625251846877,
+            "2016": 0.22884486232370718,
+            "2017": 0.0809267965077233
+          }
+        },
+        "country_same_as_native_variety_fraction": 0.7922002032520326
+      }
+    },
+    "spelling_mapping_changed_fraction_by_group": {
+      "US": 0.0006376026141707181,
+      "UK": 0.00028594052437093084
+    },
+    "gate": {
+      "pass": true,
+      "rule": "primary 20-person distance, disjoint-half excess, and spelling-normalized disjoint-half excess each have multiplier lower bound > 0",
+      "scope": "aggregate signal; not reliable differences for every individual cue; not cultural causation"
+    }
+  },
+  "script_sha256": "7d1b2513dce3e188569b2e8b78ff343664ce3d2002e575a8439fb1c2af123caf",
+  "plan_sha256": "8ec8d8c2e37f92aaa7cfcf193fe3c2b8fb3e980b9820907750f2d08bfa6d6515",
+  "models": {
+    "cues": 1952,
+    "human_cues_not_in_all_model_eligible_sets": 16,
+    "human_per_reference_per_cue": 20,
+    "stored_model_responses_per_model_per_cue": 20,
+    "model_inputs": [
+      {
+        "file": "mistral_free_associations.jsonl",
+        "bytes": 78011131,
+        "sha256": "2956bb3ac9edf0e87953a3571a963aab15cabf73d7904038fa680de122a0eb9c",
+        "git_blob_sha1": "7a39663e156481c190328ce26a5f3961af053116",
+        "kind": "Mistral",
+        "all_jsonl_rows": 1228200,
+        "valid_R1_rows_on_human_cues": 192411,
+        "missing_or_invalid_response0_rows": 4389,
+        "schema_or_empty_list_rows": 1480,
+        "covered_cues": 1968,
+        "minimum_valid_R1_per_covered_cue": 72,
+        "cues_at_least_20": 1968
+      },
+      {
+        "file": "llama3-8b_free_associations.jsonl",
+        "bytes": 86925951,
+        "sha256": "2aaf4a1a641d33994ff840ac3348cbd55a69f6ea114a7490f8e2d59f65795caf",
+        "git_blob_sha1": "7139885abaa8516487bbc84cdfe3ebbfb9fbb3e7",
+        "kind": "Llama3",
+        "all_jsonl_rows": 1286579,
+        "valid_R1_rows_on_human_cues": 204921,
+        "missing_or_invalid_response0_rows": 0,
+        "schema_or_empty_list_rows": 0,
+        "covered_cues": 1958,
+        "minimum_valid_R1_per_covered_cue": 4,
+        "cues_at_least_20": 1952
+      },
+      {
+        "file": "haiku_free_associations.jsonl",
+        "bytes": 100263719,
+        "sha256": "f89bea3aaa1560922e60d14a32f17aaff0629220d362993635b35dd20ce2fc04",
+        "git_blob_sha1": "522b0d52f3111fbe26f7f10e0e29b8896348e336",
+        "kind": "Haiku",
+        "all_jsonl_rows": 1228200,
+        "valid_R1_rows_on_human_cues": 196800,
+        "missing_or_invalid_response0_rows": 0,
+        "schema_or_empty_list_rows": 0,
+        "covered_cues": 1968,
+        "minimum_valid_R1_per_covered_cue": 100,
+        "cues_at_least_20": 1968
+      }
+    ],
+    "references": [
+      {
+        "US_share": 0,
+        "human_total_per_cue": 20,
+        "models": [
+          {
+            "name": "Mistral",
+            "distance": 0.24094734145815366,
+            "distance_interval95": [
+              0.229683979702156,
+              0.2521200031606605
+            ],
+            "overlap": 0.09696593237704902,
+            "overlap_interval95": [
+              0.09095722070688707,
+              0.10305495571627371
+            ],
+            "allocation_distance": {
+              "mean": 0.24153784135030196,
+              "median": 0.24161393172993967,
+              "p025": 0.2379199134490941,
+              "p975": 0.2447611087144089,
+              "min": 0.23614983283002616,
+              "max": 0.2467970772217425,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.2410321397756688,
+            "spelling_normalized_overlap": 0.09700307377049164,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Llama3",
+            "distance": 0.15153769413287324,
+            "distance_interval95": [
+              0.14383281975737608,
+              0.15913522738275765
+            ],
+            "overlap": 0.013557889344262343,
+            "overlap_interval95": [
+              0.012226212959935333,
+              0.0150129532922971
+            ],
+            "allocation_distance": {
+              "mean": 0.15186220232959455,
+              "median": 0.15185599115616902,
+              "p025": 0.1504176047508628,
+              "p975": 0.15350559817191547,
+              "min": 0.1486793572044869,
+              "max": 0.15467024374460767,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 1.0,
+            "probability_best_in_multiplier_draws": 1.0,
+            "spelling_normalized_distance": 0.15136230047454713,
+            "spelling_normalized_overlap": 0.01365906762295087,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Haiku",
+            "distance": 0.5385933455565156,
+            "distance_interval95": [
+              0.5241215094965266,
+              0.5531666243908145
+            ],
+            "overlap": 0.1367443647540979,
+            "overlap_interval95": [
+              0.12805954239111184,
+              0.14596705969154034
+            ],
+            "allocation_distance": {
+              "mean": 0.5380360607204487,
+              "median": 0.5379805462683352,
+              "p025": 0.5344086193647546,
+              "p975": 0.5420205693216138,
+              "min": 0.5312218237704915,
+              "max": 0.54431622088007,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.5374793733822274,
+            "spelling_normalized_overlap": 0.13730404713114705,
+            "probability_best_overlap_in_allocation_draws": 1.0,
+            "probability_best_overlap_in_multiplier_draws": 1.0
+          }
+        ],
+        "point_distance_order": [
+          "Llama3",
+          "Mistral",
+          "Haiku"
+        ],
+        "point_overlap_order": [
+          "Haiku",
+          "Mistral",
+          "Llama3"
+        ],
+        "human_U_concentration": 0.1304950388265744
+      },
+      {
+        "US_share": 0.25,
+        "human_total_per_cue": 20,
+        "models": [
+          {
+            "name": "Mistral",
+            "distance": 0.2337977724793544,
+            "distance_interval95": [
+              0.22288520095197892,
+              0.24370911893957042
+            ],
+            "overlap": 0.09818391393442613,
+            "overlap_interval95": [
+              0.09216015839564826,
+              0.10414502235012574
+            ],
+            "allocation_distance": {
+              "mean": 0.23378096844955626,
+              "median": 0.23375111462698772,
+              "p025": 0.22981574493675228,
+              "p975": 0.23759365189838086,
+              "min": 0.2268785533249107,
+              "max": 0.23906727147017137,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.2338901685566378,
+            "spelling_normalized_overlap": 0.098217213114754,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Llama3",
+            "distance": 0.1461837194163688,
+            "distance_interval95": [
+              0.13951823483174589,
+              0.15346447767228913
+            ],
+            "overlap": 0.013878073770491862,
+            "overlap_interval95": [
+              0.012507730681770112,
+              0.015410546534895927
+            ],
+            "allocation_distance": {
+              "mean": 0.14529545750261927,
+              "median": 0.14528805524312832,
+              "p025": 0.14317220072145,
+              "p975": 0.14752247249302813,
+              "min": 0.14189159181252342,
+              "max": 0.14887546414704786,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 1.0,
+            "probability_best_in_multiplier_draws": 1.0,
+            "spelling_normalized_distance": 0.1459928702391224,
+            "spelling_normalized_overlap": 0.013986936475409899,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Haiku",
+            "distance": 0.5314693913318127,
+            "distance_interval95": [
+              0.5179883303757856,
+              0.5464755477244998
+            ],
+            "overlap": 0.13794953893442619,
+            "overlap_interval95": [
+              0.12923083481587438,
+              0.1470785425674921
+            ],
+            "allocation_distance": {
+              "mean": 0.531115745196752,
+              "median": 0.5311045375670216,
+              "p025": 0.5262495486121803,
+              "p975": 0.5358048988698694,
+              "min": 0.523922981441822,
+              "max": 0.5392662817391833,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.5303732628189322,
+            "spelling_normalized_overlap": 0.13850025614754094,
+            "probability_best_overlap_in_allocation_draws": 1.0,
+            "probability_best_overlap_in_multiplier_draws": 1.0
+          }
+        ],
+        "point_distance_order": [
+          "Llama3",
+          "Mistral",
+          "Haiku"
+        ],
+        "point_overlap_order": [
+          "Haiku",
+          "Mistral",
+          "Llama3"
+        ],
+        "human_U_concentration": 0.12578143296252936
+      },
+      {
+        "US_share": 0.5,
+        "human_total_per_cue": 20,
+        "models": [
+          {
+            "name": "Mistral",
+            "distance": 0.22758857312338243,
+            "distance_interval95": [
+              0.21678832011834662,
+              0.23801507797058455
+            ],
+            "overlap": 0.09908811475409815,
+            "overlap_interval95": [
+              0.09281851066857073,
+              0.10508807222866016
+            ],
+            "allocation_distance": {
+              "mean": 0.2294522114969801,
+              "median": 0.2294453881459113,
+              "p025": 0.22539140093231708,
+              "p975": 0.2334199452802942,
+              "min": 0.22367748478094152,
+              "max": 0.2345746153293063,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.22768903988112377,
+            "spelling_normalized_overlap": 0.0991201331967211,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Llama3",
+            "distance": 0.14175474547023295,
+            "distance_interval95": [
+              0.13504214018792984,
+              0.14830673241345838
+            ],
+            "overlap": 0.013892161885245962,
+            "overlap_interval95": [
+              0.012568422053932366,
+              0.01532319882026212
+            ],
+            "allocation_distance": {
+              "mean": 0.1421223921484038,
+              "median": 0.14209145216182523,
+              "p025": 0.13985526091098657,
+              "p975": 0.14465425287304662,
+              "min": 0.13844738639631865,
+              "max": 0.14631605910267478,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 1.0,
+            "probability_best_in_multiplier_draws": 1.0,
+            "spelling_normalized_distance": 0.14154635221934617,
+            "spelling_normalized_overlap": 0.014012551229508254,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Haiku",
+            "distance": 0.5272811960742008,
+            "distance_interval95": [
+              0.5130642276954416,
+              0.5432002450448261
+            ],
+            "overlap": 0.1378432377049181,
+            "overlap_interval95": [
+              0.12915870732733367,
+              0.14658061688435992
+            ],
+            "allocation_distance": {
+              "mean": 0.5276580384490941,
+              "median": 0.527736674336113,
+              "p025": 0.5226395416157364,
+              "p975": 0.5323201653275093,
+              "min": 0.5209928787987718,
+              "max": 0.5355885251893399,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.5263698800450568,
+            "spelling_normalized_overlap": 0.13830430327868856,
+            "probability_best_overlap_in_allocation_draws": 1.0,
+            "probability_best_overlap_in_multiplier_draws": 1.0
+          }
+        ],
+        "point_distance_order": [
+          "Llama3",
+          "Mistral",
+          "Haiku"
+        ],
+        "point_overlap_order": [
+          "Haiku",
+          "Mistral",
+          "Llama3"
+        ],
+        "human_U_concentration": 0.12138063524590142
+      },
+      {
+        "US_share": 0.75,
+        "human_total_per_cue": 20,
+        "models": [
+          {
+            "name": "Mistral",
+            "distance": 0.22707298471588788,
+            "distance_interval95": [
+              0.21660474043314457,
+              0.23831669139782763
+            ],
+            "overlap": 0.09935963114754076,
+            "overlap_interval95": [
+              0.09315627476913972,
+              0.10528035838905889
+            ],
+            "allocation_distance": {
+              "mean": 0.2286906469843923,
+              "median": 0.22874824981896336,
+              "p025": 0.22475651310493164,
+              "p975": 0.23289375883516433,
+              "min": 0.22103820642795513,
+              "max": 0.23499354816344137,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.22714809083415483,
+            "spelling_normalized_overlap": 0.09940317622950798,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Llama3",
+            "distance": 0.1421305505053618,
+            "distance_interval95": [
+              0.13605968781672617,
+              0.14908212576838917
+            ],
+            "overlap": 0.013717981557377095,
+            "overlap_interval95": [
+              0.012407254487305112,
+              0.01518138553264586
+            ],
+            "allocation_distance": {
+              "mean": 0.14260469546368484,
+              "median": 0.14263883726349685,
+              "p025": 0.14018574921711305,
+              "p975": 0.14510797088295815,
+              "min": 0.13885692233914707,
+              "max": 0.1467311577483669,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 1.0,
+            "probability_best_in_multiplier_draws": 1.0,
+            "spelling_normalized_distance": 0.14193009579532853,
+            "spelling_normalized_overlap": 0.01383324795081972,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Haiku",
+            "distance": 0.5263275953716268,
+            "distance_interval95": [
+              0.5129370465564188,
+              0.5421306324059426
+            ],
+            "overlap": 0.1383337602459015,
+            "overlap_interval95": [
+              0.13020456996607568,
+              0.14660167752301526
+            ],
+            "allocation_distance": {
+              "mean": 0.5277364944283095,
+              "median": 0.5276458211358317,
+              "p025": 0.5227775714902009,
+              "p975": 0.5333214031733404,
+              "min": 0.5198895724839759,
+              "max": 0.5355938819256124,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.5252577219816973,
+            "spelling_normalized_overlap": 0.13887295081967196,
+            "probability_best_overlap_in_allocation_draws": 1.0,
+            "probability_best_overlap_in_multiplier_draws": 1.0
+          }
+        ],
+        "point_distance_order": [
+          "Llama3",
+          "Mistral",
+          "Haiku"
+        ],
+        "point_overlap_order": [
+          "Haiku",
+          "Mistral",
+          "Llama3"
+        ],
+        "human_U_concentration": 0.1214080796252921
+      },
+      {
+        "US_share": 1,
+        "human_total_per_cue": 20,
+        "models": [
+          {
+            "name": "Mistral",
+            "distance": 0.23063645923209639,
+            "distance_interval95": [
+              0.2197709663826432,
+              0.24120612098026178
+            ],
+            "overlap": 0.10006275614754101,
+            "overlap_interval95": [
+              0.0931818383124496,
+              0.1065990219038616
+            ],
+            "allocation_distance": {
+              "mean": 0.23145378693917165,
+              "median": 0.23139573446937028,
+              "p025": 0.22744891878774817,
+              "p975": 0.2354427139506037,
+              "min": 0.22452113891285622,
+              "max": 0.23675852027610028,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.23069294650560804,
+            "spelling_normalized_overlap": 0.1001127049180328,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Llama3",
+            "distance": 0.1472104184641928,
+            "distance_interval95": [
+              0.14027505584688102,
+              0.15412275132095335
+            ],
+            "overlap": 0.013662909836065652,
+            "overlap_interval95": [
+              0.01232177059119923,
+              0.015162643790225487
+            ],
+            "allocation_distance": {
+              "mean": 0.14653739996764453,
+              "median": 0.14650237273511652,
+              "p025": 0.1442718770222175,
+              "p975": 0.14878318458800707,
+              "min": 0.14326925150992217,
+              "max": 0.14997977782571217,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 1.0,
+            "probability_best_in_multiplier_draws": 1.0,
+            "spelling_normalized_distance": 0.14704513589301077,
+            "spelling_normalized_overlap": 0.013757684426229584,
+            "probability_best_overlap_in_allocation_draws": 0.0,
+            "probability_best_overlap_in_multiplier_draws": 0.0
+          },
+          {
+            "name": "Haiku",
+            "distance": 0.5318582830025887,
+            "distance_interval95": [
+              0.518290295510858,
+              0.5488973992314103
+            ],
+            "overlap": 0.13805327868852466,
+            "overlap_interval95": [
+              0.1295699380466075,
+              0.1463578064112828
+            ],
+            "allocation_distance": {
+              "mean": 0.5312926364322692,
+              "median": 0.531171403149267,
+              "p025": 0.5263717037855915,
+              "p975": 0.5366426337359799,
+              "min": 0.5244592590595342,
+              "max": 0.5400304680759279,
+              "fraction_above_zero": 1.0
+            },
+            "probability_best_in_allocation_draws": 0.0,
+            "probability_best_in_multiplier_draws": 0.0,
+            "spelling_normalized_distance": 0.5308645653580675,
+            "spelling_normalized_overlap": 0.13855148565573774,
+            "probability_best_overlap_in_allocation_draws": 1.0,
+            "probability_best_overlap_in_multiplier_draws": 1.0
+          }
+        ],
+        "point_distance_order": [
+          "Llama3",
+          "Mistral",
+          "Haiku"
+        ],
+        "point_overlap_order": [
+          "Haiku",
+          "Mistral",
+          "Llama3"
+        ],
+        "human_U_concentration": 0.1263778041415011
+      }
+    ],
+    "pairwise_comparisons": [
+      {
+        "model_A": "Mistral",
+        "model_B": "Llama3",
+        "distance_A_minus_B_by_reference": [
+          0.08940964732528042,
+          0.08761405306298561,
+          0.08583382765314948,
+          0.08494243421052608,
+          0.08342604076790358
+        ],
+        "paired_interval95_by_reference": [
+          [
+            0.0772644875001957,
+            0.10178616012501539
+          ],
+          [
+            0.07585498310581881,
+            0.10041355772547651
+          ],
+          [
+            0.07378211031023046,
+            0.09831729237787042
+          ],
+          [
+            0.07265914933076967,
+            0.09635524148297119
+          ],
+          [
+            0.07105843670108214,
+            0.09555971048299264
+          ]
+        ],
+        "US_minus_UK_change_in_pairwise_gap": -0.0059836065573768416,
+        "change_interval95": [
+          -0.014991231402090731,
+          0.003642482688084154
+        ],
+        "point_order_reversal": false,
+        "interval_supported_reversal": false,
+        "overlap_A_minus_B_by_reference": [
+          0.08340804303278668,
+          0.08430584016393428,
+          0.08519595286885219,
+          0.08564164959016367,
+          0.08639984631147536
+        ],
+        "overlap_paired_interval95_by_reference": [
+          [
+            0.07796417285739496,
+            0.08955215024203744
+          ],
+          [
+            0.07836763233418664,
+            0.09031326924355029
+          ],
+          [
+            0.07894742223837727,
+            0.09119728799946974
+          ],
+          [
+            0.08002333886876838,
+            0.09178178697146815
+          ],
+          [
+            0.08030358497536844,
+            0.09283780025584468
+          ]
+        ],
+        "interval_supported_overlap_reversal": false
+      },
+      {
+        "model_A": "Mistral",
+        "model_B": "Haiku",
+        "distance_A_minus_B_by_reference": [
+          -0.29764600409836195,
+          -0.2976716188524583,
+          -0.29969262295081833,
+          -0.2992546106557389,
+          -0.30122182377049234
+        ],
+        "paired_interval95_by_reference": [
+          [
+            -0.3157884854727187,
+            -0.28060704056574665
+          ],
+          [
+            -0.315325614666122,
+            -0.2803234138940308
+          ],
+          [
+            -0.3181838092104454,
+            -0.28260785807253214
+          ],
+          [
+            -0.3181563079198832,
+            -0.2824188499631614
+          ],
+          [
+            -0.31995729281781815,
+            -0.2838552331243741
+          ]
+        ],
+        "US_minus_UK_change_in_pairwise_gap": -0.003575819672130387,
+        "change_interval95": [
+          -0.015824589964579392,
+          0.008328882176383562
+        ],
+        "point_order_reversal": false,
+        "interval_supported_reversal": false,
+        "overlap_A_minus_B_by_reference": [
+          -0.03977843237704888,
+          -0.039765625000000054,
+          -0.038755122950819954,
+          -0.03897412909836073,
+          -0.037990522540983646
+        ],
+        "overlap_paired_interval95_by_reference": [
+          [
+            -0.047268459241767403,
+            -0.0331655918526307
+          ],
+          [
+            -0.04671851394994512,
+            -0.032867523138851815
+          ],
+          [
+            -0.04547706551056266,
+            -0.03184880383752576
+          ],
+          [
+            -0.045909315679389544,
+            -0.03236632304022392
+          ],
+          [
+            -0.045024231481470056,
+            -0.031159629427244734
+          ]
+        ],
+        "interval_supported_overlap_reversal": false
+      },
+      {
+        "model_A": "Llama3",
+        "model_B": "Haiku",
+        "distance_A_minus_B_by_reference": [
+          -0.3870556514236424,
+          -0.38528567191544394,
+          -0.38552645060396784,
+          -0.38419704486626494,
+          -0.38464786453839594
+        ],
+        "paired_interval95_by_reference": [
+          [
+            -0.40361659193796456,
+            -0.37004812343577365
+          ],
+          [
+            -0.40141141452474943,
+            -0.36955995798730923
+          ],
+          [
+            -0.40275967507527793,
+            -0.36871070322020744
+          ],
+          [
+            -0.4023108402268591,
+            -0.3674742850297739
+          ],
+          [
+            -0.4040176044615152,
+            -0.3687359595825333
+          ]
+        ],
+        "US_minus_UK_change_in_pairwise_gap": 0.0024077868852464546,
+        "change_interval95": [
+          -0.01098483850684584,
+          0.015623166156250796
+        ],
+        "point_order_reversal": false,
+        "interval_supported_reversal": false,
+        "overlap_A_minus_B_by_reference": [
+          -0.12318647540983556,
+          -0.12407146516393433,
+          -0.12395107581967214,
+          -0.1246157786885244,
+          -0.12439036885245901
+        ],
+        "overlap_paired_interval95_by_reference": [
+          [
+            -0.13174590506597098,
+            -0.11478205773105488
+          ],
+          [
+            -0.1326749660693791,
+            -0.11588160630885341
+          ],
+          [
+            -0.13223196661397607,
+            -0.11594122819348732
+          ],
+          [
+            -0.13284320034083344,
+            -0.11683311603757944
+          ],
+          [
+            -0.13292027026729625,
+            -0.11544038938001441
+          ]
+        ],
+        "interval_supported_overlap_reversal": false
+      }
+    ],
+    "model_reference_shifts": [
+      {
+        "name": "Mistral",
+        "US_minus_UK_distance": -0.010310882226057277,
+        "paired_interval95": [
+          -0.019040745685302642,
+          -0.001450691753750152
+        ],
+        "US_minus_UK_overlap": 0.003096823770491988,
+        "overlap_change_interval95": [
+          -0.0018376950517241346,
+          0.007679272396578853
+        ]
+      },
+      {
+        "name": "Llama3",
+        "US_minus_UK_distance": -0.004327275668680436,
+        "paired_interval95": [
+          -0.011221918908445313,
+          0.002558509829752442
+        ],
+        "US_minus_UK_overlap": 0.00010502049180330895,
+        "overlap_change_interval95": [
+          -0.0010686819973464306,
+          0.0012348129640444836
+        ]
+      },
+      {
+        "name": "Haiku",
+        "US_minus_UK_distance": -0.006735062553926863,
+        "paired_interval95": [
+          -0.018734597162889957,
+          0.004719448917801864
+        ],
+        "US_minus_UK_overlap": 0.001308913934426753,
+        "overlap_change_interval95": [
+          -0.005526110502784981,
+          0.007971562693007587
+        ]
+      }
+    ],
+    "any_interval_supported_distance_reversal": false,
+    "any_interval_supported_overlap_reversal": false,
+    "posthoc_score_diagnostic": {
+      "reason": "Primary distance and planned overlap give opposite model rankings; no primary metric was changed.",
+      "model_U_concentration": {
+        "Mistral": 0.3043841673856773,
+        "Llama3": 0.04815843399482312,
+        "Haiku": 0.6815870362381363
+      },
+      "global_response_vocabulary_size": 36154,
+      "uniform_global_vocabulary_overlap": 2.7659456768269073e-05,
+      "uniform_global_vocabulary_L2_by_reference": [
+        0.13046737936980612,
+        0.12575377350576109,
+        0.12135297578913315,
+        0.12138042016852382,
+        0.12635014468473282
+      ],
+      "scope": "Analytic data-dependent uniform baseline, added after primary results; descriptive score calibration, not a new confirmatory comparison."
+    },
+    "limits": [
+      "Conditional on these archived model versions/prompts and first stored responses; not current-model rankings.",
+      "Model-record resampling does not quantify between-run or model-version uncertainty.",
+      "Exploratory pairwise intervals are not multiplicity-adjusted.",
+      "Only aggregate scores are published; no SWOW item distributions."
+    ]
+  },
+  "decision": {
+    "overall": "adjust",
+    "human_stability": "proceed: stable aggregate differences, weak item-level reproducibility",
+    "reference_group_rank_reversal": "not supported in these archived three-model comparisons",
+    "measurement_calibration": "required: different planned metrics give different model orders; uniform baseline exposes a limitation of L2 as a standalone human-likeness criterion",
+    "next_step": "Calibrate scoring against human holdout and meaningful response baselines before scaling models or claiming a benchmark failure."
+  },
+  "provenance": {
+    "human_source": "https://smallworldofwords.org/en/project/research",
+    "model_source": "https://github.com/LLMWorldOfWords/LWOW",
+    "model_commit_sha": "455ca9d475b4c3a55d48952689ba6db18cb82574",
+    "model_tree_sha": "b0d1634d216ef061d327d3684cc1a584ff899d5f",
+    "model_data_paper": "https://www.nature.com/articles/s41597-025-05156-9",
+    "model_license": "CC BY 4.0; source SWOW has its own restrictions",
+    "software_and_protocol": "All sampling seeds and procedures are in the linked script and analysis-before-results plan."
+  },
+  "verification": {
+    "human_Counter_recalculation": {
+      "independent_scalar_Counter_recalculation": 0.028777679717586647,
+      "cues": 1968,
+      "matches_vectorized_result": true,
+      "all_primary_cells_have_20_distinct_people": true
+    },
+    "model_endpoint_Counter_recalculation": {
+      "independent_Counter_endpoint_scores": {
+        "Mistral": {
+          "UK": 0.2409473414581536,
+          "US": 0.23063645923209664
+        },
+        "Llama3": {
+          "UK": 0.15153769413287316,
+          "US": 0.14721041846419325
+        },
+        "Haiku": {
+          "UK": 0.5385933455565143,
+          "US": 0.5318582830025885
+        }
+      },
+      "independent_Counter_endpoint_overlap": {
+        "Mistral": {
+          "UK": 0.09696593237704919,
+          "US": 0.10006275614754098
+        },
+        "Llama3": {
+          "UK": 0.013557889344262296,
+          "US": 0.013662909836065575
+        },
+        "Haiku": {
+          "UK": 0.13674436475409835,
+          "US": 0.1380532786885246
+        }
+      },
+      "all_primary_cells_20_rows": true,
+      "all_human_cells_20_distinct_people": true,
+      "matches_vectorized_scores": true
+    },
+    "human_full_deterministic_replay_equal": true,
+    "model_repeated_execution_endpoint_values_equal": true,
+    "source_git_blob_hashes_verified": true,
+    "figure_visual_review": "PNG inspected; labels, panels, legends and footnote readable; no clipped content",
+    "privacy": "No participant identifiers, human responses, per-cue response probabilities or SWOW derivatives at item level are published."
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_on": "2026-10-18",
-  "catalog_version": "2.2.3",
+  "generated_on": "2026-10-19",
+  "catalog_version": "2.3.0",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -11,15 +11,15 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 179,
+    "main_resource_count": 180,
     "main_by_check_state": {
       "documentation_only": 163,
       "file_preview": 0,
-      "selected_file_checked": 8,
+      "selected_file_checked": 9,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 8,
+    "main_with_recorded_file_reads": 9,
     "main_without_recorded_file_reads": 171,
     "osf_associated_main_count": 73,
     "remaining_candidate_count": 12,
@@ -441,7 +441,7 @@
       ],
       "osf_ids": [],
       "check_state": "selected_file_checked",
-      "documentation_checked_on": "2026-10-18",
+      "documentation_checked_on": "2026-10-19",
       "download_tested": true,
       "data_files_validated": false,
       "recorded_file_checks": [
@@ -3854,6 +3854,44 @@
       "next_steps": [
         "OSF恢复后枚举公开文件、子组件及版本，区分原始数据、刺激、代码和统计输出。",
         "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R180",
+      "name": "LLM World of Words（LWOW，模型生成英语联想）",
+      "category": "lexical-cognition",
+      "source_url": "https://github.com/LLMWorldOfWords/LWOW",
+      "platforms": [
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-10-19",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/data/original_datasets/mistral_free_associations.jsonl",
+          "read_scope": "complete_jsonl",
+          "result": "完整解析1,228,200行；检查首个存档反应、共同提示词覆盖，字节数78,011,131及Git blob哈希一致。非全资源或模型生成验收。",
+          "blob_sha": "7a39663e156481c190328ce26a5f3961af053116"
+        },
+        {
+          "url": "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/data/original_datasets/llama3-8b_free_associations.jsonl",
+          "read_scope": "complete_jsonl",
+          "result": "完整解析1,286,579行；检查首个存档反应、共同提示词覆盖，字节数86,925,951及Git blob哈希一致。非全资源或模型生成验收。",
+          "blob_sha": "7139885abaa8516487bbc84cdfe3ebbfb9fbb3e7"
+        },
+        {
+          "url": "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/data/original_datasets/haiku_free_associations.jsonl",
+          "read_scope": "complete_jsonl",
+          "result": "完整解析1,228,200行；检查首个存档反应、共同提示词覆盖，字节数100,263,719及Git blob哈希一致。非全资源或模型生成验收。",
+          "blob_sha": "522b0d52f3111fbe26f7f10e0e29b8896348e336"
+        }
+      ],
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     }

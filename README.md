@@ -2,20 +2,21 @@
 
 用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。
 
-主目录 **179个资源入口、14类**，其中 **73条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-10-18**。
+主目录 **180个资源入口、14类**，其中 **73条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-10-19**。
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的12条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：163条仅核对说明、0条读取头部样例、8条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：163条仅核对说明、0条读取头部样例、9条完整检查选定文件、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
-- [核验进度与待检查清单](catalog/verification-status.md)：全部179条逐项状态、OSF恢复后的待办。
+- [核验进度与待检查清单](catalog/verification-status.md)：全部180条逐项状态、OSF恢复后的待办。
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
 - [第一条想法的初次可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：原覆盖530组；后续事件审计另排除1组，见下列pilot。
 - [中英联想—启动pilot结果](research/semantic-priming-pilot-2026-10-18.md)：原试次复原、60组语义初筛、测量稳定性、受控模型与词汇排除预测；建议调整后再决定主实验。
 - [pilot之后的方向比较](research/postpilot-directions-2026-10-18.md)：人类参照群体、受限交流与句法线索的先例、实际覆盖及下一步判别条件。
+- [英美等样本参照群体pilot](research/reference-group-pilot-2026-10-19.md)：人类聚合差异可复现；三模型排序未随参照翻转，人机评分仍需校准。
 - [句法专类](catalog/syntax.md) · [按句法问题选资料](docs/syntax-guide.md)。
 - [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。
@@ -31,7 +32,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | 儿童语言与发展 | 16 | [查看](catalog/child-language.md) |
 | 自然口语与社会变异 | 7 | [查看](catalog/spoken-variation.md) |
 | 社会互动与语用 | 17 | [查看](catalog/social-interaction.md) |
-| 词汇认知与语义常模 | 20 | [查看](catalog/lexical-cognition.md) |
+| 词汇认知与语义常模 | 21 | [查看](catalog/lexical-cognition.md) |
 | 中文、二语与双语 | 19 | [查看](catalog/chinese-l2-bilingual.md) |
 | 跨语言结构与社会文化 | 10 | [查看](catalog/crossling-cultural.md) |
 | 手语、成语与抽象意义 | 10 | [查看](catalog/sign-figurative.md) |
@@ -234,6 +235,7 @@ OSF接口本次返回维护通知，因此本目录核对的是项目说明、�
 | R177 | [波兰语语义相关度、启动与语义向量](catalog/lexical-cognition.md#r177) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R178 | [无意识语义加工：空间—时间隐喻启动](catalog/lexical-cognition.md#r178) | 词汇认知与语义常模 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R179 | [Coretta元音时长与辅音清浊研究集合](catalog/speech-phonetics.md#r179) | 语音、音系与声学 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R180 | [LLM World of Words（LWOW，模型生成英语联想）](catalog/lexical-cognition.md#r180) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 
 ## 本地筛选
 

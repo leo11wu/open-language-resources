@@ -1,7 +1,7 @@
 {
   "title": "已核查但暂未进入主目录的资源线索",
-  "updated_on": "2026-10-19",
-  "candidate_count": 12,
+  "updated_on": "2026-10-20",
+  "candidate_count": 11,
   "description": "原22条的10条已在2026-10-17进入主目录；本轮继续核查剩余12条的实际附件和源项目。尚未取得新增公开观测数据证据，12条暂保留，其中5个原项目受API限流待查。",
   "candidates": [
     {
@@ -31,15 +31,17 @@
       "category": "syntax",
       "source_url": "https://osf.io/hcdqe/",
       "osf_id": "hcdqe",
-      "status": "release_unconfirmed",
-      "reason": "hcdqe为冻结注册，公开文件列表为空。registered_from明确关联vdsey，追查该原项目时返回429。先前论文中的完成实验仍成立，但当前未确认其最终数据包。",
-      "checked_on": "2026-10-19",
+      "status": "access_restricted",
+      "reason": "hcdqe明确关联原项目vdsey；公开接口401，正常登录后仍显示You Need Permission。未发访问申请，不晋升。",
+      "checked_on": "2026-10-20",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://era.ed.ac.uk/bitstreams/efcc725d-232c-41f7-ba0b-a18541735b81/download",
-        "https://osf.io/hcdqe/"
+        "https://osf.io/hcdqe/",
+        "https://osf.io/vdsey/",
+        "https://osf.io/request-access/vdsey"
       ],
-      "next_verification_step": "额度可用后优先读取vdsey文件清单；不把冻结注册0文件推成原项目没有数据。"
+      "next_verification_step": "等待正式公开发布或作者明确给出的公开替代数据；如需申请，另按用户授权办理。"
     },
     {
       "id": "C004",
@@ -118,32 +120,17 @@
       "category": "child-language",
       "source_url": "https://osf.io/j5epb/",
       "osf_id": "j5epb",
-      "status": "release_unconfirmed",
-      "reason": "j5epb冻结EEG预注册的公开文件列表为空；registered_from指向7qk6u，原项目本轮返回429。相关ERP论文的受限声明不自动等于该注册数据的访问规则。",
-      "checked_on": "2026-10-19",
+      "status": "access_restricted",
+      "reason": "j5epb明确关联7qk6u；正常登录后仍显示You Need Permission。不把预注册的公开性当成观测数据公开。",
+      "checked_on": "2026-10-20",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/j5epb/overview",
-        "https://www.mdpi.com/2076-328X/16/2/294"
+        "https://www.mdpi.com/2076-328X/16/2/294",
+        "https://osf.io/7qk6u/",
+        "https://osf.io/request-access/7qk6u"
       ],
-      "next_verification_step": "额度可用后检查7qk6u的实际数据和访问条件。"
-    },
-    {
-      "id": "C012",
-      "name": "儿童与照护者协调",
-      "category": "child-language",
-      "source_url": "https://osf.io/9z5qn/",
-      "osf_id": "9z5qn",
-      "status": "access_restricted",
-      "reason": "9z5qn冻结注册公开文件列表为空；registered_from指向rjdqb，本轮受429限制。既有ECOLANG视频/照护者转写申请限制保留，尚不能确认新增儿童转写是否已开放。",
-      "checked_on": "2026-10-19",
-      "counts_as_main_resource": false,
-      "evidence_urls": [
-        "https://osf.io/9z5qn/overview",
-        "https://www.nature.com/articles/s41597-025-04405-1",
-        "https://doi.org/10.5522/04/28087613"
-      ],
-      "next_verification_step": "只读复查rjdqb及ECOLANG发布说明；申请数据另按用户授权处理。"
+      "next_verification_step": "等待正式公开发布或作者明确给出的公开替代数据；如需申请，另按用户授权办理。"
     },
     {
       "id": "C013",
@@ -151,15 +138,15 @@
       "category": "sign-figurative",
       "source_url": "https://osf.io/kuqfe/",
       "osf_id": "kuqfe",
-      "status": "preregistration_only",
-      "reason": "kuqfe是冻结预注册，唯一公开附件为习语材料Word文件，已完整下载并解析文档XML。registered_from指向96ype，本轮429；未确认同一研究的最终反应时/准确率数据。",
-      "checked_on": "2026-10-19",
+      "status": "materials_only",
+      "reason": "kuqfe关联原项目96ype，根目录只列Appendix_idiomatic_meaning.docx，无数据文件夹。本轮原项目附录下载失败；10月19日已读的冻结材料副本保留历史证据。未确认公开观测数据，不晋升。",
+      "checked_on": "2026-10-20",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/kuqfe/",
         "https://osf.io/download/6j4bs/"
       ],
-      "next_verification_step": "额度可用后检查96ype是否已有完成研究数据。"
+      "next_verification_step": "等待正式公开发布或作者明确给出的公开替代数据；如需申请，另按用户授权办理。"
     },
     {
       "id": "C016",
@@ -167,16 +154,18 @@
       "category": "social-interaction",
       "source_url": "https://osf.io/sa8ep/",
       "osf_id": "sa8ep",
-      "status": "release_unconfirmed",
-      "reason": "sa8ep为标量含意阅读实验的冻结注册，公开文件列表为空；原项目jzu2q本轮429。不同任务的v98dt仍不充作原项目数据。",
-      "checked_on": "2026-10-19",
+      "status": "access_restricted",
+      "reason": "sa8ep关联原项目jzu2q；正常登录后仍显示You Need Permission。没有取得相应公开观测数据，不晋升。",
+      "checked_on": "2026-10-20",
       "counts_as_main_resource": false,
       "evidence_urls": [
         "https://osf.io/sa8ep/",
         "https://direct.mit.edu/opmi/article/doi/10.1162/OPMI.a.343/135919/Does-It-Matter-What-Is-Said-and-Who-Said-It-The",
-        "https://osf.io/v98dt/"
+        "https://osf.io/v98dt/",
+        "https://osf.io/jzu2q/",
+        "https://osf.io/request-access/jzu2q"
       ],
-      "next_verification_step": "先查jzu2q最终文件并核实研究身份，保留原任务边界。"
+      "next_verification_step": "等待正式公开发布或作者明确给出的公开替代数据；如需申请，另按用户授权办理。"
     },
     {
       "id": "C020",

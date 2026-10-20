@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-19",
+  "updated_on": "2026-10-20",
   "observations": [
     {
       "platform": "osf",
@@ -25,6 +25,15 @@
       "result": "公开API清单及多个实际文件可读，批量查询随后返回HTTP429；网页浏览器核验仍为空白壳。",
       "actual_file_reads_report": "catalog/osf-file-audit-2026-10-19.md",
       "inference_limit": "只能确认本轮成功文件的可读性，不能宣称OSF全平台或全部85项已恢复并验收。"
+    },
+    {
+      "observation_id": "osf-file-audit-2026-10-20",
+      "platform": "osf",
+      "observed_on": "2026-10-20",
+      "url": "https://osf.io/",
+      "result": "用户完成登录后，正常网页可显示项目、子组件与文件列表；续查60条资源和5个候选原项目，部分文件实际可读，地区存储files.de-1.osf.io、files.ca-1.osf.io、files.au-1.osf.io的部分下载发生域名解析失败，另有连接超时。",
+      "actual_file_reads_report": "catalog/osf-file-audit-2026-10-20.md",
+      "inference_limit": "逐文件证据仅覆盖记录范围，不能推断所有OSF文件恢复、所有项目私有或已全资源验收；登录后需要项目权限的候选另行标注。"
     }
   ],
   "scheduled_maintenance": {
@@ -39,7 +48,7 @@
     "scheduled_end_utc": "2026-10-19T13:00:00+00:00",
     "scheduled_end_asia_taipei": "2026-10-19T21:00:00+08:00",
     "actual_restoration_confirmed": false,
-    "inference_limit": "计划时间保留为历史通知；2026-10-19已确认部分公开API和数据文件可读，完整网页和所有项目恢复未确认。",
+    "inference_limit": "历史计划时间保留。2026-10-20已确认登录后网页和多个公开文件可用，但部分存储端点仍下载失败；未确认全平台和全部文件恢复。",
     "partial_file_access_confirmed_on": "2026-10-19"
   }
 }

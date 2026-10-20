@@ -1,0 +1,574 @@
+{
+  "title": "原22条语言资源候选的逐项核查",
+  "checked_on": "2026-10-20",
+  "catalog_version_before": "2.3.1",
+  "catalog_version_after": "2.4.0",
+  "reviewed_count": 22,
+  "promoted_count": 11,
+  "remaining_count": 11,
+  "outcome_counts": {
+    "promoted": 11,
+    "materials_only": 5,
+    "restricted_access": 3,
+    "release_unconfirmed": 3
+  },
+  "criteria": "仅在同一研究的正式数据声明、项目明确数据说明或作者公开文件得到确认时转入主目录；相近论文、只有注册、只有刺激/统计输出不自动替代原项目数据。",
+  "limitations": [
+    "API限流使5个registered_from原项目尚未检查；新晋升为0不表示这些数据永久不存在。",
+    "2026-10-17的10条晋升保留原日期和证据；累计22条与本轮12条分开。"
+  ],
+  "records": [
+    {
+      "candidate_id": "C001",
+      "name": "挪威语依存类型与岛效应",
+      "original_url": "https://osf.io/gwy9s/",
+      "previous_status": "preregistration_only",
+      "outcome": "promoted",
+      "main_resource_id": "R170",
+      "verified_data_url": "https://osf.io/ma9jp/",
+      "evidence_urls": [
+        "https://www.mdpi.com/2226-471X/7/3/197",
+        "https://osf.io/ma9jp/",
+        "https://osf.io/gwy9s/"
+      ],
+      "findings": "全文Data Availability Statement明确指向ma9jp，正文另说明项目材料和数据公开；OSF实时文件清单本次仍受503限制。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C002",
+      "name": "墨西哥西班牙语岛效应",
+      "original_url": "https://osf.io/ma27h/",
+      "previous_status": "materials_only",
+      "outcome": "materials_only",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s11049-024-09633-5",
+        "https://osf.io/cs5z3/",
+        "https://osf.io/download/crhfb/",
+        "https://osf.io/download/mbjzg/",
+        "https://osf.io/download/ghab8/",
+        "https://osf.io/download/7d4pm/",
+        "https://osf.io/download/q26va/"
+      ],
+      "findings": "ma27h实际题名是西英语码转换岛效应；与原审核论文相符的cs5z3为单语西班牙语项目。本轮5个附件均成功下载：两份Qualtrics问卷、两份Word问卷和5工作表刺激/拉丁方安排；未见逐被试判断或评分表。",
+      "next_verification_step": "原目标继续采用cs5z3；若作者另行发布匿名判断数据再核对。",
+      "checked_on": "2026-10-19",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/crhfb/",
+          "read_scope": "parsed_complete_json",
+          "result": "JSON已完整解析",
+          "sha256": "ed8f250508d4f9411d1c5f639610605b313bb3f91987d48a78008fd68b3b3e47"
+        },
+        {
+          "url": "https://osf.io/download/mbjzg/",
+          "read_scope": "parsed_document_xml",
+          "result": "Word文档XML已完整解析",
+          "sha256": "67ebcae2751698e3622682ebbe40fcf31ecd110bffb7798c46c3b0d158d0b5c5"
+        },
+        {
+          "url": "https://osf.io/download/ghab8/",
+          "read_scope": "parsed_complete_json",
+          "result": "JSON已完整解析",
+          "sha256": "ccc69cfe7a4356dfa30508c768e7f8211d65a0f0a78bf322625ede7705535669"
+        },
+        {
+          "url": "https://osf.io/download/7d4pm/",
+          "read_scope": "parsed_document_xml",
+          "result": "Word文档XML已完整解析",
+          "sha256": "19c166a0ea08679370c449823bb5b1a559433c91c7de6e59ad421074e1e8c9f5"
+        },
+        {
+          "url": "https://osf.io/download/q26va/",
+          "read_scope": "parsed_complete_workbook",
+          "result": "完整工作簿：Wh-extraction 270行×17列；Sub-extraction 64行×18列；Fillers 54行×2列；Task 1 Lists 2,808行×6列；Task 2 Lists 2,808行×6列",
+          "sha256": "03deb1b43a44d7c5b3bf5a59216a3c85826a7389a67466e91b675c68409d54de"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C003",
+      "name": "中英双语合理性与结构重分析启动",
+      "original_url": "https://osf.io/hcdqe/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "restricted_access",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://era.ed.ac.uk/bitstreams/efcc725d-232c-41f7-ba0b-a18541735b81/download",
+        "https://osf.io/hcdqe/",
+        "https://osf.io/vdsey/",
+        "https://osf.io/request-access/vdsey"
+      ],
+      "findings": "hcdqe明确关联原项目vdsey；公开接口401，正常登录后仍显示You Need Permission。未发访问申请，不晋升。",
+      "next_verification_step": "需原项目授权或正式公开数据；未代用户发送访问申请。",
+      "checked_on": "2026-10-20",
+      "file_checks": []
+    },
+    {
+      "candidate_id": "C004",
+      "name": "中文把字句二语句法阻断",
+      "original_url": "https://osf.io/qehr4/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "release_unconfirmed",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://doi.org/10.1017/S0142716423000103",
+        "https://osf.io/qehr4/"
+      ],
+      "findings": "qehr4的节点与注册API均返回404；短链网页返回200的SPA壳，未得到可用文件内容。本轮未确认正式数据入口；404不据以认定永久删除或私有。",
+      "next_verification_step": "从Hou 2023正式论文或作者最终说明重新确认短编号及数据入口。",
+      "checked_on": "2026-10-19",
+      "file_checks": []
+    },
+    {
+      "candidate_id": "C005",
+      "name": "中文体动词补语强制转换",
+      "original_url": "https://osf.io/wd2g7/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "promoted",
+      "main_resource_id": "R171",
+      "verified_data_url": "https://osf.io/wd2g7/",
+      "evidence_urls": [
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.643571/full",
+        "https://osf.io/wd2g7/"
+      ],
+      "findings": "核对正式论文Data availability statement，并结合本会话已核对的公开项目主页；未保存匿名访问参数。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C006",
+      "name": "简化关系从句的句法适应",
+      "original_url": "https://osf.io/5aynd/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "materials_only",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://osf.io/5aynd/",
+        "https://osf.io/wq2g7/",
+        "https://osf.io/download/wq2g7/"
+      ],
+      "findings": "5aynd仅列出一份CUNY2020海报，已完整下载并抽取1页文本。wq2g7是这份海报的文件短编号，已成功下载，不能把它的节点API404解释成失效项目；未见SPR试次数据。",
+      "next_verification_step": "继续寻找同一Malone–Mauner研究的阅读时数据；海报结果不替代试次表。",
+      "checked_on": "2026-10-19",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/wq2g7/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部1页文本",
+          "sha256": "252072a58316e223af86ba0219148170cfd2e4bd038618e1f13192188813f586"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C007",
+      "name": "Acceptability Judgement Tasks and Grammatical Theory",
+      "original_url": "https://osf.io/qe865/",
+      "previous_status": "obsolete_link",
+      "outcome": "release_unconfirmed",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://ora.ox.ac.uk/objects/uuid:b276ec98-5f65-468b-b481-f3d9356d86a2",
+        "https://osf.io/qe865/",
+        "https://osf.io/download/hcktp/"
+      ],
+      "findings": "qe865现在公开一份292页博士论文PDF，已完整下载并抽取文本；当前项目文件列表未列出评分、反应时或分析数据。旧网站的历史问题与当前OSF可读论文分别记录。",
+      "next_verification_step": "寻找该2015论文的独立数据附件或作者正式迁移入口；不以论文PDF或后续SAD数据替代。",
+      "checked_on": "2026-10-19",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/hcktp/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部292页文本",
+          "sha256": "21317c5a15d3374a96169433523be845d5cb809d518e5e1c2b7dd1da5645a42a"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C008",
+      "name": "西班牙语关系从句岛效应",
+      "original_url": "https://osf.io/t9vpq/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "promoted",
+      "main_resource_id": "R172",
+      "verified_data_url": "https://osf.io/t9vpq/",
+      "evidence_urls": [
+        "https://voices.uchicago.edu/stigliano/files/2021/11/Stigliano-Xiang-2021.pdf",
+        "https://osf.io/t9vpq/",
+        "https://doi.org/10.1515/prbs-2021-0008"
+      ],
+      "findings": "论文脚注4明确列出materials、data和analysis code并指向t9vpq；未把只有论文摘要当作数据证据。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C009",
+      "name": "事件结构与题元角色的结构启动",
+      "original_url": "https://osf.io/zx6wv/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "promoted",
+      "main_resource_id": "R173",
+      "verified_data_url": "https://osf.io/zx6wv/",
+      "evidence_urls": [
+        "https://www.harvardlds.org/wp-content/uploads/2019/04/Ziegler-J.-Snedeker-J.-Wittenberg-E.-2018.-Event-structures-drive-semantic-structural-priming-not-thematic-roles-Evidence-from-idioms-and-light-verbs.-428-2918-2949..pdf",
+        "https://osf.io/zx6wv/",
+        "https://doi.org/10.1111/cogs.12687"
+      ],
+      "findings": "读取作者公开论文至附录A，确认不是只保存预印本；附录明确列出zx6wv为材料、数据和分析脚本仓库。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C010",
+      "name": "themself/themselves社会句法判断",
+      "original_url": "https://osf.io/2s8hm/",
+      "previous_status": "materials_only",
+      "outcome": "materials_only",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://www.byronahn.com/pub/Conrod-Schultz-Ahn-NELS52.pdf",
+        "https://osf.io/5kr8s/",
+        "https://osf.io/2s8hm/wiki/home",
+        "https://osf.io/download/esvhj/",
+        "https://osf.io/download/bufq7/",
+        "https://osf.io/download/5kr8s/",
+        "https://osf.io/download/nm6zs/"
+      ],
+      "findings": "2s8hm的4个公开PDF均已下载并抽取文本：摘要、海报幻灯、刺激和意识形态/人口学问卷；未见1,127人反应表。5kr8s是可下载的刺激PDF短编号，节点API404不是附件失效。",
+      "next_verification_step": "定位同一调查的匿名反应表和变量字典后再考虑晋升。",
+      "checked_on": "2026-10-19",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/esvhj/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部3页文本",
+          "sha256": "995ead0e2c48d4ef222018c546929782e5b004e624c8ea92bdcba98643aa8f69"
+        },
+        {
+          "url": "https://osf.io/download/bufq7/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部9页文本",
+          "sha256": "47c4b3d9e4d4c014a9a69a06e1ac6adc27f4d0442f3ad841d7625749e88ab3ed"
+        },
+        {
+          "url": "https://osf.io/download/5kr8s/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部2页文本",
+          "sha256": "a790a2b9554e4df5990e8b9c22fbb5e5f371f87b03c45ec8ad6f62be0a7b90b6"
+        },
+        {
+          "url": "https://osf.io/download/nm6zs/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部2页文本",
+          "sha256": "4f56bb47a2a0ed609ee9f785527c9823c7b4cb7f00a26811860a645586a54783"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C011",
+      "name": "双语儿童EEG研究",
+      "original_url": "https://osf.io/j5epb/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "restricted_access",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://osf.io/j5epb/overview",
+        "https://www.mdpi.com/2076-328X/16/2/294",
+        "https://osf.io/7qk6u/",
+        "https://osf.io/request-access/7qk6u"
+      ],
+      "findings": "j5epb明确关联7qk6u；正常登录后仍显示You Need Permission。不把预注册的公开性当成观测数据公开。",
+      "next_verification_step": "需原项目授权或正式公开数据；未代用户发送访问申请。",
+      "checked_on": "2026-10-20",
+      "file_checks": []
+    },
+    {
+      "candidate_id": "C012",
+      "name": "儿童与照护者协调",
+      "original_url": "https://osf.io/9z5qn/",
+      "previous_status": "access_restricted",
+      "outcome": "promoted",
+      "main_resource_id": "R181",
+      "verified_data_url": "https://osf.io/rjdqb/",
+      "evidence_urls": [
+        "https://osf.io/9z5qn/overview",
+        "https://www.nature.com/articles/s41597-025-04405-1",
+        "https://doi.org/10.5522/04/28087613",
+        "https://osf.io/rjdqb/overview"
+      ],
+      "findings": "9z5qn注册关联的原项目rjdqb现公开真实观测与处理表。完整读取processed_data_real.csv（9,705×10）、processed_data.csv（378×38）、item_level_recognition.csv（1,796×9）、bpvs.csv（38×14）及README，区分打乱对照；补入R181。原项目显示No License，原始视频与全转写未验。",
+      "next_verification_step": "核对未声明的复用许可及其余文件；不把原视频视为已开放。",
+      "checked_on": "2026-10-20",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/3qgjp/",
+          "read_scope": "complete_text",
+          "result": "完整下载；文本或文档正文已读，3,618字符；decoded_text；仅所列文件/成员，不代表全资源验收。",
+          "sha256": "8b551b4890b296e1af6afdff7ffc4ca4b66a8a443a29f655b8151c1f6b92dd17",
+          "checked_on": "2026-10-20",
+          "file_role": "documentation_or_materials"
+        },
+        {
+          "url": "https://osf.io/download/b3a9u/",
+          "read_scope": "complete_delimited_table",
+          "result": "完整下载；表头后9,705行、10列；utf-8-sig；仅所列文件/成员，不代表全资源验收。",
+          "sha256": "13a2109b2804f17d71af7e5c8a8f350dc5e3077ff97efffb13abfece2007664a",
+          "checked_on": "2026-10-20",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/hmk4t/",
+          "read_scope": "complete_delimited_table",
+          "result": "完整下载；表头后378行、38列；utf-8-sig；仅所列文件/成员，不代表全资源验收。",
+          "sha256": "241a68ab6ee89acca56ca892f256ff7840a5752f9e1f2a053c4f60edd05e7fc0",
+          "checked_on": "2026-10-20",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/69e73e33f6c5d1916173bdb9/",
+          "read_scope": "complete_delimited_table",
+          "result": "完整下载；表头后1,796行、9列；utf-8-sig；仅所列文件/成员，不代表全资源验收。",
+          "sha256": "d2cfb370da955416e49ac3d08fba73b3fcefde22e7f7cc1a2bf4cd7aaade6083",
+          "checked_on": "2026-10-20",
+          "file_role": "empirical_or_norm_data"
+        },
+        {
+          "url": "https://osf.io/download/rpaqy/",
+          "read_scope": "complete_delimited_table",
+          "result": "完整下载；表头后38行、14列；utf-8-sig；仅所列文件/成员，不代表全资源验收。",
+          "sha256": "bf2af750ecf11031ec0cb94a847421252d853ac4685b2a825f8eef7eaaf848ed",
+          "checked_on": "2026-10-20",
+          "file_role": "empirical_or_norm_data"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C013",
+      "name": "跨语言习语激活",
+      "original_url": "https://osf.io/kuqfe/",
+      "previous_status": "preregistration_only",
+      "outcome": "materials_only",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://osf.io/kuqfe/",
+        "https://osf.io/download/6j4bs/"
+      ],
+      "findings": "kuqfe关联原项目96ype，根目录只列Appendix_idiomatic_meaning.docx，无数据文件夹。本轮原项目附录下载失败；10月19日已读的冻结材料副本保留历史证据。未确认公开观测数据，不晋升。",
+      "next_verification_step": "额度可用后检查96ype是否已有完成研究数据。",
+      "checked_on": "2026-10-20",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/6j4bs/",
+          "read_scope": "parsed_document_xml",
+          "result": "Word文档XML已完整解析",
+          "sha256": "17599c36aa1940dfff22fd5822c6034f526eaa1b93fad1bb8126d164d11b58e5"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C014",
+      "name": "Taboo互动：熟人与陌生人",
+      "original_url": "https://osf.io/hcya6/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "promoted",
+      "main_resource_id": "R174",
+      "verified_data_url": "https://github.com/seantrott/scarfs",
+      "evidence_urls": [
+        "https://github.com/seantrott/scarfs",
+        "https://osf.io/hcya6/",
+        "https://link.springer.com/article/10.1007/s10579-022-09619-y",
+        "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv"
+      ],
+      "findings": "README明确命名完整匿名指称表及游戏行为表；GitHub文件元数据确认两表存在，并实际读取行为表前8行。",
+      "file_checks": [
+        {
+          "url": "https://github.com/seantrott/scarfs/blob/main/data/processed/behavioral_results_public.csv",
+          "read_scope": "first_8_lines",
+          "result": "公开读取表头及前7行，含rt、pair_type、trial_result和伙伴/轮次字段；未读取全表。",
+          "blob_sha": "3e123e34ce429bb92a7195cbdd0b002c2a54f67b"
+        }
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C015",
+      "name": "烹饪场景中的人类与AI礼貌",
+      "original_url": "https://osf.io/mp3dt/",
+      "previous_status": "preregistration_only",
+      "outcome": "promoted",
+      "main_resource_id": "R175",
+      "verified_data_url": "https://github.com/delsweil/CHIIR2026_politeness",
+      "evidence_urls": [
+        "https://arxiv.org/html/2601.09898v1",
+        "https://github.com/delsweil/CHIIR2026_politeness",
+        "https://osf.io/mp3dt/",
+        "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/user_code_matrix_scaled.csv"
+      ],
+      "findings": "论文脚注给出作者仓库；已读取标注CSV头部与模拟CSV样例，并完整读取/解析一份30行15列的特征矩阵，未验收全库。",
+      "file_checks": [
+        {
+          "url": "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/user_code_matrix_scaled.csv",
+          "read_scope": "complete_small_csv",
+          "result": "完整读取并用CSV解析器核对：30数据行、15列，各行列数一致；不代表内容准确性或其他文件均验收。",
+          "blob_sha": "be5013c92a95d2965e0e4ba45e472f8aff1f1533"
+        },
+        {
+          "url": "https://github.com/delsweil/CHIIR2026_politeness/blob/main/Anna_full_annotated_data/Anna_annotation_01_08_25.csv",
+          "read_scope": "first_4_lines",
+          "result": "读取分号分隔的人工标注表头与开头，含编码、文本片段和文档名；未解析全表。",
+          "blob_sha": "67d89a9793e8556a4a7fcc4d9f0821a9d68aca5d"
+        }
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C016",
+      "name": "政治信念与标量推论",
+      "original_url": "https://osf.io/sa8ep/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "restricted_access",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://osf.io/sa8ep/",
+        "https://direct.mit.edu/opmi/article/doi/10.1162/OPMI.a.343/135919/Does-It-Matter-What-Is-Said-and-Who-Said-It-The",
+        "https://osf.io/v98dt/",
+        "https://osf.io/jzu2q/",
+        "https://osf.io/request-access/jzu2q"
+      ],
+      "findings": "sa8ep关联原项目jzu2q；正常登录后仍显示You Need Permission。没有取得相应公开观测数据，不晋升。",
+      "next_verification_step": "需原项目授权或正式公开数据；未代用户发送访问申请。",
+      "checked_on": "2026-10-20",
+      "file_checks": []
+    },
+    {
+      "candidate_id": "C017",
+      "name": "大语言模型方式含意",
+      "original_url": "https://osf.io/jp35t/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "promoted",
+      "main_resource_id": "R176",
+      "verified_data_url": "https://osf.io/jp35t/",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41598-024-80571-3",
+        "https://osf.io/jp35t/"
+      ],
+      "findings": "核对正式论文Data availability：目标刺激集和分析脚本指向jp35t；原基线数据另有来源。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C018",
+      "name": "波兰语语义相关度",
+      "original_url": "https://osf.io/2x8ka/",
+      "previous_status": "platform_unavailable",
+      "outcome": "promoted",
+      "main_resource_id": "R177",
+      "verified_data_url": "https://osf.io/2x8ka/",
+      "evidence_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284801",
+        "https://osf.io/2x8ka/",
+        "https://doi.org/10.1371/journal.pone.0284801"
+      ],
+      "findings": "虽OSF索引返回维护页，PLOS正式Data Availability仍明确列出具体发布资料；据出版方声明晋升，未声称实时下载成功。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C019",
+      "name": "无意识语义加工界限",
+      "original_url": "https://osf.io/wc7by/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "promoted",
+      "main_resource_id": "R178",
+      "verified_data_url": "https://osf.io/wc7by/",
+      "evidence_urls": [
+        "https://iris.sissa.it/retrieve/dd8a4bf8-999b-20a0-e053-d805fe0a8cb0/Thesis_AndreaNadalini.pdf",
+        "https://osf.io/wc7by/",
+        "https://doi.org/10.31234/osf.io/6zf2n"
+      ],
+      "findings": "在机构存档博士论文第一章Open practices statement核实wc7by及全部数据/代码的公开说明；同时核实实验语言为意大利语。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C020",
+      "name": "复合词形式与意义分解",
+      "original_url": "https://osf.io/vmdwt/",
+      "previous_status": "release_unconfirmed",
+      "outcome": "release_unconfirmed",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://osf.io/vmdwt/",
+        "https://doi.org/10.31234/osf.io/fcdtj"
+      ],
+      "findings": "vmdwt元数据可读、项目公开并标注CC BY 4.0，但公开存储文件列表与子组件列表均为空。许可声明不能代替眼动数据文件；本轮仍无可下载数据。",
+      "next_verification_step": "等待或寻找作者对这两项复合词阅读实验的正式数据发布。",
+      "checked_on": "2026-10-19",
+      "file_checks": []
+    },
+    {
+      "candidate_id": "C021",
+      "name": "元音时长与辅音清浊研究中心",
+      "original_url": "https://osf.io/w92me/",
+      "previous_status": "collection_needs_expansion",
+      "outcome": "promoted",
+      "main_resource_id": "R179",
+      "verified_data_url": "https://osf.io/w92me/",
+      "evidence_urls": [
+        "https://osf.io/w92me/overview",
+        "https://osf.io/w92me/",
+        "https://github.com/stefanocoretta/coretta2018itaegg",
+        "https://stefanocoretta.github.io/phd-thesis/"
+      ],
+      "findings": "Wiki明确数据及代码范围和分开许可；作者R数据包DESCRIPTION同时确认数据内容、版本及CC BY 4.0。",
+      "file_checks": [],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "candidate_id": "C022",
+      "name": "二语形态启动元分析",
+      "original_url": "https://osf.io/4stgu/",
+      "previous_status": "materials_only",
+      "outcome": "materials_only",
+      "main_resource_id": null,
+      "verified_data_url": null,
+      "evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9856828/",
+        "https://osf.io/4stgu/",
+        "https://osf.io/download/3uvhs/",
+        "https://osf.io/download/u6zrk/"
+      ],
+      "findings": "4stgu只有6页Supplemental Materials.pdf和Forest Plot.png，两者已下载，PDF文本和图像像素均可解码。内容是效应量公式、分组汇总和统计比较；未见研究级编码/效应量工作表。",
+      "next_verification_step": "只有补充统计与图形，继续保留候选；若另发布研究级编码表再晋升。",
+      "checked_on": "2026-10-19",
+      "file_checks": [
+        {
+          "url": "https://osf.io/download/3uvhs/",
+          "read_scope": "extracted_text",
+          "result": "PDF已抽取全部6页文本",
+          "sha256": "d01ec7028afda324cde2b70cb4d507b43babcc91b69080a153bff9c474155d5e"
+        },
+        {
+          "url": "https://osf.io/download/u6zrk/",
+          "read_scope": "decoded_image",
+          "result": "图像已解码：3200×5800",
+          "sha256": "4505cdd652a5a5649dc354f1453c307a270d1aed2a34438fd4f22855f5af7713"
+        }
+      ]
+    }
+  ],
+  "current_round_reviewed_count": 5,
+  "newly_promoted_count": 1,
+  "current_round_scope": "本轮追查5个明确关联的原项目：C012新增晋升R181；3个登录后仍需项目权限；C013只列材料附录。其余7条未晋升候选沿用10月19日检查；先前10条晋升保留原证据和日期。"
+}

@@ -67,7 +67,7 @@
 
 ## 待核对线索
 
-`data/discovery-candidates.json` 中的C编号不进入主目录数量。原22条复核后，已确认公开数据的10条转入R170–R179；剩余12条保留具体状态、证据URL和下一步需确认事项。完整映射和历史状态保存在 `data/candidate-audit-2026-10-17.json`，避免晋升后丢失来源。
+`data/discovery-candidates.json` 中的C编号不进入主目录数量。原22条的2026-10-17复核有10条转入R170–R179；2026-10-20又将C012晋升R181，当前剩余11条保留具体状态、证据URL和下一步需确认事项。完整映射和历史状态保存在 `data/candidate-audit-2026-10-17.json`，避免晋升后丢失来源。
 
 `materials_only` 表示当前只确认材料或统计输出，`access_restricted` 表示须申请，`obsolete_link` 表示旧入口已更换内容；其余记录仍可能有未找到的数据。冻结注册若明确包含完成数据，可以进入主目录；不能仅按注册标签机械排除。已经完成实验但缺少公开数据证据的项目，也不再简单写成“只有计划”。
 
@@ -100,3 +100,13 @@
 新增派生状态 `supporting_files_checked` 表示辅助文件已读而主体观测数据未验。TiNT本轮的模型生成cloze表和MECO本轮说明文档采用此状态；不会因为文件能解析而升级成人类常模、EEG或眼动数据已读。结构化台账版本为1.1.0。
 
 本轮的完整事实、未完成项和37份文件哈希见 [OSF核查报告](../catalog/osf-file-audit-2026-10-19.md)。旧维护观察与先前候选晋升的日期保留；新的可读文件证据不追溯改写旧核查范围。
+
+## 登录后续查与部分读取（Schema 1.5.0）
+
+新增 `complete_audio_frames` 和 `complete_mat_variables` 表示所选音频帧解码或MAT变量载入；`archive_directory_only` 只表示压缩目录，不能证明成员表已读。`bounded_table_prefix` 是有界表格或压缩成员的前缀，不满足完整文件检查。该范围的SHA-256只校验实际取得的样例字节，不能与完整父文件的上游哈希比较。
+
+`file_role` 新增 `corpus_derived_data` 与 `model_generated_or_stimulus_materials`。派生的词频、声学平均值、编码矩阵与原始行为试次不同；刺激选项也不等于模型实际反应。与语言核验不相关的医疗子表只在审计中记录为排除项，不进入主目录的文件证据计数。
+
+`osf_audit.status` 新增 `partial_data_readable`、`download_unavailable`、`empty_storage_in_checked_scope`、`source_gone`；后两者只限本次入口和检查范围。登录后仍需项目权限的候选单列，不通过匿名401自动认定数据永久不存在。此后的 `root_metadata_read` 包括正常网页读取到的公开项目说明；文件清单和完整遍历仍为独立字段。
+
+[本次65项审计](../data/osf-file-audit-2026-10-20.json)分别保存完整下载、可读文件、部分读取、失败请求、数据角色和未遍历目录；`entrypoint_checks_complete=true`表示固定入口均已尝试，`all_requested_file_reads_complete=false`及`all_resources_fully_validated=false`保留实际访问限制。前一批次JSON、报告及其程序哈希不追溯改写。

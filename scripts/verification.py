@@ -18,7 +18,7 @@ def check_state(resource):
         return 'discovery_portal'
     if verification['data_files_validated']:
         return 'fully_validated'
-    if verification.get('osf_audit',{}).get('status') == 'auxiliary_only_readable':
+    if verification.get('osf_audit',{}).get('status') in ('auxiliary_only_readable','materials_only_readable'):
         return 'supporting_files_checked'
     if verification['download_tested']:
         return 'selected_file_checked'
@@ -38,6 +38,12 @@ def next_steps(resource):
         audit=resource['verification'].get('osf_audit')
         if audit and audit['status'] in ('deferred_api_rate_limit','access_unresolved'):
             steps.append('本轮受API额度限制未读取主体文件；额度可用时继续枚举和下载，不能据此认定资源失效。')
+        elif audit and audit['status']=='download_unavailable':
+            steps.append('已定位公开文件，但本次下载发生域名解析或连接失败；按逐项记录复查存储端点，不能视作文件已读。')
+        elif audit and audit['status']=='source_gone':
+            steps.append('当前来源返回410或跳转；沿正式论文和作者发布寻找对应版本，不替换为相近主题数据。')
+        elif audit and audit['status']=='empty_storage_in_checked_scope':
+            steps.append('本次所查文件区未取得可下载数据；复查正式替代发布和未遍历组件，不能推断数据永久不存在。')
         elif audit and not audit['inventory_complete_within_bounded_scope']:
             steps.append('补查尚未枚举的OSF文件、子组件或版本；已有代表文件检查不等于完整发布范围。')
         else:

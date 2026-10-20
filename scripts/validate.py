@@ -85,6 +85,10 @@ def main():
     for path in (ROOT/'data').glob('osf-file-audit-*.json'):
         import hashlib
         audit=json.loads(path.read_text()); rows=audit['records'];summary=audit['summary']
+        if audit.get('stage')=='bounded_followup_access_audit':
+            from validate_followup import validate as validate_followup
+            validate_followup(audit,catalog,candidate,ROOT,check)
+            continue
         main=[r for r in rows if r['kind']=='main']; pending=[r for r in rows if r['kind']=='candidate']
         files=[f for r in rows for f in r['selected_file_checks']]
         check(len(rows)==len({r['resource_id'] for r in rows})==audit['target']['total_records']==85,'OSF audit queue count mismatch')

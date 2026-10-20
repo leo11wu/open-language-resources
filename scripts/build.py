@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import sys
 from verification import CHECK_LABELS, check_state, next_steps, verification_queue
+from followup import brief as followup_brief, page as followup_page
 
 ROOT=Path(__file__).resolve().parents[1]
 ROLE={'dataset':'数据集','collection':'资源集合','aggregate':'整合资料','alignment':'对齐资料','derived':'派生资料'}
@@ -77,7 +78,11 @@ def generated_files(c):
     audit=json.loads(audit_paths[-1].read_text()) if audit_paths else None
     osf_audit_path=ROOT/'data/osf-file-audit-2026-10-19.json'
     osf_audit=json.loads(osf_audit_path.read_text()) if osf_audit_path.exists() else None
+    followups=[json.loads(p.read_text()) for p in sorted((ROOT/'data').glob('osf-file-audit-*.json'))]
+    followups=[a for a in followups if a.get('stage')=='bounded_followup_access_audit']
+    followup=followups[-1] if followups else None
     osf_access_note=('2026-10-19实际文件核查已取得部分公开数据，随后受匿名API额度限制；[本轮逐项结果](catalog/osf-file-audit-2026-10-19.md)明确列出已读范围和未完成项。不能把部分可读写成全部OSF资源已验收。' if osf_audit else 'OSF接口返回维护通知；本目录保留发布说明，未完成所有原始文件下载验收。')
+    if followup:osf_access_note=followup_brief(followup,'catalog/')
     queue=verification_queue(c,source,candidates)
     check_counts=queue['summary']['main_by_check_state']
     lines=['# 公开语言资源目录\n\n',
@@ -88,7 +93,7 @@ def generated_files(c):
         '## 快速入口\n\n',
         '- [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。\n',
         f'- [核验进度与待检查清单](catalog/verification-status.md)：全部{len(resources)}条逐项状态与未完成检查。\n',
-        (f"- [OSF实际文件核查](catalog/osf-file-audit-2026-10-19.md)：{osf_audit['summary']['selected_complete_downloads']}个文件已下载，{osf_audit['summary']['main_with_readable_empirical_selected_files']}条资源读到代表性观测/常模；{osf_audit['summary']['main_without_new_file_reads']}条主目录入口仍待本轮文件检查。\n" if osf_audit else ''),
+        (f"- [OSF续查60条资源与5个候选原项目](catalog/osf-file-audit-{followup['checked_on']}.md)：实际下载、解析、样例与失败记录。\n" if followup else f"- [OSF实际文件核查](catalog/osf-file-audit-2026-10-19.md)：{osf_audit['summary']['selected_complete_downloads']}个文件已下载，{osf_audit['summary']['main_with_readable_empirical_selected_files']}条资源读到代表性观测/常模；{osf_audit['summary']['main_without_new_file_reads']}条主目录入口仍待本轮文件检查。\n" if osf_audit else ''),
         (f'- [不依赖OSF的资源组合与研究机会](research/{research_paths[-1].name})：结合既有研究的四条候选路线及实际对齐检查。\n' if research_paths else ''),
         (f'- [第一条想法的初次可行性试算](research/{feasibility_paths[-1].name})：原覆盖530组；后续事件审计另排除1组，见下列pilot。\n' if feasibility_paths else ''),
         (f'- [中英联想—启动pilot结果](research/{pilot_paths[-1].name})：原试次复原、60组语义初筛、测量稳定性、受控模型与词汇排除预测；建议调整后再决定主实验。\n' if pilot_paths else ''),
@@ -121,7 +126,7 @@ def generated_files(c):
     files={'README.md':''.join(lines),'data/resources.jsonl':''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in resources)}
     files['data/verification-queue.json']=json.dumps(queue,ensure_ascii=False,indent=2)+'\n'
     if audit:
-        insertion=f"[原{audit['reviewed_count']}条候选的逐项复核](catalog/candidate-audit.md)：累计{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留具体限制或待确认事项。"+(f"本轮继续核对剩余{audit['current_round_reviewed_count']}条，新增晋升{audit['newly_promoted_count']}条。" if 'current_round_reviewed_count' in audit else '')+'\n\n'
+        insertion=f"[原{audit['reviewed_count']}条候选的逐项复核](catalog/candidate-audit.md)：累计{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留具体限制或待确认事项。"+(f"本轮追查{audit['current_round_reviewed_count']}条，新增晋升{audit['newly_promoted_count']}条。" if 'current_round_reviewed_count' in audit else '')+'\n\n'
         files['README.md']=files['README.md'].replace('## 按主题浏览\n\n',insertion+'## 按主题浏览\n\n',1)
     lookup={r['id']:r for r in resources}
     for x in c['categories']:
@@ -171,7 +176,7 @@ def generated_files(c):
             f"最新更新：{audit['checked_on']}。原{audit['reviewed_count']}条累计{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留在暂未纳入清单；每条证据日期另列。\n\n",
             '确认依据包括正式论文的数据声明、项目对数据范围和许可的明确说明，以及作者仓库实际公开的CSV。',
             '相近主题论文、只公开刺激或统计表、只有预注册，均不自动替代原项目数据。\n\n',
-            ('本轮复查剩余12条并实际读取公开附件；新增晋升0条。5个注册的原项目受API额度限制，仍未确认最终数据。先前10条晋升保留2026-10-17的证据和日期，未冒充本轮已验收。\n\n' if osf_audit else '发布说明与实际文件读取范围分别记录。\n\n'),
+            (audit.get('current_round_scope','发布说明与实际文件读取范围分别记录。')+'\n\n'),
             '| 原编号 | 项目 | 结论 | 主目录编号 | 核查日期 |\n| --- | --- | --- | --- | --- |\n']
         for a in audit['records']:
             rid=a['main_resource_id']; main=f"[{rid}]({link(lookup[rid],'../')})" if rid else '—'
@@ -190,7 +195,7 @@ def generated_files(c):
         files['catalog/candidate-audit.md']=''.join(report)
     report=['# 文件核验进度与待检查清单\n\n',
         '[首页](../README.md) · [OSF索引](osf.md) · [结构化清单](../data/verification-queue.json) · [平台访问与维护记录](../data/platform-observations.json)\n\n',
-        f"记录日期：{c['updated_on']}。本页由逐条证据生成；说明核对、辅助文件读取、代表性数据文件读取、全资源验收分别计数。"+('[本轮OSF文件检查仍未全部完成](osf-file-audit-2026-10-19.md)。' if osf_audit else '')+'\n\n',
+        f"记录日期：{c['updated_on']}。本页由逐条证据生成；说明核对、辅助文件读取、代表性数据文件读取、全资源验收分别计数。"+(f"[本次65项续查及访问限制](osf-file-audit-{followup['checked_on']}.md)。" if followup else '[本轮OSF文件检查仍未全部完成](osf-file-audit-2026-10-19.md)。' if osf_audit else '')+'\n\n',
         '| 当前文件核验范围 | 主目录条数 |\n| --- | ---: |\n']
     for state,label in CHECK_LABELS.items():report.append(f'| {label} | {check_counts[state]} |\n')
     report += [f"\n主目录共{len(resources)}个入口；{queue['summary']['main_without_recorded_file_reads']}个尚无数据文件读取记录，其中{check_counts['discovery_portal']}个是发现平台。已有{queue['summary']['main_with_recorded_file_reads']}条记录选定文件读取范围；具体文件见各条目的核对来源及结构化清单。\n\n",
@@ -202,8 +207,9 @@ def generated_files(c):
     if osf_audit:
         s=osf_audit['summary']
         report.append(f"2026-10-19：本轮完整下载{s['selected_complete_downloads']}个选定文件；{s['main_with_readable_empirical_selected_files']}条主目录资源读到代表性观测/常模数据，2条只有辅助文件。其余{s['main_without_new_file_reads']}条主目录入口未取得本轮文件读取；12条候选新增晋升0条，5个关联原项目受429限流。详见[85项逐项结果](osf-file-audit-2026-10-19.md)。**不能宣称73条OSF资源及12条候选均已完成数据验收。**\n\n")
+    if followup:report.append('最新续查：'+followup_brief(followup)+'\n\n')
     report += [
-        f'1. 公开API额度可用后，优先补查本轮尚无实际文件读取的OSF资源及未遍历组件。\n2. 只读到说明、刺激或模型预测的项目继续检查主体观测数据；已有完整代表文件检查保留原范围。\n3. 继续核对剩余{candidates["candidate_count"]}条候选的具体问题；只公开材料、统计输出或需申请的保留限制。\n4. 继续核对其他主目录资源；NoRaRe的{source["record_count"]}条来源记录单列，不作为新增独立数据集计数。\n\n',
+        f'1. 优先复查本次下载失败的地区存储、超时文件、未完整读取的大文件与未遍历组件；公开API仍按预算使用。\n2. 只读到说明、刺激或模型预测的项目继续检查主体观测数据；已有完整代表文件检查保留原范围。\n3. 继续核对剩余{candidates["candidate_count"]}条候选的具体问题；只公开材料、统计输出或需申请的保留限制。\n4. 继续核对其他主目录资源；NoRaRe的{source["record_count"]}条来源记录单列，不作为新增独立数据集计数。\n\n',
         '## 主目录逐项待办\n\n',
         '| 编号 | 资源 | 实际文件核验 | OSF关联编号 | 下一步 |\n| --- | --- | --- | --- | --- |\n']
     for r in resources:
@@ -217,6 +223,8 @@ def generated_files(c):
     files['catalog/verification-status.md']=''.join(report)
     if osf_audit:
         files['catalog/osf-file-audit-2026-10-19.md']=osf_file_audit_page(osf_audit)
+    if followup:
+        files[f"catalog/osf-file-audit-{followup['checked_on']}.md"]=followup_page(followup)
     return files
 
 def main():

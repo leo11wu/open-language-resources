@@ -20,7 +20,7 @@
       "type": "string"
     },
     "schema_version": {
-      "const": "1.4.0"
+      "const": "1.5.0"
     },
     "catalog_version": {
       "type": "string",
@@ -293,7 +293,11 @@
                       "complete_r_serialization",
                       "archive_selected_members",
                       "complete_text",
-                      "complete_document_text"
+                      "complete_document_text",
+                      "complete_audio_frames",
+                      "complete_mat_variables",
+                      "bounded_table_prefix",
+                      "archive_directory_only"
                     ]
                   },
                   "result": {
@@ -316,7 +320,9 @@
                     "enum": [
                       "empirical_or_norm_data",
                       "model_generated_auxiliary",
-                      "documentation_or_materials"
+                      "documentation_or_materials",
+                      "corpus_derived_data",
+                      "model_generated_or_stimulus_materials"
                     ]
                   }
                 },
@@ -359,7 +365,11 @@
                     "materials_only_readable",
                     "metadata_read_no_data_downloaded",
                     "access_unresolved",
-                    "deferred_api_rate_limit"
+                    "deferred_api_rate_limit",
+                    "partial_data_readable",
+                    "download_unavailable",
+                    "empty_storage_in_checked_scope",
+                    "source_gone"
                   ]
                 },
                 "root_metadata_read": {

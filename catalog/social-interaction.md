@@ -1,6 +1,6 @@
 # 社会互动与语用
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共17个入口。资料状态与文件验收范围分别记录。
 
@@ -28,7 +28,7 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 
 [项目或数据入口](https://convokit.cornell.edu/documentation/wiki_politeness.html)
 
-关联：[R017 Conversations Gone Awry（CGA-WIKI）](../catalog/social-interaction.md#r017)。
+待核实关联：[R017 Conversations Gone Awry（CGA-WIKI）](../catalog/social-interaction.md#r017)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r017"></a>
 
@@ -54,7 +54,7 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 
 [项目或数据入口](https://convokit.cornell.edu/documentation/awry.html)
 
-关联：[R016 Stanford Politeness Corpus（Wikipedia）](../catalog/social-interaction.md#r016)、[R018 Winning Arguments（ChangeMyView）](../catalog/social-interaction.md#r018)。
+待核实关联：[R016 Stanford Politeness Corpus（Wikipedia）](../catalog/social-interaction.md#r016)、[R018 Winning Arguments（ChangeMyView）](../catalog/social-interaction.md#r018)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r018"></a>
 
@@ -80,7 +80,7 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 
 [项目或数据入口](https://convokit.cornell.edu/documentation/winning.html)
 
-关联：[R017 Conversations Gone Awry（CGA-WIKI）](../catalog/social-interaction.md#r017)、[R019 Deception in Diplomacy](../catalog/social-interaction.md#r019)。
+待核实关联：[R017 Conversations Gone Awry（CGA-WIKI）](../catalog/social-interaction.md#r017)、[R019 Deception in Diplomacy](../catalog/social-interaction.md#r019)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r019"></a>
 
@@ -106,7 +106,7 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 
 [项目或数据入口](https://convokit.cornell.edu/documentation/diplomacy.html)
 
-关联：[R018 Winning Arguments（ChangeMyView）](../catalog/social-interaction.md#r018)、[R014 HCRC Map Task Corpus](../catalog/spoken-variation.md#r014)。
+待核实关联：[R014 HCRC Map Task Corpus](../catalog/spoken-variation.md#r014)、[R018 Winning Arguments（ChangeMyView）](../catalog/social-interaction.md#r018)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r020"></a>
 
@@ -132,7 +132,7 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 
 [项目或数据入口](https://convokit.cornell.edu/documentation/parliament.html)
 
-关联：[R021 ParlaMint](../catalog/social-interaction.md#r021)。
+待核实关联：[R021 ParlaMint](../catalog/social-interaction.md#r021)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r021"></a>
 
@@ -158,7 +158,7 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 
 [项目或数据入口](https://www.clarin.eu/parlamint)
 
-关联：[R020 Parliament Question Time Corpus](../catalog/social-interaction.md#r020)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)。
+待核实关联：[R020 Parliament Question Time Corpus](../catalog/social-interaction.md#r020)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r138"></a>
 
@@ -403,6 +403,8 @@ Wikipedia讨论页请求语句、礼貌分数和原始人工评分，适合研�
 - [来源 4](https://github.com/seantrott/scarfs/blob/main/data/processed/aligned_results_public.csv)
 - [来源 5](https://github.com/seantrott/scarfs/blob/main/data/lexical_statistics/taboo_with_distances.csv)
 - [来源 6](https://raw.githubusercontent.com/seantrott/scarfs/72018bc62ef1f196bf31eb0165d6d50b7289bfad/data/processed/behavioral_results_public.csv)
+
+研究入口：[交际调整](../docs/research-needs.md#communicative-adjustment)。
 
 <a id="r175"></a>
 

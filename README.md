@@ -2,7 +2,7 @@
 
 用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。
 
-主目录 **181个资源入口、14类**，其中 **74条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-10-20**。
+主目录 **181个资源入口、14类**，其中 **74条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-11-02**。
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的11条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
@@ -23,6 +23,43 @@
 - [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。
 
 2026-10-20续查固定的60条主目录入口和5个候选原项目：48条主目录资源读到完整代表性数据，2条仅数据样例，3条仅辅助材料；7条本次未取得可读文件。候选新增晋升1条。[逐项证据与下载失败](catalog/osf-file-audit-2026-10-20.md)。全部为有界访问与选定文件核查，全资源验收仍为0。
+
+## 按研究需要进入
+
+先从问题选资料，再检查具体文件、版本和观测单位。[完整指南与使用边界](docs/research-needs.md)。
+
+| 研究需要 | 入口问题 | 精选资源数 |
+| --- | --- | ---: |
+| [结构分布](docs/research-needs.md#structural-distribution) | 哪些结构更常见？词序、依存关系和跨语言差异怎样比较？ | 4 |
+| [加工证据](docs/research-needs.md#processing-evidence) | 结构或词汇属性与阅读时间、眼动、神经信号有什么关系？ | 4 |
+| [交际调整](docs/research-needs.md#communicative-adjustment) | 说话者怎样随伙伴、共同知识和理解困难调整表达？ | 4 |
+| [跨模态规律](docs/research-needs.md#cross-modal-patterns) | 口语与手语的频率、感知运动属性和形式时长怎样比较？ | 4 |
+| [历时机制](docs/research-needs.md#diachronic-mechanisms) | 频率或语义怎样随时间变化？哪些变化可能来自语料构成？ | 3 |
+
+这些入口可交叉选用；入选不表示文件已验收。资源间另区分[派生自、同一批被试、同一套材料、子集和已验证可连接](docs/data-dictionary.md#资源关系)，原关联线索继续标为待核实。
+
+## 资源关系
+
+有依据的关系与原 `related_ids` 发现线索分开展示。以下按关系记录计数；同一资源可有多条关系，数字不代表独立数据集数量。
+
+| 关系类型 | 当前记录数 | 判断边界 |
+| --- | ---: | --- |
+| 派生自（`derived_from`） | 2 | 原数据经转换、标注或再分析；不能算作独立重复验证。 |
+| 同一批被试（`same_participants`） | 0 | 需要明确的被试复用依据，并说明重叠范围。 |
+| 同一套材料（`same_materials`） | 1 | 明确共享哪些刺激、提示词或文本；不表示同被试或同反应。 |
+| 子集（`subset_of`） | 1 | 明确抽样范围或发行集合成员关系。 |
+| 已验证可连接（`verified_join`） | 0 | 实际检查具体文件、版本、完整哈希、连接键与匹配诊断，并保留报告。 |
+
+当前有依据的具体关系如下；链接进入条目可查看原始来源与核对日期。
+
+| 资源 | 关系 | 另一资源 | 适用范围 |
+| --- | --- | --- | --- |
+| [R061](catalog/syntax.md#r061) | 派生自 | [R002](catalog/child-language.md#r002) | 仅UD-English-CHILDES所选的英语儿童—成人转写及其句法标注。 |
+| [R061](catalog/syntax.md#r061) | 子集属于 | [R059](catalog/syntax.md#r059) | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 |
+| [R062](catalog/syntax.md#r062) | 派生自 | [R002](catalog/child-language.md#r002) | CHILDES美式英语部分语料中的儿童导向话语；部分只选择含wh词的话语。 |
+| [R180](catalog/lexical-cognition.md#r180) | 同一套材料 | [R022](catalog/lexical-cognition.md#r022) | 仅指LWOW生成阶段复用SWOW-EN18（SWOW-EN.R100.csv）的英语提示词；不涵盖清洗后全量材料相等、被试、反应或SWOW其他语种。 |
+
+0表示尚未记录充分依据，不表示关系不存在。原关联继续标为“待核实关联”；共享词形、主题相近或统计相关都不会自动升级为同被试、同材料或已验证可连接。关系说明不改变181条资源原有的文件核验状态。[完整定义与证据要求](docs/data-dictionary.md#资源关系)。
 
 [原22条候选的逐项复核](catalog/candidate-audit.md)：累计11条补入主目录，11条保留具体限制或待确认事项。本轮追查5条，新增晋升1条。
 
@@ -249,6 +286,10 @@ python3 scripts/query.py --platform osf
 python3 scripts/query.py --platform osf --category syntax
 python3 scripts/query.py --lang zh
 python3 scripts/query.py --check-state documentation_only --platform osf
+python3 scripts/query.py --need processing-evidence --lang en
+python3 scripts/query.py --relation derived_from --related-to R002
+python3 scripts/query.py --relation same_materials --related-to R022 --format json
+python3 scripts/query.py --relation unverified --related-to R011
 python3 scripts/query.py --tag 结构启动
 python3 scripts/query.py --index norare 习得年龄
 python3 scripts/query.py --index norare --lang zh
@@ -263,6 +304,7 @@ python3 scripts/query.py --origin human_norms --format json
 ```sh
 python3 scripts/build.py
 python3 scripts/validate.py
+python3 -m unittest discover -s tests
 python3 scripts/build.py --check
 ```
 

@@ -1,8 +1,8 @@
 {
   "$schema": "../schema/resources.schema.json",
-  "schema_version": "1.5.0",
-  "catalog_version": "2.4.0",
-  "updated_on": "2026-10-20",
+  "schema_version": "1.6.0",
+  "catalog_version": "2.5.0",
+  "updated_on": "2026-11-02",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
   "resource_count": 181,
@@ -69,6 +69,143 @@
     {
       "id": "clinical-language",
       "label": "临床语言、沟通与语言障碍"
+    }
+  ],
+  "research_needs": [
+    {
+      "id": "structural-distribution",
+      "label": "结构分布",
+      "question": "哪些结构更常见？词序、依存关系和跨语言差异怎样比较？",
+      "selection_note": "先区分语料中的结构频率与语言层面的类型学编码；树库体裁、标注方式和语言谱系会影响比较。",
+      "resources": [
+        {
+          "resource_id": "R059",
+          "use_for": "从依存树提取词序、依存距离和结构频率。",
+          "check_before_use": "选择明确的树库与发行版本；分开人工与自动标注，检查体裁、分词和许可。"
+        },
+        {
+          "resource_id": "R061",
+          "use_for": "比较英语儿童与成人互动中的依存结构。",
+          "check_before_use": "区分说话者角色、年龄、gold/silver与切分；只核对过开发集，且与CHILDES同源。"
+        },
+        {
+          "resource_id": "R045",
+          "use_for": "查询跨语言词序及其他类型学特征。",
+          "check_before_use": "核对每项特征的定义、语言覆盖和描述来源；缺失值不是结构不存在。"
+        },
+        {
+          "resource_id": "R046",
+          "use_for": "比较统一编码下的跨语言语法特征。",
+          "check_before_use": "控制谱系和地理相关；不可未经定义核对就与WALS同名变量合并。"
+        }
+      ]
+    },
+    {
+      "id": "processing-evidence",
+      "label": "加工证据",
+      "question": "结构或词汇属性与阅读时间、眼动、神经信号有什么关系？",
+      "selection_note": "逐词、逐被试观测与词项聚合值是不同分析单位；句法标注与行为/神经信号的对齐需要单独验证。",
+      "resources": [
+        {
+          "resource_id": "R077",
+          "use_for": "研究低频句法结构与自定步速阅读时间。",
+          "check_before_use": "采用作者2025年修正RT错位后的版本；检查故事、词位和被试键，文本含人工设计。"
+        },
+        {
+          "resource_id": "R118",
+          "use_for": "研究语境预测度与逐词阅读眼动。",
+          "check_before_use": "分别确认常模和眼动文件的读取范围；两者被试不同，词位连接尚需按具体版本检查。"
+        },
+        {
+          "resource_id": "R119",
+          "use_for": "研究自然阅读中的EEG与眼动信号。",
+          "check_before_use": "区分ZuCo版本、任务和被试，确认同步与预处理层级；选定文件检查不等于全库验收。"
+        },
+        {
+          "resource_id": "R040",
+          "use_for": "比较多语言L1/L2阅读眼动与个体差异。",
+          "check_before_use": "只使用已发布波次；核对文本可比性、读者条件及可用文件，现有完整读取仅为说明文档。"
+        }
+      ]
+    },
+    {
+      "id": "communicative-adjustment",
+      "label": "交际调整",
+      "question": "说话者怎样随伙伴、共同知识和理解困难调整表达？",
+      "selection_note": "区分自然会话、任务诱发互动和加工后的协调指标；要分析修复或理解成功，须先找到相应事件与结果。",
+      "resources": [
+        {
+          "resource_id": "R014",
+          "use_for": "研究地图协作中的指称、澄清与信息分配。",
+          "check_before_use": "核对对话、轮次和地图标注；这是合作任务语料，不能直接代表日常会话。"
+        },
+        {
+          "resource_id": "R015",
+          "use_for": "寻找带精细转写和同步媒体的自然互动子库。",
+          "check_before_use": "按具体子库确认获取条件、转写规范与修复标注；集合入口不是一张可直接分析的表。"
+        },
+        {
+          "resource_id": "R174",
+          "use_for": "比较熟人与陌生人的指称选择及游戏行为。",
+          "check_before_use": "保留说话者、伙伴、会话与记录键的嵌套；Lost不等于理解失败，首次听者猜测仍待确认。"
+        },
+        {
+          "resource_id": "R181",
+          "use_for": "研究亲子互动协调与词汇学习的关系。",
+          "check_before_use": "区分38组亲子的不同粒度处理表与打乱对照；不能把各表行数相加为独立被试。"
+        }
+      ]
+    },
+    {
+      "id": "cross-modal-patterns",
+      "label": "跨模态规律",
+      "question": "口语与手语的频率、感知运动属性和形式时长怎样比较？",
+      "selection_note": "这些资源提供不同模态的候选测量，不是现成的同材料对照；须另定义可比单位、词义映射和测量方法。",
+      "resources": [
+        {
+          "resource_id": "R026",
+          "use_for": "取得英语词的感知运动属性常模，筛选比较维度。",
+          "check_before_use": "主观属性常模不是自然使用频率，也没有据此建立与手语词项的一对一映射。"
+        },
+        {
+          "resource_id": "R050",
+          "use_for": "研究ASL词项的主观频率、象似性与形式属性。",
+          "check_before_use": "主观频率不等于语料词频；孤立示范时长不可直接与自然会话时长合并。"
+        },
+        {
+          "resource_id": "R052",
+          "use_for": "在自然DGS语料中检查词型与实际使用实例。",
+          "check_before_use": "公开子库范围、词型标注、视频时间与访问条件逐项确认；不能把全档案视为开放。"
+        },
+        {
+          "resource_id": "R134",
+          "use_for": "取得口语产生/知觉及刺激声学测量的参照。",
+          "check_before_use": "分开刺激表、产生观测和知觉试次；特定德语清化实验不是跨模态或自然频率总体。"
+        }
+      ]
+    },
+    {
+      "id": "diachronic-mechanisms",
+      "label": "历时机制",
+      "question": "频率或语义怎样随时间变化？哪些变化可能来自语料构成？",
+      "selection_note": "按年代变化是描述证据；解释机制还需控制体裁、版本、来源构成和采样，不能由频数或向量漂移直接推出因果。",
+      "resources": [
+        {
+          "resource_id": "R056",
+          "use_for": "观察词与短语的逐年频数轨迹。",
+          "check_before_use": "固定Ngram版本和分母，检查OCR与图书构成；不具备完整篇章语境。"
+        },
+        {
+          "resource_id": "R057",
+          "use_for": "探索历时词向量的语义邻域变化候选。",
+          "check_before_use": "核对具体向量的训练来源与年代；计算表示不是独立观测，漂移可能来自频率和训练差异。"
+        },
+        {
+          "resource_id": "R060",
+          "use_for": "为需要全文语境的问题筛选作品与来源。",
+          "check_before_use": "核对作品、版本和电子文本年代及体裁；自建样本不是默认平衡的历时语料。"
+        }
+      ]
     }
   ],
   "resources": [
@@ -3304,7 +3441,37 @@
             "blob_sha": "46eb2cf9b596aa716720300734471c4eb1064067"
           }
         ]
-      }
+      },
+      "relations": [
+        {
+          "type": "derived_from",
+          "target_id": "R002",
+          "direction": "source_to_target",
+          "scope": "仅UD-English-CHILDES所选的英语儿童—成人转写及其句法标注。",
+          "evidence": {
+            "basis": "documentation",
+            "checked_on": "2026-11-02",
+            "summary": "UD官方树库说明明确以CHILDES转写为来源，并统一已有树库标注；这是来源关系，未验证与原转写逐句连接。",
+            "urls": [
+              "https://universaldependencies.org/treebanks/en_childes/"
+            ]
+          }
+        },
+        {
+          "type": "subset_of",
+          "target_id": "R059",
+          "direction": "source_to_target",
+          "scope": "UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。",
+          "evidence": {
+            "basis": "documentation",
+            "checked_on": "2026-11-02",
+            "summary": "UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。",
+            "urls": [
+              "https://universaldependencies.org/treebanks/en_childes/"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "CHILDES Treebank / Pearl–Sprouse（成分句法）",
@@ -3352,7 +3519,23 @@
           "https://talkbank.org/childes/access/Derived/Pearl_Sprouse.html"
         ],
         "note": "核对资源说明与发布证据；未逐文件下载、解码或重跑分析。"
-      }
+      },
+      "relations": [
+        {
+          "type": "derived_from",
+          "target_id": "R002",
+          "direction": "source_to_target",
+          "scope": "CHILDES美式英语部分语料中的儿童导向话语；部分只选择含wh词的话语。",
+          "evidence": {
+            "basis": "documentation",
+            "checked_on": "2026-11-02",
+            "summary": "项目方说明从CHILDES多个子库选取转写，自动成分分析后经两轮人工检查；并未声称覆盖全部CHILDES。",
+            "urls": [
+              "https://sites.socsci.uci.edu/~lpearl/CoLaLab/CHILDESTreebank/childestreebank.html"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "CoLA（英语可接受度语料）",
@@ -10480,7 +10663,27 @@
       ],
       "osf_ids": [],
       "data_status": "released_data",
-      "data_origin": "derived_data"
+      "data_origin": "derived_data",
+      "relations": [
+        {
+          "type": "same_materials",
+          "target_id": "R022",
+          "direction": "bidirectional",
+          "scope": "仅指LWOW生成阶段复用SWOW-EN18（SWOW-EN.R100.csv）的英语提示词；不涵盖清洗后全量材料相等、被试、反应或SWOW其他语种。",
+          "evidence": {
+            "basis": "documentation",
+            "checked_on": "2026-11-02",
+            "summary": "作者论文第3页Data generation明确使用SWOW-EN18的SWOW-EN.R100.csv提示词。固定提交的FA_data_Generation.py调用loadSimplifiedSWOW与getProfilesCues；FA_Functions.py读取该文件并从cue列构造输入。支持英语提示材料复用，未据此验证清洗后提示集合完全相同或具体文件逐行连接。",
+            "urls": [
+              "https://www.nature.com/articles/s41597-025-05156-9",
+              "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/README.md",
+              "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/FA_data_Generation.py",
+              "https://www.nature.com/articles/s41597-025-05156-9.pdf",
+              "https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/FA_Functions.py"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "R181",

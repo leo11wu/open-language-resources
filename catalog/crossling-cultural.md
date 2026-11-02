@@ -1,6 +1,6 @@
 # 跨语言结构与社会文化
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共10个入口。资料状态与文件验收范围分别记录。
 
@@ -32,7 +32,7 @@
 
 - [来源 1](https://github.com/lexibank/)
 
-关联：[R042 CLICS](../catalog/crossling-cultural.md#r042)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)、[R049 Intercontinental Dictionary Series（IDS）](../catalog/crossling-cultural.md#r049)。
+待核实关联：[R042 CLICS](../catalog/crossling-cultural.md#r042)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)、[R049 Intercontinental Dictionary Series（IDS）](../catalog/crossling-cultural.md#r049)、[R048 PHOIBLE](../catalog/crossling-cultural.md#r048)、[R156 NHB形义规律性研究：分析复现包](../catalog/crossling-cultural.md#r156)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r042"></a>
 
@@ -58,7 +58,7 @@
 
 [项目或数据入口](https://clics.clld.org/download)
 
-关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)。
+待核实关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)、[R156 NHB形义规律性研究：分析复现包](../catalog/crossling-cultural.md#r156)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r043"></a>
 
@@ -88,7 +88,7 @@
 
 - [来源 1](https://norare.clld.org/download)
 
-关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R024 英语习得年龄常模（Kuperman等及相关扩展）](../catalog/lexical-cognition.md#r024)、[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)、[R028 Warriner情感常模](../catalog/lexical-cognition.md#r028)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)。
+待核实关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)、[R028 Warriner情感常模](../catalog/lexical-cognition.md#r028)、[R024 英语习得年龄常模（Kuperman等及相关扩展）](../catalog/lexical-cognition.md#r024)、[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r044"></a>
 
@@ -114,7 +114,7 @@
 
 [项目或数据入口](https://concepticon.clld.org/download)
 
-关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)、[R049 Intercontinental Dictionary Series（IDS）](../catalog/crossling-cultural.md#r049)。
+待核实关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R042 CLICS](../catalog/crossling-cultural.md#r042)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)、[R049 Intercontinental Dictionary Series（IDS）](../catalog/crossling-cultural.md#r049)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r045"></a>
 
@@ -144,7 +144,9 @@
 
 - [来源 1](https://wals.info/)
 
-关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)。
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r046"></a>
 
@@ -174,7 +176,9 @@
 
 - [来源 1](https://grambank.clld.org/download)
 
-关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)。
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r047"></a>
 
@@ -204,7 +208,7 @@
 
 - [来源 1](https://d-place.org/download)
 
-关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)。
+待核实关联：[R021 ParlaMint](../catalog/social-interaction.md#r021)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r048"></a>
 
@@ -234,7 +238,7 @@
 
 - [来源 1](https://phoible.org/download)
 
-关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)。
+待核实关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r049"></a>
 
@@ -264,7 +268,7 @@
 
 - [来源 1](https://ids.clld.org/download)
 
-关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)。
+待核实关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r156"></a>
 
@@ -296,5 +300,5 @@
 - [来源 2](https://osf.io/download/sqepg/)
 - [来源 3](https://osf.io/download/na5hv/)
 
-关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R042 CLICS](../catalog/crossling-cultural.md#r042)。
+待核实关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R042 CLICS](../catalog/crossling-cultural.md#r042)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

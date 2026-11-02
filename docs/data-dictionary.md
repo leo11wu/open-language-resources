@@ -16,10 +16,61 @@
 | `license_note` | 原始数据许可；未明确时不推定开放授权 |
 | `limitations` | 测量、抽样、同源或分析边界 |
 | `source_url` / `additional_urls` | 主要入口及补充链接；原始资源有迁移时保留来源关系 |
-| `tags` / `related_ids` | 主题标签及关联R编号；关联不意味着独立样本或可以直接合并 |
+| `tags` | 主题标签 |
+| `related_ids` | 沿用的发现线索；关系类型与证据待核实，不意味着独立样本或可以直接合并 |
+| `relations` | 可选的有类型资源关系，记录目标、方向、适用范围和证据；缺省不表示不存在关系 |
 | `platforms` | OSF、GitHub等可用托管或关联平台；不等于完整文件清单 |
 | `osf_ids` | 已确认关联的项目/组件编号；不枚举项目下所有文件或冻结副本 |
 | `verification` | 文档核对日期、依据、来源URL和文件验收状态 |
+
+## 按研究需要进入
+
+顶层 `research_needs` 是人工精选导航，仍以 `data/resources.json` 为单一来源。每项保留稳定英文 `id`、中文 `label`、入口问题 `question`、总体筛选边界 `selection_note`；`resources` 逐条引用现有R编号，并填写 `use_for` 与 `check_before_use`。
+
+首页、[研究需要指南](research-needs.md)、分类页的研究入口与查询均从这些字段生成。同一资源可以出现在多个入口；入选不刷新说明核对日期，也不表示文件已可连接或验收完毕。入口不是全目录自动分类，更不是新增科研项目或效果结论。
+
+```sh
+python3 scripts/query.py --need processing-evidence --lang en
+python3 scripts/query.py --need structural-distribution --category syntax
+```
+
+## 资源关系
+
+关系存放在来源资源的 `relations` 中，只记录一次；`target_id` 指向另一R编号。构建与查询自动显示两个端点，并保留原方向，不需要在目标资源重复录入。关系可以同时成立，例如一个树库既派生自原转写，也属于某个发行集合。
+
+| `type` | 含义与方向 | 证据边界 |
+| --- | --- | --- |
+| `derived_from` | 派生自：当前资源 → 来源资源；`direction=source_to_target` | 明确指出原数据与转换、标注或再分析来源；派生资料不是新的独立观测 |
+| `same_participants` | 同一批被试：两端 ↔；`direction=bidirectional` | 需要明确的被试复用证据；若仅部分重叠，在范围中说明是哪部分，不能从同实验室或同被试编号猜测 |
+| `same_materials` | 同一套材料：两端 ↔；`direction=bidirectional` | 写明共享的刺激、提示词或文本及其范围；不等于同被试、同反应或逐行可连接 |
+| `subset_of` | 子集：当前资源 → 母资源；`direction=source_to_target` | 写明抽样范围或集合成员关系；抽取并重新标注通常还需另记派生关系 |
+| `verified_join` | 已验证可连接：两端 ↔；`direction=bidirectional` | 仅限实际检查过的具体文件、版本、连接键和保留子集；不授予整库可合并或独立样本地位 |
+
+每条必须填写 `scope` 和 `evidence`。证据包括 `basis`（前四类为 `documentation`，连接为 `file_join_check`）、本次关系核对日期 `checked_on`、具体依据 `summary` 及公开来源 `urls`。关系的说明核对与 `verification` 中的数据文件核验分开；新增说明依据不会自动修改任何数据验收字段。
+
+`verified_join` 还必须有 `join_check`：
+
+| 字段 | 必填内容 |
+| --- | --- |
+| `source_file` / `target_file` | 各自的文件URL、`version` 和完整文件 `sha256`；对应存储关系的当前资源与目标资源，即使从目标端查看也不交换两端 |
+| `source_keys` / `target_keys` | 按位置对应的连接列，复合键按同一顺序记录 |
+| `normalization` / `cardinality` | 实际使用的规范化与排歧规则；一对一、一对多、多对一或多对多基数 |
+| `matched_rows` | 该规则下实际保留的匹配行数，大于0 |
+| `unmatched_source_rows` / `unmatched_target_rows` | 两端未匹配行数；允许非零，必须明确适用子集 |
+| `ambiguous_keys` | 保留结果中未解决的歧义键数，必须为0；有意的一对多不同于未解决的歧义 |
+| `report_path` | 仓库内实际检查报告的相对路径；应说明文件版本、键唯一性、匹配/排除诊断和限制，不重分发原始观测 |
+
+校验器检查字段、ID、方向、重复、日期、文件标识及报告是否存在，不代替对证据内容的科研判断。只有说明或尚未运行的连接方案不能填作 `verified_join`。目前没有强行为“同一批被试”或“已验证可连接”填入示例；0条记录表示证据尚未整理，不表示关系不存在。
+
+原 `related_ids` 完整保留。展示时把它们归并为无方向的“待核实关联”发现入口；同一对资源已有类型关系时不再重复显示待核实链接，但不会据此推断其他类型。不会从派生或共享材料自动推出同被试或可连接，也不自动传播传递关系。
+
+```sh
+python3 scripts/query.py --relation derived_from --related-to R002
+python3 scripts/query.py --relation same_materials --related-to R022 --format json
+python3 scripts/query.py --relation unverified --related-to R011
+```
+
+`--relation` 与 `--related-to` 同时约束同一条关系，从任一端均可检索。JSON输出在所选资源上附加 `matching_relations`（含原来源、目标、当前查看方向和依据）；`--need` 附加 `research_need_match`（用途与使用条件）。未用这些新筛选时，JSON输出仍是原始资源记录。新筛选仅适用于主目录，可与现有语言、分类、访问和核验范围筛选组合。
 
 ## 资料状态
 

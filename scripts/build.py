@@ -8,6 +8,7 @@ from pathlib import Path
 import sys
 from verification import CHECK_LABELS, check_state, next_steps, verification_queue
 from followup import brief as followup_brief, page as followup_page
+from navigation import RELATION_TYPES, relation_index, relation_label
 
 ROOT=Path(__file__).resolve().parents[1]
 ROLE={'dataset':'数据集','collection':'资源集合','aggregate':'整合资料','alignment':'对齐资料','derived':'派生资料'}
@@ -17,6 +18,81 @@ EVIDENCE={'documentation_reviewed':'沿用首版文档核对','project_documenta
 
 def md(x): return str(x).replace('|','\\|').replace('\n',' ')
 def link(r,prefix=''): return f"{prefix}catalog/{r['category']}.md#{r['id'].lower()}"
+
+def homepage_relations(c, lookup):
+    counts=Counter(relation['type'] for r in c['resources'] for relation in r.get('relations',[]))
+    boundaries={
+        'derived_from':'原数据经转换、标注或再分析；不能算作独立重复验证。',
+        'same_participants':'需要明确的被试复用依据，并说明重叠范围。',
+        'same_materials':'明确共享哪些刺激、提示词或文本；不表示同被试或同反应。',
+        'subset_of':'明确抽样范围或发行集合成员关系。',
+        'verified_join':'实际检查具体文件、版本、完整哈希、连接键与匹配诊断，并保留报告。',
+    }
+    out=['## 资源关系\n\n',
+         '有依据的关系与原 `related_ids` 发现线索分开展示。以下按关系记录计数；同一资源可有多条关系，数字不代表独立数据集数量。\n\n',
+         '| 关系类型 | 当前记录数 | 判断边界 |\n| --- | ---: | --- |\n']
+    for kind,(label,_,_) in RELATION_TYPES.items():
+        out.append(f"| {label if kind!='subset_of' else '子集'}（`{kind}`） | {counts[kind]} | {boundaries[kind]} |\n")
+    out += ['\n当前有依据的具体关系如下；链接进入条目可查看原始来源与核对日期。\n\n',
+            '| 资源 | 关系 | 另一资源 | 适用范围 |\n| --- | --- | --- | --- |\n']
+    for resource in c['resources']:
+        for relation in resource.get('relations',[]):
+            target=lookup[relation['target_id']]
+            label=RELATION_TYPES[relation['type']][0]
+            out.append(f"| [{resource['id']}]({link(resource)}) | {label} | [{target['id']}]({link(target)}) | {md(relation['scope'])} |\n")
+    out.append(f"\n0表示尚未记录充分依据，不表示关系不存在。原关联继续标为“待核实关联”；共享词形、主题相近或统计相关都不会自动升级为同被试、同材料或已验证可连接。关系说明不改变{len(c['resources'])}条资源原有的文件核验状态。[完整定义与证据要求](docs/data-dictionary.md#资源关系)。\n\n")
+    return ''.join(out)
+
+def research_needs_page(c, lookup):
+    out=['# 按研究需要进入\n\n',
+         '[首页](../README.md) · [按句法问题选资料](syntax-guide.md) · [字段与关系说明](data-dictionary.md)\n\n',
+         '以下是从现有目录人工选取的起点，不是全部匹配结果，也不改变任何文件核验状态。',
+         '同一资源可支持多个问题；是否适用仍取决于具体版本、观测单位与所需文件。\n\n']
+    out += [f"- [{need['label']}](#{need['id']})：{need['question']}\n" for need in c['research_needs']]
+    for need in c['research_needs']:
+        out += [f"\n<a id=\"{need['id']}\"></a>\n\n## {need['label']}\n\n",need['question']+'\n\n',need['selection_note']+'\n\n',
+                '| 资源 | 适合看什么 | 使用前确认 | 已记录文件核验 |\n| --- | --- | --- | --- |\n']
+        for member in need['resources']:
+            resource=lookup[member['resource_id']]
+            out.append(f"| [{resource['id']} {md(resource['name'])}]({link(resource,'../')}) | {md(member['use_for'])} | {md(member['check_before_use'])} | {CHECK_LABELS[check_state(resource)]} |\n")
+        out.append(f"\n```sh\npython3 scripts/query.py --need {need['id']}\n```\n")
+    counts=Counter(relation['type'] for r in c['resources'] for relation in r.get('relations',[]))
+    out += ['\n## 资源关系也要分开判断\n\n',
+            '分类条目分别展示有依据的关系和待核实关联。关系说明不刷新原数据的读取或验收范围；',
+            '共享材料不表示同一批被试，派生资料不能算作独立重复验证。\n\n',
+            '| 关系类型 | 当前有依据记录数 |\n| --- | ---: |\n']
+    for kind,(label,_,_) in RELATION_TYPES.items():
+        out.append(f"| {label if kind!='subset_of' else '子集'}（`{kind}`） | {counts[kind]} |\n")
+    out += ['\n0表示尚未记录有充分依据的关系，不表示已证明不存在。',
+            '“已验证可连接”必须另外记录两个文件的版本、完整文件哈希、连接键、匹配诊断和实际检查报告；',
+            '仅共享词形、语言标识或提示词不能满足这个条件。定义与维护方法见[字段说明](data-dictionary.md#资源关系)。\n']
+    return ''.join(out)
+
+def resource_relations(views, lookup):
+    typed=[view for view in views if view['type']!='unverified']
+    out=[]
+    if typed:
+        out += ['\n资源关系（有依据）：\n\n',
+                '| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |\n| --- | --- | --- | --- | --- |\n']
+        for view in typed:
+            target=lookup[view['other_id']]; evidence=view['evidence']
+            arrow='↔' if view['direction']=='bidirectional' else '→'
+            urls=' '.join(f"[来源{i}]({u})" for i,u in enumerate(evidence['urls'],1))
+            basis='文件连接检查' if evidence['basis']=='file_join_check' else '说明核对'
+            out.append(f"| {relation_label(view)} | [{target['id']} {md(target['name'])}]({link(target,'../')}) | {view['source_id']} {arrow} {view['target_id']} | {md(view['scope'])} | {basis}，{evidence['checked_on']}；{md(evidence['summary'])} {urls} |\n")
+        for view in typed:
+            if view['type']=='verified_join':
+                join=view['join_check']
+                out.append(f"\n连接记录（{view['source_id']} → {view['target_id']}）：\n\n")
+                for side,label in [('source_file','源文件'),('target_file','目标文件')]:
+                    artifact=join[side]
+                    out.append(f"- [{label}]({artifact['url']})：{md(artifact['version'])}；SHA-256 `{artifact['sha256']}`。\n")
+                out += [f"- 键：`{md(', '.join(join['source_keys']))}` → `{md(', '.join(join['target_keys']))}`；规则：{md(join['normalization'])}；基数：`{join['cardinality']}`。\n",
+                        f"- 匹配行数{join['matched_rows']}；源/目标未匹配{join['unmatched_source_rows']}/{join['unmatched_target_rows']}；未解决歧义键{join['ambiguous_keys']}。[实际检查报告](../{join['report_path']})。\n"]
+    unverified=[view for view in views if view['type']=='unverified']
+    if unverified:
+        out.append('\n待核实关联：'+'、'.join(f"[{view['other_id']} {lookup[view['other_id']]['name']}]({link(lookup[view['other_id']],'../')})" for view in unverified)+'。仅保留原目录线索，未确认五类关系或具体文件可连接。\n')
+    return ''.join(out)
 
 def osf_file_audit_page(audit):
     s=audit['summary']
@@ -63,6 +139,8 @@ def osf_file_audit_page(audit):
 
 def generated_files(c):
     resources=c['resources']; labels={x['id']:x['label'] for x in c['categories']}
+    lookup={r['id']:r for r in resources}
+    relations=relation_index(c)
     counts=Counter(r['category'] for r in resources)
     osf=[r for r in resources if 'osf' in r['platforms']]
     source=json.loads((ROOT/'data/source-indexes/norare.json').read_text())
@@ -103,7 +181,14 @@ def generated_files(c):
         '- [NoRaRe具体来源](catalog/norare-source-index.md)：按语种和测量指标继续找常模。\n',
         '- [检索范围、遗漏与核对边界](docs/search-method.md) · [本次扩充记录](docs/changelog.md)。\n\n',
         osf_access_note+'\n\n',
-        '## 按主题浏览\n\n| 分类 | 条目数 | 入口 |\n| --- | ---: | --- |\n']
+        '## 按研究需要进入\n\n',
+        '先从问题选资料，再检查具体文件、版本和观测单位。[完整指南与使用边界](docs/research-needs.md)。\n\n',
+        '| 研究需要 | 入口问题 | 精选资源数 |\n| --- | --- | ---: |\n']
+    for need in c['research_needs']:
+        lines.append(f"| [{need['label']}](docs/research-needs.md#{need['id']}) | {md(need['question'])} | {len(need['resources'])} |\n")
+    lines += ['\n这些入口可交叉选用；入选不表示文件已验收。资源间另区分[派生自、同一批被试、同一套材料、子集和已验证可连接](docs/data-dictionary.md#资源关系)，原关联线索继续标为待核实。\n\n',
+              homepage_relations(c,lookup),
+              '## 按主题浏览\n\n| 分类 | 条目数 | 入口 |\n| --- | ---: | --- |\n']
     for x in c['categories']: lines.append(f"| {x['label']} | {counts[x['id']]} | [查看](catalog/{x['id']}.md) |\n")
     lines+=['\n## 数据与证据\n\n',
         '- [JSON主目录](data/resources.json) · [JSONL逐条资料](data/resources.jsonl)。\n',
@@ -117,21 +202,25 @@ def generated_files(c):
         'python3 scripts/query.py --category syntax\npython3 scripts/query.py --platform osf\n',
         'python3 scripts/query.py --platform osf --category syntax\npython3 scripts/query.py --lang zh\n',
         'python3 scripts/query.py --check-state documentation_only --platform osf\n',
+        'python3 scripts/query.py --need processing-evidence --lang en\n',
+        'python3 scripts/query.py --relation derived_from --related-to R002\n',
+        'python3 scripts/query.py --relation same_materials --related-to R022 --format json\n',
+        'python3 scripts/query.py --relation unverified --related-to R011\n',
         'python3 scripts/query.py --tag 结构启动\npython3 scripts/query.py --index norare 习得年龄\n',
         'python3 scripts/query.py --index norare --lang zh\npython3 scripts/query.py --index candidates --category syntax\n',
         'python3 scripts/query.py --origin human_norms --format json\n```\n\n',
         '## 更新\n\n主目录编辑 `data/resources.json`，来源索引和待核对清单分别编辑其JSON；不要直接修改生成的分类页。\n\n',
-        '```sh\npython3 scripts/build.py\npython3 scripts/validate.py\npython3 scripts/build.py --check\n```\n\n',
+        '```sh\npython3 scripts/build.py\npython3 scripts/validate.py\npython3 -m unittest discover -s tests\npython3 scripts/build.py --check\n```\n\n',
         '方法见 [CONTRIBUTING.md](CONTRIBUTING.md)。原有R001–R060编号保留；UD移入句法专类。\n']
     files={'README.md':''.join(lines),'data/resources.jsonl':''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in resources)}
+    files['docs/research-needs.md']=research_needs_page(c,lookup)
     files['data/verification-queue.json']=json.dumps(queue,ensure_ascii=False,indent=2)+'\n'
     if audit:
         insertion=f"[原{audit['reviewed_count']}条候选的逐项复核](catalog/candidate-audit.md)：累计{audit['promoted_count']}条补入主目录，{audit['remaining_count']}条保留具体限制或待确认事项。"+(f"本轮追查{audit['current_round_reviewed_count']}条，新增晋升{audit['newly_promoted_count']}条。" if 'current_round_reviewed_count' in audit else '')+'\n\n'
         files['README.md']=files['README.md'].replace('## 按主题浏览\n\n',insertion+'## 按主题浏览\n\n',1)
-    lookup={r['id']:r for r in resources}
     for x in c['categories']:
         subset=[r for r in resources if r['category']==x['id']]
-        out=[f"# {x['label']}\n\n",'[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)\n\n',f'共{len(subset)}个入口。资料状态与文件验收范围分别记录。\n\n']
+        out=[f"# {x['label']}\n\n",'[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)\n\n',f'共{len(subset)}个入口。资料状态与文件验收范围分别记录。\n\n']
         for r in subset:
             v=r['verification']
             out += [f'<a id="{r["id"].lower()}"></a>\n\n',f"## {r['name']}\n\n",f"**{r['id']}** · {ROLE[r['entry_type']]} · {STATUS[r['data_status']]}\n\n",f"{r['description']}\n\n",'| 字段 | 内容 |\n| --- | --- |\n',
@@ -141,8 +230,10 @@ def generated_files(c):
             if extras:
                 out.append('\n补充及核对来源：\n\n')
                 out += [f'- [来源 {i}]({u})\n' for i,u in enumerate(extras,1)]
-            if r['related_ids']:
-                out.append('\n关联：'+'、'.join(f"[{rid} {lookup[rid]['name']}]({link(lookup[rid],'../')})" for rid in r['related_ids'])+'。\n')
+            selected_needs=[need for need in c['research_needs'] if any(m['resource_id']==r['id'] for m in need['resources'])]
+            if selected_needs:
+                out.append('\n研究入口：'+' · '.join(f"[{need['label']}](../docs/research-needs.md#{need['id']})" for need in selected_needs)+'。\n')
+            out.append(resource_relations(relations[r['id']],lookup))
             out.append('\n')
         files[f"catalog/{x['id']}.md"]=''.join(out)
     out=['# OSF语言资源索引\n\n','[首页](../README.md) · [句法](syntax.md) · [待核对线索](discovery-candidates.md)\n\n',f'主目录中{len(osf)}条资源关联OSF项目或其正式替代入口。项目、组件与冻结版本尽量按同一数据家族归并。\n\n',osf_access_note.replace('catalog/osf-file-audit','osf-file-audit')+'\n\n']

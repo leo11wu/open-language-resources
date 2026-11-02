@@ -1,6 +1,6 @@
 # 手语、成语与抽象意义
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共10个入口。资料状态与文件验收范围分别记录。
 
@@ -32,7 +32,9 @@ ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性
 
 - [来源 1](https://asl-lex.org/)
 
-关联：[R026 Lancaster Sensorimotor Norms](../catalog/lexical-cognition.md#r026)、[R051 Multilingual Sign Language Wordnet](../catalog/sign-figurative.md#r051)、[R052 Public DGS Corpus（MEINE DGS）](../catalog/sign-figurative.md#r052)。
+研究入口：[跨模态规律](../docs/research-needs.md#cross-modal-patterns)。
+
+待核实关联：[R026 Lancaster Sensorimotor Norms](../catalog/lexical-cognition.md#r026)、[R051 Multilingual Sign Language Wordnet](../catalog/sign-figurative.md#r051)、[R052 Public DGS Corpus（MEINE DGS）](../catalog/sign-figurative.md#r052)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r051"></a>
 
@@ -58,7 +60,7 @@ ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性
 
 [项目或数据入口](https://www.sign-lang.uni-hamburg.de/easier/sign-wordnet/download.html)
 
-关联：[R050 ASL-LEX](../catalog/sign-figurative.md#r050)、[R052 Public DGS Corpus（MEINE DGS）](../catalog/sign-figurative.md#r052)。
+待核实关联：[R050 ASL-LEX](../catalog/sign-figurative.md#r050)、[R052 Public DGS Corpus（MEINE DGS）](../catalog/sign-figurative.md#r052)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r052"></a>
 
@@ -88,7 +90,9 @@ ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性
 
 - [来源 1](https://www.sign-lang.uni-hamburg.de/meinedgs_r4/ling/license_en.html)
 
-关联：[R050 ASL-LEX](../catalog/sign-figurative.md#r050)、[R051 Multilingual Sign Language Wordnet](../catalog/sign-figurative.md#r051)。
+研究入口：[跨模态规律](../docs/research-needs.md#cross-modal-patterns)。
+
+待核实关联：[R050 ASL-LEX](../catalog/sign-figurative.md#r050)、[R051 Multilingual Sign Language Wordnet](../catalog/sign-figurative.md#r051)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r053"></a>
 
@@ -118,7 +122,7 @@ ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性
 
 - [来源 1](https://huggingface.co/datasets/thu-coai/chid)
 
-关联：[R054 Chengyu-Bench](../catalog/sign-figurative.md#r054)、[R055 ePiC](../catalog/sign-figurative.md#r055)。
+待核实关联：[R054 Chengyu-Bench](../catalog/sign-figurative.md#r054)、[R055 ePiC](../catalog/sign-figurative.md#r055)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r054"></a>
 
@@ -148,7 +152,7 @@ ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性
 
 - [来源 1](https://aclanthology.org/2025.emnlp-main.119/)
 
-关联：[R053 ChID](../catalog/sign-figurative.md#r053)、[R055 ePiC](../catalog/sign-figurative.md#r055)。
+待核实关联：[R053 ChID](../catalog/sign-figurative.md#r053)、[R055 ePiC](../catalog/sign-figurative.md#r055)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r055"></a>
 
@@ -174,7 +178,7 @@ ASL-LEX 2.0含2723个手语词的60余项性质，可查主观频率、象似性
 
 [项目或数据入口](https://epic-benchmark.github.io/)
 
-关联：[R053 ChID](../catalog/sign-figurative.md#r053)、[R054 Chengyu-Bench](../catalog/sign-figurative.md#r054)。
+待核实关联：[R053 ChID](../catalog/sign-figurative.md#r053)、[R054 Chengyu-Bench](../catalog/sign-figurative.md#r054)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r094"></a>
 

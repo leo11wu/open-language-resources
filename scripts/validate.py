@@ -7,6 +7,7 @@ import re
 import sys
 from urllib.parse import urlparse
 from verification import verification_queue
+from navigation import validate_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,6 +18,7 @@ def main():
     resources = catalog['resources']
     categories = {c['id'] for c in catalog['categories']}
     expected_fields = set(schema['$defs']['resource']['required'])
+    allowed_fields = set(schema['$defs']['resource']['properties'])
     ids = [r['id'] for r in resources]
     errors = []
     def check(condition,message):
@@ -30,7 +32,7 @@ def main():
     datetime.date.fromisoformat(catalog['updated_on'])
     for r in resources:
         prefix = r['id']+': '
-        check(set(r)==expected_fields,prefix+'Unexpected or missing fields')
+        check(expected_fields<=set(r)<=allowed_fields,prefix+'Unexpected or missing fields')
         check(bool(re.fullmatch(r'R[0-9]{3,}',r['id'])),prefix+'Malformed ID')
         check(r['category'] in categories,prefix+'Unknown category')
         check(r['access_mode'] in catalog['access_modes'],prefix+'Unknown access mode')
@@ -56,6 +58,7 @@ def main():
         for url in r['verification']['evidence_urls']:
             parsed=urlparse(url)
             check(parsed.scheme in ['http','https'] and bool(parsed.netloc),prefix+'Invalid evidence URL')
+    errors.extend(validate_navigation(catalog, ROOT))
     source=json.loads((ROOT/'data/source-indexes/norare.json').read_text())
     source_rows=source['records']
     source_ids=[r['source_id'] for r in source_rows]

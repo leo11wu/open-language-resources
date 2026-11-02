@@ -1,6 +1,6 @@
 # 中文、二语与双语
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共19个入口。资料状态与文件验收范围分别记录。
 
@@ -28,7 +28,7 @@
 
 [项目或数据入口](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch)
 
-关联：[R032 Chinese Lexical Database（CLD）](../catalog/chinese-l2-bilingual.md#r032)、[R033 MELD-SCH](../catalog/chinese-l2-bilingual.md#r033)、[R034 Chinese Lexicon Project（Tse等，双字词）](../catalog/chinese-l2-bilingual.md#r034)。
+待核实关联：[R032 Chinese Lexical Database（CLD）](../catalog/chinese-l2-bilingual.md#r032)、[R033 MELD-SCH](../catalog/chinese-l2-bilingual.md#r033)、[R034 Chinese Lexicon Project（Tse等，双字词）](../catalog/chinese-l2-bilingual.md#r034)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r032"></a>
 
@@ -54,7 +54,7 @@
 
 [项目或数据入口](https://chineselexicaldatabase.com/download.php)
 
-关联：[R031 SUBTLEX-CH](../catalog/chinese-l2-bilingual.md#r031)。
+待核实关联：[R031 SUBTLEX-CH](../catalog/chinese-l2-bilingual.md#r031)、[R033 MELD-SCH](../catalog/chinese-l2-bilingual.md#r033)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r033"></a>
 
@@ -80,7 +80,7 @@
 
 [项目或数据入口](https://link.springer.com/article/10.3758/s13428-017-0944-0)
 
-关联：[R031 SUBTLEX-CH](../catalog/chinese-l2-bilingual.md#r031)、[R032 Chinese Lexical Database（CLD）](../catalog/chinese-l2-bilingual.md#r032)、[R034 Chinese Lexicon Project（Tse等，双字词）](../catalog/chinese-l2-bilingual.md#r034)。
+待核实关联：[R031 SUBTLEX-CH](../catalog/chinese-l2-bilingual.md#r031)、[R032 Chinese Lexical Database（CLD）](../catalog/chinese-l2-bilingual.md#r032)、[R034 Chinese Lexicon Project（Tse等，双字词）](../catalog/chinese-l2-bilingual.md#r034)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r034"></a>
 
@@ -106,7 +106,7 @@
 
 [项目或数据入口](https://link.springer.com/article/10.3758/s13428-016-0810-5)
 
-关联：[R031 SUBTLEX-CH](../catalog/chinese-l2-bilingual.md#r031)、[R033 MELD-SCH](../catalog/chinese-l2-bilingual.md#r033)。
+待核实关联：[R031 SUBTLEX-CH](../catalog/chinese-l2-bilingual.md#r031)、[R033 MELD-SCH](../catalog/chinese-l2-bilingual.md#r033)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r035"></a>
 
@@ -132,7 +132,7 @@
 
 [项目或数据入口](https://language.sakura.ne.jp/icnale/download.html)
 
-关联：[R036 EFCAMDAT](../catalog/chinese-l2-bilingual.md#r036)、[R037 MERLIN](../catalog/chinese-l2-bilingual.md#r037)、[R038 CEDEL2](../catalog/chinese-l2-bilingual.md#r038)。
+待核实关联：[R036 EFCAMDAT](../catalog/chinese-l2-bilingual.md#r036)、[R037 MERLIN](../catalog/chinese-l2-bilingual.md#r037)、[R038 CEDEL2](../catalog/chinese-l2-bilingual.md#r038)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r036"></a>
 
@@ -158,7 +158,7 @@
 
 [项目或数据入口](https://ef-lab.mmll.cam.ac.uk/EFCAMDAT.html)
 
-关联：[R035 ICNALE](../catalog/chinese-l2-bilingual.md#r035)。
+待核实关联：[R035 ICNALE](../catalog/chinese-l2-bilingual.md#r035)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r037"></a>
 
@@ -188,7 +188,7 @@
 
 - [来源 1](https://www.merlin-platform.eu/)
 
-关联：[R035 ICNALE](../catalog/chinese-l2-bilingual.md#r035)、[R038 CEDEL2](../catalog/chinese-l2-bilingual.md#r038)。
+待核实关联：[R035 ICNALE](../catalog/chinese-l2-bilingual.md#r035)、[R038 CEDEL2](../catalog/chinese-l2-bilingual.md#r038)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r038"></a>
 
@@ -214,7 +214,7 @@
 
 [项目或数据入口](https://cedel2.learnercorpora.com/)
 
-关联：[R035 ICNALE](../catalog/chinese-l2-bilingual.md#r035)、[R037 MERLIN](../catalog/chinese-l2-bilingual.md#r037)。
+待核实关联：[R035 ICNALE](../catalog/chinese-l2-bilingual.md#r035)、[R037 MERLIN](../catalog/chinese-l2-bilingual.md#r037)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r039"></a>
 
@@ -240,7 +240,7 @@
 
 [项目或数据入口](https://expsy.ugent.be/downloads/geco/)
 
-关联：[R040 MECO](../catalog/chinese-l2-bilingual.md#r040)。
+待核实关联：[R040 MECO](../catalog/chinese-l2-bilingual.md#r040)、[R058 OPUS](../catalog/diachronic-parallel-syntax.md#r058)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r040"></a>
 
@@ -272,7 +272,9 @@
 - [来源 2](https://osf.io/download/kxqeh/)
 - [来源 3](https://osf.io/download/jahw9/)
 
-关联：[R039 GECO](../catalog/chinese-l2-bilingual.md#r039)。
+研究入口：[加工证据](../docs/research-needs.md#processing-evidence)。
+
+待核实关联：[R039 GECO](../catalog/chinese-l2-bilingual.md#r039)、[R058 OPUS](../catalog/diachronic-parallel-syntax.md#r058)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r114"></a>
 

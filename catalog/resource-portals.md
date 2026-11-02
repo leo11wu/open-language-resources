@@ -1,6 +1,6 @@
 # 继续发现资源的平台与索引
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共8个入口。资料状态与文件验收范围分别记录。
 

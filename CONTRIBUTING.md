@@ -3,8 +3,8 @@
 1. 编辑 `data/resources.json`；为新条目分配未使用的稳定编号。原R编号不重排；主分类改变不更改编号。
 2. 优先核对项目方、作者仓库或正式发布版本，保留获取条件、测量边界和许可说明。
 3. 核实说明页后才更新核对日期。完成文件下载与数据验证后，才更新对应验收字段。
-4. 运行 `python3 scripts/build.py`，更新首页、分类目录和JSONL。
-5. 运行 `python3 scripts/validate.py` 和 `python3 scripts/build.py --check`。
+4. 运行 `python3 scripts/build.py`，更新首页、分类目录、研究需要指南和JSONL。
+5. 运行 `python3 scripts/validate.py`、`python3 -m unittest discover -s tests` 和 `python3 scripts/build.py --check`。
 
 文件核验进度页和 `data/verification-queue.json` 也由构建脚本生成，不手工打勾。根据实际证据编辑各资源的 `verification`，保留读取范围和版本；网页能打开、论文声明有数据或只读文件头部，均不能标成全资源文件已验收。发现入口按平台用途检查，不按数据集验收。
 
@@ -17,3 +17,7 @@ NoRaRe来源记录编辑 `data/source-indexes/norare.json`；未确认发布的�
 更改语种标签或访问类型时，同时检查 `docs/data-dictionary.md` 和JSON Schema。对于失效链接，先寻找项目方的正式替代入口，再保留来源关系。不要仅因一次抓取失败就认定资源已经消失。
 
 本目录的主题是可用资源与其证据边界。论文推荐、研究设想或模型生成材料如需加入，应清楚标注其性质，不能写成已有数据或发现。
+
+“按研究需要进入”编辑主目录顶层 `research_needs`，引用已有R编号，并写清用途和使用前条件；不直接编辑生成的 `docs/research-needs.md`。同一资源可被多项引用，精选入口不等于全库验收或穷尽检索。
+
+资源关系按[字段说明](docs/data-dictionary.md#资源关系)编辑各条目的可选 `relations`，保留明确方向、范围和来源证据。对称关系只录一次，不在另一端复制；旧 `related_ids` 仍为待核实线索。不要因主题、词形或文件列名相同就填成共享被试或已验证可连接。`verified_join` 必须有固定文件版本及完整文件SHA-256、键、实际匹配诊断和仓库内检查报告；不满足时只保留待核实线索，不更改原文件验收状态。

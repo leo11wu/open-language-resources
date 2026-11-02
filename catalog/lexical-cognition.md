@@ -1,6 +1,6 @@
 # 词汇认知与语义常模
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共21个入口。资料状态与文件验收范围分别记录。
 
@@ -36,7 +36,13 @@
 - [来源 4](https://github.com/lib314a/SWOWZH)
 - [来源 5](https://www.smallworldofwords.org/en/project/research)
 
-关联：[R029 SimLex-999](../catalog/lexical-cognition.md#r029)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)、[R147 SPAML（多语言语义启动）](../catalog/lexical-cognition.md#r147)、[R180 LLM World of Words（LWOW，模型生成英语联想）](../catalog/lexical-cognition.md#r180)。
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 同一套材料 | [R180 LLM World of Words（LWOW，模型生成英语联想）](../catalog/lexical-cognition.md#r180) | R180 ↔ R022 | 仅指LWOW生成阶段复用SWOW-EN18（SWOW-EN.R100.csv）的英语提示词；不涵盖清洗后全量材料相等、被试、反应或SWOW其他语种。 | 说明核对，2026-11-02；作者论文第3页Data generation明确使用SWOW-EN18的SWOW-EN.R100.csv提示词。固定提交的FA_data_Generation.py调用loadSimplifiedSWOW与getProfilesCues；FA_Functions.py读取该文件并从cue列构造输入。支持英语提示材料复用，未据此验证清洗后提示集合完全相同或具体文件逐行连接。 [来源1](https://www.nature.com/articles/s41597-025-05156-9) [来源2](https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/README.md) [来源3](https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/FA_data_Generation.py) [来源4](https://www.nature.com/articles/s41597-025-05156-9.pdf) [来源5](https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/FA_Functions.py) |
+
+待核实关联：[R029 SimLex-999](../catalog/lexical-cognition.md#r029)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)、[R147 SPAML（多语言语义启动）](../catalog/lexical-cognition.md#r147)、[R156 NHB形义规律性研究：分析复现包](../catalog/crossling-cultural.md#r156)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r023"></a>
 
@@ -69,7 +75,7 @@
 - [来源 3](https://osf.io/download/eu5ca/)
 - [来源 4](https://osf.io/download/rd632/)
 
-关联：[R024 英语习得年龄常模（Kuperman等及相关扩展）](../catalog/lexical-cognition.md#r024)、[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R026 Lancaster Sensorimotor Norms](../catalog/lexical-cognition.md#r026)、[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)。
+待核实关联：[R024 英语习得年龄常模（Kuperman等及相关扩展）](../catalog/lexical-cognition.md#r024)、[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R026 Lancaster Sensorimotor Norms](../catalog/lexical-cognition.md#r026)、[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r024"></a>
 
@@ -100,7 +106,7 @@
 - [来源 1](https://osf.io/download/vb9je/)
 - [来源 2](https://osf.io/download/2s8yx/)
 
-关联：[R001 Wordbank](../catalog/child-language.md#r001)、[R023 English Lexicon Project（ELP）](../catalog/lexical-cognition.md#r023)。
+待核实关联：[R001 Wordbank](../catalog/child-language.md#r001)、[R023 English Lexicon Project（ELP）](../catalog/lexical-cognition.md#r023)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r025"></a>
 
@@ -132,7 +138,7 @@
 - [来源 2](https://osf.io/download/8ne54/)
 - [来源 3](https://osf.io/download/qz9vx/)
 
-关联：[R026 Lancaster Sensorimotor Norms](../catalog/lexical-cognition.md#r026)、[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)。
+待核实关联：[R023 English Lexicon Project（ELP）](../catalog/lexical-cognition.md#r023)、[R026 Lancaster Sensorimotor Norms](../catalog/lexical-cognition.md#r026)、[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r026"></a>
 
@@ -164,7 +170,9 @@
 - [来源 2](https://osf.io/download/48wsc/)
 - [来源 3](https://osf.io/download/7c9gr/)
 
-关联：[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R050 ASL-LEX](../catalog/sign-figurative.md#r050)。
+研究入口：[跨模态规律](../docs/research-needs.md#cross-modal-patterns)。
+
+待核实关联：[R023 English Lexicon Project（ELP）](../catalog/lexical-cognition.md#r023)、[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R050 ASL-LEX](../catalog/sign-figurative.md#r050)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r027"></a>
 
@@ -194,7 +202,7 @@
 
 - [来源 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC6538586/)
 
-关联：[R028 Warriner情感常模](../catalog/lexical-cognition.md#r028)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。
+待核实关联：[R023 English Lexicon Project（ELP）](../catalog/lexical-cognition.md#r023)、[R025 英语具体性常模（Brysbaert等）](../catalog/lexical-cognition.md#r025)、[R028 Warriner情感常模](../catalog/lexical-cognition.md#r028)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r028"></a>
 
@@ -224,7 +232,7 @@
 
 - [来源 1](https://link.springer.com/article/10.3758/s13428-012-0314-x)
 
-关联：[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。
+待核实关联：[R027 Glasgow Norms](../catalog/lexical-cognition.md#r027)、[R043 NoRaRe](../catalog/crossling-cultural.md#r043)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r029"></a>
 
@@ -250,7 +258,7 @@
 
 [项目或数据入口](https://fh295.github.io/simlex.html)
 
-关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R030 THINGS资源体系](../catalog/lexical-cognition.md#r030)。
+待核实关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R030 THINGS资源体系](../catalog/lexical-cognition.md#r030)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r030"></a>
 
@@ -276,7 +284,7 @@
 
 [项目或数据入口](https://things-initiative.org/)
 
-关联：[R029 SimLex-999](../catalog/lexical-cognition.md#r029)。
+待核实关联：[R029 SimLex-999](../catalog/lexical-cognition.md#r029)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r092"></a>
 
@@ -543,7 +551,7 @@ Psychological Science Accelerator的多语言语义启动项目，仓库链接�
 - [来源 4](https://github.com/SemanticPriming/SPAML/blob/master/06_Analysis/descriptive_statistics_priming.Rmd)
 - [来源 5](https://github.com/SemanticPriming/SPAML/blob/master/05_Data/codebooks/codebook_priming_trials.Rmd)
 
-关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)。
+待核实关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r177"></a>
 
@@ -636,5 +644,9 @@ PLOS数据声明明确公开行为数据、向量、模型解释率、评分指�
 - [来源 1](https://www.nature.com/articles/s41597-025-05156-9)
 - [来源 2](https://github.com/LLMWorldOfWords/LWOW/tree/455ca9d475b4c3a55d48952689ba6db18cb82574)
 
-关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)。
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 同一套材料 | [R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022) | R180 ↔ R022 | 仅指LWOW生成阶段复用SWOW-EN18（SWOW-EN.R100.csv）的英语提示词；不涵盖清洗后全量材料相等、被试、反应或SWOW其他语种。 | 说明核对，2026-11-02；作者论文第3页Data generation明确使用SWOW-EN18的SWOW-EN.R100.csv提示词。固定提交的FA_data_Generation.py调用loadSimplifiedSWOW与getProfilesCues；FA_Functions.py读取该文件并从cue列构造输入。支持英语提示材料复用，未据此验证清洗后提示集合完全相同或具体文件逐行连接。 [来源1](https://www.nature.com/articles/s41597-025-05156-9) [来源2](https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/README.md) [来源3](https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/FA_data_Generation.py) [来源4](https://www.nature.com/articles/s41597-025-05156-9.pdf) [来源5](https://github.com/LLMWorldOfWords/LWOW/blob/455ca9d475b4c3a55d48952689ba6db18cb82574/reproducibility/FA_Functions.py) |
 

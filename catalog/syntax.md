@@ -1,6 +1,6 @@
 # 句法、可接受度与句子加工
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共36个入口。资料状态与文件验收范围分别记录。
 
@@ -32,7 +32,15 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 
 - [来源 1](https://universaldependencies.org/contributing/licensing.html)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)。
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 包含子集 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | R061 → R059 | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 | 说明核对，2026-11-02；UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
+
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r061"></a>
 
@@ -62,7 +70,14 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 
 - [来源 1](https://github.com/UniversalDependencies/UD_English-CHILDES)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 派生自 | [R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002) | R061 → R002 | 仅UD-English-CHILDES所选的英语儿童—成人转写及其句法标注。 | 说明核对，2026-11-02；UD官方树库说明明确以CHILDES转写为来源，并统一已有树库标注；这是来源关系，未验证与原转写逐句连接。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
+| 子集属于 | [R059 Universal Dependencies（UD）](../catalog/syntax.md#r059) | R061 → R059 | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 | 说明核对，2026-11-02；UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
 
 <a id="r062"></a>
 
@@ -92,7 +107,13 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 
 - [来源 1](https://talkbank.org/childes/access/Derived/Pearl_Sprouse.html)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 派生自 | [R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002) | R062 → R002 | CHILDES美式英语部分语料中的儿童导向话语；部分只选择含wh词的话语。 | 说明核对，2026-11-02；项目方说明从CHILDES多个子库选取转写，自动成分分析后经两轮人工检查；并未声称覆盖全部CHILDES。 [来源1](https://sites.socsci.uci.edu/~lpearl/CoLaLab/CHILDESTreebank/childestreebank.html) |
+
+待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r063"></a>
 
@@ -453,6 +474,8 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 | 下一步 | 定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://github.com/languageMIT/naturalstories)
+
+研究入口：[加工证据](../docs/research-needs.md#processing-evidence)。
 
 <a id="r078"></a>
 

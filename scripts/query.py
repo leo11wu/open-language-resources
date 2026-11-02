@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 from verification import CHECK_LABELS, check_state
+from navigation import RELATION_TYPES, matching_relations, relation_index, relation_label
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -11,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     catalog = json.loads((ROOT/'data/resources.json').read_text(encoding='utf-8'))
     labels = {c['id']:c['label'] for c in catalog['categories']}
+    needs = {need['id']:need for need in catalog['research_needs']}
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('keyword',nargs='?',default='')
     parser.add_argument('--category',choices=list(labels))
@@ -23,11 +25,14 @@ def main():
     parser.add_argument('--status',choices=['released_data','described_resource','materials_only','discovery_portal'])
     parser.add_argument('--evidence',help='Evidence type, e.g. publisher_data_statement (main only)')
     parser.add_argument('--check-state',choices=list(CHECK_LABELS),help='Recorded file-check scope, independent of data release status (main only)')
+    parser.add_argument('--need',choices=list(needs),help='Curated research need (main only); selection is not file acceptance')
+    parser.add_argument('--relation',choices=[*RELATION_TYPES,'unverified'],help='Relationship type, including incoming edges (main only)')
+    parser.add_argument('--related-to',choices=[r['id'] for r in catalog['resources']],help='Other endpoint of the relationship (main only)')
     parser.add_argument('--format',choices=['text','json'],default='text')
     args = parser.parse_args()
     if args.index!='main':
-        unsupported=args.access or args.origin or args.status or args.evidence or args.platform or args.check_state
-        if unsupported: parser.error('Access, platform, origin, status and evidence filters apply to the main catalog only.')
+        unsupported=args.access or args.origin or args.status or args.evidence or args.platform or args.check_state or args.need or args.relation or args.related_to
+        if unsupported: parser.error('Access, platform, origin, status, evidence, research-need and relationship filters apply to the main catalog only.')
         if args.index=='norare' and args.category: parser.error('The NoRaRe source index has measure/language tags, not main-catalog categories.')
         if args.index=='norare':
             rows=json.loads((ROOT/'data/source-indexes/norare.json').read_text())['records']
@@ -55,7 +60,12 @@ def main():
                 else: print(f"\n{r['id']} {r['name']}\n待核对：{r['reason']}\n{r['source_url']}")
         return 0
     selected = []
+    relations = relation_index(catalog)
+    need_members = {m['resource_id']:m for m in needs[args.need]['resources']} if args.need else {}
     for r in catalog['resources']:
+        if args.need and r['id'] not in need_members: continue
+        matches = matching_relations(relations[r['id']], args.relation, args.related_to)
+        if (args.relation or args.related_to) and not matches: continue
         if args.category and r['category'] != args.category:
             continue
         if args.access and r['access_mode'] != args.access:
@@ -72,13 +82,27 @@ def main():
         text = ' '.join([r['name'],r['language_scope'],r['data_type'],r['description'],r['limitations'],labels[r['category']],*r['tags']]).casefold()
         if args.keyword.casefold() not in text:
             continue
-        selected.append(r)
+        result = dict(r)
+        if args.need: result['research_need_match'] = {'need_id':args.need, **need_members[r['id']]}
+        if args.relation or args.related_to: result['matching_relations'] = matches
+        selected.append(result)
     if args.format == 'json':
         print(json.dumps(selected,ensure_ascii=False,indent=2))
     else:
         print(f'{len(selected)} resources')
         for r in selected:
             print(f"\n{r['id']} {r['name']}\n{r['description']}\n文件核验：{CHECK_LABELS[check_state(r)]}\n获取：{r['access_notes']}\n{r['source_url']}")
+            if args.need:
+                member = need_members[r['id']]
+                print(f"用途：{member['use_for']}\n使用前确认：{member['check_before_use']}")
+            for view in r.get('matching_relations', []):
+                print(f"关系：{relation_label(view)} {view['other_id']}（{view['perspective']}）")
+                if view['type'] == 'unverified':
+                    print('依据：仅保留原 related_ids 线索；类型与证据待核实。')
+                else:
+                    print(f"范围：{view['scope']}\n依据：{view['evidence']['summary']}\n" + '\n'.join(view['evidence']['urls']))
+                    if view['type'] == 'verified_join':
+                        print('连接检查：' + json.dumps(view['join_check'], ensure_ascii=False))
     return 0
 
 

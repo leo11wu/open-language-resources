@@ -1,6 +1,6 @@
 # 儿童语言与发展
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共17个入口。资料状态与文件验收范围分别记录。
 
@@ -32,7 +32,7 @@
 
 - [来源 1](https://wordbank.stanford.edu/)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R003 Peekbank](../catalog/child-language.md#r003)、[R024 英语习得年龄常模（Kuperman等及相关扩展）](../catalog/lexical-cognition.md#r024)。
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R003 Peekbank](../catalog/child-language.md#r003)、[R024 英语习得年龄常模（Kuperman等及相关扩展）](../catalog/lexical-cognition.md#r024)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r002"></a>
 
@@ -63,7 +63,14 @@
 - [来源 1](https://talkbank.org/childes/access.html)
 - [来源 2](https://langcog.github.io/childes-db-website/)
 
-关联：[R001 Wordbank](../catalog/child-language.md#r001)、[R003 Peekbank](../catalog/child-language.md#r003)、[R004 PhonBank](../catalog/child-language.md#r004)、[R007 HomeBank](../catalog/child-language.md#r007)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 派生资料 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | R061 → R002 | 仅UD-English-CHILDES所选的英语儿童—成人转写及其句法标注。 | 说明核对，2026-11-02；UD官方树库说明明确以CHILDES转写为来源，并统一已有树库标注；这是来源关系，未验证与原转写逐句连接。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
+| 派生资料 | [R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062) | R062 → R002 | CHILDES美式英语部分语料中的儿童导向话语；部分只选择含wh词的话语。 | 说明核对，2026-11-02；项目方说明从CHILDES多个子库选取转写，自动成分分析后经两轮人工检查；并未声称覆盖全部CHILDES。 [来源1](https://sites.socsci.uci.edu/~lpearl/CoLaLab/CHILDESTreebank/childestreebank.html) |
+
+待核实关联：[R001 Wordbank](../catalog/child-language.md#r001)、[R003 Peekbank](../catalog/child-language.md#r003)、[R004 PhonBank](../catalog/child-language.md#r004)、[R007 HomeBank](../catalog/child-language.md#r007)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R105 儿童词义习得：CHILDES义项聚类与人工评价](../catalog/child-language.md#r105)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r003"></a>
 
@@ -89,7 +96,7 @@ Looking-while-listening实验的注视时序、词语识别、儿童月龄及实
 
 [项目或数据入口](https://peekbank.github.io/peekbank-website/)
 
-关联：[R001 Wordbank](../catalog/child-language.md#r001)、[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)。
+待核实关联：[R001 Wordbank](../catalog/child-language.md#r001)、[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r004"></a>
 
@@ -119,7 +126,7 @@ Looking-while-listening实验的注视时序、词语识别、儿童月龄及实
 
 - [来源 1](https://talkbank.org/phon/access.html)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)。
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r005"></a>
 
@@ -152,7 +159,7 @@ Looking-while-listening实验的注视时序、词语识别、儿童月龄及实
 - [来源 3](https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/processed_data/03_data_trial_main.csv)
 - [来源 4](https://raw.githubusercontent.com/manybabies/mb1-analysis-public/dc3eb5b3578057096d337203635c0759d2fc04b6/metadata/Variable_Dictionary_mb1.csv)
 
-关联：[R006 MetaLab](../catalog/child-language.md#r006)。
+待核实关联：[R006 MetaLab](../catalog/child-language.md#r006)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r006"></a>
 
@@ -178,7 +185,7 @@ Looking-while-listening实验的注视时序、词语识别、儿童月龄及实
 
 [项目或数据入口](https://metalab.stanford.edu/)
 
-关联：[R005 ManyBabies 1（MB1）](../catalog/child-language.md#r005)。
+待核实关联：[R005 ManyBabies 1（MB1）](../catalog/child-language.md#r005)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r007"></a>
 
@@ -204,7 +211,7 @@ Looking-while-listening实验的注视时序、词语识别、儿童月龄及实
 
 [项目或数据入口](https://talkbank.org/homebank/access/)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R008 SAYCam](../catalog/child-language.md#r008)。
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R008 SAYCam](../catalog/child-language.md#r008)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r008"></a>
 
@@ -235,7 +242,7 @@ Looking-while-listening实验的注视时序、词语识别、儿童月龄及实
 - [来源 1](https://nyu.databrary.org/volume/564)
 - [来源 2](https://databrary.org/about/agreement)
 
-关联：[R007 HomeBank](../catalog/child-language.md#r007)。
+待核实关联：[R007 HomeBank](../catalog/child-language.md#r007)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r101"></a>
 
@@ -379,7 +386,7 @@ PLOS数据声明明确完整数据与分析语法存于OSF，研究成人回应�
 - [来源 2](https://osf.io/86yxz/files/mk9r7)
 - [来源 3](https://osf.io/download/mk9r7/)
 
-关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)。
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r106"></a>
 
@@ -491,4 +498,6 @@ PLOS数据声明明确完整数据与分析语法存于OSF，研究成人回应�
 - [来源 6](https://osf.io/download/hmk4t/)
 - [来源 7](https://osf.io/download/69e73e33f6c5d1916173bdb9/)
 - [来源 8](https://osf.io/download/rpaqy/)
+
+研究入口：[交际调整](../docs/research-needs.md#communicative-adjustment)。
 

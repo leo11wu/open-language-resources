@@ -1,6 +1,6 @@
 # 语音、音系与声学
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共10个入口。资料状态与文件验收范围分别记录。
 
@@ -63,7 +63,7 @@
 - [来源 1](https://osf.io/dgn2a/overview)
 - [来源 2](https://osf.io/b6pk9/files/f2aqw)
 
-关联：[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)。
+待核实关联：[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r132"></a>
 
@@ -152,6 +152,8 @@ Roettger等研究的三个产生实验及一个知觉实验资料，用于词末
 - [来源 2](https://osf.io/download/j5y49/)
 - [来源 3](https://osf.io/download/grmht/)
 - [来源 4](https://osf.io/download/ueyrc/)
+
+研究入口：[跨模态规律](../docs/research-needs.md#cross-modal-patterns)。
 
 <a id="r135"></a>
 

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-10-20",
-  "catalog_version": "2.4.0",
+  "generated_on": "2026-11-02",
+  "catalog_version": "2.5.0",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",

@@ -13,6 +13,7 @@
     "resource_count",
     "access_modes",
     "categories",
+    "research_needs",
     "resources"
   ],
   "properties": {
@@ -20,7 +21,7 @@
       "type": "string"
     },
     "schema_version": {
-      "const": "1.5.0"
+      "const": "1.6.0"
     },
     "catalog_version": {
       "type": "string",
@@ -70,6 +71,13 @@
       "type": "array",
       "items": {
         "$ref": "#/$defs/resource"
+      }
+    },
+    "research_needs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/researchNeed"
       }
     }
   },
@@ -207,7 +215,8 @@
             "type": "string",
             "pattern": "^R[0-9]{3,}$"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Legacy discovery links only; their scientific relationship and joinability remain unverified."
         },
         "verification": {
           "type": "object",
@@ -434,8 +443,323 @@
             "materials_only",
             "discovery_portal"
           ]
+        },
+        "relations": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/relation"
+          }
         }
       }
+    },
+    "researchNeed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "question",
+        "selection_note",
+        "resources"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "selection_note": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "resources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "resource_id",
+              "use_for",
+              "check_before_use"
+            ],
+            "properties": {
+              "resource_id": {
+                "type": "string",
+                "pattern": "^R[0-9]{3,}$"
+              },
+              "use_for": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_before_use": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          }
+        }
+      }
+    },
+    "joinArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "version",
+        "sha256"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "joinCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_file",
+        "target_file",
+        "source_keys",
+        "target_keys",
+        "normalization",
+        "cardinality",
+        "matched_rows",
+        "unmatched_source_rows",
+        "unmatched_target_rows",
+        "ambiguous_keys",
+        "report_path"
+      ],
+      "properties": {
+        "source_file": {
+          "$ref": "#/$defs/joinArtifact"
+        },
+        "target_file": {
+          "$ref": "#/$defs/joinArtifact"
+        },
+        "source_keys": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "target_keys": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "normalization": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "cardinality": {
+          "enum": [
+            "one_to_one",
+            "one_to_many",
+            "many_to_one",
+            "many_to_many"
+          ]
+        },
+        "matched_rows": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unmatched_source_rows": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unmatched_target_rows": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ambiguous_keys": {
+          "const": 0
+        },
+        "report_path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "target_id",
+        "direction",
+        "scope",
+        "evidence"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "derived_from",
+            "same_participants",
+            "same_materials",
+            "subset_of",
+            "verified_join"
+          ]
+        },
+        "target_id": {
+          "type": "string",
+          "pattern": "^R[0-9]{3,}$"
+        },
+        "direction": {
+          "enum": [
+            "source_to_target",
+            "bidirectional"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "basis",
+            "checked_on",
+            "summary",
+            "urls"
+          ],
+          "properties": {
+            "basis": {
+              "enum": [
+                "documentation",
+                "file_join_check"
+              ]
+            },
+            "checked_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "urls": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https?://"
+              }
+            }
+          }
+        },
+        "join_check": {
+          "$ref": "#/$defs/joinCheck"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "derived_from",
+                  "subset_of"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "direction": {
+                "const": "source_to_target"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "direction": {
+                "const": "bidirectional"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "verified_join"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "join_check"
+            ],
+            "properties": {
+              "evidence": {
+                "properties": {
+                  "basis": {
+                    "const": "file_join_check"
+                  }
+                }
+              }
+            }
+          },
+          "else": {
+            "not": {
+              "required": [
+                "join_check"
+              ]
+            },
+            "properties": {
+              "evidence": {
+                "properties": {
+                  "basis": {
+                    "const": "documentation"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   }
 }

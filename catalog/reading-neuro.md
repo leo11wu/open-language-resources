@@ -1,6 +1,6 @@
 # 阅读、眼动与神经语言
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共13个入口。资料状态与文件验收范围分别记录。
 
@@ -33,6 +33,8 @@ Wiki明确列出预测度和眼动CSV文件，并有原始EyeLink资料。
 - [来源 1](https://osf.io/download/e4a2m/)
 - [来源 2](https://osf.io/download/a32be/)
 
+研究入口：[加工证据](../docs/research-needs.md#processing-evidence)。
+
 <a id="r119"></a>
 
 ## ZuCo（联合EEG与眼动，含版本入口）
@@ -60,6 +62,8 @@ Wiki明确列出预测度和眼动CSV文件，并有原始EyeLink资料。
 补充及核对来源：
 
 - [来源 1](https://osf.io/download/krvp8/)
+
+研究入口：[加工证据](../docs/research-needs.md#processing-evidence)。
 
 <a id="r120"></a>
 

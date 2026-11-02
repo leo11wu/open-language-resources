@@ -1,6 +1,6 @@
 # 自然口语与社会变异
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共7个入口。资料状态与文件验收范围分别记录。
 
@@ -32,7 +32,7 @@
 
 - [来源 1](http://lingtools.uoregon.edu/coraal)
 
-关联：[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)、[R012 Buckeye Corpus](../catalog/spoken-variation.md#r012)。
+待核实关联：[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)、[R012 Buckeye Corpus](../catalog/spoken-variation.md#r012)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r010"></a>
 
@@ -58,7 +58,7 @@
 
 [项目或数据入口](https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english)
 
-关联：[R015 CABank](../catalog/spoken-variation.md#r015)。
+待核实关联：[R009 CORAAL](../catalog/spoken-variation.md#r009)、[R015 CABank](../catalog/spoken-variation.md#r015)、[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r011"></a>
 
@@ -88,7 +88,7 @@
 
 - [来源 1](https://cass.lancs.ac.uk/cass-projects/spoken-bnc2014/)
 
-关联：[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R015 CABank](../catalog/spoken-variation.md#r015)。
+待核实关联：[R009 CORAAL](../catalog/spoken-variation.md#r009)、[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R015 CABank](../catalog/spoken-variation.md#r015)、[R131 Audio-BNC / SPADE子集](../catalog/speech-phonetics.md#r131)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r012"></a>
 
@@ -118,7 +118,7 @@
 
 - [来源 1](https://buckeyecorpus.osu.edu/php/login.php)
 
-关联：[R009 CORAAL](../catalog/spoken-variation.md#r009)。
+待核实关联：[R009 CORAAL](../catalog/spoken-variation.md#r009)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r013"></a>
 
@@ -149,7 +149,7 @@
 - [来源 1](https://guscooney.com/candor-dataset/)
 - [来源 2](https://www.betterup.com/research/candor-research)
 
-关联：[R015 CABank](../catalog/spoken-variation.md#r015)。
+待核实关联：[R015 CABank](../catalog/spoken-variation.md#r015)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r014"></a>
 
@@ -175,7 +175,9 @@
 
 [项目或数据入口](https://groups.inf.ed.ac.uk/maptask/)
 
-关联：[R019 Deception in Diplomacy](../catalog/social-interaction.md#r019)。
+研究入口：[交际调整](../docs/research-needs.md#communicative-adjustment)。
+
+待核实关联：[R019 Deception in Diplomacy](../catalog/social-interaction.md#r019)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r015"></a>
 
@@ -205,5 +207,7 @@
 
 - [来源 1](https://talkbank.org/ca/access.html)
 
-关联：[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R013 CANDOR](../catalog/spoken-variation.md#r013)。
+研究入口：[交际调整](../docs/research-needs.md#communicative-adjustment)。
+
+待核实关联：[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)、[R013 CANDOR](../catalog/spoken-variation.md#r013)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

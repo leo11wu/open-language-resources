@@ -1,6 +1,6 @@
 # 历时与平行语料
 
-[首页](../README.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
+[首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
 共4个入口。资料状态与文件验收范围分别记录。
 
@@ -28,7 +28,9 @@
 
 [项目或数据入口](https://books.google.com/ngrams/datasets)
 
-关联：[R057 HistWords](../catalog/diachronic-parallel-syntax.md#r057)、[R060 Project Gutenberg](../catalog/diachronic-parallel-syntax.md#r060)。
+研究入口：[历时机制](../docs/research-needs.md#diachronic-mechanisms)。
+
+待核实关联：[R057 HistWords](../catalog/diachronic-parallel-syntax.md#r057)、[R060 Project Gutenberg](../catalog/diachronic-parallel-syntax.md#r060)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r057"></a>
 
@@ -54,7 +56,9 @@
 
 [项目或数据入口](https://nlp.stanford.edu/projects/histwords/)
 
-关联：[R056 Google Books Ngrams](../catalog/diachronic-parallel-syntax.md#r056)。
+研究入口：[历时机制](../docs/research-needs.md#diachronic-mechanisms)。
+
+待核实关联：[R056 Google Books Ngrams](../catalog/diachronic-parallel-syntax.md#r056)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r058"></a>
 
@@ -80,7 +84,7 @@
 
 [项目或数据入口](https://opus.nlpl.eu/)
 
-关联：[R039 GECO](../catalog/chinese-l2-bilingual.md#r039)、[R040 MECO](../catalog/chinese-l2-bilingual.md#r040)。
+待核实关联：[R039 GECO](../catalog/chinese-l2-bilingual.md#r039)、[R040 MECO](../catalog/chinese-l2-bilingual.md#r040)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r060"></a>
 
@@ -110,5 +114,7 @@
 
 - [来源 1](https://www.gutenberg.org/policy/permission.html)
 
-关联：[R056 Google Books Ngrams](../catalog/diachronic-parallel-syntax.md#r056)。
+研究入口：[历时机制](../docs/research-needs.md#diachronic-mechanisms)。
+
+待核实关联：[R056 Google Books Ngrams](../catalog/diachronic-parallel-syntax.md#r056)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

@@ -2,16 +2,16 @@
 
 用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。
 
-主目录 **181个资源入口、14类**，其中 **74条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-11-02**。
+主目录 **182个资源入口、14类**，其中 **74条关联OSF**；[句法专类](catalog/syntax.md)有 **36条**。更新：**2026-11-03**。
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的11条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：99条仅核对说明、2条读取头部样例、67条完整检查选定数据文件、5条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：99条仅核对说明、2条读取头部样例、68条完整检查选定数据文件、5条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
-- [核验进度与待检查清单](catalog/verification-status.md)：全部181条逐项状态与未完成检查。
+- [核验进度与待检查清单](catalog/verification-status.md)：全部182条逐项状态与未完成检查。
 - [OSF续查60条资源与5个候选原项目](catalog/osf-file-audit-2026-10-20.md)：实际下载、解析、样例与失败记录。
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
 - [第一条想法的初次可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：原覆盖530组；后续事件审计另排除1组，见下列pilot。
@@ -30,7 +30,7 @@
 
 | 研究需要 | 入口问题 | 精选资源数 |
 | --- | --- | ---: |
-| [结构分布](docs/research-needs.md#structural-distribution) | 哪些结构更常见？词序、依存关系和跨语言差异怎样比较？ | 4 |
+| [结构分布](docs/research-needs.md#structural-distribution) | 哪些结构更常见？词序、依存关系和跨语言差异怎样比较？ | 5 |
 | [加工证据](docs/research-needs.md#processing-evidence) | 结构或词汇属性与阅读时间、眼动、神经信号有什么关系？ | 4 |
 | [交际调整](docs/research-needs.md#communicative-adjustment) | 说话者怎样随伙伴、共同知识和理解困难调整表达？ | 4 |
 | [跨模态规律](docs/research-needs.md#cross-modal-patterns) | 口语与手语的频率、感知运动属性和形式时长怎样比较？ | 4 |
@@ -59,7 +59,7 @@
 | [R062](catalog/syntax.md#r062) | 派生自 | [R002](catalog/child-language.md#r002) | CHILDES美式英语部分语料中的儿童导向话语；部分只选择含wh词的话语。 |
 | [R180](catalog/lexical-cognition.md#r180) | 同一套材料 | [R022](catalog/lexical-cognition.md#r022) | 仅指LWOW生成阶段复用SWOW-EN18（SWOW-EN.R100.csv）的英语提示词；不涵盖清洗后全量材料相等、被试、反应或SWOW其他语种。 |
 
-0表示尚未记录充分依据，不表示关系不存在。原关联继续标为“待核实关联”；共享词形、主题相近或统计相关都不会自动升级为同被试、同材料或已验证可连接。关系说明不改变181条资源原有的文件核验状态。[完整定义与证据要求](docs/data-dictionary.md#资源关系)。
+0表示尚未记录充分依据，不表示关系不存在。原关联继续标为“待核实关联”；共享词形、主题相近或统计相关都不会自动升级为同被试、同材料或已验证可连接。关系说明不改变182条资源原有的文件核验状态。[完整定义与证据要求](docs/data-dictionary.md#资源关系)。
 
 [原22条候选的逐项复核](catalog/candidate-audit.md)：累计11条补入主目录，11条保留具体限制或待确认事项。本轮追查5条，新增晋升1条。
 
@@ -68,7 +68,7 @@
 | 分类 | 条目数 | 入口 |
 | --- | ---: | --- |
 | 儿童语言与发展 | 17 | [查看](catalog/child-language.md) |
-| 自然口语与社会变异 | 7 | [查看](catalog/spoken-variation.md) |
+| 自然口语与社会变异 | 8 | [查看](catalog/spoken-variation.md) |
 | 社会互动与语用 | 17 | [查看](catalog/social-interaction.md) |
 | 词汇认知与语义常模 | 21 | [查看](catalog/lexical-cognition.md) |
 | 中文、二语与双语 | 19 | [查看](catalog/chinese-l2-bilingual.md) |
@@ -275,6 +275,7 @@
 | R179 | [Coretta元音时长与辅音清浊研究集合](catalog/speech-phonetics.md#r179) | 语音、音系与声学 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R180 | [LLM World of Words（LWOW，模型生成英语联想）](catalog/lexical-cognition.md#r180) | 词汇认知与语义常模 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R181 | [儿童—照护者语言协调与词汇学习（38组亲子）](catalog/child-language.md#r181) | 儿童语言与发展 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R182 | [Multi-CAST（多语言口语叙事与指称标注）](catalog/spoken-variation.md#r182) | 自然口语与社会变异 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 
 ## 本地筛选
 

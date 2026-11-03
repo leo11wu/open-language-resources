@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共7个入口。资料状态与文件验收范围分别记录。
+共8个入口。资料状态与文件验收范围分别记录。
 
 <a id="r009"></a>
 
@@ -210,4 +210,38 @@
 研究入口：[交际调整](../docs/research-needs.md#communicative-adjustment)。
 
 待核实关联：[R010 Santa Barbara Corpus of Spoken American English](../catalog/spoken-variation.md#r010)、[R011 Spoken BNC2014](../catalog/spoken-variation.md#r011)、[R013 CANDOR](../catalog/spoken-variation.md#r013)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r182"></a>
+
+## Multi-CAST（多语言口语叙事与指称标注）
+
+**R182** · 资源集合 · 有数据发布说明
+
+2608版汇集21种语言、167篇自然口语文本；项目报告约22小时、3.25万个小句单位和16万词，包含说话者与文本元数据及多层标注，可用于叙事中的论元实现、指称追踪和跨语言结构分布研究。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 21种语言，含英语、普通话及多种研究较少的语言；以自然独白叙事为主 |
+| 数据性质 | 时间对齐转写与英语译文、形态及形态句法注释、GRAID语法关系/有生性标注、RefIND指称编号；TSV、XML、ELAN EAF，音频另行归档；语料与标注 |
+| 获取方式 | 公开数据入口：班贝格大学资料库公开提供2608版标注ZIP及说明文档，无需登录；WAV/MP3音频在各语言的独立记录中下载，塞浦路斯希腊语无公开音频。 |
+| 许可 | 本记录元数据及包内LICENCE.txt标注CC BY 4.0，复用需署名；各语言子库应分别引用。该许可文件另注明英语子库音频属于公有领域；音频获取范围仍需按其独立记录核对。 |
+| 使用边界 | 主要是单人叙事，语言、说话者及文本采样不均；不是对齐的多语平行语料，也不是UD依存树库。各子库及TSV/XML/EAF导出同源，不能重复计数；本次只完整解析选定英中文件，未验收其余标注和音频。 |
+| 标签 | 自然口语、叙事、跨语言、句法、论元实现、话语指称、有生性、GRAID、RefIND、时间对齐、汉语 |
+| 平台 | institutional_repository |
+| 核对依据 | 出版方资源描述；2026-11-03 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 核对发布记录、公开API元数据及包内README/许可；完整下载36,979,547字节ZIP，MD5与官网一致。完整解析英语TSV（45,486行×11列）、普通话TSV（8,743行×11列）及两份EAF的XML结构，并读取README和LICENCE，共6个选定成员。行数不等于词数或独立样本。页面与README示例引用仍标2507，本条按实际2608版及其DOI记录；未验收全部770个压缩包成员或独立音频。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02)
+
+补充及核对来源：
+
+- [来源 1](https://doi.org/10.48564/unibafd-2cs0x-gpm02)
+- [来源 2](https://fd-repo.uni-bamberg.de/communities/multicast/records)
+- [来源 3](https://CRAN.R-project.org/package=multicastR)
+- [来源 4](https://fd-repo.uni-bamberg.de/api/records/2cs0x-gpm02)
+- [来源 5](https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02/files/multicast_2608.zip?download=1)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 

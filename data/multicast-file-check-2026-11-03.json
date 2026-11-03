@@ -1,0 +1,171 @@
+{
+  "checked_on": "2026-11-03",
+  "resource_name": "Multi-CAST",
+  "version": "2608",
+  "doi": "10.48564/unibafd-2cs0x-gpm02",
+  "source_url": "https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02",
+  "access": {
+    "record": "public",
+    "files": "public",
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "status": "open"
+  },
+  "license": "CC BY 4.0",
+  "archive": {
+    "url": "https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02/files/multicast_2608.zip?download=1",
+    "bytes": 36979547,
+    "sha256": "11b14c6206efd951cb3221ec15af051e574b66d900d8166126064976daff568b",
+    "md5": "43bf26ae15e6a489aa98677aab9a6c31",
+    "expected_md5": "43bf26ae15e6a489aa98677aab9a6c31",
+    "member_count": 770,
+    "language_folders": [
+      "arta",
+      "bora",
+      "chirag",
+      "cypgreek",
+      "english",
+      "jinghpaw",
+      "kalamang",
+      "kamang",
+      "mandarin",
+      "matukar",
+      "nafsan",
+      "nkurd",
+      "persian",
+      "sanzhi",
+      "sumbawa",
+      "tabasaran",
+      "teop",
+      "tondano",
+      "tulil",
+      "uruangnirin",
+      "veraa"
+    ]
+  },
+  "selected_members": [
+    {
+      "member": "annotations/2608/english/tsv/mc_english.tsv",
+      "bytes": 2207888,
+      "sha256": "657a7b5bcf7ee304472cc2512f068a5496048f3f73c7e00ae18b35a3c43caa16",
+      "read_scope": "complete_tsv",
+      "rows_after_header": 45486,
+      "columns": 11,
+      "column_names": [
+        "corpus",
+        "text",
+        "uid",
+        "gword",
+        "gloss",
+        "graid",
+        "gform",
+        "ganim",
+        "gfunc",
+        "refind",
+        "isnref"
+      ],
+      "row_width_counts": {
+        "11": 45486
+      },
+      "unique_text_ids": 5,
+      "crc_verified": true
+    },
+    {
+      "member": "annotations/2608/mandarin/tsv/mc_mandarin.tsv",
+      "bytes": 404628,
+      "sha256": "9d1c48235a91919e0b8d305085606eb0ea126af72a7275675865008ffe03c445",
+      "read_scope": "complete_tsv",
+      "rows_after_header": 8743,
+      "columns": 11,
+      "column_names": [
+        "corpus",
+        "text",
+        "uid",
+        "gword",
+        "gloss",
+        "graid",
+        "gform",
+        "ganim",
+        "gfunc",
+        "refind",
+        "isnref"
+      ],
+      "row_width_counts": {
+        "11": 8743
+      },
+      "unique_text_ids": 3,
+      "crc_verified": true
+    },
+    {
+      "member": "annotations/2608/english/eaf/mc_english_devon01.eaf",
+      "bytes": 3473754,
+      "sha256": "1df694c8debb594d1cd5ce4c21cb7d0da30f3467ede4d059604b856389b9b98b",
+      "read_scope": "complete_xml_parse",
+      "xml_root": "ANNOTATION_DOCUMENT",
+      "tier_count": 8,
+      "tier_ids": [
+        "utterance_id",
+        "utterance",
+        "grammatical_words",
+        "gloss",
+        "graid",
+        "refind",
+        "isnref",
+        "utterance_translation"
+      ],
+      "annotations": 15841,
+      "time_slots": 308,
+      "crc_verified": true
+    },
+    {
+      "member": "annotations/2608/mandarin/eaf/mc_mandarin_hml.eaf",
+      "bytes": 1849832,
+      "sha256": "c6d3e0d76f398ed2fb5236fe3738b99634502b787ee8b096597e73d6eabe1e92",
+      "read_scope": "complete_xml_parse",
+      "xml_root": "ANNOTATION_DOCUMENT",
+      "tier_count": 9,
+      "tier_ids": [
+        "utterance_id",
+        "utterance",
+        "add_orthography",
+        "grammatical_words",
+        "gloss",
+        "graid",
+        "refind",
+        "isnref",
+        "utterance_translation"
+      ],
+      "annotations": 8365,
+      "time_slots": 336,
+      "crc_verified": true
+    },
+    {
+      "member": "README.txt",
+      "bytes": 5752,
+      "sha256": "bb325edd60a24d77c79851ade086ae37c0a74fdd9a741b7613b326b00d121171",
+      "read_scope": "complete_text",
+      "encoding": "cp1252",
+      "characters": 5752,
+      "crc_verified": true
+    },
+    {
+      "member": "LICENCE.txt",
+      "bytes": 665,
+      "sha256": "79422ec0300f49727bfba238aa591222a561758189e7b1bda2a6b120cf34aaa4",
+      "read_scope": "complete_text",
+      "encoding": "utf-8-sig",
+      "characters": 665,
+      "crc_verified": true
+    }
+  ],
+  "limits": [
+    "Archive downloaded completely; only six selected members parsed. Other corpus files and separate audio archives not validated.",
+    "Counts are table rows, not independent speakers or words. Parallel EAF/XML/TSV exports must not be summed.",
+    "Landing page and archive README cite version 2507 in their example; this entry uses the actual version 2608 metadata and DOI."
+  ],
+  "resource_id": "R182",
+  "catalog_version": "2.5.1",
+  "individual_corpus_data_redistributed": false
+}

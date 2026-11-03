@@ -24,6 +24,7 @@
 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | 比较英语儿童与成人互动中的依存结构。 | 区分说话者角色、年龄、gold/silver与切分；只核对过开发集，且与CHILDES同源。 | 已完整检查选定文件；全库未验收 |
 | [R045 WALS](../catalog/crossling-cultural.md#r045) | 查询跨语言词序及其他类型学特征。 | 核对每项特征的定义、语言覆盖和描述来源；缺失值不是结构不存在。 | 仅核对说明；未读数据文件 |
 | [R046 Grambank](../catalog/crossling-cultural.md#r046) | 比较统一编码下的跨语言语法特征。 | 控制谱系和地理相关；不可未经定义核对就与WALS同名变量合并。 | 仅核对说明；未读数据文件 |
+| [R182 Multi-CAST（多语言口语叙事与指称标注）](../catalog/spoken-variation.md#r182) | 比较自然叙事中的论元表达、语法关系、有生性和指称连续性。 | GRAID/RefIND不是UD依存标注；核对各语言的说话者、文本采样与编码，分开同源导出格式；音频另行归档。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need structural-distribution

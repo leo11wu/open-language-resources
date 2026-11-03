@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.0",
-  "updated_on": "2026-11-02",
+  "catalog_version": "2.5.1",
+  "updated_on": "2026-11-03",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 181,
+  "resource_count": 182,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -97,6 +97,11 @@
           "resource_id": "R046",
           "use_for": "比较统一编码下的跨语言语法特征。",
           "check_before_use": "控制谱系和地理相关；不可未经定义核对就与WALS同名变量合并。"
+        },
+        {
+          "resource_id": "R182",
+          "use_for": "比较自然叙事中的论元表达、语法关系、有生性和指称连续性。",
+          "check_before_use": "GRAID/RefIND不是UD依存标注；核对各语言的说话者、文本采样与编码，分开同源导出格式；音频另行归档。"
         }
       ]
     },
@@ -10793,6 +10798,73 @@
           "readable_empirical_file_count": 4,
           "report_path": "catalog/osf-file-audit-2026-10-20.md"
         }
+      }
+    },
+    {
+      "id": "R182",
+      "name": "Multi-CAST（多语言口语叙事与指称标注）",
+      "category": "spoken-variation",
+      "entry_type": "collection",
+      "language_scope": "21种语言，含英语、普通话及多种研究较少的语言；以自然独白叙事为主",
+      "language_codes": [
+        "mul",
+        "en",
+        "zh"
+      ],
+      "data_type": "时间对齐转写与英语译文、形态及形态句法注释、GRAID语法关系/有生性标注、RefIND指称编号；TSV、XML、ELAN EAF，音频另行归档",
+      "description": "2608版汇集21种语言、167篇自然口语文本；项目报告约22小时、3.25万个小句单位和16万词，包含说话者与文本元数据及多层标注，可用于叙事中的论元实现、指称追踪和跨语言结构分布研究。",
+      "access_mode": "open_data",
+      "access_notes": "班贝格大学资料库公开提供2608版标注ZIP及说明文档，无需登录；WAV/MP3音频在各语言的独立记录中下载，塞浦路斯希腊语无公开音频。",
+      "license_note": "本记录元数据及包内LICENCE.txt标注CC BY 4.0，复用需署名；各语言子库应分别引用。该许可文件另注明英语子库音频属于公有领域；音频获取范围仍需按其独立记录核对。",
+      "limitations": "主要是单人叙事，语言、说话者及文本采样不均；不是对齐的多语平行语料，也不是UD依存树库。各子库及TSV/XML/EAF导出同源，不能重复计数；本次只完整解析选定英中文件，未验收其余标注和音频。",
+      "source_url": "https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02",
+      "additional_urls": [
+        "https://doi.org/10.48564/unibafd-2cs0x-gpm02",
+        "https://fd-repo.uni-bamberg.de/communities/multicast/records",
+        "https://CRAN.R-project.org/package=multicastR"
+      ],
+      "tags": [
+        "自然口语",
+        "叙事",
+        "跨语言",
+        "句法",
+        "论元实现",
+        "话语指称",
+        "有生性",
+        "GRAID",
+        "RefIND",
+        "时间对齐",
+        "汉语"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "institutional_repository"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-11-03",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02",
+          "https://fd-repo.uni-bamberg.de/api/records/2cs0x-gpm02",
+          "https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02/files/multicast_2608.zip?download=1"
+        ],
+        "note": "核对发布记录、公开API元数据及包内README/许可；完整下载36,979,547字节ZIP，MD5与官网一致。完整解析英语TSV（45,486行×11列）、普通话TSV（8,743行×11列）及两份EAF的XML结构，并读取README和LICENCE，共6个选定成员。行数不等于词数或独立样本。页面与README示例引用仍标2507，本条按实际2608版及其DOI记录；未验收全部770个压缩包成员或独立音频。",
+        "file_checks": [
+          {
+            "url": "https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02/files/multicast_2608.zip?download=1",
+            "read_scope": "archive_selected_members",
+            "sha256": "11b14c6206efd951cb3221ec15af051e574b66d900d8166126064976daff568b",
+            "checked_on": "2026-11-03",
+            "file_role": "corpus_derived_data",
+            "result": "ZIP完整下载并匹配官方MD5 43bf26ae15e6a489aa98677aab9a6c31；完整读取annotations/2608/english/tsv/mc_english.tsv（45,486行、11列）、annotations/2608/mandarin/tsv/mc_mandarin.tsv（8,743行、11列），各行列数一致；解析mc_english_devon01.eaf（8层）及mc_mandarin_hml.eaf（9层），读取README.txt与LICENCE.txt。6个所读成员均通过ZIP读取的CRC校验；其他成员与音频未验收。"
+          }
+        ]
       }
     }
   ]

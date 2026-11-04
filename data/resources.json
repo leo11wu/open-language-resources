@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.1",
-  "updated_on": "2026-11-03",
+  "catalog_version": "2.5.2",
+  "updated_on": "2026-11-04",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 182,
+  "resource_count": 183,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -102,6 +102,11 @@
           "resource_id": "R182",
           "use_for": "比较自然叙事中的论元表达、语法关系、有生性和指称连续性。",
           "check_before_use": "GRAID/RefIND不是UD依存标注；核对各语言的说话者、文本采样与编码，分开同源导出格式；音频另行归档。"
+        },
+        {
+          "resource_id": "R183",
+          "use_for": "比较格、一致、配价、形态综合度和词/句子结构的跨语言分布。",
+          "check_before_use": "按代码本区分人工编码与派生变量、语言与结构层次及CSV展开行；核对每变量覆盖、调查完成标志和缺失含义，并考虑谱系及地域相关。"
         }
       ]
     },
@@ -10863,6 +10868,147 @@
             "checked_on": "2026-11-03",
             "file_role": "corpus_derived_data",
             "result": "ZIP完整下载并匹配官方MD5 43bf26ae15e6a489aa98677aab9a6c31；完整读取annotations/2608/english/tsv/mc_english.tsv（45,486行、11列）、annotations/2608/mandarin/tsv/mc_mandarin.tsv（8,743行、11列），各行列数一致；解析mc_english_devon01.eaf（8层）及mc_mandarin_hml.eaf（9层），读取README.txt与LICENCE.txt。6个所读成员均通过ZIP读取的CRC校验；其他成员与音频未验收。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R183",
+      "name": "AUTOTYP（语法、形态与音系类型学数据库）",
+      "category": "crossling-cultural",
+      "entry_type": "aggregate",
+      "language_scope": "全球多语种；覆盖因模块和变量而异，语言登记范围与有效类型学样本不同",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "语言类型学原始编码、逐语言聚合指标与谱系/地理元数据；CSV、JSON、RData、CLDF，附YAML代码本和R聚合脚本",
+      "description": "v1.1.1版按关系表组织语法关系与配价、格和一致、形态综合度、NP及句子结构、词结构等描写资料，区分人工编码和计算派生变量，可用于跨语言结构分布与类型学比较。",
+      "access_mode": "open_data",
+      "access_notes": "Zenodo公开提供v1.1.1整包，作者GitHub提供对应CSV、JSON、CLDF等文件。本次Zenodo整包下载超时；已从实际标签v.1.1.1对应固定提交读取并校验9个选定数据与说明文件。",
+      "license_note": "Zenodo元数据、同版readme与LICENSE均标注CC BY 4.0，复用需署名；原始编码与聚合/重编码资料应保留具体版本和来源。",
+      "limitations": "不同表的单位可能是语言、语法关系或标记；CSV展开嵌套字段会复制外层记录，不能按行数计算独立语言。人工编码与派生汇总同源，缺失值混合不适用与未知；模块的概念和覆盖需分别核对。最大屈折动词表不代表全部动词形式的类别清单，须留意调查完成标志。",
+      "source_url": "https://zenodo.org/records/7976754",
+      "additional_urls": [
+        "https://doi.org/10.5281/zenodo.7976754",
+        "https://github.com/autotyp/autotyp-data/tree/v.1.1.1",
+        "https://github.com/autotyp/autotyp-data/tree/ebe677f11d93ca01c919583a921ae048f8d6d640"
+      ],
+      "tags": [
+        "类型学",
+        "跨语言",
+        "语法关系",
+        "配价",
+        "格标记",
+        "一致关系",
+        "形态综合度",
+        "句法",
+        "音系",
+        "词结构",
+        "谱系",
+        "地理"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "zenodo",
+        "github"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified",
+      "verification": {
+        "documentation_checked_on": "2026-11-04",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://zenodo.org/records/7976754",
+          "https://zenodo.org/api/records/7976754",
+          "https://github.com/autotyp/autotyp-data/tree/ebe677f11d93ca01c919583a921ae048f8d6d640",
+          "https://github.com/autotyp/autotyp-data/blob/ebe677f11d93ca01c919583a921ae048f8d6d640/readme.md"
+        ],
+        "note": "核对Zenodo v1.1.1元数据及作者实际标签v.1.1.1；同版readme列出相同DOI。Zenodo所列tree/v1.1.1链接返回404，作者实际标签为v.1.1.1，本条提供已确认的标签与固定提交。整包本次只收取3,993,296/12,934,874字节后超时，未解析或验收该ZIP；改为完整读取4份CSV、3份YAML代码本、readme与LICENSE，共9个文件，均匹配作者Git blob。Register为3,054行×24列；动词综合度CSV为3,792行×37列、450个LID；所选逐语言聚合表为221行×8列；变量总览为1,530行×8列。这些数字是文件结构检查，不是全库有效样本量。",
+        "file_checks": [
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/data/csv/Register.csv",
+            "read_scope": "complete_delimited_table",
+            "sha256": "c7e2257f4dfba52a5913e0905ad53307bd531a415d24c4c44ec61c71ee09e913",
+            "blob_sha": "3cedc155cc798be06691fd5874696f712882e37d",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整解析data/csv/Register.csv：表头后3,054行、24列，各行列数一致。LID不同值3,054个；行数不等于语言总体覆盖。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/data/csv/Morphology/MaximallyInflectedVerbSynthesis.csv",
+            "read_scope": "complete_delimited_table",
+            "sha256": "a6f5fc6b407103fcb6958ca4053f53346cbc45af794045daf73d17997e19aba2",
+            "blob_sha": "b6d35f3ce7705613e0db24265aab535ccb15fe3e",
+            "checked_on": "2026-11-04",
+            "file_role": "empirical_or_norm_data",
+            "result": "完整解析data/csv/Morphology/MaximallyInflectedVerbSynthesis.csv：表头后3,792行、37列，各行列数一致。LID不同值450个；行数不等于语言总体覆盖。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/data/csv/PerLanguageSummaries/MaximallyInflectedVerbInflectionAndAgreementCountsByPosition.csv",
+            "read_scope": "complete_delimited_table",
+            "sha256": "4b3b8a73788d197460669338b97fd0666cdff67e1b8ca1a024ce3237692ac18a",
+            "blob_sha": "cf90679b422cfb40013a067c6f07e2d020e2b609",
+            "checked_on": "2026-11-04",
+            "file_role": "empirical_or_norm_data",
+            "result": "完整解析data/csv/PerLanguageSummaries/MaximallyInflectedVerbInflectionAndAgreementCountsByPosition.csv：表头后221行、8列，各行列数一致。LID不同值221个；行数不等于语言总体覆盖。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/variables_overview.csv",
+            "read_scope": "complete_delimited_table",
+            "sha256": "bf2215e8fd9ebea97bed1341172b0cf54b4b71a605b9fdec005be52d3d7eba1e",
+            "blob_sha": "fd45867a8c9fc4ffec5bcd3cc8d366332749fcee",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整解析variables_overview.csv：表头后1,530行、8列，各行列数一致。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/metadata/Register.yaml",
+            "read_scope": "complete_text",
+            "sha256": "15ae88624cd7ca51e7bb6747443b1db1ae9e7a6244135f27e8c0520a4b96b0d1",
+            "blob_sha": "3f2514642c0c7a568b92882887df20e7989eb7d5",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取并安全解析metadata/Register.yaml；数据集性质为manual data entry，含24项字段说明。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/metadata/Morphology/MaximallyInflectedVerbSynthesis.yaml",
+            "read_scope": "complete_text",
+            "sha256": "1e31cddd532bb57dc05d2aba22fca2ccc52370ff419a2a92d7f90053c0ce32a2",
+            "blob_sha": "9542a3d2c15db5bc48121f70d926f8e7af302eff",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取并安全解析metadata/Morphology/MaximallyInflectedVerbSynthesis.yaml；数据集性质为manual data entry，含24项字段说明。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/metadata/PerLanguageSummaries/MaximallyInflectedVerbInflectionAndAgreementCountsByPosition.yaml",
+            "read_scope": "complete_text",
+            "sha256": "7acb0953b28edec1b4bdb16a151d16f917d9686c1fd533bd964098efc7e14a35",
+            "blob_sha": "bb560a39b36d4f4a57fdb2118ce72fbc591058dc",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取并安全解析metadata/PerLanguageSummaries/MaximallyInflectedVerbInflectionAndAgreementCountsByPosition.yaml；数据集性质为computed data (aggregation-scripts/MaximallyInflectedVerbInflection.R)，含8项字段说明。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/LICENSE",
+            "read_scope": "complete_text",
+            "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e",
+            "blob_sha": "06c608dcf4552094bc86dc48aaa90addb2886049",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取LICENSE，18,647字符。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/autotyp/autotyp-data/ebe677f11d93ca01c919583a921ae048f8d6d640/readme.md",
+            "read_scope": "complete_text",
+            "sha256": "6d3f627dd985185eae0af94a45113980f749dc050ebb51237d990d2e00590491",
+            "blob_sha": "208cb4273f622d5c341962573daee0280e8f7128",
+            "checked_on": "2026-11-04",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取readme.md，22,515字符。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
           }
         ]
       }

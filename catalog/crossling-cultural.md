@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共10个入口。资料状态与文件验收范围分别记录。
+共11个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -301,4 +301,38 @@
 - [来源 3](https://osf.io/download/na5hv/)
 
 待核实关联：[R022 Small World of Words（SWOW）](../catalog/lexical-cognition.md#r022)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R042 CLICS](../catalog/crossling-cultural.md#r042)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r183"></a>
+
+## AUTOTYP（语法、形态与音系类型学数据库）
+
+**R183** · 整合资料 · 有数据发布说明
+
+v1.1.1版按关系表组织语法关系与配价、格和一致、形态综合度、NP及句子结构、词结构等描写资料，区分人工编码和计算派生变量，可用于跨语言结构分布与类型学比较。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 全球多语种；覆盖因模块和变量而异，语言登记范围与有效类型学样本不同 |
+| 数据性质 | 语言类型学原始编码、逐语言聚合指标与谱系/地理元数据；CSV、JSON、RData、CLDF，附YAML代码本和R聚合脚本；混合来源或待细分 |
+| 获取方式 | 公开数据入口：Zenodo公开提供v1.1.1整包，作者GitHub提供对应CSV、JSON、CLDF等文件。本次Zenodo整包下载超时；已从实际标签v.1.1.1对应固定提交读取并校验9个选定数据与说明文件。 |
+| 许可 | Zenodo元数据、同版readme与LICENSE均标注CC BY 4.0，复用需署名；原始编码与聚合/重编码资料应保留具体版本和来源。 |
+| 使用边界 | 不同表的单位可能是语言、语法关系或标记；CSV展开嵌套字段会复制外层记录，不能按行数计算独立语言。人工编码与派生汇总同源，缺失值混合不适用与未知；模块的概念和覆盖需分别核对。最大屈折动词表不代表全部动词形式的类别清单，须留意调查完成标志。 |
+| 标签 | 类型学、跨语言、语法关系、配价、格标记、一致关系、形态综合度、句法、音系、词结构、谱系、地理 |
+| 平台 | zenodo, github |
+| 核对依据 | 作者仓库说明；2026-11-04 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 核对Zenodo v1.1.1元数据及作者实际标签v.1.1.1；同版readme列出相同DOI。Zenodo所列tree/v1.1.1链接返回404，作者实际标签为v.1.1.1，本条提供已确认的标签与固定提交。整包本次只收取3,993,296/12,934,874字节后超时，未解析或验收该ZIP；改为完整读取4份CSV、3份YAML代码本、readme与LICENSE，共9个文件，均匹配作者Git blob。Register为3,054行×24列；动词综合度CSV为3,792行×37列、450个LID；所选逐语言聚合表为221行×8列；变量总览为1,530行×8列。这些数字是文件结构检查，不是全库有效样本量。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://zenodo.org/records/7976754)
+
+补充及核对来源：
+
+- [来源 1](https://doi.org/10.5281/zenodo.7976754)
+- [来源 2](https://github.com/autotyp/autotyp-data/tree/v.1.1.1)
+- [来源 3](https://github.com/autotyp/autotyp-data/tree/ebe677f11d93ca01c919583a921ae048f8d6d640)
+- [来源 4](https://zenodo.org/api/records/7976754)
+- [来源 5](https://github.com/autotyp/autotyp-data/blob/ebe677f11d93ca01c919583a921ae048f8d6d640/readme.md)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 

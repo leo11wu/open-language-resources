@@ -26,6 +26,7 @@
 | [R046 Grambank](../catalog/crossling-cultural.md#r046) | 比较统一编码下的跨语言语法特征。 | 控制谱系和地理相关；不可未经定义核对就与WALS同名变量合并。 | 仅核对说明；未读数据文件 |
 | [R182 Multi-CAST（多语言口语叙事与指称标注）](../catalog/spoken-variation.md#r182) | 比较自然叙事中的论元表达、语法关系、有生性和指称连续性。 | GRAID/RefIND不是UD依存标注；核对各语言的说话者、文本采样与编码，分开同源导出格式；音频另行归档。 | 已完整检查选定文件；全库未验收 |
 | [R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183) | 比较格、一致、配价、形态综合度和词/句子结构的跨语言分布。 | 按代码本区分人工编码与派生变量、语言与结构层次及CSV展开行；核对每变量覆盖、调查完成标志和缺失含义，并考虑谱系及地域相关。 | 已完整检查选定文件；全库未验收 |
+| [R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184) | 比较接触语言的词序、论元标记、复杂句及其他语法特征，并查看专家编码和逐词释义例句。 | 按Default_Lect_ID区分默认语言与变体，处理一组多值；Frequency多为专家权重，例句来源混合。与WALS比较前核对定义、值和覆盖，并考虑共同接触史与地域。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need structural-distribution

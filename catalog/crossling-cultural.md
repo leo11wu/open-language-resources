@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共11个入口。资料状态与文件验收范围分别记录。
+共12个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -146,7 +146,7 @@
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r046"></a>
 
@@ -335,4 +335,42 @@ v1.1.1版按关系表组织语法关系与配价、格和一致、形态综合�
 - [来源 5](https://github.com/autotyp/autotyp-data/blob/ebe677f11d93ca01c919583a921ae048f8d6d640/readme.md)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+<a id="r184"></a>
+
+## APiCS Online（洋泾浜语与克里奥尔语结构图谱）
+
+**R184** · 整合资料 · 有数据发布说明
+
+v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体情态、论元标记、复杂句、否定、词汇和音系，并提供音段与社会语言学参数。可用于接触语言的跨语言结构分布研究；官网、GitHub发行和Zenodo为同源入口。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 全球76个默认语言单位，含洋泾浜语、克里奥尔语、混合语及相关接触变体；CLDF另列28个非默认变体 |
+| 数据性质 | 专家编码的类型学与社会语言学特征、带逐词释义的例句、语言/贡献者/文献及媒体索引；CLDF CSV与JSON元数据，附HTML、PDF和部分音频；混合来源或待细分 |
+| 获取方式 | 公开数据入口：无需注册；Zenodo提供v2013.1整包，GitHub提供同版CLDF文件。2026-11-05已从固定提交完整下载并校验15个文件，包含9张CSV；Zenodo约277MB整包及音频/章节正文未下载验收。原始出版为2013年，CLDF本次发行于2026-07-14。 |
+| 许可 | 官网、Zenodo元数据与同版README、LICENSE及CLDF元数据均标注CC BY 4.0。引用原始图谱、相关语言结构数据/章节贡献者，并注明所用CLDF版本及DOI 10.5281/zenodo.21359936。 |
+| 使用边界 | 语言表104行含76个默认单位与28个非默认变体，不能相加为独立语言；336项参数包含130主体特征、0号供源语言分类、177音段和28社会语言学参数。值表可一组多行；Frequency多为专家估计/等级换算后的相对权重，不是统一语料计数；Confidence为编码确定程度标签。例句混合自然、诱发和构造来源。WALS_ID仅为对应线索，合并前须核对定义、多值编码和语言单位；样本有共同接触史与地域依赖。 |
+| 标签 | 类型学、跨语言、语言接触、洋泾浜语、皮钦语、克里奥尔语、混合语、句法、词序、论元标记、复杂句、形态、音系、社会语言学、CLDF、逐词释义、WALS对应 |
+| 平台 | project_website, github, zenodo |
+| 核对依据 | 作者仓库说明；2026-11-05 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 三个入口已互证为同源v2013.1，固定提交0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93。15个完整文件全部匹配上游Git blob并记录SHA-256；9张CSV行宽、主键和元数据声明的跨表引用检查通过，值与代码所属特征一致。完整值表20,624行，例句表18,526行；语言—参数19,067组中1,317组含多值。仅选定文件结构检查，未做全库CLDF语义验收或WALS跨库连接；详见data/apics-file-check-2026-11-05.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://apics-online.info/download)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/cldf-datasets/apics/releases)
+- [来源 2](https://github.com/cldf-datasets/apics/releases/tag/v2013.1)
+- [来源 3](https://zenodo.org/records/21359936)
+- [来源 4](https://doi.org/10.5281/zenodo.21359936)
+- [来源 5](https://github.com/cldf-datasets/apics/tree/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93)
+- [来源 6](https://apics-online.info/about)
+- [来源 7](https://apics-online.info/)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

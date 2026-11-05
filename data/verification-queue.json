@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-04",
-  "catalog_version": "2.5.2",
+  "generated_on": "2026-11-05",
+  "catalog_version": "2.5.3",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 183,
+    "main_resource_count": 184,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 69,
+      "selected_file_checked": 70,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 76,
+    "main_with_recorded_file_reads": 77,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -5895,6 +5895,164 @@
           "checked_on": "2026-11-04",
           "file_role": "documentation_or_materials",
           "result": "完整读取readme.md，22,515字符。已核对固定提交的Git blob哈希；仅本文件结构检查，不代表全资源验收或聚合分析复现。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R184",
+      "name": "APiCS Online（洋泾浜语与克里奥尔语结构图谱）",
+      "category": "crossling-cultural",
+      "source_url": "https://apics-online.info/download",
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-05",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/.zenodo.json",
+          "read_scope": "complete_text",
+          "sha256": "dd323e7ccef2af7720f3abd5f89b5bf981c49d8f6c70f521cc22d2d2b60c2a01",
+          "blob_sha": "b05490b713aa8988ada0460ce4df47e7f7b5528e",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取并解析.zenodo.json为JSON。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/LICENSE",
+          "read_scope": "complete_text",
+          "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+          "blob_sha": "2fb94156cd39cad415432aeb1ac5b38d5cb53e1e",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取LICENSE，确认CC BY 4.0。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/README.md",
+          "read_scope": "complete_text",
+          "sha256": "e9ad80282b057359f2d0009e35a26e6e16ed9909bcea8ac353b54ad07b4a8084",
+          "blob_sha": "62a812423d5a208ba1e2b43778f92a5ea2400379",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取README.md，核对CLDF数据构成、76种语言覆盖和引用要求。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/StructureDataset-metadata.json",
+          "read_scope": "complete_text",
+          "sha256": "da1edd33a3884ffe451c2e78f0145b0340e5784e34e0cad6bbe462e31e52c945",
+          "blob_sha": "c32ce5b5c0cec97dbe6465e4e5b9ce6634257c61",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取并解析cldf/StructureDataset-metadata.json为JSON。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/codes.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "983cfd2035041bfe5ce418405f0922f6e7965815a5f4ccf01b776e9838bea8fa",
+          "blob_sha": "e4ba158555ed462c450e77dbf250dfbf39e117f9",
+          "checked_on": "2026-11-05",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整解析cldf/codes.csv：表头后1,404行、8列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/contributions.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "d10780ba168320cc9dfe010f57ce189fb29199e718eb337dec99121137acfe6a",
+          "blob_sha": "8ecc0c9fdfa8f387b8436d196b79c2fabb10969a",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整解析cldf/contributions.csv：表头后486行、9列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/contributors.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "45a2ab3f51716016398050f7aa9421423c0e0e1d20e90d2b7d0ac0c7126fcb3b",
+          "blob_sha": "8e609484ee2e15917f0ad486a40a3c3d230e8b4b",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整解析cldf/contributors.csv：表头后90行、5列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/examples.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "424c459eff951e281182c0f81995455af237ece019909ede2810598ec6338301",
+          "blob_sha": "594bf634f47020734dddcaabc32ecc79931036ba",
+          "checked_on": "2026-11-05",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整解析cldf/examples.csv：表头后18,526行、20列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/glossabbreviations.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "7408220259478fa81e08a3dc9cb209048bb077c101ee53d7bc65e444b36f7afd",
+          "blob_sha": "57d512e13fa2da6f876d8252874d4d168fc3d921",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整解析cldf/glossabbreviations.csv：表头后267行、2列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/languages.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "464eab82f480a9a7ccf9014b1d3d7ecb59d7420b4204e4613b3a4935072a47d1",
+          "blob_sha": "a6f681061e0e49a739c5d7bc8007ecb0058b87e0",
+          "checked_on": "2026-11-05",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整解析cldf/languages.csv：表头后104行、14列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/media.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "32933c3968ab4207f8c28cf29b2e78e1a0912d0289d3e25012403b7da9a8368e",
+          "blob_sha": "326bc01e9155b97a8357adab9abe19415c060c24",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整解析cldf/media.csv：表头后750行、8列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/parameters.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "70ea1b6fe2709343dcd78621947da8d1a4bf5f9a39b96c162f3fa6e3002dad02",
+          "blob_sha": "5feba55ce886998ef0e093bd192cf4d2ac8db5ad",
+          "checked_on": "2026-11-05",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整解析cldf/parameters.csv：表头后336行、12列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldf/values.csv",
+          "read_scope": "complete_delimited_table",
+          "sha256": "a4fe329dd40cd33286d51a5de544cda99a66b71d8cda41028a231a47b9bf0821",
+          "blob_sha": "f6808dfa39f137fd32c1289138255f602970292c",
+          "checked_on": "2026-11-05",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整解析cldf/values.csv：表头后20,624行、12列，行宽一致、ID非空且无重复。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/cldfbench_apics.py",
+          "read_scope": "complete_text",
+          "sha256": "ea93fee4227878738bba70b558eb78fb89da11387b29c9d82e6c4ba38a87d875",
+          "blob_sha": "f495352759b458a4830edb938b48fb649b15e005",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取转换程序文本，用于核对非默认变体、特征类型和字段定义；未执行上游程序。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/apics/0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93/metadata.json",
+          "read_scope": "complete_text",
+          "sha256": "c4fdb238c6a87912d410528cb035d75f95805f0479fd129d53c51dc5a3580220",
+          "blob_sha": "2f52d1a7eee2865ca018471c9761755feb218ed4",
+          "checked_on": "2026-11-05",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取并解析metadata.json为JSON。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
         }
       ],
       "osf_audit": null,

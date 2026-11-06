@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共8个入口。资料状态与文件验收范围分别记录。
+共9个入口。资料状态与文件验收范围分别记录。
 
 <a id="r009"></a>
 
@@ -244,4 +244,41 @@
 - [来源 5](https://fd-repo.uni-bamberg.de/records/2cs0x-gpm02/files/multicast_2608.zip?download=1)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+<a id="r185"></a>
+
+## eWAVE（世界英语变体电子图谱）
+
+**R185** · 整合资料 · 有数据发布说明
+
+v3.0.3汇集专家根据描写文献、自然语料及母语者知识作出的评级。235项特征分属12个语法领域，包括代词、名词短语、时体、否定、一致和词序，可比较英语变体的结构分布。例句表含4,189条记录。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 8个地区的77个变体，包括51个英语一语或本土化二语变体，以及26个英语供源的皮钦语和克里奥尔语 |
+| 数据性质 | 专家编码的口语形态句法特征评级、语言变体元数据、例句与历史评级。CLDF CSV、JSON元数据及参考文献；混合来源或待细分 |
+| 获取方式 | 公开数据入口：官网可在线浏览，Zenodo与GitHub提供公开v3.0.3发布包。Zenodo整包已下载并通过官方MD5校验，11张CLDF表已完整读取。归档建立于2026-08-04，项目推荐引文年份为2020。 |
+| 许可 | 官网、Zenodo元数据和同版LICENSE及CLDF元数据均标注CC BY 3.0 Unported。引用Kortmann、Lunkenheimer与Ehret主编的原始图谱（2020）及实际所用版本的DOI 10.5281/zenodo.21789749。 |
+| 使用边界 | 分析单位是变体×特征。A/B/C是专家对使用程度的定性评级，须区分D（有证据显示缺失）、X（不适用）和?（无资料）。按项目导言公式从本版77个变体重算时，参数表Attestation有235项不一致，Pervasiveness有91项不一致。比较时宜从评级表重算并注明分母。Glottocode与变体的边界需核对，与APiCS对照时还需统一特征定义。 |
+| 标签 | 英语变体、世界英语、方言、口语、社会语言学、形态句法、句法、形态、语言接触、类型学、皮钦语、克里奥尔语、专家编码、CLDF |
+| 平台 | project_website, github, zenodo |
+| 核对依据 | 作者仓库说明；2026-11-06 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 完整下载14,681,880字节的v3.0.3 ZIP，匹配Zenodo公布的MD5。外层ZIP成员CRC通过，58个成员按源仓库的CSV换行设置与固定GitHub提交核对。11张CSV的行宽、主键与声明的非空跨表引用通过检查。18,095个变体×特征格各有一条评级。参数表汇总值的复算差异见data/ewave-file-check-2026-11-06.json。历史内嵌ZIP和专家评级依据待分别核验。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://ewave-atlas.org/download)
+
+补充及核对来源：
+
+- [来源 1](https://ewave-atlas.org/)
+- [来源 2](https://github.com/cldf-datasets/ewave/releases/tag/v3.0.3)
+- [来源 3](https://zenodo.org/records/21789749)
+- [来源 4](https://doi.org/10.5281/zenodo.21789749)
+- [来源 5](https://github.com/cldf-datasets/ewave/tree/b074c7e1a48786b7334dcf809ff526b1bba82765)
+- [来源 6](https://github.com/cldf-datasets/ewave/blob/b074c7e1a48786b7334dcf809ff526b1bba82765/cldf/introduction.md#feature-ratings)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

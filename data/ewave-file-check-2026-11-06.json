@@ -1,0 +1,478 @@
+{
+  "resource_id": "R185",
+  "resource_name": "eWAVE",
+  "checked_on": "2026-11-06",
+  "source_release": {
+    "version": "v3.0.3",
+    "recommended_citation_year": 2020,
+    "zenodo_citation_publication_date": "2020-08-04",
+    "github_release_published_at": "2026-08-04T10:56:55Z",
+    "zenodo_record_created_at": "2026-08-04T10:57:00.694662+00:00",
+    "doi": "10.5281/zenodo.21789749",
+    "source_commit": "b074c7e1a48786b7334dcf809ff526b1bba82765",
+    "github_release_url": "https://github.com/cldf-datasets/ewave/releases/tag/v3.0.3",
+    "zenodo_record_url": "https://zenodo.org/records/21789749",
+    "official_download_url": "https://ewave-atlas.org/download"
+  },
+  "archive_check": {
+    "name": "cldf-datasets/ewave-v3.0.3.zip",
+    "url": "https://zenodo.org/records/21789749/files/cldf-datasets/ewave-v3.0.3.zip?download=1",
+    "size": 14681880,
+    "zenodo_md5": "c95cad6210e5cd8936e38d4822ccf117",
+    "sha256": "7d47b9d507bb5697a51ba46babebab8095b024c2f721a52c9a56566aadab5a19",
+    "zip_member_crc_check_passed": true,
+    "git_tree_members_checked": 58,
+    "all_archive_members_match_pinned_github_tree_after_csv_line_ending_normalization": true,
+    "csv_line_ending_evidence": "cldf/.gitattributes declares *.csv text eol=crlf"
+  },
+  "license": "CC BY 3.0 Unported",
+  "license_evidence": [
+    "官方下载页",
+    "Zenodo发布元数据",
+    "固定版LICENSE和CLDF元数据"
+  ],
+  "parsed_csv_tables": [
+    {
+      "path": "cldf/values.csv",
+      "bytes": 458670,
+      "sha256": "2d3403c61740a56c03e0bb33910bff161498f59e6f5ffbeed1391e0efa1bb14f",
+      "git_blob_sha": "aea5c0681c71b75a7adb94ec6488302171c3d9c3",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 18095,
+      "columns": 8,
+      "column_names": [
+        "ID",
+        "Language_ID",
+        "Parameter_ID",
+        "Value",
+        "Code_ID",
+        "Comment",
+        "Source",
+        "Example_ID"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/examples.csv",
+      "bytes": 319704,
+      "sha256": "acb357b962494dee3eb31e571dd0b8781ada4a24496c0c76b375667346447d14",
+      "git_blob_sha": "94a7659f8d25db8dcb9dc328e678b607696f828d",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 4189,
+      "columns": 9,
+      "column_names": [
+        "ID",
+        "Language_ID",
+        "Primary_Text",
+        "Analyzed_Word",
+        "Gloss",
+        "Translated_Text",
+        "Meta_Language_ID",
+        "Comment",
+        "Source"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/codes.csv",
+      "bytes": 82640,
+      "sha256": "4d31341d141fa44fa48f2f11427f23ad74d082af2f4cadce00a6e6914a76d472",
+      "git_blob_sha": "830639541bf8c1b40145a7fa97c2e94c3fd01c88",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 1410,
+      "columns": 5,
+      "column_names": [
+        "ID",
+        "Parameter_ID",
+        "Name",
+        "Description",
+        "Number"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/parameters.csv",
+      "bytes": 43398,
+      "sha256": "d29d0b65e03d1f24373be704720eab8b10459f77b4cbb4af95c97a54b9e937ec",
+      "git_blob_sha": "bd741e844883d7ede0be7a627f63c734550257bf",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 235,
+      "columns": 7,
+      "column_names": [
+        "ID",
+        "Name",
+        "Description",
+        "Category_ID",
+        "Example_Source",
+        "Attestation",
+        "Pervasiveness"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/languages.csv",
+      "bytes": 73278,
+      "sha256": "09c18599d4d406a622467e9db13feead61732236c79582e9ec965b27fbe280f9",
+      "git_blob_sha": "0815fdd1d16911196016e9b6b847548a00974993",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 77,
+      "columns": 12,
+      "column_names": [
+        "ID",
+        "Name",
+        "Macroarea",
+        "Latitude",
+        "Longitude",
+        "Glottocode",
+        "ISO639P3code",
+        "Description",
+        "Region_ID",
+        "Type_ID",
+        "abbr",
+        "Contributor_ID"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/media.csv",
+      "bytes": 555,
+      "sha256": "ce899d56e697190d7ced07c25578c823c1e7364a8f8f020c3405f1020bbfd215",
+      "git_blob_sha": "18b1339d3a66a70141fb6425869f377f2afa9fa9",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 4,
+      "columns": 6,
+      "column_names": [
+        "ID",
+        "Name",
+        "Description",
+        "Media_Type",
+        "Download_URL",
+        "Path_In_Zip"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/regions.csv",
+      "bytes": 138,
+      "sha256": "4e800d1e66872d6ce8811b1e67a5e4751c851ef8ab9712ff2ecc36604541df36",
+      "git_blob_sha": "5465d96f0ae96e17382a33bdd4aea0b1780492ee",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 8,
+      "columns": 2,
+      "column_names": [
+        "ID",
+        "Name"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/varietytypes.csv",
+      "bytes": 3078,
+      "sha256": "eeb71af889582f5e5373025f69a8b368fa512f67f19ab7bfe3eb889e51868048",
+      "git_blob_sha": "31986b551ff2918d73ed230a89dac67220ca2caf",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 5,
+      "columns": 3,
+      "column_names": [
+        "ID",
+        "Name",
+        "Description"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/featurecategories.csv",
+      "bytes": 531,
+      "sha256": "5420c1980afcabc296aef7a0678427e789f6668086608597b70e441226bdbba3",
+      "git_blob_sha": "863218f2973a3ab783d8f6337127f374e9350f49",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 12,
+      "columns": 3,
+      "column_names": [
+        "ID",
+        "Name",
+        "Description"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/contributors.csv",
+      "bytes": 16564,
+      "sha256": "a59a406555330c4980796a67ed819f3cb7ba7ef099e0e20a4f406c5fc9d42839",
+      "git_blob_sha": "27c74f12c5b1ec772bf8efc1ee54e29c7ef4e88b",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 87,
+      "columns": 5,
+      "column_names": [
+        "ID",
+        "Name",
+        "URL",
+        "Address",
+        "Email"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    },
+    {
+      "path": "cldf/history.csv",
+      "bytes": 11439,
+      "sha256": "58cf57b205e5b0aae62bb4f2a9a398be17893d94b1b5a413a85ec70d1ae94e90",
+      "git_blob_sha": "e37ba4b92cd92465a65c0e12582e34e440f11e2c",
+      "archive_to_git_line_endings": "CRLF to LF",
+      "rows": 550,
+      "columns": 5,
+      "column_names": [
+        "ID",
+        "Version",
+        "Language_ID",
+        "Parameter_ID",
+        "Code_ID"
+      ],
+      "nonblank_unique_primary_key": true,
+      "consistent_row_width": true
+    }
+  ],
+  "read_supporting_text_and_metadata": [
+    {
+      "path": "LICENSE",
+      "bytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "git_blob_sha": "1a16e05564d2aaa880bbe9e506a0a0226d8742cc",
+      "archive_to_git_line_endings": "unchanged"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1042,
+      "sha256": "765c6d76d526c72795e1946ac896e46aba076d67bb3721684036c6933793e0d7",
+      "git_blob_sha": "fb25f9fe7b1b624e9735e126c5d7c6d26cdf60d7",
+      "archive_to_git_line_endings": "unchanged"
+    },
+    {
+      "path": "cldf/README.md",
+      "bytes": 12459,
+      "sha256": "e49567fec838e48c0f66ec0ecdbb9a811501bf915db485813509eec148314545",
+      "git_blob_sha": "d1d53ef330c96320057043364c9ad9b2377b04ff",
+      "archive_to_git_line_endings": "unchanged"
+    },
+    {
+      "path": "cldf/introduction.md",
+      "bytes": 15239,
+      "sha256": "f2b8765b30f61df29a379eff4ef2fe6761c19effa6d9b0efc772d31167afdf74",
+      "git_blob_sha": "c3470573b8d0a31b92282b1087e1c5ff23e19a2c",
+      "archive_to_git_line_endings": "unchanged"
+    },
+    {
+      "path": "cldf/home.md",
+      "bytes": 5358,
+      "sha256": "4c1297ebf492235bb840dc6fcd4c7a05011926a9d7d857650e0e20ec5d6d16cf",
+      "git_blob_sha": "f04d685ed1d092192ce44da1f641a0aaeaceb07d",
+      "archive_to_git_line_endings": "unchanged"
+    },
+    {
+      "path": "cldf/StructureDataset-metadata.json",
+      "bytes": 28811,
+      "sha256": "111a6332961361935fa01ba8d2fb4e7bb326852ac621928c2345e7169c243428",
+      "git_blob_sha": "9a9caf7dd623f73a69fd7de0c47d7ee28269ab78",
+      "archive_to_git_line_endings": "unchanged"
+    }
+  ],
+  "coverage": {
+    "varieties": 77,
+    "variety_types": {
+      "Traditional L1 varieties": 10,
+      "High-contact L1 varieties": 23,
+      "English-based Creoles": 19,
+      "Indigenized L2 varieties": 18,
+      "English-based Pidgins": 7
+    },
+    "world_regions": 8,
+    "glottocodes_nonblank": 65,
+    "features": 235,
+    "feature_categories": 12,
+    "variety_feature_cells": 18095,
+    "duplicate_or_missing_variety_feature_keys": 0,
+    "ratings": {
+      "B": 2299,
+      "C": 1950,
+      "D": 8939,
+      "A": 1953,
+      "?": 1053,
+      "X": 1901
+    },
+    "example_rows": 4189
+  },
+  "declared_foreign_key_checks": [
+    {
+      "source_table": "values.csv",
+      "source_column": "Code_ID",
+      "target_table": "codes.csv",
+      "target_column": "ID",
+      "checked_references": 18095,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "values.csv",
+      "source_column": "Parameter_ID",
+      "target_table": "parameters.csv",
+      "target_column": "ID",
+      "checked_references": 18095,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "values.csv",
+      "source_column": "Language_ID",
+      "target_table": "languages.csv",
+      "target_column": "ID",
+      "checked_references": 18095,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "values.csv",
+      "source_column": "Example_ID",
+      "target_table": "examples.csv",
+      "target_column": "ID",
+      "checked_references": 4189,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "examples.csv",
+      "source_column": "Language_ID",
+      "target_table": "languages.csv",
+      "target_column": "ID",
+      "checked_references": 4189,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "examples.csv",
+      "source_column": "Meta_Language_ID",
+      "target_table": "languages.csv",
+      "target_column": "ID",
+      "checked_references": 0,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "codes.csv",
+      "source_column": "Parameter_ID",
+      "target_table": "parameters.csv",
+      "target_column": "ID",
+      "checked_references": 1410,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "parameters.csv",
+      "source_column": "Category_ID",
+      "target_table": "featurecategories.csv",
+      "target_column": "ID",
+      "checked_references": 235,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "languages.csv",
+      "source_column": "Region_ID",
+      "target_table": "regions.csv",
+      "target_column": "ID",
+      "checked_references": 77,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "languages.csv",
+      "source_column": "Type_ID",
+      "target_table": "varietytypes.csv",
+      "target_column": "ID",
+      "checked_references": 77,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "languages.csv",
+      "source_column": "Contributor_ID",
+      "target_table": "contributors.csv",
+      "target_column": "ID",
+      "checked_references": 94,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "history.csv",
+      "source_column": "Language_ID",
+      "target_table": "languages.csv",
+      "target_column": "ID",
+      "checked_references": 550,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "history.csv",
+      "source_column": "Parameter_ID",
+      "target_table": "parameters.csv",
+      "target_column": "ID",
+      "checked_references": 550,
+      "unresolved_references": 0
+    },
+    {
+      "source_table": "history.csv",
+      "source_column": "Code_ID",
+      "target_table": "codes.csv",
+      "target_column": "ID",
+      "checked_references": 550,
+      "unresolved_references": 0
+    }
+  ],
+  "unresolved_declared_foreign_key_count": 0,
+  "published_summary_reproduction": {
+    "definition_url": "https://github.com/cldf-datasets/ewave/blob/b074c7e1a48786b7334dcf809ff526b1bba82765/cldf/introduction.md#feature-ratings",
+    "formula": {
+      "attestation": "(A+B+C) / N",
+      "pervasiveness": "(A+0.6*B+0.3*C) / (A+B+C)"
+    },
+    "tolerance_on_0_to_1_scale": 1e-12,
+    "features_checked": 235,
+    "all_77_varieties": {
+      "attestation_agrees": 0,
+      "pervasiveness_agrees": 144
+    },
+    "diagnostic_excluding_croker_island_english": {
+      "varieties": 76,
+      "attestation_agrees": 217,
+      "pervasiveness_agrees": 207
+    },
+    "examples": [
+      {
+        "feature_id": "1",
+        "stored_attestation": 0.486842105263158,
+        "recomputed_attestation": 0.4805194805194805,
+        "attestation_agrees": false,
+        "stored_pervasiveness": 0.451351351351351,
+        "recomputed_pervasiveness": 0.45135135135135135,
+        "pervasiveness_agrees": true
+      },
+      {
+        "feature_id": "2",
+        "stored_attestation": 0.263157894736842,
+        "recomputed_attestation": 0.2727272727272727,
+        "attestation_agrees": false,
+        "stored_pervasiveness": 0.48,
+        "recomputed_pervasiveness": 0.48571428571428565,
+        "pervasiveness_agrees": false
+      },
+      {
+        "feature_id": "3",
+        "stored_attestation": 0.552631578947368,
+        "recomputed_attestation": 0.5584415584415584,
+        "attestation_agrees": false,
+        "stored_pervasiveness": 0.642857142857143,
+        "recomputed_pervasiveness": 0.6418604651162791,
+        "pervasiveness_agrees": false
+      }
+    ],
+    "note": "按导言公式用v3.0.3的77个变体重算，Attestation有235项不一致，Pervasiveness有91项不一致。排除Croker Island English后仍存在差异，差异来源待核实。比较本版特征分布时可按研究样本从值表重算。"
+  },
+  "scope": "核对发布包的完整字节、外层ZIP CRC、固定GitHub版本及11张CLDF表结构和声明的表间键。评级依据、历史内嵌ZIP内容、各源文献与跨库特征对应待分别核验。",
+  "full_resource_validated": false
+}

@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.3",
-  "updated_on": "2026-11-05",
+  "catalog_version": "2.5.4",
+  "updated_on": "2026-11-06",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 184,
+  "resource_count": 185,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -112,6 +112,11 @@
           "resource_id": "R184",
           "use_for": "比较接触语言的词序、论元标记、复杂句及其他语法特征，并查看专家编码和逐词释义例句。",
           "check_before_use": "按Default_Lect_ID区分默认语言与变体，处理一组多值；Frequency多为专家权重，例句来源混合。与WALS比较前核对定义、值和覆盖，并考虑共同接触史与地域。"
+        },
+        {
+          "resource_id": "R185",
+          "use_for": "比较英语变体及英语供源接触语言的代词、时体、否定、一致和词序等结构分布。",
+          "check_before_use": "区分专家评级中的D、X和?。按分析样本从评级表复算特征覆盖率和普遍程度，检查地区和变体类型的分布。与APiCS对照前先确认变体和特征的定义。"
         }
       ]
     },
@@ -11223,6 +11228,84 @@
           }
         ],
         "note": "三个入口已互证为同源v2013.1，固定提交0ee22eaa135186d8cc4936ed6bbbbeb0640f0c93。15个完整文件全部匹配上游Git blob并记录SHA-256；9张CSV行宽、主键和元数据声明的跨表引用检查通过，值与代码所属特征一致。完整值表20,624行，例句表18,526行；语言—参数19,067组中1,317组含多值。仅选定文件结构检查，未做全库CLDF语义验收或WALS跨库连接；详见data/apics-file-check-2026-11-05.json。"
+      }
+    },
+    {
+      "id": "R185",
+      "name": "eWAVE（世界英语变体电子图谱）",
+      "category": "spoken-variation",
+      "entry_type": "aggregate",
+      "language_scope": "8个地区的77个变体，包括51个英语一语或本土化二语变体，以及26个英语供源的皮钦语和克里奥尔语",
+      "language_codes": [
+        "en",
+        "mul"
+      ],
+      "data_type": "专家编码的口语形态句法特征评级、语言变体元数据、例句与历史评级。CLDF CSV、JSON元数据及参考文献",
+      "description": "v3.0.3汇集专家根据描写文献、自然语料及母语者知识作出的评级。235项特征分属12个语法领域，包括代词、名词短语、时体、否定、一致和词序，可比较英语变体的结构分布。例句表含4,189条记录。",
+      "access_mode": "open_data",
+      "access_notes": "官网可在线浏览，Zenodo与GitHub提供公开v3.0.3发布包。Zenodo整包已下载并通过官方MD5校验，11张CLDF表已完整读取。归档建立于2026-08-04，项目推荐引文年份为2020。",
+      "license_note": "官网、Zenodo元数据和同版LICENSE及CLDF元数据均标注CC BY 3.0 Unported。引用Kortmann、Lunkenheimer与Ehret主编的原始图谱（2020）及实际所用版本的DOI 10.5281/zenodo.21789749。",
+      "limitations": "分析单位是变体×特征。A/B/C是专家对使用程度的定性评级，须区分D（有证据显示缺失）、X（不适用）和?（无资料）。按项目导言公式从本版77个变体重算时，参数表Attestation有235项不一致，Pervasiveness有91项不一致。比较时宜从评级表重算并注明分母。Glottocode与变体的边界需核对，与APiCS对照时还需统一特征定义。",
+      "source_url": "https://ewave-atlas.org/download",
+      "additional_urls": [
+        "https://ewave-atlas.org/",
+        "https://github.com/cldf-datasets/ewave/releases/tag/v3.0.3",
+        "https://zenodo.org/records/21789749",
+        "https://doi.org/10.5281/zenodo.21789749",
+        "https://github.com/cldf-datasets/ewave/tree/b074c7e1a48786b7334dcf809ff526b1bba82765",
+        "https://github.com/cldf-datasets/ewave/blob/b074c7e1a48786b7334dcf809ff526b1bba82765/cldf/introduction.md#feature-ratings"
+      ],
+      "tags": [
+        "英语变体",
+        "世界英语",
+        "方言",
+        "口语",
+        "社会语言学",
+        "形态句法",
+        "句法",
+        "形态",
+        "语言接触",
+        "类型学",
+        "皮钦语",
+        "克里奥尔语",
+        "专家编码",
+        "CLDF"
+      ],
+      "related_ids": [
+        "R184"
+      ],
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified",
+      "verification": {
+        "documentation_checked_on": "2026-11-06",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://ewave-atlas.org/download",
+          "https://ewave-atlas.org/",
+          "https://zenodo.org/records/21789749",
+          "https://github.com/cldf-datasets/ewave/releases/tag/v3.0.3",
+          "https://github.com/cldf-datasets/ewave/blob/b074c7e1a48786b7334dcf809ff526b1bba82765/cldf/introduction.md#feature-ratings"
+        ],
+        "note": "完整下载14,681,880字节的v3.0.3 ZIP，匹配Zenodo公布的MD5。外层ZIP成员CRC通过，58个成员按源仓库的CSV换行设置与固定GitHub提交核对。11张CSV的行宽、主键与声明的非空跨表引用通过检查。18,095个变体×特征格各有一条评级。参数表汇总值的复算差异见data/ewave-file-check-2026-11-06.json。历史内嵌ZIP和专家评级依据待分别核验。",
+        "file_checks": [
+          {
+            "url": "https://zenodo.org/records/21789749/files/cldf-datasets/ewave-v3.0.3.zip?download=1",
+            "sha256": "7d47b9d507bb5697a51ba46babebab8095b024c2f721a52c9a56566aadab5a19",
+            "checked_on": "2026-11-06",
+            "read_scope": "archive_selected_members",
+            "file_role": "empirical_or_norm_data",
+            "result": "Zenodo整包校验通过。完整解析11张CSV，其中变体表77行、特征表235行、评级表18,095行及例句表4,189行。逐项对照已发布的两个特征汇总指标，保留复算差异。"
+          }
+        ]
       }
     }
   ]

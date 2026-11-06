@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-05",
-  "catalog_version": "2.5.3",
+  "generated_on": "2026-11-06",
+  "catalog_version": "2.5.4",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 184,
+    "main_resource_count": 185,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 70,
+      "selected_file_checked": 71,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 77,
+    "main_with_recorded_file_reads": 78,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6053,6 +6053,37 @@
           "checked_on": "2026-11-05",
           "file_role": "documentation_or_materials",
           "result": "完整读取并解析metadata.json为JSON。已匹配固定提交的Git blob哈希；仅本文件及列明的跨表结构检查，整套媒体、编码正确性与分析未验收。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R185",
+      "name": "eWAVE（世界英语变体电子图谱）",
+      "category": "spoken-variation",
+      "source_url": "https://ewave-atlas.org/download",
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-06",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://zenodo.org/records/21789749/files/cldf-datasets/ewave-v3.0.3.zip?download=1",
+          "sha256": "7d47b9d507bb5697a51ba46babebab8095b024c2f721a52c9a56566aadab5a19",
+          "checked_on": "2026-11-06",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "Zenodo整包校验通过。完整解析11张CSV，其中变体表77行、特征表235行、评级表18,095行及例句表4,189行。逐项对照已发布的两个特征汇总指标，保留复算差异。"
         }
       ],
       "osf_audit": null,

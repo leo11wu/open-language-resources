@@ -372,5 +372,5 @@ v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R185 eWAVE（世界英语变体电子图谱）](../catalog/spoken-variation.md#r185)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

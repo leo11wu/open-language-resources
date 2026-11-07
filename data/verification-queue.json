@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-06",
-  "catalog_version": "2.5.4",
+  "generated_on": "2026-11-07",
+  "catalog_version": "2.5.5",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 185,
+    "main_resource_count": 186,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 71,
+      "selected_file_checked": 72,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 78,
+    "main_with_recorded_file_reads": 79,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6084,6 +6084,100 @@
           "read_scope": "archive_selected_members",
           "file_role": "empirical_or_norm_data",
           "result": "Zenodo整包校验通过。完整解析11张CSV，其中变体表77行、特征表235行、评级表18,095行及例句表4,189行。逐项对照已发布的两个特征汇总指标，保留复算差异。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R186",
+      "name": "BivalTyp（双价谓词及其论元编码数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://bivaltyp.info/download/",
+      "platforms": [
+        "project_website",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-07",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/data.csv",
+          "sha256": "b6d6fe9a09b0efd1e39b12b92a35edd380e0a15185d9838ea7cb3e424208a650",
+          "blob_sha": "38691e8f99cd5649d1b00917891cf23d594e33e2",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "16380行×16列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/data_structural.csv",
+          "sha256": "a4ced4dd4463cfd85acc03928740c20b286e82099ab09ff629fd87fa6a7ef8c5",
+          "blob_sha": "61c54963ac61d1cd061b06c45962e16dce28a823",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "4030行×7列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/langtables/Chinese_Mandarin_data.csv",
+          "sha256": "0d16b5c04a3d431aed8d9fc6e60b34b800d171945e559e334f0282ccda859328",
+          "blob_sha": "d213c28c732fbb77ac531c0e53734111cbdb222e",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "130行×21列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/langtables/English_data.csv",
+          "sha256": "a3a107d1b75ab98d0e4068daba177a63ecc5411298a976aa2833e1dd280679d5",
+          "blob_sha": "87c08f16b3a17fa37865bed99b8955544c09a8e2",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "130行×19列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/language_stats.csv",
+          "sha256": "5826152fee0bba4a4fb3071c07dfdf51ff22bba453ea6ec5006b4eeb09b8d4ee",
+          "blob_sha": "b519b7209cd1eb74ba2bcfb40a6528d893560198",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "157行×14列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/languages.csv",
+          "sha256": "d1730ed3f86cf2a242411e2f2675a241478c36f72a2a5e6bee7f2cca4608880c",
+          "blob_sha": "d46a06b3fb1d653515ff3b248b1cc3782bdf9dc3",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "157行×23列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/patterns.csv",
+          "sha256": "dd34b26a108be0d463ecb64bb3af641e60c501c17d972a33dd220703110b7532",
+          "blob_sha": "b2b185ef7259d466f06fd94222a6c8f21c4c663a",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "130行×162列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/macleginn/bivaltyp/cab55a09be2b3b2ac173bb64bd4e15cc46d84890/data/predicates.csv",
+          "sha256": "6a1214394850855cd15e17c553b57985f2e4b14fc402efe4627920d0868518e7",
+          "blob_sha": "9e31d51359219c640b4e815c2797a9d096e00e40",
+          "checked_on": "2026-11-07",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "130行×8列；完整按制表符解析，行宽通过，匹配固定Git blob。"
         }
       ],
       "osf_audit": null,

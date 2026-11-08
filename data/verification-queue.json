@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-07",
-  "catalog_version": "2.5.5",
+  "generated_on": "2026-11-08",
+  "catalog_version": "2.5.6",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 186,
+    "main_resource_count": 187,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 72,
+      "selected_file_checked": 73,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 79,
+    "main_with_recorded_file_reads": 80,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6178,6 +6178,69 @@
           "read_scope": "complete_delimited_table",
           "file_role": "documentation_or_materials",
           "result": "130行×8列；完整按制表符解析，行宽通过，匹配固定Git blob。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R187",
+      "name": "SAILS（南美原住民语言结构数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://sails.clld.org/",
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-08",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://zenodo.org/api/records/23059492/files/cldf-datasets/sails-v2014.1.zip/content",
+          "sha256": "102f6a4f983f7dd7fa76c86cb65b623c774ce8796afd1a2ed51d35258b39102a",
+          "checked_on": "2026-11-08",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "Zenodo整包通过官方MD5与ZIP成员CRC校验。50个成员与固定GitHub树一致，其中5张CLDF表按项目设置规范化换行后匹配。完整解析5张CLDF表并检查31,792条编码的连接键与取值。"
+        },
+        {
+          "url": "https://sails.clld.org/parameters/NP2.tab",
+          "sha256": "6234bc9c5586260461544a446cacd8ea00405f36bca7d94d0da2a63c8adfa3e8",
+          "checked_on": "2026-11-08",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "NP2官网导出完整解析101行。按语言编号和名称匹配，类别及释义与固定CLDF版一致。"
+        },
+        {
+          "url": "https://sails.clld.org/parameters/NP130.tab",
+          "sha256": "c3b4ad3bde7c53b3dd2a401e8fe0c470030ca703aa122e940e97b6dc517de9c9",
+          "checked_on": "2026-11-08",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "NP130官网导出完整解析101行。按语言编号和名称匹配，类别及释义与固定CLDF版一致。"
+        },
+        {
+          "url": "https://sails.clld.org/parameters/NP140.tab",
+          "sha256": "554a8e6b317b900dc48b495a896d07bedc4d36df15159605399cdb689f514874",
+          "checked_on": "2026-11-08",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "NP140官网导出完整解析101行。按语言编号和名称匹配，类别及释义与固定CLDF版一致。"
+        },
+        {
+          "url": "https://sails.clld.org/parameters/NP150.tab",
+          "sha256": "7724dc0d9e33121bb33a1b18243fb44c7390444358303618ba31bf211532e1f7",
+          "checked_on": "2026-11-08",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "NP150官网导出完整解析101行。按语言编号和名称匹配，类别及释义与固定CLDF版一致。"
         }
       ],
       "osf_audit": null,

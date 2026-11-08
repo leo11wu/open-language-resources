@@ -1,0 +1,353 @@
+{
+  "resource_id": "R187",
+  "resource_name": "SAILS",
+  "checked_on": "2026-11-08",
+  "source_release": {
+    "version": "v2014.1",
+    "doi": "10.5281/zenodo.23059492",
+    "zenodo_record_url": "https://zenodo.org/records/23059492",
+    "zenodo_published_on": "2026-09-30",
+    "official_home": "https://sails.clld.org/",
+    "github_release_url": "https://github.com/cldf-datasets/sails/releases/tag/v2014.1",
+    "github_published_at": "2026-09-30T10:36:17Z",
+    "git_commit": "cd71df24426e08e6894457990b7973786660c6c5",
+    "scope": "2014 language-based component in CLDF; the website also offers the construction-based SUB module added in 2016"
+  },
+  "license": {
+    "release": "cc-by-nc-nd-2.0",
+    "cldf": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+    "website": "https://creativecommons.org/licenses/by-nc-nd/2.0/de/",
+    "citation": "Muysken et al. (2014) and the version DOI for the release; cite Olga Krasnoukhova (2016), Noun Phrase (NP), when using the online NP contribution."
+  },
+  "archive_check": {
+    "filename": "cldf-datasets/sails-v2014.1.zip",
+    "url": "https://zenodo.org/api/records/23059492/files/cldf-datasets/sails-v2014.1.zip/content",
+    "bytes": 1570582,
+    "zenodo_md5": "559712268c7dfc7fdfa3e807dc947b29",
+    "sha256": "102f6a4f983f7dd7fa76c86cb65b623c774ce8796afd1a2ed51d35258b39102a",
+    "zip_member_crc_check_passed": true,
+    "members_matched_to_git_tree": 50,
+    "files_normalized_to_lf_for_git_blob_comparison": [
+      "cldf/codes.csv",
+      "cldf/contributions.csv",
+      "cldf/languages.csv",
+      "cldf/parameters.csv",
+      "cldf/values.csv"
+    ],
+    "newline_rule": "cldf/.gitattributes: *.csv text eol=crlf"
+  },
+  "cldf_tables": [
+    {
+      "path": "cldf/values.csv",
+      "rows": 31792,
+      "columns": [
+        "ID",
+        "Language_ID",
+        "Parameter_ID",
+        "Value",
+        "Code_ID",
+        "Comment",
+        "Source",
+        "Contributor",
+        "Reference",
+        "Example_Reference"
+      ],
+      "archive_member_sha256": "d10c9750dfe0a19db8d8f6522f259db02052a42d300d2e74cd18c985d585e359",
+      "git_blob_sha": "7f4aa296b57df58c78106b19cd0cbd155000d43f"
+    },
+    {
+      "path": "cldf/parameters.csv",
+      "rows": 604,
+      "columns": [
+        "ID",
+        "Name",
+        "Description",
+        "Domain",
+        "Contribution_ID"
+      ],
+      "archive_member_sha256": "0df0cede5926285b20207b07244a444398dce2005ed12acec2d2e034b766b0ea",
+      "git_blob_sha": "232bff51de2b73b6adc671cb80dcd70f89c58bab"
+    },
+    {
+      "path": "cldf/codes.csv",
+      "rows": 2235,
+      "columns": [
+        "ID",
+        "Parameter_ID",
+        "Name",
+        "Description"
+      ],
+      "archive_member_sha256": "2d159cc4835a1f1ab9ff75df98c02805ebaf016b080ebfd9380586e2edb77c88",
+      "git_blob_sha": "1cbd1608c71015e092ec4af61a1c1808ce97436c"
+    },
+    {
+      "path": "cldf/languages.csv",
+      "rows": 167,
+      "columns": [
+        "ID",
+        "Name",
+        "Macroarea",
+        "Latitude",
+        "Longitude",
+        "Glottocode",
+        "ISO639P3code"
+      ],
+      "archive_member_sha256": "991cbf4f707e43157f672424aaa2bdbe0e7912f1ae89b155cc80f75f7423299b",
+      "git_blob_sha": "38d041897c8f81e7fcedad3835a1c390a675087e"
+    },
+    {
+      "path": "cldf/contributions.csv",
+      "rows": 7,
+      "columns": [
+        "ID",
+        "Name",
+        "Description",
+        "Contributor",
+        "Citation",
+        "Orientation",
+        "Related_Resource",
+        "Related_Resource_URL"
+      ],
+      "archive_member_sha256": "d51f1b7c6f96e4fcdf8af97cfea85c787fbb87cd0c442f47a6ab4cfd011bf082",
+      "git_blob_sha": "efca5e6b81e95e6306e344c08467ad42ef2b979b"
+    }
+  ],
+  "declared_foreign_key_checks": [
+    {
+      "source": "values.csv",
+      "columns": [
+        "Parameter_ID"
+      ],
+      "target": "parameters.csv",
+      "resolved_rows": 31792,
+      "unresolved_rows": 0
+    },
+    {
+      "source": "values.csv",
+      "columns": [
+        "Code_ID"
+      ],
+      "target": "codes.csv",
+      "resolved_rows": 31792,
+      "unresolved_rows": 0
+    },
+    {
+      "source": "values.csv",
+      "columns": [
+        "Language_ID"
+      ],
+      "target": "languages.csv",
+      "resolved_rows": 31792,
+      "unresolved_rows": 0
+    },
+    {
+      "source": "parameters.csv",
+      "columns": [
+        "Contribution_ID"
+      ],
+      "target": "contributions.csv",
+      "resolved_rows": 604,
+      "unresolved_rows": 0
+    },
+    {
+      "source": "codes.csv",
+      "columns": [
+        "Parameter_ID"
+      ],
+      "target": "parameters.csv",
+      "resolved_rows": 2235,
+      "unresolved_rows": 0
+    }
+  ],
+  "language_parameter_pair_count": 31792,
+  "code_parameter_disagreements": 0,
+  "bibtex_entry_keys": 178,
+  "unresolved_structured_source_keys": 0,
+  "distinct_nonblank_glottocodes": 167,
+  "blank_macroarea_rows": 167,
+  "modules": [
+    {
+      "id": "AND",
+      "feature_count": 26,
+      "language_entry_count": 18,
+      "value_row_count": 462,
+      "value_code_name_conflicts": 0,
+      "orientation_field_in_cldf": "Construction-Based"
+    },
+    {
+      "id": "ARGEX",
+      "feature_count": 65,
+      "language_entry_count": 95,
+      "value_row_count": 6171,
+      "value_code_name_conflicts": 5555,
+      "orientation_field_in_cldf": "Construction-Based"
+    },
+    {
+      "id": "ARW",
+      "feature_count": 271,
+      "language_entry_count": 38,
+      "value_row_count": 10270,
+      "value_code_name_conflicts": 6878,
+      "orientation_field_in_cldf": "Construction-Based"
+    },
+    {
+      "id": "FFQ",
+      "feature_count": 23,
+      "language_entry_count": 31,
+      "value_row_count": 712,
+      "value_code_name_conflicts": 0,
+      "orientation_field_in_cldf": "Construction-Based"
+    },
+    {
+      "id": "IC",
+      "feature_count": 90,
+      "language_entry_count": 51,
+      "value_row_count": 2444,
+      "value_code_name_conflicts": 0,
+      "orientation_field_in_cldf": "Construction-Based"
+    },
+    {
+      "id": "NP",
+      "feature_count": 94,
+      "language_entry_count": 101,
+      "value_row_count": 9494,
+      "value_code_name_conflicts": 0,
+      "orientation_field_in_cldf": "Construction-Based"
+    },
+    {
+      "id": "TAME",
+      "feature_count": 35,
+      "language_entry_count": 64,
+      "value_row_count": 2239,
+      "value_code_name_conflicts": 2220,
+      "orientation_field_in_cldf": "Construction-Based"
+    }
+  ],
+  "value_export_issue": {
+    "inconsistent_rows": 14653,
+    "by_module": {
+      "ARW": 6878,
+      "ARGEX": 5555,
+      "TAME": 2220
+    },
+    "np_inconsistent_rows": 0,
+    "row_examples": [
+      {
+        "id": "ARW1-1-03a-NOCODE_Apolista",
+        "parameter_id": "ARW1-1-03a",
+        "value": "1",
+        "code_id": "ARW1-1-03a-0",
+        "code_name": "0"
+      },
+      {
+        "id": "ARW1-1-03b-NOCODE_Apolista",
+        "parameter_id": "ARW1-1-03b",
+        "value": "1",
+        "code_id": "ARW1-1-03b-NK",
+        "code_name": "?"
+      }
+    ],
+    "diagnosis": "The pinned exporter uses split('-')[1] on the raw code ID. This reproduces Value in all rows, including rows with hyphenated feature IDs where it can take an internal feature segment. Code_ID and joined CodeTable.Name agree with the raw domainelement mapping for all 31,792 rows.",
+    "recommended_read": "Join values.Code_ID to codes.ID and check that Parameter_ID agrees; interpret codes.Name and codes.Description. Source-check the features needed for the analysis."
+  },
+  "orientation_issue": "All seven CLDF Orientation fields say Construction-Based. The project description specifies language-level coding for these domains and construction-level coding for SUB, which is outside this CLDF projection. All 31,792 observed language–feature pairs are unique.",
+  "np_coverage": {
+    "unknown_value_rows": 1369,
+    "not_applicable_rows": 1824,
+    "structured_source_nonempty_rows": 3421,
+    "free_text_reference_nonempty_rows": 5385,
+    "sov_entries": 55,
+    "sov_entries_with_both_unambiguous_positions": 39,
+    "sov_coverage_scope": "All entries coded NP2-SOV in the snapshot, including Turkish as an external comparator. Both NP140 and NP150 must be A or B; unknown and other codes remain distinct.",
+    "known_non_south_american_comparison_entries": [
+      "Lao",
+      "Russian",
+      "Spanish (reference coordinates in Spain)",
+      "Turkish"
+    ],
+    "sampling_note": "The CLDF Macroarea column is blank throughout. Use coordinates and separately verified area and genealogy definitions. Family strings from the website describe its own classification."
+  },
+  "online_checks": [
+    {
+      "parameter_id": "NP2",
+      "url": "https://sails.clld.org/parameters/NP2.tab",
+      "sha256": "6234bc9c5586260461544a446cacd8ea00405f36bca7d94d0da2a63c8adfa3e8",
+      "rows_matched_on_language_id_and_name": 101,
+      "code_and_description_disagreements": 0,
+      "value_counts": {
+        "?": 4,
+        "FREE": 7,
+        "OSV": 2,
+        "OVS": 5,
+        "SOV": 55,
+        "SVO": 20,
+        "VOS": 2,
+        "VSO": 6
+      }
+    },
+    {
+      "parameter_id": "NP130",
+      "url": "https://sails.clld.org/parameters/NP130.tab",
+      "sha256": "c3b4ad3bde7c53b3dd2a401e8fe0c470030ca703aa122e940e97b6dc517de9c9",
+      "rows_matched_on_language_id_and_name": 101,
+      "code_and_description_disagreements": 0,
+      "value_counts": {
+        "A": 85,
+        "B": 10,
+        "C": 3,
+        "D": 3
+      }
+    },
+    {
+      "parameter_id": "NP140",
+      "url": "https://sails.clld.org/parameters/NP140.tab",
+      "sha256": "554a8e6b317b900dc48b495a896d07bedc4d36df15159605399cdb689f514874",
+      "rows_matched_on_language_id_and_name": 101,
+      "code_and_description_disagreements": 0,
+      "value_counts": {
+        "?": 2,
+        "A": 37,
+        "B": 41,
+        "C": 10,
+        "D": 3,
+        "E": 3,
+        "F": 5
+      }
+    },
+    {
+      "parameter_id": "NP150",
+      "url": "https://sails.clld.org/parameters/NP150.tab",
+      "sha256": "7724dc0d9e33121bb33a1b18243fb44c7390444358303618ba31bf211532e1f7",
+      "rows_matched_on_language_id_and_name": 101,
+      "code_and_description_disagreements": 0,
+      "value_counts": {
+        "?": 15,
+        "A": 29,
+        "B": 50,
+        "C": 5,
+        "D": 2
+      }
+    }
+  ],
+  "selected_np_examples": {
+    "agr": {
+      "language": "Aguaruna",
+      "features": {
+        "NP2": "NP2-SOV",
+        "NP130": "NP130-A",
+        "NP140": "NP140-B",
+        "NP150": "NP150-B"
+      }
+    },
+    "quy": {
+      "language": "Ayacucho Quechua",
+      "features": {
+        "NP2": "NP2-SOV",
+        "NP130": "NP130-A",
+        "NP140": "NP140-A",
+        "NP150": "NP150-A"
+      }
+    }
+  },
+  "verification_boundary": "Complete file-level parse of the five CLDF tables, metadata keys, raw code replay, and four online exports. Original reference grammars and all coding judgments remain for study-specific review."
+}

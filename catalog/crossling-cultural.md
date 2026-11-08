@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共13个入口。资料状态与文件验收范围分别记录。
+共14个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -411,4 +411,42 @@ v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体�
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
 待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r187"></a>
+
+## SAILS（南美原住民语言结构数据库）
+
+**R187** · 整合资料 · 有数据发布说明
+
+v2014.1固定版含604项特征及31,792条编码记录。Olga Krasnoukhova负责的名词短语模块（NP）有94项特征，涵盖及物主句的语用无标记词序，以及形容词、关系从句、领属语等在名词短语中的相对位置。官网另提供2016年上线的从属结构模块（SUB），CLDF主表覆盖2014年按语言编码的模块。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 以南美原住民语言为主，含Lao、Russian等域外对照。固定CLDF版7个模块共167个语言条目，名词短语模块覆盖101个 |
+| 数据性质 | 基于语法描写资料的类型学编码，含语言坐标与Glottocode、特征和取值代码表、编码注释及参考文献。采用CLDF CSV、JSON元数据和BibTeX；混合来源或待细分 |
+| 获取方式 | 公开数据入口：官网可在线浏览。Zenodo和GitHub提供可直接下载的v2014.1固定版，2026-09-30发布，原始数据按发布包推荐引用为2014年。Zenodo整包已下载并完整解析5张CLDF主表。 |
+| 许可 | Zenodo及CLDF标注CC BY-NC-ND 2.0，官网明确标注德国版。许可要求署名、非商业使用及不得分发改编材料。引用原项目、相关模块贡献者和固定版DOI 10.5281/zenodo.23059492。 |
+| 使用边界 | 本版CLDF的编码单位为语言×特征，各模块覆盖不同。贡献表的Orientation全标为Construction-Based，与官网的单位说明有出入。数据为语法描写的类别编码，频率和依存距离须用逐句语料另测。未知、无主导顺序、条件性变体和不适用须分开。语言表Macroarea为空，谱系与地区需另核验。ARGEX、ARW和TAME共14,653条的Value与代码表名称不同，按Code_ID接代码表并核对Parameter_ID与所用特征的来源。NP未发现该字段差异。 |
+| 标签 | 类型学、跨语言、南美、原住民语言、句法、词序、SOV、名词短语、形容词、关系从句、领属、论元标记、语法描写、CLDF |
+| 平台 | project_website, github, zenodo |
+| 核对依据 | 作者仓库说明；2026-11-08 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | Zenodo整包及50个成员校验通过。5张CLDF主表的行宽、主键和声明外键检查通过。四项词序特征共404格与官网导出逐条一致。Aguaruna和Ayacucho Quechua均标为SOV，前者的两项修饰成分均在名词后，后者均在名词前。55个SOV条目中39个在两项上都有明确的名前或名后编码，计数含域外对照。已用固定转换代码和原始代码表复现Value差异。逐条回查原语法书有待按研究用途进行。详见data/sails-file-check-2026-11-08.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://sails.clld.org/)
+
+补充及核对来源：
+
+- [来源 1](https://zenodo.org/records/23059492)
+- [来源 2](https://doi.org/10.5281/zenodo.23059492)
+- [来源 3](https://github.com/cldf-datasets/sails/releases/tag/v2014.1)
+- [来源 4](https://github.com/cldf-datasets/sails/tree/cd71df24426e08e6894457990b7973786660c6c5/cldf)
+- [来源 5](https://sails.clld.org/contributions)
+- [来源 6](https://sails.clld.org/parameters/NP2)
+- [来源 7](https://sails.clld.org/parameters/NP130)
+- [来源 8](https://sails.clld.org/parameters/NP140)
+- [来源 9](https://sails.clld.org/parameters/NP150)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 

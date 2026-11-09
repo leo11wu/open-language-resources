@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共14个入口。资料状态与文件验收范围分别记录。
+共15个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -410,7 +410,7 @@ v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r187"></a>
 
@@ -449,4 +449,45 @@ v2014.1固定版含604项特征及31,792条编码记录。Olga Krasnoukhova负�
 - [来源 9](https://sails.clld.org/parameters/NP150)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+<a id="r188"></a>
+
+## ValPaL（配价模式数据库）
+
+**R188** · 数据集 · 有数据发布说明
+
+v1.2有3,599条词项、483项语言内定义的交替、46,137条词项×交替记录和10,837条例句。可按基本编码框架比较动词参与使役、被动、与格等交替的适用性，和BivalTyp对语境化双价谓词的编码比较互补。意义表另含项目标为Old meaning和New meaning的82项。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 36个语言或变体条目，包括英语和普通话。80个比较意义由70个核心项与10个扩展项组成，各语言覆盖70–80项，其中11个覆盖全部80项 |
+| 数据性质 | 语言专家整理的动词词项、意义与微观语义角色、基本编码框架、配价交替及其评级、逐词释义例句。CLDF表、JSON元数据与BibTeX；混合来源或待细分 |
+| 获取方式 | 公开数据入口：官网可浏览，Zenodo与GitHub提供无需注册的CLDF v1.2固定版，2026-09-30发布。已完整取得Zenodo包并解析13张CLDF表。原项目推荐引文为2013年。 |
+| 许可 | 官网、Zenodo、固定版LICENSE及CLDF元数据一致标注CC BY 3.0 Unported。署名引用Hartmann、Haspelmath与Taylor主编的原项目（2013）、相关语言贡献者及所用版本DOI 10.5281/zenodo.23054997。 |
+| 使用边界 | 交替评级表示专家对词项在构式中适用性的判断。Regularly、Marginally、Never、No data、空评级和未列组合须分开处理，构式频率需另用自然语料测量。部分词义在一门语言有多个词项，按Form_ID连接。3,811条Regularly记录没有派生框架链接，须结合评级、交替说明和例句。基本框架的选定有时是项目约定。跨语言比较需核实交替定义、词义和谱系地域。例句来源含构造、诱发及自然用例。 |
+| 标签 | 句法、类型学、跨语言、配价、配价交替、动词类别、论元结构、编码框架、微观语义角色、使役、被动、与格交替、逐词释义、CLDF |
+| 平台 | project_website, github, zenodo |
+| 核对依据 | 作者仓库说明；2026-11-09 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | Zenodo整包匹配官方MD5，84个成员与固定GitHub版本核对。完整解析CLDF声明的13张表，主键及24项声明外键检查通过。英语give和say共享基本框架，Dative评级分别为Regularly和Never。give的基本与双宾交替例句分别为89与90，均为母语语言学家构造。20条例句连接在例句表的反向词项列表中未出现对应词项，逐项回查原语法书及全部编码仍待进行。详见data/valpal-file-check-2026-11-09.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://valpal.info/download)
+
+补充及核对来源：
+
+- [来源 1](https://valpal.info/project)
+- [来源 2](https://valpal.info/database)
+- [来源 3](https://zenodo.org/records/23054997)
+- [来源 4](https://doi.org/10.5281/zenodo.23054997)
+- [来源 5](https://github.com/lexibank/valpal/releases/tag/v1.2)
+- [来源 6](https://github.com/lexibank/valpal/tree/c3a97436b1ef9f70d624ada871a34675b7ca7441/cldf)
+- [来源 7](https://valpal.info/values/stan1293-give-1)
+- [来源 8](https://valpal.info/values/stan1293-say-1)
+- [来源 9](https://valpal.info/sentences/stan1293-89)
+- [来源 10](https://valpal.info/sentences/stan1293-90)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

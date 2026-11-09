@@ -1,0 +1,661 @@
+{
+  "resource_id": "R188",
+  "resource_name": "ValPaL",
+  "checked_on": "2026-11-09",
+  "source_release": {
+    "version": "v1.2",
+    "doi": "10.5281/zenodo.23054997",
+    "zenodo_url": "https://zenodo.org/records/23054997",
+    "publication_date": "2026-09-30",
+    "source_commit": "c3a97436b1ef9f70d624ada871a34675b7ca7441",
+    "github_release_url": "https://github.com/lexibank/valpal/releases/tag/v1.2",
+    "github_published_at": "2026-09-30T07:36:05Z",
+    "project_url": "https://valpal.info/project",
+    "manual_url": "https://valpal.info/database",
+    "official_download_url": "https://valpal.info/download"
+  },
+  "license": {
+    "name": "CC BY 3.0 Unported",
+    "url": "https://creativecommons.org/licenses/by/3.0/",
+    "sources_checked": [
+      "Zenodo release metadata",
+      "pinned LICENSE and CLDF metadata",
+      "official project page"
+    ],
+    "citation": "Hartmann, Iren, Martin Haspelmath and Bradley Taylor (eds.), Valency Patterns Leipzig (2013), plus the used CLDF release DOI."
+  },
+  "archive_check": {
+    "url": "https://zenodo.org/api/records/23054997/files/lexibank/valpal-v1.2.zip/content",
+    "filename": "lexibank/valpal-v1.2.zip",
+    "bytes": 6650809,
+    "zenodo_md5": "076ab386cf2864e0a7ad480032713c97",
+    "sha256": "b8b8aa4bca21073d17ee1702457b8e342e6eb958c146f61f91b4b46a54cee732",
+    "zip_member_crc_check_passed": true,
+    "files_matched_to_fixed_git_tree": 84,
+    "crlf_to_lf_members_for_git_blob_comparison": [
+      "cldf/alternation-values.csv",
+      "cldf/alternations.csv",
+      "cldf/coding-frame-examples.csv",
+      "cldf/coding-frame-index-numbers.csv",
+      "cldf/coding-frames.csv",
+      "cldf/coding-sets.csv",
+      "cldf/examples.csv",
+      "cldf/form-coding-frame-microroles.csv",
+      "cldf/forms.csv",
+      "cldf/languages.csv",
+      "cldf/media.csv",
+      "cldf/media/terms.csv",
+      "cldf/microroles.csv",
+      "cldf/parameters.csv"
+    ],
+    "newline_rule": "cldf/.gitattributes: *.csv text eol=crlf"
+  },
+  "cldf_tables": [
+    {
+      "path": "cldf/forms.csv",
+      "rows": 3599,
+      "column_names": [
+        "ID",
+        "Local_ID",
+        "Language_ID",
+        "Parameter_ID",
+        "Value",
+        "Form",
+        "Segments",
+        "Comment",
+        "Source",
+        "Cognacy",
+        "Loan",
+        "Graphemes",
+        "Profile",
+        "verb_type",
+        "original_script",
+        "simplex_or_complex",
+        "Basic_Coding_Frame_ID"
+      ],
+      "archive_member_sha256": "4d8276dd7ba9738bc624a41194309c7b91832c1203b67aa91da62d3b95c815a0",
+      "git_blob_sha": "01a49dd59c66ff4b030410364300435f2b87016e"
+    },
+    {
+      "path": "cldf/languages.csv",
+      "rows": 36,
+      "column_names": [
+        "ID",
+        "Name",
+        "Glottocode",
+        "Glottolog_Name",
+        "ISO639P3code",
+        "Macroarea",
+        "Latitude",
+        "Longitude",
+        "Family",
+        "contributors",
+        "continent",
+        "Comment_File"
+      ],
+      "archive_member_sha256": "3586cc24f35e455226cf80c9bfb457c5ce7966f07c07c49b7374a609aba119df",
+      "git_blob_sha": "0e2f4b8937933f98473de423884ab96db041c4e3"
+    },
+    {
+      "path": "cldf/parameters.csv",
+      "rows": 162,
+      "column_names": [
+        "ID",
+        "Name",
+        "Concepticon_ID",
+        "Concepticon_Gloss",
+        "typical_context",
+        "role_frame",
+        "meaning_list",
+        "label_for_url"
+      ],
+      "archive_member_sha256": "1252310b74ae9621f0e062536f62b0853dc094691aff860d28877d0c59cace97",
+      "git_blob_sha": "3be60994877a7b490aaa702f8d122c5b20d5e44c"
+    },
+    {
+      "path": "cldf/media.csv",
+      "rows": 20,
+      "column_names": [
+        "ID",
+        "Name",
+        "Description",
+        "Media_Type",
+        "Download_URL",
+        "Path_In_Zip"
+      ],
+      "archive_member_sha256": "7ab7a90f69f493ce8bdce877fff07f16217a3291eb68b7da21dd0d886f9f12fa",
+      "git_blob_sha": "decab4385a4bb35f265ed3b0933aaea72b9d7b23"
+    },
+    {
+      "path": "cldf/examples.csv",
+      "rows": 10837,
+      "column_names": [
+        "ID",
+        "Language_ID",
+        "Primary_Text",
+        "Analyzed_Word",
+        "Gloss",
+        "Translated_Text",
+        "Meta_Language_ID",
+        "LGR_Conformance",
+        "Comment",
+        "Original_Orthography",
+        "Translation_Other",
+        "Number",
+        "Example_Type",
+        "Source",
+        "Form_IDs"
+      ],
+      "archive_member_sha256": "bc520230f2e06a61359cc9a7f8c8fbae74038cc902f01a562516c139720caa24",
+      "git_blob_sha": "97b19164fc45fe7ec3a3d8d9f4d47673dbbd358e"
+    },
+    {
+      "path": "cldf/microroles.csv",
+      "rows": 563,
+      "column_names": [
+        "ID",
+        "Name",
+        "Parameter_ID",
+        "Role_Letter",
+        "Original_Or_New",
+        "Name_For_URL"
+      ],
+      "archive_member_sha256": "a3afec5d2c8908e9c44d6073c5d4945b8c32d6ebdd305164d77b000d7bdaf733",
+      "git_blob_sha": "fbac76ac87ab3c54e08a54c763e72a47373b4382"
+    },
+    {
+      "path": "cldf/coding-sets.csv",
+      "rows": 391,
+      "column_names": [
+        "ID",
+        "Language_ID",
+        "Name",
+        "Comment"
+      ],
+      "archive_member_sha256": "53ccea968bcb9720896f74c3307cf305f5a02e875a7ae05b34fd33e6c6072fba",
+      "git_blob_sha": "ad5aaabdcb4cc64985bb494755cc0ccb0c9be147"
+    },
+    {
+      "path": "cldf/coding-frames.csv",
+      "rows": 1204,
+      "column_names": [
+        "ID",
+        "Language_ID",
+        "Coding_Frame_Schema",
+        "Description",
+        "Comment",
+        "Derived"
+      ],
+      "archive_member_sha256": "05a23cf2f2f866529f500a27b536e74274a93819188d68be8ea8fe5f81be9028",
+      "git_blob_sha": "8484923cefc5322b2fb9e4a32966b352e05cd76b"
+    },
+    {
+      "path": "cldf/coding-frame-index-numbers.csv",
+      "rows": 2830,
+      "column_names": [
+        "ID",
+        "Coding_Frame_ID",
+        "Index_Number",
+        "Coding_Set_ID",
+        "Argument_Type",
+        "Microrole_IDs"
+      ],
+      "archive_member_sha256": "359a854a3940df7861c7412ad76427aef97281c86a8703b06f2ac74a44d67562",
+      "git_blob_sha": "2915146e919d6f89f530235556678df8eaeaed8c"
+    },
+    {
+      "path": "cldf/form-coding-frame-microroles.csv",
+      "rows": 6069,
+      "column_names": [
+        "ID",
+        "Form_ID",
+        "Coding_Frame_ID",
+        "Microrole_IDs"
+      ],
+      "archive_member_sha256": "debfd2e241d67a34fbef2704eb3f1a1ec6c79ddbf2393e3d842fa6cad23d38da",
+      "git_blob_sha": "172bacf5f402e450a1687eed78ec5e8c02f0a438"
+    },
+    {
+      "path": "cldf/coding-frame-examples.csv",
+      "rows": 3377,
+      "column_names": [
+        "ID",
+        "Form_ID",
+        "Coding_Frame_ID",
+        "Example_IDs"
+      ],
+      "archive_member_sha256": "936826e1a8f09666c538ddbcfa8744eb30e967832fc6f255ce5bb050ce0837b0",
+      "git_blob_sha": "51a2dd164fe620257785e02e694f6c3a2620f570"
+    },
+    {
+      "path": "cldf/alternations.csv",
+      "rows": 483,
+      "column_names": [
+        "ID",
+        "Language_ID",
+        "Name",
+        "Description",
+        "Alternation_Type",
+        "Coding_Frames_Text",
+        "Complexity"
+      ],
+      "archive_member_sha256": "ac7d15ad68e11ad5a904280f5c5360cf24c15f10acdd956a9ea4ebf76750b792",
+      "git_blob_sha": "baf14b12f844ec13b6de6c1b3557a0f999c3e0a4"
+    },
+    {
+      "path": "cldf/alternation-values.csv",
+      "rows": 46137,
+      "column_names": [
+        "ID",
+        "Form_ID",
+        "Alternation_ID",
+        "Alternation_Occurs",
+        "Comment",
+        "Derived_Code_Frame_ID",
+        "Example_IDs"
+      ],
+      "archive_member_sha256": "914a39e7806b1fd7e13643ef67a67dd767e21933bac8eaa023d9362df08536c9",
+      "git_blob_sha": "f6137399fb33ae608e96f56c75bdce4b763e560c"
+    }
+  ],
+  "foreign_key_checks": [
+    {
+      "table": "forms.csv",
+      "column": "Language_ID",
+      "target_table": "languages.csv",
+      "checked_nonempty_references": 3599,
+      "unresolved": 0
+    },
+    {
+      "table": "forms.csv",
+      "column": "Parameter_ID",
+      "target_table": "parameters.csv",
+      "checked_nonempty_references": 3599,
+      "unresolved": 0
+    },
+    {
+      "table": "forms.csv",
+      "column": "Basic_Coding_Frame_ID",
+      "target_table": "coding-frames.csv",
+      "checked_nonempty_references": 3599,
+      "unresolved": 0
+    },
+    {
+      "table": "languages.csv",
+      "column": "Comment_File",
+      "target_table": "media.csv",
+      "checked_nonempty_references": 15,
+      "unresolved": 0
+    },
+    {
+      "table": "examples.csv",
+      "column": "Form_IDs",
+      "target_table": "forms.csv",
+      "checked_nonempty_references": 11203,
+      "unresolved": 0
+    },
+    {
+      "table": "examples.csv",
+      "column": "Language_ID",
+      "target_table": "languages.csv",
+      "checked_nonempty_references": 10837,
+      "unresolved": 0
+    },
+    {
+      "table": "examples.csv",
+      "column": "Meta_Language_ID",
+      "target_table": "languages.csv",
+      "checked_nonempty_references": 0,
+      "unresolved": 0
+    },
+    {
+      "table": "microroles.csv",
+      "column": "Parameter_ID",
+      "target_table": "parameters.csv",
+      "checked_nonempty_references": 563,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-sets.csv",
+      "column": "Language_ID",
+      "target_table": "languages.csv",
+      "checked_nonempty_references": 391,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frames.csv",
+      "column": "Language_ID",
+      "target_table": "languages.csv",
+      "checked_nonempty_references": 1204,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frame-index-numbers.csv",
+      "column": "Coding_Frame_ID",
+      "target_table": "coding-frames.csv",
+      "checked_nonempty_references": 2830,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frame-index-numbers.csv",
+      "column": "Coding_Set_ID",
+      "target_table": "coding-sets.csv",
+      "checked_nonempty_references": 2829,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frame-index-numbers.csv",
+      "column": "Microrole_IDs",
+      "target_table": "microroles.csv",
+      "checked_nonempty_references": 12948,
+      "unresolved": 0
+    },
+    {
+      "table": "form-coding-frame-microroles.csv",
+      "column": "Form_ID",
+      "target_table": "forms.csv",
+      "checked_nonempty_references": 6069,
+      "unresolved": 0
+    },
+    {
+      "table": "form-coding-frame-microroles.csv",
+      "column": "Coding_Frame_ID",
+      "target_table": "coding-frames.csv",
+      "checked_nonempty_references": 6069,
+      "unresolved": 0
+    },
+    {
+      "table": "form-coding-frame-microroles.csv",
+      "column": "Microrole_IDs",
+      "target_table": "microroles.csv",
+      "checked_nonempty_references": 13793,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frame-examples.csv",
+      "column": "Form_ID",
+      "target_table": "forms.csv",
+      "checked_nonempty_references": 3377,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frame-examples.csv",
+      "column": "Example_IDs",
+      "target_table": "examples.csv",
+      "checked_nonempty_references": 4348,
+      "unresolved": 0
+    },
+    {
+      "table": "coding-frame-examples.csv",
+      "column": "Coding_Frame_ID",
+      "target_table": "coding-frames.csv",
+      "checked_nonempty_references": 3377,
+      "unresolved": 0
+    },
+    {
+      "table": "alternations.csv",
+      "column": "Language_ID",
+      "target_table": "languages.csv",
+      "checked_nonempty_references": 483,
+      "unresolved": 0
+    },
+    {
+      "table": "alternation-values.csv",
+      "column": "Form_ID",
+      "target_table": "forms.csv",
+      "checked_nonempty_references": 46137,
+      "unresolved": 0
+    },
+    {
+      "table": "alternation-values.csv",
+      "column": "Example_IDs",
+      "target_table": "examples.csv",
+      "checked_nonempty_references": 5908,
+      "unresolved": 0
+    },
+    {
+      "table": "alternation-values.csv",
+      "column": "Alternation_ID",
+      "target_table": "alternations.csv",
+      "checked_nonempty_references": 46137,
+      "unresolved": 0
+    },
+    {
+      "table": "alternation-values.csv",
+      "column": "Derived_Code_Frame_ID",
+      "target_table": "coding-frames.csv",
+      "checked_nonempty_references": 2929,
+      "unresolved": 0
+    }
+  ],
+  "structured_bibliography": {
+    "bibtex_keys": 161,
+    "referenced_keys": 159,
+    "unresolved": 0
+  },
+  "coverage": {
+    "languages_or_varieties": 36,
+    "distinct_nonempty_glottocodes": 36,
+    "meaning_counts_by_list": {
+      "Old meaning": 10,
+      "New meaning": 72,
+      "Core list": 70,
+      "Extended list": 10
+    },
+    "questionnaire_meanings_per_language": {
+      "70": 1,
+      "73": 1,
+      "75": 3,
+      "76": 2,
+      "77": 1,
+      "78": 4,
+      "79": 13,
+      "80": 11
+    },
+    "languages_with_all_80_questionnaire_meanings": 11,
+    "languages_with_all_70_core_meanings": 16,
+    "core_meanings_per_language_min_max": [
+      65,
+      70
+    ],
+    "english_and_mandarin_meanings_by_list": {
+      "stan1293": {
+        "Core list": 70,
+        "Old meaning": 7,
+        "Extended list": 10,
+        "New meaning": 1
+      },
+      "mand1415": {
+        "Core list": 69,
+        "Old meaning": 6,
+        "Extended list": 10,
+        "New meaning": 1
+      }
+    },
+    "distinct_language_meaning_pairs": 3129,
+    "language_meaning_pairs_with_multiple_form_records": 405
+  },
+  "alternation_ratings": {
+    "observed_unique_form_alternation_pairs": 46137,
+    "possible_within_language_cross_product": 48704,
+    "within_language_pairs_absent_from_rating_table": 2567,
+    "by_rating": {
+      "(blank)": {
+        "rows": 93,
+        "empty_derived_frame_id": 93,
+        "empty_example_id_list": 93
+      },
+      "Marginally": {
+        "rows": 1690,
+        "empty_derived_frame_id": 1689,
+        "empty_example_id_list": 970
+      },
+      "Never": {
+        "rows": 33539,
+        "empty_derived_frame_id": 33538,
+        "empty_example_id_list": 33423
+      },
+      "No data": {
+        "rows": 4077,
+        "empty_derived_frame_id": 4077,
+        "empty_example_id_list": 4069
+      },
+      "Regularly": {
+        "rows": 6738,
+        "empty_derived_frame_id": 3811,
+        "empty_example_id_list": 2533
+      }
+    },
+    "interpretation": "Judgments on alternation use for a lexical item. Keep missing rows, empty ratings, No data, Never, Marginally and Regularly separate. A missing derived-frame link does not encode a negative judgment."
+  },
+  "examples": {
+    "types": {
+      "(blank)": 2521,
+      "Elicited from speaker": 2104,
+      "Constructed by native speaker linguist": 3158,
+      "Naturalistic written": 209,
+      "offered by speaker & checked w/ other speaker(s)": 1394,
+      "offered by speaker & checked w/ other offered by speaker & checked w/ other speaker(s)": 1,
+      "Other": 18,
+      "Naturalistic spoken": 1164,
+      "Constructed by linguist": 211,
+      "Offered by speaker": 42,
+      "Offered from visual stimulus": 1,
+      "Offered by speaker from visual stimulus": 13,
+      "Offered by speaker / visual stimulus": 1
+    },
+    "analyzed_word_and_gloss_tab_item_count_mismatches": 0,
+    "example_links_without_matching_reverse_form_link": {
+      "coding-frame-examples.csv": [
+        {
+          "row_id": "2029",
+          "form_id": "yuca1254-eat-1",
+          "example_id": "yuca1254-188"
+        },
+        {
+          "row_id": "2298",
+          "form_id": "zenz1235-know-1",
+          "example_id": "zenz1235-111"
+        },
+        {
+          "row_id": "2354",
+          "form_id": "yuca1254-fell-1",
+          "example_id": "yuca1254-273"
+        },
+        {
+          "row_id": "3225",
+          "form_id": "kore1280-see-1",
+          "example_id": "kore1280-74"
+        }
+      ],
+      "alternation-values.csv": [
+        {
+          "row_id": "68816",
+          "form_id": "hoch1243-wash-1",
+          "example_id": "hoch1243-1061"
+        },
+        {
+          "row_id": "29019",
+          "form_id": "sril1245-wash-1",
+          "example_id": "sril1245-68"
+        },
+        {
+          "row_id": "68936",
+          "form_id": "hoch1243-tie-1",
+          "example_id": "hoch1243-881"
+        },
+        {
+          "row_id": "95600",
+          "form_id": "zenz1235-die-1",
+          "example_id": "zenz1235-120"
+        },
+        {
+          "row_id": "95608",
+          "form_id": "zenz1235-fear-1",
+          "example_id": "zenz1235-180"
+        },
+        {
+          "row_id": "126007",
+          "form_id": "kore1280-be-sad-1",
+          "example_id": "kore1280-277"
+        },
+        {
+          "row_id": "104410",
+          "form_id": "como1259-kill-1",
+          "example_id": "como1259-230"
+        },
+        {
+          "row_id": "104407",
+          "form_id": "como1259-kill-1",
+          "example_id": "como1259-232"
+        },
+        {
+          "row_id": "103273",
+          "form_id": "yuca1254-take-1",
+          "example_id": "yuca1254-16"
+        },
+        {
+          "row_id": "103273",
+          "form_id": "yuca1254-take-1",
+          "example_id": "yuca1254-111"
+        },
+        {
+          "row_id": "102436",
+          "form_id": "yuca1254-live-1",
+          "example_id": "yuca1254-290"
+        },
+        {
+          "row_id": "102700",
+          "form_id": "yuca1254-follow-2",
+          "example_id": "yuca1254-16"
+        },
+        {
+          "row_id": "103274",
+          "form_id": "yuca1254-follow-2",
+          "example_id": "yuca1254-16"
+        },
+        {
+          "row_id": "97794",
+          "form_id": "east2526-hear-1",
+          "example_id": "east2526-315"
+        },
+        {
+          "row_id": "103134",
+          "form_id": "yuca1254-come-2-1",
+          "example_id": "yuca1254-89"
+        },
+        {
+          "row_id": "118083",
+          "form_id": "icel1247-wipe-1",
+          "example_id": "icel1247-363"
+        }
+      ]
+    },
+    "interpretation": "All declared keys resolve. These forward links do not have the same form in examples.Form_IDs, so audit examples when combining the two routes. Source grammars and gloss content require study-specific review."
+  },
+  "checked_english_comparison": {
+    "form_ids": [
+      "stan1293-give-1",
+      "stan1293-say-1"
+    ],
+    "common_basic_frame_id": "6536020805",
+    "basic_frame": "1-nom > V.subj[1] > 2-acc (> to+3)",
+    "alternation_id": "3472397016",
+    "alternation_name": "Dative",
+    "give_rating_row": "42102",
+    "give_rating": "Regularly",
+    "say_rating_row": "42091",
+    "say_rating": "Never",
+    "give_basic_example_id": "stan1293-89",
+    "give_dative_example_id": "stan1293-90",
+    "give_dative_derived_frame_link_present": false,
+    "example_type": "Constructed by native speaker linguist",
+    "official_pages_checked": [
+      "https://valpal.info/values/stan1293-give-1",
+      "https://valpal.info/values/stan1293-say-1",
+      "https://valpal.info/sentences/stan1293-89",
+      "https://valpal.info/sentences/stan1293-90"
+    ]
+  },
+  "verification_boundary": "Complete parsing of 13 tables declared by CLDF metadata, primary and foreign-key checks, source-key lookup and selected example and rating checks. Original grammars and all language-specific analyses, example annotations and auxiliary materials remain for study-specific review."
+}

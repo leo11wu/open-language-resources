@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-08",
-  "catalog_version": "2.5.6",
+  "generated_on": "2026-11-09",
+  "catalog_version": "2.5.7",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 187,
+    "main_resource_count": 188,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 73,
+      "selected_file_checked": 74,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 80,
+    "main_with_recorded_file_reads": 81,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6241,6 +6241,37 @@
           "read_scope": "complete_delimited_table",
           "file_role": "empirical_or_norm_data",
           "result": "NP150官网导出完整解析101行。按语言编号和名称匹配，类别及释义与固定CLDF版一致。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R188",
+      "name": "ValPaL（配价模式数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://valpal.info/download",
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-09",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://zenodo.org/api/records/23054997/files/lexibank/valpal-v1.2.zip/content",
+          "sha256": "b8b8aa4bca21073d17ee1702457b8e342e6eb958c146f61f91b4b46a54cee732",
+          "checked_on": "2026-11-09",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "ZIP全包MD5与成员CRC通过。84个成员核对固定GitHub版本，其中14张CLDF目录下的CSV按源仓库设置处理换行。完整解析元数据声明的13张表，检查表间键、交替评级分布及选定英语例句。"
         }
       ],
       "osf_audit": null,

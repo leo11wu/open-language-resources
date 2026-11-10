@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-09",
-  "catalog_version": "2.5.7",
+  "generated_on": "2026-11-10",
+  "catalog_version": "2.5.8",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 188,
+    "main_resource_count": 189,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 74,
+      "selected_file_checked": 75,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 81,
+    "main_with_recorded_file_reads": 82,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6272,6 +6272,101 @@
           "read_scope": "archive_selected_members",
           "file_role": "empirical_or_norm_data",
           "result": "ZIP全包MD5与成员CRC通过。84个成员核对固定GitHub版本，其中14张CLDF目录下的CSV按源仓库设置处理换行。完整解析元数据声明的13张表，检查表间键、交替评级分布及选定英语例句。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R189",
+      "name": "ATLAs（美洲语言区域类型学数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://atlas.evolvinglanguage.ch/",
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-10",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/parameters.csv",
+          "sha256": "8fe3986f95a1a4d1ec331b8dca1764aa8e0dfc5a58907172aaaae505634008b4",
+          "blob_sha": "2c38c2e9b849aba96b01ec7446922d0211767e36",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "265行×7列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/codes.csv",
+          "sha256": "0cb19ce02185ffe1083ae9a84f1bff7141504faf07c29be36419ed93297e69b0",
+          "blob_sha": "5743b8d5cd71929f706a892e90c060320a56ad30",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "1371行×4列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/contributors.csv",
+          "sha256": "9fbe305fc4293ab473f3ab4136ed9666db4f765e3cdfc67e709b501cdc10f071",
+          "blob_sha": "9c32cf3e5d92c6d6d71aab1afcc695f4c7e1fe3b",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "23行×3列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/featuresets.csv",
+          "sha256": "50cf5cd7b7c3feef9b65fc5d60005a947681e72032008b4cbed65cf87dc8b8e5",
+          "blob_sha": "e41acfaadf782cfbbb31a9c162ea2e74eb84b497",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "17行×5列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/languages.csv",
+          "sha256": "fe518cf3ec1140961ed97f3a3d1d1bb6a4aac0344060af9cf802f6722454e2b5",
+          "blob_sha": "b422fa930280aceced30b43d03ee49db16fd214b",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "325行×10列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/languages.csv",
+          "sha256": "79972f5aa79e463194b2cb1a13ad30f40c6db8724bdd7157dca62e528217c2ad",
+          "blob_sha": "7e310e4bdab3c82df97dd49f6a765bdca4ddea9e",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "documentation_or_materials",
+          "result": "325行×7列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/constructions.csv",
+          "sha256": "fe07e973dc8cd191406c8e8b99555b9e06fc9e7ffaa00cf914b02e8e16a350bd",
+          "blob_sha": "f33c29a31fdebcfcec202e64ad4eb2eb76df73e2",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "945行×11列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        },
+        {
+          "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/classes.csv",
+          "sha256": "543b460b67123c4ec1ddbed33646c184086048ab6fef960df1f5799815a20a86",
+          "blob_sha": "df2c8d9e73e7e0d12f75ffcd042bbeb7a76de1b9",
+          "checked_on": "2026-11-10",
+          "read_scope": "complete_delimited_table",
+          "file_role": "empirical_or_norm_data",
+          "result": "754行×13列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
         }
       ],
       "osf_audit": null,

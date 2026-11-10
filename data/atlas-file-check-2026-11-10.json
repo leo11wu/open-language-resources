@@ -1,0 +1,674 @@
+{
+  "resource_id": "R189",
+  "resource_name": "ATLAs",
+  "checked_on": "2026-11-10",
+  "release": {
+    "tag": "v2026.1",
+    "project_version": "2.0",
+    "commit": "67012015ca57c58ddd45f63c271f595c49fc5f2c",
+    "github_release_url": "https://github.com/davidainman/atlas-data/releases/tag/v2026.1",
+    "github_published_at_utc": "2026-11-09T18:31:39Z",
+    "project_site": "https://atlas.evolvinglanguage.ch/",
+    "noun_possession_documentation": "https://atlas.evolvinglanguage.ch/contributions/NounPoss",
+    "data_descriptor": "https://doi.org/10.1038/s41597-025-05169-4",
+    "earlier_v2025_1_record": "https://zenodo.org/records/15227808"
+  },
+  "license_evidence": {
+    "website_license": "CC BY 4.0 International",
+    "website_evidence": "https://atlas.evolvinglanguage.ch/contributions/NounPoss",
+    "release_notes": "This is version 2.0 of the ATLAs database.",
+    "release_license_declared": false,
+    "pinned_tree_root_license_files": [],
+    "cldf_metadata_license_or_rights_fields": {
+      "cldf-alignment/generic-cldf/metadata.json": {},
+      "cldf-alignment/structure-cldf/metadata.json": {},
+      "cldf-atlas/StructureDataset-metadata.json": {},
+      "cldf-possession/metadata.json": {},
+      "cldf-sgpl-verbs/metadata.json": {}
+    },
+    "assessment": "Publicly retrievable data files. The website states a license, while the v2026.1 release notes and inspected metadata do not specify the license for that snapshot. Verify release and imported-module terms before redistribution or adaptation."
+  },
+  "fixed_files": [
+    {
+      "path": ".gitattributes",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/.gitattributes",
+      "retrieval": "GitHub contents API",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+      "git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "path": "README.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/README.md",
+      "retrieval": "GitHub contents API",
+      "bytes": 1870,
+      "sha256": "d74ffe4171830704a81cec2c18587366bd32d459bdf68b9767a59521fe5f8e69",
+      "git_blob_sha": "d5e469ae3274b1c3abbe6fc4ee8e49f655bbc6ea"
+    },
+    {
+      "path": "cldf-alignment/generic-cldf/metadata.json",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-alignment/generic-cldf/metadata.json",
+      "retrieval": "GitHub contents API",
+      "bytes": 20751,
+      "sha256": "feadbd5328c03c1013ea809e2f97098b5a51a3e82ec4526531e8e863d6d77ecc",
+      "git_blob_sha": "a642335acc7307850d6777650415886be458c7ec"
+    },
+    {
+      "path": "cldf-alignment/structure-cldf/metadata.json",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-alignment/structure-cldf/metadata.json",
+      "retrieval": "GitHub contents API",
+      "bytes": 6670,
+      "sha256": "4c34387108a9e89eb8b92bffa00dffbc5b7e75651ab71c556bf67f46c8b8c139",
+      "git_blob_sha": "e2358b19b69ebf351c6e4b9271dafebf5aafa3df"
+    },
+    {
+      "path": "cldf-atlas/StructureDataset-metadata.json",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/StructureDataset-metadata.json",
+      "retrieval": "GitHub contents API",
+      "bytes": 15312,
+      "sha256": "593ffb7c4effbafcf32a29fb6b06f005ba33af39b4429366c9f6ffaeb2f95177",
+      "git_blob_sha": "131677429889328c2ce8548ac6fcf86203be075d"
+    },
+    {
+      "path": "cldf-atlas/cldfwarnings.txt",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/cldfwarnings.txt",
+      "retrieval": "GitHub raw file",
+      "bytes": 1261,
+      "sha256": "801e0f794c1df6e4cda3f0ca5cd1c153b50cc40621febe6ec106cf16f48db936",
+      "git_blob_sha": "2b637b974598d0abe310542c587652fe662d7dcb"
+    },
+    {
+      "path": "cldf-atlas/codes.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/codes.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 48484,
+      "sha256": "0cb19ce02185ffe1083ae9a84f1bff7141504faf07c29be36419ed93297e69b0",
+      "git_blob_sha": "5743b8d5cd71929f706a892e90c060320a56ad30"
+    },
+    {
+      "path": "cldf-atlas/contributors.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/contributors.csv",
+      "retrieval": "GitHub raw file",
+      "bytes": 555,
+      "sha256": "9fbe305fc4293ab473f3ab4136ed9666db4f765e3cdfc67e709b501cdc10f071",
+      "git_blob_sha": "9c32cf3e5d92c6d6d71aab1afcc695f4c7e1fe3b"
+    },
+    {
+      "path": "cldf-atlas/featuresets.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/featuresets.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 1171,
+      "sha256": "50cf5cd7b7c3feef9b65fc5d60005a947681e72032008b4cbed65cf87dc8b8e5",
+      "git_blob_sha": "e41acfaadf782cfbbb31a9c162ea2e74eb84b497"
+    },
+    {
+      "path": "cldf-atlas/languages.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/languages.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 25774,
+      "sha256": "fe518cf3ec1140961ed97f3a3d1d1bb6a4aac0344060af9cf802f6722454e2b5",
+      "git_blob_sha": "b422fa930280aceced30b43d03ee49db16fd214b"
+    },
+    {
+      "path": "cldf-atlas/parameters.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/parameters.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 51870,
+      "sha256": "8fe3986f95a1a4d1ec331b8dca1764aa8e0dfc5a58907172aaaae505634008b4",
+      "git_blob_sha": "2c38c2e9b849aba96b01ec7446922d0211767e36"
+    },
+    {
+      "path": "cldf-atlas/sources.bib",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-atlas/sources.bib",
+      "retrieval": "Byte-identical Git blob obtained via cldf-possession/sources.bib",
+      "bytes": 1205657,
+      "sha256": "b2248a5f1b9299bba72b16282bceb5c4df6f374e01a4eb0ad8b8180435ae792a",
+      "git_blob_sha": "a9cda55abf3d6a5b57f4f6bf86420d10abaf371a"
+    },
+    {
+      "path": "cldf-possession/classes.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/classes.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 234920,
+      "sha256": "543b460b67123c4ec1ddbed33646c184086048ab6fef960df1f5799815a20a86",
+      "git_blob_sha": "df2c8d9e73e7e0d12f75ffcd042bbeb7a76de1b9"
+    },
+    {
+      "path": "cldf-possession/constructions.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/constructions.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 270504,
+      "sha256": "fe07e973dc8cd191406c8e8b99555b9e06fc9e7ffaa00cf914b02e8e16a350bd",
+      "git_blob_sha": "f33c29a31fdebcfcec202e64ad4eb2eb76df73e2"
+    },
+    {
+      "path": "cldf-possession/languages.csv",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/languages.csv",
+      "retrieval": "GitHub contents API",
+      "bytes": 19798,
+      "sha256": "79972f5aa79e463194b2cb1a13ad30f40c6db8724bdd7157dca62e528217c2ad",
+      "git_blob_sha": "7e310e4bdab3c82df97dd49f6a765bdca4ddea9e"
+    },
+    {
+      "path": "cldf-possession/metadata.json",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/metadata.json",
+      "retrieval": "GitHub contents API",
+      "bytes": 9942,
+      "sha256": "c737ec13665d3ee9f6ef16702d9b266d7427a8a9cfe4230f2ccbe00b8f8a0b01",
+      "git_blob_sha": "454a707145930a71e31746479604b9496b021b8d"
+    },
+    {
+      "path": "cldf-possession/sources.bib",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession/sources.bib",
+      "retrieval": "GitHub raw file",
+      "bytes": 1205657,
+      "sha256": "b2248a5f1b9299bba72b16282bceb5c4df6f374e01a4eb0ad8b8180435ae792a",
+      "git_blob_sha": "a9cda55abf3d6a5b57f4f6bf86420d10abaf371a"
+    },
+    {
+      "path": "cldf-sgpl-verbs/metadata.json",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-sgpl-verbs/metadata.json",
+      "retrieval": "GitHub contents API",
+      "bytes": 6242,
+      "sha256": "9f36a3a9feeadf73d26050f8b2c807358b6012efa77c1d3d56dda92fe632376e",
+      "git_blob_sha": "735f83343cd56a78d42ee3f4ca96b874e640e398"
+    },
+    {
+      "path": "featuresets/Align.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Align.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 88934,
+      "sha256": "c6a4f56dfd4d1e171f9f476b436b6c9c9839d28a2785a8d85639d9e7b5829d5c",
+      "git_blob_sha": "fb137551bd4095f57157aa5ab1158f5306ecaf25"
+    },
+    {
+      "path": "featuresets/Appr.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Appr.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 146713,
+      "sha256": "4add80e8a944ba70064d55f8783ff4f49df191b93afadcfc71a4fbe9bcb710d3",
+      "git_blob_sha": "7a5fe79817d0414674f7ecdf3790ee969ce04623"
+    },
+    {
+      "path": "featuresets/Attr.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Attr.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 29263,
+      "sha256": "b916dd3654c3d5f7b2129ec24b2b31055d621d3f708ef3ee839ae2baa16f6a06",
+      "git_blob_sha": "d1c108861015568ba0c28cb4cefee75521e4e502"
+    },
+    {
+      "path": "featuresets/Cor.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Cor.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 19585,
+      "sha256": "eeaf958596dc5ee8b923a28f2c81a50149170e5774f38412da8fb1cbf4a25845",
+      "git_blob_sha": "1a243a84225da1b26549dd7d0f78e075034be29d"
+    },
+    {
+      "path": "featuresets/Dem.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Dem.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 67232,
+      "sha256": "ab189d0461cc50907256775f79ffe17f9b32484c86abeec73f00e2ad4b4916fd",
+      "git_blob_sha": "8227d19a4fc404242f7310a3aeb98f8120f87ee4"
+    },
+    {
+      "path": "featuresets/Gend.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Gend.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 45002,
+      "sha256": "582efb02b71592a8f127008cdb30f9afe101032e6830ff6cb56dc8908b871bf9",
+      "git_blob_sha": "63d4edf82640b8b75f4fbd0dbc0279b536523e38"
+    },
+    {
+      "path": "featuresets/Glot.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Glot.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 16779,
+      "sha256": "5e2f7e32105ad245d32d759c5943935827a37ae7d78f97a0dd692da69213bdea",
+      "git_blob_sha": "b130df0b2eca0cffcc5fbee1079ba2cdf1a89305"
+    },
+    {
+      "path": "featuresets/Lat.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Lat.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 23474,
+      "sha256": "1461c97d2890c679a1d4c2e1f7b1737a127aa62a6b3be8c9fcf2e4bc3e85ae04",
+      "git_blob_sha": "f764af6694cefd40da668823ce1dfed759542cf2"
+    },
+    {
+      "path": "featuresets/MonPl.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/MonPl.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 107433,
+      "sha256": "2a62f1bf68d13c832d03dd875611e3de4cc8fcf0723a955adfee02b0bd74faf3",
+      "git_blob_sha": "9c013b2ff74f139b0b501a2aaa48c359695282da"
+    },
+    {
+      "path": "featuresets/NounPoss.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/NounPoss.md",
+      "retrieval": "GitHub contents API",
+      "bytes": 95321,
+      "sha256": "0bcfa6914c944ff0a6bb32f62bf879bf4501da54effc896bde30468d78414e92",
+      "git_blob_sha": "abe282bbb895df4a4fcc55b035c129c4a04f4124"
+    },
+    {
+      "path": "featuresets/Ppron.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Ppron.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 91015,
+      "sha256": "f4ef2ba3165b5ce4663420d56ca508808826658daee2c08afff765290d624f10",
+      "git_blob_sha": "7e21d6df81f18f5c6ec656e9b4daa8eb8d6155b4"
+    },
+    {
+      "path": "featuresets/SgPl.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/SgPl.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 132430,
+      "sha256": "ee2ee6505a90c0aad4d928f5062d4de66eff3a00de9f07a8456fe0ede16a88d0",
+      "git_blob_sha": "844211c094b50f6b747f57b90224649f0222d298"
+    },
+    {
+      "path": "featuresets/SocCaus.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/SocCaus.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 49084,
+      "sha256": "daa8527be21664181519cb9e9effb0f2a4f6add42a0d473a0d8babdb01a37c4d",
+      "git_blob_sha": "4a6c09a70f1d8265bdb9262c5e56151db7188e8a"
+    },
+    {
+      "path": "featuresets/Syll.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Syll.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 22300,
+      "sha256": "c60a9ff9cb5c762882d9eaf6c0768c5d816a28ccd8c023e3151eef416e9c7170",
+      "git_blob_sha": "0fd1999e400cc6582f0834f94dc1decdcf58b860"
+    },
+    {
+      "path": "featuresets/ToneProm.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/ToneProm.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 34222,
+      "sha256": "c3b356d3d52bb5ecd7a119b7d24d09a74bdfa180a1d19f3782ab0ce598cc9636",
+      "git_blob_sha": "3bd0777d0f7676fd03e9042620b6a13b694eea0d"
+    },
+    {
+      "path": "featuresets/VelUv.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/VelUv.md",
+      "retrieval": "GitHub raw file",
+      "bytes": 7283,
+      "sha256": "b77e174ae9220e0b66e2ffadb2e9e5c8761f32825de19bde25dd71d73309cc15",
+      "git_blob_sha": "8abab9574d5687c9ba1595f5a3e53cdcd14c287c"
+    },
+    {
+      "path": "featuresets/WO.md",
+      "url": "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md",
+      "retrieval": "GitHub contents API",
+      "bytes": 43480,
+      "sha256": "ae6a5f5f1148dce5fc73b8e72b39e2712fe157e748067808e580787f2450d592",
+      "git_blob_sha": "66a5e8093ce7b8d1a3c18bb58f7da18a6570954c"
+    }
+  ],
+  "parsed_data_tables": [
+    {
+      "path": "cldf-atlas/parameters.csv",
+      "rows": 265,
+      "columns": [
+        "ParameterID",
+        "FeatureSet",
+        "Name",
+        "Question",
+        "PossibleStates",
+        "datatype",
+        "Derived"
+      ],
+      "header_order_differs_from_metadata": true,
+      "primary_key": [
+        "ParameterID"
+      ]
+    },
+    {
+      "path": "cldf-atlas/codes.csv",
+      "rows": 1371,
+      "columns": [
+        "CodeID",
+        "ParameterID",
+        "Description",
+        "icons"
+      ],
+      "header_order_differs_from_metadata": false,
+      "primary_key": [
+        "CodeID"
+      ]
+    },
+    {
+      "path": "cldf-atlas/contributors.csv",
+      "rows": 23,
+      "columns": [
+        "ContributorID",
+        "Name",
+        "Editor_Ord"
+      ],
+      "header_order_differs_from_metadata": false,
+      "primary_key": [
+        "ContributorID"
+      ]
+    },
+    {
+      "path": "cldf-atlas/featuresets.csv",
+      "rows": 17,
+      "columns": [
+        "FeatureSetID",
+        "Name",
+        "Domain",
+        "Authors",
+        "Contributors"
+      ],
+      "header_order_differs_from_metadata": true,
+      "primary_key": [
+        "FeatureSetID"
+      ]
+    },
+    {
+      "path": "cldf-atlas/languages.csv",
+      "rows": 325,
+      "columns": [
+        "Glottocode",
+        "Name",
+        "Macroarea",
+        "American_Macroarea",
+        "Latitude",
+        "Longitude",
+        "ISO639P3code",
+        "Family_ID",
+        "Language_ID",
+        "Family_Name"
+      ],
+      "header_order_differs_from_metadata": true,
+      "primary_key": [
+        "Glottocode"
+      ]
+    },
+    {
+      "path": "cldf-possession/languages.csv",
+      "rows": 325,
+      "columns": [
+        "Glottocode",
+        "Name",
+        "Macroarea",
+        "Latitude",
+        "Longitude",
+        "ISO639P3code",
+        "Family"
+      ],
+      "header_order_differs_from_metadata": true,
+      "primary_key": [
+        "Glottocode"
+      ]
+    },
+    {
+      "path": "cldf-possession/constructions.csv",
+      "rows": 945,
+      "columns": [
+        "ID",
+        "Glottocode",
+        "Class_ID",
+        "Construction_Form",
+        "Construction_Type",
+        "Remark",
+        "Coder",
+        "Source",
+        "dd_Construction_Directness",
+        "dd_Construction_Type_Simplified",
+        "dd_Construction_Type_Generic"
+      ],
+      "header_order_differs_from_metadata": false,
+      "primary_key": [
+        "ID"
+      ]
+    },
+    {
+      "path": "cldf-possession/classes.csv",
+      "rows": 754,
+      "columns": [
+        "ID",
+        "Glottocode",
+        "Noun_Class",
+        "Semantic_Categories",
+        "Unpossession_Marker_Type",
+        "Remark",
+        "Coder",
+        "Source",
+        "dd_Valency",
+        "dd_Semantic_Type",
+        "dd_Construction_Type_Simplified",
+        "dd_Construction_Type_Generic",
+        "dd_Unpossession_Construction"
+      ],
+      "header_order_differs_from_metadata": false,
+      "primary_key": [
+        "ID"
+      ]
+    }
+  ],
+  "resolved_declared_foreign_keys": [
+    {
+      "path": "cldf-atlas/parameters.csv",
+      "column": "FeatureSet",
+      "target": "cldf-atlas/featuresets.csv",
+      "target_column": "FeatureSetID",
+      "nonempty_references": 265,
+      "unresolved": 0
+    },
+    {
+      "path": "cldf-atlas/codes.csv",
+      "column": "ParameterID",
+      "target": "cldf-atlas/parameters.csv",
+      "target_column": "ParameterID",
+      "nonempty_references": 1371,
+      "unresolved": 0
+    },
+    {
+      "path": "cldf-atlas/featuresets.csv",
+      "column": "Authors",
+      "target": "cldf-atlas/contributors.csv",
+      "target_column": "ContributorID",
+      "nonempty_references": 36,
+      "unresolved": 0
+    },
+    {
+      "path": "cldf-atlas/featuresets.csv",
+      "column": "Contributors",
+      "target": "cldf-atlas/contributors.csv",
+      "target_column": "ContributorID",
+      "nonempty_references": 90,
+      "unresolved": 0
+    },
+    {
+      "path": "cldf-possession/constructions.csv",
+      "column": "Glottocode",
+      "target": "cldf-possession/languages.csv",
+      "target_column": "Glottocode",
+      "nonempty_references": 945,
+      "unresolved": 0
+    },
+    {
+      "path": "cldf-possession/constructions.csv",
+      "column": "Class_ID",
+      "target": "cldf-possession/classes.csv",
+      "target_column": "ID",
+      "nonempty_references": 1186,
+      "unresolved": 0
+    },
+    {
+      "path": "cldf-possession/classes.csv",
+      "column": "Glottocode",
+      "target": "cldf-possession/languages.csv",
+      "target_column": "Glottocode",
+      "nonempty_references": 754,
+      "unresolved": 0
+    }
+  ],
+  "dimensions": {
+    "language_entries": 325,
+    "macroarea_counts": {
+      "North America": 115,
+      "South America": 105,
+      "Africa": 25,
+      "Australia": 25,
+      "Eurasia": 30,
+      "Papunesia": 25
+    },
+    "feature_count": 265,
+    "feature_sets": 17,
+    "possession_language_entries": 325,
+    "possession_class_rows": 754,
+    "construction_rows": 945,
+    "construction_type_counts": {
+      "PSSD[AGR:PSSR]": 185,
+      "CLAUSE": 13,
+      "JUXT": 111,
+      "PSSR": 113,
+      "PSSR + PSSD + PSSD[AGR:PSSR]": 4,
+      "PSSR[AGR:PSSR]": 10,
+      "PSSR + PSSD[AGR:PSSR]": 24,
+      "PSSR[AGR:PSSR] + PSSD[AGR:PSSD]": 1,
+      "UNPOSSESSION": 177,
+      "PRO_MARKER": 53,
+      "PSSD": 57,
+      "POSSESSION": 34,
+      "PRO_CLASS": 2,
+      "LINKER": 3,
+      "PSSR[AGR:PSSD]": 8,
+      "PSSR + PSSR[AGR:PSSD]": 3,
+      "PSSR[AGR:PSSR] + PSSD[AGR:PSSR]": 2,
+      "CLASS": 33,
+      "PSSD + PSSD[AGR:PSSR]": 55,
+      "PSSD[AGR:PSSR] + PSSD[AGR:PSSD]": 2,
+      "SUPPLETION": 27,
+      "PSSR[AGR:PSSR, AGR:PSSD]": 2,
+      "PSSR + PSSD": 4,
+      "PSSR + PSSD[AGR:PSSR, AGR:PSSD]": 1,
+      "PRO_JUXT": 2,
+      "PSSD[AGR:PSSR, AGR:PSSD]": 1,
+      "PSSD[AGR:PSSD]": 1,
+      "PSSD + PSSD + PSSD[AGR:PSSR]": 5,
+      "PSSR + PSSR + PSSD[AGR:PSSR]": 2,
+      "PSSR + PSSR": 1,
+      "PRO_CLAUSE": 1,
+      "PSSR[AGR:PSSR]+PSSR[AGR:PSSR, AGR:PSSD]": 1,
+      "PSSR+PSSD[AGR:PSSR]": 1,
+      "PSSD[AGR:PSSR] + PSSD": 2,
+      "PSSD + PSSD": 2,
+      "PSSR+PSSR[AGR:PSSR]": 1,
+      "PSSD[AGR:PSSR] + PSSD[AGR:PSSR]": 1
+    },
+    "construction_to_class_links": 1186,
+    "cross_language_links": 0,
+    "possession_bibliography_keys": 1702,
+    "distinct_possession_source_keys": 415,
+    "unresolved_possession_source_keys": 0
+  },
+  "limited_pair_screen": {
+    "unit": "Unique unordered pair of class IDs within one language",
+    "rule": "Expand Class_ID on semicolons. Pairs must co-occur on a DIRECT construction row with a non-placeholder form; retain optional and obligatory classes with Noun, MARKER or NULL unpossession codes. Deduplicate pairs across construction rows.",
+    "eligible_class_pairs": 208,
+    "pairs_with_optional_and_obligatory_class": 108,
+    "shared_construction_rows_with_a_contrast": 89,
+    "languages_with_a_contrast": 72,
+    "different_valency_pairs_by_unpossession_codes": {
+      "MARKER / Noun": 58,
+      "NULL / Noun": 50
+    },
+    "valency_by_unpossession_code": [
+      {
+        "valency": "NA",
+        "unpossession_code": "Noun",
+        "rows": 27
+      },
+      {
+        "valency": "Non-possessible",
+        "unpossession_code": "MARKER",
+        "rows": 1
+      },
+      {
+        "valency": "Non-possessible",
+        "unpossession_code": "NULL",
+        "rows": 1
+      },
+      {
+        "valency": "Non-possessible",
+        "unpossession_code": "Noun",
+        "rows": 69
+      },
+      {
+        "valency": "Obligatorily possessed",
+        "unpossession_code": "?",
+        "rows": 1
+      },
+      {
+        "valency": "Obligatorily possessed",
+        "unpossession_code": "MARKER",
+        "rows": 111
+      },
+      {
+        "valency": "Obligatorily possessed",
+        "unpossession_code": "NULL",
+        "rows": 80
+      },
+      {
+        "valency": "Optionally possessed",
+        "unpossession_code": "Noun",
+        "rows": 464
+      }
+    ],
+    "example": {
+      "language": "Palikúr",
+      "shared_construction_id": "pali1279_560",
+      "linked_classes": [
+        {
+          "class_id": "pali1279_alienable-invariant",
+          "valency": "Optionally possessed",
+          "unpossession_code": "Noun"
+        },
+        {
+          "class_id": "pali1279_inalienable",
+          "valency": "Obligatorily possessed",
+          "unpossession_code": "MARKER"
+        }
+      ],
+      "source": "https://atlas.evolvinglanguage.ch/contributions/NounPoss"
+    },
+    "interpretation": "Descriptive feasibility screen of current coding. An obligatory class can still have a special unpossession form. These class pairs are clustered within languages, which vary in the number of coded classes; regional and genealogical comparisons require a separate analysis."
+  },
+  "documented_reuse": {
+    "WALS": {
+      "module": "WO (word order)",
+      "evidence": [
+        "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113",
+        "https://atlas.evolvinglanguage.ch/contributions/WO"
+      ],
+      "scope": "Part of the word-order coding derives from WALS chapters 81, 86 and 87, with manual review or recoding where definitions differ.",
+      "mapping_caveat": "WO documentation assigns chapter 86 to attributive order and 87 to possessive order, while WALS labels 86 genitive order and 87 adjective order. Keep module-level provenance; inspect per-row source before mapping those features.",
+      "wals_chapter_evidence": [
+        "https://wals.info/chapter/81",
+        "https://wals.info/chapter/86",
+        "https://wals.info/chapter/87"
+      ]
+    },
+    "SAILS": {
+      "module": "Dem (demonstratives)",
+      "evidence": [
+        "https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Dem.md#L83",
+        "https://atlas.evolvinglanguage.ch/contributions/Dem"
+      ],
+      "scope": "Some demonstrative data were taken from the SAILS Noun Phrase domain; authors report some recoding after source review. SAILS NP2 compatibility in WO is a separate design reference."
+    }
+  },
+  "verification_boundary": {
+    "scope": "Selected fixed files verified byte-for-byte. Full parses of five main catalogue tables and three NounPoss tables, class links, and structured bibliography references. The other modules and original reference grammars remain for study-specific review.",
+    "main_values_csv": "Both direct and API file attempts returned incomplete transfers; excluded from the table parse and file verification.",
+    "licensing": "Catalog entry records metadata, limited diagnostics, and links."
+  }
+}

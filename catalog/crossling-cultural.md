@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共15个入口。资料状态与文件验收范围分别记录。
+共16个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -145,6 +145,12 @@
 - [来源 1](https://wals.info/)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 派生资料 | [R189 ATLAs（美洲语言区域类型学数据库）](../catalog/crossling-cultural.md#r189) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
 
 待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
@@ -450,6 +456,12 @@ v2014.1固定版含604项特征及31,792条编码记录。Olga Krasnoukhova负�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 派生资料 | [R189 ATLAs（美洲语言区域类型学数据库）](../catalog/crossling-cultural.md#r189) | R189 → R187 | 限ATLAs指示词模块Dem中取自SAILS名词短语模块的部分编码。R187作为源项目入口，引用的具体SAILS快照有待核实。 | 说明核对，2026-11-10；固定版Dem说明明确指出从SAILS名词短语模块取用部分数据，部分值复核后另作判断。该来源关系限于文档指明的取值范围。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Dem.md#L83) [来源2](https://atlas.evolvinglanguage.ch/contributions/Dem) [来源3](https://sails.clld.org/) |
+
 <a id="r188"></a>
 
 ## ValPaL（配价模式数据库）
@@ -490,4 +502,49 @@ v1.2有3,599条词项、483项语言内定义的交替、46,137条词项×交替
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
 待核实关联：[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r189"></a>
+
+## ATLAs（美洲语言区域类型学数据库）
+
+**R189** · 整合资料 · 有数据发布说明
+
+v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属模块有754条类别记录及945条构式记录，记录哪些名词类别可以共用领属构式、是否要求领属者，以及无领属形式是否有专门标记。另有形态对齐和单复数动词词干交替模块。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 325个语言条目，其中美洲220个、其他地区105个。名词领属模块与主库的语言编号集合相同 |
+| 数据性质 | 基于语法描写的类型学编码及部分来源数据库的整合取值，含语言谱系、坐标、特征与代码表、名词类别、领属与无领属构式、参考文献。CLDF CSV、JSON和BibTeX；混合来源或待细分 |
+| 获取方式 | 开放说明或许可需进一步核对：官网可浏览，GitHub v2026.1可公开取得数据文件，固定版的名录与领属表已完整读取。Zenodo DOI 10.5281/zenodo.15227808对应早期v2025.1，可用于查阅前一版。 |
+| 许可 | 官网标注CC BY 4.0。v2026.1发布说明、固定树根目录和检查的5份CLDF元数据未列该版许可，分发或改编前需核实固定版及引用子模块的许可。引用Inman等（2025）、使用的特征集作者及固定版本。 |
+| 使用边界 | 模块以名词为中心，优先记录名词性领属者，代词结构在特定情况下纳入。语法描写的类别编码适合比较结构分布，使用频率须另用语料测量。按分号展开Class_ID并核对Glottocode。区分普通无领属形式、需要专门标记、NULL和未知。类别对嵌套在语言内，跨语言比较还需核对谱系、地区及描写口径。词序模块部分取值沿用WALS，指示词模块部分取值沿用SAILS，应追溯到来源再评估独立性。部分CSV列序与元数据不同，宜按表头读取。 |
+| 标签 | 类型学、区域类型学、美洲语言、跨语言、句法、名词短语、领属、名词类别、领属标记、词序、指示词、形态对齐、CLDF |
+| 平台 | project_website, github, zenodo |
+| 核对依据 | 作者仓库说明；2026-11-10 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 按固定Git版本核对35个文件路径。完整解析主库5张名录和领属模块3张表，检查7项已读取表的声明外键。945条构式共1,186个类别引用，均可在同一语言下匹配。按同一条直接领属构式及明确无领属编码配对，208对类别中108对的领属要求不同，分属72个语言条目。Palikúr的共享构式示例与官网说明吻合。主库取值表本次仅取得部分字节，其余模块数据与原语法书仍待逐项复核。详见data/atlas-file-check-2026-11-10.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://atlas.evolvinglanguage.ch/)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/davidainman/atlas-data/releases/tag/v2026.1)
+- [来源 2](https://github.com/davidainman/atlas-data/tree/67012015ca57c58ddd45f63c271f595c49fc5f2c/cldf-possession)
+- [来源 3](https://atlas.evolvinglanguage.ch/contributions/NounPoss)
+- [来源 4](https://doi.org/10.1038/s41597-025-05169-4)
+- [来源 5](https://zenodo.org/records/15227808)
+- [来源 6](https://atlas.evolvinglanguage.ch/contributions/WO)
+- [来源 7](https://atlas.evolvinglanguage.ch/contributions/Dem)
+- [来源 8](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113)
+- [来源 9](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Dem.md#L83)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 派生自 | [R045 WALS](../catalog/crossling-cultural.md#r045) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
+| 派生自 | [R187 SAILS（南美原住民语言结构数据库）](../catalog/crossling-cultural.md#r187) | R189 → R187 | 限ATLAs指示词模块Dem中取自SAILS名词短语模块的部分编码。R187作为源项目入口，引用的具体SAILS快照有待核实。 | 说明核对，2026-11-10；固定版Dem说明明确指出从SAILS名词短语模块取用部分数据，部分值复核后另作判断。该来源关系限于文档指明的取值范围。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Dem.md#L83) [来源2](https://atlas.evolvinglanguage.ch/contributions/Dem) [来源3](https://sails.clld.org/) |
 

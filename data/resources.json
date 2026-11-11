@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.8",
-  "updated_on": "2026-11-10",
+  "catalog_version": "2.5.9",
+  "updated_on": "2026-11-11",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 189,
+  "resource_count": 190,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -137,6 +137,11 @@
           "resource_id": "R189",
           "use_for": "用领属构式的类别连接比较同一语言内共享构式的名词类别，区分可直接无领属、需专门无领属标记及无可用形式。固定版的简要筛查在208对中发现108对领属要求不同。",
           "check_before_use": "按分号展开Class_ID，在每个语言内按类别对去重。区分无领属标记与领属必需性。按语言和谱系处理类别对聚集，核对地理范围、原始描写和外部数据库来源。"
+        },
+        {
+          "resource_id": "R190",
+          "use_for": "比较一门语言在规定语境中允许的结构组合。形容词名前、名后两项均有明确判断的248个条目中，有88个同时允许两种顺序。",
+          "check_before_use": "从制表符表取赋值，按语言ID及属性ID连接。核对诊断语境，保留不适用与缺失的区别，与主导词序图谱对照前再核对语言变体及测量口径。"
         }
       ]
     },
@@ -11838,6 +11843,75 @@
             "read_scope": "complete_delimited_table",
             "file_role": "empirical_or_norm_data",
             "result": "754行×13列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R190",
+      "name": "TerraLing–SSWL（世界语言句法与语义结构数据库）",
+      "category": "crossling-cultural",
+      "entry_type": "dataset",
+      "language_scope": "319个语言或变体条目，其中289个有语法属性赋值。语言、变体和时期应按库内语言条目识别",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "专家对规定语境中句法、语义及形态属性的判断，含属性定义、语言元数据、部分例句及评论。归档提供制表符表与CSV导出",
+      "description": "2024-05-23快照的SSWL子库含170项语法属性和21,503条语言×属性赋值，计数排除了额外例句、坐标和ISO 639-3代码三项辅助属性。可比较同一语言内多种结构的可用性。形容词在名词前与在名词后两项均有明确Yes或No的248个条目中，88个两项均为Yes。",
+      "access_mode": "open_data",
+      "access_notes": "Zenodo v2归档无需注册，2025-01-02建立记录，数据日期为2024-05-23。ZIP内的sswl目录包含本条数据。官方在线组本次返回HTTP 403，固定归档已下载并通过校验。",
+      "license_note": "Zenodo记录标注CC BY 4.0 International。使用时注明归档编辑Hilda Koopman、适用的语言或属性贡献者及DOI 10.5281/zenodo.14585992。",
+      "limitations": "各属性的诊断语境应按定义核对，使用频率或主导词序需要另外的证据。区分No、不适用和未赋值，保留原始标签中的大小写及空白差异。四张CSV在首个含非UTF-8字节的数据行之前结束，另有未转义逗号。应按LF分行、Tab分列解析以.sql命名的表，按字段检查字符编码。部分例句索引缺少文本，个别例句与赋值的语言ID不同。跨语言比较需核对语言变体、谱系、编码定义及来源。",
+      "source_url": "https://zenodo.org/records/14585992",
+      "additional_urls": [
+        "https://doi.org/10.5281/zenodo.14585992",
+        "https://terraling.com/groups/7",
+        "https://linguistics.ucla.edu/person/hilda-koopman/",
+        "https://linguistics.ucla.edu/wp-content/uploads/2020/08/KoopmanGuardiano-handbookarticle-revised08172020-.pdf"
+      ],
+      "tags": [
+        "句法",
+        "语义",
+        "跨语言",
+        "类型学",
+        "可用性",
+        "专家判断",
+        "词序",
+        "形容词",
+        "属性定义",
+        "语言变体",
+        "TSV"
+      ],
+      "related_ids": [
+        "R045"
+      ],
+      "platforms": [
+        "zenodo",
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified",
+      "verification": {
+        "documentation_checked_on": "2026-11-11",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://zenodo.org/records/14585992",
+          "https://linguistics.ucla.edu/person/hilda-koopman/",
+          "https://linguistics.ucla.edu/wp-content/uploads/2020/08/KoopmanGuardiano-handbookarticle-revised08172020-.pdf"
+        ],
+        "note": "Zenodo整包匹配官方MD5并通过ZIP成员CRC。完整解析SSWL的6张制表符表并与CSV对应表对照。原始173项、22,259条赋值中有3项为辅助属性。四张CSV等于制表符表直接换逗号后的截断前缀。法语两个例句分别链接到名词前、名词后两项的Yes赋值。6,109个例句索引中1,560个在文本表中无记录，5,921条例句连接中有2条的两端语言ID不同。例句的逐项解释、原始资料和同包其他组仍待核验。详见data/sswl-file-check-2026-11-11.json。",
+        "file_checks": [
+          {
+            "url": "https://zenodo.org/api/records/14585992/files/SSWL_MAY_2024_DATA.zip/content",
+            "sha256": "5a33402cd3e69e26e4e358191b1b56866e57b1979018da490fdb609d3624409c",
+            "checked_on": "2026-11-11",
+            "read_scope": "archive_selected_members",
+            "file_role": "empirical_or_norm_data",
+            "result": "完整ZIP通过官方MD5及成员CRC。完整读取语言、属性、赋值、例句索引、例句与赋值连接、例句文本共6张制表符表，检查主键与引用并复核两个法语例句。对照同名CSV的记录数和字节前缀。"
           }
         ]
       }

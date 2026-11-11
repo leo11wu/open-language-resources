@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-10",
-  "catalog_version": "2.5.8",
+  "generated_on": "2026-11-11",
+  "catalog_version": "2.5.9",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 189,
+    "main_resource_count": 190,
     "main_by_check_state": {
       "documentation_only": 99,
       "file_preview": 2,
-      "selected_file_checked": 75,
+      "selected_file_checked": 76,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 82,
+    "main_with_recorded_file_reads": 83,
     "main_without_recorded_file_reads": 107,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6367,6 +6367,36 @@
           "read_scope": "complete_delimited_table",
           "file_role": "empirical_or_norm_data",
           "result": "754行×13列。按CSV表头完整解析，主键检查通过，字节与固定版本匹配。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R190",
+      "name": "TerraLing–SSWL（世界语言句法与语义结构数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://zenodo.org/records/14585992",
+      "platforms": [
+        "zenodo",
+        "project_website"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-11",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://zenodo.org/api/records/14585992/files/SSWL_MAY_2024_DATA.zip/content",
+          "sha256": "5a33402cd3e69e26e4e358191b1b56866e57b1979018da490fdb609d3624409c",
+          "checked_on": "2026-11-11",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整ZIP通过官方MD5及成员CRC。完整读取语言、属性、赋值、例句索引、例句与赋值连接、例句文本共6张制表符表，检查主键与引用并复核两个法语例句。对照同名CSV的记录数和字节前缀。"
         }
       ],
       "osf_audit": null,

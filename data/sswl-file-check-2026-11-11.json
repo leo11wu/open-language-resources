@@ -1,0 +1,303 @@
+{
+  "resource_id": "R190",
+  "resource_name": "TerraLing–SSWL",
+  "checked_on": "2026-11-11",
+  "release": {
+    "record_url": "https://zenodo.org/records/14585992",
+    "doi": "10.5281/zenodo.14585992",
+    "version_label_on_landing_page": "v2",
+    "data_snapshot_date": "2024-05-23",
+    "record_created_at": "2025-01-02T01:34:18.573948+00:00",
+    "license": "CC BY 4.0 International",
+    "license_metadata_id": "cc-by-4.0",
+    "scope": "SSWL group 7 within the TerraLing export. The ZIP also contains three other group folders."
+  },
+  "archive_check": {
+    "filename": "SSWL_MAY_2024_DATA.zip",
+    "download_url": "https://zenodo.org/api/records/14585992/files/SSWL_MAY_2024_DATA.zip/content",
+    "bytes": 936028,
+    "zenodo_md5": "1d70e7a6941d1814fc8d26f469ac4f2d",
+    "sha256": "5a33402cd3e69e26e4e358191b1b56866e57b1979018da490fdb609d3624409c",
+    "zip_entries_including_directories": 81,
+    "non_directory_members": 68,
+    "zip_crc_check_passed": true
+  },
+  "online_check": {
+    "url": "https://terraling.com/groups/7",
+    "checked_on": "2026-11-11",
+    "http_status": 403
+  },
+  "table_checks": [
+    {
+      "table": "lings",
+      "tsv_path": "SSWL_MAY_2024_DATA/sswl/sql/lings.sql",
+      "tsv_sha256": "108cf0be2a54b214bbc3b101a33e63739acd29c10480c3ce9ce5b7af686df3e6",
+      "tsv_bytes": 21981,
+      "tsv_data_rows": 319,
+      "tsv_columns": [
+        "id",
+        "name",
+        "created_at",
+        "updated_at",
+        "depth",
+        "parent_id",
+        "group_id",
+        "creator_id"
+      ],
+      "raw_cr_bytes": 0,
+      "tsv_rows_failing_strict_utf8": 24,
+      "first_non_utf8_byte_offset_zero_based": 140,
+      "csv_path": "SSWL_MAY_2024_DATA/sswl/csv/lings.csv",
+      "csv_sha256": "d6a0ef29c98d3bcdcda664b8b7cc93fe9cee1f2dfe72c21d71a5e34d86bb8071",
+      "csv_bytes": 132,
+      "csv_data_rows": 1,
+      "csv_rows_with_non_header_width_on_literal_comma_split": 0,
+      "csv_is_exact_tab_to_comma_prefix": true,
+      "csv_omitted_data_rows": 318,
+      "csv_stops_before_first_non_utf8_row": true
+    },
+    {
+      "table": "properties",
+      "tsv_path": "SSWL_MAY_2024_DATA/sswl/sql/properties.sql",
+      "tsv_sha256": "02cbde0099095d4d09c1bc13593b256e9b1acbbc99e00121c5ea23e18dc1c8db",
+      "tsv_bytes": 663351,
+      "tsv_data_rows": 173,
+      "tsv_columns": [
+        "id",
+        "name",
+        "group_id",
+        "category_id",
+        "creator_id",
+        "description",
+        "team_id"
+      ],
+      "raw_cr_bytes": 18946,
+      "tsv_rows_failing_strict_utf8": 123,
+      "first_non_utf8_byte_offset_zero_based": 1165,
+      "csv_path": "SSWL_MAY_2024_DATA/sswl/csv/properties.csv",
+      "csv_sha256": "bf702826952fc43b5e20ee7c437fe60270a8738ffd4e7b92a78299edc9833ecf",
+      "csv_bytes": 60,
+      "csv_data_rows": 0,
+      "csv_rows_with_non_header_width_on_literal_comma_split": 0,
+      "csv_is_exact_tab_to_comma_prefix": true,
+      "csv_omitted_data_rows": 173,
+      "csv_stops_before_first_non_utf8_row": true
+    },
+    {
+      "table": "lings_properties",
+      "tsv_path": "SSWL_MAY_2024_DATA/sswl/sql/lings_properties.sql",
+      "tsv_sha256": "79b76f3dbb33a73fd6c81bc42a974ac6e1ee52129d5ebb05c7a305da6a6470ef",
+      "tsv_bytes": 829949,
+      "tsv_data_rows": 22259,
+      "tsv_columns": [
+        "id",
+        "ling_id",
+        "property_id",
+        "value",
+        "group_id",
+        "creator_id",
+        "property_value",
+        "sureness"
+      ],
+      "raw_cr_bytes": 0,
+      "tsv_rows_failing_strict_utf8": 2,
+      "first_non_utf8_byte_offset_zero_based": 140777,
+      "csv_path": "SSWL_MAY_2024_DATA/sswl/csv/lings_properties.csv",
+      "csv_sha256": "125ca57109b56366fb462f1923eac7454d107ab6c2358b901ea9359d57b90fb6",
+      "csv_bytes": 140761,
+      "csv_data_rows": 3805,
+      "csv_rows_with_non_header_width_on_literal_comma_split": 30,
+      "csv_is_exact_tab_to_comma_prefix": true,
+      "csv_omitted_data_rows": 18454,
+      "csv_stops_before_first_non_utf8_row": true
+    },
+    {
+      "table": "examples",
+      "tsv_path": "SSWL_MAY_2024_DATA/sswl/sql/examples.sql",
+      "tsv_sha256": "0ee87c7620478a0754da393f701b491fba61f42593bd1243aed39717e695da10",
+      "tsv_bytes": 180429,
+      "tsv_data_rows": 6109,
+      "tsv_columns": [
+        "id",
+        "ling_id",
+        "name",
+        "group_id",
+        "creator_id"
+      ],
+      "raw_cr_bytes": 0,
+      "tsv_rows_failing_strict_utf8": 0,
+      "first_non_utf8_byte_offset_zero_based": null,
+      "csv_path": "SSWL_MAY_2024_DATA/sswl/csv/examples.csv",
+      "csv_sha256": "83fa2d099d7a99999a9f4cc90779a421ab945897369cd347949ab97919993fd8",
+      "csv_bytes": 180429,
+      "csv_data_rows": 6109,
+      "csv_rows_with_non_header_width_on_literal_comma_split": 0,
+      "csv_is_exact_tab_to_comma_prefix": true,
+      "csv_omitted_data_rows": 0,
+      "csv_stops_before_first_non_utf8_row": false
+    },
+    {
+      "table": "examples_lings_properties",
+      "tsv_path": "SSWL_MAY_2024_DATA/sswl/sql/examples_lings_properties.sql",
+      "tsv_sha256": "3d32f709183423e8e5eaafd5f8497c13b4f4a19c9e21b9106e5207a6afd108a9",
+      "tsv_bytes": 145929,
+      "tsv_data_rows": 5921,
+      "tsv_columns": [
+        "id",
+        "example_id",
+        "lings_property_id",
+        "creator_id",
+        "group_id"
+      ],
+      "raw_cr_bytes": 0,
+      "tsv_rows_failing_strict_utf8": 0,
+      "first_non_utf8_byte_offset_zero_based": null,
+      "csv_path": "SSWL_MAY_2024_DATA/sswl/csv/examples_lings_properties.csv",
+      "csv_sha256": "c099756a1848a1272b1746fdd5fe21e949de3c9655c41ea39525ce4b14dad987",
+      "csv_bytes": 145929,
+      "csv_data_rows": 5921,
+      "csv_rows_with_non_header_width_on_literal_comma_split": 0,
+      "csv_is_exact_tab_to_comma_prefix": true,
+      "csv_omitted_data_rows": 0,
+      "csv_stops_before_first_non_utf8_row": false
+    },
+    {
+      "table": "stored_values",
+      "tsv_path": "SSWL_MAY_2024_DATA/sswl/sql/stored_values.sql",
+      "tsv_sha256": "6e5e992e11b634f19ee4807606d0f574d29fc0e10f16b353d81fab1c1c1f55e5",
+      "tsv_bytes": 1069974,
+      "tsv_data_rows": 18104,
+      "tsv_columns": [
+        "id",
+        "key",
+        "value",
+        "storable_id",
+        "storable_type",
+        "group_id"
+      ],
+      "raw_cr_bytes": 32,
+      "tsv_rows_failing_strict_utf8": 2227,
+      "first_non_utf8_byte_offset_zero_based": 2946,
+      "csv_path": "SSWL_MAY_2024_DATA/sswl/csv/stored_values.csv",
+      "csv_sha256": "10518308c25012c54759d9c6e4ee0117790e6e0d385dd49bf013cf57762f4627",
+      "csv_bytes": 2934,
+      "csv_data_rows": 57,
+      "csv_rows_with_non_header_width_on_literal_comma_split": 1,
+      "csv_is_exact_tab_to_comma_prefix": true,
+      "csv_omitted_data_rows": 18047,
+      "csv_stops_before_first_non_utf8_row": true
+    }
+  ],
+  "format_diagnosis": {
+    "tsv_record_separator": "LF",
+    "tsv_field_separator": "TAB",
+    "csv_counterpart": "Each inspected CSV is exactly the TSV prefix with tabs replaced by commas. Four end immediately before the first row containing a byte sequence invalid in UTF-8. Commas inside some values create irregular widths.",
+    "encoding": "Numeric keys and ASCII coding labels were joined as bytes. Embedded CR bytes and invalid UTF-8 sequences occur in text. The selected café example contains a single-byte E9 accent. Inspect text encodings by field before analysis."
+  },
+  "dimensions": {
+    "language_or_variety_entries": 319,
+    "language_entries_with_grammar_assignments": 289,
+    "language_entries_without_grammar_assignments": 30,
+    "raw_property_rows": 173,
+    "raw_assignment_rows": 22259,
+    "excluded_non_grammar_properties": [
+      {
+        "id": "408",
+        "name": "Extra Examples",
+        "assignments": 161
+      },
+      {
+        "id": "523",
+        "name": "latlong",
+        "assignments": 305
+      },
+      {
+        "id": "524",
+        "name": "ISO 639-3 Code",
+        "assignments": 290
+      }
+    ],
+    "grammar_properties": 170,
+    "grammar_assignments": 21503,
+    "grammar_assignment_labels_as_stored": {
+      "No": 12509,
+      "Yes": 8626,
+      "NA": 325,
+      "Na": 42,
+      "Yes ": 1
+    }
+  },
+  "key_checks": {
+    "assignment_language_property_pairs_are_unique": true,
+    "unresolved_assignment_language_or_property_ids": 0,
+    "unresolved_example_language_ids": 0,
+    "unresolved_example_or_assignment_ids_in_links": 0,
+    "unresolved_stored_example_ids": 0
+  },
+  "example_coverage": {
+    "indexed_examples": 6109,
+    "example_assignment_link_rows": 5921,
+    "stored_value_rows": 18104,
+    "example_ids_with_a_stored_value": 4549,
+    "example_ids_without_a_stored_value": 1560,
+    "cross_language_example_assignment_links": [
+      {
+        "link_id": "12351",
+        "example_id": "12080",
+        "example_language_id": "823",
+        "assignment_id": "63803",
+        "assignment_language_id": "1031"
+      },
+      {
+        "link_id": "12364",
+        "example_id": "12093",
+        "example_language_id": "823",
+        "assignment_id": "63808",
+        "assignment_language_id": "1031"
+      }
+    ],
+    "stored_values_key_column_distinct_values": [
+      "key"
+    ],
+    "note": "Stored values can include text, gloss, translation or comments. Inspect the example records before inferring fields from row order."
+  },
+  "adjective_order_screen": {
+    "property_ids_in_order": [
+      "437",
+      "377"
+    ],
+    "scope": "Productive attributive adjective order in a neutral context under the two property definitions. Count language entries with explicit Yes or No on both.",
+    "comparable_entries": 248,
+    "cross_tab": {
+      "Yes / No": 60,
+      "Yes / Yes": 88,
+      "No / Yes": 100
+    },
+    "both_yes": 88,
+    "french_language_id": "828",
+    "french_examples": [
+      {
+        "property_id": "437",
+        "property_name": "13_A N",
+        "assignment_id": "52602",
+        "judgement": "Yes",
+        "example_id": "13915",
+        "stored_text_id": "57935",
+        "text": "le nouveau café",
+        "text_strict_utf8": false
+      },
+      {
+        "property_id": "377",
+        "property_name": "14_N A",
+        "assignment_id": "52547",
+        "judgement": "Yes",
+        "example_id": "13916",
+        "stored_text_id": "57939",
+        "text": "la robe noire",
+        "text_strict_utf8": true
+      }
+    ],
+    "interpretation": "Co-availability of two order options in the coded language entry. The examples use different adjectives. Frequency and dominance require separate evidence."
+  },
+  "verification_boundary": "Complete parse of six selected SSWL TSV tables and comparison with their CSV counterparts, key checks and two selected examples. Review remaining example interpretations, original descriptions and other groups as needed."
+}

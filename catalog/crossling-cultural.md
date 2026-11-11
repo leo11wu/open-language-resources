@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共16个入口。资料状态与文件验收范围分别记录。
+共17个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -152,7 +152,7 @@
 | --- | --- | --- | --- | --- |
 | 派生资料 | [R189 ATLAs（美洲语言区域类型学数据库）](../catalog/crossling-cultural.md#r189) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
 
-待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r046"></a>
 
@@ -547,4 +547,39 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 | --- | --- | --- | --- | --- |
 | 派生自 | [R045 WALS](../catalog/crossling-cultural.md#r045) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
 | 派生自 | [R187 SAILS（南美原住民语言结构数据库）](../catalog/crossling-cultural.md#r187) | R189 → R187 | 限ATLAs指示词模块Dem中取自SAILS名词短语模块的部分编码。R187作为源项目入口，引用的具体SAILS快照有待核实。 | 说明核对，2026-11-10；固定版Dem说明明确指出从SAILS名词短语模块取用部分数据，部分值复核后另作判断。该来源关系限于文档指明的取值范围。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/Dem.md#L83) [来源2](https://atlas.evolvinglanguage.ch/contributions/Dem) [来源3](https://sails.clld.org/) |
+
+<a id="r190"></a>
+
+## TerraLing–SSWL（世界语言句法与语义结构数据库）
+
+**R190** · 数据集 · 有数据发布说明
+
+2024-05-23快照的SSWL子库含170项语法属性和21,503条语言×属性赋值，计数排除了额外例句、坐标和ISO 639-3代码三项辅助属性。可比较同一语言内多种结构的可用性。形容词在名词前与在名词后两项均有明确Yes或No的248个条目中，88个两项均为Yes。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 319个语言或变体条目，其中289个有语法属性赋值。语言、变体和时期应按库内语言条目识别 |
+| 数据性质 | 专家对规定语境中句法、语义及形态属性的判断，含属性定义、语言元数据、部分例句及评论。归档提供制表符表与CSV导出；混合来源或待细分 |
+| 获取方式 | 公开数据入口：Zenodo v2归档无需注册，2025-01-02建立记录，数据日期为2024-05-23。ZIP内的sswl目录包含本条数据。官方在线组本次返回HTTP 403，固定归档已下载并通过校验。 |
+| 许可 | Zenodo记录标注CC BY 4.0 International。使用时注明归档编辑Hilda Koopman、适用的语言或属性贡献者及DOI 10.5281/zenodo.14585992。 |
+| 使用边界 | 各属性的诊断语境应按定义核对，使用频率或主导词序需要另外的证据。区分No、不适用和未赋值，保留原始标签中的大小写及空白差异。四张CSV在首个含非UTF-8字节的数据行之前结束，另有未转义逗号。应按LF分行、Tab分列解析以.sql命名的表，按字段检查字符编码。部分例句索引缺少文本，个别例句与赋值的语言ID不同。跨语言比较需核对语言变体、谱系、编码定义及来源。 |
+| 标签 | 句法、语义、跨语言、类型学、可用性、专家判断、词序、形容词、属性定义、语言变体、TSV |
+| 平台 | zenodo, project_website |
+| 核对依据 | 作者仓库说明；2026-11-11 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | Zenodo整包匹配官方MD5并通过ZIP成员CRC。完整解析SSWL的6张制表符表并与CSV对应表对照。原始173项、22,259条赋值中有3项为辅助属性。四张CSV等于制表符表直接换逗号后的截断前缀。法语两个例句分别链接到名词前、名词后两项的Yes赋值。6,109个例句索引中1,560个在文本表中无记录，5,921条例句连接中有2条的两端语言ID不同。例句的逐项解释、原始资料和同包其他组仍待核验。详见data/sswl-file-check-2026-11-11.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://zenodo.org/records/14585992)
+
+补充及核对来源：
+
+- [来源 1](https://doi.org/10.5281/zenodo.14585992)
+- [来源 2](https://terraling.com/groups/7)
+- [来源 3](https://linguistics.ucla.edu/person/hilda-koopman/)
+- [来源 4](https://linguistics.ucla.edu/wp-content/uploads/2020/08/KoopmanGuardiano-handbookarticle-revised08172020-.pdf)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

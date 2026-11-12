@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共17个入口。资料状态与文件验收范围分别记录。
+共18个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -32,7 +32,7 @@
 
 - [来源 1](https://github.com/lexibank/)
 
-待核实关联：[R042 CLICS](../catalog/crossling-cultural.md#r042)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)、[R049 Intercontinental Dictionary Series（IDS）](../catalog/crossling-cultural.md#r049)、[R048 PHOIBLE](../catalog/crossling-cultural.md#r048)、[R156 NHB形义规律性研究：分析复现包](../catalog/crossling-cultural.md#r156)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R042 CLICS](../catalog/crossling-cultural.md#r042)、[R044 Concepticon](../catalog/crossling-cultural.md#r044)、[R049 Intercontinental Dictionary Series（IDS）](../catalog/crossling-cultural.md#r049)、[R048 PHOIBLE](../catalog/crossling-cultural.md#r048)、[R156 NHB形义规律性研究：分析复现包](../catalog/crossling-cultural.md#r156)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r042"></a>
 
@@ -582,4 +582,40 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
 待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r191"></a>
+
+## DiACL Mouton Atlas（语法编码附录）
+
+**R191** · 数据集 · 有数据发布说明
+
+2020年归档v1来自2018年DiACL快照，用于2019年《Mouton Atlas of Languages and Cultures》。语法附录有27项特征，覆盖主从句和名词短语词序、论元对齐、格、一致及形态。可用同一语言条目比较不同句法环境，也可筛查历史阶段间的编码差异。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 148个以欧亚为主的语言、方言或历史阶段条目。附录1的语言名录共235条，可连接语法样本的坐标、ISO栏与支系 |
+| 数据性质 | 以语法描写为基础整理的语言类型学编码，含语言名录、特征状态代码本和语言×特征表。XLSX工作簿；混合来源或待细分 |
+| 获取方式 | 公开数据入口：Zenodo提供无需注册的固定归档。语法值在Appendix2c，代码本在Appendix2b，语言名录在Appendix1。三份工作簿均已完整读取并匹配官方MD5。 |
+| 许可 | Zenodo记录为CC BY 4.0 International。按发布说明引用Gerd Carling主编的《Mouton Atlas of Languages and Cultures》（2019），并注明固定归档DOI 10.5281/zenodo.3817133。 |
+| 使用边界 | 按文本读取位串以保留前导零，分析取左右任一块。99格短横线未获代码本释义，另有300格是明确的Category irrelevant。逐项按代码本区分不适用与语法特征缺失。V2标记动词位置，SOV等标记三成分的排列，比较前应统一所用口径。ISO栏有缺值及重复，跨语言比较需复核变体、历史阶段、谱系和地域。构式频率和依存指标需要逐句语料。Lexibank的同项目资源涉及词汇，语法编码的跨库来源仍需逐项查证。 |
+| 标签 | 类型学、跨语言、欧亚、历时、句法、主从句、词序、V2、论元对齐、格、一致、形态、代码本 |
+| 平台 | zenodo, project_website |
+| 核对依据 | 作者仓库说明；2026-11-12 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 完整读取语言名录、代码本及语法表。语法表左右3,996格逐格一致。148个条目中147个名称与名录直接匹配，Low_German将下划线换成空格后匹配。德语主句0010为V2，从句1000为SOV。144个双列有编码的条目中26个标签不同，其中24个主句为V2。限两列均为单一S/V/O排列的113个条目，差异出现在Cornish与Romani (Sepečides)。原始语法资料和全库其余文件仍待按研究用途核对。详见data/diacl-mouton-file-check-2026-11-12.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://zenodo.org/records/3817133)
+
+补充及核对来源：
+
+- [来源 1](https://doi.org/10.5281/zenodo.3817133)
+- [来源 2](https://lup.lub.lu.se/record/46868643-fd74-4a3b-9e2a-74af08c1099c)
+- [来源 3](https://doi.org/10.1371/journal.pone.0205313)
+- [来源 4](https://diacl.uni-frankfurt.de/)
+- [来源 5](https://github.com/lexibank/diacl)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

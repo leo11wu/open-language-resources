@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.9",
-  "updated_on": "2026-11-11",
+  "catalog_version": "2.5.10",
+  "updated_on": "2026-11-12",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 190,
+  "resource_count": 191,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -142,6 +142,11 @@
           "resource_id": "R190",
           "use_for": "比较一门语言在规定语境中允许的结构组合。形容词名前、名后两项均有明确判断的248个条目中，有88个同时允许两种顺序。",
           "check_before_use": "从制表符表取赋值，按语言ID及属性ID连接。核对诊断语境，保留不适用与缺失的区别，与主导词序图谱对照前再核对语言变体及测量口径。"
+        },
+        {
+          "resource_id": "R191",
+          "use_for": "在同一条目内比较主从句的词序编码，并查看语言不同历史阶段的记录。两列均为单一S/V/O排列的113个条目中有2个标签不同。",
+          "check_before_use": "取一块编码并按代码本解码。V2、单一S/V/O排列和多重顺序分别处理。核对不适用、短横线、语言名录连接和谱系、地域、阶段的依赖关系。"
         }
       ]
     },
@@ -11912,6 +11917,95 @@
             "read_scope": "archive_selected_members",
             "file_role": "empirical_or_norm_data",
             "result": "完整ZIP通过官方MD5及成员CRC。完整读取语言、属性、赋值、例句索引、例句与赋值连接、例句文本共6张制表符表，检查主键与引用并复核两个法语例句。对照同名CSV的记录数和字节前缀。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R191",
+      "name": "DiACL Mouton Atlas（语法编码附录）",
+      "category": "crossling-cultural",
+      "entry_type": "dataset",
+      "language_scope": "148个以欧亚为主的语言、方言或历史阶段条目。附录1的语言名录共235条，可连接语法样本的坐标、ISO栏与支系",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "以语法描写为基础整理的语言类型学编码，含语言名录、特征状态代码本和语言×特征表。XLSX工作簿",
+      "description": "2020年归档v1来自2018年DiACL快照，用于2019年《Mouton Atlas of Languages and Cultures》。语法附录有27项特征，覆盖主从句和名词短语词序、论元对齐、格、一致及形态。可用同一语言条目比较不同句法环境，也可筛查历史阶段间的编码差异。",
+      "access_mode": "open_data",
+      "access_notes": "Zenodo提供无需注册的固定归档。语法值在Appendix2c，代码本在Appendix2b，语言名录在Appendix1。三份工作簿均已完整读取并匹配官方MD5。",
+      "license_note": "Zenodo记录为CC BY 4.0 International。按发布说明引用Gerd Carling主编的《Mouton Atlas of Languages and Cultures》（2019），并注明固定归档DOI 10.5281/zenodo.3817133。",
+      "limitations": "按文本读取位串以保留前导零，分析取左右任一块。99格短横线未获代码本释义，另有300格是明确的Category irrelevant。逐项按代码本区分不适用与语法特征缺失。V2标记动词位置，SOV等标记三成分的排列，比较前应统一所用口径。ISO栏有缺值及重复，跨语言比较需复核变体、历史阶段、谱系和地域。构式频率和依存指标需要逐句语料。Lexibank的同项目资源涉及词汇，语法编码的跨库来源仍需逐项查证。",
+      "source_url": "https://zenodo.org/records/3817133",
+      "additional_urls": [
+        "https://doi.org/10.5281/zenodo.3817133",
+        "https://lup.lub.lu.se/record/46868643-fd74-4a3b-9e2a-74af08c1099c",
+        "https://doi.org/10.1371/journal.pone.0205313",
+        "https://diacl.uni-frankfurt.de/",
+        "https://github.com/lexibank/diacl"
+      ],
+      "tags": [
+        "类型学",
+        "跨语言",
+        "欧亚",
+        "历时",
+        "句法",
+        "主从句",
+        "词序",
+        "V2",
+        "论元对齐",
+        "格",
+        "一致",
+        "形态",
+        "代码本"
+      ],
+      "related_ids": [
+        "R041"
+      ],
+      "platforms": [
+        "zenodo",
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified",
+      "verification": {
+        "documentation_checked_on": "2026-11-12",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://zenodo.org/records/3817133",
+          "https://lup.lub.lu.se/record/46868643-fd74-4a3b-9e2a-74af08c1099c",
+          "https://doi.org/10.1371/journal.pone.0205313",
+          "https://github.com/lexibank/diacl"
+        ],
+        "note": "完整读取语言名录、代码本及语法表。语法表左右3,996格逐格一致。148个条目中147个名称与名录直接匹配，Low_German将下划线换成空格后匹配。德语主句0010为V2，从句1000为SOV。144个双列有编码的条目中26个标签不同，其中24个主句为V2。限两列均为单一S/V/O排列的113个条目，差异出现在Cornish与Romani (Sepečides)。原始语法资料和全库其余文件仍待按研究用途核对。详见data/diacl-mouton-file-check-2026-11-12.json。",
+        "file_checks": [
+          {
+            "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix1.xlsx/content",
+            "sha256": "09306e470a52c712a76145ea4f199b3c2cf385888f35b51024a2eac07f76284e",
+            "checked_on": "2026-11-12",
+            "read_scope": "complete_xlsx_workbook",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取Blad1。235个条目及其坐标、ISO栏和支系。左右名称及元数据一致，坐标显示精度不同。"
+          },
+          {
+            "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix2b.xlsx/content",
+            "sha256": "2c817b590fcacab164b7132c247ed1deeb2d7f2f5a80f740084e75078bb82652",
+            "checked_on": "2026-11-12",
+            "read_scope": "complete_xlsx_workbook",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取Blad1。27项特征的161组特征×状态有唯一释义，涵盖语法表中全部非短横线状态。"
+          },
+          {
+            "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix2c.xlsx/content",
+            "sha256": "6127661acb0a327615b10a10d2004ebba1ed4e446b1f474da794e10c01640072",
+            "checked_on": "2026-11-12",
+            "read_scope": "complete_xlsx_workbook",
+            "file_role": "empirical_or_norm_data",
+            "result": "完整读取Blad1。148个语言或阶段条目×27项编码。左右3,996格逐格匹配，核对主从句词序及99个短横线。"
           }
         ]
       }

@@ -1,0 +1,379 @@
+{
+  "resource_id": "R191",
+  "resource_name": "DiACL Mouton Atlas grammar data",
+  "checked_on": "2026-11-12",
+  "release": {
+    "record_url": "https://zenodo.org/records/3817133",
+    "doi": "10.5281/zenodo.3817133",
+    "version_label": "v1",
+    "released_on": "2020-05-08",
+    "source_snapshot_year": 2018,
+    "license": "CC BY 4.0 International",
+    "required_book_citation": "Carling, Gerd (ed.). 2019. Mouton Atlas of Languages and Cultures. Mouton de Gruyter.",
+    "book_record": "https://lup.lub.lu.se/record/46868643-fd74-4a3b-9e2a-74af08c1099c",
+    "project_methods": "https://doi.org/10.1371/journal.pone.0205313"
+  },
+  "complete_file_checks": [
+    {
+      "filename": "Mouton_Atlas_Appendix1.xlsx",
+      "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix1.xlsx/content",
+      "bytes": 26783,
+      "zenodo_md5": "5f9fedad19bed9910869c678da6382f3",
+      "sha256": "09306e470a52c712a76145ea4f199b3c2cf385888f35b51024a2eac07f76284e",
+      "worksheet": "Blad1",
+      "physical_rows_including_header": 236,
+      "physical_columns": 11,
+      "formula_or_error_cells": 0
+    },
+    {
+      "filename": "Mouton_Atlas_Appendix2b.xlsx",
+      "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix2b.xlsx/content",
+      "bytes": 19064,
+      "zenodo_md5": "7039061179af45260ac74e54c1be35fc",
+      "sha256": "2c817b590fcacab164b7132c247ed1deeb2d7f2f5a80f740084e75078bb82652",
+      "worksheet": "Blad1",
+      "physical_rows_including_header": 162,
+      "physical_columns": 10,
+      "formula_or_error_cells": 0
+    },
+    {
+      "filename": "Mouton_Atlas_Appendix2c.xlsx",
+      "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix2c.xlsx/content",
+      "bytes": 45945,
+      "zenodo_md5": "f89f676b4f369b76f4abf5a7f5be1572",
+      "sha256": "6127661acb0a327615b10a10d2004ebba1ed4e446b1f474da794e10c01640072",
+      "worksheet": "Blad1",
+      "physical_rows_including_header": 149,
+      "physical_columns": 57,
+      "formula_or_error_cells": 0
+    }
+  ],
+  "workbook_structure": {
+    "grammar_range": "Appendix2c Blad1!A1:BE149",
+    "left_block": "A1:AB149",
+    "right_block": "AD1:BE149",
+    "language_or_stage_rows": 148,
+    "features": 27,
+    "paired_cells_checked": 3996,
+    "right_prefix_mismatches": 0,
+    "raw_code_mismatches": 0,
+    "codebook_feature_state_pairs": 161,
+    "distinct_non_dash_feature_state_pairs_in_data": 161,
+    "dash_cells": 99,
+    "dash_cells_by_feature": {
+      "Wordorder_Participle": 13,
+      "Wordorder_WH_element": 18,
+      "Wordorder_Noun_relativeclause": 12,
+      "Nominalmorphology_Casemarking": 5,
+      "Verbalmorphology_simplePASTA": 2,
+      "Wordorder_Noun_Possessor": 4,
+      "TENSE_Future": 10,
+      "Nominalmorphology_Definitenessmarking": 4,
+      "Wordorder_Infinitive": 8,
+      "NominalMorphology_PRONOMINAL_CASE_SIMPLIFIED": 5,
+      "Nominal_Morphology_NOMINAL_CASE_SIMPLIFIED": 3,
+      "Wordorder_Subordinateclause": 4,
+      "Wordorder_Cliticpronounsparticiple": 4,
+      "Wordorder_Mainclauses": 1,
+      "ALIGNMENT_Pronoun_PresentProgressive": 1,
+      "Wordorder_Cliticpronounsfiniteverb": 1,
+      "Wordorder_Cliticpronounsinfinitive": 3,
+      "Nominalmorphology_GenderNounClass": 1
+    },
+    "cells_with_codebook_category_irrelevant": 300,
+    "category_irrelevant_by_feature": {
+      "Wordorder_Cliticpronounsinfinitive": 97,
+      "Wordorder_Cliticpronounsparticiple": 90,
+      "Wordorder_Infinitive": 14,
+      "Wordorder_Cliticpronounsfiniteverb": 87,
+      "Wordorder_Participle": 7,
+      "Wordorder_Noun_relativeclause": 5
+    },
+    "interpretation": "Read state combinations as strings to preserve leading zeros. Both grammar blocks encode the same cells. The codebook does not define the dash. Category irrelevant and other explicit zero-coded states must be interpreted per feature."
+  },
+  "language_join": {
+    "appendix1_language_rows": 235,
+    "matched_exactly": 147,
+    "matched_after_underscore_to_space": [
+      {
+        "grammar_name": "Low_German",
+        "metadata_name": "Low German"
+      }
+    ],
+    "unmatched_after_normalization": 0,
+    "grammar_rows_missing_iso_field": 6,
+    "duplicated_nonempty_iso_codes": {
+      "baq": 2,
+      "grc": 2,
+      "rmy": 2
+    },
+    "metadata_note": "The two Appendix1 blocks repeat the names, ISO field and subbranch. Coordinates on the right are formatted with compass directions. The workbook provides no separate date variable for historical stages."
+  },
+  "main_subordinate_order_screen": {
+    "main_feature": "Wordorder_Mainclauses",
+    "subordinate_feature": "Wordorder_Subordinateclause",
+    "left_block_columns": [
+      "T",
+      "Y"
+    ],
+    "known_pairs": 144,
+    "pairs_with_different_atlas_labels": 26,
+    "different_pairs_with_main_v2": 24,
+    "known_pairs_with_single_s_v_o_order_on_both_sides": 113,
+    "different_pairs_with_single_s_v_o_order_on_both_sides": [
+      {
+        "language_or_stage": "Cornish",
+        "worksheet_row": 16,
+        "main_code": "0100",
+        "subordinate_code": "1000",
+        "main": "SVO",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Romani (Sepečides)",
+        "worksheet_row": 115,
+        "main_code": "0100",
+        "subordinate_code": "0001",
+        "main": "SVO",
+        "subordinate": "VSO"
+      }
+    ],
+    "pair_counts": {
+      "SVO / SVO": 45,
+      "SOV / SOV": 60,
+      "V2 / VSO": 2,
+      "SVO / SOV": 1,
+      "V2 / SVO": 8,
+      "V2 / SOV": 14,
+      "V2 / V2": 6,
+      "VSO / VSO": 6,
+      "SOV and SVO / SOV and SVO": 1,
+      "SVO / VSO": 1
+    },
+    "german": {
+      "language_or_stage": "German",
+      "worksheet_row": 30,
+      "main_code": "0010",
+      "subordinate_code": "1000",
+      "main": "V2",
+      "subordinate": "SOV"
+    },
+    "all_different_label_pairs": [
+      {
+        "language_or_stage": "Breton",
+        "worksheet_row": 12,
+        "main_code": "0010",
+        "subordinate_code": "0001",
+        "main": "V2",
+        "subordinate": "VSO"
+      },
+      {
+        "language_or_stage": "Cornish",
+        "worksheet_row": 16,
+        "main_code": "0100",
+        "subordinate_code": "1000",
+        "main": "SVO",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Danish",
+        "worksheet_row": 19,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Dutch",
+        "worksheet_row": 20,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Frisian",
+        "worksheet_row": 27,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "German",
+        "worksheet_row": 30,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Kashmiri",
+        "worksheet_row": 42,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Low_German",
+        "worksheet_row": 57,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Middle Dutch",
+        "worksheet_row": 65,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Middle High German",
+        "worksheet_row": 68,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Middle Low German",
+        "worksheet_row": 70,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Middle Welsh",
+        "worksheet_row": 72,
+        "main_code": "0010",
+        "subordinate_code": "0001",
+        "main": "V2",
+        "subordinate": "VSO"
+      },
+      {
+        "language_or_stage": "Norwegian (Bokmål)",
+        "worksheet_row": 77,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Norwegian (Nynorsk)",
+        "worksheet_row": 78,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Old English",
+        "worksheet_row": 81,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Old French",
+        "worksheet_row": 82,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Old Frisian",
+        "worksheet_row": 83,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Old High German",
+        "worksheet_row": 85,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Old Provençal",
+        "worksheet_row": 91,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Old Saxon",
+        "worksheet_row": 94,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      },
+      {
+        "language_or_stage": "Romani (Sepečides)",
+        "worksheet_row": 115,
+        "main_code": "0100",
+        "subordinate_code": "0001",
+        "main": "SVO",
+        "subordinate": "VSO"
+      },
+      {
+        "language_or_stage": "Romani (Sinte)",
+        "worksheet_row": 116,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Romansh",
+        "worksheet_row": 118,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Scandoromani",
+        "worksheet_row": 122,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Swedish",
+        "worksheet_row": 133,
+        "main_code": "0010",
+        "subordinate_code": "0100",
+        "main": "V2",
+        "subordinate": "SVO"
+      },
+      {
+        "language_or_stage": "Swiss German",
+        "worksheet_row": 134,
+        "main_code": "0010",
+        "subordinate_code": "1000",
+        "main": "V2",
+        "subordinate": "SOV"
+      }
+    ],
+    "interpretation": "A V2 code refers to verb position, whereas SOV, SVO and VSO specify a relative order of three constituents. The different-label screen describes this snapshot. The restricted screen compares only single S/V/O order labels in both columns. Related languages and historical stages are clustered observations."
+  },
+  "lexical_provenance": {
+    "related_catalog_resource": "R041",
+    "source": "https://github.com/lexibank/diacl",
+    "scope": "Lexibank's DiACL Wordlist draws on the same project. The Mouton archive also includes a separate lexical workbook. The checked evidence establishes the project link at the lexical level."
+  },
+  "verification_boundary": "Complete read of Appendix1, Appendix2b and Appendix2c. Individual grammatical descriptions, cross-database grammar provenance and the full DiACL database remain for study-specific review. Appendix3b is outside the checked files."
+}

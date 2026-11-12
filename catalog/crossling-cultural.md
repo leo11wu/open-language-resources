@@ -130,19 +130,22 @@
 | 数据性质 | 语言类型特征数据库；混合来源或待细分 |
 | 获取方式 | 公开数据入口：官网链接版本化公开数据 |
 | 许可 | 按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。 |
-| 使用边界 | 特征间覆盖率不同；缺失值不等于该语言没有某特征，地理与谱系非独立性要处理。 |
+| 使用边界 | 特征间覆盖率不同；缺失值不等于该语言没有某特征，地理与谱系非独立性要处理。81A给出主导语序类别，81B记录有两种主导排列的条目。与DiACL核实共用书目的范围见词序出处核查。 |
 | 标签 | 类型学、语序、形态、跨语言、控制变量 |
 | 平台 | project_website |
-| 核对依据 | 沿用首版文档核对；2026-10-17 |
-| 实际文件核验 | **仅核对说明；未读数据文件** |
-| 核对范围 | 沿用首版已核对的项目说明及访问文档；未批量验收原始文件。 |
-| 下一步 | 定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+| 核对依据 | 沿用首版文档核对；2026-11-12 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 已下载WALS v2020.6固定CLDF文件并匹配Git文件校验值。读取语言、编码、赋值和书目，限定到81A、81B的赋值引文。与DiACL对齐的59个有相关赋值条目中，54个有带引文的赋值，确认6个条目引用相同书目，另有Tajik同著作重印。全库及其他特征的来源仍待按用途检查。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://wals.info/download)
 
 补充及核对来源：
 
 - [来源 1](https://wals.info/)
+- [来源 2](https://github.com/leo11wu/open-language-resources/blob/main/catalog/diacl-word-order-source-check-2026-11-12.md)
+- [来源 3](https://github.com/cldf-datasets/wals/releases/tag/v2020.6)
+- [来源 4](https://wals.info/chapter/81)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
@@ -152,7 +155,7 @@
 | --- | --- | --- | --- | --- |
 | 派生资料 | [R189 ATLAs（美洲语言区域类型学数据库）](../catalog/crossling-cultural.md#r189) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
 
-待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r046"></a>
 
@@ -168,23 +171,26 @@
 | 数据性质 | 语法特征数据库；混合来源或待细分 |
 | 获取方式 | 公开数据入口：官网链接仓库和Zenodo公开版本 |
 | 许可 | 按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。 |
-| 使用边界 | 编码体系与WALS不同；不能在未检查定义时直接合并同名变量。 |
+| 使用边界 | 编码体系与WALS不同；不能在未检查定义时直接合并同名变量。GB134判断主句语序能否用于从句，须结合GB131–GB133的实义动词位置定义。与DiACL核实共用书目的范围见词序出处核查。 |
 | 标签 | 语法、类型学、跨语言、文化、功能解释 |
 | 平台 | project_website |
-| 核对依据 | 沿用首版文档核对；2026-10-17 |
-| 实际文件核验 | **仅核对说明；未读数据文件** |
-| 核对范围 | 沿用首版已核对的项目说明及访问文档；未批量验收原始文件。 |
-| 下一步 | 定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+| 核对依据 | 沿用首版文档核对；2026-11-12 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 已读取Grambank v1.0.3归档CLDF语言、代码、赋值和书目，核对GB131–GB134。与DiACL对齐的50个有相关赋值条目中，47个有带引文的明确赋值，确认9个条目引用相同书目，其中7个的DiACL从句栏与GB134引用同一书目。全库及其他特征的来源仍待按用途检查。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://grambank.clld.org/)
 
 补充及核对来源：
 
 - [来源 1](https://grambank.clld.org/download)
+- [来源 2](https://github.com/leo11wu/open-language-resources/blob/main/catalog/diacl-word-order-source-check-2026-11-12.md)
+- [来源 3](https://github.com/grambank/grambank/releases/tag/v1.0.3)
+- [来源 4](https://grambank.clld.org/parameters/GB134)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r047"></a>
 
@@ -597,12 +603,12 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 | 数据性质 | 以语法描写为基础整理的语言类型学编码，含语言名录、特征状态代码本和语言×特征表。XLSX工作簿；混合来源或待细分 |
 | 获取方式 | 公开数据入口：Zenodo提供无需注册的固定归档。语法值在Appendix2c，代码本在Appendix2b，语言名录在Appendix1。三份工作簿均已完整读取并匹配官方MD5。 |
 | 许可 | Zenodo记录为CC BY 4.0 International。按发布说明引用Gerd Carling主编的《Mouton Atlas of Languages and Cultures》（2019），并注明固定归档DOI 10.5281/zenodo.3817133。 |
-| 使用边界 | 按文本读取位串以保留前导零，分析取左右任一块。99格短横线未获代码本释义，另有300格是明确的Category irrelevant。逐项按代码本区分不适用与语法特征缺失。V2标记动词位置，SOV等标记三成分的排列，比较前应统一所用口径。ISO栏有缺值及重复，跨语言比较需复核变体、历史阶段、谱系和地域。构式频率和依存指标需要逐句语料。Lexibank的同项目资源涉及词汇，语法编码的跨库来源仍需逐项查证。 |
+| 使用边界 | 按文本读取位串以保留前导零，分析取左右任一块。99格短横线未获代码本释义，另有300格是明确的Category irrelevant。逐项按代码本区分不适用与语法特征缺失。V2标记动词位置，SOV等标记三成分的排列，比较前应统一所用口径。ISO栏有缺值及重复，跨语言比较需复核变体、历史阶段、谱系和地域。构式频率和依存指标需要逐句语料。Lexibank的同项目资源涉及词汇，主从句词序已有跨库共用书目记录。固定版语法表缺少逐值引文，2018年引文与其他语法特征的跨库来源仍待核对。 |
 | 标签 | 类型学、跨语言、欧亚、历时、句法、主从句、词序、V2、论元对齐、格、一致、形态、代码本 |
 | 平台 | zenodo, project_website |
 | 核对依据 | 作者仓库说明；2026-11-12 |
 | 实际文件核验 | **已完整检查选定文件；全库未验收** |
-| 核对范围 | 完整读取语言名录、代码本及语法表。语法表左右3,996格逐格一致。148个条目中147个名称与名录直接匹配，Low_German将下划线换成空格后匹配。德语主句0010为V2，从句1000为SOV。144个双列有编码的条目中26个标签不同，其中24个主句为V2。限两列均为单一S/V/O排列的113个条目，差异出现在Cornish与Romani (Sepečides)。原始语法资料和全库其余文件仍待按研究用途核对。详见data/diacl-mouton-file-check-2026-11-12.json。 |
+| 核对范围 | 完整读取语言名录、代码本及语法表。语法表左右3,996格逐格一致。148个条目中147个名称与名录直接匹配，Low_German将下划线换成空格后匹配。德语主句0010为V2，从句1000为SOV。144个双列有编码的条目中26个标签不同，其中24个主句为V2。限两列均为单一S/V/O排列的113个条目，差异出现在Cornish与Romani (Sepečides)。原始语法资料和全库其余文件仍待按研究用途核对。详见data/diacl-mouton-file-check-2026-11-12.json。本轮将T、Y两列与官网欧亚JSON对齐，291个有值格位串一致。按赋值引文确认与WALS有6个条目、与Grambank有9个条目引用相同书目，另记Tajik重印。克什米尔语从句SOV的记录备注同时注明限定从句V2。引文核查依据为当前在线导出。详见catalog/diacl-word-order-source-check-2026-11-12.md。 |
 | 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://zenodo.org/records/3817133)
@@ -614,8 +620,10 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 - [来源 3](https://doi.org/10.1371/journal.pone.0205313)
 - [来源 4](https://diacl.uni-frankfurt.de/)
 - [来源 5](https://github.com/lexibank/diacl)
+- [来源 6](https://github.com/leo11wu/open-language-resources/blob/main/catalog/diacl-word-order-source-check-2026-11-12.md)
+- [来源 7](https://diacl.uni-frankfurt.de/TypoDataSet/Download/550)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R041 Lexibank](../catalog/crossling-cultural.md#r041)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

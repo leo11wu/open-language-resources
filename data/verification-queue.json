@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "generated_on": "2026-11-12",
-  "catalog_version": "2.5.10",
+  "catalog_version": "2.5.11",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -14,15 +14,15 @@
   "summary": {
     "main_resource_count": 191,
     "main_by_check_state": {
-      "documentation_only": 99,
+      "documentation_only": 97,
       "file_preview": 2,
-      "selected_file_checked": 77,
+      "selected_file_checked": 79,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 84,
-    "main_without_recorded_file_reads": 107,
+    "main_with_recorded_file_reads": 86,
+    "main_without_recorded_file_reads": 105,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
     "norare_source_record_count": 182,
@@ -1164,14 +1164,31 @@
         "project_website"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-12",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/wals/81298aa26d01fdc11b769bcc7fa87ad9e43d7ccd/cldf/values.csv",
+          "sha256": "2d672f80dbe8cf1839061af0301650bde60c326bbb486835c93ab7304b5b06cd",
+          "checked_on": "2026-11-12",
+          "read_scope": "complete_csv",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整遍历赋值表，筛出81A、81B共1443行。对齐DiACL并核查赋值行所列引文与页码。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/cldf-datasets/wals/81298aa26d01fdc11b769bcc7fa87ad9e43d7ccd/cldf/sources.bib",
+          "sha256": "015c0b4bc01f12ac90cd98ed62746d3551ba5198a9a43d55237896c38cacb8db",
+          "checked_on": "2026-11-12",
+          "read_scope": "complete_text",
+          "file_role": "documentation_or_materials",
+          "result": "完整读取书目并解析81A、81B引用的书目键。作品、版次与页码差异见词序出处核查。"
+        }
+      ],
       "osf_audit": null,
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -1184,14 +1201,23 @@
         "project_website"
       ],
       "osf_ids": [],
-      "check_state": "documentation_only",
-      "documentation_checked_on": "2026-10-17",
-      "download_tested": false,
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-12",
+      "download_tested": true,
       "data_files_validated": false,
-      "recorded_file_checks": [],
+      "recorded_file_checks": [
+        {
+          "url": "https://codeload.github.com/grambank/grambank/zip/refs/tags/v1.0.3",
+          "sha256": "4a31d8a72ae08619f770292209144c7fabde86b5774ca0f22502fa96933d7e21",
+          "checked_on": "2026-11-12",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "ZIP成员CRC通过。读取CLDF的语言、代码、赋值与书目，筛查GB131–GB134共9688行的值与引文。表格换行归一后与固定提交文件校验值一致。"
+        }
+      ],
       "osf_audit": null,
       "next_steps": [
-        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     },
@@ -6443,6 +6469,14 @@
           "read_scope": "complete_xlsx_workbook",
           "file_role": "empirical_or_norm_data",
           "result": "完整读取Blad1。148个语言或阶段条目×27项编码。左右3,996格逐格匹配，核对主从句词序及99个短横线。"
+        },
+        {
+          "url": "https://diacl.uni-frankfurt.de/TypoDataSet/JSON/550",
+          "sha256": "b2f3219947999c955427fe7421648c1cc3ea89cf91af3e1fbdb73078aef44ba3",
+          "checked_on": "2026-11-12",
+          "read_scope": "complete_json",
+          "file_role": "empirical_or_norm_data",
+          "result": "完整解析欧亚数据集JSON。检查Word order的Main clause、Subordinate clause和相应逐值引文。148个固定版条目含147个主句值和144个从句值，全部重建一致。逐条引文为2026-11-12在线版本。"
         }
       ],
       "osf_audit": null,

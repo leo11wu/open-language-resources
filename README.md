@@ -6,7 +6,7 @@
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的11条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：99条仅核对说明、2条读取头部样例、77条完整检查选定数据文件、5条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：97条仅核对说明、2条读取头部样例、79条完整检查选定数据文件、5条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
@@ -140,8 +140,8 @@
 | R042 | [CLICS](catalog/crossling-cultural.md#r042) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R043 | [NoRaRe](catalog/crossling-cultural.md#r043) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R044 | [Concepticon](catalog/crossling-cultural.md#r044) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R045 | [WALS](catalog/crossling-cultural.md#r045) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
-| R046 | [Grambank](catalog/crossling-cultural.md#r046) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R045 | [WALS](catalog/crossling-cultural.md#r045) | 跨语言结构与社会文化 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
+| R046 | [Grambank](catalog/crossling-cultural.md#r046) | 跨语言结构与社会文化 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R047 | [D-PLACE](catalog/crossling-cultural.md#r047) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R048 | [PHOIBLE](catalog/crossling-cultural.md#r048) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |
 | R049 | [Intercontinental Dictionary Series（IDS）](catalog/crossling-cultural.md#r049) | 跨语言结构与社会文化 | 有数据发布说明 | 仅核对说明；未读数据文件 |

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.10",
+  "catalog_version": "2.5.11",
   "updated_on": "2026-11-12",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
@@ -2646,10 +2646,11 @@
       "access_mode": "open_data",
       "access_notes": "官网链接版本化公开数据",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
-      "limitations": "特征间覆盖率不同；缺失值不等于该语言没有某特征，地理与谱系非独立性要处理。",
+      "limitations": "特征间覆盖率不同；缺失值不等于该语言没有某特征，地理与谱系非独立性要处理。81A给出主导语序类别，81B记录有两种主导排列的条目。与DiACL核实共用书目的范围见词序出处核查。",
       "source_url": "https://wals.info/download",
       "additional_urls": [
-        "https://wals.info/"
+        "https://wals.info/",
+        "https://github.com/leo11wu/open-language-resources/blob/main/catalog/diacl-word-order-source-check-2026-11-12.md"
       ],
       "tags": [
         "类型学",
@@ -2660,19 +2661,40 @@
       ],
       "related_ids": [
         "R046",
-        "R047"
+        "R047",
+        "R191"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-11-12",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://wals.info/download",
-          "https://wals.info/"
+          "https://wals.info/",
+          "https://github.com/cldf-datasets/wals/releases/tag/v2020.6",
+          "https://wals.info/chapter/81"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "已下载WALS v2020.6固定CLDF文件并匹配Git文件校验值。读取语言、编码、赋值和书目，限定到81A、81B的赋值引文。与DiACL对齐的59个有相关赋值条目中，54个有带引文的赋值，确认6个条目引用相同书目，另有Tajik同著作重印。全库及其他特征的来源仍待按用途检查。",
+        "file_checks": [
+          {
+            "url": "https://raw.githubusercontent.com/cldf-datasets/wals/81298aa26d01fdc11b769bcc7fa87ad9e43d7ccd/cldf/values.csv",
+            "sha256": "2d672f80dbe8cf1839061af0301650bde60c326bbb486835c93ab7304b5b06cd",
+            "checked_on": "2026-11-12",
+            "read_scope": "complete_csv",
+            "file_role": "empirical_or_norm_data",
+            "result": "完整遍历赋值表，筛出81A、81B共1443行。对齐DiACL并核查赋值行所列引文与页码。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/cldf-datasets/wals/81298aa26d01fdc11b769bcc7fa87ad9e43d7ccd/cldf/sources.bib",
+            "sha256": "015c0b4bc01f12ac90cd98ed62746d3551ba5198a9a43d55237896c38cacb8db",
+            "checked_on": "2026-11-12",
+            "read_scope": "complete_text",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取书目并解析81A、81B引用的书目键。作品、版次与页码差异见词序出处核查。"
+          }
+        ]
       },
       "platforms": [
         "project_website"
@@ -2695,10 +2717,11 @@
       "access_mode": "open_data",
       "access_notes": "官网链接仓库和Zenodo公开版本",
       "license_note": "按来源网站和具体数据版本的许可使用；本目录不对上游数据重新授权。",
-      "limitations": "编码体系与WALS不同；不能在未检查定义时直接合并同名变量。",
+      "limitations": "编码体系与WALS不同；不能在未检查定义时直接合并同名变量。GB134判断主句语序能否用于从句，须结合GB131–GB133的实义动词位置定义。与DiACL核实共用书目的范围见词序出处核查。",
       "source_url": "https://grambank.clld.org/",
       "additional_urls": [
-        "https://grambank.clld.org/download"
+        "https://grambank.clld.org/download",
+        "https://github.com/leo11wu/open-language-resources/blob/main/catalog/diacl-word-order-source-check-2026-11-12.md"
       ],
       "tags": [
         "语法",
@@ -2709,19 +2732,32 @@
       ],
       "related_ids": [
         "R045",
-        "R047"
+        "R047",
+        "R191"
       ],
       "verification": {
-        "documentation_checked_on": "2026-10-17",
-        "scope": "resource_description_and_access_documentation",
-        "download_tested": false,
+        "documentation_checked_on": "2026-11-12",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
         "data_files_validated": false,
         "evidence_type": "documentation_reviewed",
         "evidence_urls": [
           "https://grambank.clld.org/",
-          "https://grambank.clld.org/download"
+          "https://grambank.clld.org/download",
+          "https://github.com/grambank/grambank/releases/tag/v1.0.3",
+          "https://grambank.clld.org/parameters/GB134"
         ],
-        "note": "沿用首版已核对的项目说明及访问文档；未批量验收原始文件。"
+        "note": "已读取Grambank v1.0.3归档CLDF语言、代码、赋值和书目，核对GB131–GB134。与DiACL对齐的50个有相关赋值条目中，47个有带引文的明确赋值，确认9个条目引用相同书目，其中7个的DiACL从句栏与GB134引用同一书目。全库及其他特征的来源仍待按用途检查。",
+        "file_checks": [
+          {
+            "url": "https://codeload.github.com/grambank/grambank/zip/refs/tags/v1.0.3",
+            "sha256": "4a31d8a72ae08619f770292209144c7fabde86b5774ca0f22502fa96933d7e21",
+            "checked_on": "2026-11-12",
+            "read_scope": "archive_selected_members",
+            "file_role": "empirical_or_norm_data",
+            "result": "ZIP成员CRC通过。读取CLDF的语言、代码、赋值与书目，筛查GB131–GB134共9688行的值与引文。表格换行归一后与固定提交文件校验值一致。"
+          }
+        ]
       },
       "platforms": [
         "project_website"
@@ -11935,14 +11971,16 @@
       "access_mode": "open_data",
       "access_notes": "Zenodo提供无需注册的固定归档。语法值在Appendix2c，代码本在Appendix2b，语言名录在Appendix1。三份工作簿均已完整读取并匹配官方MD5。",
       "license_note": "Zenodo记录为CC BY 4.0 International。按发布说明引用Gerd Carling主编的《Mouton Atlas of Languages and Cultures》（2019），并注明固定归档DOI 10.5281/zenodo.3817133。",
-      "limitations": "按文本读取位串以保留前导零，分析取左右任一块。99格短横线未获代码本释义，另有300格是明确的Category irrelevant。逐项按代码本区分不适用与语法特征缺失。V2标记动词位置，SOV等标记三成分的排列，比较前应统一所用口径。ISO栏有缺值及重复，跨语言比较需复核变体、历史阶段、谱系和地域。构式频率和依存指标需要逐句语料。Lexibank的同项目资源涉及词汇，语法编码的跨库来源仍需逐项查证。",
+      "limitations": "按文本读取位串以保留前导零，分析取左右任一块。99格短横线未获代码本释义，另有300格是明确的Category irrelevant。逐项按代码本区分不适用与语法特征缺失。V2标记动词位置，SOV等标记三成分的排列，比较前应统一所用口径。ISO栏有缺值及重复，跨语言比较需复核变体、历史阶段、谱系和地域。构式频率和依存指标需要逐句语料。Lexibank的同项目资源涉及词汇，主从句词序已有跨库共用书目记录。固定版语法表缺少逐值引文，2018年引文与其他语法特征的跨库来源仍待核对。",
       "source_url": "https://zenodo.org/records/3817133",
       "additional_urls": [
         "https://doi.org/10.5281/zenodo.3817133",
         "https://lup.lub.lu.se/record/46868643-fd74-4a3b-9e2a-74af08c1099c",
         "https://doi.org/10.1371/journal.pone.0205313",
         "https://diacl.uni-frankfurt.de/",
-        "https://github.com/lexibank/diacl"
+        "https://github.com/lexibank/diacl",
+        "https://github.com/leo11wu/open-language-resources/blob/main/catalog/diacl-word-order-source-check-2026-11-12.md",
+        "https://diacl.uni-frankfurt.de/TypoDataSet/Download/550"
       ],
       "tags": [
         "类型学",
@@ -11960,7 +11998,9 @@
         "代码本"
       ],
       "related_ids": [
-        "R041"
+        "R041",
+        "R045",
+        "R046"
       ],
       "platforms": [
         "zenodo",
@@ -11979,9 +12019,10 @@
           "https://zenodo.org/records/3817133",
           "https://lup.lub.lu.se/record/46868643-fd74-4a3b-9e2a-74af08c1099c",
           "https://doi.org/10.1371/journal.pone.0205313",
-          "https://github.com/lexibank/diacl"
+          "https://github.com/lexibank/diacl",
+          "https://diacl.uni-frankfurt.de/TypoDataSet/Download/550"
         ],
-        "note": "完整读取语言名录、代码本及语法表。语法表左右3,996格逐格一致。148个条目中147个名称与名录直接匹配，Low_German将下划线换成空格后匹配。德语主句0010为V2，从句1000为SOV。144个双列有编码的条目中26个标签不同，其中24个主句为V2。限两列均为单一S/V/O排列的113个条目，差异出现在Cornish与Romani (Sepečides)。原始语法资料和全库其余文件仍待按研究用途核对。详见data/diacl-mouton-file-check-2026-11-12.json。",
+        "note": "完整读取语言名录、代码本及语法表。语法表左右3,996格逐格一致。148个条目中147个名称与名录直接匹配，Low_German将下划线换成空格后匹配。德语主句0010为V2，从句1000为SOV。144个双列有编码的条目中26个标签不同，其中24个主句为V2。限两列均为单一S/V/O排列的113个条目，差异出现在Cornish与Romani (Sepečides)。原始语法资料和全库其余文件仍待按研究用途核对。详见data/diacl-mouton-file-check-2026-11-12.json。本轮将T、Y两列与官网欧亚JSON对齐，291个有值格位串一致。按赋值引文确认与WALS有6个条目、与Grambank有9个条目引用相同书目，另记Tajik重印。克什米尔语从句SOV的记录备注同时注明限定从句V2。引文核查依据为当前在线导出。详见catalog/diacl-word-order-source-check-2026-11-12.md。",
         "file_checks": [
           {
             "url": "https://zenodo.org/api/records/3817133/files/Mouton_Atlas_Appendix1.xlsx/content",
@@ -12006,6 +12047,14 @@
             "read_scope": "complete_xlsx_workbook",
             "file_role": "empirical_or_norm_data",
             "result": "完整读取Blad1。148个语言或阶段条目×27项编码。左右3,996格逐格匹配，核对主从句词序及99个短横线。"
+          },
+          {
+            "url": "https://diacl.uni-frankfurt.de/TypoDataSet/JSON/550",
+            "sha256": "b2f3219947999c955427fe7421648c1cc3ea89cf91af3e1fbdb73078aef44ba3",
+            "checked_on": "2026-11-12",
+            "read_scope": "complete_json",
+            "file_role": "empirical_or_norm_data",
+            "result": "完整解析欧亚数据集JSON。检查Word order的Main clause、Subordinate clause和相应逐值引文。148个固定版条目含147个主句值和144个从句值，全部重建一致。逐条引文为2026-11-12在线版本。"
           }
         ]
       }

@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.11",
-  "updated_on": "2026-11-12",
+  "catalog_version": "2.5.12",
+  "updated_on": "2026-11-13",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 191,
+  "resource_count": 192,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -147,6 +147,11 @@
           "resource_id": "R191",
           "use_for": "在同一条目内比较主从句的词序编码，并查看语言不同历史阶段的记录。两列均为单一S/V/O排列的113个条目中有2个标签不同。",
           "check_before_use": "取一块编码并按代码本解码。V2、单一S/V/O排列和多重顺序分别处理。核对不适用、短横线、语言名录连接和谱系、地域、阶段的依赖关系。"
+        },
+        {
+          "resource_id": "R192",
+          "use_for": "比较双及物构式的接受者格或介词标记与R/T词序编码。两项均有记录且词序未标unclear的共234个构式、137个语言条目，其中26个语言条目同时有格或介词标记和无标记构式。",
+          "check_before_use": "用Construction_ID连接两项赋值。分别处理两序皆可、有主导顺序和严格词序。核对英语和泰语的方向冲突及例句归属，处理语言内重复和谱系、地域。"
         }
       ]
     },
@@ -12055,6 +12060,93 @@
             "read_scope": "complete_json",
             "file_role": "empirical_or_norm_data",
             "result": "完整解析欧亚数据集JSON。检查Word order的Main clause、Subordinate clause和相应逐值引文。148个固定版条目含147个主句值和144个从句值，全部重建一致。逐条引文为2026-11-12在线版本。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R192",
+      "name": "Ditransitive Constructions（双及物构式数据库）",
+      "category": "crossling-cultural",
+      "entry_type": "dataset",
+      "language_scope": "全球425个语言或变体条目。425个条目共有424个Glottocode，Dongolese与Kunuz共享一项代码。406个条目在例句表中有记录",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "依据文献与项目问卷整理的构式及类型学编码。CLDF语言、构式、例句、参数、代码、语言赋值和构式赋值表，附BibTeX与原始表格",
+      "description": "Malchukov与Haspelmath在CrossGram发布的双及物构式资料，区分施事、接受者（R）和转移物（T）。可按构式比较R/T词序、格及介词标记、动词索引和被动、关系化等诊断。固定提交有592个构式、2,071条例句和2,567条构式赋值。",
+      "access_mode": "open_data",
+      "access_notes": "CrossGram可在线浏览，GitHub固定提交与Zenodo v1.0归档均可直接下载。逐表比较显示6张CLDF表一致，固定提交的参数表新增Grammacodes列。",
+      "license_note": "固定提交与Zenodo发布记录均标CC BY 4.0。引用Andrej Malchukov与Martin Haspelmath的Ditransitive Constructions，并注明Zenodo DOI 10.5281/zenodo.13604622及实际使用的版本。",
+      "limitations": "实际使用频率或依存指标需另取逐句语料。246个构式有词序记录，其中6个标为unclear。接受者标记与词序同时有记录且词序未标unclear的共有234个构式、137个语言条目，仍含待复核的编码。区分主导、严格和两序皆可。英语constr14和泰语constr79的词序编码与结构式方向相反。另有3条例句的语言标签与所连构式不同。按Language_ID保留变体，另补谱系与地域，并考虑同一语言内多个构式的依赖。",
+      "source_url": "https://crossgram.clld.org/contributions/malchukovditransitives",
+      "additional_urls": [
+        "https://github.com/cldf-datasets/malchukovditransitives/tree/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+        "https://zenodo.org/records/13604622",
+        "https://www.eva.mpg.de/lingua/tools-at-lingboard/pdf/Malchukov_DitrQuest_3Andrej.pdf",
+        "https://zenodo.org/records/3678526",
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/ditransitives-file-check-2026-11-13.json"
+      ],
+      "tags": [
+        "类型学",
+        "跨语言",
+        "句法",
+        "双及物构式",
+        "配价",
+        "接受者",
+        "词序",
+        "格",
+        "介词",
+        "动词索引",
+        "语法关系",
+        "例句"
+      ],
+      "related_ids": [
+        "R045",
+        "R088",
+        "R184",
+        "R186",
+        "R188"
+      ],
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified",
+      "verification": {
+        "documentation_checked_on": "2026-11-13",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://crossgram.clld.org/contributions/malchukovditransitives",
+          "https://github.com/cldf-datasets/malchukovditransitives/tree/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+          "https://zenodo.org/records/13604622",
+          "https://www.eva.mpg.de/linguistics/past-research-resources/typological-surveys/ditransitive-constructions-in-the-worlds-languages/",
+          "https://www.eva.mpg.de/lingua/tools-at-lingboard/pdf/Malchukov_DitrQuest_3Andrej.pdf",
+          "https://zenodo.org/records/3678526"
+        ],
+        "note": "已核对两个归档的校验值，完整解析7张固定版CLDF表并检查声明的主键、外键、代码及引文键。复核词序覆盖及原始工作簿中的英语、泰语冲突。另定位3条例句、4处引用的语言标签差异，其中Baoulé例句回查到作者文稿例19c。原始语法资料和例句分析仍需按研究范围逐条复核。详见data/ditransitives-file-check-2026-11-13.json。",
+        "file_checks": [
+          {
+            "url": "https://codeload.github.com/cldf-datasets/malchukovditransitives/zip/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+            "sha256": "122a384ea8858afa39983203a24eafea9084014513e339c591565528f3e7e873",
+            "checked_on": "2026-11-13",
+            "read_scope": "archive_selected_members",
+            "file_role": "empirical_or_norm_data",
+            "result": "整包CRC通过，50个文件与固定Git树的校验值一致。完整解析7张CLDF CSV，核对元数据、书目键及3份原始工作簿的指定行。"
+          },
+          {
+            "url": "https://zenodo.org/api/records/13604622/files/cldf-datasets/malchukovditransitives-v1.0.zip/content",
+            "sha256": "674fc4d72cb7eb79516377b6bce08fcf72c3219bca574ade59f0f3cea7583237",
+            "checked_on": "2026-11-13",
+            "read_scope": "archive_selected_members",
+            "file_role": "empirical_or_norm_data",
+            "result": "大小和MD5与Zenodo记录一致，CRC通过。49个文件与v1.0 Git标签的校验值一致。6张CLDF表与后续固定提交相同，参数表只缺后加的Grammacodes列。"
           }
         ]
       }

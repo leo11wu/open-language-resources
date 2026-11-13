@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共18个入口。资料状态与文件验收范围分别记录。
+共19个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -155,7 +155,7 @@
 | --- | --- | --- | --- | --- |
 | 派生资料 | [R189 ATLAs（美洲语言区域类型学数据库）](../catalog/crossling-cultural.md#r189) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
 
-待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r046"></a>
 
@@ -386,7 +386,7 @@ v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R185 eWAVE（世界英语变体电子图谱）](../catalog/spoken-variation.md#r185)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R185 eWAVE（世界英语变体电子图谱）](../catalog/spoken-variation.md#r185)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r186"></a>
 
@@ -422,7 +422,7 @@ v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r187"></a>
 
@@ -507,7 +507,7 @@ v1.2有3,599条词项、483项语言内定义的交替、46,137条词项×交替
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r189"></a>
 
@@ -626,4 +626,41 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
 待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r192"></a>
+
+## Ditransitive Constructions（双及物构式数据库）
+
+**R192** · 数据集 · 有数据发布说明
+
+Malchukov与Haspelmath在CrossGram发布的双及物构式资料，区分施事、接受者（R）和转移物（T）。可按构式比较R/T词序、格及介词标记、动词索引和被动、关系化等诊断。固定提交有592个构式、2,071条例句和2,567条构式赋值。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 全球425个语言或变体条目。425个条目共有424个Glottocode，Dongolese与Kunuz共享一项代码。406个条目在例句表中有记录 |
+| 数据性质 | 依据文献与项目问卷整理的构式及类型学编码。CLDF语言、构式、例句、参数、代码、语言赋值和构式赋值表，附BibTeX与原始表格；混合来源或待细分 |
+| 获取方式 | 公开数据入口：CrossGram可在线浏览，GitHub固定提交与Zenodo v1.0归档均可直接下载。逐表比较显示6张CLDF表一致，固定提交的参数表新增Grammacodes列。 |
+| 许可 | 固定提交与Zenodo发布记录均标CC BY 4.0。引用Andrej Malchukov与Martin Haspelmath的Ditransitive Constructions，并注明Zenodo DOI 10.5281/zenodo.13604622及实际使用的版本。 |
+| 使用边界 | 实际使用频率或依存指标需另取逐句语料。246个构式有词序记录，其中6个标为unclear。接受者标记与词序同时有记录且词序未标unclear的共有234个构式、137个语言条目，仍含待复核的编码。区分主导、严格和两序皆可。英语constr14和泰语constr79的词序编码与结构式方向相反。另有3条例句的语言标签与所连构式不同。按Language_ID保留变体，另补谱系与地域，并考虑同一语言内多个构式的依赖。 |
+| 标签 | 类型学、跨语言、句法、双及物构式、配价、接受者、词序、格、介词、动词索引、语法关系、例句 |
+| 平台 | project_website, github, zenodo |
+| 核对依据 | 作者仓库说明；2026-11-13 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 已核对两个归档的校验值，完整解析7张固定版CLDF表并检查声明的主键、外键、代码及引文键。复核词序覆盖及原始工作簿中的英语、泰语冲突。另定位3条例句、4处引用的语言标签差异，其中Baoulé例句回查到作者文稿例19c。原始语法资料和例句分析仍需按研究范围逐条复核。详见data/ditransitives-file-check-2026-11-13.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://crossgram.clld.org/contributions/malchukovditransitives)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/cldf-datasets/malchukovditransitives/tree/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff)
+- [来源 2](https://zenodo.org/records/13604622)
+- [来源 3](https://www.eva.mpg.de/lingua/tools-at-lingboard/pdf/Malchukov_DitrQuest_3Andrej.pdf)
+- [来源 4](https://zenodo.org/records/3678526)
+- [来源 5](https://github.com/leo11wu/open-language-resources/blob/main/data/ditransitives-file-check-2026-11-13.json)
+- [来源 6](https://www.eva.mpg.de/linguistics/past-research-resources/typological-surveys/ditransitive-constructions-in-the-worlds-languages/)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R088 英荷双及物构式抽样数据](../catalog/syntax.md#r088)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

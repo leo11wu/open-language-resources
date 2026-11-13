@@ -801,6 +801,8 @@ Perkins与Lidz的PNAS研究数据项目明确提供匿名化数据，研究婴�
 - [来源 1](https://osf.io/download/wvb5z/)
 - [来源 2](https://osf.io/download/83jdn/)
 
+待核实关联：[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
 <a id="r089"></a>
 
 ## 不同一致依存的预测加工

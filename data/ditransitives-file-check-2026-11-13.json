@@ -1,0 +1,470 @@
+{
+  "resource_id": "R192",
+  "resource_name": "Ditransitive Constructions（双及物构式数据库）",
+  "checked_on": "2026-11-13",
+  "release": {
+    "project": "https://crossgram.clld.org/contributions/malchukovditransitives",
+    "creators": [
+      "Andrej Malchukov",
+      "Martin Haspelmath"
+    ],
+    "license": "CC BY 4.0",
+    "fixed_github": {
+      "commit": "7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+      "tree_url": "https://github.com/cldf-datasets/malchukovditransitives/tree/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+      "archive_url": "https://codeload.github.com/cldf-datasets/malchukovditransitives/zip/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+      "sha256": "122a384ea8858afa39983203a24eafea9084014513e339c591565528f3e7e873",
+      "verified_member_count": 50,
+      "zip_crc": "passed"
+    },
+    "zenodo": {
+      "version": "v1.0",
+      "date": "2024-08-30",
+      "doi": "10.5281/zenodo.13604622",
+      "url": "https://zenodo.org/records/13604622",
+      "download_url": "https://zenodo.org/api/records/13604622/files/cldf-datasets/malchukovditransitives-v1.0.zip/content",
+      "sha256": "674fc4d72cb7eb79516377b6bce08fcf72c3219bca574ade59f0f3cea7583237",
+      "official_md5": "6e9e0e3a228b6e564313855200237195",
+      "git_tag_commit": "1cafdfaf839156ad04408a98d03c637b20554ab4",
+      "verified_member_count": 49,
+      "zip_crc": "passed"
+    },
+    "comparison": {
+      "identical_csv_tables": [
+        "cldf/codes.csv",
+        "cldf/constructions.csv",
+        "cldf/cvalues.csv",
+        "cldf/examples.csv",
+        "cldf/languages.csv",
+        "cldf/values.csv"
+      ],
+      "parameters_difference": "The pin adds Grammacodes. All other cells in the parameter table agree.",
+      "other_changed_paths": [
+        "cldf/cldf-metadata.json",
+        "cldf/requirements.txt",
+        "cldfbench_ditransitive.py"
+      ],
+      "pin_only_paths": [
+        "etc/topics.csv"
+      ]
+    }
+  },
+  "files_read_or_inspected": {
+    "LICENSE": {
+      "bytes": 18652,
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "git_blob_sha": "2fb94156cd39cad415432aeb1ac5b38d5cb53e1e",
+      "git_blob_comparison": "bytes"
+    },
+    "cldf/cldf-metadata.json": {
+      "bytes": 26188,
+      "sha256": "be4d7450e19ad5d962456ce220d15b5bb4f51bf1cdefe328b19a88aaa61aa8e6",
+      "git_blob_sha": "ee85faa9acabdec82dc453f164c3943e953f8448",
+      "git_blob_comparison": "bytes"
+    },
+    "cldf/codes.csv": {
+      "bytes": 3631,
+      "sha256": "ccc8d792e0a0449dc980ad083948221eba45146815503746ded3aaca421ac670",
+      "git_blob_sha": "f76b6be4b45c11f6603e44ee566f37bc3023ebae",
+      "git_blob_comparison": "lf"
+    },
+    "cldf/constructions.csv": {
+      "bytes": 150498,
+      "sha256": "dd7387a645bc8f374002bfc6646c3b62208e0524ce80199aabc5a2a9603ac85a",
+      "git_blob_sha": "6678ac30af6f1c16dd2454decbb643c309c6c02b",
+      "git_blob_comparison": "lf"
+    },
+    "cldf/cvalues.csv": {
+      "bytes": 393469,
+      "sha256": "4bdf2a44a25e1d9594054ab08d0a51dc5c741a2e83cfb181b36139a091c3ed53",
+      "git_blob_sha": "e76dea1948b92ec26049c5126d5329b1086dae07",
+      "git_blob_comparison": "lf"
+    },
+    "cldf/examples.csv": {
+      "bytes": 399962,
+      "sha256": "1ede526d9762622316163ae4e1d627a2e98b92f6b6e6261d795277d270c11fed",
+      "git_blob_sha": "f0838e66599b6e68fda4091629de17a8deff3f91",
+      "git_blob_comparison": "lf"
+    },
+    "cldf/languages.csv": {
+      "bytes": 14109,
+      "sha256": "9494ce4ae6e9d974250e2408b94c78b9e7c57dfd6463d0c16dfee697f153df45",
+      "git_blob_sha": "ebe6e5cfd3c8a89db9163287f30ae476d81cffe6",
+      "git_blob_comparison": "lf"
+    },
+    "cldf/parameters.csv": {
+      "bytes": 1282,
+      "sha256": "e784d2c40be3a368c1d402695493212cca862d70349f5a29ead349174ea73b5e",
+      "git_blob_sha": "fe01a138e9f864edad5331c97defdd13aa6ecce5",
+      "git_blob_comparison": "lf"
+    },
+    "cldf/sources.bib": {
+      "bytes": 112915,
+      "sha256": "d38984e3abe4ad215669e1e1ddf0934d9b59597a9a023830d1a9067c31ccba7d",
+      "git_blob_sha": "85662cba5e57a448ed03f731347edc77831a4530",
+      "git_blob_comparison": "bytes"
+    },
+    "cldf/values.csv": {
+      "bytes": 83037,
+      "sha256": "4fcde381bbec51c98bbf60ff72598d739fd91da3d5cb8aea1b74db9d57966a69",
+      "git_blob_sha": "a96b9d6531899224b2f3c5c86ec0442dbfb0d477",
+      "git_blob_comparison": "lf"
+    },
+    "metadata.json": {
+      "bytes": 235,
+      "sha256": "28a83e8f0a63937dbd62fa6d45711daf34f7879669db553eff7f42f883cf9f91",
+      "git_blob_sha": "e8ddae6a63f5b4ad6bd48b762b7f91ba66eecbb8",
+      "git_blob_comparison": "bytes"
+    },
+    "raw/Construction_data.xlsx": {
+      "bytes": 373710,
+      "sha256": "ce3e96aeee64bd9e00f185ab6daad2d7d2b12590e224c863130cce48a5bc8c8f",
+      "git_blob_sha": "0cbcef8a5840c36616a6e2c11aadf5ac571c2a7b",
+      "git_blob_comparison": "bytes"
+    },
+    "raw/Constructions.xlsx": {
+      "bytes": 67592,
+      "sha256": "4bc3ce7050d3abff6eea9c1e93b2c904b9565ba5b30b8dad9afad7fb5cd3ed4e",
+      "git_blob_sha": "58c3e1de28757b1d8b6eb193207f8fbf6661bf73",
+      "git_blob_comparison": "bytes"
+    },
+    "raw/Examples.xlsx": {
+      "bytes": 221760,
+      "sha256": "5fc4a28f8b5c8fba7a14886d029dd3a598ff84199fba6d037807b65e54aac8b2",
+      "git_blob_sha": "2fb59962be6281ada78be44a781c390302b30a27",
+      "git_blob_comparison": "bytes"
+    },
+    "raw/csv/Construction_data.csv": {
+      "bytes": 739557,
+      "sha256": "5e84f72d5a24dc50831c00c84ea0d829ea26244b578cff19b0ac86f13c692d36",
+      "git_blob_sha": "be5e5e0e9ee019511013b97c1ba5c845897624f2",
+      "git_blob_comparison": "bytes"
+    },
+    "raw/csv/Constructions.csv": {
+      "bytes": 141073,
+      "sha256": "6a4fb64c5a1a13f7f36eac76b630fade90ca24320789f975954d9fcc56ca71d0",
+      "git_blob_sha": "ecf354d390420ba949361a6c7dcffbcc5f26da2d",
+      "git_blob_comparison": "bytes"
+    },
+    "raw/csv/Examples.csv": {
+      "bytes": 356609,
+      "sha256": "8923c3be477a8b39fde9708e4708120fb8856f18c55c656e91383861cb404a71",
+      "git_blob_sha": "e90e92100811e39e9311cd763d72f305702f6435",
+      "git_blob_comparison": "bytes"
+    }
+  },
+  "table_validation": {
+    "rows": {
+      "values.csv": 425,
+      "languages.csv": 425,
+      "parameters.csv": 14,
+      "codes.csv": 93,
+      "examples.csv": 2071,
+      "constructions.csv": 592,
+      "cvalues.csv": 2567
+    },
+    "declared_foreign_key_links": {
+      "values.csv.Language_ID": 425,
+      "values.csv.Parameter_ID": 425,
+      "values.csv.Code_ID": 425,
+      "values.csv.Example_IDs": 0,
+      "codes.csv.Parameter_ID": 93,
+      "examples.csv.Language_ID": 2071,
+      "examples.csv.Meta_Language_ID": 0,
+      "constructions.csv.Language_ID": 592,
+      "constructions.csv.Example_IDs": 967,
+      "cvalues.csv.Parameter_ID": 2567,
+      "cvalues.csv.Code_ID": 2567,
+      "cvalues.csv.Example_IDs": 625,
+      "cvalues.csv.Construction_ID": 2567
+    },
+    "duplicate_primary_keys": 0,
+    "unresolved_declared_foreign_keys": 0,
+    "duplicate_unit_parameter_pairs": 0,
+    "value_code_disagreements": 0,
+    "bibliographic_records": 490,
+    "rows_with_source": {
+      "values.csv": 2,
+      "cvalues.csv": 873,
+      "constructions.csv": 579,
+      "examples.csv": 1974
+    },
+    "unresolved_source_keys": 0
+  },
+  "coverage": {
+    "languages": {
+      "language_entries": 425,
+      "unique_glottocodes": 424,
+      "repeated_glottocode_groups": {
+        "kenu1236": [
+          {
+            "id": "kenu1236",
+            "name": "Nubian (Dongolese)"
+          },
+          {
+            "id": "kenu1236-2",
+            "name": "Nubian (Kunuz)"
+          }
+        ]
+      },
+      "with_constructions": 425,
+      "with_examples": 406,
+      "populated_metadata_columns": {
+        "Glottocode": 425,
+        "ISO639P3code": 0,
+        "Macroarea": 0,
+        "Latitude": 0,
+        "Longitude": 0,
+        "WALS_Code": 0
+      }
+    },
+    "construction_values_by_parameter": {
+      "cparam1": {
+        "name": "Word order",
+        "constructions": 246
+      },
+      "cparam10": {
+        "name": "Reciprocalization",
+        "constructions": 36
+      },
+      "cparam11": {
+        "name": "Relativization",
+        "constructions": 142
+      },
+      "cparam12": {
+        "name": "Constituent questions",
+        "constructions": 108
+      },
+      "cparam13": {
+        "name": "Incorporation",
+        "constructions": 25
+      },
+      "cparam2": {
+        "name": "Flagging of recipient",
+        "constructions": 312
+      },
+      "cparam3": {
+        "name": "Flagging of theme",
+        "constructions": 304
+      },
+      "cparam4": {
+        "name": "Indexing of recipient",
+        "constructions": 296
+      },
+      "cparam5": {
+        "name": "Indexing of theme",
+        "constructions": 296
+      },
+      "cparam6": {
+        "name": "Alignment of flagging",
+        "constructions": 295
+      },
+      "cparam7": {
+        "name": "Alignment of indexing",
+        "constructions": 276
+      },
+      "cparam8": {
+        "name": "Passivization",
+        "constructions": 172
+      },
+      "cparam9": {
+        "name": "Reflexivization",
+        "constructions": 59
+      }
+    },
+    "word_order": {
+      "field": "cparam1",
+      "labels": {
+        "dominant R > T": 73,
+        "dominant T > R": 33,
+        "either order": 59,
+        "strict R > T": 45,
+        "strict T > R": 30,
+        "unclear": 6
+      },
+      "constructions_with_record": 246,
+      "constructions_with_clear_label": 240,
+      "constructions_without_record": 346,
+      "language_entries_with_order_record": 144,
+      "language_entries_with_clear_order_label": 140,
+      "constructions_with_direct_order_example_links": 30
+    },
+    "recipient_marking_and_word_order": {
+      "fields": [
+        "cparam1",
+        "cparam2"
+      ],
+      "constructions_with_both_records": 239,
+      "language_entries_with_both_records": 141,
+      "joint_records_with_clear_order_label": 234,
+      "language_entries_with_clear_joint_records": 137,
+      "marking_labels_in_clear_joint_records": {
+        "enclitic case": 4,
+        "no flagging": 102,
+        "possessive index": 1,
+        "postposition": 34,
+        "prefixal case": 2,
+        "preposition": 32,
+        "serial verb": 3,
+        "suffixal case": 56
+      },
+      "language_entries_with_both_case_or_adposition_and_unflagged_constructions": 26,
+      "interpretation": "Counts retain published labels, including flagged records. These are coverage counts at the construction level. The labels either order, dominant, strict and unclear have distinct meanings."
+    }
+  },
+  "word_order_issues": [
+    {
+      "language": "English",
+      "construction_id": "constr14",
+      "example_id": "ex147",
+      "construction_page": "https://crossgram.clld.org/units/malchukovditransitives-constr14",
+      "schema": "[A V T to+R] –",
+      "word_order_record": {
+        "ID": "constr14-cparam1",
+        "Construction_ID": "constr14",
+        "Parameter_ID": "cparam1",
+        "Code_ID": "cparam1-c1",
+        "Example_IDs": "",
+        "Source": "",
+        "Value": "dominant R > T",
+        "Comment": ""
+      },
+      "example_text": "Kim gave a book to Pat.",
+      "example_source_field": "",
+      "raw_construction_id": 16,
+      "raw_parameter_id": 4,
+      "raw_example_id": 1490,
+      "raw_schema_workbook_row": 24,
+      "raw_example_workbook_row": 148,
+      "raw_order_workbook_row": 371,
+      "raw_order_value": "dominant R > T",
+      "finding": "The schema and linked example show T before R. The reversed directional label is already in the input workbook. No source is listed on the construction, word-order coding or example. The project questionnaire and overview both illustrate T before R in the comparable English construction. They do not establish a dominance or strictness code for this row.",
+      "reference_urls": [
+        "https://www.eva.mpg.de/lingua/tools-at-lingboard/pdf/Malchukov_DitrQuest_3Andrej.pdf",
+        "https://zenodo.org/records/3678526",
+        "https://valpal.info/values/stan1293-give-1"
+      ]
+    },
+    {
+      "language": "Thai",
+      "construction_id": "constr79",
+      "construction_page": "https://crossgram.clld.org/units/malchukovditransitives-constr79",
+      "schema": "[A V T R] –",
+      "word_order_record": {
+        "ID": "constr79-cparam1",
+        "Construction_ID": "constr79",
+        "Parameter_ID": "cparam1",
+        "Code_ID": "cparam1-c4",
+        "Example_IDs": "",
+        "Source": "",
+        "Value": "strict R > T",
+        "Comment": "Word order: A V T R is fixed; cf. the ungrammatical (25) * he distribute children cookies"
+      },
+      "raw_construction_id": 82,
+      "raw_parameter_id": 4,
+      "raw_order_workbook_row": 428,
+      "raw_order_value": "strict R > T",
+      "finding": "The construction schema and the coding comment both state T before R. The input workbook and CLDF label state strict R before T. The cited Wilawan 2000 chapter was not checked in full."
+    }
+  ],
+  "example_language_id_disagreements": [
+    {
+      "table": "constructions.csv",
+      "row_id": "constr31",
+      "link_language_id": "sout2750",
+      "link_language": "Yukaghir (Kolyma)",
+      "example_id": "ex164",
+      "example_language_id": "kumi1248",
+      "example_language": "Tiipay (Jamul)",
+      "example_source_field": "miller-2001[354]"
+    },
+    {
+      "table": "constructions.csv",
+      "row_id": "constr31",
+      "link_language_id": "sout2750",
+      "link_language": "Yukaghir (Kolyma)",
+      "example_id": "ex371",
+      "example_language_id": "kumi1248",
+      "example_language": "Tiipay (Jamul)",
+      "example_source_field": "miller-2001[353]"
+    },
+    {
+      "table": "constructions.csv",
+      "row_id": "constr270",
+      "link_language_id": "baou1238",
+      "link_language": "Baule",
+      "example_id": "ex1375",
+      "example_language_id": "iton1250",
+      "example_language": "Itonama",
+      "example_source_field": "ch001creisselskouadiotv[(ex. 19c)]"
+    },
+    {
+      "table": "cvalues.csv",
+      "row_id": "constr270-cparam1",
+      "link_language_id": "baou1238",
+      "link_language": "Baule",
+      "example_id": "ex1375",
+      "example_language_id": "iton1250",
+      "example_language": "Itonama",
+      "example_source_field": "ch001creisselskouadiotv[(ex. 19c)]"
+    }
+  ],
+  "example_source_review": [
+    {
+      "example_id": "ex1375",
+      "raw_example_id": 6815,
+      "raw_workbook_row": 1376,
+      "raw_language_id": 929,
+      "recorded_language": "Itonama",
+      "supported_language": "Baule",
+      "locator": "Creissels & Kouadio (2010), example (19c), author pre-final version",
+      "source_url": "https://www.deniscreissels.fr/public/Creissels_Kouadio-ditr.constr.Baule.pdf"
+    },
+    {
+      "example_ids": [
+        "ex164",
+        "ex371"
+      ],
+      "raw_example_ids": [
+        1507,
+        1735
+      ],
+      "raw_workbook_rows": [
+        165,
+        372
+      ],
+      "raw_language_id": 2225,
+      "recorded_language": "Tiipay (Jamul)",
+      "linked_construction_language": "Yukaghir (Kolyma)",
+      "finding": "The database cites Miller 2001, a Jamul Tiipay grammar, on these examples. Malchukov reproduces ex164 as Kolyma Yukaghir with a citation to Maslova (2003: 354). The original Maslova pages for the two rows were not checked.",
+      "source_url": "https://journal.fi/store/article/download/179228/121110"
+    }
+  ],
+  "related_catalog_resources": [
+    {
+      "id": "R045",
+      "scope": "WALS 105A encodes a language-level alignment for ‘give’.",
+      "url": "https://wals.info/chapter/105"
+    },
+    {
+      "id": "R184",
+      "scope": "APiCS 60 and 61 cover alignment and order in contact languages with separate coding units.",
+      "url": "https://apics-online.info/parameters/61"
+    },
+    {
+      "id": "R186",
+      "scope": "BivalTyp covers two-argument predicates.",
+      "url": "https://bivaltyp.info/project/description/"
+    },
+    {
+      "id": "R188",
+      "scope": "ValPaL’s English give illustrates both constructions with different examples and a separate verb record.",
+      "url": "https://valpal.info/values/stan1293-give-1"
+    },
+    {
+      "id": "R088",
+      "scope": "Corpus sampling of English and Dutch constructions supplies usage observations."
+    }
+  ],
+  "scope": "All seven fixed CLDF CSVs, their declared keys, citation identifiers and selected raw workbook rows were checked. The examples and their grammatical analyses were not checked against every original description. Related datasets are research pointers. Overlap of source material and row-level linkage have not been established."
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-12",
-  "catalog_version": "2.5.11",
+  "generated_on": "2026-11-13",
+  "catalog_version": "2.5.12",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 191,
+    "main_resource_count": 192,
     "main_by_check_state": {
       "documentation_only": 97,
       "file_preview": 2,
-      "selected_file_checked": 79,
+      "selected_file_checked": 80,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 86,
+    "main_with_recorded_file_reads": 87,
     "main_without_recorded_file_reads": 105,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6477,6 +6477,45 @@
           "read_scope": "complete_json",
           "file_role": "empirical_or_norm_data",
           "result": "完整解析欧亚数据集JSON。检查Word order的Main clause、Subordinate clause和相应逐值引文。148个固定版条目含147个主句值和144个从句值，全部重建一致。逐条引文为2026-11-12在线版本。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R192",
+      "name": "Ditransitive Constructions（双及物构式数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://crossgram.clld.org/contributions/malchukovditransitives",
+      "platforms": [
+        "project_website",
+        "github",
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-13",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://codeload.github.com/cldf-datasets/malchukovditransitives/zip/7217c2a36935ef0098f7ab2d2dc9cb28377ad8ff",
+          "sha256": "122a384ea8858afa39983203a24eafea9084014513e339c591565528f3e7e873",
+          "checked_on": "2026-11-13",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "整包CRC通过，50个文件与固定Git树的校验值一致。完整解析7张CLDF CSV，核对元数据、书目键及3份原始工作簿的指定行。"
+        },
+        {
+          "url": "https://zenodo.org/api/records/13604622/files/cldf-datasets/malchukovditransitives-v1.0.zip/content",
+          "sha256": "674fc4d72cb7eb79516377b6bce08fcf72c3219bca574ade59f0f3cea7583237",
+          "checked_on": "2026-11-13",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "大小和MD5与Zenodo记录一致，CRC通过。49个文件与v1.0 Git标签的校验值一致。6张CLDF表与后续固定提交相同，参数表只缺后加的Grammacodes列。"
         }
       ],
       "osf_audit": null,

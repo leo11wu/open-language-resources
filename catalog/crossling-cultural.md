@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共19个入口。资料状态与文件验收范围分别记录。
+共20个入口。资料状态与文件验收范围分别记录。
 
 <a id="r041"></a>
 
@@ -155,7 +155,7 @@
 | --- | --- | --- | --- | --- |
 | 派生资料 | [R189 ATLAs（美洲语言区域类型学数据库）](../catalog/crossling-cultural.md#r189) | R189 → R045 | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 | 说明核对，2026-11-10；固定版词序说明写明从WALS第81、86、87章提取部分值。说明对第86、87章的分配与WALS章名有出入，来源关系按模块记录，具体取值的来源仍需逐项核对。 [来源1](https://github.com/davidainman/atlas-data/blob/67012015ca57c58ddd45f63c271f595c49fc5f2c/featuresets/WO.md#L113) [来源2](https://atlas.evolvinglanguage.ch/contributions/WO) [来源3](https://wals.info/chapter/81) [来源4](https://wals.info/chapter/86) [来源5](https://wals.info/chapter/87) |
 
-待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r046"></a>
 
@@ -190,7 +190,7 @@
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R047 D-PLACE](../catalog/crossling-cultural.md#r047)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r047"></a>
 
@@ -422,7 +422,7 @@ v2013.1版整合130项主体结构特征，涉及词序、名词短语、时体�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R183 AUTOTYP（语法、形态与音系类型学数据库）](../catalog/crossling-cultural.md#r183)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r187"></a>
 
@@ -625,7 +625,7 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r192"></a>
 
@@ -662,5 +662,41 @@ Malchukov与Haspelmath在CrossGram发布的双及物构式资料，区分施事�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R088 英荷双及物构式抽样数据](../catalog/syntax.md#r088)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R088 英荷双及物构式抽样数据](../catalog/syntax.md#r088)、[R184 APiCS Online（洋泾浜语与克里奥尔语结构图谱）](../catalog/crossling-cultural.md#r184)、[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)、[R188 ValPaL（配价模式数据库）](../catalog/crossling-cultural.md#r188)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r193"></a>
+
+## Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）
+
+**R193** · 数据集 · 有数据发布说明
+
+Sommer与Levshina整理及物句中施事型论元A和受事型论元P的差异性与可选标记。记录显性标记的有无、形式和条件，包括有生性、定指性、人称、词序及TAM。区分由该论元自身属性决定的局部标记和涉及另一论元属性的全局标记。v1.0.0含24个变量、683条主表记录、220条标记用法和96条例句。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 27个语言或变体条目，涵盖6个宏区。包括韩语、波斯语、拉帕努伊语和Sheko。27个Glottocode各在语言表出现一次 |
+| 数据性质 | 根据语法描写等文献整理的类型学分类、标记形式与适用条件，附逐词释义、翻译和出处。CLDF CSV、BibTeX与原始制表符文本；混合来源或待细分 |
+| 获取方式 | 公开数据入口：Zenodo v1.0.0压缩包无需注册，可直接下载。含6张CLDF表、代码本、书目和原始文本表。归档匹配官方MD5及Git标签所指提交。 |
+| 许可 | Zenodo与CLDF元数据均标CC BY 4.0。引用Noëlle Sommer与Natalia Levshina（2021），并注明v1.0.0及DOI 10.5281/zenodo.4896007。 |
+| 使用边界 | 683行包含600条语言×论元特征赋值和83条标记形式。其中205条赋值为NotApplicable，另有6组多值键。Marking_Probability为代码本定义的分类。例如50%可表示可选或无明确信息。缺少逐条观察分母和代表性语料，无法从这些标签估算总体标记率或依存距离。用usages.csv保留同一例句与多个标记的连接。分析前核查局部与全局条件、变体、谱系和地域。 |
+| 标签 | 类型学、跨语言、句法、差异标记、可选标记、论元标记、格、有生性、定指性、词序、例句 |
+| 平台 | zenodo, github |
+| 核对依据 | 作者仓库说明；2026-11-14 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 完整解析6张CLDF表及4张原始文本表。核对主外键、代码、引文、例句语言和词与释义列长度。核实19条例句在用法表连到多个标记，主表反向索引各只保留一个。复核拉帕努伊语与波斯语的选定原文。全体例句解释及原始语法描写待按研究范围回查。详见data/differential-optional-marking-file-check-2026-11-14.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://zenodo.org/records/4896007)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/cldf-datasets/levshinadifferentialmarking/tree/7e3076b24dcf9853ed708b20a77ee804c29890f4)
+- [来源 2](https://github.com/cldf-datasets/levshinadifferentialmarking/blob/7e3076b24dcf9853ed708b20a77ee804c29890f4/raw/Legend.txt)
+- [来源 3](https://www.langsci-press.org/LangSci-Press/catalog/book/124)
+- [来源 4](https://home.uni-leipzig.de/muellerg/006-1006/Aissen03.pdf)
+- [来源 5](https://github.com/leo11wu/open-language-resources/blob/main/data/differential-optional-marking-file-check-2026-11-14.json)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R186 BivalTyp（双价谓词及其论元编码数据库）](../catalog/crossling-cultural.md#r186)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

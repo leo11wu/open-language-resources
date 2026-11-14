@@ -1,0 +1,540 @@
+{
+  "resource_id": "R193",
+  "resource_name": "Cross-linguistic differential and optional marking database",
+  "checked_on": "2026-11-14",
+  "release": {
+    "record_url": "https://zenodo.org/records/4896007",
+    "doi": "10.5281/zenodo.4896007",
+    "version": "v1.0.0",
+    "publication_date": "2021-06-03",
+    "title": "Cross-linguistic differential and optional marking database",
+    "creators": [
+      "Noëlle Sommer",
+      "Natalia Levshina"
+    ],
+    "license": "CC BY 4.0",
+    "zip_url": "https://zenodo.org/api/records/4896007/files/cldf-datasets/levshinadifferentialmarking-v1.0.0.zip/content",
+    "zip_bytes": 70013,
+    "official_md5": "f5472055eeeee037eff939206ec966ba",
+    "zip_sha256": "cecddd6206fb12a4f681a94d48a3626b1f490e0901a1f8f0bd19f6183ad52605",
+    "zip_crc": "passed",
+    "git_tag_object": "f86ecca049f47bb2aff9f8676da1deba35632478",
+    "git_commit": "7e3076b24dcf9853ed708b20a77ee804c29890f4",
+    "git_url": "https://github.com/cldf-datasets/levshinadifferentialmarking/tree/7e3076b24dcf9853ed708b20a77ee804c29890f4",
+    "verified_zip_members": 32,
+    "member_comparison_modes": {
+      "exact_bytes": 26,
+      "CRLF_normalized_to_LF": 6
+    }
+  },
+  "files_read": {
+    "LICENSE": {
+      "bytes": 18652,
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "git_blob_sha": "2fb94156cd39cad415432aeb1ac5b38d5cb53e1e",
+      "git_comparison": "exact_bytes"
+    },
+    "README.md": {
+      "bytes": 1094,
+      "sha256": "067302c600052f6cce6108c197deddd7546b810f9529436a6717afa65bd8022f",
+      "git_blob_sha": "3a0f99930f139aad060914650692ace4cece640a",
+      "git_comparison": "exact_bytes"
+    },
+    "cldf/StructureDataset-metadata.json": {
+      "bytes": 21870,
+      "sha256": "e8dce5473888d686066f77e963c00718e9854c8ad19306c799840930e662091d",
+      "git_blob_sha": "9e9bdf708044c0d16c5282ffbabe25df21bce395",
+      "git_comparison": "exact_bytes"
+    },
+    "cldf/codes.csv": {
+      "bytes": 3784,
+      "sha256": "b9c4b592487e6e7d21cf33fbb858315a20f08f1c7575b46449511f7b6a96a435",
+      "git_blob_sha": "3b242985ba75ba9baff7b9648fb420a782f1f19c",
+      "git_comparison": "CRLF_normalized_to_LF"
+    },
+    "cldf/examples.csv": {
+      "bytes": 23718,
+      "sha256": "296222c80801804a6adcc9cbb3421f858645710546df197e4a3bbb85b4e1dae1",
+      "git_blob_sha": "5e85aff17de5112674629ab7095e51dee4028c16",
+      "git_comparison": "CRLF_normalized_to_LF"
+    },
+    "cldf/languages.csv": {
+      "bytes": 1475,
+      "sha256": "2264b5c6b98c08f4698fdefd75750c0b3ffba381c4b97ae9e7810193a9d0fcfa",
+      "git_blob_sha": "f160e82d0147a03cf80a8057bf924eeef43ce5d9",
+      "git_comparison": "CRLF_normalized_to_LF"
+    },
+    "cldf/parameters.csv": {
+      "bytes": 10066,
+      "sha256": "057a438365796e11e5df12adb75db09c0c4e6db6d24e78fe9aed6d8d2f11206a",
+      "git_blob_sha": "9ef4bd0c63cb310e4cc81018fab10c8ed8c3e46b",
+      "git_comparison": "CRLF_normalized_to_LF"
+    },
+    "cldf/sources.bib": {
+      "bytes": 6389,
+      "sha256": "8119c60976a2c42d779a0ce6a4d431ede6d1a52f935322c5435448bd950b5daa",
+      "git_blob_sha": "b2e02e152297daec548ee080923cb7aa31716faa",
+      "git_comparison": "exact_bytes"
+    },
+    "cldf/usages.csv": {
+      "bytes": 11569,
+      "sha256": "68097caf8dfd60a645aa4f94cc2d472cfab08612ff029ce0a1b88e6add46ec5f",
+      "git_blob_sha": "4136c6b2cca4e422629c5a1210f4b478f1ee3a09",
+      "git_comparison": "CRLF_normalized_to_LF"
+    },
+    "cldf/values.csv": {
+      "bytes": 49265,
+      "sha256": "4406525c25bb66e32235a3fb4d977f4aa5d3ed4e008c90166e36b91ff092370c",
+      "git_blob_sha": "1531294da5dde1732a8580d86e0aaab34c619c20",
+      "git_comparison": "CRLF_normalized_to_LF"
+    },
+    "cldfbench_levshinadifferentialmarking.py": {
+      "bytes": 10935,
+      "sha256": "e96db961bff831517e6fb335c962a91d0e05ea70ce4fb90a4ca95a4ecaab7a0a",
+      "git_blob_sha": "9835678982446ba7a028e90ea9079503052c18fa",
+      "git_comparison": "exact_bytes"
+    },
+    "metadata.json": {
+      "bytes": 557,
+      "sha256": "51e9b0f3e82ef264ff6e2c040fed9e4593fa6021dd83c6abd7c585d680db102b",
+      "git_blob_sha": "8257e331891ba2d52af24443901639359dd1266f",
+      "git_comparison": "exact_bytes"
+    },
+    "raw/Examples.txt": {
+      "bytes": 18378,
+      "sha256": "f65a12f0558d4613324882c889e12c32c9d3eb2cdab8439e8eed90da583fb3f0",
+      "git_blob_sha": "3361754c213b87608f2678c2d89090c3c07a8228",
+      "git_comparison": "exact_bytes"
+    },
+    "raw/Languages.txt": {
+      "bytes": 6157,
+      "sha256": "ef2fa0436f43ee8ffbd633455fb12ebce74a2bc29b117ef4a324fecf2d53a405",
+      "git_blob_sha": "09775b6aca45239aaec299dfd43f97f424d591f9",
+      "git_comparison": "exact_bytes"
+    },
+    "raw/Legend.txt": {
+      "bytes": 6418,
+      "sha256": "9c8a4631ad487bf7b279544527a4356a624200f565bd77dc0145d2dbfecb09d7",
+      "git_blob_sha": "0f0b5ce6026b4620b06699e96d89799ade08f314",
+      "git_comparison": "exact_bytes"
+    },
+    "raw/Markers.txt": {
+      "bytes": 4749,
+      "sha256": "f6bf23b9cbba246ac9496655c39e0a7a9f1acbbfaacf1d4f85c996022aae16b4",
+      "git_blob_sha": "5afd80ed9b8732f85b427e7adc674e4ba23f22ff",
+      "git_comparison": "exact_bytes"
+    },
+    "raw/Usages.txt": {
+      "bytes": 13122,
+      "sha256": "ccf008fb01f7f6c5b25a490357980b30920a52fefc18c2320bdc05136db1b4db",
+      "git_blob_sha": "96b25960677e7b83c733ebd126dff2d794ab1732",
+      "git_comparison": "exact_bytes"
+    }
+  },
+  "table_checks": {
+    "rows": {
+      "values.csv": 683,
+      "languages.csv": 27,
+      "examples.csv": 96,
+      "parameters.csv": 24,
+      "codes.csv": 58,
+      "usages.csv": 220
+    },
+    "declared_foreign_key_links": {
+      "values.csv.Language_ID": 683,
+      "values.csv.Parameter_ID": 683,
+      "values.csv.Examples": 96,
+      "values.csv.Code_ID": 395,
+      "examples.csv.Language_ID": 96,
+      "examples.csv.Meta_Language_ID": 0,
+      "codes.csv.Parameter_ID": 58,
+      "usages.csv.Examples": 128,
+      "usages.csv.Marker_ID": 220
+    },
+    "duplicate_primary_keys": 0,
+    "unresolved_nonempty_declared_foreign_keys": 0,
+    "value_code_disagreements": 0,
+    "citation_keys": 28,
+    "unresolved_citation_keys": 0,
+    "examples_with_citations": 96,
+    "example_language_disagreements": 0,
+    "example_word_gloss_slot_count_disagreements": 0
+  },
+  "source_comparison": {
+    "source_table_rows": {
+      "Languages.txt": 54,
+      "Markers.txt": 83,
+      "Usages.txt": 220,
+      "Examples.txt": 96
+    },
+    "source_to_cldf": "All source language classifications, marker forms, usage conditions, example links and the text/gloss/translation/citations of all examples were reconciled with the CLDF tables.",
+    "source_marker_id_normalizations": {
+      "grj_01": "gjr_01",
+      "grj_02": "gjr_02"
+    },
+    "value_units": {
+      "language_role_feature_rows": 600,
+      "distinct_language_role_feature_keys": 594,
+      "NotApplicable_rows": 205,
+      "multivalued_keys": [
+        {
+          "language_id": "cng",
+          "parameter_id": "A_Split_or_Fluid",
+          "labels": [
+            "fluid",
+            "split"
+          ]
+        },
+        {
+          "language_id": "cng",
+          "parameter_id": "P_Local_or_Global",
+          "labels": [
+            "local",
+            "global"
+          ]
+        },
+        {
+          "language_id": "dhi",
+          "parameter_id": "P_Local_or_Global",
+          "labels": [
+            "local",
+            "global"
+          ]
+        },
+        {
+          "language_id": "esu",
+          "parameter_id": "P_Marking_Contrast",
+          "labels": [
+            "zero_nonzero",
+            "marker_length"
+          ]
+        },
+        {
+          "language_id": "gjr",
+          "parameter_id": "A_Local_or_Global",
+          "labels": [
+            "local",
+            "global"
+          ]
+        },
+        {
+          "language_id": "rap",
+          "parameter_id": "P_Local_or_Global",
+          "labels": [
+            "local",
+            "global"
+          ]
+        }
+      ],
+      "marker_forms_by_role": {
+        "P": 51,
+        "A": 32
+      }
+    },
+    "usage_table": {
+      "distinct_markers": 83,
+      "empty_conditions_from_raw_all": {
+        "TAM_Conditions": 167,
+        "WordOrder_Conditions": 161,
+        "Other_Conditions": 160,
+        "Host": 0
+      },
+      "marking_probability_labels": {
+        "50%": 32,
+        "<": 19,
+        "<10%": 38,
+        "<50%": 20,
+        ">": 19,
+        ">50%": 17,
+        ">90%": 75
+      },
+      "label_interpretation": {
+        ">90%": "Always or nearly always marked.",
+        "50%": "Optional marking or no clear preference in the available description.",
+        ">": "More frequent relative to another context.",
+        "<": "Less frequent relative to another context.",
+        "analysis_boundary": "The table provides coded categories. There are no token denominators for these usage rows."
+      },
+      "examples_with_multiple_marker_links": [
+        {
+          "example_id": "esu01",
+          "markers_in_usages_csv": [
+            "esu_02",
+            "esu_04",
+            "esu_05"
+          ],
+          "marker_in_values_csv": "esu_05"
+        },
+        {
+          "example_id": "esu02",
+          "markers_in_usages_csv": [
+            "esu_01",
+            "esu_04"
+          ],
+          "marker_in_values_csv": "esu_04"
+        },
+        {
+          "example_id": "gjr02",
+          "markers_in_usages_csv": [
+            "gjr_01",
+            "gjr_02"
+          ],
+          "marker_in_values_csv": "gjr_02"
+        },
+        {
+          "example_id": "ikx02",
+          "markers_in_usages_csv": [
+            "ikx_03",
+            "ikx_05"
+          ],
+          "marker_in_values_csv": "ikx_05"
+        },
+        {
+          "example_id": "komnzo02",
+          "markers_in_usages_csv": [
+            "komnzo_03",
+            "komnzo_04",
+            "komnzo_05"
+          ],
+          "marker_in_values_csv": "komnzo_05"
+        },
+        {
+          "example_id": "kor02",
+          "markers_in_usages_csv": [
+            "kor_05",
+            "kor_06"
+          ],
+          "marker_in_values_csv": "kor_06"
+        },
+        {
+          "example_id": "kor03",
+          "markers_in_usages_csv": [
+            "kor_01",
+            "kor_02"
+          ],
+          "marker_in_values_csv": "kor_02"
+        },
+        {
+          "example_id": "kor04",
+          "markers_in_usages_csv": [
+            "kor_02",
+            "kor_06"
+          ],
+          "marker_in_values_csv": "kor_02"
+        },
+        {
+          "example_id": "kxc03",
+          "markers_in_usages_csv": [
+            "kxc_02",
+            "kxc_03"
+          ],
+          "marker_in_values_csv": "kxc_02"
+        },
+        {
+          "example_id": "kxc04",
+          "markers_in_usages_csv": [
+            "kxc_02",
+            "kxc_03"
+          ],
+          "marker_in_values_csv": "kxc_02"
+        },
+        {
+          "example_id": "mem01",
+          "markers_in_usages_csv": [
+            "mem_02",
+            "mem_03"
+          ],
+          "marker_in_values_csv": "mem_03"
+        },
+        {
+          "example_id": "opm02",
+          "markers_in_usages_csv": [
+            "opm_01",
+            "opm_02",
+            "opm_03",
+            "opm_04",
+            "opm_05",
+            "opm_06"
+          ],
+          "marker_in_values_csv": "opm_06"
+        },
+        {
+          "example_id": "qiang01",
+          "markers_in_usages_csv": [
+            "qiang_01",
+            "qiang_02"
+          ],
+          "marker_in_values_csv": "qiang_02"
+        },
+        {
+          "example_id": "rmt01",
+          "markers_in_usages_csv": [
+            "rmt_01",
+            "rmt_02",
+            "rmt_03",
+            "rmt_04",
+            "rmt_05"
+          ],
+          "marker_in_values_csv": "rmt_05"
+        },
+        {
+          "example_id": "ude01",
+          "markers_in_usages_csv": [
+            "ude_01",
+            "ude_02"
+          ],
+          "marker_in_values_csv": "ude_02"
+        },
+        {
+          "example_id": "ude02",
+          "markers_in_usages_csv": [
+            "ude_01",
+            "ude_02"
+          ],
+          "marker_in_values_csv": "ude_02"
+        },
+        {
+          "example_id": "ude04",
+          "markers_in_usages_csv": [
+            "ude_01",
+            "ude_02"
+          ],
+          "marker_in_values_csv": "ude_02"
+        },
+        {
+          "example_id": "ude05",
+          "markers_in_usages_csv": [
+            "ude_01",
+            "ude_02"
+          ],
+          "marker_in_values_csv": "ude_02"
+        },
+        {
+          "example_id": "ude06",
+          "markers_in_usages_csv": [
+            "ude_01",
+            "ude_02"
+          ],
+          "marker_in_values_csv": "ude_02"
+        }
+      ]
+    },
+    "word_order_summary_by_role": {
+      "A": {
+        "NotApplicable": 15,
+        "no": 8,
+        "yes": 4
+      },
+      "P": {
+        "no": 17,
+        "yes": 3,
+        "NotApplicable": 7
+      }
+    },
+    "languages_with_yes_in_word_order_summary": [
+      "Gurindji Kriol",
+      "Kakua",
+      "Qiang",
+      "Rapa Nui",
+      "Sheko",
+      "Tubu/Dazaga"
+    ],
+    "word_order_conditions_in_usages": [
+      {
+        "language": "Kakua",
+        "role": "P",
+        "rows": 6,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Qiang",
+        "role": "A",
+        "rows": 4,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Tubu/Dazaga",
+        "role": "A",
+        "rows": 6,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Gurindji Kriol",
+        "role": "A",
+        "rows": 4,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Rapa Nui",
+        "role": "A",
+        "rows": 6,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Rapa Nui",
+        "role": "P",
+        "rows": 16,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Sheko",
+        "role": "P",
+        "rows": 15,
+        "summary_flag_yes": true
+      },
+      {
+        "language": "Udihe",
+        "role": "P",
+        "rows": 2,
+        "summary_flag_yes": false
+      }
+    ]
+  },
+  "selected_source_checks": [
+    {
+      "language": "Rapa Nui",
+      "marker_ids": [
+        "rap_01",
+        "rap_02"
+      ],
+      "usage_ids": [
+        "67",
+        "71"
+      ],
+      "example_sources": {
+        "rap01": "kieviet_grammar_2017[382]",
+        "rap11": "kieviet_grammar_2017[391]"
+      },
+      "locators": [
+        "Kieviet (2017), §8.3.1, p. 382, table 8.4 and ex. 13",
+        "§8.4.1, p. 391, ex. 33"
+      ],
+      "finding": "Example 13 contains postverbal O followed by an e-marked A. Example 33 has a preverbal O without the accusative marker i. Table 8.4 gives e-marking counts of 22/26 for VOA and 16/18 for OVA across all listed A marking categories. Usage row 67 assigns >90% to both orders, so the usage label should not be treated as the raw proportion in Table 8.4.",
+      "source_url": "https://www.langsci-press.org/LangSci-Press/catalog/book/124"
+    },
+    {
+      "language": "Persian",
+      "marker_id": "pes_01",
+      "usage_ids": [
+        "193",
+        "194"
+      ],
+      "example_sources": {
+        "pes02": "aissen_differential_2003[469]",
+        "pes03": "aissen_differential_2003[469]"
+      },
+      "locators": [
+        "Aissen (2003), §5.3, pp. 468–469, ex. 43"
+      ],
+      "finding": "Both dataset examples come from the two realizations presented in Aissen's combined example 43, attributed there to Lazard. They illustrate -râ preference with a human object versus dispreference with an inanimate one in the stated context. No raw frequency is supplied by these example rows.",
+      "source_url": "https://home.uni-leipzig.de/muellerg/006-1006/Aissen03.pdf"
+    }
+  ],
+  "analysis_notes": [
+    "Use Language_ID and Parameter_ID for the language-level coding while retaining multivalued keys. Use usages.csv Marker_ID, which references the marker row's ID in values.csv, for conditions and example links.",
+    "The selected 27-entry sample and shared lexical/grammar sources must be assessed before generalizing across languages. The 96 examples can illustrate patterns but provide no representative corpus denominators.",
+    "P_WO_DM is no for Udihe while two P-marker usage rows list LR_DISLOCATION and topicality. Preserve both levels and read their conditions before treating summary no as no positional evidence.",
+    "The published marker type spelling Posposition occurs on qiang_02. The raw table has that same spelling."
+  ],
+  "verification_scope": "The six CLDF tables, their identifiers, the four corresponding source text tables and the source legend were checked. The Rapa Nui and Persian passages listed here were checked against the cited publications. The original linguistic descriptions and all example interpretations were not checked in full."
+}

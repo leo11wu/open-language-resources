@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-13",
-  "catalog_version": "2.5.12",
+  "generated_on": "2026-11-14",
+  "catalog_version": "2.5.13",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 192,
+    "main_resource_count": 193,
     "main_by_check_state": {
       "documentation_only": 97,
       "file_preview": 2,
-      "selected_file_checked": 80,
+      "selected_file_checked": 81,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 87,
+    "main_with_recorded_file_reads": 88,
     "main_without_recorded_file_reads": 105,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6516,6 +6516,36 @@
           "read_scope": "archive_selected_members",
           "file_role": "empirical_or_norm_data",
           "result": "大小和MD5与Zenodo记录一致，CRC通过。49个文件与v1.0 Git标签的校验值一致。6张CLDF表与后续固定提交相同，参数表只缺后加的Grammacodes列。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R193",
+      "name": "Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）",
+      "category": "crossling-cultural",
+      "source_url": "https://zenodo.org/records/4896007",
+      "platforms": [
+        "zenodo",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-14",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://zenodo.org/api/records/4896007/files/cldf-datasets/levshinadifferentialmarking-v1.0.0.zip/content",
+          "sha256": "cecddd6206fb12a4f681a94d48a3626b1f490e0901a1f8f0bd19f6183ad52605",
+          "checked_on": "2026-11-14",
+          "read_scope": "archive_selected_members",
+          "file_role": "empirical_or_norm_data",
+          "result": "压缩包匹配Zenodo官方MD5，CRC通过。32个成员匹配v1.0.0提交。其中6个CSV归一换行后匹配。完整解析6张CLDF表和4张原始表，回查选定语法描写。"
         }
       ],
       "osf_audit": null,

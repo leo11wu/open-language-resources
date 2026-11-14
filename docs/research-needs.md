@@ -35,6 +35,7 @@
 | [R190 TerraLing–SSWL（世界语言句法与语义结构数据库）](../catalog/crossling-cultural.md#r190) | 比较一门语言在规定语境中允许的结构组合。形容词名前、名后两项均有明确判断的248个条目中，有88个同时允许两种顺序。 | 从制表符表取赋值，按语言ID及属性ID连接。核对诊断语境，保留不适用与缺失的区别，与主导词序图谱对照前再核对语言变体及测量口径。 | 已完整检查选定文件；全库未验收 |
 | [R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191) | 在同一条目内比较主从句的词序编码，并查看语言不同历史阶段的记录。两列均为单一S/V/O排列的113个条目中有2个标签不同。 | 取一块编码并按代码本解码。V2、单一S/V/O排列和多重顺序分别处理。核对不适用、短横线、语言名录连接和谱系、地域、阶段的依赖关系。 | 已完整检查选定文件；全库未验收 |
 | [R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192) | 比较双及物构式的接受者格或介词标记与R/T词序编码。两项均有记录且词序未标unclear的共234个构式、137个语言条目，其中26个语言条目同时有格或介词标记和无标记构式。 | 用Construction_ID连接两项赋值。分别处理两序皆可、有主导顺序和严格词序。核对英语和泰语的方向冲突及例句归属，处理语言内重复和谱系、地域。 | 已完整检查选定文件；全库未验收 |
+| [R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193) | 比较格标记何时随词序、指称属性或另一论元变化。27个条目中有6个在A或P的词序条件汇总标yes。可从拉帕努伊语的e及i用法回查原文。 | 分开语言×论元分类、标记形式和用法记录。用用法表连接例句并区分NotApplicable、无标记和标记倾向标签。Udihe的P汇总标no，用法表仍列左右移位与话题条件，统计前应明确是否纳入移位。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need structural-distribution

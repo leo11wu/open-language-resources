@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.12",
-  "updated_on": "2026-11-13",
+  "catalog_version": "2.5.13",
+  "updated_on": "2026-11-14",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 192,
+  "resource_count": 193,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -152,6 +152,11 @@
           "resource_id": "R192",
           "use_for": "比较双及物构式的接受者格或介词标记与R/T词序编码。两项均有记录且词序未标unclear的共234个构式、137个语言条目，其中26个语言条目同时有格或介词标记和无标记构式。",
           "check_before_use": "用Construction_ID连接两项赋值。分别处理两序皆可、有主导顺序和严格词序。核对英语和泰语的方向冲突及例句归属，处理语言内重复和谱系、地域。"
+        },
+        {
+          "resource_id": "R193",
+          "use_for": "比较格标记何时随词序、指称属性或另一论元变化。27个条目中有6个在A或P的词序条件汇总标yes。可从拉帕努伊语的e及i用法回查原文。",
+          "check_before_use": "分开语言×论元分类、标记形式和用法记录。用用法表连接例句并区分NotApplicable、无标记和标记倾向标签。Udihe的P汇总标no，用法表仍列左右移位与话题条件，统计前应明确是否纳入移位。"
         }
       ]
     },
@@ -12147,6 +12152,82 @@
             "read_scope": "archive_selected_members",
             "file_role": "empirical_or_norm_data",
             "result": "大小和MD5与Zenodo记录一致，CRC通过。49个文件与v1.0 Git标签的校验值一致。6张CLDF表与后续固定提交相同，参数表只缺后加的Grammacodes列。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R193",
+      "name": "Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）",
+      "category": "crossling-cultural",
+      "entry_type": "dataset",
+      "language_scope": "27个语言或变体条目，涵盖6个宏区。包括韩语、波斯语、拉帕努伊语和Sheko。27个Glottocode各在语言表出现一次",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "根据语法描写等文献整理的类型学分类、标记形式与适用条件，附逐词释义、翻译和出处。CLDF CSV、BibTeX与原始制表符文本",
+      "description": "Sommer与Levshina整理及物句中施事型论元A和受事型论元P的差异性与可选标记。记录显性标记的有无、形式和条件，包括有生性、定指性、人称、词序及TAM。区分由该论元自身属性决定的局部标记和涉及另一论元属性的全局标记。v1.0.0含24个变量、683条主表记录、220条标记用法和96条例句。",
+      "access_mode": "open_data",
+      "access_notes": "Zenodo v1.0.0压缩包无需注册，可直接下载。含6张CLDF表、代码本、书目和原始文本表。归档匹配官方MD5及Git标签所指提交。",
+      "license_note": "Zenodo与CLDF元数据均标CC BY 4.0。引用Noëlle Sommer与Natalia Levshina（2021），并注明v1.0.0及DOI 10.5281/zenodo.4896007。",
+      "limitations": "683行包含600条语言×论元特征赋值和83条标记形式。其中205条赋值为NotApplicable，另有6组多值键。Marking_Probability为代码本定义的分类。例如50%可表示可选或无明确信息。缺少逐条观察分母和代表性语料，无法从这些标签估算总体标记率或依存距离。用usages.csv保留同一例句与多个标记的连接。分析前核查局部与全局条件、变体、谱系和地域。",
+      "source_url": "https://zenodo.org/records/4896007",
+      "additional_urls": [
+        "https://github.com/cldf-datasets/levshinadifferentialmarking/tree/7e3076b24dcf9853ed708b20a77ee804c29890f4",
+        "https://github.com/cldf-datasets/levshinadifferentialmarking/blob/7e3076b24dcf9853ed708b20a77ee804c29890f4/raw/Legend.txt",
+        "https://www.langsci-press.org/LangSci-Press/catalog/book/124",
+        "https://home.uni-leipzig.de/muellerg/006-1006/Aissen03.pdf",
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/differential-optional-marking-file-check-2026-11-14.json"
+      ],
+      "tags": [
+        "类型学",
+        "跨语言",
+        "句法",
+        "差异标记",
+        "可选标记",
+        "论元标记",
+        "格",
+        "有生性",
+        "定指性",
+        "词序",
+        "例句"
+      ],
+      "related_ids": [
+        "R045",
+        "R046",
+        "R186",
+        "R191",
+        "R192"
+      ],
+      "platforms": [
+        "zenodo",
+        "github"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "mixed_or_unspecified",
+      "verification": {
+        "documentation_checked_on": "2026-11-14",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://zenodo.org/records/4896007",
+          "https://github.com/cldf-datasets/levshinadifferentialmarking/tree/7e3076b24dcf9853ed708b20a77ee804c29890f4",
+          "https://github.com/cldf-datasets/levshinadifferentialmarking/blob/7e3076b24dcf9853ed708b20a77ee804c29890f4/raw/Legend.txt",
+          "https://www.langsci-press.org/LangSci-Press/catalog/book/124",
+          "https://home.uni-leipzig.de/muellerg/006-1006/Aissen03.pdf"
+        ],
+        "note": "完整解析6张CLDF表及4张原始文本表。核对主外键、代码、引文、例句语言和词与释义列长度。核实19条例句在用法表连到多个标记，主表反向索引各只保留一个。复核拉帕努伊语与波斯语的选定原文。全体例句解释及原始语法描写待按研究范围回查。详见data/differential-optional-marking-file-check-2026-11-14.json。",
+        "file_checks": [
+          {
+            "url": "https://zenodo.org/api/records/4896007/files/cldf-datasets/levshinadifferentialmarking-v1.0.0.zip/content",
+            "sha256": "cecddd6206fb12a4f681a94d48a3626b1f490e0901a1f8f0bd19f6183ad52605",
+            "checked_on": "2026-11-14",
+            "read_scope": "archive_selected_members",
+            "file_role": "empirical_or_norm_data",
+            "result": "压缩包匹配Zenodo官方MD5，CRC通过。32个成员匹配v1.0.0提交。其中6个CSV归一换行后匹配。完整解析6张CLDF表和4张原始表，回查选定语法描写。"
           }
         ]
       }

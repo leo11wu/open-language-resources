@@ -1,0 +1,5313 @@
+{
+  "resource_id": "R194",
+  "checked_on": "2026-11-15",
+  "release": {
+    "upstream": "https://github.com/cdsapp/IPCHG-Corpus",
+    "git_url": "https://github.com/cdsapp/IPCHG-Corpus/tree/41db43ac4217fd7370dec5f495b6a7eb5783774e",
+    "commit": "41db43ac4217fd7370dec5f495b6a7eb5783774e",
+    "commit_tree": "d84c4446363031af73f394563c9f72c9e734fb2a",
+    "committed_at": "2026-09-18T16:07:11Z",
+    "archive_url": "https://codeload.github.com/cdsapp/IPCHG-Corpus/zip/41db43ac4217fd7370dec5f495b6a7eb5783774e",
+    "archive_size_bytes": 12064503,
+    "archive_sha256": "7e084a9f4e90d0d82d6f397557aeed531a3655322c388b3c73906c63dd8a9856",
+    "crc_passed": true,
+    "git_blob_hashes_verified": 202
+  },
+  "documents": {
+    "overview": "https://ipchg.iu.edu/corpus/index.html",
+    "sampling": "https://ipchg.iu.edu/corpus/corpus_structure.html",
+    "license_statement": "https://ipchg.iu.edu/corpus/licenses.html",
+    "license": "CC BY-SA 4.0",
+    "license_deed_linked_from_project": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "license_note": "官网及仓库许可文字把简称写成CC BY-AT 4.0。官网明确说明署名及相同方式共享，链接指向CC BY-SA 4.0。",
+    "versions": "https://ipchg.iu.edu/corpus/versions.html",
+    "tree_guidelines": "https://ipchg.iu.edu/annotation/clauses_ip.html",
+    "cp_guidelines": "https://ipchg.iu.edu/annotation/clauses_cp.html",
+    "sentence_guidelines": "https://ipchg.iu.edu/annotation/tokenization.html",
+    "tagset": "https://ipchg.iu.edu/tagset/pos_labels.html",
+    "word_splitting": "https://ipchg.iu.edu/tagset/splitting_lemmatization.html",
+    "empty_categories": "https://ipchg.iu.edu/tagset/empty_categories.html",
+    "paper": "https://aclanthology.org/2024.lrec-main.807/"
+  },
+  "inventory": {
+    "text_members_utf8_read": 200,
+    "period_top_level_text_files": 146,
+    "historical_subdirectory_files": 54,
+    "deduplication": "专题统计取三个时期目录直接存放的文件。旧版目录按去除年份和版本后缀的文件名配对，版本名和ID差异详见配对清单。1650 Probstein跨目录的487个树ID和表层词序列均相同，保留ENHG中标注更新的0.7b。",
+    "probstein_annotation_versions": {
+      "selected_ENHG": "0.7b_2025-02-13",
+      "excluded_NHG": "0.6h_2024-10-10"
+    },
+    "probstein_shared_ordered_tree_ids": 487,
+    "probstein_identical_tagged_surface_sequence": true,
+    "selected": {
+      "texts": 145,
+      "filename_year_min": 1050,
+      "filename_year_max": 1946,
+      "filename_versions": {
+        "0_7a": 10,
+        "0_7b": 57,
+        "0_7c": 1,
+        "0_8": 51,
+        "0_8(ascii)": 1,
+        "0_8c": 6,
+        "0_9": 19
+      },
+      "tree_units_with_words": 58685,
+      "surface_token_count": 1270153,
+      "clauses_by_label": {
+        "IP-MAT": {
+          "clauses_read": 44538,
+          "single_overt_np_sbj": 34528,
+          "subject_before_finite_verb": 15580,
+          "finite_verb_before_subject": 18683,
+          "eligible": 34263
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 18379,
+          "single_overt_np_sbj": 8168,
+          "subject_before_finite_verb": 4054,
+          "finite_verb_before_subject": 4038,
+          "eligible": 8092
+        },
+        "IP-SUB": {
+          "clauses_read": 50132,
+          "single_overt_np_sbj": 32251,
+          "subject_before_finite_verb": 28506,
+          "finite_verb_before_subject": 2022,
+          "eligible": 30528
+        }
+      }
+    },
+    "periods": {
+      "MHG": {
+        "texts": 43,
+        "filename_year_min": 1050,
+        "filename_year_max": 1349,
+        "filename_versions": {
+          "0_7a": 7,
+          "0_7b": 13,
+          "0_8": 18,
+          "0_8(ascii)": 1,
+          "0_9": 4
+        },
+        "tree_units_with_words": 18192,
+        "surface_token_count": 294688,
+        "clauses_by_label": {
+          "IP-MAT": {
+            "clauses_read": 13437,
+            "single_overt_np_sbj": 10385,
+            "subject_before_finite_verb": 4096,
+            "finite_verb_before_subject": 6236,
+            "eligible": 10332
+          },
+          "IP-MAT-CONJ": {
+            "clauses_read": 4221,
+            "single_overt_np_sbj": 1440,
+            "subject_before_finite_verb": 680,
+            "finite_verb_before_subject": 752,
+            "eligible": 1432
+          },
+          "IP-SUB": {
+            "clauses_read": 13279,
+            "single_overt_np_sbj": 8982,
+            "subject_before_finite_verb": 8049,
+            "finite_verb_before_subject": 779,
+            "eligible": 8828
+          }
+        }
+      },
+      "ENHG": {
+        "texts": 57,
+        "filename_year_min": 1350,
+        "filename_year_max": 1650,
+        "filename_versions": {
+          "0_7a": 3,
+          "0_7b": 44,
+          "0_7c": 1,
+          "0_8": 6,
+          "0_9": 3
+        },
+        "tree_units_with_words": 20131,
+        "surface_token_count": 541417,
+        "clauses_by_label": {
+          "IP-MAT": {
+            "clauses_read": 16020,
+            "single_overt_np_sbj": 12573,
+            "subject_before_finite_verb": 5214,
+            "finite_verb_before_subject": 7226,
+            "eligible": 12440
+          },
+          "IP-MAT-CONJ": {
+            "clauses_read": 8842,
+            "single_overt_np_sbj": 3829,
+            "subject_before_finite_verb": 1809,
+            "finite_verb_before_subject": 1984,
+            "eligible": 3793
+          },
+          "IP-SUB": {
+            "clauses_read": 22236,
+            "single_overt_np_sbj": 14097,
+            "subject_before_finite_verb": 12064,
+            "finite_verb_before_subject": 723,
+            "eligible": 12787
+          }
+        }
+      },
+      "NHG": {
+        "texts": 45,
+        "filename_year_min": 1658,
+        "filename_year_max": 1946,
+        "filename_versions": {
+          "0_8": 27,
+          "0_8c": 6,
+          "0_9": 12
+        },
+        "tree_units_with_words": 20362,
+        "surface_token_count": 434048,
+        "clauses_by_label": {
+          "IP-MAT": {
+            "clauses_read": 15081,
+            "single_overt_np_sbj": 11570,
+            "subject_before_finite_verb": 6270,
+            "finite_verb_before_subject": 5221,
+            "eligible": 11491
+          },
+          "IP-MAT-CONJ": {
+            "clauses_read": 5316,
+            "single_overt_np_sbj": 2899,
+            "subject_before_finite_verb": 1565,
+            "finite_verb_before_subject": 1302,
+            "eligible": 2867
+          },
+          "IP-SUB": {
+            "clauses_read": 14617,
+            "single_overt_np_sbj": 9172,
+            "subject_before_finite_verb": 8393,
+            "finite_verb_before_subject": 520,
+            "eligible": 8913
+          }
+        }
+      }
+    },
+    "excluded_version_matching": [
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1376_rotesbuch_swabia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1376_rotesbuch_swabia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1376_RotesBuch_Law_Swabia.": 290
+        },
+        "selected_id_prefixes": {
+          "1376_RotesBuch_Law_Swabia.": 290
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1384_rationale_austria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1384_rationale_austria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1384_Rationale_Rel-treatise_Austria.": 316
+        },
+        "selected_id_prefixes": {
+          "1384_Rationale_Rel-treatise_Austria.": 316
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1399_leiden_moselfrk.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1399_leiden_moselfrk.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1399_Leiden_Rel-devotional_Moselfrk.": 246
+        },
+        "selected_id_prefixes": {
+          "1399_Leiden_Rel-devotional_Moselfrk.": 246
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1399_namen_nuremberg.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1399_namen_nuremberg.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1399_Namen_Rel-treatise_Nuremberg.": 392
+        },
+        "selected_id_prefixes": {
+          "1399_Namen_Rel-treatise_Nuremberg.": 392
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1399_naturlehre_switzerland.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1399_naturlehre_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1399_Naturlehre_Nature_Switzerland.": 275
+        },
+        "selected_id_prefixes": {
+          "1399_Naturlehre_Nature_Switzerland.": 275
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1423_stadtbuch_saxony.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1423_stadtbuch_saxony.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1423_Stadtbuch_Law_Saxony.": 369
+        },
+        "selected_id_prefixes": {
+          "1423_Stadtbuch_Law_Saxony.": 369
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1427_fuchsfalle_swabia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1427_fuchsfalle_swabia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1427_Fuchsfalle_Rel-treatise_Swabia.": 398
+        },
+        "selected_id_prefixes": {
+          "1427_Fuchsfalle_Rel-treatise_Swabia.": 398
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1430_karrenritter_srhfrk.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1430_karrenritter_srhfrk.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1430_Karrenritter_Lit-prose_SRhFrk.": 540
+        },
+        "selected_id_prefixes": {
+          "1430_Karrenritter_Lit-prose_SRhFrk.": 540
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1443_laiendoktrinal_nuremberg.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1443_laiendoktrinal_nuremberg.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1443_Laiendoktrinal_Rel-treatise_Nuremberg.": 376
+        },
+        "selected_id_prefixes": {
+          "1443_Laiendoktrinal_Rel-treatise_Nuremberg.": 376
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1449_appenweiler_switzerland.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1449_appenweiler_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1449_Appenweiler_Chronicle_Switzerland.": 258
+        },
+        "selected_id_prefixes": {
+          "1449_Appenweiler_Chronicle_Switzerland.": 258
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1449_eisenacher_thuringia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1449_eisenacher_thuringia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1449_Eisenacher_Chronicle_Thuringia.": 394
+        },
+        "selected_id_prefixes": {
+          "1449_Eisenacher_Chronicle_Thuringia.": 394
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1449_nabuchodonosor_alsace.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1449_nabuchodonosor_alsace.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1449_Nabuchodonosor_Rel-sermon_Alsace.": 374
+        },
+        "selected_id_prefixes": {
+          "1449_Nabuchodonosor_Rel-sermon_Alsace.": 374
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1465_verbotene_swabia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1465_verbotene_swabia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1465_Verbotene_Occult_Swabia.": 560
+        },
+        "selected_id_prefixes": {
+          "1465_Verbotene_Occult_Swabia.": 560
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1475_bairischechronik_bavaria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1475_bairischechronik_bavaria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1475_Bairische_Chronicle_Bavaria.": 551
+        },
+        "selected_id_prefixes": {
+          "1475_Bairische_Chronicle_Bavaria.": 551
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1479_stanselmi_efranc.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1479_stanselmi_efranc.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1479_StAnselmi_Rel-devotion_EFranconia.": 291
+        },
+        "selected_id_prefixes": {
+          "1479_StAnselmi_Rel-devotion_EFranconia.": 291
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1480_troyana_austria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1480_troyana_austria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1480_Troyana_Lit-prose_Austria.": 400
+        },
+        "selected_id_prefixes": {
+          "1480_Troyana_Lit-prose_Austria.": 400
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1483_koelhoff_cologne.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1483_koelhoff_cologne.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1483_Koelhoff_Chronicle_Cologne.": 295
+        },
+        "selected_id_prefixes": {
+          "1483_Koelhoff_Chronicle_Cologne.": 295
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1486_edlibach_switzerland.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1486_edlibach_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1486_Edlibach_Chronicle_Switzerland.": 181
+        },
+        "selected_id_prefixes": {
+          "1486_Edlibach_Chronicle_Switzerland.": 181
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1486_jerusalem_hesse.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1486_jerusalem_hesse.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1486_Jerusalem_Travel_Hesse.": 314
+        },
+        "selected_id_prefixes": {
+          "1486_Jerusalem_Travel_Hesse.": 314
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1497_cirurgia_alsace.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1497_cirurgia_alsace.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1497_Cirurgia_Medicine_Alsace.": 318
+        },
+        "selected_id_prefixes": {
+          "1497_Cirurgia_Medicine_Alsace.": 318
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1498_tauler_saxony.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1498_tauler_saxony.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1498_Tauler_Rel-sermon_Saxony.": 396
+        },
+        "selected_id_prefixes": {
+          "1498_Tauler_Rel-sermon_Saxony.": 396
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1501_stiftbriefe_austria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1501_stiftbriefe_austria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1501_Stiftbriefe_Records_Austria.": 148
+        },
+        "selected_id_prefixes": {
+          "1501_Stiftbriefe_Records_Austria.": 148
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1521_olvier_switzerland.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1521_olvier_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1521_Olvier_Lit-prose_Switzerland.": 381
+        },
+        "selected_id_prefixes": {
+          "1521_Olvier_Lit-prose_Switzerland.": 381
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1522_martinus_saxony.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1522_martinus_saxony.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1522_Martinus_Rel-pamphlet_Saxony.": 292
+        },
+        "selected_id_prefixes": {
+          "1522_Martinus_Rel-pamphlet_Saxony.": 292
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1523_butzer_alsace.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1523_butzer_alsace.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1523_Butzer_Rel-sermon_Alsace.": 300
+        },
+        "selected_id_prefixes": {
+          "1523_Butzer_Rel-sermon_Alsace.": 300
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1523_gehorsam_thuringia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1523_gehorsam_thuringia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1523_Gehorsam_Rel-pamphlet_Thuringia.": 229
+        },
+        "selected_id_prefixes": {
+          "1523_Gehorsam_Rel-pamphlet_Thuringia.": 229
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1528_grundliche_nuremberg.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1528_grundliche_nuremberg.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1528_Grundliche_Rel-pamphlet_Nuremberg.": 354
+        },
+        "selected_id_prefixes": {
+          "1528_Grundliche_Rel-pamphlet_Nuremberg.": 354
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1529_geistlichemai_bavaria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1529_geistlichemai_bavaria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1529_GeistlicheMai_Rel-devotion_Bavaria.": 304
+        },
+        "selected_id_prefixes": {
+          "1529_GeistlicheMai_Rel-devotion_Bavaria.": 304
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1533_fierrabras_moselfr.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1533_fierrabras_moselfr.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1533_Fierrabras_Lit-prose_Moselfrk.": 100,
+          "1533_Johann_Fierrabras_Moselfrk.": 2,
+          "1533_Fierrabras_Lit-prose_Rhine.": 299
+        },
+        "selected_id_prefixes": {
+          "1533_Fierrabras_Lit-prose_Moselfrk.": 100,
+          "1533_Johann_Fierrabras_Moselfrk.": 2,
+          "1533_Fierrabras_Lit-prose_Rhine.": 299
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1534_weltbuch_swabia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1534_weltbuch_swabia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1534_Weltbuch_Rel-cosmography_Swabia.": 517
+        },
+        "selected_id_prefixes": {
+          "1534_Weltbuch_Rel-cosmography_Swabia.": 517
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1556_marsburg_saxony.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1556_marsburg_saxony.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1556_Marsburg_Chronicle_Saxony.": 286
+        },
+        "selected_id_prefixes": {
+          "1556_Marsburg_Chronicle_Saxony.": 286
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1556_nachbarn_alsace.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1556_nachbarn_alsace.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1556_Nachbarn_Lit-prose_Alsace.": 326
+        },
+        "selected_id_prefixes": {
+          "1556_Nachbarn_Lit-prose_Alsace.": 326
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1557_historia_hesse.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1557_historia_hesse.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1557_Historia_Travel_Hesse.": 576
+        },
+        "selected_id_prefixes": {
+          "1557_Historia_Travel_Hesse.": 576
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1559_epitome_cologne.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1559_epitome_cologne.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1559_Epitome_Report_Cologne.": 334
+        },
+        "selected_id_prefixes": {
+          "1559_Epitome_Report_Cologne.": 334
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1582_rauwolf_swabia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1582_rauwolf_swabia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1582_Rauwolf_Travel_Swabia.": 258
+        },
+        "selected_id_prefixes": {
+          "1582_Rauwolf_Travel_Swabia.": 258
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1583_concordia_bavaria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1583_concordia_bavaria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1583_Concordia_Rel-theology_Bavaria.": 369
+        },
+        "selected_id_prefixes": {
+          "1583_Concordia_Rel-theology_Bavaria.": 369
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1599_thuringische_thuringia.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1599_thuringische_thuringia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1599_Thuringische_Chronicle_Thuringia.": 437
+        },
+        "selected_id_prefixes": {
+          "1599_Thuringische_Chronicle_Thuringia.": 437
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1624_poeterey_silesia.ver0_7b.txt",
+        "selected_path": "texts-ENHG/1624_poeterey_silesia.ver0_7c.txt",
+        "excluded_id_prefixes": {
+          "1624_Poeterey_Silesia_Poetics.": 269
+        },
+        "selected_id_prefixes": {
+          "1624_Poeterey_Poetics_Silesia.": 269
+        }
+      },
+      {
+        "excluded_path": "texts-ENHG/version0_7a/1624_schiffarten_switzerland.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1624_schiffarten_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1624_Schiffarten_Travel_Switzerland.": 358
+        },
+        "selected_id_prefixes": {
+          "1624_Schiffarten_Travel_Switzerland.": 358
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1150_schleizer_rheinfrk.ver0_7a.txt",
+        "selected_path": "texts-MHG/1199_schleizer_rheinfrk.ver0_8.txt",
+        "excluded_id_prefixes": {
+          "1150_Schleizer_Rel-psalms_Rheinfrk.": 194
+        },
+        "selected_id_prefixes": {
+          "1150_Schleizer_Rel-translation_Rheinfrk.": 192,
+          "1199_Schleizer_Rel-psalms_Rheinfrk.": 1
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1150_schlierbach_efranc.ver0_8.txt",
+        "selected_path": "texts-MHG/1199_schlierbach_efranc.ver0_8.txt",
+        "excluded_id_prefixes": {
+          "1150_Schlierbach_Rel-psalms_EFranc.": 32
+        },
+        "selected_id_prefixes": {
+          "1199_Schlierbach_Rel-psalms_EFranc.": 32
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1195_lucidarius_alemannic.ver0_7a.txt",
+        "selected_path": "texts-MHG/1195_lucidarius_alemannic.ver0_8(ascii).txt",
+        "excluded_id_prefixes": {
+          "1195_Lucidarius_Nature_Alemannic.": 647
+        },
+        "selected_id_prefixes": {
+          "1195_Lucidarius_Nature_Alemannic.": 647
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1199_predfragmente_hess-thur.v0_7a.txt",
+        "selected_path": "texts-MHG/1199_predfragmente_hess-thur.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1199_PredFragmente_Rel-sermon_Hess-Thur.": 115
+        },
+        "selected_id_prefixes": {
+          "1199_PredFragmente_Rel-sermon_Hess-Thur.": 115
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1225_prager_efranc.ver0_7a.txt",
+        "selected_path": "texts-MHG/1225_prager_efranc.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1225_Prager_Rel-sermon_EFranc.": 261
+        },
+        "selected_id_prefixes": {
+          "1225_Prager_Rel-sermon_EFranc.": 261
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1250_admonter_austria.ver07a.txt",
+        "selected_path": "texts-MHG/1250_admonter_austria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1250_Admonter_Rel-monastic_Austria.": 465
+        },
+        "selected_id_prefixes": {
+          "1250_Admonter_Rel-monastic_Austria.": 465
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1250_expositio_switzerland.ver0_7a.txt",
+        "selected_path": "texts-MHG/1299_expositio_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1250_Expositio_Rel-monastic_Switzerland.": 500
+        },
+        "selected_id_prefixes": {
+          "1299_Expositio_Rel-monastic_Switzerland.": 500
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1260_lilie_cologne.ver0_7a.txt",
+        "selected_path": "texts-MHG/1260_lilie_cologne.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1260_Lilie_Rel-allegory_Cologne.": 225
+        },
+        "selected_id_prefixes": {
+          "1260_Lilie_Rel-allegory_Cologne.": 225
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1272_david_bavaria.ver0_7a.txt",
+        "selected_path": "texts-MHG/1272_david_bavaria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1272_David_Rel-treatise_Bavaria.": 427
+        },
+        "selected_id_prefixes": {
+          "1272_David_Rel-treatise_Bavaria.": 427
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1278_salomons_hesse.ver0_7a.txt",
+        "selected_path": "texts-MHG/1278_salomons_hesse.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1278_Salomons_Rel-allegory_Hesse.": 595
+        },
+        "selected_id_prefixes": {
+          "1278_Salomons_Rel-allegory_Hesse.": 595
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1300_hugokonstanz_switzerland.ver0_7a.txt",
+        "selected_path": "texts-MHG/1300_hugokonstanz_switzerland.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1300_HugoKonstanz_Rel-sermon_Switzerland.": 360
+        },
+        "selected_id_prefixes": {
+          "1300_HugoKonstanz_Rel-sermon_Switzerland.": 360
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1300_leipziger_thursax.ver0_7a.txt",
+        "selected_path": "texts-MHG/1300_leipziger_thursax.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1300_Leipziger_Rel-sermon_ThurSax.": 174
+        },
+        "selected_id_prefixes": {
+          "1300_Leipziger_Rel-sermon_ThurSax.": 174
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1325_berliner_thursax.ver0_7a.txt",
+        "selected_path": "texts-MHG/1325_berliner_thursax.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1325_Berliner_Rel-gospel_ThurSax.": 717
+        },
+        "selected_id_prefixes": {
+          "1325_Berliner_Rel-gospel_ThurSax.": 717
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1328_freising_bavaria.ver0_7a.txt",
+        "selected_path": "texts-MHG/1328_freising_bavaria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1328_Freising_Law_Bavaria.": 439
+        },
+        "selected_id_prefixes": {
+          "1328_Freising_Law_Bavaria.": 439
+        }
+      },
+      {
+        "excluded_path": "texts-MHG/ver0_7a/1336_augsburger_swabia.ver0_7a.txt",
+        "selected_path": "texts-MHG/1336_augsburger_swabia.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1336_Augsburger_Records_Swabia.": 173
+        },
+        "selected_id_prefixes": {
+          "1336_Augsburger_Records_Swabia.": 173
+        }
+      },
+      {
+        "excluded_path": "texts-NHG/1650_probstein_austria.ver0_7a.txt",
+        "selected_path": "texts-ENHG/1650_probstein_austria.ver0_7b.txt",
+        "excluded_id_prefixes": {
+          "1650_Probstein_Rel-treatise_Austria.": 487
+        },
+        "selected_id_prefixes": {
+          "1650_Probstein_Rel-treatise_Austria.": 487
+        }
+      }
+    ]
+  },
+  "surface_token_rule": "每个有字母标签且含字母或数字的表层终端计一项。词形=词元只计词形。排除标点、空项、ID、CODE、META、列表标号和XX。保留带标注的外语词和数字，按语料中切分后的终端计数。树单位指至少含一项表层词的括号记录。",
+  "format_issues": [
+    {
+      "path": "texts-MHG/1199_schleizer_rheinfrk.ver0_8.txt",
+      "tree_id": "1150_Schleizer_Rel-translation_Rheinfrk.,34",
+      "issue": "unexpected ')' outside tree at 1305",
+      "handling": "从词项计数和句法检查中排除这一括号单元"
+    },
+    {
+      "path": "texts-MHG/1199_schlierbach_efranc.ver0_8.txt",
+      "issue": "首个括号前有1199_前缀",
+      "handling": "仅在读取时跳过此前缀"
+    }
+  ],
+  "clause_spot_check": {
+    "main": "单独统计IP-MAT与IP-MAT-CONJ。带插入语、直接引语等后缀的节点未纳入。",
+    "embedded": "取直接受CP支配的IP-SUB。排除CP-QUE及CP-EXL。该规则略过更深的并列IP和受特殊后缀标记的节点。",
+    "subject_and_verb": "只取恰有一个带表层词的NP-SBJ且没有其他含SBJ的直接子节点的从句。直接子节点须恰有一个已实现的陈述或虚拟式有限动词，从BE/HV/MD/RD/VB加P/D和I/S的标签识别。允许复合词性及带21/22的分裂词，略过多动词包装层、祈使与空主语。",
+    "order_measure": "比较两个直接子节点的先后。查询显示字段可抽取，当前汇总未做体裁、地区、文本与从句类型分层。",
+    "comparability": "0.9将原标记为IP-MAT-CONJ的部分并列主句拆成新的树单位。项目手册以V2区分denn和wan(de)所在的部分主从句标注，直接用结构标签比较词序时需单独检查这些连词。个别文件的ID内年份、体裁或地区与文件名、同文件的其他ID不一致。",
+    "examples": {
+      "texts-ENHG/1350_altdeutsche_saxony.ver0_7b.txt": [
+        {
+          "tree_id": "1350_Altdeutsche_Rel-sermon_Saxony.,3",
+          "clause_label": "IP-MAT",
+          "parent_label": "",
+          "subject": "Salomon",
+          "finite_verb": "sprichit",
+          "verb_tag": "VBPI^3^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1350_Altdeutsche_Rel-sermon_Saxony.,3",
+          "clause_label": "IP-MAT-CONJ",
+          "parent_label": "IP-MAT",
+          "subject": "die wisait",
+          "finite_verb": "sol",
+          "verb_tag": "MDPI^3^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1350_Altdeutsche_Rel-sermon_Saxony.,4",
+          "clause_label": "IP-MAT",
+          "parent_label": "",
+          "subject": "u",
+          "finite_verb": "macht",
+          "verb_tag": "MDDS^2^SG",
+          "order": "finite_verb_before_subject"
+        },
+        {
+          "tree_id": "1350_Altdeutsche_Rel-sermon_Saxony.,4",
+          "clause_label": "IP-SUB",
+          "parent_label": "CP-THT",
+          "subject": "die wisheit",
+          "finite_verb": "svle",
+          "verb_tag": "MDPS^3^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1350_Altdeutsche_Rel-sermon_Saxony.,12",
+          "clause_label": "IP-MAT-CONJ",
+          "parent_label": "IP-MAT",
+          "subject": "sin sele",
+          "finite_verb": "belibet",
+          "verb_tag": "VBPI^3^SG",
+          "order": "finite_verb_before_subject"
+        },
+        {
+          "tree_id": "1350_Altdeutsche_Rel-sermon_Saxony.,21",
+          "clause_label": "IP-SUB",
+          "parent_label": "CP-ADV",
+          "subject": "v",
+          "finite_verb": "wilt",
+          "verb_tag": "MDPI^2^SG",
+          "order": "finite_verb_before_subject"
+        }
+      ],
+      "texts-MHG/1050_rheinauer_alemannic.ver0_8.txt": [
+        {
+          "tree_id": "1050_Rheinauer_Rel-prayer_Alemannic.,2",
+          "clause_label": "IP-MAT",
+          "parent_label": "",
+          "subject": "Ih",
+          "finite_verb": "manon",
+          "verb_tag": "VBPI^1^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1050_Rheinauer_Rel-prayer_Alemannic.,2",
+          "clause_label": "IP-SUB",
+          "parent_label": "CP-THT",
+          "subject": "dv",
+          "finite_verb": "biſt",
+          "verb_tag": "BEPI^2^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1050_Rheinauer_Rel-prayer_Alemannic.,33",
+          "clause_label": "IP-MAT",
+          "parent_label": "",
+          "subject": "ih fil armu ſundara",
+          "finite_verb": "kum",
+          "verb_tag": "VBPI^1^SG",
+          "order": "finite_verb_before_subject"
+        },
+        {
+          "tree_id": "1050_Rheinauer_Rel-prayer_Alemannic.,33",
+          "clause_label": "IP-MAT-CONJ",
+          "parent_label": "IP-MAT",
+          "subject": "daz",
+          "finite_verb": "ferfellet",
+          "verb_tag": "VBPI^3^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1050_Rheinauer_Rel-prayer_Alemannic.,36",
+          "clause_label": "IP-SUB",
+          "parent_label": "CP-THT",
+          "subject": "daz reine fleiſ daz da nie giſundota.",
+          "finite_verb": "brahta",
+          "verb_tag": "VBDI^3^SG",
+          "order": "finite_verb_before_subject"
+        }
+      ],
+      "texts-NHG/1791_prediger_bavaria.ver0_9.txt": [
+        {
+          "tree_id": "1791_Prediger_Theology_Bavaria.,43",
+          "clause_label": "IP-MAT",
+          "parent_label": "",
+          "subject": "Das was der Prediger lehret",
+          "finite_verb": "ſoll",
+          "verb_tag": "MDPI^3^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1791_Prediger_Theology_Bavaria.,43",
+          "clause_label": "IP-SUB",
+          "parent_label": "CP-REL",
+          "subject": "der Prediger",
+          "finite_verb": "lehret",
+          "verb_tag": "VBPI^3^SG",
+          "order": "subject_before_finite_verb"
+        },
+        {
+          "tree_id": "1791_Prediger_Theology_Bavaria.,52",
+          "clause_label": "IP-MAT",
+          "parent_label": "",
+          "subject": "man",
+          "finite_verb": "kann",
+          "verb_tag": "MDPI^3^SG",
+          "order": "finite_verb_before_subject"
+        },
+        {
+          "tree_id": "1791_Prediger_Theology_Bavaria.,139b",
+          "clause_label": "IP-SUB",
+          "parent_label": "CP-THT",
+          "subject": "es",
+          "finite_verb": "kann",
+          "verb_tag": "MDPI^3^SG",
+          "order": "finite_verb_before_subject"
+        }
+      ]
+    }
+  },
+  "source_provenance": {
+    "source_corpora": [
+      "Referenzkorpus Mittelhochdeutsch (ReM)",
+      "Referenzkorpus Frühneuhochdeutsch (ReF)",
+      "Deutsches Textarchiv (DTA)"
+    ],
+    "reuse": "沿用来源文本的词形，部分文本同时沿用词元或词类信息。Penn句法树由IPCHG项目新增。逐篇与源库相接时需核对原文、版本及段落边界。"
+  },
+  "coverage_boundary": "读取固定归档中的所有文本，对所选版本程序解析树结构及字段，记录两处格式异常与样例。标注准确性、文本年代和出处的逐条验收超出本次抽检。",
+  "selected_files": [
+    {
+      "path": "texts-ENHG/1350_altdeutsche_saxony.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1350,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1350_Altdeutsche_Rel-sermon_Saxony.": 458
+      },
+      "tree_units_with_words": 458,
+      "surface_token_count": 10003,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 400,
+          "single_overt_np_sbj": 320,
+          "subject_before_finite_verb": 184,
+          "finite_verb_before_subject": 133
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 210,
+          "single_overt_np_sbj": 92,
+          "subject_before_finite_verb": 52,
+          "finite_verb_before_subject": 39
+        },
+        "IP-SUB": {
+          "clauses_read": 358,
+          "single_overt_np_sbj": 222,
+          "subject_before_finite_verb": 190,
+          "finite_verb_before_subject": 26
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1360_neuesbuch_cologne.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1360,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1360_NeuesBuch_Chronicle_Cologne.": 189
+      },
+      "tree_units_with_words": 189,
+      "surface_token_count": 10010,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 162,
+          "single_overt_np_sbj": 137,
+          "finite_verb_before_subject": 115,
+          "subject_before_finite_verb": 21
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 164,
+          "single_overt_np_sbj": 45,
+          "subject_before_finite_verb": 18,
+          "finite_verb_before_subject": 26
+        },
+        "IP-SUB": {
+          "clauses_read": 531,
+          "single_overt_np_sbj": 341,
+          "subject_before_finite_verb": 319,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1370_ewigweisheit_alsace.ver0_7a.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1370,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1370_EwigWeisheit_Rel-devotional_Alsace.": 461
+      },
+      "tree_units_with_words": 461,
+      "surface_token_count": 9606,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 51,
+          "single_overt_np_sbj": 40,
+          "finite_verb_before_subject": 27,
+          "subject_before_finite_verb": 13
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 36,
+          "single_overt_np_sbj": 19,
+          "finite_verb_before_subject": 7,
+          "subject_before_finite_verb": 12
+        },
+        "IP-SUB": {
+          "clauses_read": 65,
+          "single_overt_np_sbj": 40,
+          "subject_before_finite_verb": 40
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1375_buchnatur_bavaria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1375,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1375_BuchNatur_Bavaria_Nature.": 641
+      },
+      "tree_units_with_words": 641,
+      "surface_token_count": 10012,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 553,
+          "single_overt_np_sbj": 489,
+          "subject_before_finite_verb": 302,
+          "finite_verb_before_subject": 185
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 145,
+          "single_overt_np_sbj": 47,
+          "subject_before_finite_verb": 17,
+          "finite_verb_before_subject": 30
+        },
+        "IP-SUB": {
+          "clauses_read": 483,
+          "single_overt_np_sbj": 326,
+          "subject_before_finite_verb": 307,
+          "finite_verb_before_subject": 15
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1376_rotesbuch_swabia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1376,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1376_RotesBuch_Law_Swabia.": 290
+      },
+      "tree_units_with_words": 290,
+      "surface_token_count": 10009,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 280,
+          "single_overt_np_sbj": 144,
+          "subject_before_finite_verb": 67,
+          "finite_verb_before_subject": 69
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 88,
+          "single_overt_np_sbj": 24,
+          "subject_before_finite_verb": 4,
+          "finite_verb_before_subject": 18
+        },
+        "IP-SUB": {
+          "clauses_read": 643,
+          "single_overt_np_sbj": 327,
+          "subject_before_finite_verb": 296,
+          "finite_verb_before_subject": 14
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1384_rationale_austria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1384,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1384_Rationale_Rel-treatise_Austria.": 316
+      },
+      "tree_units_with_words": 316,
+      "surface_token_count": 10011,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 273,
+          "single_overt_np_sbj": 205,
+          "subject_before_finite_verb": 133,
+          "finite_verb_before_subject": 71
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 158,
+          "single_overt_np_sbj": 109,
+          "subject_before_finite_verb": 85,
+          "finite_verb_before_subject": 23
+        },
+        "IP-SUB": {
+          "clauses_read": 518,
+          "single_overt_np_sbj": 289,
+          "subject_before_finite_verb": 263,
+          "finite_verb_before_subject": 18
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1399_leiden_moselfrk.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1399,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1399_Leiden_Rel-devotional_Moselfrk.": 246
+      },
+      "tree_units_with_words": 246,
+      "surface_token_count": 9516,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 213,
+          "single_overt_np_sbj": 178,
+          "finite_verb_before_subject": 120,
+          "subject_before_finite_verb": 58
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 409,
+          "single_overt_np_sbj": 176,
+          "subject_before_finite_verb": 49,
+          "finite_verb_before_subject": 125
+        },
+        "IP-SUB": {
+          "clauses_read": 320,
+          "single_overt_np_sbj": 232,
+          "subject_before_finite_verb": 221,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1399_namen_nuremberg.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1399,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1399_Namen_Rel-treatise_Nuremberg.": 392
+      },
+      "tree_units_with_words": 392,
+      "surface_token_count": 10022,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 314,
+          "single_overt_np_sbj": 256,
+          "subject_before_finite_verb": 91,
+          "finite_verb_before_subject": 161
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 219,
+          "single_overt_np_sbj": 133,
+          "finite_verb_before_subject": 63,
+          "subject_before_finite_verb": 69
+        },
+        "IP-SUB": {
+          "clauses_read": 503,
+          "single_overt_np_sbj": 350,
+          "subject_before_finite_verb": 319,
+          "finite_verb_before_subject": 19
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1399_naturlehre_switzerland.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1399,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1399_Naturlehre_Nature_Switzerland.": 275
+      },
+      "tree_units_with_words": 275,
+      "surface_token_count": 6308,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 254,
+          "single_overt_np_sbj": 195,
+          "subject_before_finite_verb": 72,
+          "finite_verb_before_subject": 122
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 202,
+          "single_overt_np_sbj": 131,
+          "subject_before_finite_verb": 49,
+          "finite_verb_before_subject": 82
+        },
+        "IP-SUB": {
+          "clauses_read": 277,
+          "single_overt_np_sbj": 191,
+          "subject_before_finite_verb": 178,
+          "finite_verb_before_subject": 10
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1423_stadtbuch_saxony.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1423,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1423_Stadtbuch_Law_Saxony.": 369
+      },
+      "tree_units_with_words": 369,
+      "surface_token_count": 9119,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 340,
+          "single_overt_np_sbj": 301,
+          "subject_before_finite_verb": 162,
+          "finite_verb_before_subject": 138
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 119,
+          "single_overt_np_sbj": 46,
+          "subject_before_finite_verb": 15,
+          "finite_verb_before_subject": 31
+        },
+        "IP-SUB": {
+          "clauses_read": 355,
+          "single_overt_np_sbj": 243,
+          "subject_before_finite_verb": 217,
+          "finite_verb_before_subject": 22
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1427_fuchsfalle_swabia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1427,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1427_Fuchsfalle_Rel-treatise_Swabia.": 398
+      },
+      "tree_units_with_words": 394,
+      "surface_token_count": 9861,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 288,
+          "single_overt_np_sbj": 209,
+          "finite_verb_before_subject": 145,
+          "subject_before_finite_verb": 64
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 98,
+          "single_overt_np_sbj": 57,
+          "finite_verb_before_subject": 25,
+          "subject_before_finite_verb": 32
+        },
+        "IP-SUB": {
+          "clauses_read": 591,
+          "single_overt_np_sbj": 387,
+          "subject_before_finite_verb": 345,
+          "finite_verb_before_subject": 32
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1428_andacht_bavaria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1428,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1428_Andacht_Rel-devotional_Bavaria.": 26,
+        "1428_Andacht_Rel-devotion_Bavaria.": 68
+      },
+      "tree_units_with_words": 94,
+      "surface_token_count": 3767,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 79,
+          "single_overt_np_sbj": 43,
+          "subject_before_finite_verb": 13,
+          "finite_verb_before_subject": 28
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 29,
+          "single_overt_np_sbj": 16,
+          "subject_before_finite_verb": 8,
+          "finite_verb_before_subject": 8
+        },
+        "IP-SUB": {
+          "clauses_read": 161,
+          "single_overt_np_sbj": 104,
+          "subject_before_finite_verb": 87,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1430_karrenritter_srhfrk.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1430,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1430_Karrenritter_Lit-prose_SRhFrk.": 540
+      },
+      "tree_units_with_words": 540,
+      "surface_token_count": 10040,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 299,
+          "single_overt_np_sbj": 298,
+          "finite_verb_before_subject": 139,
+          "subject_before_finite_verb": 158
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 279,
+          "single_overt_np_sbj": 89,
+          "subject_before_finite_verb": 79,
+          "finite_verb_before_subject": 10
+        },
+        "IP-SUB": {
+          "clauses_read": 351,
+          "single_overt_np_sbj": 283,
+          "subject_before_finite_verb": 276,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1443_laiendoktrinal_nuremberg.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1443,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1443_Laiendoktrinal_Rel-treatise_Nuremberg.": 376
+      },
+      "tree_units_with_words": 376,
+      "surface_token_count": 9837,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 360,
+          "single_overt_np_sbj": 237,
+          "finite_verb_before_subject": 84,
+          "subject_before_finite_verb": 149
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 244,
+          "single_overt_np_sbj": 133,
+          "subject_before_finite_verb": 76,
+          "finite_verb_before_subject": 57
+        },
+        "IP-SUB": {
+          "clauses_read": 584,
+          "single_overt_np_sbj": 357,
+          "subject_before_finite_verb": 304,
+          "finite_verb_before_subject": 47
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1449_appenweiler_switzerland.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1449,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1449_Appenweiler_Chronicle_Switzerland.": 258
+      },
+      "tree_units_with_words": 258,
+      "surface_token_count": 5122,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 248,
+          "single_overt_np_sbj": 196,
+          "finite_verb_before_subject": 132,
+          "subject_before_finite_verb": 64
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 164,
+          "single_overt_np_sbj": 62,
+          "finite_verb_before_subject": 39,
+          "subject_before_finite_verb": 23
+        },
+        "IP-SUB": {
+          "clauses_read": 153,
+          "single_overt_np_sbj": 111,
+          "subject_before_finite_verb": 98,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1449_denkwurdigkeit_austria.ver0_8.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1449,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1449_Denkwurdigkeit_Report_Austria.": 318
+      },
+      "tree_units_with_words": 318,
+      "surface_token_count": 10001,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 309,
+          "single_overt_np_sbj": 262,
+          "finite_verb_before_subject": 213,
+          "subject_before_finite_verb": 48
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 467,
+          "single_overt_np_sbj": 196,
+          "subject_before_finite_verb": 93,
+          "finite_verb_before_subject": 102
+        },
+        "IP-SUB": {
+          "clauses_read": 397,
+          "single_overt_np_sbj": 293,
+          "finite_verb_before_subject": 16,
+          "subject_before_finite_verb": 266
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1449_eisenacher_thuringia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1449,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1449_Eisenacher_Chronicle_Thuringia.": 394
+      },
+      "tree_units_with_words": 394,
+      "surface_token_count": 10025,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 366,
+          "single_overt_np_sbj": 307,
+          "finite_verb_before_subject": 228,
+          "subject_before_finite_verb": 78
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 269,
+          "single_overt_np_sbj": 83,
+          "subject_before_finite_verb": 40,
+          "finite_verb_before_subject": 43
+        },
+        "IP-SUB": {
+          "clauses_read": 373,
+          "single_overt_np_sbj": 249,
+          "subject_before_finite_verb": 237,
+          "finite_verb_before_subject": 10
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1449_nabuchodonosor_alsace.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1449,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1449_Nabuchodonosor_Rel-sermon_Alsace.": 374
+      },
+      "tree_units_with_words": 374,
+      "surface_token_count": 9973,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 307,
+          "single_overt_np_sbj": 248,
+          "subject_before_finite_verb": 95,
+          "finite_verb_before_subject": 153
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 118,
+          "single_overt_np_sbj": 49,
+          "finite_verb_before_subject": 28,
+          "subject_before_finite_verb": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 436,
+          "single_overt_np_sbj": 256,
+          "subject_before_finite_verb": 229,
+          "finite_verb_before_subject": 21
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1465_verbotene_swabia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1465,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1465_Verbotene_Occult_Swabia.": 560
+      },
+      "tree_units_with_words": 560,
+      "surface_token_count": 9946,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 419,
+          "single_overt_np_sbj": 339,
+          "subject_before_finite_verb": 196,
+          "finite_verb_before_subject": 139
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 149,
+          "single_overt_np_sbj": 76,
+          "subject_before_finite_verb": 41,
+          "finite_verb_before_subject": 35
+        },
+        "IP-SUB": {
+          "clauses_read": 382,
+          "single_overt_np_sbj": 245,
+          "subject_before_finite_verb": 218,
+          "finite_verb_before_subject": 12
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1475_bairischechronik_bavaria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1475,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1475_Bairische_Chronicle_Bavaria.": 551
+      },
+      "tree_units_with_words": 551,
+      "surface_token_count": 9956,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 461,
+          "single_overt_np_sbj": 429,
+          "finite_verb_before_subject": 251,
+          "subject_before_finite_verb": 176
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 187,
+          "single_overt_np_sbj": 47,
+          "finite_verb_before_subject": 27,
+          "subject_before_finite_verb": 20
+        },
+        "IP-SUB": {
+          "clauses_read": 306,
+          "single_overt_np_sbj": 220,
+          "subject_before_finite_verb": 199,
+          "finite_verb_before_subject": 20
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1479_stanselmi_efranc.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1479,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1479_StAnselmi_Rel-devotion_EFranconia.": 291
+      },
+      "tree_units_with_words": 291,
+      "surface_token_count": 5946,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 28,
+          "single_overt_np_sbj": 27,
+          "finite_verb_before_subject": 27
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 27,
+          "single_overt_np_sbj": 25,
+          "finite_verb_before_subject": 22,
+          "subject_before_finite_verb": 3
+        },
+        "IP-SUB": {}
+      }
+    },
+    {
+      "path": "texts-ENHG/1480_troyana_austria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1480,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1480_Troyana_Lit-prose_Austria.": 400
+      },
+      "tree_units_with_words": 400,
+      "surface_token_count": 10040,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 252,
+          "single_overt_np_sbj": 229,
+          "subject_before_finite_verb": 67,
+          "finite_verb_before_subject": 162
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 246,
+          "single_overt_np_sbj": 64,
+          "subject_before_finite_verb": 34,
+          "finite_verb_before_subject": 29
+        },
+        "IP-SUB": {
+          "clauses_read": 296,
+          "single_overt_np_sbj": 204,
+          "finite_verb_before_subject": 7,
+          "subject_before_finite_verb": 196
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1483_koelhoff_cologne.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1483,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1483_Koelhoff_Chronicle_Cologne.": 295
+      },
+      "tree_units_with_words": 295,
+      "surface_token_count": 9992,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 233,
+          "single_overt_np_sbj": 184,
+          "subject_before_finite_verb": 85,
+          "finite_verb_before_subject": 99
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 195,
+          "single_overt_np_sbj": 91,
+          "finite_verb_before_subject": 43,
+          "subject_before_finite_verb": 48
+        },
+        "IP-SUB": {
+          "clauses_read": 368,
+          "single_overt_np_sbj": 229,
+          "subject_before_finite_verb": 203,
+          "finite_verb_before_subject": 19
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1486_edlibach_switzerland.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1486,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1486_Edlibach_Chronicle_Switzerland.": 181
+      },
+      "tree_units_with_words": 181,
+      "surface_token_count": 10066,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 164,
+          "single_overt_np_sbj": 119,
+          "finite_verb_before_subject": 83,
+          "subject_before_finite_verb": 31
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 104,
+          "single_overt_np_sbj": 50,
+          "finite_verb_before_subject": 34,
+          "subject_before_finite_verb": 14
+        },
+        "IP-SUB": {
+          "clauses_read": 415,
+          "single_overt_np_sbj": 286,
+          "subject_before_finite_verb": 264,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1486_jerusalem_hesse.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1486,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1486_Jerusalem_Travel_Hesse.": 314
+      },
+      "tree_units_with_words": 314,
+      "surface_token_count": 10260,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 268,
+          "single_overt_np_sbj": 245,
+          "subject_before_finite_verb": 64,
+          "finite_verb_before_subject": 180
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 142,
+          "single_overt_np_sbj": 78,
+          "subject_before_finite_verb": 16,
+          "finite_verb_before_subject": 60
+        },
+        "IP-SUB": {
+          "clauses_read": 413,
+          "single_overt_np_sbj": 294,
+          "subject_before_finite_verb": 272,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1497_cirurgia_alsace.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1497,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1497_Cirurgia_Medicine_Alsace.": 318
+      },
+      "tree_units_with_words": 318,
+      "surface_token_count": 10039,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 273,
+          "single_overt_np_sbj": 201,
+          "finite_verb_before_subject": 91,
+          "subject_before_finite_verb": 107
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 122,
+          "single_overt_np_sbj": 71,
+          "subject_before_finite_verb": 24,
+          "finite_verb_before_subject": 46
+        },
+        "IP-SUB": {
+          "clauses_read": 476,
+          "single_overt_np_sbj": 303,
+          "subject_before_finite_verb": 216,
+          "finite_verb_before_subject": 83
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1498_tauler_saxony.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1498,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1498_Tauler_Rel-sermon_Saxony.": 396
+      },
+      "tree_units_with_words": 397,
+      "surface_token_count": 10025,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 343,
+          "single_overt_np_sbj": 261,
+          "subject_before_finite_verb": 112,
+          "finite_verb_before_subject": 147
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 276,
+          "single_overt_np_sbj": 172,
+          "subject_before_finite_verb": 78,
+          "finite_verb_before_subject": 90
+        },
+        "IP-SUB": {
+          "clauses_read": 435,
+          "single_overt_np_sbj": 295,
+          "subject_before_finite_verb": 257,
+          "finite_verb_before_subject": 27
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1499_ThurErfurt_Thuringia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1499,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1499_ThurErfurt_Chronik_Thuringia.": 346
+      },
+      "tree_units_with_words": 346,
+      "surface_token_count": 9938,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 312,
+          "single_overt_np_sbj": 280,
+          "finite_verb_before_subject": 229,
+          "subject_before_finite_verb": 50
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 395,
+          "single_overt_np_sbj": 117,
+          "subject_before_finite_verb": 71,
+          "finite_verb_before_subject": 46
+        },
+        "IP-SUB": {
+          "clauses_read": 241,
+          "single_overt_np_sbj": 169,
+          "subject_before_finite_verb": 154,
+          "finite_verb_before_subject": 10
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1501_stiftbriefe_austria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1501,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1501_Stiftbriefe_Records_Austria.": 148
+      },
+      "tree_units_with_words": 148,
+      "surface_token_count": 10035,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 100,
+          "single_overt_np_sbj": 47,
+          "subject_before_finite_verb": 13,
+          "finite_verb_before_subject": 17
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 17,
+          "single_overt_np_sbj": 8,
+          "finite_verb_before_subject": 5,
+          "subject_before_finite_verb": 3
+        },
+        "IP-SUB": {
+          "clauses_read": 255,
+          "single_overt_np_sbj": 129,
+          "subject_before_finite_verb": 122
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1521_olvier_switzerland.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1521,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1521_Olvier_Lit-prose_Switzerland.": 381
+      },
+      "tree_units_with_words": 381,
+      "surface_token_count": 10013,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 274,
+          "single_overt_np_sbj": 229,
+          "finite_verb_before_subject": 191,
+          "subject_before_finite_verb": 38
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 161,
+          "single_overt_np_sbj": 46,
+          "finite_verb_before_subject": 37,
+          "subject_before_finite_verb": 9
+        },
+        "IP-SUB": {
+          "clauses_read": 429,
+          "single_overt_np_sbj": 276,
+          "finite_verb_before_subject": 13,
+          "subject_before_finite_verb": 259
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1522_martinus_saxony.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1522,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1522_Martinus_Rel-pamphlet_Saxony.": 292
+      },
+      "tree_units_with_words": 292,
+      "surface_token_count": 6059,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 246,
+          "single_overt_np_sbj": 181,
+          "subject_before_finite_verb": 98,
+          "finite_verb_before_subject": 79
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 64,
+          "single_overt_np_sbj": 11,
+          "subject_before_finite_verb": 6,
+          "finite_verb_before_subject": 5
+        },
+        "IP-SUB": {
+          "clauses_read": 274,
+          "single_overt_np_sbj": 184,
+          "subject_before_finite_verb": 158,
+          "finite_verb_before_subject": 10
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1523_butzer_alsace.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1523,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1523_Butzer_Rel-sermon_Alsace.": 300
+      },
+      "tree_units_with_words": 300,
+      "surface_token_count": 10005,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 241,
+          "single_overt_np_sbj": 166,
+          "subject_before_finite_verb": 72,
+          "finite_verb_before_subject": 90
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 132,
+          "single_overt_np_sbj": 72,
+          "subject_before_finite_verb": 38,
+          "finite_verb_before_subject": 33
+        },
+        "IP-SUB": {
+          "clauses_read": 566,
+          "single_overt_np_sbj": 330,
+          "subject_before_finite_verb": 306,
+          "finite_verb_before_subject": 9
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1523_gehorsam_thuringia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1523,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1523_Gehorsam_Rel-pamphlet_Thuringia.": 229
+      },
+      "tree_units_with_words": 229,
+      "surface_token_count": 7199,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 177,
+          "single_overt_np_sbj": 139,
+          "subject_before_finite_verb": 76,
+          "finite_verb_before_subject": 58
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 112,
+          "single_overt_np_sbj": 78,
+          "finite_verb_before_subject": 40,
+          "subject_before_finite_verb": 37
+        },
+        "IP-SUB": {
+          "clauses_read": 374,
+          "single_overt_np_sbj": 236,
+          "subject_before_finite_verb": 204,
+          "finite_verb_before_subject": 15
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1528_grundliche_nuremberg.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1528,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1528_Grundliche_Rel-pamphlet_Nuremberg.": 354
+      },
+      "tree_units_with_words": 354,
+      "surface_token_count": 10023,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 287,
+          "single_overt_np_sbj": 196,
+          "subject_before_finite_verb": 61,
+          "finite_verb_before_subject": 128
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 160,
+          "single_overt_np_sbj": 98,
+          "subject_before_finite_verb": 51,
+          "finite_verb_before_subject": 44
+        },
+        "IP-SUB": {
+          "clauses_read": 509,
+          "single_overt_np_sbj": 306,
+          "subject_before_finite_verb": 275,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1529_geistlichemai_bavaria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1529,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1529_GeistlicheMai_Rel-devotion_Bavaria.": 304
+      },
+      "tree_units_with_words": 304,
+      "surface_token_count": 9945,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 253,
+          "single_overt_np_sbj": 114,
+          "finite_verb_before_subject": 46,
+          "subject_before_finite_verb": 68
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 80,
+          "single_overt_np_sbj": 33,
+          "finite_verb_before_subject": 17,
+          "subject_before_finite_verb": 16
+        },
+        "IP-SUB": {
+          "clauses_read": 452,
+          "single_overt_np_sbj": 267,
+          "subject_before_finite_verb": 255,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1533_fierrabras_moselfr.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1533,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1533_Fierrabras_Lit-prose_Moselfrk.": 100,
+        "1533_Johann_Fierrabras_Moselfrk.": 2,
+        "1533_Fierrabras_Lit-prose_Rhine.": 299
+      },
+      "tree_units_with_words": 401,
+      "surface_token_count": 10029,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 238,
+          "single_overt_np_sbj": 224,
+          "finite_verb_before_subject": 112,
+          "subject_before_finite_verb": 109
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 160,
+          "single_overt_np_sbj": 85,
+          "finite_verb_before_subject": 41,
+          "subject_before_finite_verb": 42
+        },
+        "IP-SUB": {
+          "clauses_read": 196,
+          "single_overt_np_sbj": 143,
+          "subject_before_finite_verb": 130,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1534_weltbuch_swabia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1534,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1534_Weltbuch_Rel-cosmography_Swabia.": 517
+      },
+      "tree_units_with_words": 517,
+      "surface_token_count": 10070,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 481,
+          "single_overt_np_sbj": 382,
+          "subject_before_finite_verb": 185,
+          "finite_verb_before_subject": 196
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 115,
+          "single_overt_np_sbj": 45,
+          "finite_verb_before_subject": 23,
+          "subject_before_finite_verb": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 348,
+          "single_overt_np_sbj": 217,
+          "subject_before_finite_verb": 201,
+          "finite_verb_before_subject": 9
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1537_jungefursten_cologne.ver0_7a.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1537,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1537_JungeFursten_Politics_Cologne.": 258
+      },
+      "tree_units_with_words": 258,
+      "surface_token_count": 10191,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 206,
+          "single_overt_np_sbj": 147,
+          "finite_verb_before_subject": 33,
+          "subject_before_finite_verb": 110
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 123,
+          "single_overt_np_sbj": 35,
+          "subject_before_finite_verb": 30,
+          "finite_verb_before_subject": 5
+        },
+        "IP-SUB": {
+          "clauses_read": 445,
+          "single_overt_np_sbj": 219,
+          "subject_before_finite_verb": 182,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1556_marsburg_saxony.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1556,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1556_Marsburg_Chronicle_Saxony.": 286
+      },
+      "tree_units_with_words": 286,
+      "surface_token_count": 10000,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 240,
+          "single_overt_np_sbj": 180,
+          "subject_before_finite_verb": 78,
+          "finite_verb_before_subject": 102
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 163,
+          "single_overt_np_sbj": 92,
+          "finite_verb_before_subject": 47,
+          "subject_before_finite_verb": 45
+        },
+        "IP-SUB": {
+          "clauses_read": 211,
+          "single_overt_np_sbj": 116,
+          "subject_before_finite_verb": 62,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1556_nachbarn_alsace.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1556,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1556_Nachbarn_Lit-prose_Alsace.": 326
+      },
+      "tree_units_with_words": 326,
+      "surface_token_count": 9853,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 229,
+          "single_overt_np_sbj": 194,
+          "finite_verb_before_subject": 116,
+          "subject_before_finite_verb": 75
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 184,
+          "single_overt_np_sbj": 107,
+          "finite_verb_before_subject": 66,
+          "subject_before_finite_verb": 39
+        },
+        "IP-SUB": {
+          "clauses_read": 305,
+          "single_overt_np_sbj": 214,
+          "subject_before_finite_verb": 174,
+          "finite_verb_before_subject": 12
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1557_historia_hesse.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1557,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1557_Historia_Travel_Hesse.": 576
+      },
+      "tree_units_with_words": 576,
+      "surface_token_count": 10038,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 527,
+          "single_overt_np_sbj": 447,
+          "subject_before_finite_verb": 187,
+          "finite_verb_before_subject": 258
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 301,
+          "single_overt_np_sbj": 74,
+          "subject_before_finite_verb": 46,
+          "finite_verb_before_subject": 28
+        },
+        "IP-SUB": {
+          "clauses_read": 467,
+          "single_overt_np_sbj": 347,
+          "subject_before_finite_verb": 330,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1557_moscovia_austria.ver0_8.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1557,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1557_Moscovia_Report_Austria.": 415
+      },
+      "tree_units_with_words": 415,
+      "surface_token_count": 10005,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 381,
+          "single_overt_np_sbj": 272,
+          "finite_verb_before_subject": 155,
+          "subject_before_finite_verb": 117
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 123,
+          "single_overt_np_sbj": 50,
+          "finite_verb_before_subject": 23,
+          "subject_before_finite_verb": 26
+        },
+        "IP-SUB": {
+          "clauses_read": 365,
+          "single_overt_np_sbj": 228,
+          "subject_before_finite_verb": 162,
+          "finite_verb_before_subject": 9
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1559_epitome_cologne.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1559,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1559_Epitome_Report_Cologne.": 334
+      },
+      "tree_units_with_words": 334,
+      "surface_token_count": 10019,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 293,
+          "single_overt_np_sbj": 221,
+          "finite_verb_before_subject": 149,
+          "subject_before_finite_verb": 68
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 227,
+          "single_overt_np_sbj": 128,
+          "subject_before_finite_verb": 61,
+          "finite_verb_before_subject": 66
+        },
+        "IP-SUB": {
+          "clauses_read": 447,
+          "single_overt_np_sbj": 307,
+          "subject_before_finite_verb": 250,
+          "finite_verb_before_subject": 18
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1578_gespansten_switzerland.ver0_8.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1578,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1578_Gespansten_Occult_Switzerland.": 302
+      },
+      "tree_units_with_words": 302,
+      "surface_token_count": 10036,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 277,
+          "single_overt_np_sbj": 218,
+          "subject_before_finite_verb": 92,
+          "finite_verb_before_subject": 125
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 221,
+          "single_overt_np_sbj": 95,
+          "finite_verb_before_subject": 60,
+          "subject_before_finite_verb": 35
+        },
+        "IP-SUB": {
+          "clauses_read": 626,
+          "single_overt_np_sbj": 424,
+          "subject_before_finite_verb": 352,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1578_summaria_nuremberg.ver0_9.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1578,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1578_Summaria_Rel-devotional_Nuremberg.": 600
+      },
+      "tree_units_with_words": 600,
+      "surface_token_count": 10020,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 494,
+          "single_overt_np_sbj": 349,
+          "finite_verb_before_subject": 200,
+          "subject_before_finite_verb": 148
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 499,
+          "single_overt_np_sbj": 278,
+          "subject_before_finite_verb": 254,
+          "finite_verb_before_subject": 17
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1582_rauwolf_swabia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1582,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1582_Rauwolf_Travel_Swabia.": 258
+      },
+      "tree_units_with_words": 258,
+      "surface_token_count": 10042,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 252,
+          "single_overt_np_sbj": 213,
+          "finite_verb_before_subject": 167,
+          "subject_before_finite_verb": 46
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 77,
+          "single_overt_np_sbj": 6,
+          "subject_before_finite_verb": 1,
+          "finite_verb_before_subject": 5
+        },
+        "IP-SUB": {
+          "clauses_read": 492,
+          "single_overt_np_sbj": 301,
+          "subject_before_finite_verb": 221,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1583_concordia_bavaria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1583,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1583_Concordia_Rel-theology_Bavaria.": 369
+      },
+      "tree_units_with_words": 369,
+      "surface_token_count": 10014,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 258,
+          "single_overt_np_sbj": 172,
+          "finite_verb_before_subject": 91,
+          "subject_before_finite_verb": 75
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 102,
+          "single_overt_np_sbj": 58,
+          "subject_before_finite_verb": 26,
+          "finite_verb_before_subject": 31
+        },
+        "IP-SUB": {
+          "clauses_read": 411,
+          "single_overt_np_sbj": 206,
+          "finite_verb_before_subject": 9,
+          "subject_before_finite_verb": 169
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1599_thuringische_thuringia.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1599,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1599_Thuringische_Chronicle_Thuringia.": 437
+      },
+      "tree_units_with_words": 437,
+      "surface_token_count": 9706,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 406,
+          "single_overt_np_sbj": 366,
+          "finite_verb_before_subject": 232,
+          "subject_before_finite_verb": 133
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 282,
+          "single_overt_np_sbj": 82,
+          "finite_verb_before_subject": 40,
+          "subject_before_finite_verb": 42
+        },
+        "IP-SUB": {
+          "clauses_read": 305,
+          "single_overt_np_sbj": 195,
+          "subject_before_finite_verb": 151,
+          "finite_verb_before_subject": 3
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1605_hessische_hesse.ver0_8.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1605,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1605_Hessische_Chronicle_Hesse.": 330
+      },
+      "tree_units_with_words": 330,
+      "surface_token_count": 10001,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 253,
+          "single_overt_np_sbj": 183,
+          "finite_verb_before_subject": 138,
+          "subject_before_finite_verb": 41
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 92,
+          "single_overt_np_sbj": 26,
+          "finite_verb_before_subject": 22,
+          "subject_before_finite_verb": 4
+        },
+        "IP-SUB": {
+          "clauses_read": 330,
+          "single_overt_np_sbj": 195,
+          "subject_before_finite_verb": 75,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1608_theatri_thuringia.ver0_9.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1608,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1608_Theatri_History_Thuringia.": 327
+      },
+      "tree_units_with_words": 327,
+      "surface_token_count": 9945,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 192,
+          "single_overt_np_sbj": 95,
+          "subject_before_finite_verb": 42,
+          "finite_verb_before_subject": 52
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 388,
+          "single_overt_np_sbj": 196,
+          "subject_before_finite_verb": 57,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1609_teutschernation_cologne.ver0_7a.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1609,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1609_TeutscherNation_Geography_Cologne.": 344,
+        "1609_TeutscherNation_Rel-treatise_Cologne.": 10
+      },
+      "tree_units_with_words": 354,
+      "surface_token_count": 9825,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 319,
+          "single_overt_np_sbj": 262,
+          "subject_before_finite_verb": 120,
+          "finite_verb_before_subject": 140
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 160,
+          "single_overt_np_sbj": 62,
+          "finite_verb_before_subject": 43,
+          "subject_before_finite_verb": 18
+        },
+        "IP-SUB": {
+          "clauses_read": 387,
+          "single_overt_np_sbj": 244,
+          "subject_before_finite_verb": 203,
+          "finite_verb_before_subject": 6
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1624_lichtkugel_swabia.ver0_8.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1624,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1624_Lichtkugel_Nature_Swabia.": 413
+      },
+      "tree_units_with_words": 413,
+      "surface_token_count": 9966,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 296,
+          "single_overt_np_sbj": 211,
+          "finite_verb_before_subject": 132,
+          "subject_before_finite_verb": 77
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 95,
+          "single_overt_np_sbj": 30,
+          "finite_verb_before_subject": 19,
+          "subject_before_finite_verb": 11
+        },
+        "IP-SUB": {
+          "clauses_read": 461,
+          "single_overt_np_sbj": 289,
+          "subject_before_finite_verb": 231,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1624_poeterey_silesia.ver0_7c.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1624,
+      "filename_version": "0_7c",
+      "text_id_prefixes": {
+        "1624_Poeterey_Poetics_Silesia.": 269
+      },
+      "tree_units_with_words": 269,
+      "surface_token_count": 9498,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 229,
+          "single_overt_np_sbj": 187,
+          "finite_verb_before_subject": 107,
+          "subject_before_finite_verb": 79
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 64,
+          "single_overt_np_sbj": 26,
+          "subject_before_finite_verb": 10,
+          "finite_verb_before_subject": 16
+        },
+        "IP-SUB": {
+          "clauses_read": 516,
+          "single_overt_np_sbj": 333,
+          "subject_before_finite_verb": 282,
+          "finite_verb_before_subject": 9
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1624_schiffarten_switzerland.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1624,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1624_Schiffarten_Travel_Switzerland.": 358
+      },
+      "tree_units_with_words": 358,
+      "surface_token_count": 9615,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 351,
+          "single_overt_np_sbj": 294,
+          "finite_verb_before_subject": 167,
+          "subject_before_finite_verb": 126
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 130,
+          "single_overt_np_sbj": 41,
+          "subject_before_finite_verb": 20,
+          "finite_verb_before_subject": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 552,
+          "single_overt_np_sbj": 361,
+          "subject_before_finite_verb": 285,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1628_policeij_alsace.ver0_9.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1628,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1628_Policei_Law_Alsace.": 159
+      },
+      "tree_units_with_words": 159,
+      "surface_token_count": 10029,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 95,
+          "single_overt_np_sbj": 49,
+          "finite_verb_before_subject": 35,
+          "subject_before_finite_verb": 8
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 365,
+          "single_overt_np_sbj": 165,
+          "subject_before_finite_verb": 123,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1639_rettung_bavaria.ver0_8.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1639,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1639_Rettung_Rel-treatise_Bavaria.": 309
+      },
+      "tree_units_with_words": 309,
+      "surface_token_count": 9938,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 199,
+          "single_overt_np_sbj": 163,
+          "subject_before_finite_verb": 87,
+          "finite_verb_before_subject": 74
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 142,
+          "single_overt_np_sbj": 102,
+          "finite_verb_before_subject": 40,
+          "subject_before_finite_verb": 60
+        },
+        "IP-SUB": {
+          "clauses_read": 363,
+          "single_overt_np_sbj": 220,
+          "subject_before_finite_verb": 164,
+          "finite_verb_before_subject": 3
+        }
+      }
+    },
+    {
+      "path": "texts-ENHG/1650_probstein_austria.ver0_7b.txt",
+      "period_directory": "ENHG",
+      "filename_year": 1650,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1650_Probstein_Rel-treatise_Austria.": 487
+      },
+      "tree_units_with_words": 487,
+      "surface_token_count": 9848,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 377,
+          "single_overt_np_sbj": 293,
+          "subject_before_finite_verb": 125,
+          "finite_verb_before_subject": 165
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 94,
+          "single_overt_np_sbj": 41,
+          "finite_verb_before_subject": 19,
+          "subject_before_finite_verb": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 467,
+          "single_overt_np_sbj": 325,
+          "subject_before_finite_verb": 256,
+          "finite_verb_before_subject": 12
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1050_rheinauer_alemannic.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1050,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1050_Rheinauer_Rel-prayer_Alemannic.": 67
+      },
+      "tree_units_with_words": 67,
+      "surface_token_count": 1480,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 61,
+          "single_overt_np_sbj": 35,
+          "subject_before_finite_verb": 18,
+          "finite_verb_before_subject": 16
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 20,
+          "single_overt_np_sbj": 2,
+          "subject_before_finite_verb": 2
+        },
+        "IP-SUB": {
+          "clauses_read": 89,
+          "single_overt_np_sbj": 60,
+          "subject_before_finite_verb": 57,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1065_williram_efranc.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1065,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1065_Williram_Rel-translation_EFranc.": 555
+      },
+      "tree_units_with_words": 555,
+      "surface_token_count": 10027,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 495,
+          "single_overt_np_sbj": 393,
+          "finite_verb_before_subject": 165,
+          "subject_before_finite_verb": 223
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 124,
+          "single_overt_np_sbj": 62,
+          "finite_verb_before_subject": 25,
+          "subject_before_finite_verb": 35
+        },
+        "IP-SUB": {
+          "clauses_read": 390,
+          "single_overt_np_sbj": 230,
+          "subject_before_finite_verb": 207,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1067_otloh_bavaria.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1067,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1067_Otloh_Rel-prayer_Bavaria.": 29
+      },
+      "tree_units_with_words": 29,
+      "surface_token_count": 877,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 27,
+          "single_overt_np_sbj": 15,
+          "finite_verb_before_subject": 12,
+          "subject_before_finite_verb": 1
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 5
+        },
+        "IP-SUB": {
+          "clauses_read": 46,
+          "single_overt_np_sbj": 30,
+          "subject_before_finite_verb": 27
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1070_physiologus_alemannic.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1070,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1070_Physiologus_Nature_Alemannic.": 95
+      },
+      "tree_units_with_words": 95,
+      "surface_token_count": 1601,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 90,
+          "single_overt_np_sbj": 83,
+          "finite_verb_before_subject": 47,
+          "subject_before_finite_verb": 35
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 58,
+          "single_overt_np_sbj": 17,
+          "finite_verb_before_subject": 14,
+          "subject_before_finite_verb": 3
+        },
+        "IP-SUB": {
+          "clauses_read": 91,
+          "single_overt_np_sbj": 59,
+          "subject_before_finite_verb": 56,
+          "finite_verb_before_subject": 3
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1100_alkuin_alemannic.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1100,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1100_Alkuin_Rel-treatise_Alemannic.": 77
+      },
+      "tree_units_with_words": 77,
+      "surface_token_count": 1227,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 55,
+          "single_overt_np_sbj": 40,
+          "finite_verb_before_subject": 24,
+          "subject_before_finite_verb": 16
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 9,
+          "single_overt_np_sbj": 4,
+          "subject_before_finite_verb": 2,
+          "finite_verb_before_subject": 2
+        },
+        "IP-SUB": {
+          "clauses_read": 62,
+          "single_overt_np_sbj": 49,
+          "subject_before_finite_verb": 45,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1100_bamberger_rheinfrk.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1100,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1100_Bamberger_Medicine_Rheinfrk.": 74
+      },
+      "tree_units_with_words": 74,
+      "surface_token_count": 1281,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 55,
+          "single_overt_np_sbj": 25,
+          "finite_verb_before_subject": 10,
+          "subject_before_finite_verb": 15
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 62,
+          "single_overt_np_sbj": 5,
+          "finite_verb_before_subject": 3,
+          "subject_before_finite_verb": 2
+        },
+        "IP-SUB": {
+          "clauses_read": 43,
+          "single_overt_np_sbj": 25,
+          "subject_before_finite_verb": 22,
+          "finite_verb_before_subject": 3
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1100_jungphysiologus_bavaria.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1100,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1100_JungPhysiologus_Nature_Bavaria.": 435
+      },
+      "tree_units_with_words": 435,
+      "surface_token_count": 5924,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 405,
+          "single_overt_np_sbj": 339,
+          "finite_verb_before_subject": 213,
+          "subject_before_finite_verb": 123
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 178,
+          "single_overt_np_sbj": 50,
+          "subject_before_finite_verb": 15,
+          "finite_verb_before_subject": 35
+        },
+        "IP-SUB": {
+          "clauses_read": 291,
+          "single_overt_np_sbj": 198,
+          "subject_before_finite_verb": 192,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1100_prsteinbuch_bavaria.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1100,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1100_PrSteinbuch_Medicine_Bavaria.": 53
+      },
+      "tree_units_with_words": 53,
+      "surface_token_count": 626,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 39,
+          "single_overt_np_sbj": 26,
+          "subject_before_finite_verb": 24,
+          "finite_verb_before_subject": 2
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 16,
+          "single_overt_np_sbj": 4,
+          "subject_before_finite_verb": 4
+        },
+        "IP-SUB": {
+          "clauses_read": 47,
+          "single_overt_np_sbj": 29,
+          "subject_before_finite_verb": 26,
+          "finite_verb_before_subject": 3
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1145_christigeburt_swabia.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1145,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1145_ChristiGeburt_Rel-sermon_Swabia.": 52
+      },
+      "tree_units_with_words": 52,
+      "surface_token_count": 826,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 35,
+          "single_overt_np_sbj": 32,
+          "finite_verb_before_subject": 18,
+          "subject_before_finite_verb": 13
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 10,
+          "single_overt_np_sbj": 3,
+          "finite_verb_before_subject": 1,
+          "subject_before_finite_verb": 2
+        },
+        "IP-SUB": {
+          "clauses_read": 38,
+          "single_overt_np_sbj": 30,
+          "subject_before_finite_verb": 29,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1150_zuricher_switzerland.ver0_9.txt",
+      "period_directory": "MHG",
+      "filename_year": 1150,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1150_Zuricher_Rel-sermon_Switzerland.": 819
+      },
+      "tree_units_with_words": 819,
+      "surface_token_count": 9992,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 571,
+          "single_overt_np_sbj": 446,
+          "finite_verb_before_subject": 242,
+          "subject_before_finite_verb": 200
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 448,
+          "single_overt_np_sbj": 316,
+          "subject_before_finite_verb": 300,
+          "finite_verb_before_subject": 14
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1180_spececcl_swabia.ver0_9.txt",
+      "period_directory": "MHG",
+      "filename_year": 1180,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1180_SpeculumEccl_Rel-sermon_Swabia.": 873
+      },
+      "tree_units_with_words": 873,
+      "surface_token_count": 10023,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 650,
+          "single_overt_np_sbj": 433,
+          "finite_verb_before_subject": 290,
+          "subject_before_finite_verb": 142
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 462,
+          "single_overt_np_sbj": 312,
+          "subject_before_finite_verb": 298,
+          "finite_verb_before_subject": 9
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1195_lucidarius_alemannic.ver0_8(ascii).txt",
+      "period_directory": "MHG",
+      "filename_year": 1195,
+      "filename_version": "0_8(ascii)",
+      "text_id_prefixes": {
+        "1195_Lucidarius_Nature_Alemannic.": 647
+      },
+      "tree_units_with_words": 647,
+      "surface_token_count": 6530,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 158,
+          "single_overt_np_sbj": 158,
+          "finite_verb_before_subject": 158
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 1,
+          "single_overt_np_sbj": 1,
+          "finite_verb_before_subject": 1
+        },
+        "IP-SUB": {
+          "clauses_read": 2,
+          "single_overt_np_sbj": 1,
+          "subject_before_finite_verb": 1
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1199_bartholomaus_bavaria.ver0_9.txt",
+      "period_directory": "MHG",
+      "filename_year": 1199,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1199_Bartholomaeus_Medicine_Bavaria.": 1019
+      },
+      "tree_units_with_words": 1019,
+      "surface_token_count": 10038,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 1003,
+          "single_overt_np_sbj": 312,
+          "finite_verb_before_subject": 201,
+          "subject_before_finite_verb": 105
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 537,
+          "single_overt_np_sbj": 397,
+          "subject_before_finite_verb": 264,
+          "finite_verb_before_subject": 129
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1199_predfragmente_hess-thur.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1199,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1199_PredFragmente_Rel-sermon_Hess-Thur.": 115
+      },
+      "tree_units_with_words": 115,
+      "surface_token_count": 2488,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 102,
+          "single_overt_np_sbj": 87,
+          "finite_verb_before_subject": 75,
+          "subject_before_finite_verb": 12
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 60,
+          "single_overt_np_sbj": 14,
+          "finite_verb_before_subject": 8,
+          "subject_before_finite_verb": 6
+        },
+        "IP-SUB": {
+          "clauses_read": 119,
+          "single_overt_np_sbj": 85,
+          "subject_before_finite_verb": 81,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1199_priesterkonrad_bavaria.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1199,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1199_PriesterKonrad_Rel-sermon_Bavaria.": 244
+      },
+      "tree_units_with_words": 244,
+      "surface_token_count": 3796,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 167,
+          "single_overt_np_sbj": 152,
+          "finite_verb_before_subject": 134,
+          "subject_before_finite_verb": 18
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 94,
+          "single_overt_np_sbj": 15,
+          "finite_verb_before_subject": 13,
+          "subject_before_finite_verb": 2
+        },
+        "IP-SUB": {
+          "clauses_read": 145,
+          "single_overt_np_sbj": 106,
+          "subject_before_finite_verb": 105,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1199_schleizer_rheinfrk.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1199,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1150_Schleizer_Rel-translation_Rheinfrk.": 192,
+        "1199_Schleizer_Rel-psalms_Rheinfrk.": 1
+      },
+      "tree_units_with_words": 193,
+      "surface_token_count": 2196,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 152,
+          "single_overt_np_sbj": 111,
+          "subject_before_finite_verb": 78,
+          "finite_verb_before_subject": 33
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 95,
+          "single_overt_np_sbj": 60,
+          "finite_verb_before_subject": 19,
+          "subject_before_finite_verb": 41
+        },
+        "IP-SUB": {
+          "clauses_read": 53,
+          "single_overt_np_sbj": 28,
+          "subject_before_finite_verb": 27,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1199_schlierbach_efranc.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1199,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1199_Schlierbach_Rel-psalms_EFranc.": 32
+      },
+      "tree_units_with_words": 32,
+      "surface_token_count": 429,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 25,
+          "single_overt_np_sbj": 11,
+          "finite_verb_before_subject": 8,
+          "subject_before_finite_verb": 2
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 9,
+          "single_overt_np_sbj": 6,
+          "subject_before_finite_verb": 2,
+          "finite_verb_before_subject": 4
+        },
+        "IP-SUB": {
+          "clauses_read": 16,
+          "single_overt_np_sbj": 4,
+          "subject_before_finite_verb": 3,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1200_hoffmannsche_swabia.ver0_9.txt",
+      "period_directory": "MHG",
+      "filename_year": 1200,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1200_Hoffmannsche_Rel-sermon_Swabia.": 631
+      },
+      "tree_units_with_words": 631,
+      "surface_token_count": 10003,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 410,
+          "single_overt_np_sbj": 282,
+          "finite_verb_before_subject": 197,
+          "subject_before_finite_verb": 82
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 478,
+          "single_overt_np_sbj": 371,
+          "subject_before_finite_verb": 357,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1200_lancelotm_moselfrk.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1200,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1200_LancelotM_Lit-prose_Moselfrk.": 58
+      },
+      "tree_units_with_words": 58,
+      "surface_token_count": 861,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 40,
+          "single_overt_np_sbj": 36,
+          "finite_verb_before_subject": 21,
+          "subject_before_finite_verb": 15
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 25,
+          "single_overt_np_sbj": 7,
+          "subject_before_finite_verb": 6,
+          "finite_verb_before_subject": 1
+        },
+        "IP-SUB": {
+          "clauses_read": 26,
+          "single_overt_np_sbj": 21,
+          "subject_before_finite_verb": 21
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1200_leysersche_austria.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1200,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1200_Leysersche_Rel-sermon_Austria.": 813
+      },
+      "tree_units_with_words": 813,
+      "surface_token_count": 9977,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 601,
+          "single_overt_np_sbj": 483,
+          "subject_before_finite_verb": 298,
+          "finite_verb_before_subject": 185
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 114,
+          "single_overt_np_sbj": 52,
+          "finite_verb_before_subject": 31,
+          "subject_before_finite_verb": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 556,
+          "single_overt_np_sbj": 406,
+          "subject_before_finite_verb": 384,
+          "finite_verb_before_subject": 19
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1200_mitteldeutschk_hess-rhfrk.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1200,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1200_MitteldeutschK_Rel-sermon_Hess-Rhfrk.": 520
+      },
+      "tree_units_with_words": 520,
+      "surface_token_count": 9133,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 338,
+          "single_overt_np_sbj": 290,
+          "finite_verb_before_subject": 216,
+          "subject_before_finite_verb": 74
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 263,
+          "single_overt_np_sbj": 81,
+          "finite_verb_before_subject": 33,
+          "subject_before_finite_verb": 48
+        },
+        "IP-SUB": {
+          "clauses_read": 331,
+          "single_overt_np_sbj": 218,
+          "subject_before_finite_verb": 208,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1220_muhlhauser_thuringia.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1220,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1220_Muhlhauser_Law_Thuringia.": 348
+      },
+      "tree_units_with_words": 348,
+      "surface_token_count": 9994,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 321,
+          "single_overt_np_sbj": 263,
+          "finite_verb_before_subject": 225,
+          "subject_before_finite_verb": 38
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 119,
+          "single_overt_np_sbj": 41,
+          "subject_before_finite_verb": 18,
+          "finite_verb_before_subject": 23
+        },
+        "IP-SUB": {
+          "clauses_read": 793,
+          "single_overt_np_sbj": 531,
+          "subject_before_finite_verb": 348,
+          "finite_verb_before_subject": 177
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1225_prager_efranc.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1225,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1225_Prager_Rel-sermon_EFranc.": 261
+      },
+      "tree_units_with_words": 261,
+      "surface_token_count": 4252,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 157,
+          "single_overt_np_sbj": 132,
+          "finite_verb_before_subject": 78,
+          "subject_before_finite_verb": 54
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 47,
+          "single_overt_np_sbj": 21,
+          "finite_verb_before_subject": 10,
+          "subject_before_finite_verb": 11
+        },
+        "IP-SUB": {
+          "clauses_read": 203,
+          "single_overt_np_sbj": 135,
+          "subject_before_finite_verb": 121,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1225_stpauler_bavaria.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1225,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1225_StPauler_Rel-Sermon_Bavaria.": 533
+      },
+      "tree_units_with_words": 533,
+      "surface_token_count": 10007,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 374,
+          "single_overt_np_sbj": 290,
+          "finite_verb_before_subject": 158,
+          "subject_before_finite_verb": 129
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 157,
+          "single_overt_np_sbj": 57,
+          "finite_verb_before_subject": 42,
+          "subject_before_finite_verb": 14
+        },
+        "IP-SUB": {
+          "clauses_read": 446,
+          "single_overt_np_sbj": 251,
+          "subject_before_finite_verb": 234,
+          "finite_verb_before_subject": 14
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1249_millstaetter_baden.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1249,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1249_Millstaetter_Rel-sermon_Baden.": 686
+      },
+      "tree_units_with_words": 688,
+      "surface_token_count": 9969,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 483,
+          "single_overt_np_sbj": 379,
+          "subject_before_finite_verb": 149,
+          "finite_verb_before_subject": 227
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 145,
+          "single_overt_np_sbj": 19,
+          "finite_verb_before_subject": 11,
+          "subject_before_finite_verb": 8
+        },
+        "IP-SUB": {
+          "clauses_read": 451,
+          "single_overt_np_sbj": 284,
+          "subject_before_finite_verb": 270,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1250_admonter_austria.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1250,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1250_Admonter_Rel-monastic_Austria.": 465
+      },
+      "tree_units_with_words": 465,
+      "surface_token_count": 9267,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 380,
+          "single_overt_np_sbj": 275,
+          "finite_verb_before_subject": 177,
+          "subject_before_finite_verb": 97
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 65,
+          "single_overt_np_sbj": 33,
+          "subject_before_finite_verb": 18,
+          "finite_verb_before_subject": 15
+        },
+        "IP-SUB": {
+          "clauses_read": 556,
+          "single_overt_np_sbj": 367,
+          "subject_before_finite_verb": 327,
+          "finite_verb_before_subject": 22
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1260_lilie_cologne.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1260,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1260_Lilie_Rel-allegory_Cologne.": 225
+      },
+      "tree_units_with_words": 225,
+      "surface_token_count": 3954,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 161,
+          "single_overt_np_sbj": 112,
+          "subject_before_finite_verb": 73,
+          "finite_verb_before_subject": 39
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 70,
+          "single_overt_np_sbj": 38,
+          "subject_before_finite_verb": 21,
+          "finite_verb_before_subject": 17
+        },
+        "IP-SUB": {
+          "clauses_read": 190,
+          "single_overt_np_sbj": 118,
+          "subject_before_finite_verb": 108,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1272_david_bavaria.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1272,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1272_David_Rel-treatise_Bavaria.": 427
+      },
+      "tree_units_with_words": 427,
+      "surface_token_count": 10004,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 379,
+          "single_overt_np_sbj": 290,
+          "subject_before_finite_verb": 147,
+          "finite_verb_before_subject": 143
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 156,
+          "single_overt_np_sbj": 82,
+          "subject_before_finite_verb": 37,
+          "finite_verb_before_subject": 44
+        },
+        "IP-SUB": {
+          "clauses_read": 593,
+          "single_overt_np_sbj": 402,
+          "subject_before_finite_verb": 367,
+          "finite_verb_before_subject": 30
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1274_buchkoenige_swabia.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1274,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1274_BuchKoenige_Rel-Narrative_Swabia.": 843
+      },
+      "tree_units_with_words": 843,
+      "surface_token_count": 10011,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 583,
+          "single_overt_np_sbj": 547,
+          "subject_before_finite_verb": 334,
+          "finite_verb_before_subject": 212
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 313,
+          "single_overt_np_sbj": 66,
+          "subject_before_finite_verb": 45,
+          "finite_verb_before_subject": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 286,
+          "single_overt_np_sbj": 196,
+          "subject_before_finite_verb": 184,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1278_salomons_hesse.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1278,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1278_Salomons_Rel-allegory_Hesse.": 595
+      },
+      "tree_units_with_words": 595,
+      "surface_token_count": 9986,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 475,
+          "single_overt_np_sbj": 358,
+          "subject_before_finite_verb": 198,
+          "finite_verb_before_subject": 152
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 136,
+          "single_overt_np_sbj": 54,
+          "finite_verb_before_subject": 35,
+          "subject_before_finite_verb": 19
+        },
+        "IP-SUB": {
+          "clauses_read": 489,
+          "single_overt_np_sbj": 319,
+          "subject_before_finite_verb": 283,
+          "finite_verb_before_subject": 27
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1298_freiburger_baden.ver0_8.txt",
+      "period_directory": "MHG",
+      "filename_year": 1298,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1298_Freiburger_Records_Baden.": 267
+      },
+      "tree_units_with_words": 267,
+      "surface_token_count": 10017,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 250,
+          "single_overt_np_sbj": 213,
+          "subject_before_finite_verb": 61,
+          "finite_verb_before_subject": 152
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 57,
+          "single_overt_np_sbj": 31,
+          "finite_verb_before_subject": 27,
+          "subject_before_finite_verb": 4
+        },
+        "IP-SUB": {
+          "clauses_read": 339,
+          "single_overt_np_sbj": 208,
+          "subject_before_finite_verb": 195,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1299_expositio_switzerland.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1299,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1299_Expositio_Rel-monastic_Switzerland.": 500
+      },
+      "tree_units_with_words": 500,
+      "surface_token_count": 8869,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 434,
+          "single_overt_np_sbj": 307,
+          "subject_before_finite_verb": 121,
+          "finite_verb_before_subject": 185
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 99,
+          "single_overt_np_sbj": 48,
+          "finite_verb_before_subject": 27,
+          "subject_before_finite_verb": 20
+        },
+        "IP-SUB": {
+          "clauses_read": 559,
+          "single_overt_np_sbj": 382,
+          "subject_before_finite_verb": 338,
+          "finite_verb_before_subject": 28
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1299_martyrologium_thuringia.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1299,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1299_Martyrologium_Rel-narrative_Thuringia.": 766
+      },
+      "tree_units_with_words": 766,
+      "surface_token_count": 10004,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 583,
+          "single_overt_np_sbj": 469,
+          "subject_before_finite_verb": 160,
+          "finite_verb_before_subject": 309
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 222,
+          "single_overt_np_sbj": 67,
+          "finite_verb_before_subject": 44,
+          "subject_before_finite_verb": 23
+        },
+        "IP-SUB": {
+          "clauses_read": 253,
+          "single_overt_np_sbj": 166,
+          "subject_before_finite_verb": 164,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1300_hugokonstanz_switzerland.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1300,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1300_HugoKonstanz_Rel-sermon_Switzerland.": 360
+      },
+      "tree_units_with_words": 360,
+      "surface_token_count": 7017,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 282,
+          "single_overt_np_sbj": 232,
+          "finite_verb_before_subject": 150,
+          "subject_before_finite_verb": 81
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 65,
+          "single_overt_np_sbj": 16,
+          "subject_before_finite_verb": 4,
+          "finite_verb_before_subject": 12
+        },
+        "IP-SUB": {
+          "clauses_read": 342,
+          "single_overt_np_sbj": 252,
+          "subject_before_finite_verb": 240,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1300_koelnkloster_cologne.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1300,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1300_KoelnKloster_Rel-sermon_Cologne.": 587
+      },
+      "tree_units_with_words": 587,
+      "surface_token_count": 9739,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 475,
+          "single_overt_np_sbj": 392,
+          "finite_verb_before_subject": 221,
+          "subject_before_finite_verb": 168
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 135,
+          "single_overt_np_sbj": 78,
+          "finite_verb_before_subject": 24,
+          "subject_before_finite_verb": 54
+        },
+        "IP-SUB": {
+          "clauses_read": 574,
+          "single_overt_np_sbj": 400,
+          "finite_verb_before_subject": 37,
+          "subject_before_finite_verb": 355
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1300_leipziger_thursax.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1300,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1300_Leipziger_Rel-sermon_ThurSax.": 174
+      },
+      "tree_units_with_words": 174,
+      "surface_token_count": 3681,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 147,
+          "single_overt_np_sbj": 127,
+          "subject_before_finite_verb": 29,
+          "finite_verb_before_subject": 98
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 80,
+          "single_overt_np_sbj": 16,
+          "subject_before_finite_verb": 7,
+          "finite_verb_before_subject": 9
+        },
+        "IP-SUB": {
+          "clauses_read": 171,
+          "single_overt_np_sbj": 104,
+          "subject_before_finite_verb": 94,
+          "finite_verb_before_subject": 6
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1325_berliner_thursax.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1325,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1325_Berliner_Rel-gospel_ThurSax.": 717
+      },
+      "tree_units_with_words": 717,
+      "surface_token_count": 9992,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 264,
+          "single_overt_np_sbj": 247,
+          "subject_before_finite_verb": 50,
+          "finite_verb_before_subject": 197
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 145,
+          "single_overt_np_sbj": 43,
+          "subject_before_finite_verb": 34,
+          "finite_verb_before_subject": 9
+        },
+        "IP-SUB": {
+          "clauses_read": 147,
+          "single_overt_np_sbj": 93,
+          "subject_before_finite_verb": 88,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1328_freising_bavaria.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1328,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1328_Freising_Law_Bavaria.": 439
+      },
+      "tree_units_with_words": 439,
+      "surface_token_count": 9990,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 398,
+          "single_overt_np_sbj": 337,
+          "subject_before_finite_verb": 156,
+          "finite_verb_before_subject": 181
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 107,
+          "single_overt_np_sbj": 51,
+          "subject_before_finite_verb": 14,
+          "finite_verb_before_subject": 37
+        },
+        "IP-SUB": {
+          "clauses_read": 766,
+          "single_overt_np_sbj": 519,
+          "subject_before_finite_verb": 428,
+          "finite_verb_before_subject": 89
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1330_nikolaus_baden.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1330,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1330_Nikolaus_Rel-sermon_Baden.": 598
+      },
+      "tree_units_with_words": 598,
+      "surface_token_count": 10011,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 417,
+          "single_overt_np_sbj": 355,
+          "subject_before_finite_verb": 170,
+          "finite_verb_before_subject": 184
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 174,
+          "single_overt_np_sbj": 71,
+          "subject_before_finite_verb": 28,
+          "finite_verb_before_subject": 43
+        },
+        "IP-SUB": {
+          "clauses_read": 445,
+          "single_overt_np_sbj": 323,
+          "subject_before_finite_verb": 288,
+          "finite_verb_before_subject": 29
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1336_augsburger_swabia.ver0_7b.txt",
+      "period_directory": "MHG",
+      "filename_year": 1336,
+      "filename_version": "0_7b",
+      "text_id_prefixes": {
+        "1336_Augsburger_Records_Swabia.": 173
+      },
+      "tree_units_with_words": 173,
+      "surface_token_count": 10023,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 171,
+          "single_overt_np_sbj": 157,
+          "subject_before_finite_verb": 44,
+          "finite_verb_before_subject": 113
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 67,
+          "single_overt_np_sbj": 21,
+          "subject_before_finite_verb": 4,
+          "finite_verb_before_subject": 17
+        },
+        "IP-SUB": {
+          "clauses_read": 426,
+          "single_overt_np_sbj": 245,
+          "subject_before_finite_verb": 221,
+          "finite_verb_before_subject": 19
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1340_engelthaler_nuremberg.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1340,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1340_Engelthaler_Rel-narrative_Nuremberg.": 708
+      },
+      "tree_units_with_words": 708,
+      "surface_token_count": 10019,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 507,
+          "single_overt_np_sbj": 473,
+          "subject_before_finite_verb": 125,
+          "finite_verb_before_subject": 348
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 240,
+          "single_overt_np_sbj": 49,
+          "finite_verb_before_subject": 29,
+          "subject_before_finite_verb": 20
+        },
+        "IP-SUB": {
+          "clauses_read": 344,
+          "single_overt_np_sbj": 266,
+          "subject_before_finite_verb": 260,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1340_klosterneuburger_austria.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1340,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1340_Klosterneuburger_Rel-gospel_Austria.": 506
+      },
+      "tree_units_with_words": 506,
+      "surface_token_count": 8545,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 294,
+          "single_overt_np_sbj": 259,
+          "finite_verb_before_subject": 153,
+          "subject_before_finite_verb": 103
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 151,
+          "single_overt_np_sbj": 45,
+          "subject_before_finite_verb": 21,
+          "finite_verb_before_subject": 23
+        },
+        "IP-SUB": {
+          "clauses_read": 264,
+          "single_overt_np_sbj": 176,
+          "subject_before_finite_verb": 167,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-MHG/1349_heiligenleben_hess-thur.ver0_7a.txt",
+      "period_directory": "MHG",
+      "filename_year": 1349,
+      "filename_version": "0_7a",
+      "text_id_prefixes": {
+        "1349_Heiligenleben_Rel-narrative_Hess-Thur.": 611
+      },
+      "tree_units_with_words": 611,
+      "surface_token_count": 10002,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 423,
+          "single_overt_np_sbj": 382,
+          "finite_verb_before_subject": 267,
+          "subject_before_finite_verb": 115
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 328,
+          "single_overt_np_sbj": 110,
+          "finite_verb_before_subject": 43,
+          "subject_before_finite_verb": 65
+        },
+        "IP-SUB": {
+          "clauses_read": 372,
+          "single_overt_np_sbj": 270,
+          "subject_before_finite_verb": 259,
+          "finite_verb_before_subject": 10
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1658_centuria_swabia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1658,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1658_Centuria_Philosophy_Swabia.": 279
+      },
+      "tree_units_with_words": 279,
+      "surface_token_count": 10008,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 199,
+          "single_overt_np_sbj": 114,
+          "subject_before_finite_verb": 34,
+          "finite_verb_before_subject": 79
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 58,
+          "single_overt_np_sbj": 25,
+          "subject_before_finite_verb": 15,
+          "finite_verb_before_subject": 10
+        },
+        "IP-SUB": {
+          "clauses_read": 347,
+          "single_overt_np_sbj": 202,
+          "subject_before_finite_verb": 191,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1658_studentenleben_saxony.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1658,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1658_StudentenLeben_Lit-Drama_Saxony.": 597
+      },
+      "tree_units_with_words": 522,
+      "surface_token_count": 9230,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 339,
+          "single_overt_np_sbj": 259,
+          "subject_before_finite_verb": 183,
+          "finite_verb_before_subject": 74
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 283,
+          "single_overt_np_sbj": 179,
+          "finite_verb_before_subject": 52,
+          "subject_before_finite_verb": 126
+        },
+        "IP-SUB": {
+          "clauses_read": 308,
+          "single_overt_np_sbj": 249,
+          "subject_before_finite_verb": 218,
+          "finite_verb_before_subject": 28
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1663_kunstspiegel_swabia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1663,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1663_Kunstspiegel_Architecture_Swabia.": 184
+      },
+      "tree_units_with_words": 184,
+      "surface_token_count": 9946,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 155,
+          "single_overt_np_sbj": 111,
+          "finite_verb_before_subject": 86,
+          "subject_before_finite_verb": 25
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 76,
+          "single_overt_np_sbj": 46,
+          "finite_verb_before_subject": 41,
+          "subject_before_finite_verb": 5
+        },
+        "IP-SUB": {
+          "clauses_read": 262,
+          "single_overt_np_sbj": 159,
+          "subject_before_finite_verb": 147,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1672_kriegsdienste_efranc.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1672,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1672_Kriegsdienste_Travel_EFranc.": 286
+      },
+      "tree_units_with_words": 286,
+      "surface_token_count": 10002,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 233,
+          "single_overt_np_sbj": 175,
+          "subject_before_finite_verb": 81,
+          "finite_verb_before_subject": 94
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 123,
+          "single_overt_np_sbj": 62,
+          "finite_verb_before_subject": 45,
+          "subject_before_finite_verb": 16
+        },
+        "IP-SUB": {
+          "clauses_read": 466,
+          "single_overt_np_sbj": 260,
+          "subject_before_finite_verb": 247,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1673_catechismus_alsace.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1673,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1672_Catechismus_Rel-sermon_Alsace.": 701
+      },
+      "tree_units_with_words": 701,
+      "surface_token_count": 9974,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 534,
+          "single_overt_np_sbj": 387,
+          "finite_verb_before_subject": 167,
+          "subject_before_finite_verb": 214
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 274,
+          "single_overt_np_sbj": 172,
+          "finite_verb_before_subject": 18,
+          "subject_before_finite_verb": 149
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1682_europaeer_austria.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1682,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1682_Europäer_Lit-prose_Austria.": 544
+      },
+      "tree_units_with_words": 544,
+      "surface_token_count": 10007,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 447,
+          "single_overt_np_sbj": 300,
+          "subject_before_finite_verb": 116,
+          "finite_verb_before_subject": 184
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 322,
+          "single_overt_np_sbj": 207,
+          "subject_before_finite_verb": 195,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1683_psychosophia_hesse.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1683,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1683_Psychosophia_Psychology_Hesse.": 283
+      },
+      "tree_units_with_words": 283,
+      "surface_token_count": 9795,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 180,
+          "single_overt_np_sbj": 109,
+          "subject_before_finite_verb": 46,
+          "finite_verb_before_subject": 61
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 186,
+          "single_overt_np_sbj": 113,
+          "subject_before_finite_verb": 42,
+          "finite_verb_before_subject": 66
+        },
+        "IP-SUB": {
+          "clauses_read": 458,
+          "single_overt_np_sbj": 250,
+          "subject_before_finite_verb": 235,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1699_grammatica_cologne.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1699,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1699_Grammatica_Theology_Cologne.": 304
+      },
+      "tree_units_with_words": 304,
+      "surface_token_count": 9979,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 196,
+          "single_overt_np_sbj": 136,
+          "finite_verb_before_subject": 91,
+          "subject_before_finite_verb": 44
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 126,
+          "single_overt_np_sbj": 59,
+          "finite_verb_before_subject": 37,
+          "subject_before_finite_verb": 22
+        },
+        "IP-SUB": {
+          "clauses_read": 387,
+          "single_overt_np_sbj": 246,
+          "subject_before_finite_verb": 239,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1700_secten_saxony.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1700,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1700_SectenWesen_Theology_Saxony.": 324
+      },
+      "tree_units_with_words": 324,
+      "surface_token_count": 9945,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 229,
+          "single_overt_np_sbj": 165,
+          "subject_before_finite_verb": 90,
+          "finite_verb_before_subject": 74
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 87,
+          "single_overt_np_sbj": 46,
+          "finite_verb_before_subject": 28,
+          "subject_before_finite_verb": 16
+        },
+        "IP-SUB": {
+          "clauses_read": 385,
+          "single_overt_np_sbj": 232,
+          "subject_before_finite_verb": 206,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1706_curieuse_efranc.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1706,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1706_Curieuse_Cookbook_EFranc.": 300
+      },
+      "tree_units_with_words": 298,
+      "surface_token_count": 9857,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 188,
+          "single_overt_np_sbj": 51,
+          "subject_before_finite_verb": 35,
+          "finite_verb_before_subject": 16
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 1028,
+          "single_overt_np_sbj": 67,
+          "finite_verb_before_subject": 46,
+          "subject_before_finite_verb": 19
+        },
+        "IP-SUB": {
+          "clauses_read": 179,
+          "single_overt_np_sbj": 150,
+          "subject_before_finite_verb": 142,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1706_naturgeschichten_switzerland.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1706,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1706_Naturgeschichten_Geography_Switzerland.": 248
+      },
+      "tree_units_with_words": 248,
+      "surface_token_count": 10082,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 197,
+          "single_overt_np_sbj": 134,
+          "finite_verb_before_subject": 83,
+          "subject_before_finite_verb": 51
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 87,
+          "single_overt_np_sbj": 45,
+          "finite_verb_before_subject": 34,
+          "subject_before_finite_verb": 10
+        },
+        "IP-SUB": {
+          "clauses_read": 363,
+          "single_overt_np_sbj": 167,
+          "subject_before_finite_verb": 143,
+          "finite_verb_before_subject": 19
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1708_guldenesschwerd_cologne.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1708,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1708_GuldenesSchwerd_Theology_Cologne.": 533
+      },
+      "tree_units_with_words": 533,
+      "surface_token_count": 10012,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 314,
+          "single_overt_np_sbj": 213,
+          "subject_before_finite_verb": 97,
+          "finite_verb_before_subject": 110
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 362,
+          "single_overt_np_sbj": 174,
+          "subject_before_finite_verb": 155,
+          "finite_verb_before_subject": 12
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1711_baumeister_augsburg.ver0_8c.txt",
+      "period_directory": "NHG",
+      "filename_year": 1711,
+      "filename_version": "0_8c",
+      "text_id_prefixes": {
+        "1711_Baumeister_Architecture_Augsburg.": 233
+      },
+      "tree_units_with_words": 233,
+      "surface_token_count": 6833,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 222,
+          "single_overt_np_sbj": 190,
+          "finite_verb_before_subject": 111,
+          "subject_before_finite_verb": 79
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 87,
+          "single_overt_np_sbj": 67,
+          "finite_verb_before_subject": 42,
+          "subject_before_finite_verb": 25
+        },
+        "IP-SUB": {
+          "clauses_read": 217,
+          "single_overt_np_sbj": 110,
+          "subject_before_finite_verb": 102,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1714_pestbuechlein_hesse.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1714,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1714_Pestbuechlein_Medicine_Hesse.": 299
+      },
+      "tree_units_with_words": 299,
+      "surface_token_count": 10031,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 204,
+          "single_overt_np_sbj": 127,
+          "finite_verb_before_subject": 89,
+          "subject_before_finite_verb": 38
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 135,
+          "single_overt_np_sbj": 76,
+          "subject_before_finite_verb": 27,
+          "finite_verb_before_subject": 48
+        },
+        "IP-SUB": {
+          "clauses_read": 485,
+          "single_overt_np_sbj": 290,
+          "subject_before_finite_verb": 281,
+          "finite_verb_before_subject": 3
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1729_gelehrternarr_baden.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1729,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1729_GelehrterNarr_Lit-prose_Baden.": 467
+      },
+      "tree_units_with_words": 467,
+      "surface_token_count": 10029,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 390,
+          "single_overt_np_sbj": 288,
+          "subject_before_finite_verb": 153,
+          "finite_verb_before_subject": 133
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 447,
+          "single_overt_np_sbj": 282,
+          "subject_before_finite_verb": 246,
+          "finite_verb_before_subject": 24
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1745_betrachtungen_thuringia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1745,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1745_Betrachtungen_Rel-devotion_Thuringia.": 448
+      },
+      "tree_units_with_words": 422,
+      "surface_token_count": 9946,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 347,
+          "single_overt_np_sbj": 270,
+          "finite_verb_before_subject": 89,
+          "subject_before_finite_verb": 181
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 78,
+          "single_overt_np_sbj": 46,
+          "subject_before_finite_verb": 28,
+          "finite_verb_before_subject": 18
+        },
+        "IP-SUB": {
+          "clauses_read": 314,
+          "single_overt_np_sbj": 199,
+          "subject_before_finite_verb": 178,
+          "finite_verb_before_subject": 16
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1753_landgartenschatz.thuringia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1753,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1753_LandGartenschatz_Horticulture_Thuringia.": 300
+      },
+      "tree_units_with_words": 300,
+      "surface_token_count": 10060,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 257,
+          "single_overt_np_sbj": 189,
+          "finite_verb_before_subject": 132,
+          "subject_before_finite_verb": 55
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 151,
+          "single_overt_np_sbj": 90,
+          "finite_verb_before_subject": 64,
+          "subject_before_finite_verb": 25
+        },
+        "IP-SUB": {
+          "clauses_read": 477,
+          "single_overt_np_sbj": 314,
+          "subject_before_finite_verb": 252,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1759_seligethaten_switzerland.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1759,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1759_SeligeThaten_Rel-devotion_Switzerland.": 422
+      },
+      "tree_units_with_words": 422,
+      "surface_token_count": 10025,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 346,
+          "single_overt_np_sbj": 213,
+          "subject_before_finite_verb": 124,
+          "finite_verb_before_subject": 87
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 270,
+          "single_overt_np_sbj": 165,
+          "subject_before_finite_verb": 148,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1767_bergwerke_hesse.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1767,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1767_Bergwerke_Technical_Hesse.": 571
+      },
+      "tree_units_with_words": 492,
+      "surface_token_count": 9733,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 404,
+          "single_overt_np_sbj": 331,
+          "finite_verb_before_subject": 142,
+          "subject_before_finite_verb": 189
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 66,
+          "single_overt_np_sbj": 55,
+          "finite_verb_before_subject": 29,
+          "subject_before_finite_verb": 25
+        },
+        "IP-SUB": {
+          "clauses_read": 393,
+          "single_overt_np_sbj": 191,
+          "subject_before_finite_verb": 184,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1781_magnetismus_baden.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1781,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1781_Magenetismus_Medicine_Baden.": 368
+      },
+      "tree_units_with_words": 355,
+      "surface_token_count": 8880,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 320,
+          "single_overt_np_sbj": 302,
+          "subject_before_finite_verb": 205,
+          "finite_verb_before_subject": 96
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 159,
+          "single_overt_np_sbj": 78,
+          "subject_before_finite_verb": 53,
+          "finite_verb_before_subject": 25
+        },
+        "IP-SUB": {
+          "clauses_read": 286,
+          "single_overt_np_sbj": 184,
+          "subject_before_finite_verb": 175,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1783_zeitvertreib_saxony.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1783,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1783_Zeitvertreib_Pedagogy_Saxony.": 940
+      },
+      "tree_units_with_words": 940,
+      "surface_token_count": 9994,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 324,
+          "single_overt_np_sbj": 256,
+          "subject_before_finite_verb": 142,
+          "finite_verb_before_subject": 112
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 179,
+          "single_overt_np_sbj": 122,
+          "subject_before_finite_verb": 117,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1790_pandecten_efranc.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1790,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1790_Pandecten_Law_EFranc.": 266
+      },
+      "tree_units_with_words": 265,
+      "surface_token_count": 9964,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 223,
+          "single_overt_np_sbj": 173,
+          "finite_verb_before_subject": 88,
+          "subject_before_finite_verb": 85
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 112,
+          "single_overt_np_sbj": 73,
+          "finite_verb_before_subject": 37,
+          "subject_before_finite_verb": 36
+        },
+        "IP-SUB": {
+          "clauses_read": 408,
+          "single_overt_np_sbj": 264,
+          "subject_before_finite_verb": 251,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1791_mechsprache_austria.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1791,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1791_MechanismusSprache_Linguistics_Austria.": 422
+      },
+      "tree_units_with_words": 381,
+      "surface_token_count": 9904,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 310,
+          "single_overt_np_sbj": 273,
+          "subject_before_finite_verb": 146,
+          "finite_verb_before_subject": 125
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 120,
+          "single_overt_np_sbj": 83,
+          "subject_before_finite_verb": 39,
+          "finite_verb_before_subject": 44
+        },
+        "IP-SUB": {
+          "clauses_read": 387,
+          "single_overt_np_sbj": 259,
+          "subject_before_finite_verb": 224,
+          "finite_verb_before_subject": 18
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1791_prediger_bavaria.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1791,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1791_Prediger_Theology_Bavaria.": 439
+      },
+      "tree_units_with_words": 436,
+      "surface_token_count": 9982,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 395,
+          "single_overt_np_sbj": 238,
+          "subject_before_finite_verb": 138,
+          "finite_verb_before_subject": 97
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 359,
+          "single_overt_np_sbj": 176,
+          "subject_before_finite_verb": 163,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1795_sentimentalische_swabia.ver0_8c.txt",
+      "period_directory": "NHG",
+      "filename_year": 1795,
+      "filename_version": "0_8c",
+      "text_id_prefixes": {
+        "1795_Sentimentalische_Philology_Swabia.": 305
+      },
+      "tree_units_with_words": 305,
+      "surface_token_count": 10010,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 280,
+          "single_overt_np_sbj": 231,
+          "subject_before_finite_verb": 119,
+          "finite_verb_before_subject": 110
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 170,
+          "single_overt_np_sbj": 139,
+          "subject_before_finite_verb": 81,
+          "finite_verb_before_subject": 56
+        },
+        "IP-SUB": {
+          "clauses_read": 371,
+          "single_overt_np_sbj": 233,
+          "finite_verb_before_subject": 15,
+          "subject_before_finite_verb": 215
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1812_logik_efranc.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1812,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1812_Logik_Philosophy_EFranc.": 604
+      },
+      "tree_units_with_words": 603,
+      "surface_token_count": 10032,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 567,
+          "single_overt_np_sbj": 419,
+          "subject_before_finite_verb": 273,
+          "finite_verb_before_subject": 145
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 424,
+          "single_overt_np_sbj": 258,
+          "subject_before_finite_verb": 247,
+          "finite_verb_before_subject": 9
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1821_kinder-industrie_swabia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1821,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1821_Kinder-Industrie_Society_Swabia.": 208
+      },
+      "tree_units_with_words": 167,
+      "surface_token_count": 10103,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 151,
+          "single_overt_np_sbj": 112,
+          "finite_verb_before_subject": 52,
+          "subject_before_finite_verb": 58
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 117,
+          "single_overt_np_sbj": 80,
+          "finite_verb_before_subject": 46,
+          "subject_before_finite_verb": 34
+        },
+        "IP-SUB": {
+          "clauses_read": 315,
+          "single_overt_np_sbj": 178,
+          "subject_before_finite_verb": 163,
+          "finite_verb_before_subject": 14
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1822_vaneyck_hesse.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1822,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1822_vanEyck_ArtHistory_Hesse.": 299
+      },
+      "tree_units_with_words": 299,
+      "surface_token_count": 10005,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 295,
+          "single_overt_np_sbj": 277,
+          "subject_before_finite_verb": 163,
+          "finite_verb_before_subject": 112
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 228,
+          "single_overt_np_sbj": 175,
+          "subject_before_finite_verb": 114,
+          "finite_verb_before_subject": 59
+        },
+        "IP-SUB": {
+          "clauses_read": 234,
+          "single_overt_np_sbj": 162,
+          "subject_before_finite_verb": 160,
+          "finite_verb_before_subject": 2
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1830_treuerdiener_austria.ver0_8c.txt",
+      "period_directory": "NHG",
+      "filename_year": 1830,
+      "filename_version": "0_8c",
+      "text_id_prefixes": {
+        "1830_TreuerDiener_Lit-drama_Austria.": 1263
+      },
+      "tree_units_with_words": 1190,
+      "surface_token_count": 8704,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 713,
+          "single_overt_np_sbj": 507,
+          "subject_before_finite_verb": 360,
+          "finite_verb_before_subject": 133
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 267,
+          "single_overt_np_sbj": 170,
+          "subject_before_finite_verb": 103,
+          "finite_verb_before_subject": 61
+        },
+        "IP-SUB": {
+          "clauses_read": 185,
+          "single_overt_np_sbj": 128,
+          "subject_before_finite_verb": 99,
+          "finite_verb_before_subject": 27
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1834_besessene_baden.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1834,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1834_Besessene_Psychology_Baden.": 759
+      },
+      "tree_units_with_words": 759,
+      "surface_token_count": 10002,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 453,
+          "single_overt_np_sbj": 329,
+          "subject_before_finite_verb": 167,
+          "finite_verb_before_subject": 161
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 261,
+          "single_overt_np_sbj": 170,
+          "subject_before_finite_verb": 159,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1836_universitaeten_ruhr.ver0_8c.txt",
+      "period_directory": "NHG",
+      "filename_year": 1836,
+      "filename_version": "0_8c",
+      "text_id_prefixes": {
+        "1836_Universitaeten_Pedagogy_Ruhr.": 515
+      },
+      "tree_units_with_words": 513,
+      "surface_token_count": 10003,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 455,
+          "single_overt_np_sbj": 393,
+          "subject_before_finite_verb": 210,
+          "finite_verb_before_subject": 179
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 159,
+          "single_overt_np_sbj": 140,
+          "subject_before_finite_verb": 108,
+          "finite_verb_before_subject": 30
+        },
+        "IP-SUB": {
+          "clauses_read": 283,
+          "single_overt_np_sbj": 187,
+          "subject_before_finite_verb": 168,
+          "finite_verb_before_subject": 14
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1846_DreiSommer.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1846,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1856_DreiSommer_Travel_Bavaria.": 388
+      },
+      "tree_units_with_words": 388,
+      "surface_token_count": 10036,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 376,
+          "single_overt_np_sbj": 329,
+          "finite_verb_before_subject": 186,
+          "subject_before_finite_verb": 141
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 145,
+          "single_overt_np_sbj": 84,
+          "finite_verb_before_subject": 48,
+          "subject_before_finite_verb": 36
+        },
+        "IP-SUB": {
+          "clauses_read": 331,
+          "single_overt_np_sbj": 180,
+          "subject_before_finite_verb": 149,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1846_bernsteinhexe_saxony.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1846,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1846_Bernsteinhexe_Lit-Drama_Saxony.": 881
+      },
+      "tree_units_with_words": 751,
+      "surface_token_count": 8318,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 478,
+          "single_overt_np_sbj": 376,
+          "finite_verb_before_subject": 122,
+          "subject_before_finite_verb": 250
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 303,
+          "single_overt_np_sbj": 223,
+          "finite_verb_before_subject": 64,
+          "subject_before_finite_verb": 158
+        },
+        "IP-SUB": {
+          "clauses_read": 224,
+          "single_overt_np_sbj": 159,
+          "subject_before_finite_verb": 150,
+          "finite_verb_before_subject": 8
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1863_Darwinsche_Thuringia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1863,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1863_Darwinsche_Linguistics_Thuringia.": 198
+      },
+      "tree_units_with_words": 198,
+      "surface_token_count": 6141,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 185,
+          "single_overt_np_sbj": 162,
+          "subject_before_finite_verb": 74,
+          "finite_verb_before_subject": 88
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 69,
+          "single_overt_np_sbj": 61,
+          "subject_before_finite_verb": 29,
+          "finite_verb_before_subject": 32
+        },
+        "IP-SUB": {
+          "clauses_read": 191,
+          "single_overt_np_sbj": 130,
+          "subject_before_finite_verb": 122,
+          "finite_verb_before_subject": 4
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1865_Neanderthal_Ruhr.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1865,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1865_Neaderthal_Biology_Ruhr.": 219
+      },
+      "tree_units_with_words": 219,
+      "surface_token_count": 9981,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 210,
+          "single_overt_np_sbj": 181,
+          "finite_verb_before_subject": 103,
+          "subject_before_finite_verb": 78
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 65,
+          "single_overt_np_sbj": 42,
+          "finite_verb_before_subject": 21,
+          "subject_before_finite_verb": 21
+        },
+        "IP-SUB": {
+          "clauses_read": 429,
+          "single_overt_np_sbj": 268,
+          "subject_before_finite_verb": 254,
+          "finite_verb_before_subject": 13
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1867_medizphysik_efranc.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1867,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1867_MedizPhysik_Physics_EFranc.": 325
+      },
+      "tree_units_with_words": 325,
+      "surface_token_count": 9936,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 316,
+          "single_overt_np_sbj": 270,
+          "subject_before_finite_verb": 118,
+          "finite_verb_before_subject": 152
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 82,
+          "single_overt_np_sbj": 64,
+          "finite_verb_before_subject": 28,
+          "subject_before_finite_verb": 36
+        },
+        "IP-SUB": {
+          "clauses_read": 440,
+          "single_overt_np_sbj": 312,
+          "subject_before_finite_verb": 270,
+          "finite_verb_before_subject": 38
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1882_staatsrecht_baden.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1882,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1882_Staatsrecht_Law_Baden.": 254
+      },
+      "tree_units_with_words": 254,
+      "surface_token_count": 9973,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 239,
+          "single_overt_np_sbj": 198,
+          "subject_before_finite_verb": 100,
+          "finite_verb_before_subject": 98
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 153,
+          "single_overt_np_sbj": 120,
+          "subject_before_finite_verb": 82,
+          "finite_verb_before_subject": 38
+        },
+        "IP-SUB": {
+          "clauses_read": 287,
+          "single_overt_np_sbj": 190,
+          "subject_before_finite_verb": 183,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1883_traber_austria.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1883,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1883_Traber_Zoology_Austria.": 450
+      },
+      "tree_units_with_words": 445,
+      "surface_token_count": 10013,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 426,
+          "single_overt_np_sbj": 317,
+          "subject_before_finite_verb": 164,
+          "finite_verb_before_subject": 151
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 450,
+          "single_overt_np_sbj": 312,
+          "subject_before_finite_verb": 262,
+          "finite_verb_before_subject": 48
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1891_fruehlings_switzerland.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1891,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1891_FruehlingsErwachen_Lit-drama_Switzerland.": 1011
+      },
+      "tree_units_with_words": 959,
+      "surface_token_count": 9119,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 657,
+          "single_overt_np_sbj": 566,
+          "subject_before_finite_verb": 385,
+          "finite_verb_before_subject": 175
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 155,
+          "single_overt_np_sbj": 100,
+          "finite_verb_before_subject": 27,
+          "subject_before_finite_verb": 71
+        },
+        "IP-SUB": {
+          "clauses_read": 262,
+          "single_overt_np_sbj": 225,
+          "finite_verb_before_subject": 19,
+          "subject_before_finite_verb": 206
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1891_zarathustra_saxony.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1891,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1891_Zarathustra_Philosophy_Saxony.": 1146
+      },
+      "tree_units_with_words": 1146,
+      "surface_token_count": 10010,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 226,
+          "single_overt_np_sbj": 156,
+          "finite_verb_before_subject": 100,
+          "subject_before_finite_verb": 55
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 90,
+          "single_overt_np_sbj": 58,
+          "subject_before_finite_verb": 55,
+          "finite_verb_before_subject": 1
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1893_verkehr_swabia.ver0_8c.txt",
+      "period_directory": "NHG",
+      "filename_year": 1893,
+      "filename_version": "0_8c",
+      "text_id_prefixes": {
+        "1893_Verkehr_Technical_Swabia.": 280
+      },
+      "tree_units_with_words": 280,
+      "surface_token_count": 9805,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 259,
+          "single_overt_np_sbj": 209,
+          "finite_verb_before_subject": 126,
+          "subject_before_finite_verb": 83
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 142,
+          "single_overt_np_sbj": 100,
+          "finite_verb_before_subject": 52,
+          "subject_before_finite_verb": 47
+        },
+        "IP-SUB": {
+          "clauses_read": 158,
+          "single_overt_np_sbj": 97,
+          "subject_before_finite_verb": 85,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1906_BeruehmteFrauen.ver0_9.txt",
+      "period_directory": "NHG",
+      "filename_year": 1906,
+      "filename_version": "0_9",
+      "text_id_prefixes": {
+        "1906_BeruehmteFrauen_History_Austria.": 748
+      },
+      "tree_units_with_words": 748,
+      "surface_token_count": 9968,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 658,
+          "single_overt_np_sbj": 530,
+          "subject_before_finite_verb": 354,
+          "finite_verb_before_subject": 176
+        },
+        "IP-MAT-CONJ": {},
+        "IP-SUB": {
+          "clauses_read": 335,
+          "single_overt_np_sbj": 229,
+          "subject_before_finite_verb": 222,
+          "finite_verb_before_subject": 5
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1918_wahlrecht_thuringia.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1918,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1918_Wahlrecht_Society_Thuringia.": 296
+      },
+      "tree_units_with_words": 296,
+      "surface_token_count": 8024,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 275,
+          "single_overt_np_sbj": 218,
+          "subject_before_finite_verb": 109,
+          "finite_verb_before_subject": 109
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 100,
+          "single_overt_np_sbj": 79,
+          "subject_before_finite_verb": 46,
+          "finite_verb_before_subject": 32
+        },
+        "IP-SUB": {
+          "clauses_read": 266,
+          "single_overt_np_sbj": 180,
+          "subject_before_finite_verb": 171,
+          "finite_verb_before_subject": 7
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1919_beruf_bavaria.ver0_8c.txt",
+      "period_directory": "NHG",
+      "filename_year": 1919,
+      "filename_version": "0_8c",
+      "text_id_prefixes": {
+        "1919_Beruf_Sociology_Bavaria.": 465
+      },
+      "tree_units_with_words": 465,
+      "surface_token_count": 9831,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 393,
+          "single_overt_np_sbj": 331,
+          "subject_before_finite_verb": 190,
+          "finite_verb_before_subject": 138
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 102,
+          "single_overt_np_sbj": 72,
+          "subject_before_finite_verb": 42,
+          "finite_verb_before_subject": 30
+        },
+        "IP-SUB": {
+          "clauses_read": 372,
+          "single_overt_np_sbj": 268,
+          "subject_before_finite_verb": 256,
+          "finite_verb_before_subject": 11
+        }
+      }
+    },
+    {
+      "path": "texts-NHG/1946_Poetik_Switzerland.ver0_8.txt",
+      "period_directory": "NHG",
+      "filename_year": 1946,
+      "filename_version": "0_8",
+      "text_id_prefixes": {
+        "1946_Poetik_Philology_Switzerland.": 537
+      },
+      "tree_units_with_words": 534,
+      "surface_token_count": 9816,
+      "counts": {
+        "IP-MAT": {
+          "clauses_read": 516,
+          "single_overt_np_sbj": 455,
+          "subject_before_finite_verb": 268,
+          "finite_verb_before_subject": 185
+        },
+        "IP-MAT-CONJ": {
+          "clauses_read": 97,
+          "single_overt_np_sbj": 40,
+          "subject_before_finite_verb": 28,
+          "finite_verb_before_subject": 12
+        },
+        "IP-SUB": {
+          "clauses_read": 374,
+          "single_overt_np_sbj": 224,
+          "subject_before_finite_verb": 209,
+          "finite_verb_before_subject": 11
+        }
+      }
+    }
+  ]
+}

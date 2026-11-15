@@ -625,7 +625,7 @@ v2026.1为项目2.0版。主库列17个特征集、265项特征。名词领属�
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
-待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R041 Lexibank](../catalog/crossling-cultural.md#r041)、[R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193)、[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r192"></a>
 

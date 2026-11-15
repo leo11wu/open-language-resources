@@ -40,7 +40,7 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 | --- | --- | --- | --- | --- |
 | 包含子集 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | R061 → R059 | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 | 说明核对，2026-11-02；UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
 
-待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)、[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r061"></a>
 

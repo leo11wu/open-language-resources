@@ -36,6 +36,7 @@
 | [R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191) | 在同一条目内比较主从句的词序编码，并查看语言不同历史阶段的记录。两列均为单一S/V/O排列的113个条目中有2个标签不同。 | 取一块编码并按代码本解码。V2、单一S/V/O排列和多重顺序分别处理。核对不适用、短横线、语言名录连接和谱系、地域、阶段的依赖关系。 | 已完整检查选定文件；全库未验收 |
 | [R192 Ditransitive Constructions（双及物构式数据库）](../catalog/crossling-cultural.md#r192) | 比较双及物构式的接受者格或介词标记与R/T词序编码。两项均有记录且词序未标unclear的共234个构式、137个语言条目，其中26个语言条目同时有格或介词标记和无标记构式。 | 用Construction_ID连接两项赋值。分别处理两序皆可、有主导顺序和严格词序。核对英语和泰语的方向冲突及例句归属，处理语言内重复和谱系、地域。 | 已完整检查选定文件；全库未验收 |
 | [R193 Cross-linguistic Differential and Optional Marking Database（跨语言差异性与可选论元标记数据库）](../catalog/crossling-cultural.md#r193) | 比较格标记何时随词序、指称属性或另一论元变化。27个条目中有6个在A或P的词序条件汇总标yes。可从拉帕努伊语的e及i用法回查原文。 | 分开语言×论元分类、标记形式和用法记录。用用法表连接例句并区分NotApplicable、无标记和标记倾向标签。Udihe的P汇总标no，用法表仍列左右移位与话题条件，统计前应明确是否纳入移位。 | 已完整检查选定文件；全库未验收 |
+| [R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194) | 在同一批实际文本内，分别统计主句和从句中显性主语与限定动词的先后。固定版三个时期均可提取这些结构。 | 区分IP-MAT、IP-MAT-CONJ与IP-SUB，并排除直问句等非目标CP。手册对denn和wan(de)的部分标注依赖V2判断，比较时单列。主语相对位置只测两个成分的先后。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need structural-distribution
@@ -111,6 +112,7 @@ python3 scripts/query.py --need cross-modal-patterns
 | [R056 Google Books Ngrams](../catalog/diachronic-parallel-syntax.md#r056) | 观察词与短语的逐年频数轨迹。 | 固定Ngram版本和分母，检查OCR与图书构成；不具备完整篇章语境。 | 仅核对说明；未读数据文件 |
 | [R057 HistWords](../catalog/diachronic-parallel-syntax.md#r057) | 探索历时词向量的语义邻域变化候选。 | 核对具体向量的训练来源与年代；计算表示不是独立观测，漂移可能来自频率和训练差异。 | 仅核对说明；未读数据文件 |
 | [R060 Project Gutenberg](../catalog/diachronic-parallel-syntax.md#r060) | 为需要全文语境的问题筛选作品与来源。 | 核对作品、版本和电子文本年代及体裁；自建样本不是默认平衡的历时语料。 | 仅核对说明；未读数据文件 |
+| [R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194) | 按时期比较德语主从句的限定动词与显性主语的相对位置，并用同一文本中的主句作参照。 | 统一0.9前后的并列主句处理，按文本、体裁和地区分层。抽样校对ID年份及来源，并核对ReM、ReF、DTA文本重合。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need diachronic-mechanisms

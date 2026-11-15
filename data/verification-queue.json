@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-14",
-  "catalog_version": "2.5.13",
+  "generated_on": "2026-11-15",
+  "catalog_version": "2.5.14",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 193,
+    "main_resource_count": 194,
     "main_by_check_state": {
       "documentation_only": 97,
       "file_preview": 2,
-      "selected_file_checked": 81,
+      "selected_file_checked": 82,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 88,
+    "main_with_recorded_file_reads": 89,
     "main_without_recorded_file_reads": 105,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6546,6 +6546,36 @@
           "read_scope": "archive_selected_members",
           "file_role": "empirical_or_norm_data",
           "result": "压缩包匹配Zenodo官方MD5，CRC通过。32个成员匹配v1.0.0提交。其中6个CSV归一换行后匹配。完整解析6张CLDF表和4张原始表，回查选定语法描写。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R194",
+      "name": "Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）",
+      "category": "diachronic-parallel-syntax",
+      "source_url": "https://ipchg.iu.edu/corpus/index.html",
+      "platforms": [
+        "project_website",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-15",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://codeload.github.com/cdsapp/IPCHG-Corpus/zip/41db43ac4217fd7370dec5f495b6a7eb5783774e",
+          "sha256": "7e084a9f4e90d0d82d6f397557aeed531a3655322c388b3c73906c63dd8a9856",
+          "checked_on": "2026-11-15",
+          "read_scope": "archive_selected_members",
+          "file_role": "corpus_derived_data",
+          "result": "CRC通过，202份归档文件均匹配固定提交的Git文件哈希。读取200份文本，按版本去重后对145份进行词项与句法统计。详见核验记录中的格式异常和分期计数。"
         }
       ],
       "osf_audit": null,

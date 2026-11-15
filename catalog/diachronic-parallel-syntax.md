@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共4个入口。资料状态与文件验收范围分别记录。
+共5个入口。资料状态与文件验收范围分别记录。
 
 <a id="r056"></a>
 
@@ -117,4 +117,48 @@
 研究入口：[历时机制](../docs/research-needs.md#diachronic-mechanisms)。
 
 待核实关联：[R056 Google Books Ngrams](../catalog/diachronic-parallel-syntax.md#r056)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r194"></a>
+
+## Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）
+
+**R194** · 数据集 · 有数据发布说明
+
+项目在ReM、ReF和DTA文本上新增Penn式句法标注，可从主从句节点提取显性主语和限定动词的实际词序。固定提交去重后145份文本文件，本次按树终端计数1,270,153个表层词项。官网约165篇、140万词为建设目标。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 中古高地德语、早期新高地德语和新高地德语散文，设计覆盖1050–1950年。固定提交中去重后的文件年份标签为1050–1946年，三个时期分别有43、57、45份文本文件 |
+| 数据性质 | 实际散文的Penn式成分句法树，附词类、形态、部分词元及记录ID。UTF-8纯文本；语料与标注 |
+| 获取方式 | 公开数据入口：固定GitHub提交的归档可直接下载，无需注册。三期目录另有旧版和跨目录重复。同一时期也有不同标注版本，引用时保留提交、文件名和版本。 |
+| 许可 | CC BY-SA 4.0。官网链接指向该许可，并要求署名、链接项目及在同一许可下再分发。官网和仓库许可文字把简称写作CC BY-AT 4.0。研究引用Sapp等（2024）及所用提交。 |
+| 使用边界 | 比较主从句词序时统一0.9前后的并列主句计数规则，并按文本、体裁、地区和从句类型检查。部分文件的ID元数据有变体。ReM、ReF及DTA与本库有原文重合，逐篇及段落对齐需另核。依存距离须先验证成分树转依存的规则。 |
+| 标签 | 历时、德语、句法、成分树库、Penn、词序、主从句、形态标注 |
+| 平台 | project_website, github |
+| 核对依据 | 作者仓库说明；2026-11-15 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 下载固定提交并读取200份文本文件。排除54份历史目录版本，1650年Probstein保留ENHG中的较新标注。统计145份文件的表层词项，并在三个时期抽取显性主语和限定动词。一份文件的前缀在解析时跳过，另一份的一条括号记录排除。逐条标注准确性及逐篇原始出处待按研究范围核查。详见data/ipchg-file-check-2026-11-15.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://ipchg.iu.edu/corpus/index.html)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/cdsapp/IPCHG-Corpus/tree/41db43ac4217fd7370dec5f495b6a7eb5783774e)
+- [来源 2](https://codeload.github.com/cdsapp/IPCHG-Corpus/zip/41db43ac4217fd7370dec5f495b6a7eb5783774e)
+- [来源 3](https://ipchg.iu.edu/corpus/corpus_structure.html)
+- [来源 4](https://ipchg.iu.edu/corpus/licenses.html)
+- [来源 5](https://ipchg.iu.edu/annotation/clauses_ip.html)
+- [来源 6](https://ipchg.iu.edu/tagset/pos_labels.html)
+- [来源 7](https://aclanthology.org/2024.lrec-main.807/)
+- [来源 8](https://github.com/leo11wu/open-language-resources/blob/main/data/ipchg-file-check-2026-11-15.json)
+- [来源 9](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+- [来源 10](https://ipchg.iu.edu/corpus/versions.html)
+- [来源 11](https://ipchg.iu.edu/annotation/clauses_cp.html)
+- [来源 12](https://ipchg.iu.edu/tagset/splitting_lemmatization.html)
+- [来源 13](https://github.com/cdsapp/IPCHG-Corpus/blob/41db43ac4217fd7370dec5f495b6a7eb5783774e/texts-NHG/1791_prediger_bavaria.ver0_9.txt)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution) · [历时机制](../docs/research-needs.md#diachronic-mechanisms)。
+
+待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

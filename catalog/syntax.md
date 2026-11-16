@@ -1034,7 +1034,7 @@ ETCBC在Biblia Hebraica Stuttgartensia文本上提供形态句法标注。2021�
 | 平台 | project_website, github |
 | 核对依据 | 作者仓库说明；2026-11-16 |
 | 实际文件核验 | **已完整检查选定文件；全库未验收** |
-| 核对范围 | 下载并完整解析14份2021版Text-Fabric数据文件，均与固定提交的Git文件指纹一致。已核对节点、词位、语种、主谓功能与文本类型，在《创世记》运行有限范围的词序提取。逐条标注准确性和其余附加标注待查。详见data/bhsa-file-check-2026-11-16.json。 |
+| 核对范围 | 下载并完整解析14份2021版Text-Fabric数据文件，均与固定提交的Git文件指纹一致。已核对节点、词位、语种、主谓功能与文本类型，在《创世记》运行有限范围的词序提取。逐条标注准确性和其余附加标注待查。详见data/bhsa-file-check-2026-11-16.json。后续沿用相同规则筛选39卷，并复核两组分母达到门槛的卷。逐卷、逐动词形式及逐章结果见research/bhsa-word-order/。 |
 | 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
 
 [项目或数据入口](https://etcbc.github.io/bhsa/)
@@ -1049,13 +1049,14 @@ ETCBC在Biblia Hebraica Stuttgartensia文本上提供形态句法标注。2021�
 - [来源 6](https://etcbc.github.io/bhsa/#license)
 - [来源 7](https://universaldependencies.org/treebanks/hbo_ptnk/)
 - [来源 8](https://github.com/leo11wu/open-language-resources/blob/main/data/bhsa-file-check-2026-11-16.json)
-- [来源 9](https://etcbc.github.io/bhsa/features/functional_parent/)
-- [来源 10](https://etcbc.github.io/bhsa/features/oslots/)
-- [来源 11](https://etcbc.github.io/bhsa/features/function/)
-- [来源 12](https://etcbc.github.io/bhsa/features/domain/)
-- [来源 13](https://etcbc.github.io/bhsa/features/vt/)
-- [来源 14](https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/README.md)
-- [来源 15](https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/export_tf.py)
+- [来源 9](https://github.com/leo11wu/open-language-resources/blob/main/research/bhsa-word-order/README.md)
+- [来源 10](https://etcbc.github.io/bhsa/features/functional_parent/)
+- [来源 11](https://etcbc.github.io/bhsa/features/oslots/)
+- [来源 12](https://etcbc.github.io/bhsa/features/function/)
+- [来源 13](https://etcbc.github.io/bhsa/features/domain/)
+- [来源 14](https://etcbc.github.io/bhsa/features/vt/)
+- [来源 15](https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/README.md)
+- [来源 16](https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/export_tf.py)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 

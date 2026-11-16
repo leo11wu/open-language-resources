@@ -1,0 +1,6395 @@
+{
+  "resource_id": "R195",
+  "dataset_version": "BHSA 2021, v1.8.1",
+  "source_commit": "b112c161cfd21eae403d51a2733740d8743460e7",
+  "checked_on": "2026-11-16",
+  "input_sha256": {
+    "otype.tf": "bb5da974a3b1dd7ff9ddab54dfb533059442642ab830b832a49eea8670aaa920",
+    "oslots.tf": "c4efaeed8047d4e75834cc94856d79eacc7a146aea01c34d8be88497d8fa303b",
+    "functional_parent.tf": "52480c9d366c14f72c3cf7704f4c47b2664a0ff5706c4d4405bf2cce140d14db",
+    "function.tf": "3b4f87ac5691826c48a71c71b6cb53a5318f779ca82402e48c1a5db2fbda60b2",
+    "language.tf": "b6e9f2a855901d6d29c970c2710fd7189ad2b5fc5e457f1b4c92e54d8c77cd5a",
+    "sp.tf": "7fa4a18e308531e6dfdc4793ab267587629d4b882f4a4a5d839f8bc896af7861",
+    "vt.tf": "fa49244a53eae279c8b119b3f4710722111fc81edf01bf7bcc3c43bfd1c7c41d",
+    "txt.tf": "dead72c18a6dbc171fc3031ed250d6b5555c6e4e30d1588f6499ec43dd191e3e",
+    "book.tf": "2f84c9493bb9a553bb40d7955472673b85933fe0af116299036d33e09d75702a",
+    "chapter.tf": "a09f8a2df52e7d2cec99b251852f9f88a6ecc0ea4a37ad5bd4a7fd3f3f3b2fc9"
+  },
+  "unit": "Hebrew clause with one Subj phrase and one Pred phrase, with exactly one word slot tagged verb in Pred",
+  "order": "the entire Subj precedes or follows the verb slot; exclude overlap or interleaving",
+  "strict_txt": {
+    "narrative": [
+      "N"
+    ],
+    "quotation": [
+      "NQ"
+    ]
+  },
+  "sensitivity_txt": {
+    "narrative": [
+      "N",
+      "?N"
+    ],
+    "quotation": [
+      "NQ",
+      "?NQ"
+    ]
+  },
+  "difference_pp": "quotation minus narrative in percentage points",
+  "anchor": "Genesis",
+  "anchor_matches_previous": true,
+  "selection_rule": "Five non-Genesis books sorted by smaller strict perf group, then total perf sample; canonical BHSA order resolves remaining ties. No word-order outcome enters ranking.",
+  "ranked_eligibility": [
+    {
+      "book": "Samuel_I",
+      "perf_N": 149,
+      "perf_NQ": 125,
+      "smaller_group": 125
+    },
+    {
+      "book": "Numeri",
+      "perf_N": 105,
+      "perf_NQ": 111,
+      "smaller_group": 105
+    },
+    {
+      "book": "Samuel_II",
+      "perf_N": 127,
+      "perf_NQ": 90,
+      "smaller_group": 90
+    },
+    {
+      "book": "Exodus",
+      "perf_N": 133,
+      "perf_NQ": 70,
+      "smaller_group": 70
+    },
+    {
+      "book": "Judices",
+      "perf_N": 92,
+      "perf_NQ": 68,
+      "smaller_group": 68
+    },
+    {
+      "book": "Reges_I",
+      "perf_N": 91,
+      "perf_NQ": 48,
+      "smaller_group": 48
+    },
+    {
+      "book": "Josua",
+      "perf_N": 154,
+      "perf_NQ": 46,
+      "smaller_group": 46
+    },
+    {
+      "book": "Jeremia",
+      "perf_N": 55,
+      "perf_NQ": 45,
+      "smaller_group": 45
+    },
+    {
+      "book": "Reges_II",
+      "perf_N": 116,
+      "perf_NQ": 36,
+      "smaller_group": 36
+    },
+    {
+      "book": "Chronica_II",
+      "perf_N": 164,
+      "perf_NQ": 35,
+      "smaller_group": 35
+    },
+    {
+      "book": "Ezechiel",
+      "perf_N": 27,
+      "perf_NQ": 61,
+      "smaller_group": 27
+    },
+    {
+      "book": "Deuteronomium",
+      "perf_N": 23,
+      "perf_NQ": 54,
+      "smaller_group": 23
+    },
+    {
+      "book": "Chronica_I",
+      "perf_N": 62,
+      "perf_NQ": 21,
+      "smaller_group": 21
+    },
+    {
+      "book": "Leviticus",
+      "perf_N": 20,
+      "perf_NQ": 139,
+      "smaller_group": 20
+    },
+    {
+      "book": "Esther",
+      "perf_N": 18,
+      "perf_NQ": 13,
+      "smaller_group": 13
+    },
+    {
+      "book": "Iob",
+      "perf_N": 12,
+      "perf_NQ": 108,
+      "smaller_group": 12
+    },
+    {
+      "book": "Ruth",
+      "perf_N": 15,
+      "perf_NQ": 12,
+      "smaller_group": 12
+    },
+    {
+      "book": "Nehemia",
+      "perf_N": 73,
+      "perf_NQ": 8,
+      "smaller_group": 8
+    },
+    {
+      "book": "Jona",
+      "perf_N": 5,
+      "perf_NQ": 5,
+      "smaller_group": 5
+    },
+    {
+      "book": "Jesaia",
+      "perf_N": 4,
+      "perf_NQ": 21,
+      "smaller_group": 4
+    },
+    {
+      "book": "Sacharia",
+      "perf_N": 3,
+      "perf_NQ": 19,
+      "smaller_group": 3
+    },
+    {
+      "book": "Esra",
+      "perf_N": 21,
+      "perf_NQ": 1,
+      "smaller_group": 1
+    },
+    {
+      "book": "Psalmi",
+      "perf_N": 1,
+      "perf_NQ": 2,
+      "smaller_group": 1
+    },
+    {
+      "book": "Amos",
+      "perf_N": 0,
+      "perf_NQ": 11,
+      "smaller_group": 0
+    },
+    {
+      "book": "Joel",
+      "perf_N": 0,
+      "perf_NQ": 8,
+      "smaller_group": 0
+    },
+    {
+      "book": "Micha",
+      "perf_N": 0,
+      "perf_NQ": 7,
+      "smaller_group": 0
+    },
+    {
+      "book": "Hosea",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Obadia",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Nahum",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Habakuk",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Zephania",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Haggai",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Maleachi",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Proverbia",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Canticum",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Ecclesiastes",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Threni",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    },
+    {
+      "book": "Daniel",
+      "perf_N": 0,
+      "perf_NQ": 0,
+      "smaller_group": 0
+    }
+  ],
+  "geometry": {
+    "chapters": 929,
+    "word_slots": 426590,
+    "books": 39,
+    "clauses_with_target_codes": 42521,
+    "subj_or_pred_phrase_nodes": 89049
+  },
+  "phrase_links": {
+    "parent_outside_target_clauses": 43337,
+    "linked_to_target_clause": 45712,
+    "missing_functional_parent": 0
+  },
+  "primary_followups": {
+    "books": [
+      "Samuel_I",
+      "Numeri",
+      "Samuel_II",
+      "Exodus",
+      "Judices"
+    ],
+    "perf_quotation_higher": 0,
+    "perf_narrative_higher": 5,
+    "perf_ties": 0,
+    "reversals_like_genesis": 5
+  },
+  "coverage_check": {
+    "minimum_per_group": 30,
+    "books": [
+      "Samuel_I",
+      "Numeri",
+      "Samuel_II",
+      "Exodus",
+      "Judices",
+      "Reges_I",
+      "Josua",
+      "Jeremia",
+      "Reges_II",
+      "Chronica_II"
+    ],
+    "perf_quotation_higher": 2,
+    "perf_narrative_higher": 8,
+    "perf_ties": 0,
+    "reversals_like_genesis": 8
+  },
+  "comparisons": {
+    "Genesis": {
+      "strict": {
+        "all": {
+          "N_before": 81,
+          "N_total": 895,
+          "NQ_before": 108,
+          "NQ_total": 286,
+          "NQ_minus_N_pp": 28.71195843
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 61,
+            "NQ_total": 141,
+            "NQ_minus_N_pp": 43.26241135
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 5,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 18,
+            "NQ_before": 0,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 81,
+            "N_total": 181,
+            "NQ_before": 42,
+            "NQ_total": 128,
+            "NQ_minus_N_pp": -11.93888122
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 693,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 92,
+          "N_total": 1065,
+          "NQ_before": 124,
+          "NQ_total": 328,
+          "NQ_minus_N_pp": 29.1663804
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 68,
+            "NQ_total": 166,
+            "NQ_minus_N_pp": 40.96385542
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 6,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 26,
+            "NQ_before": 0,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 92,
+            "N_total": 206,
+            "NQ_before": 50,
+            "NQ_total": 144,
+            "NQ_minus_N_pp": -9.93797195
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 830,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 2590,
+          "all_hebrew": 2589,
+          "one_subj_one_pred": 897,
+          "one_verb": 897,
+          "after": 814,
+          "before": 81,
+          "interleaved": 2
+        },
+        "NQ": {
+          "clauses": 1934,
+          "all_hebrew": 1934,
+          "one_subj_one_pred": 288,
+          "one_verb": 288,
+          "after": 178,
+          "before": 108,
+          "interleaved": 2
+        },
+        "?N": {
+          "clauses": 490,
+          "all_hebrew": 490,
+          "one_subj_one_pred": 170,
+          "one_verb": 170,
+          "after": 159,
+          "before": 11
+        },
+        "?NQ": {
+          "clauses": 286,
+          "all_hebrew": 286,
+          "one_subj_one_pred": 42,
+          "one_verb": 42,
+          "after": 26,
+          "before": 16
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "2": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "3": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "4": {
+            "N_before": 8,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -88.88888889
+          },
+          "5": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "6": {
+            "N_before": 4,
+            "N_total": 8,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -25.0
+          },
+          "7": {
+            "N_before": 6,
+            "N_total": 11,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "8": {
+            "N_before": 2,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "9": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "11": {
+            "N_before": 5,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "12": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "13": {
+            "N_before": 3,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "14": {
+            "N_before": 3,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -60.0
+          },
+          "17": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -33.33333333
+          },
+          "18": {
+            "N_before": 2,
+            "N_total": 4,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -25.0
+          },
+          "19": {
+            "N_before": 5,
+            "N_total": 7,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -21.42857143
+          },
+          "20": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 3,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 50.0
+          },
+          "21": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 3,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 100.0
+          },
+          "22": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -40.0
+          },
+          "23": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "25": {
+            "N_before": 4,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "26": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 1,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -8.33333333
+          },
+          "27": {
+            "N_before": 2,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -28.57142857
+          },
+          "28": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 1,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 20.0
+          },
+          "29": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "30": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 2,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": 28.57142857
+          },
+          "31": {
+            "N_before": 5,
+            "N_total": 7,
+            "NQ_before": 6,
+            "NQ_total": 12,
+            "NQ_minus_N_pp": -21.42857143
+          },
+          "32": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "33": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "34": {
+            "N_before": 4,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "35": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "37": {
+            "N_before": 4,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "38": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 10.0
+          },
+          "40": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "41": {
+            "N_before": 2,
+            "N_total": 7,
+            "NQ_before": 2,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 4.76190476
+          },
+          "42": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -19.04761905
+          },
+          "43": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 4,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 66.66666667
+          },
+          "44": {
+            "N_before": 3,
+            "N_total": 3,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -50.0
+          },
+          "45": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "46": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "47": {
+            "N_before": 1,
+            "N_total": 5,
+            "NQ_before": 2,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 13.33333333
+          },
+          "48": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 2,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -71.42857143
+          },
+          "49": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 50.0
+          },
+          "50": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 66.66666667
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "2": -11.92913386,
+          "3": -12.41480936,
+          "4": -9.10852713,
+          "5": -12.1875,
+          "6": -11.44415439,
+          "7": -11.30514706,
+          "8": -13.11773256,
+          "9": -11.91806331,
+          "11": -10.86566092,
+          "12": -11.66666667,
+          "13": -12.01508621,
+          "14": -11.24731568,
+          "17": -11.34382022,
+          "18": -11.56825223,
+          "19": -11.13847838,
+          "20": -13.49273743,
+          "21": -14.05139665,
+          "22": -11.5530303,
+          "23": -12.1875,
+          "25": -11.95494186,
+          "26": -11.59118274,
+          "27": -12.06896552,
+          "28": -11.91806331,
+          "29": -10.78202247,
+          "30": -12.44776674,
+          "31": -12.64367816,
+          "32": -11.64444444,
+          "33": -11.04868914,
+          "34": -10.66666667,
+          "35": -12.38524011,
+          "37": -10.66666667,
+          "38": -12.62829912,
+          "40": -11.90561798,
+          "41": -12.6154136,
+          "42": -11.0595227,
+          "43": -14.10385566,
+          "44": -11.8530116,
+          "45": -12.1875,
+          "46": -12.95021186,
+          "47": -12.66766021,
+          "48": -11.3865932,
+          "49": -12.46031746,
+          "50": -13.19778848
+        },
+        "range_pp": [
+          -14.10385566,
+          -9.10852713
+        ],
+        "comparable_omissions": 43
+      }
+    },
+    "Exodus": {
+      "strict": {
+        "all": {
+          "N_before": 39,
+          "N_total": 510,
+          "NQ_before": 65,
+          "NQ_total": 193,
+          "NQ_minus_N_pp": 26.03169765
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 52,
+            "NQ_total": 109,
+            "NQ_minus_N_pp": -2.29357798
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 38,
+            "N_total": 133,
+            "NQ_before": 10,
+            "NQ_total": 70,
+            "NQ_minus_N_pp": -14.28571429
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 366,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 40,
+          "N_total": 549,
+          "NQ_before": 70,
+          "NQ_total": 209,
+          "NQ_minus_N_pp": 26.20684847
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 54,
+            "NQ_total": 115,
+            "NQ_minus_N_pp": -3.04347826
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 39,
+            "N_total": 135,
+            "NQ_before": 13,
+            "NQ_total": 79,
+            "NQ_minus_N_pp": -12.43319269
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 403,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1465,
+          "all_hebrew": 1465,
+          "one_subj_one_pred": 512,
+          "one_verb": 512,
+          "after": 471,
+          "before": 39,
+          "interleaved": 2
+        },
+        "NQ": {
+          "clauses": 1231,
+          "all_hebrew": 1231,
+          "one_subj_one_pred": 193,
+          "one_verb": 193,
+          "after": 128,
+          "before": 65
+        },
+        "?N": {
+          "clauses": 102,
+          "all_hebrew": 102,
+          "one_subj_one_pred": 39,
+          "one_verb": 39,
+          "after": 38,
+          "before": 1
+        },
+        "?NQ": {
+          "clauses": 140,
+          "all_hebrew": 140,
+          "one_subj_one_pred": 16,
+          "one_verb": 16,
+          "after": 11,
+          "before": 5
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "2": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "4": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 1,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 20.0
+          },
+          "5": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "6": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 66.66666667
+          },
+          "7": {
+            "N_before": 1,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -14.28571429
+          },
+          "8": {
+            "N_before": 1,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -20.0
+          },
+          "9": {
+            "N_before": 4,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "10": {
+            "N_before": 3,
+            "N_total": 8,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -12.5
+          },
+          "11": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -100.0
+          },
+          "12": {
+            "N_before": 3,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -42.85714286
+          },
+          "13": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "14": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -40.0
+          },
+          "16": {
+            "N_before": 3,
+            "N_total": 7,
+            "NQ_before": 2,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": -20.63492063
+          },
+          "17": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -40.0
+          },
+          "18": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "19": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -25.0
+          },
+          "20": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -100.0
+          },
+          "25": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "30": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "31": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "32": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 3,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": 42.85714286
+          },
+          "33": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "34": {
+            "N_before": 1,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "35": {
+            "N_before": 7,
+            "N_total": 14,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -50.0
+          },
+          "36": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -40.0
+          },
+          "37": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "38": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "39": {
+            "N_before": 0,
+            "N_total": 11,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "40": {
+            "N_before": 2,
+            "N_total": 13,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -15.38461538
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": -14.51487996,
+          "2": -14.07867495,
+          "4": -15.16147974,
+          "5": -14.07867495,
+          "6": -15.4180602,
+          "7": -14.65919701,
+          "8": -14.20036765,
+          "9": -13.81345927,
+          "10": -14.36363636,
+          "11": -13.53754941,
+          "12": -12.15277778,
+          "13": -14.51487996,
+          "14": -13.19962687,
+          "16": -14.66302368,
+          "17": -13.41911765,
+          "18": -14.96461072,
+          "19": -14.60791117,
+          "20": -13.1049299,
+          "25": -13.86554622,
+          "30": -13.86554622,
+          "31": -13.86554622,
+          "32": -17.89652248,
+          "33": -15.13859275,
+          "34": -14.42797591,
+          "35": -11.12504703,
+          "36": -13.63224638,
+          "37": -13.83928571,
+          "38": -14.39645626,
+          "39": -16.8618267,
+          "40": -15.50724638
+        },
+        "range_pp": [
+          -17.89652248,
+          -11.12504703
+        ],
+        "comparable_omissions": 30
+      }
+    },
+    "Leviticus": {
+      "strict": {
+        "all": {
+          "N_before": 1,
+          "N_total": 106,
+          "NQ_before": 34,
+          "NQ_total": 211,
+          "NQ_minus_N_pp": 15.17034785
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 25,
+            "NQ_total": 66,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 1,
+            "N_total": 20,
+            "NQ_before": 9,
+            "NQ_total": 139,
+            "NQ_minus_N_pp": 1.47482014
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 86,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 1,
+          "N_total": 106,
+          "NQ_before": 34,
+          "NQ_total": 211,
+          "NQ_minus_N_pp": 15.17034785
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 25,
+            "NQ_total": 66,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 1,
+            "N_total": 20,
+            "NQ_before": 9,
+            "NQ_total": 139,
+            "NQ_minus_N_pp": 1.47482014
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 86,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 283,
+          "all_hebrew": 283,
+          "one_subj_one_pred": 106,
+          "one_verb": 106,
+          "after": 105,
+          "before": 1
+        },
+        "NQ": {
+          "clauses": 1026,
+          "all_hebrew": 1026,
+          "one_subj_one_pred": 212,
+          "one_verb": 212,
+          "before": 34,
+          "after": 177,
+          "interleaved": 1
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Numeri": {
+      "strict": {
+        "all": {
+          "N_before": 30,
+          "N_total": 458,
+          "NQ_before": 82,
+          "NQ_total": 249,
+          "NQ_minus_N_pp": 26.38150857
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 57,
+            "NQ_total": 121,
+            "NQ_minus_N_pp": -52.89256198
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 29,
+            "N_total": 105,
+            "NQ_before": 23,
+            "NQ_total": 111,
+            "NQ_minus_N_pp": -6.8983269
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 342,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 31,
+          "N_total": 474,
+          "NQ_before": 83,
+          "NQ_total": 251,
+          "NQ_minus_N_pp": 26.5276447
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 58,
+            "NQ_total": 122,
+            "NQ_minus_N_pp": -52.45901639
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 11,
+            "NQ_before": 0,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 30,
+            "N_total": 110,
+            "NQ_before": 23,
+            "NQ_total": 112,
+            "NQ_minus_N_pp": -6.73701299
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 351,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1394,
+          "all_hebrew": 1394,
+          "one_subj_one_pred": 458,
+          "one_verb": 458,
+          "after": 428,
+          "before": 30
+        },
+        "NQ": {
+          "clauses": 1490,
+          "all_hebrew": 1490,
+          "one_subj_one_pred": 251,
+          "one_verb": 251,
+          "after": 167,
+          "before": 82,
+          "interleaved": 2
+        },
+        "?N": {
+          "clauses": 118,
+          "all_hebrew": 118,
+          "one_subj_one_pred": 16,
+          "one_verb": 16,
+          "after": 15,
+          "before": 1
+        },
+        "?NQ": {
+          "clauses": 23,
+          "all_hebrew": 23,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "before": 1,
+          "after": 1
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -40.0
+          },
+          "2": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -33.33333333
+          },
+          "3": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "4": {
+            "N_before": 0,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "5": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "7": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "8": {
+            "N_before": 0,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "9": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "10": {
+            "N_before": 0,
+            "N_total": 7,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": 14.28571429
+          },
+          "11": {
+            "N_before": 4,
+            "N_total": 6,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "12": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "13": {
+            "N_before": 2,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "14": {
+            "N_before": 4,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -80.0
+          },
+          "15": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "16": {
+            "N_before": 3,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -100.0
+          },
+          "17": {
+            "N_before": 1,
+            "N_total": 7,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 35.71428571
+          },
+          "18": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "19": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 12,
+            "NQ_minus_N_pp": null
+          },
+          "20": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "21": {
+            "N_before": 1,
+            "N_total": 5,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 30.0
+          },
+          "22": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 3,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": 37.5
+          },
+          "23": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 50.0
+          },
+          "24": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -100.0
+          },
+          "25": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "26": {
+            "N_before": 3,
+            "N_total": 8,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -37.5
+          },
+          "27": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 50.0
+          },
+          "30": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": 0.0
+          },
+          "31": {
+            "N_before": 1,
+            "N_total": 8,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 37.5
+          },
+          "32": {
+            "N_before": 3,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": -100.0
+          },
+          "34": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "36": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 20.0
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": -5.89908257,
+          "2": -6.54188948,
+          "3": -7.52228164,
+          "4": -7.89908257,
+          "5": -7.43461909,
+          "7": -7.16389466,
+          "8": -7.996633,
+          "9": -7.71065183,
+          "10": -8.43799058,
+          "11": -5.62635703,
+          "12": -6.287102,
+          "13": -6.01195255,
+          "14": -3.0952381,
+          "15": -7.16389466,
+          "16": -4.19389978,
+          "17": -8.94526035,
+          "18": -6.70995671,
+          "19": -6.40692641,
+          "20": -7.80378038,
+          "21": -7.81651376,
+          "22": -8.73786408,
+          "23": -8.52917158,
+          "24": -5.01831502,
+          "25": -6.92307692,
+          "26": -5.8950328,
+          "27": -9.10772076,
+          "30": -5.38306258,
+          "31": -9.23981116,
+          "32": -2.71791885,
+          "34": -7.80772686,
+          "36": -7.67665557
+        },
+        "range_pp": [
+          -9.23981116,
+          -2.71791885
+        ],
+        "comparable_omissions": 31
+      }
+    },
+    "Deuteronomium": {
+      "strict": {
+        "all": {
+          "N_before": 4,
+          "N_total": 62,
+          "NQ_before": 27,
+          "NQ_total": 80,
+          "NQ_minus_N_pp": 27.2983871
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 15,
+            "NQ_total": 25,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 4,
+            "N_total": 23,
+            "NQ_before": 12,
+            "NQ_total": 54,
+            "NQ_minus_N_pp": 4.83091787
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 37,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 4,
+          "N_total": 62,
+          "NQ_before": 27,
+          "NQ_total": 80,
+          "NQ_minus_N_pp": 27.2983871
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 15,
+            "NQ_total": 25,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 4,
+            "N_total": 23,
+            "NQ_before": 12,
+            "NQ_total": 54,
+            "NQ_minus_N_pp": 4.83091787
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 37,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 193,
+          "all_hebrew": 193,
+          "one_subj_one_pred": 62,
+          "one_verb": 62,
+          "after": 58,
+          "before": 4
+        },
+        "NQ": {
+          "clauses": 476,
+          "all_hebrew": 476,
+          "one_subj_one_pred": 80,
+          "one_verb": 80,
+          "before": 27,
+          "after": 53
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Josua": {
+      "strict": {
+        "all": {
+          "N_before": 30,
+          "N_total": 379,
+          "NQ_before": 30,
+          "NQ_total": 89,
+          "NQ_minus_N_pp": 25.79229789
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 19,
+            "NQ_total": 39,
+            "NQ_minus_N_pp": 48.71794872
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 17,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 30,
+            "N_total": 154,
+            "NQ_before": 11,
+            "NQ_total": 46,
+            "NQ_minus_N_pp": 4.432524
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 207,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 31,
+          "N_total": 416,
+          "NQ_before": 40,
+          "NQ_total": 114,
+          "NQ_minus_N_pp": 27.63579622
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 23,
+            "NQ_total": 46,
+            "NQ_minus_N_pp": 50.0
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 20,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 31,
+            "N_total": 164,
+            "NQ_before": 15,
+            "NQ_total": 60,
+            "NQ_minus_N_pp": 6.09756098
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 231,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1195,
+          "all_hebrew": 1195,
+          "one_subj_one_pred": 379,
+          "one_verb": 379,
+          "after": 349,
+          "before": 30
+        },
+        "NQ": {
+          "clauses": 557,
+          "all_hebrew": 557,
+          "one_subj_one_pred": 90,
+          "one_verb": 90,
+          "before": 30,
+          "after": 59,
+          "interleaved": 1
+        },
+        "?N": {
+          "clauses": 123,
+          "all_hebrew": 123,
+          "one_subj_one_pred": 37,
+          "one_verb": 37,
+          "after": 36,
+          "before": 1
+        },
+        "?NQ": {
+          "clauses": 97,
+          "all_hebrew": 97,
+          "one_subj_one_pred": 26,
+          "one_verb": 26,
+          "before": 10,
+          "after": 15,
+          "interleaved": 1
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 50.0
+          },
+          "2": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "3": {
+            "N_before": 3,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "4": {
+            "N_before": 2,
+            "N_total": 13,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "5": {
+            "N_before": 2,
+            "N_total": 13,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "7": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "8": {
+            "N_before": 7,
+            "N_total": 19,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -36.84210526
+          },
+          "9": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -6.66666667
+          },
+          "10": {
+            "N_before": 3,
+            "N_total": 11,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -27.27272727
+          },
+          "11": {
+            "N_before": 1,
+            "N_total": 16,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "15": {
+            "N_before": 0,
+            "N_total": 15,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "16": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "17": {
+            "N_before": 3,
+            "N_total": 9,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "18": {
+            "N_before": 1,
+            "N_total": 12,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 25.0
+          },
+          "19": {
+            "N_before": 0,
+            "N_total": 14,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "20": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "21": {
+            "N_before": 1,
+            "N_total": 7,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 85.71428571
+          },
+          "22": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "23": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 3,
+            "NQ_total": 12,
+            "NQ_minus_N_pp": -25.0
+          },
+          "24": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 2,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 6.66666667
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": 3.11942959,
+          "2": 11.18668337,
+          "3": 5.91304348,
+          "4": 4.05488745,
+          "5": 4.05488745,
+          "7": 3.77529447,
+          "8": 7.40740741,
+          "9": 4.46386764,
+          "10": 6.11888112,
+          "11": 2.89855072,
+          "15": 2.33030967,
+          "16": 4.04549381,
+          "17": 4.6351243,
+          "18": 2.83327874,
+          "19": 2.48447205,
+          "20": 4.95879511,
+          "21": 2.49433107,
+          "22": 5.13245033,
+          "23": 4.4504644,
+          "24": 2.7459215
+        },
+        "range_pp": [
+          2.33030967,
+          11.18668337
+        ],
+        "comparable_omissions": 20
+      }
+    },
+    "Judices": {
+      "strict": {
+        "all": {
+          "N_before": 48,
+          "N_total": 471,
+          "NQ_before": 47,
+          "NQ_total": 136,
+          "NQ_minus_N_pp": 24.36774073
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 24,
+            "NQ_total": 54,
+            "NQ_minus_N_pp": 44.44444444
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 1,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": -11.11111111
+          },
+          "perf": {
+            "N_before": 47,
+            "N_total": 92,
+            "NQ_before": 23,
+            "NQ_total": 68,
+            "NQ_minus_N_pp": -17.26342711
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 369,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 54,
+          "N_total": 511,
+          "NQ_before": 50,
+          "NQ_total": 150,
+          "NQ_minus_N_pp": 22.76581866
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 25,
+            "NQ_total": 60,
+            "NQ_minus_N_pp": 41.66666667
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 1,
+            "N_total": 11,
+            "NQ_before": 0,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": -9.09090909
+          },
+          "perf": {
+            "N_before": 53,
+            "N_total": 101,
+            "NQ_before": 25,
+            "NQ_total": 75,
+            "NQ_minus_N_pp": -19.14191419
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 398,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1403,
+          "all_hebrew": 1403,
+          "one_subj_one_pred": 471,
+          "one_verb": 471,
+          "after": 423,
+          "before": 48
+        },
+        "NQ": {
+          "clauses": 819,
+          "all_hebrew": 819,
+          "one_subj_one_pred": 137,
+          "one_verb": 137,
+          "before": 47,
+          "after": 89,
+          "interleaved": 1
+        },
+        "?N": {
+          "clauses": 163,
+          "all_hebrew": 163,
+          "one_subj_one_pred": 40,
+          "one_verb": 40,
+          "after": 34,
+          "before": 6
+        },
+        "?NQ": {
+          "clauses": 98,
+          "all_hebrew": 98,
+          "one_subj_one_pred": 14,
+          "one_verb": 14,
+          "after": 11,
+          "before": 3
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 6,
+            "N_total": 11,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -21.21212121
+          },
+          "2": {
+            "N_before": 2,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -28.57142857
+          },
+          "4": {
+            "N_before": 4,
+            "N_total": 6,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -33.33333333
+          },
+          "5": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 7,
+            "NQ_total": 15,
+            "NQ_minus_N_pp": null
+          },
+          "6": {
+            "N_before": 6,
+            "N_total": 13,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 3.84615385
+          },
+          "7": {
+            "N_before": 4,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": -80.0
+          },
+          "8": {
+            "N_before": 2,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -22.22222222
+          },
+          "9": {
+            "N_before": 3,
+            "N_total": 6,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "10": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "11": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 3,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": 9.52380952
+          },
+          "12": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "13": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 33.33333333
+          },
+          "14": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -25.0
+          },
+          "15": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "16": {
+            "N_before": 5,
+            "N_total": 7,
+            "NQ_before": 1,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -54.76190476
+          },
+          "17": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "19": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -33.33333333
+          },
+          "20": {
+            "N_before": 11,
+            "N_total": 16,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -68.75
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": -16.7711301,
+          "2": -17.55656109,
+          "4": -16.15384615,
+          "5": -20.89827728,
+          "6": -19.08623418,
+          "7": -12.91735085,
+          "8": -19.88850926,
+          "9": -17.31663685,
+          "10": -19.2687747,
+          "11": -18.89850801,
+          "12": -16.75859831,
+          "13": -18.96283492,
+          "14": -16.73611111,
+          "15": -18.73126873,
+          "16": -13.92789374,
+          "17": -17.75362319,
+          "19": -16.83690841,
+          "20": -12.5199362
+        },
+        "range_pp": [
+          -20.89827728,
+          -12.5199362
+        ],
+        "comparable_omissions": 18
+      }
+    },
+    "Samuel_I": {
+      "strict": {
+        "all": {
+          "N_before": 76,
+          "N_total": 767,
+          "NQ_before": 72,
+          "NQ_total": 248,
+          "NQ_minus_N_pp": 19.12352273
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 38,
+            "NQ_total": 111,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 18,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 76,
+            "N_total": 149,
+            "NQ_before": 33,
+            "NQ_total": 125,
+            "NQ_minus_N_pp": -24.60671141
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 600,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 87,
+          "N_total": 822,
+          "NQ_before": 74,
+          "NQ_total": 260,
+          "NQ_minus_N_pp": 17.87759686
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 39,
+            "NQ_total": 116,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 19,
+            "NQ_before": 0,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 87,
+            "N_total": 168,
+            "NQ_before": 34,
+            "NQ_total": 132,
+            "NQ_minus_N_pp": -26.02813853
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 635,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1901,
+          "all_hebrew": 1901,
+          "one_subj_one_pred": 770,
+          "one_verb": 770,
+          "after": 691,
+          "before": 76,
+          "interleaved": 3
+        },
+        "NQ": {
+          "clauses": 1570,
+          "all_hebrew": 1570,
+          "one_subj_one_pred": 249,
+          "one_verb": 249,
+          "before": 72,
+          "after": 176,
+          "interleaved": 1
+        },
+        "?N": {
+          "clauses": 120,
+          "all_hebrew": 120,
+          "one_subj_one_pred": 55,
+          "one_verb": 55,
+          "after": 44,
+          "before": 11
+        },
+        "?NQ": {
+          "clauses": 32,
+          "all_hebrew": 32,
+          "one_subj_one_pred": 12,
+          "one_verb": 12,
+          "after": 10,
+          "before": 2
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "2": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 5,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": 25.0
+          },
+          "3": {
+            "N_before": 4,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "4": {
+            "N_before": 7,
+            "N_total": 10,
+            "NQ_before": 3,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": -36.66666667
+          },
+          "6": {
+            "N_before": 4,
+            "N_total": 6,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "7": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "8": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 2,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 66.66666667
+          },
+          "9": {
+            "N_before": 6,
+            "N_total": 8,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -41.66666667
+          },
+          "10": {
+            "N_before": 2,
+            "N_total": 4,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -35.71428571
+          },
+          "11": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "12": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 3,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": null
+          },
+          "14": {
+            "N_before": 11,
+            "N_total": 21,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -38.0952381
+          },
+          "15": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": -22.22222222
+          },
+          "16": {
+            "N_before": 1,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": -20.0
+          },
+          "17": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 2,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -6.66666667
+          },
+          "18": {
+            "N_before": 4,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -57.14285714
+          },
+          "19": {
+            "N_before": 3,
+            "N_total": 4,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 25.0
+          },
+          "20": {
+            "N_before": 7,
+            "N_total": 9,
+            "NQ_before": 1,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": -65.27777778
+          },
+          "21": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -50.0
+          },
+          "22": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 20.0
+          },
+          "23": {
+            "N_before": 3,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -50.0
+          },
+          "24": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -50.0
+          },
+          "25": {
+            "N_before": 5,
+            "N_total": 9,
+            "NQ_before": 1,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": -43.05555556
+          },
+          "26": {
+            "N_before": 2,
+            "N_total": 6,
+            "NQ_before": 1,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "27": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "28": {
+            "N_before": 3,
+            "N_total": 3,
+            "NQ_before": 3,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": -40.0
+          },
+          "29": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "30": {
+            "N_before": 3,
+            "N_total": 10,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 20.0
+          },
+          "31": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": -24.28493151,
+          "2": -27.37631184,
+          "3": -23.6,
+          "4": -23.7782188,
+          "6": -25.13956632,
+          "7": -25.32413793,
+          "8": -26.29084421,
+          "9": -23.41588187,
+          "10": -23.91583869,
+          "11": -24.73844813,
+          "12": -25.36568577,
+          "14": -23.66260593,
+          "15": -23.78365612,
+          "16": -24.58333333,
+          "17": -25.33846872,
+          "18": -23.87495706,
+          "19": -24.53837597,
+          "20": -21.93528694,
+          "21": -24.19113987,
+          "22": -25.38812785,
+          "23": -23.77622378,
+          "24": -23.7941752,
+          "25": -23.36385836,
+          "26": -24.85749545,
+          "27": -25.80088988,
+          "28": -25.0,
+          "29": -24.86922406,
+          "30": -26.50172545,
+          "31": -24.95135135
+        },
+        "range_pp": [
+          -27.37631184,
+          -21.93528694
+        ],
+        "comparable_omissions": 29
+      }
+    },
+    "Samuel_II": {
+      "strict": {
+        "all": {
+          "N_before": 72,
+          "N_total": 604,
+          "NQ_before": 55,
+          "NQ_total": 199,
+          "NQ_minus_N_pp": 15.71766115
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 24,
+            "NQ_total": 92,
+            "NQ_minus_N_pp": 26.08695652
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 4,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 12,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 72,
+            "N_total": 127,
+            "NQ_before": 27,
+            "NQ_total": 90,
+            "NQ_minus_N_pp": -26.69291339
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 464,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 73,
+          "N_total": 625,
+          "NQ_before": 56,
+          "NQ_total": 205,
+          "NQ_minus_N_pp": 15.63707317
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 25,
+            "NQ_total": 95,
+            "NQ_minus_N_pp": 26.31578947
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 4,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 14,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 73,
+            "N_total": 130,
+            "NQ_before": 27,
+            "NQ_total": 91,
+            "NQ_minus_N_pp": -26.48351648
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 482,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1553,
+          "all_hebrew": 1553,
+          "one_subj_one_pred": 607,
+          "one_verb": 607,
+          "before": 72,
+          "after": 532,
+          "interleaved": 3
+        },
+        "NQ": {
+          "clauses": 1081,
+          "all_hebrew": 1081,
+          "one_subj_one_pred": 199,
+          "one_verb": 199,
+          "after": 144,
+          "before": 55
+        },
+        "?N": {
+          "clauses": 44,
+          "all_hebrew": 44,
+          "one_subj_one_pred": 21,
+          "one_verb": 21,
+          "after": 20,
+          "before": 1
+        },
+        "?NQ": {
+          "clauses": 36,
+          "all_hebrew": 36,
+          "one_subj_one_pred": 6,
+          "one_verb": 6,
+          "after": 5,
+          "before": 1
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 4,
+            "N_total": 5,
+            "NQ_before": 2,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": -57.77777778
+          },
+          "2": {
+            "N_before": 9,
+            "N_total": 13,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -69.23076923
+          },
+          "3": {
+            "N_before": 8,
+            "N_total": 9,
+            "NQ_before": 3,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -38.88888889
+          },
+          "4": {
+            "N_before": 3,
+            "N_total": 4,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 25.0
+          },
+          "5": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "6": {
+            "N_before": 2,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -22.22222222
+          },
+          "7": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 3,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 26.66666667
+          },
+          "8": {
+            "N_before": 1,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "9": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "10": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -25.0
+          },
+          "11": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "12": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 2,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": 25.0
+          },
+          "13": {
+            "N_before": 6,
+            "N_total": 9,
+            "NQ_before": 5,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": -4.16666667
+          },
+          "14": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -19.04761905
+          },
+          "15": {
+            "N_before": 2,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -50.0
+          },
+          "16": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 25.0
+          },
+          "17": {
+            "N_before": 3,
+            "N_total": 7,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -28.57142857
+          },
+          "18": {
+            "N_before": 7,
+            "N_total": 9,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -27.77777778
+          },
+          "19": {
+            "N_before": 11,
+            "N_total": 13,
+            "NQ_before": 2,
+            "NQ_total": 11,
+            "NQ_minus_N_pp": -66.43356643
+          },
+          "20": {
+            "N_before": 6,
+            "N_total": 8,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 25.0
+          },
+          "21": {
+            "N_before": 4,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "22": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "23": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "24": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -16.66666667
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": -24.87350739,
+          "2": -24.22867514,
+          "3": -25.66585956,
+          "4": -27.68847007,
+          "5": -26.46414888,
+          "6": -28.64021572,
+          "7": -29.0227704,
+          "8": -28.67768595,
+          "9": -26.0110952,
+          "10": -27.04175905,
+          "11": -26.91818182,
+          "12": -27.57671125,
+          "13": -29.1029351,
+          "14": -25.93276331,
+          "15": -26.22875092,
+          "16": -26.910299,
+          "17": -26.1746988,
+          "18": -25.53929122,
+          "19": -21.86320231,
+          "20": -26.24870173,
+          "21": -27.62711864,
+          "22": -27.14285714,
+          "23": -27.14285714,
+          "24": -27.38184546
+        },
+        "range_pp": [
+          -29.1029351,
+          -21.86320231
+        ],
+        "comparable_omissions": 24
+      }
+    },
+    "Reges_I": {
+      "strict": {
+        "all": {
+          "N_before": 35,
+          "N_total": 316,
+          "NQ_before": 27,
+          "NQ_total": 91,
+          "NQ_minus_N_pp": 18.5943803
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 14,
+            "NQ_total": 41,
+            "NQ_minus_N_pp": 34.14634146
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 19,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 35,
+            "N_total": 91,
+            "NQ_before": 12,
+            "NQ_total": 48,
+            "NQ_minus_N_pp": -13.46153846
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 205,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 64,
+          "N_total": 487,
+          "NQ_before": 58,
+          "NQ_total": 160,
+          "NQ_minus_N_pp": 23.10831622
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 29,
+            "NQ_total": 65,
+            "NQ_minus_N_pp": -5.38461538
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 24,
+            "NQ_before": 0,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 63,
+            "N_total": 140,
+            "NQ_before": 27,
+            "NQ_total": 88,
+            "NQ_minus_N_pp": -14.31818182
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 321,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1262,
+          "all_hebrew": 1262,
+          "one_subj_one_pred": 316,
+          "one_verb": 316,
+          "after": 281,
+          "before": 35
+        },
+        "NQ": {
+          "clauses": 682,
+          "all_hebrew": 682,
+          "one_subj_one_pred": 92,
+          "one_verb": 92,
+          "after": 64,
+          "before": 27,
+          "interleaved": 1
+        },
+        "?N": {
+          "clauses": 535,
+          "all_hebrew": 535,
+          "one_subj_one_pred": 172,
+          "one_verb": 172,
+          "after": 142,
+          "before": 29,
+          "interleaved": 1
+        },
+        "?NQ": {
+          "clauses": 293,
+          "all_hebrew": 293,
+          "one_subj_one_pred": 69,
+          "one_verb": 69,
+          "after": 38,
+          "before": 31
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "2": {
+            "N_before": 4,
+            "N_total": 9,
+            "NQ_before": 4,
+            "NQ_total": 17,
+            "NQ_minus_N_pp": -20.91503268
+          },
+          "3": {
+            "N_before": 0,
+            "N_total": 5,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 50.0
+          },
+          "4": {
+            "N_before": 2,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "6": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "7": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "9": {
+            "N_before": 3,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -33.33333333
+          },
+          "10": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "12": {
+            "N_before": 1,
+            "N_total": 9,
+            "NQ_before": 3,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 63.88888889
+          },
+          "13": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -50.0
+          },
+          "15": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "16": {
+            "N_before": 2,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -28.57142857
+          },
+          "17": {
+            "N_before": 2,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -40.0
+          },
+          "18": {
+            "N_before": 7,
+            "N_total": 9,
+            "NQ_before": 2,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -11.11111111
+          },
+          "19": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -50.0
+          },
+          "20": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "21": {
+            "N_before": 1,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -11.11111111
+          },
+          "22": {
+            "N_before": 9,
+            "N_total": 13,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": -54.94505495
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "2": -11.99842644,
+          "3": -17.97040169,
+          "4": -12.07865169,
+          "6": -14.08045977,
+          "7": -14.08045977,
+          "9": -12.35772358,
+          "10": -13.88888889,
+          "12": -21.00886918,
+          "13": -12.6703323,
+          "15": -13.88888889,
+          "16": -13.75379939,
+          "17": -12.84017813,
+          "18": -11.92411924,
+          "19": -12.11529067,
+          "20": -12.37458194,
+          "21": -14.79674797,
+          "22": -6.50406504
+        },
+        "range_pp": [
+          -21.00886918,
+          -6.50406504
+        ],
+        "comparable_omissions": 17
+      }
+    },
+    "Reges_II": {
+      "strict": {
+        "all": {
+          "N_before": 30,
+          "N_total": 298,
+          "NQ_before": 23,
+          "NQ_total": 63,
+          "NQ_minus_N_pp": 26.44082241
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 11,
+            "NQ_total": 25,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 30,
+            "N_total": 116,
+            "NQ_before": 12,
+            "NQ_total": 36,
+            "NQ_minus_N_pp": 7.47126437
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 170,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 49,
+          "N_total": 499,
+          "NQ_before": 35,
+          "NQ_total": 106,
+          "NQ_minus_N_pp": 23.19922865
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 15,
+            "NQ_total": 35,
+            "NQ_minus_N_pp": 42.85714286
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 18,
+            "NQ_before": 0,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 49,
+            "N_total": 169,
+            "NQ_before": 20,
+            "NQ_total": 67,
+            "NQ_minus_N_pp": 0.85666343
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 311,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1164,
+          "all_hebrew": 1164,
+          "one_subj_one_pred": 298,
+          "one_verb": 298,
+          "after": 268,
+          "before": 30
+        },
+        "NQ": {
+          "clauses": 459,
+          "all_hebrew": 459,
+          "one_subj_one_pred": 63,
+          "one_verb": 63,
+          "before": 23,
+          "after": 40
+        },
+        "?N": {
+          "clauses": 688,
+          "all_hebrew": 688,
+          "one_subj_one_pred": 201,
+          "one_verb": 201,
+          "after": 182,
+          "before": 19
+        },
+        "?NQ": {
+          "clauses": 316,
+          "all_hebrew": 316,
+          "one_subj_one_pred": 43,
+          "one_verb": 43,
+          "before": 12,
+          "after": 31
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 2,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 6.66666667
+          },
+          "2": {
+            "N_before": 4,
+            "N_total": 4,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -50.0
+          },
+          "3": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "4": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -50.0
+          },
+          "6": {
+            "N_before": 3,
+            "N_total": 5,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 40.0
+          },
+          "7": {
+            "N_before": 3,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -60.0
+          },
+          "8": {
+            "N_before": 2,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "10": {
+            "N_before": 4,
+            "N_total": 8,
+            "NQ_before": 5,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 33.33333333
+          },
+          "11": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "13": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "14": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "15": {
+            "N_before": 3,
+            "N_total": 8,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "16": {
+            "N_before": 1,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "18": {
+            "N_before": 2,
+            "N_total": 15,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -13.33333333
+          },
+          "19": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -75.0
+          },
+          "21": {
+            "N_before": 0,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 0.0
+          },
+          "22": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": 16.66666667
+          },
+          "23": {
+            "N_before": 0,
+            "N_total": 22,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "25": {
+            "N_before": 2,
+            "N_total": 16,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": 6.5943477,
+          "2": 8.03571429,
+          "3": 7.24637681,
+          "4": 8.84711779,
+          "6": 7.1042471,
+          "7": 12.03931204,
+          "8": 8.33333333,
+          "10": -0.74074074,
+          "11": 7.66961652,
+          "13": 7.89473684,
+          "14": 7.44047619,
+          "15": 8.33333333,
+          "16": 6.96969697,
+          "18": 6.56294201,
+          "19": 9.1576087,
+          "21": 11.43695015,
+          "22": 10.57971014,
+          "23": 1.41843972,
+          "25": 5.33333333
+        },
+        "range_pp": [
+          -0.74074074,
+          12.03931204
+        ],
+        "comparable_omissions": 19
+      }
+    },
+    "Jesaia": {
+      "strict": {
+        "all": {
+          "N_before": 1,
+          "N_total": 31,
+          "NQ_before": 8,
+          "NQ_total": 40,
+          "NQ_minus_N_pp": 16.77419355
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 5,
+            "NQ_total": 17,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 3,
+            "NQ_total": 21,
+            "NQ_minus_N_pp": -10.71428571
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 25,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 1,
+          "N_total": 48,
+          "NQ_before": 13,
+          "NQ_total": 57,
+          "NQ_minus_N_pp": 20.72368421
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 7,
+            "NQ_total": 22,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 1,
+            "N_total": 6,
+            "NQ_before": 6,
+            "NQ_total": 33,
+            "NQ_minus_N_pp": 1.51515152
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 40,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 120,
+          "all_hebrew": 120,
+          "one_subj_one_pred": 31,
+          "one_verb": 31,
+          "after": 30,
+          "before": 1
+        },
+        "NQ": {
+          "clauses": 220,
+          "all_hebrew": 220,
+          "one_subj_one_pred": 40,
+          "one_verb": 40,
+          "after": 32,
+          "before": 8
+        },
+        "?N": {
+          "clauses": 30,
+          "all_hebrew": 30,
+          "one_subj_one_pred": 17,
+          "one_verb": 17,
+          "after": 17
+        },
+        "?NQ": {
+          "clauses": 56,
+          "all_hebrew": 56,
+          "one_subj_one_pred": 17,
+          "one_verb": 17,
+          "after": 12,
+          "before": 5
+        }
+      }
+    },
+    "Jeremia": {
+      "strict": {
+        "all": {
+          "N_before": 14,
+          "N_total": 170,
+          "NQ_before": 16,
+          "NQ_total": 76,
+          "NQ_minus_N_pp": 12.81733746
+        },
+        "forms": {
+          "impf": {
+            "N_before": 2,
+            "N_total": 2,
+            "NQ_before": 7,
+            "NQ_total": 28,
+            "NQ_minus_N_pp": -75.0
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 12,
+            "N_total": 55,
+            "NQ_before": 8,
+            "NQ_total": 45,
+            "NQ_minus_N_pp": -4.04040404
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 104,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 17,
+          "N_total": 241,
+          "NQ_before": 24,
+          "NQ_total": 102,
+          "NQ_minus_N_pp": 16.47546986
+        },
+        "forms": {
+          "impf": {
+            "N_before": 2,
+            "N_total": 2,
+            "NQ_before": 12,
+            "NQ_total": 35,
+            "NQ_minus_N_pp": -65.71428571
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 10,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 15,
+            "N_total": 81,
+            "NQ_before": 11,
+            "NQ_total": 64,
+            "NQ_minus_N_pp": -1.33101852
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 148,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 467,
+          "all_hebrew": 467,
+          "one_subj_one_pred": 170,
+          "one_verb": 170,
+          "after": 156,
+          "before": 14
+        },
+        "NQ": {
+          "clauses": 473,
+          "all_hebrew": 473,
+          "one_subj_one_pred": 76,
+          "one_verb": 76,
+          "after": 60,
+          "before": 16
+        },
+        "?N": {
+          "clauses": 215,
+          "all_hebrew": 215,
+          "one_subj_one_pred": 71,
+          "one_verb": 71,
+          "after": 68,
+          "before": 3
+        },
+        "?NQ": {
+          "clauses": 164,
+          "all_hebrew": 164,
+          "one_subj_one_pred": 26,
+          "one_verb": 26,
+          "after": 18,
+          "before": 8
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "2": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "3": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 2,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "15": {
+            "N_before": 2,
+            "N_total": 11,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "16": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "18": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 33.33333333
+          },
+          "20": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "28": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 25.0
+          },
+          "33": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": null
+          },
+          "35": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 33.33333333
+          },
+          "36": {
+            "N_before": 1,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "37": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -25.0
+          },
+          "38": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 0.0
+          },
+          "40": {
+            "N_before": 3,
+            "N_total": 6,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -16.66666667
+          },
+          "41": {
+            "N_before": 3,
+            "N_total": 14,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "42": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -66.66666667
+          },
+          "43": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "52": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "2": -3.63636364,
+          "3": -4.98575499,
+          "15": -4.94949495,
+          "16": -3.21353066,
+          "18": -5.55555556,
+          "20": -3.59389039,
+          "28": -5.14905149,
+          "33": -2.8992629,
+          "35": -5.55555556,
+          "36": -3.40136054,
+          "37": -2.96397629,
+          "38": -4.01721664,
+          "40": -1.70068027,
+          "41": -4.17344173,
+          "42": -3.7037037,
+          "43": -4.86373166,
+          "52": -4.44444444
+        },
+        "range_pp": [
+          -5.55555556,
+          -1.70068027
+        ],
+        "comparable_omissions": 17
+      }
+    },
+    "Ezechiel": {
+      "strict": {
+        "all": {
+          "N_before": 11,
+          "N_total": 99,
+          "NQ_before": 73,
+          "NQ_total": 152,
+          "NQ_minus_N_pp": 36.91520468
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 47,
+            "NQ_total": 70,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 9,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 11,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 11,
+            "N_total": 27,
+            "NQ_before": 17,
+            "NQ_total": 61,
+            "NQ_minus_N_pp": -12.87188828
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 68,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 11,
+          "N_total": 99,
+          "NQ_before": 73,
+          "NQ_total": 152,
+          "NQ_minus_N_pp": 36.91520468
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 47,
+            "NQ_total": 70,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 9,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 11,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 11,
+            "N_total": 27,
+            "NQ_before": 17,
+            "NQ_total": 61,
+            "NQ_minus_N_pp": -12.87188828
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 68,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 656,
+          "all_hebrew": 656,
+          "one_subj_one_pred": 99,
+          "one_verb": 99,
+          "after": 88,
+          "before": 11
+        },
+        "NQ": {
+          "clauses": 1124,
+          "all_hebrew": 1124,
+          "one_subj_one_pred": 152,
+          "one_verb": 152,
+          "before": 73,
+          "after": 79
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Hosea": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 1,
+          "NQ_before": 0,
+          "NQ_total": 1,
+          "NQ_minus_N_pp": 0.0
+        },
+        "forms": {
+          "infc": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 4,
+          "NQ_before": 1,
+          "NQ_total": 3,
+          "NQ_minus_N_pp": 33.33333333
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 10,
+          "all_hebrew": 10,
+          "one_subj_one_pred": 1,
+          "one_verb": 1,
+          "after": 1
+        },
+        "NQ": {
+          "clauses": 11,
+          "all_hebrew": 11,
+          "one_subj_one_pred": 1,
+          "one_verb": 1,
+          "after": 1
+        },
+        "?N": {
+          "clauses": 14,
+          "all_hebrew": 14,
+          "one_subj_one_pred": 3,
+          "one_verb": 3,
+          "after": 3
+        },
+        "?NQ": {
+          "clauses": 19,
+          "all_hebrew": 19,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "after": 1,
+          "before": 1
+        }
+      }
+    },
+    "Joel": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 2,
+          "NQ_before": 2,
+          "NQ_total": 11,
+          "NQ_minus_N_pp": 18.18181818
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 2,
+          "NQ_before": 2,
+          "NQ_total": 11,
+          "NQ_minus_N_pp": 18.18181818
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 4,
+          "all_hebrew": 4,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "after": 2
+        },
+        "NQ": {
+          "clauses": 43,
+          "all_hebrew": 43,
+          "one_subj_one_pred": 11,
+          "one_verb": 11,
+          "after": 9,
+          "before": 2
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Amos": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 3,
+          "NQ_before": 1,
+          "NQ_total": 13,
+          "NQ_minus_N_pp": 7.69230769
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 11,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 3,
+          "NQ_before": 1,
+          "NQ_total": 13,
+          "NQ_minus_N_pp": 7.69230769
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 11,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 7,
+          "all_hebrew": 7,
+          "one_subj_one_pred": 3,
+          "one_verb": 3,
+          "after": 3
+        },
+        "NQ": {
+          "clauses": 29,
+          "all_hebrew": 29,
+          "one_subj_one_pred": 13,
+          "one_verb": 13,
+          "before": 1,
+          "after": 12
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Obadia": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Jona": {
+      "strict": {
+        "all": {
+          "N_before": 5,
+          "N_total": 39,
+          "NQ_before": 4,
+          "NQ_total": 10,
+          "NQ_minus_N_pp": 27.17948718
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -100.0
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 4,
+            "N_total": 5,
+            "NQ_before": 4,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 0.0
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 30,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 5,
+          "N_total": 39,
+          "NQ_before": 4,
+          "NQ_total": 10,
+          "NQ_minus_N_pp": 27.17948718
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -100.0
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 4,
+            "N_total": 5,
+            "NQ_before": 4,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 0.0
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 30,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 117,
+          "all_hebrew": 117,
+          "one_subj_one_pred": 39,
+          "one_verb": 39,
+          "after": 34,
+          "before": 5
+        },
+        "NQ": {
+          "clauses": 88,
+          "all_hebrew": 88,
+          "one_subj_one_pred": 10,
+          "one_verb": 10,
+          "after": 6,
+          "before": 4
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Micha": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 6,
+          "NQ_total": 12,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 5,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 6,
+          "NQ_total": 12,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 5,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1,
+          "all_hebrew": 1
+        },
+        "NQ": {
+          "clauses": 52,
+          "all_hebrew": 52,
+          "one_subj_one_pred": 12,
+          "one_verb": 12,
+          "after": 6,
+          "before": 6
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Nahum": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 1,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {
+          "wayq": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 2,
+          "all_hebrew": 2
+        },
+        "NQ": {},
+        "?N": {
+          "clauses": 3,
+          "all_hebrew": 3,
+          "one_subj_one_pred": 1,
+          "one_verb": 1,
+          "after": 1
+        },
+        "?NQ": {}
+      }
+    },
+    "Habakuk": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Zephania": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Haggai": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 10,
+          "NQ_before": 2,
+          "NQ_total": 5,
+          "NQ_minus_N_pp": 40.0
+        },
+        "forms": {
+          "perf": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 2,
+            "NQ_total": 5,
+            "NQ_minus_N_pp": 40.0
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 8,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {
+          "clauses": 19,
+          "all_hebrew": 19,
+          "one_subj_one_pred": 10,
+          "one_verb": 10,
+          "after": 10
+        },
+        "?NQ": {
+          "clauses": 66,
+          "all_hebrew": 66,
+          "one_subj_one_pred": 5,
+          "one_verb": 5,
+          "after": 3,
+          "before": 2
+        }
+      }
+    },
+    "Sacharia": {
+      "strict": {
+        "all": {
+          "N_before": 2,
+          "N_total": 15,
+          "NQ_before": 12,
+          "NQ_total": 26,
+          "NQ_minus_N_pp": 32.82051282
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 5,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 7,
+            "NQ_total": 19,
+            "NQ_minus_N_pp": -29.8245614
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 2,
+          "N_total": 15,
+          "NQ_before": 12,
+          "NQ_total": 26,
+          "NQ_minus_N_pp": 32.82051282
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 5,
+            "NQ_total": 7,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 7,
+            "NQ_total": 19,
+            "NQ_minus_N_pp": -29.8245614
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 136,
+          "all_hebrew": 136,
+          "one_subj_one_pred": 15,
+          "one_verb": 15,
+          "after": 13,
+          "before": 2
+        },
+        "NQ": {
+          "clauses": 143,
+          "all_hebrew": 143,
+          "one_subj_one_pred": 26,
+          "one_verb": 26,
+          "before": 12,
+          "after": 14
+        },
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Maleachi": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Psalmi": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 2,
+          "NQ_before": 4,
+          "NQ_total": 6,
+          "NQ_minus_N_pp": 66.66666667
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 4,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 4,
+          "NQ_before": 4,
+          "NQ_total": 6,
+          "NQ_minus_N_pp": 66.66666667
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 4,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 16,
+          "all_hebrew": 16,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "after": 2
+        },
+        "NQ": {
+          "clauses": 47,
+          "all_hebrew": 47,
+          "one_subj_one_pred": 6,
+          "one_verb": 6,
+          "before": 4,
+          "after": 2
+        },
+        "?N": {
+          "clauses": 15,
+          "all_hebrew": 15,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "after": 2
+        },
+        "?NQ": {}
+      }
+    },
+    "Iob": {
+      "strict": {
+        "all": {
+          "N_before": 4,
+          "N_total": 72,
+          "NQ_before": 184,
+          "NQ_total": 318,
+          "NQ_minus_N_pp": 52.30607966
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 110,
+            "NQ_total": 200,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 4,
+            "N_total": 12,
+            "NQ_before": 73,
+            "NQ_total": 108,
+            "NQ_minus_N_pp": 34.25925926
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 60,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 4,
+          "N_total": 81,
+          "NQ_before": 190,
+          "NQ_total": 331,
+          "NQ_minus_N_pp": 52.46354108
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 113,
+            "NQ_total": 209,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 9,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 4,
+            "N_total": 15,
+            "NQ_before": 76,
+            "NQ_total": 112,
+            "NQ_minus_N_pp": 41.19047619
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 66,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 185,
+          "all_hebrew": 185,
+          "one_subj_one_pred": 72,
+          "one_verb": 72,
+          "after": 68,
+          "before": 4
+        },
+        "NQ": {
+          "clauses": 1446,
+          "all_hebrew": 1446,
+          "one_subj_one_pred": 318,
+          "one_verb": 318,
+          "after": 134,
+          "before": 184
+        },
+        "?N": {
+          "clauses": 20,
+          "all_hebrew": 20,
+          "one_subj_one_pred": 9,
+          "one_verb": 9,
+          "after": 9
+        },
+        "?NQ": {
+          "clauses": 67,
+          "all_hebrew": 67,
+          "one_subj_one_pred": 13,
+          "one_verb": 13,
+          "after": 7,
+          "before": 6
+        }
+      }
+    },
+    "Proverbia": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 2,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {
+          "wayq": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1,
+          "all_hebrew": 1
+        },
+        "NQ": {},
+        "?N": {
+          "clauses": 12,
+          "all_hebrew": 12,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "after": 2
+        },
+        "?NQ": {}
+      }
+    },
+    "Ruth": {
+      "strict": {
+        "all": {
+          "N_before": 11,
+          "N_total": 44,
+          "NQ_before": 7,
+          "NQ_total": 26,
+          "NQ_minus_N_pp": 1.92307692
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 3,
+            "NQ_total": 13,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 11,
+            "N_total": 15,
+            "NQ_before": 4,
+            "NQ_total": 12,
+            "NQ_minus_N_pp": -40.0
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 28,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 12,
+          "N_total": 60,
+          "NQ_before": 8,
+          "NQ_total": 32,
+          "NQ_minus_N_pp": 5.0
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 4,
+            "NQ_total": 18,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 12,
+            "N_total": 16,
+            "NQ_before": 4,
+            "NQ_total": 13,
+            "NQ_minus_N_pp": -44.23076923
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 42,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 138,
+          "all_hebrew": 138,
+          "one_subj_one_pred": 44,
+          "one_verb": 44,
+          "after": 33,
+          "before": 11
+        },
+        "NQ": {
+          "clauses": 176,
+          "all_hebrew": 176,
+          "one_subj_one_pred": 26,
+          "one_verb": 26,
+          "after": 19,
+          "before": 7
+        },
+        "?N": {
+          "clauses": 57,
+          "all_hebrew": 57,
+          "one_subj_one_pred": 16,
+          "one_verb": 16,
+          "after": 15,
+          "before": 1
+        },
+        "?NQ": {
+          "clauses": 63,
+          "all_hebrew": 63,
+          "one_subj_one_pred": 6,
+          "one_verb": 6,
+          "after": 5,
+          "before": 1
+        }
+      }
+    },
+    "Canticum": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Ecclesiastes": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {},
+        "?NQ": {}
+      }
+    },
+    "Threni": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 0,
+          "N_total": 0,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {}
+      },
+      "counts_by_txt": {
+        "N": {},
+        "NQ": {},
+        "?N": {
+          "clauses": 2,
+          "all_hebrew": 2
+        },
+        "?NQ": {}
+      }
+    },
+    "Esther": {
+      "strict": {
+        "all": {
+          "N_before": 11,
+          "N_total": 74,
+          "NQ_before": 6,
+          "NQ_total": 24,
+          "NQ_minus_N_pp": 10.13513514
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 10,
+            "NQ_minus_N_pp": 10.0
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 11,
+            "N_total": 18,
+            "NQ_before": 5,
+            "NQ_total": 13,
+            "NQ_minus_N_pp": -22.64957265
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 49,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 17,
+          "N_total": 111,
+          "NQ_before": 11,
+          "NQ_total": 32,
+          "NQ_minus_N_pp": 19.05968468
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 5,
+            "NQ_total": 17,
+            "NQ_minus_N_pp": 29.41176471
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 17,
+            "N_total": 33,
+            "NQ_before": 6,
+            "NQ_total": 14,
+            "NQ_minus_N_pp": -8.65800866
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 69,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 178,
+          "all_hebrew": 178,
+          "one_subj_one_pred": 74,
+          "one_verb": 74,
+          "after": 63,
+          "before": 11
+        },
+        "NQ": {
+          "clauses": 124,
+          "all_hebrew": 124,
+          "one_subj_one_pred": 24,
+          "one_verb": 24,
+          "after": 18,
+          "before": 6
+        },
+        "?N": {
+          "clauses": 143,
+          "all_hebrew": 143,
+          "one_subj_one_pred": 37,
+          "one_verb": 37,
+          "after": 31,
+          "before": 6
+        },
+        "?NQ": {
+          "clauses": 51,
+          "all_hebrew": 51,
+          "one_subj_one_pred": 8,
+          "one_verb": 8,
+          "after": 3,
+          "before": 5
+        }
+      }
+    },
+    "Daniel": {
+      "strict": {
+        "all": {
+          "N_before": 0,
+          "N_total": 1,
+          "NQ_before": 0,
+          "NQ_total": 0,
+          "NQ_minus_N_pp": null
+        },
+        "forms": {
+          "wayq": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 2,
+          "N_total": 21,
+          "NQ_before": 0,
+          "NQ_total": 1,
+          "NQ_minus_N_pp": -9.52380952
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 2,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 14,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 4,
+          "all_hebrew": 4,
+          "one_subj_one_pred": 1,
+          "one_verb": 1,
+          "after": 1
+        },
+        "NQ": {},
+        "?N": {
+          "clauses": 119,
+          "all_hebrew": 61,
+          "one_subj_one_pred": 20,
+          "one_verb": 20,
+          "after": 18,
+          "before": 2
+        },
+        "?NQ": {
+          "clauses": 188,
+          "all_hebrew": 17,
+          "one_subj_one_pred": 1,
+          "one_verb": 1,
+          "after": 1
+        }
+      }
+    },
+    "Esra": {
+      "strict": {
+        "all": {
+          "N_before": 9,
+          "N_total": 35,
+          "NQ_before": 1,
+          "NQ_total": 2,
+          "NQ_minus_N_pp": 24.28571429
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 9,
+            "N_total": 21,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -42.85714286
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 13,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 11,
+          "N_total": 50,
+          "NQ_before": 4,
+          "NQ_total": 6,
+          "NQ_minus_N_pp": 44.66666667
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 2,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 66.66666667
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 11,
+            "N_total": 23,
+            "NQ_before": 2,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 18.84057971
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 25,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 294,
+          "all_hebrew": 266,
+          "one_subj_one_pred": 35,
+          "one_verb": 35,
+          "after": 26,
+          "before": 9
+        },
+        "NQ": {
+          "clauses": 90,
+          "all_hebrew": 17,
+          "one_subj_one_pred": 2,
+          "one_verb": 2,
+          "after": 1,
+          "before": 1
+        },
+        "?N": {
+          "clauses": 70,
+          "all_hebrew": 70,
+          "one_subj_one_pred": 15,
+          "one_verb": 15,
+          "after": 13,
+          "before": 2
+        },
+        "?NQ": {
+          "clauses": 35,
+          "all_hebrew": 35,
+          "one_subj_one_pred": 4,
+          "one_verb": 4,
+          "before": 3,
+          "after": 1
+        }
+      }
+    },
+    "Nehemia": {
+      "strict": {
+        "all": {
+          "N_before": 16,
+          "N_total": 120,
+          "NQ_before": 16,
+          "NQ_total": 28,
+          "NQ_minus_N_pp": 43.80952381
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 8,
+            "NQ_total": 17,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 16,
+            "N_total": 73,
+            "NQ_before": 6,
+            "NQ_total": 8,
+            "NQ_minus_N_pp": 53.08219178
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 45,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 17,
+          "N_total": 131,
+          "NQ_before": 19,
+          "NQ_total": 32,
+          "NQ_minus_N_pp": 46.39790076
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 8,
+            "NQ_total": 18,
+            "NQ_minus_N_pp": null
+          },
+          "infa": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 17,
+            "N_total": 75,
+            "NQ_before": 9,
+            "NQ_total": 11,
+            "NQ_minus_N_pp": 59.15151515
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 54,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 482,
+          "all_hebrew": 482,
+          "one_subj_one_pred": 120,
+          "one_verb": 120,
+          "before": 16,
+          "after": 104
+        },
+        "NQ": {
+          "clauses": 299,
+          "all_hebrew": 299,
+          "one_subj_one_pred": 28,
+          "one_verb": 28,
+          "before": 16,
+          "after": 12
+        },
+        "?N": {
+          "clauses": 45,
+          "all_hebrew": 45,
+          "one_subj_one_pred": 11,
+          "one_verb": 11,
+          "after": 10,
+          "before": 1
+        },
+        "?NQ": {
+          "clauses": 47,
+          "all_hebrew": 47,
+          "one_subj_one_pred": 4,
+          "one_verb": 4,
+          "before": 3,
+          "after": 1
+        }
+      }
+    },
+    "Chronica_I": {
+      "strict": {
+        "all": {
+          "N_before": 27,
+          "N_total": 232,
+          "NQ_before": 13,
+          "NQ_total": 47,
+          "NQ_minus_N_pp": 16.02164343
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 4,
+            "NQ_total": 23,
+            "NQ_minus_N_pp": -32.60869565
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 26,
+            "N_total": 62,
+            "NQ_before": 8,
+            "NQ_total": 21,
+            "NQ_minus_N_pp": -3.84024578
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 164,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 45,
+          "N_total": 304,
+          "NQ_before": 13,
+          "NQ_total": 51,
+          "NQ_minus_N_pp": 10.6875645
+        },
+        "forms": {
+          "impf": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 4,
+            "NQ_total": 26,
+            "NQ_minus_N_pp": -34.61538462
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 6,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 44,
+            "N_total": 87,
+            "NQ_before": 8,
+            "NQ_total": 22,
+            "NQ_minus_N_pp": -14.21107628
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 209,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 867,
+          "all_hebrew": 867,
+          "one_subj_one_pred": 232,
+          "one_verb": 232,
+          "after": 205,
+          "before": 27
+        },
+        "NQ": {
+          "clauses": 401,
+          "all_hebrew": 401,
+          "one_subj_one_pred": 47,
+          "one_verb": 47,
+          "after": 34,
+          "before": 13
+        },
+        "?N": {
+          "clauses": 244,
+          "all_hebrew": 244,
+          "one_subj_one_pred": 72,
+          "one_verb": 72,
+          "after": 54,
+          "before": 18
+        },
+        "?NQ": {
+          "clauses": 24,
+          "all_hebrew": 24,
+          "one_subj_one_pred": 4,
+          "one_verb": 4,
+          "after": 4
+        }
+      }
+    },
+    "Chronica_II": {
+      "strict": {
+        "all": {
+          "N_before": 55,
+          "N_total": 424,
+          "NQ_before": 23,
+          "NQ_total": 68,
+          "NQ_minus_N_pp": 20.8518313
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 12,
+            "NQ_total": 30,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 17,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "perf": {
+            "N_before": 55,
+            "N_total": 164,
+            "NQ_before": 9,
+            "NQ_total": 35,
+            "NQ_minus_N_pp": -7.82229965
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 243,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "include_unknown_outer": {
+        "all": {
+          "N_before": 65,
+          "N_total": 521,
+          "NQ_before": 40,
+          "NQ_total": 113,
+          "NQ_minus_N_pp": 22.92222241
+        },
+        "forms": {
+          "impf": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 23,
+            "NQ_total": 57,
+            "NQ_minus_N_pp": null
+          },
+          "impv": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 2,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": null
+          },
+          "infc": {
+            "N_before": 0,
+            "N_total": 22,
+            "NQ_before": 0,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": 0.0
+          },
+          "perf": {
+            "N_before": 65,
+            "N_total": 193,
+            "NQ_before": 15,
+            "NQ_total": 48,
+            "NQ_minus_N_pp": -2.42875648
+          },
+          "wayq": {
+            "N_before": 0,
+            "N_total": 306,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          }
+        }
+      },
+      "counts_by_txt": {
+        "N": {
+          "clauses": 1730,
+          "all_hebrew": 1730,
+          "one_subj_one_pred": 424,
+          "one_verb": 424,
+          "after": 369,
+          "before": 55
+        },
+        "NQ": {
+          "clauses": 495,
+          "all_hebrew": 495,
+          "one_subj_one_pred": 68,
+          "one_verb": 68,
+          "before": 23,
+          "after": 45
+        },
+        "?N": {
+          "clauses": 321,
+          "all_hebrew": 321,
+          "one_subj_one_pred": 97,
+          "one_verb": 97,
+          "after": 87,
+          "before": 10
+        },
+        "?NQ": {
+          "clauses": 304,
+          "all_hebrew": 304,
+          "one_subj_one_pred": 45,
+          "one_verb": 45,
+          "after": 28,
+          "before": 17
+        }
+      },
+      "strict_perf_chapter_check": {
+        "perf_by_chapter": {
+          "1": {
+            "N_before": 0,
+            "N_total": 6,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 50.0
+          },
+          "2": {
+            "N_before": 0,
+            "N_total": 0,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": null
+          },
+          "3": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "4": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "5": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "8": {
+            "N_before": 0,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "9": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "10": {
+            "N_before": 1,
+            "N_total": 6,
+            "NQ_before": 2,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 83.33333333
+          },
+          "11": {
+            "N_before": 1,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "12": {
+            "N_before": 1,
+            "N_total": 8,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -12.5
+          },
+          "14": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "15": {
+            "N_before": 3,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "17": {
+            "N_before": 1,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "18": {
+            "N_before": 5,
+            "N_total": 5,
+            "NQ_before": 1,
+            "NQ_total": 6,
+            "NQ_minus_N_pp": -83.33333333
+          },
+          "19": {
+            "N_before": 0,
+            "N_total": 1,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 50.0
+          },
+          "20": {
+            "N_before": 5,
+            "N_total": 11,
+            "NQ_before": 1,
+            "NQ_total": 4,
+            "NQ_minus_N_pp": -20.45454545
+          },
+          "21": {
+            "N_before": 1,
+            "N_total": 4,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "22": {
+            "N_before": 6,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "23": {
+            "N_before": 1,
+            "N_total": 5,
+            "NQ_before": 0,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": -20.0
+          },
+          "24": {
+            "N_before": 3,
+            "N_total": 12,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -25.0
+          },
+          "25": {
+            "N_before": 3,
+            "N_total": 9,
+            "NQ_before": 1,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "26": {
+            "N_before": 4,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "27": {
+            "N_before": 0,
+            "N_total": 2,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "28": {
+            "N_before": 2,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "29": {
+            "N_before": 1,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": -11.11111111
+          },
+          "30": {
+            "N_before": 7,
+            "N_total": 9,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "33": {
+            "N_before": 2,
+            "N_total": 10,
+            "NQ_before": 0,
+            "NQ_total": 0,
+            "NQ_minus_N_pp": null
+          },
+          "34": {
+            "N_before": 0,
+            "N_total": 3,
+            "NQ_before": 0,
+            "NQ_total": 3,
+            "NQ_minus_N_pp": 0.0
+          },
+          "35": {
+            "N_before": 6,
+            "N_total": 12,
+            "NQ_before": 1,
+            "NQ_total": 2,
+            "NQ_minus_N_pp": 0.0
+          },
+          "36": {
+            "N_before": 1,
+            "N_total": 7,
+            "NQ_before": 0,
+            "NQ_total": 1,
+            "NQ_minus_N_pp": -14.28571429
+          }
+        },
+        "leave_one_chapter_out_pp": {
+          "1": -10.56770234,
+          "2": -8.53658537,
+          "3": -8.02804557,
+          "4": -8.23633157,
+          "5": -8.02804557,
+          "8": -9.31756142,
+          "9": -8.23633157,
+          "10": -12.96509398,
+          "11": -7.61904762,
+          "12": -8.14479638,
+          "14": -8.03571429,
+          "15": -6.78571429,
+          "17": -7.82608696,
+          "18": -3.86033398,
+          "19": -9.49990705,
+          "20": -6.87328695,
+          "21": -8.03571429,
+          "22": -5.89861751,
+          "23": -6.68953688,
+          "24": -7.73993808,
+          "25": -8.5483871,
+          "26": -6.76979072,
+          "27": -8.23633157,
+          "28": -7.20496894,
+          "29": -6.71370968,
+          "30": -5.25345622,
+          "33": -8.7012987,
+          "34": -6.03649068,
+          "35": -7.99441786,
+          "36": -7.92431622
+        },
+        "range_pp": [
+          -12.96509398,
+          -3.86033398
+        ],
+        "comparable_omissions": 30
+      }
+    }
+  }
+}

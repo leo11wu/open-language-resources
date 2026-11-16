@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.15",
+  "catalog_version": "2.5.16",
   "updated_on": "2026-11-16",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
@@ -165,8 +165,8 @@
         },
         {
           "resource_id": "R195",
-          "use_for": "在同一卷内分别抽取叙述分句和直接引语分句，用词位、主语功能和谓语词类统计显性主语与动词的先后。",
-          "check_before_use": "区分txt的N、NQ及更深的引语层级。检查代词或名词主语、动词形式和所用谓语编码的覆盖。PTNK重用部分文本与形态标注。"
+          "use_for": "在同一卷内分别抽取叙述分句和直接引语分句，用词位、主语功能和谓语词类统计显性主语与动词的先后。按动词形式复核时，创世记以外十卷中八卷出现总体与perf层的方向反转。",
+          "check_before_use": "区分txt的N、NQ及更深的引语层级。按vt分层并核对两组分母，约书亚记和列王纪下的perf方向与创世记相反。PTNK重用部分文本与形态标注。"
         }
       ]
     },
@@ -12352,7 +12352,8 @@
         "https://etcbc.github.io/bhsa/features/txt/",
         "https://etcbc.github.io/bhsa/#license",
         "https://universaldependencies.org/treebanks/hbo_ptnk/",
-        "https://github.com/leo11wu/open-language-resources/blob/main/data/bhsa-file-check-2026-11-16.json"
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/bhsa-file-check-2026-11-16.json",
+        "https://github.com/leo11wu/open-language-resources/blob/main/research/bhsa-word-order/README.md"
       ],
       "tags": [
         "句法",
@@ -12396,7 +12397,7 @@
           "https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/README.md",
           "https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/export_tf.py"
         ],
-        "note": "下载并完整解析14份2021版Text-Fabric数据文件，均与固定提交的Git文件指纹一致。已核对节点、词位、语种、主谓功能与文本类型，在《创世记》运行有限范围的词序提取。逐条标注准确性和其余附加标注待查。详见data/bhsa-file-check-2026-11-16.json。",
+        "note": "下载并完整解析14份2021版Text-Fabric数据文件，均与固定提交的Git文件指纹一致。已核对节点、词位、语种、主谓功能与文本类型，在《创世记》运行有限范围的词序提取。逐条标注准确性和其余附加标注待查。详见data/bhsa-file-check-2026-11-16.json。后续沿用相同规则筛选39卷，并复核两组分母达到门槛的卷。逐卷、逐动词形式及逐章结果见research/bhsa-word-order/。",
         "file_checks": [
           {
             "url": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/otype.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-15",
-  "catalog_version": "2.5.14",
+  "generated_on": "2026-11-16",
+  "catalog_version": "2.5.15",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 194,
+    "main_resource_count": 195,
     "main_by_check_state": {
       "documentation_only": 97,
       "file_preview": 2,
-      "selected_file_checked": 82,
+      "selected_file_checked": 83,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 89,
+    "main_with_recorded_file_reads": 90,
     "main_without_recorded_file_reads": 105,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6576,6 +6576,82 @@
           "read_scope": "archive_selected_members",
           "file_role": "corpus_derived_data",
           "result": "CRC通过，202份归档文件均匹配固定提交的Git文件哈希。读取200份文本，按版本去重后对145份进行词项与句法统计。详见核验记录中的格式异常和分期计数。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R195",
+      "name": "BHSA（希伯来圣经形态句法语料库）",
+      "category": "syntax",
+      "source_url": "https://etcbc.github.io/bhsa/",
+      "platforms": [
+        "project_website",
+        "github"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-16",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/otype.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+          "sha256": "bb5da974a3b1dd7ff9ddab54dfb533059442642ab830b832a49eea8670aaa920",
+          "blob_sha": "ecc4d0ecd388bd673d0aebfa8ab2a81508bec23c",
+          "checked_on": "2026-11-16",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "完整读取节点类型。核对39卷、426,590个词位、88,131个分句及253,203个短语。"
+        },
+        {
+          "url": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/oslots.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+          "sha256": "c4efaeed8047d4e75834cc94856d79eacc7a146aea01c34d8be88497d8fa303b",
+          "blob_sha": "b389833f7624bb252dd2cf25cf798d4a6a82cc1b",
+          "checked_on": "2026-11-16",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "完整解析各非词节点的词位序列，核对词位排序和有效范围；在《创世记》中关联卷、节、分句和短语。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/functional_parent.tf",
+          "sha256": "52480c9d366c14f72c3cf7704f4c47b2664a0ff5706c4d4405bf2cce140d14db",
+          "blob_sha": "eec50a52843dd06a33a9f400cf37a1911d2cfa77",
+          "checked_on": "2026-11-16",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "完整解析父节点关系，检验《创世记》中短语指向的直接分句父节点及词位包含。"
+        },
+        {
+          "url": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/function.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+          "sha256": "3b4f87ac5691826c48a71c71b6cb53a5318f779ca82402e48c1a5db2fbda60b2",
+          "blob_sha": "07cffd7b21efe39f950897d51cae4c95d99b9d9f",
+          "checked_on": "2026-11-16",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "完整读取短语功能，并核对每个功能赋值的节点类型。抽取Subj和Pred作单卷词序试查。"
+        },
+        {
+          "url": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/txt.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+          "sha256": "dead72c18a6dbc171fc3031ed250d6b5555c6e4e30d1588f6499ec43dd191e3e",
+          "blob_sha": "0a39073d260dbf98601cd6f0210270d975914318",
+          "checked_on": "2026-11-16",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "完整读取分句文本类型。88,131个分句的txt末字符均与domain一致。区分N、NQ、未知外层及更深嵌套。"
+        },
+        {
+          "url": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/language.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+          "sha256": "b6e9f2a855901d6d29c970c2710fd7189ad2b5fc5e457f1b4c92e54d8c77cd5a",
+          "blob_sha": "25f2b9051339b4fbcd0fc634bfa0efd9f0a3b4e7",
+          "checked_on": "2026-11-16",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "完整读取语言字段，分开词位与词目。420,484个希伯来语词位，6,106个阿拉米语词位。"
         }
       ],
       "osf_audit": null,

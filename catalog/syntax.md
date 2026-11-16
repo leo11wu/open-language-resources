@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共36个入口。资料状态与文件验收范围分别记录。
+共37个入口。资料状态与文件验收范围分别记录。
 
 <a id="r059"></a>
 
@@ -40,7 +40,7 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 | --- | --- | --- | --- | --- |
 | 包含子集 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | R061 → R059 | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 | 说明核对，2026-11-02；UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
 
-待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)、[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)、[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)、[R195 BHSA（希伯来圣经形态句法语料库）](../catalog/syntax.md#r195)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r061"></a>
 
@@ -1014,4 +1014,50 @@ PLOS发表研究的数据声明指向该项目，用开放式问题检查花园�
 - [来源 4](https://osf.io/download/urazg/)
 - [来源 5](https://osf.io/download/hdbns/)
 - [来源 6](https://osf.io/download/ne7d4/)
+
+<a id="r195"></a>
+
+## BHSA（希伯来圣经形态句法语料库）
+
+**R195** · 数据集 · 有数据发布说明
+
+ETCBC在Biblia Hebraica Stuttgartensia文本上提供形态句法标注。2021固定版有426,590个词位、88,131个分句、253,203个短语。可用词位序列和短语功能计算文本中实际的主谓顺序，或用分句文本类型比较叙述与直接引语。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 希伯来圣经马所拉文本。古希伯来语420,484个词位、阿拉米语6,106个词位。2021固定版共39卷 |
+| 数据性质 | 以BHS文本为底本的Text-Fabric形态句法语料。记录词位、短语、分句及文本类型和引语层级，含词类、动词时体语气、主语、谓语和宾语功能；语料与标注 |
+| 获取方式 | 公开数据入口：固定提交的tf/2021文件无需注册即可公开获取。项目还提供Text-Fabric发布包及SHEBANQ在线浏览和查询。分析时以2021数据版本和固定提交定位节点。 |
+| 许可 | CC BY-NC 4.0。按项目要求署名并引用10.17026/dans-z6y-skyh，同时注明所用固定提交。商业使用需取得权利人许可。 |
+| 使用边界 | 来源是单一经典文本传统。词位依语料切分，分句与连续成分的atom层分别计数。txt含引语嵌套和未知值，D表示作者面向读者的说明。比较时注意显性主语的筛选、动词形式以及体裁。依存距离需另行验证结构转换。UD的PTNK子库复用部分文本和形态标注，依存分析另有来源。 |
+| 标签 | 句法、古希伯来语、阿拉米语、圣经语料、词序、主语、动词谓语、直接引语、Text-Fabric、形态标注 |
+| 平台 | project_website, github |
+| 核对依据 | 作者仓库说明；2026-11-16 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 下载并完整解析14份2021版Text-Fabric数据文件，均与固定提交的Git文件指纹一致。已核对节点、词位、语种、主谓功能与文本类型，在《创世记》运行有限范围的词序提取。逐条标注准确性和其余附加标注待查。详见data/bhsa-file-check-2026-11-16.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://etcbc.github.io/bhsa/)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/ETCBC/bhsa/tree/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021)
+- [来源 2](https://github.com/ETCBC/bhsa/releases/tag/v1.8.1)
+- [来源 3](https://shebanq.ancient-data.org/)
+- [来源 4](https://etcbc.github.io/bhsa/features/0_home/)
+- [来源 5](https://etcbc.github.io/bhsa/features/txt/)
+- [来源 6](https://etcbc.github.io/bhsa/#license)
+- [来源 7](https://universaldependencies.org/treebanks/hbo_ptnk/)
+- [来源 8](https://github.com/leo11wu/open-language-resources/blob/main/data/bhsa-file-check-2026-11-16.json)
+- [来源 9](https://etcbc.github.io/bhsa/features/functional_parent/)
+- [来源 10](https://etcbc.github.io/bhsa/features/oslots/)
+- [来源 11](https://etcbc.github.io/bhsa/features/function/)
+- [来源 12](https://etcbc.github.io/bhsa/features/domain/)
+- [来源 13](https://etcbc.github.io/bhsa/features/vt/)
+- [来源 14](https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/README.md)
+- [来源 15](https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/export_tf.py)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

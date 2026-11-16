@@ -1,0 +1,709 @@
+{
+  "resource_id": "R195",
+  "checked_on": "2026-11-16",
+  "version": {
+    "dataset_version": "2021",
+    "release": "https://github.com/ETCBC/bhsa/releases/tag/v1.8.1",
+    "commit": "b112c161cfd21eae403d51a2733740d8743460e7",
+    "fixed_source": "https://github.com/ETCBC/bhsa/tree/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021",
+    "format": "Text-Fabric",
+    "main_inventory": "GitHub固定提交的tf/2021目录。"
+  },
+  "license": {
+    "name": "CC BY-NC 4.0",
+    "statement": "https://etcbc.github.io/bhsa/#license",
+    "deed": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "project_requested_attribution_doi": "https://doi.org/10.17026/dans-z6y-skyh"
+  },
+  "data_checks": {
+    "complete_utf8_features": {
+      "otype.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/otype.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/otype.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "ecc4d0ecd388bd673d0aebfa8ab2a81508bec23c",
+        "sha256": "bb5da974a3b1dd7ff9ddab54dfb533059442642ab830b832a49eea8670aaa920",
+        "bytes": 667,
+        "value_rows": 1446831
+      },
+      "oslots.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/oslots.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/oslots.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "b389833f7624bb252dd2cf25cf798d4a6a82cc1b",
+        "sha256": "c4efaeed8047d4e75834cc94856d79eacc7a146aea01c34d8be88497d8fa303b",
+        "bytes": 13526306
+      },
+      "functional_parent.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/functional_parent.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/functional_parent.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "raw from GitHub",
+        "blob_sha": "eec50a52843dd06a33a9f400cf37a1911d2cfa77",
+        "sha256": "52480c9d366c14f72c3cf7704f4c47b2664a0ff5706c4d4405bf2cce140d14db",
+        "bytes": 8487826
+      },
+      "function.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/function.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/function.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "07cffd7b21efe39f950897d51cae4c95d99b9d9f",
+        "sha256": "3b4f87ac5691826c48a71c71b6cb53a5318f779ca82402e48c1a5db2fbda60b2",
+        "bytes": 1266461,
+        "value_rows": 253203,
+        "rows_by_node_type": {
+          "phrase": 253203
+        }
+      },
+      "language.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/language.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/language.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "25f2b9051339b4fbcd0fc634bfa0efd9f0a3b4e7",
+        "sha256": "b6e9f2a855901d6d29c970c2710fd7189ad2b5fc5e457f1b4c92e54d8c77cd5a",
+        "bytes": 3058048,
+        "value_rows": 435820,
+        "rows_by_node_type": {
+          "word": 426590,
+          "lex": 9230
+        }
+      },
+      "sp.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/sp.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/sp.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "d0dfb4d66ba34ff853e7f41b8dc9596e1a17bcc4",
+        "sha256": "7fa4a18e308531e6dfdc4793ab267587629d4b882f4a4a5d839f8bc896af7861",
+        "bytes": 2149214,
+        "value_rows": 435820,
+        "rows_by_node_type": {
+          "word": 426590,
+          "lex": 9230
+        }
+      },
+      "vt.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/vt.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/vt.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "d003f1ff2f2f972a4d5af61dce26e8311d9b69a9",
+        "sha256": "fa49244a53eae279c8b119b3f4710722111fc81edf01bf7bcc3c43bfd1c7c41d",
+        "bytes": 1427614,
+        "value_rows": 426590,
+        "rows_by_node_type": {
+          "word": 426590
+        }
+      },
+      "txt.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/txt.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/txt.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "0a39073d260dbf98601cd6f0210270d975914318",
+        "sha256": "dead72c18a6dbc171fc3031ed250d6b5555c6e4e30d1588f6499ec43dd191e3e",
+        "bytes": 251078,
+        "value_rows": 88131,
+        "rows_by_node_type": {
+          "clause": 88131
+        }
+      },
+      "domain.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/domain.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/domain.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "26f56caf3ba64d6bce58ec91e0cc7ac1f1adb4da",
+        "sha256": "1832292e3549ac7f7d352a02c05fc21d70c21ba495c5b82a5765c30e85d292ca",
+        "bytes": 176736,
+        "value_rows": 88131,
+        "rows_by_node_type": {
+          "clause": 88131
+        }
+      },
+      "book.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/book.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/book.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "70407385b60568eaeb44dbeb45f3a7dfafd2a6af",
+        "sha256": "2f84c9493bb9a553bb40d7955472673b85933fe0af116299036d33e09d75702a",
+        "bytes": 199917,
+        "value_rows": 24181,
+        "rows_by_node_type": {
+          "book": 39,
+          "chapter": 929,
+          "verse": 23213
+        }
+      },
+      "chapter.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/chapter.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/chapter.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "7834c771c0a42fe81b21a8284e95e4226a448108",
+        "sha256": "a09f8a2df52e7d2cec99b251852f9f88a6ecc0ea4a37ad5bd4a7fd3f3f3b2fc9",
+        "bytes": 66379,
+        "value_rows": 24142,
+        "rows_by_node_type": {
+          "chapter": 929,
+          "verse": 23213
+        }
+      },
+      "verse.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/verse.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/verse.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "06046e58967de2a46b6e976584bd29c98fe2fdab",
+        "sha256": "ad850b19aae6ecb31c75fa4ff80ad956835e5089d60d37c7d73aa0d5a0893b84",
+        "bytes": 61897,
+        "value_rows": 23213,
+        "rows_by_node_type": {
+          "verse": 23213
+        }
+      },
+      "g_word_utf8.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/g_word_utf8.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/g_word_utf8.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "f78cce06300190ed5c8ef9ca1fa72b16cdfca5eb",
+        "sha256": "504330f4b4dbcfac628e45998796bcf0ba58b0c905c30a8ebdec088b10d692e0",
+        "bytes": 5392356,
+        "value_rows": 426590,
+        "rows_by_node_type": {
+          "word": 426590
+        }
+      },
+      "label.tf": {
+        "url": "https://raw.githubusercontent.com/ETCBC/bhsa/b112c161cfd21eae403d51a2733740d8743460e7/tf/2021/label.tf",
+        "api": "https://api.github.com/repos/ETCBC/bhsa/contents/tf/2021/label.tf?ref=b112c161cfd21eae403d51a2733740d8743460e7",
+        "fetched_via": "GitHub Contents API with raw media type",
+        "blob_sha": "48250ba6bfb50915e3158ccc8e553883a2d3bb37",
+        "sha256": "b082d7e9180efae5d65c3aed1ade87e2a8e4024afa0a542514e622fda50b4ff9",
+        "bytes": 346164,
+        "value_rows": 68392,
+        "rows_by_node_type": {
+          "half_verse": 45179,
+          "verse": 23213
+        }
+      }
+    },
+    "nodes_by_type": {
+      "word": 426590,
+      "book": 39,
+      "chapter": 929,
+      "clause": 88131,
+      "clause_atom": 90704,
+      "half_verse": 45179,
+      "phrase": 253203,
+      "phrase_atom": 267532,
+      "sentence": 63717,
+      "sentence_atom": 64514,
+      "subphrase": 113850,
+      "verse": 23213,
+      "lex": 9230
+    },
+    "book_nodes": {
+      "426591": "Genesis",
+      "426592": "Exodus",
+      "426593": "Leviticus",
+      "426594": "Numeri",
+      "426595": "Deuteronomium",
+      "426596": "Josua",
+      "426597": "Judices",
+      "426598": "Samuel_I",
+      "426599": "Samuel_II",
+      "426600": "Reges_I",
+      "426601": "Reges_II",
+      "426602": "Jesaia",
+      "426603": "Jeremia",
+      "426604": "Ezechiel",
+      "426605": "Hosea",
+      "426606": "Joel",
+      "426607": "Amos",
+      "426608": "Obadia",
+      "426609": "Jona",
+      "426610": "Micha",
+      "426611": "Nahum",
+      "426612": "Habakuk",
+      "426613": "Zephania",
+      "426614": "Haggai",
+      "426615": "Sacharia",
+      "426616": "Maleachi",
+      "426617": "Psalmi",
+      "426618": "Iob",
+      "426619": "Proverbia",
+      "426620": "Ruth",
+      "426621": "Canticum",
+      "426622": "Ecclesiastes",
+      "426623": "Threni",
+      "426624": "Esther",
+      "426625": "Daniel",
+      "426626": "Esra",
+      "426627": "Nehemia",
+      "426628": "Chronica_I",
+      "426629": "Chronica_II"
+    },
+    "language_word_slots": {
+      "Hebrew": 420484,
+      "Aramaic": 6106
+    },
+    "txt_counts_corpus": {
+      "?": 3510,
+      "?N": 3712,
+      "?NQ": 2405,
+      "N": 19818,
+      "ND": 537,
+      "NQ": 16586,
+      "NQQ": 4439,
+      "NQN": 1069,
+      "NQNQ": 495,
+      "??": 778,
+      "??Q": 299,
+      "??N": 483,
+      "???": 125,
+      "???N": 29,
+      "?Q": 3016,
+      "?NQN": 296,
+      "NDN": 132,
+      "NDNQ": 41,
+      "NDNQN": 3,
+      "NQNQQ": 24,
+      "?NQQ": 452,
+      "NDQ": 57,
+      "?NQNQ": 85,
+      "?NQNQQ": 12,
+      "?NQND": 22,
+      "?NQNDN": 18,
+      "?NQNDNQ": 6,
+      "NQNQN": 9,
+      "NQND": 168,
+      "NQQQ": 1723,
+      "NQQQN": 283,
+      "NQNQNQ": 1,
+      "?NQQQ": 148,
+      "?NQQQN": 14,
+      "?NQQQNQ": 1,
+      "NQQQNQ": 48,
+      "NQQQNQN": 3,
+      "NQQN": 248,
+      "D": 1151,
+      "DN": 105,
+      "DNQ": 272,
+      "DNQN": 19,
+      "DNQQ": 19,
+      "Q": 16448,
+      "QQ": 2311,
+      "NQQNQ": 23,
+      "QN": 1433,
+      "NDQN": 4,
+      "QQN": 136,
+      "QND": 268,
+      "QNQ": 713,
+      "QNQQ": 109,
+      "?QQ": 951,
+      "QQNQ": 25,
+      "DQ": 432,
+      "QQQ": 257,
+      "QNDN": 18,
+      "QNQN": 38,
+      "QNDQ": 55,
+      "QNDQQ": 3,
+      "NQNDQ": 10,
+      "??NQ": 132,
+      "NDNQQ": 5,
+      "NDND": 6,
+      "?ND": 96,
+      "NQQQQ": 259,
+      "?NDQ": 1,
+      "?NDN": 30,
+      "NDQQ": 1,
+      "NQNDN": 16,
+      "NQNDND": 1,
+      "DND": 3,
+      "DNQQN": 2,
+      "DNQNQ": 8,
+      "?NQQN": 49,
+      "?NQQNQ": 2,
+      "?NDNQ": 3,
+      "NQNQQQ": 8,
+      "??NQQ": 9,
+      "??ND": 30,
+      "??NDN": 11,
+      "NQQQQN": 18,
+      "??NDND": 9,
+      "??NDNDN": 4,
+      "?QQN": 34,
+      "DQQ": 43,
+      "?QN": 165,
+      "?QNQ": 89,
+      "?QND": 26,
+      "DQN": 8,
+      "QQND": 17,
+      "??QQ": 21,
+      "???Q": 10,
+      "???QQ": 2,
+      "QQQQ": 90,
+      "?QQQ": 321,
+      "QQQQN": 4,
+      "?QQQQ": 103,
+      "?QQQN": 26,
+      "?QQQNQ": 4,
+      "?QQQND": 1,
+      "QNQQN": 3,
+      "QNQQQ": 64,
+      "QNQQQQ": 12,
+      "QNQQQQQ": 11,
+      "NQQQQQ": 112,
+      "NQQND": 21,
+      "?NQQQQ": 7,
+      "?QQQQN": 2,
+      "QQQN": 4,
+      "QQQNQ": 1,
+      "QQQNQQ": 1,
+      "?QNQQ": 27,
+      "?QQQQQ": 34,
+      "?QQQQQQ": 1,
+      "???QQQ": 12,
+      "?NQNQN": 13,
+      "?QQNQ": 5,
+      "??QN": 1,
+      "??QNQ": 2,
+      "NQQQND": 39,
+      "NQQQNDN": 47,
+      "NQQQQQN": 10,
+      "NQQQQQQ": 1,
+      "QQQQQ": 22,
+      "QQQQQN": 1,
+      "QQQQQQ": 32,
+      "?QNQQQ": 11,
+      "NQQNQQ": 5,
+      "QNQND": 1,
+      "QNDND": 1,
+      "????": 15,
+      "?????": 6,
+      "??????": 3,
+      "???????": 37,
+      "NDNQQN": 5
+    },
+    "phrase_functions": {
+      "Time": 4079,
+      "Pred": 57070,
+      "Subj": 31979,
+      "Objc": 22668,
+      "Conj": 46153,
+      "PreC": 19400,
+      "Cmpl": 30036,
+      "Rela": 6328,
+      "Modi": 3740,
+      "Adju": 9472,
+      "Loca": 2622,
+      "PreO": 5399,
+      "Intj": 1621,
+      "PreS": 890,
+      "Frnt": 1138,
+      "Nega": 6044,
+      "PrcS": 8,
+      "Ques": 1200,
+      "PtcO": 164,
+      "Voct": 1605,
+      "NCoS": 101,
+      "Supp": 178,
+      "IntS": 251,
+      "PrAd": 246,
+      "NCop": 597,
+      "ModS": 35,
+      "Exst": 143,
+      "ExsS": 14,
+      "EPPr": 22
+    },
+    "slot_edge_sources_by_type": {
+      "book": 39,
+      "chapter": 929,
+      "clause": 88131,
+      "clause_atom": 90704,
+      "half_verse": 45179,
+      "phrase": 253203,
+      "phrase_atom": 267532,
+      "sentence": 63717,
+      "sentence_atom": 64514,
+      "subphrase": 113850,
+      "verse": 23213,
+      "lex": 9230
+    },
+    "clause_domain_final_character_mismatch": 0,
+    "clause_domain_final_character_mismatch_examples": []
+  },
+  "word_order_check": {
+    "book": "Genesis",
+    "scope": "核查标注可用于同卷比较，保留严格的N和NQ。附上含未知外层的?N和?NQ，供了解筛选范围。更深的嵌套和其他文本类型单独处理。",
+    "book_slot_count": 28764,
+    "book_clause_count": 5987,
+    "book_phrase_count": 17982,
+    "direct_functional_parent_checks": {
+      "has_edge": 17982,
+      "one_in_book_clause_parent": 17982,
+      "no_parent_edge": 0
+    },
+    "rule": "只取各词位为Hebrew的clause。用functional_parent定位直接短语，核对短语词位包含。须恰有一个Subj和一个Pred，且Pred中有且仅有一个sp=verb的词位。用oslots词位号判断整个Subj在动词前或后，排除交错。PreO、PreS等不并入Pred。vt保留动词时体语气编码。",
+    "interpretation_boundary": "这是限定筛选规则下的分句计数。N组大量出现wayyiqtol，NQ组无此形式。限定为perf时，N和NQ两组的主语在前比例方向与全组相反，宜按动词形式分层。显性主语筛选、语类、嵌套层级及短语中断会影响分母。逐条标注与全语料研究结论有待验证。",
+    "text_type_freq_in_book": {
+      "?": 82,
+      "?N": 490,
+      "?NQ": 286,
+      "N": 2590,
+      "ND": 56,
+      "NQ": 1934,
+      "NQQ": 93,
+      "NQN": 138,
+      "NQNQ": 76,
+      "??": 20,
+      "??Q": 1,
+      "??N": 8,
+      "???": 5,
+      "???N": 2,
+      "?Q": 5,
+      "?NQN": 32,
+      "NDN": 24,
+      "NDNQ": 24,
+      "NDNQN": 3,
+      "NQNQQ": 1,
+      "?NQQ": 22,
+      "NDQ": 1,
+      "?NQNQ": 25,
+      "?NQNQQ": 3,
+      "?NQND": 4,
+      "?NQNDN": 18,
+      "?NQNDNQ": 6,
+      "NQNQN": 6,
+      "NQND": 5,
+      "NQQQ": 11,
+      "NQQQN": 5,
+      "NQNQNQ": 1,
+      "?NQQQ": 10
+    },
+    "counts_by_txt": {
+      "?N": {
+        "all_clauses": 490,
+        "all_hebrew_clauses": 490,
+        "one_Subj_one_Pred": 170,
+        "one_verb_in_Pred": 170,
+        "verb_before_subject": 159,
+        "subject_before_verb": 11,
+        "ordered": 170
+      },
+      "?NQ": {
+        "all_clauses": 286,
+        "all_hebrew_clauses": 286,
+        "one_Subj_one_Pred": 42,
+        "one_verb_in_Pred": 42,
+        "verb_before_subject": 26,
+        "subject_before_verb": 16,
+        "ordered": 42
+      },
+      "N": {
+        "all_clauses": 2590,
+        "all_hebrew_clauses": 2589,
+        "one_Subj_one_Pred": 897,
+        "one_verb_in_Pred": 897,
+        "verb_before_subject": 814,
+        "subject_before_verb": 81,
+        "interleaved_or_overlap": 2,
+        "ordered": 895
+      },
+      "NQ": {
+        "all_clauses": 1934,
+        "all_hebrew_clauses": 1934,
+        "one_Subj_one_Pred": 288,
+        "one_verb_in_Pred": 288,
+        "verb_before_subject": 178,
+        "subject_before_verb": 108,
+        "interleaved_or_overlap": 2,
+        "ordered": 286
+      }
+    },
+    "tense_mood_count_by_txt": {
+      "?N": {
+        "wayq": 137,
+        "perf": 25,
+        "infc": 8
+      },
+      "?NQ": {
+        "impf": 25,
+        "perf": 16,
+        "impv": 1
+      },
+      "N": {
+        "wayq": 693,
+        "perf": 181,
+        "infc": 18,
+        "impf": 3
+      },
+      "NQ": {
+        "infc": 9,
+        "perf": 128,
+        "impf": 141,
+        "impv": 7,
+        "infa": 1
+      }
+    },
+    "order_by_tense_mood_and_txt": {
+      "?N": {
+        "infc": {
+          "verb_before_subject": 8
+        },
+        "perf": {
+          "verb_before_subject": 14,
+          "subject_before_verb": 11
+        },
+        "wayq": {
+          "verb_before_subject": 137
+        }
+      },
+      "?NQ": {
+        "impf": {
+          "verb_before_subject": 18,
+          "subject_before_verb": 7
+        },
+        "impv": {
+          "subject_before_verb": 1
+        },
+        "perf": {
+          "subject_before_verb": 8,
+          "verb_before_subject": 8
+        }
+      },
+      "N": {
+        "impf": {
+          "verb_before_subject": 3
+        },
+        "infc": {
+          "verb_before_subject": 18
+        },
+        "perf": {
+          "verb_before_subject": 100,
+          "subject_before_verb": 81
+        },
+        "wayq": {
+          "verb_before_subject": 693
+        }
+      },
+      "NQ": {
+        "impf": {
+          "subject_before_verb": 61,
+          "verb_before_subject": 80
+        },
+        "impv": {
+          "subject_before_verb": 5,
+          "verb_before_subject": 2
+        },
+        "infa": {
+          "verb_before_subject": 1
+        },
+        "infc": {
+          "verb_before_subject": 9
+        },
+        "perf": {
+          "verb_before_subject": 86,
+          "subject_before_verb": 42
+        }
+      }
+    },
+    "examples": {
+      "N/verb_before_subject": {
+        "passage": "Genesis 2:1",
+        "passage_label": " GEN 02,01",
+        "clause_node": 427685,
+        "subject_phrase_node": 651950,
+        "subject_slots": [
+          676,
+          677,
+          678,
+          679,
+          680,
+          681,
+          682,
+          683
+        ],
+        "predicate_phrase_node": 651949,
+        "verb_slot": 675,
+        "vt": "wayq",
+        "subject_word_forms": [
+          "הַ",
+          "שָּׁמַ֥יִם",
+          "וְ",
+          "הָ",
+          "אָ֖רֶץ",
+          "וְ",
+          "כָל",
+          "צְבָאָֽם"
+        ],
+        "verb_word_form": "יְכֻלּ֛וּ"
+      },
+      "NQ/verb_before_subject": {
+        "passage": "Genesis 2:18",
+        "passage_label": " GEN 02,18",
+        "clause_node": 427748,
+        "subject_phrase_node": 652131,
+        "subject_slots": [
+          1003,
+          1004
+        ],
+        "predicate_phrase_node": 652130,
+        "verb_slot": 1002,
+        "vt": "infc",
+        "subject_word_forms": [
+          "הָֽ",
+          "אָדָ֖ם"
+        ],
+        "verb_word_form": "הֱיֹ֥ות"
+      },
+      "N/subject_before_verb": {
+        "passage": "Genesis 3:1",
+        "passage_label": " GEN 03,01",
+        "clause_node": 427775,
+        "subject_phrase_node": 652223,
+        "subject_slots": [
+          1169,
+          1170
+        ],
+        "predicate_phrase_node": 652224,
+        "verb_slot": 1171,
+        "vt": "perf",
+        "subject_word_forms": [
+          "הַ",
+          "נָּחָשׁ֙"
+        ],
+        "verb_word_form": "הָיָ֣ה"
+      },
+      "NQ/subject_before_verb": {
+        "passage": "Genesis 3:11",
+        "passage_label": " GEN 03,11",
+        "clause_node": 427822,
+        "subject_phrase_node": 652357,
+        "subject_slots": [
+          1372
+        ],
+        "predicate_phrase_node": 652358,
+        "verb_slot": 1373,
+        "vt": "perf",
+        "subject_word_forms": [
+          "מִ֚י"
+        ],
+        "verb_word_form": "הִגִּ֣יד"
+      }
+    }
+  },
+  "related_data": {
+    "ud_resource_catalog_id": "R059",
+    "treebank": "UD_Ancient_Hebrew-PTNK",
+    "official_documentation": "https://universaldependencies.org/treebanks/hbo_ptnk/",
+    "conversion_readme": "https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/README.md",
+    "conversion_extension_export": "https://github.com/mr-martian/hbo-UD/blob/d8be4b39e27072c1b0cca2ea5789d222dff08bae/export_tf.py",
+    "scope": "PTNK重用部分BHS文本和ETCBC形态标注，依存分析由该项目生成，且部分借用MACULA句法。转换项目的Text-Fabric发布脚本写入2021并使用Ref[BHSA]。这两项复用在PTNK子库范围内有效，逐词映射及重合比例待另外核对。"
+  },
+  "evidence_documents": {
+    "features": "https://etcbc.github.io/bhsa/features/0_home/",
+    "functional_parent": "https://etcbc.github.io/bhsa/features/functional_parent/",
+    "slot_order": "https://etcbc.github.io/bhsa/features/oslots/",
+    "phrase_function": "https://etcbc.github.io/bhsa/features/function/",
+    "text_type": "https://etcbc.github.io/bhsa/features/txt/",
+    "domain": "https://etcbc.github.io/bhsa/features/domain/",
+    "tense_mood": "https://etcbc.github.io/bhsa/features/vt/",
+    "file_format": "https://annotation.github.io/text-fabric/tf/about/optimizations.html"
+  },
+  "coverage_boundary": "完整读取列出的Text-Fabric文件及相关连接关系，核对固定Git文件指纹。全版本各附加标注和逐条句法准确性尚未验收。"
+}

@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.16",
-  "updated_on": "2026-11-16",
+  "catalog_version": "2.5.17",
+  "updated_on": "2026-11-17",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 195,
+  "resource_count": 196,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -167,6 +167,11 @@
           "resource_id": "R195",
           "use_for": "在同一卷内分别抽取叙述分句和直接引语分句，用词位、主语功能和谓语词类统计显性主语与动词的先后。按动词形式复核时，创世记以外十卷中八卷出现总体与perf层的方向反转。",
           "check_before_use": "区分txt的N、NQ及更深的引语层级。按vt分层并核对两组分母，约书亚记和列王纪下的perf方向与创世记相反。PTNK重用部分文本与形态标注。"
+        },
+        {
+          "resource_id": "R196",
+          "use_for": "用根层IP-MAT和NP-SBJ分别提取主语显现率与显性主语的动词前比例。ZIP及补下载文件均有可用于抽取的标注。",
+          "check_before_use": "逐篇核对没有直接主语标签的分句。显现率分母只合并可判定的显性与指称性零主语，词序条件比例以显性主语为分母。"
         }
       ]
     },
@@ -279,6 +284,11 @@
           "resource_id": "R194",
           "use_for": "按时期比较德语主从句的限定动词与显性主语的相对位置，并用同一文本中的主句作参照。",
           "check_before_use": "统一0.9前后的并列主句处理，按文本、体裁和地区分层。抽样校对ID年份及来源，并核对ReM、ReF、DTA文本重合。"
+        },
+        {
+          "resource_id": "R196",
+          "use_for": "在书信或叙事等体裁中复核各时期的主语显现与相对动词的位置。",
+          "check_before_use": "区分作者出生年、原文日期及版本日期，处理同一作者多篇与跨作者汇编，核对节选及主语标签覆盖。va_015的目录年份有冲突。"
         }
       ]
     }
@@ -12452,6 +12462,107 @@
             "read_scope": "complete_text",
             "file_role": "corpus_derived_data",
             "result": "完整读取语言字段，分开词位与词目。420,484个希伯来语词位，6,106个阿拉米语词位。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R196",
+      "name": "Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "dataset",
+      "language_scope": "历史葡萄牙语。可读句法材料涵盖葡萄牙和巴西的书信、叙事、报刊和戏剧等。单一作者篇目的出生年为1510–1836年",
+      "language_codes": [
+        "pt"
+      ],
+      "data_type": "Penn-Helsinki式成分句法树，含词类、形态和空成分标注。PSD纯文本。官方篇目元数据含体裁、出生年、原文日期与出版地",
+      "description": "官网登记95篇、3,789,646词，其中32篇标为有句法、目录对应1,359,094词。实际可读句法为ZIP内30份，加单独下载的va_017。可分别统计限定主句中的主语显现和显性主语相对动词的位置。",
+      "access_mode": "open_data",
+      "access_notes": "官网ZIP与va_017无需登录即可下载。va_016列在官方目录，句法链接本次返回404，其含词类的XML已读取。ZIP有三个_part文件，另有项目目录注明节选的篇目。",
+      "license_note": "项目条款允许免费教学与科研，要求署名。商业使用须事先许可，仅允许按学术引用惯例转载有限片段。引用Galves、Andrade与Faria（2017）并注明所用文件。",
+      "limitations": "按作者出生年代、原文日期、体裁、作者和节选范围核对可比性。首层主语标签覆盖随篇目变化，例如m_003中865/1,859条初筛主句无直接主语标签，需另行判断其结构和标注口径。区分指称性零主语、虚主语、任指主语及痕迹。依存距离须先验证成分树转换规则。",
+      "source_url": "https://www.tycho.iel.unicamp.br/corpus/",
+      "additional_urls": [
+        "https://www.tycho.iel.unicamp.br/corpus/texts/psd.zip",
+        "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_017_psd.txt",
+        "https://www.tycho.iel.unicamp.br/corpus/catalogo.html",
+        "https://www.tycho.iel.unicamp.br/corpus/catalog.json",
+        "https://www.tycho.iel.unicamp.br/manual/2-noun-phrases/2-1-subject-np-np-sbj/2-1-1-subject-in-tensed-sentences.html",
+        "https://www.tycho.iel.unicamp.br/corpus/manual/pos2016.html",
+        "https://www.tycho.iel.unicamp.br/corpus/en/termos.html",
+        "https://doi.org/10.1075/lv.00004.gal",
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/tycho-brahe-file-check-2026-11-17.json"
+      ],
+      "tags": [
+        "历时",
+        "葡萄牙语",
+        "句法",
+        "成分树库",
+        "Penn",
+        "词序",
+        "零主语",
+        "主语显现",
+        "体裁"
+      ],
+      "related_ids": [
+        "R194"
+      ],
+      "platforms": [
+        "project_website"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-11-17",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "project_documentation",
+        "evidence_urls": [
+          "https://www.tycho.iel.unicamp.br/corpus/catalogo.html",
+          "https://www.tycho.iel.unicamp.br/corpus/catalog.json",
+          "https://www.tycho.iel.unicamp.br/corpus/texts/psd.zip",
+          "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_017_psd.txt",
+          "https://www.tycho.iel.unicamp.br/corpus/texts/xml/va_016.xml",
+          "https://www.tycho.iel.unicamp.br/corpus/en/termos.html",
+          "https://www.tycho.iel.unicamp.br/manual/2-noun-phrases/2-1-subject-np-np-sbj/2-1-1-subject-in-tensed-sentences.html",
+          "https://www.tycho.iel.unicamp.br/manual/12-empty-categories/12-1-null-subjects.html",
+          "https://www.tycho.iel.unicamp.br/corpus/manual/pos2016.html"
+        ],
+        "note": "解析ZIP内30份及单篇va_017，合计1,239,274个表层词项。排除4条括号失配记录并记录末尾控制字符。核对主句、词类、显性主语及指称性零主语。另核实va_016句法入口404及其XML的词类层。逐条标注准确性仍待查。详见data/tycho-brahe-file-check-2026-11-17.json。",
+        "file_checks": [
+          {
+            "url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd.zip",
+            "sha256": "f972ea27f00c674e6e7d78d13c0b3af5b5013652c2a98c82fcacdd0227fcd65e",
+            "checked_on": "2026-11-17",
+            "read_scope": "archive_selected_members",
+            "file_role": "corpus_derived_data",
+            "result": "CRC通过，30份UTF-8句法文件与官方篇目逐项相接。排除va_013的一条括号失配记录，读取时忽略文件末尾控制字符。"
+          },
+          {
+            "url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_017_psd.txt",
+            "sha256": "be4635411921a35b78e7c71ff9f786ddad88ca2687ce88d6cd3284c398aba709",
+            "checked_on": "2026-11-17",
+            "read_scope": "complete_text",
+            "file_role": "corpus_derived_data",
+            "result": "公开独立句法文件可读。解析1,155条平衡括号记录，排除3条括号失配的记录。"
+          },
+          {
+            "url": "https://www.tycho.iel.unicamp.br/corpus/texts/xml/va_016.xml",
+            "sha256": "8aa3ab1d2645c840a05896fe9106bf6434a19f47c45d389faad02f83eae5e2a0",
+            "checked_on": "2026-11-17",
+            "read_scope": "complete_text",
+            "file_role": "corpus_derived_data",
+            "result": "完整解析XML，核对25,644个w元素及词类标签。作为va_016的文本和词类证据，其句法文件仍待查。"
+          },
+          {
+            "url": "https://www.tycho.iel.unicamp.br/corpus/catalog.json",
+            "sha256": "8d2f97a237d506d92821ca7a2de4abd9db92ad080d16a0b19ad4d122a3fc6edf",
+            "checked_on": "2026-11-17",
+            "read_scope": "complete_json",
+            "file_role": "documentation_or_materials",
+            "result": "完整读取95条元数据，核对32条PSD标注及句法下载路径，确认ZIP缺va_016、va_017。"
           }
         ]
       }

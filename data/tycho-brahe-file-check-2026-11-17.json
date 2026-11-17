@@ -1,0 +1,2640 @@
+{
+  "resource_id": "R196",
+  "checked_on": "2026-11-17",
+  "citation": "Galves, Charlotte; Andrade, Aroldo Leal de; and Faria, Pablo (2017, December), Tycho Brahe Parsed Corpus of Historical Portuguese.",
+  "official_index": {
+    "project": "https://www.tycho.iel.unicamp.br/corpus/",
+    "catalogue_page": "https://www.tycho.iel.unicamp.br/corpus/catalogo.html",
+    "catalogue_json": "https://www.tycho.iel.unicamp.br/corpus/catalog.json",
+    "catalogue_sha256": "8d2f97a237d506d92821ca7a2de4abd9db92ad080d16a0b19ad4d122a3fc6edf",
+    "texts": 95,
+    "catalog_words": 3789646,
+    "pos_yes_texts": 60,
+    "psd_yes_texts": 32,
+    "psd_yes_catalog_words": 1359094,
+    "numbering_note": "词数为官网篇目Word Count字段的总和，部分作品为节选，字段覆盖与实际句法词项数分别记录。"
+  },
+  "archive": {
+    "url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd.zip",
+    "http_last_modified": "Mon, 25 Nov 2024 22:06:46 GMT",
+    "sha256": "f972ea27f00c674e6e7d78d13c0b3af5b5013652c2a98c82fcacdd0227fcd65e",
+    "bytes": 6064139,
+    "crc_passed": true,
+    "files": 30,
+    "missing_official_catalogue_codes": [
+      "va_016",
+      "va_017"
+    ],
+    "explicit_part_filename_codes": [
+      "a_004",
+      "c_007",
+      "v_004"
+    ]
+  },
+  "separate_downloads": {
+    "archive_overlap_control": {
+      "code": "va_015",
+      "success": true,
+      "matches_archive_after_line_ending_normalization": true,
+      "url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_015_psd.txt",
+      "sha256": "a921529febdac18e71bd87995aac5cb83b64003b82769a04c32cd6d69497062a"
+    },
+    "va_017": {
+      "http_status": 200,
+      "url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_017_psd.txt",
+      "validated_balanced_records": 1155
+    },
+    "va_016": {
+      "psd_http_status": 404,
+      "psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_016_psd.txt",
+      "xml_url": "https://www.tycho.iel.unicamp.br/corpus/texts/xml/va_016.xml",
+      "xml_sha256": "8aa3ab1d2645c840a05896fe9106bf6434a19f47c45d389faad02f83eae5e2a0",
+      "xml_word_elements": 25644,
+      "xml_has_pos_codes": true,
+      "status": "XML可下载和解析，含词类信息。此次尚无可读的Penn句法文件。"
+    }
+  },
+  "license": {
+    "url": "https://www.tycho.iel.unicamp.br/corpus/en/termos.html",
+    "scope": "项目条款允许免费科研和教学，要求署名。商业使用事先获许可，仅允许按学术引用惯例转载有限片段。"
+  },
+  "documentation": {
+    "subject": "https://www.tycho.iel.unicamp.br/manual/2-noun-phrases/2-1-subject-np-np-sbj/2-1-1-subject-in-tensed-sentences.html",
+    "null_subject": "https://www.tycho.iel.unicamp.br/manual/12-empty-categories/12-1-null-subjects.html",
+    "pos_tags": "https://www.tycho.iel.unicamp.br/corpus/manual/pos2016.html",
+    "matrix_clauses": "https://www.tycho.iel.unicamp.br/wiki/SyntacticAnnotations.html",
+    "article": "https://doi.org/10.1075/lv.00004.gal"
+  },
+  "counts": {
+    "psd_files_read": 31,
+    "balanced_records": 64944,
+    "records_with_surface_tokens": 61670,
+    "surface_tokens": 1239274,
+    "records_with_tokens_and_id": 61357,
+    "genre_counts_first_component": {
+      "Dissertation": 2,
+      "Narrative": 10,
+      "Letters": 11,
+      "Theatre": 3,
+      "News": 3,
+      "ata": 1,
+      "Grammar": 1
+    },
+    "single_author_birth_range": [
+      1510,
+      1836
+    ],
+    "dated_single_author_births_by_genre": {
+      "Dissertation": [
+        1608,
+        1705
+      ],
+      "Narrative": [
+        1510,
+        1540,
+        1542,
+        1556,
+        1579,
+        1644,
+        1658,
+        1675,
+        1802,
+        1826
+      ],
+      "Letters": [
+        1608,
+        1608,
+        1631,
+        1651,
+        1702,
+        1750,
+        1836
+      ],
+      "Theatre": [
+        1705,
+        1757,
+        1799
+      ],
+      "News": [
+        1597,
+        1673
+      ],
+      "Grammar": [
+        1713
+      ]
+    },
+    "text_original_date_field_nonempty": 23
+  },
+  "metadata_issue": "va_015的标题列出1694-1692，原始文本日期字段为1684-1685。年代对齐前应回查卷次与所用节选。",
+  "format_issues": [
+    {
+      "file": "va_013_psd.txt",
+      "type": "DOS EOF",
+      "action": "读取时只忽略末尾控制字符"
+    },
+    {
+      "file": "va_013_psd.txt",
+      "tree_id": "VA_013_PSD,1.1",
+      "type": "unbalanced brackets",
+      "action": "排除该记录，源文件未改动"
+    },
+    {
+      "file": "va_017_psd.txt",
+      "tree_id": "VA_017,1.4",
+      "type": "unbalanced brackets",
+      "action": "排除该记录，源文件未改动"
+    },
+    {
+      "file": "va_017_psd.txt",
+      "tree_id": "VA_017,1.5",
+      "type": "unbalanced brackets",
+      "action": "排除该记录，源文件未改动"
+    },
+    {
+      "file": "va_017_psd.txt",
+      "tree_id": "VA_017,2.9",
+      "type": "unbalanced brackets",
+      "action": "排除该记录，源文件未改动"
+    }
+  ],
+  "counting_rule": "每个标签和表层字符串均有字母或数字信息的有效树终端计一项。排除编辑标记、标点、ID和空位，保留按语料切分的词位。词项口径与官网词数不同。",
+  "word_order_probe": {
+    "scope": "从整个下载集合的根层IP-MAT（允许数字索引）出发，排除带SPE等功能后缀、直接疑问/感叹标点及结构不明确的情形。只保留一个直接有限动词节点，且为带P、D或R标记的实际表层动词。RA、虚拟式、祈使和无明确时态标记的形式不计。",
+    "subject_rule": "取直接子节点中的唯一NP-SBJ，允许数字索引。其下有表层词项记显性主语，标签直接带*pro*记指称性零主语。另计*exp*、*arb*、痕迹以及没有合适主语标签的分句。显性主语的相对位置为直接主语节点与唯一直接有限动词的先后。",
+    "probabilities": [
+      "主语显现率的分母为显性主语与指称性零主语之和。",
+      "显性主语位于动词前的条件比例以显性主语为分母。"
+    ],
+    "totals": {
+      "matrix_roots": 43248,
+      "roots_one_clear_finite_verb": 38955,
+      "overt_before_verb": 11823,
+      "null_referential": 11644,
+      "overt_after_verb": 8027,
+      "excluded_subject_empty_marker:*exp*": 3860,
+      "other_or_unannotated_subject": 3581,
+      "excluded_subject_empty_marker:*con*": 2,
+      "without_direct_subject_label": 3444,
+      "excluded_subject_empty_marker:*T*": 5,
+      "excluded_subject_empty_marker:*EXP*": 1,
+      "excluded_subject_empty_marker:*ICH*": 2,
+      "excluded_subject_empty_marker:*arb*": 9,
+      "excluded_subject_empty_marker:*ep*": 1
+    },
+    "overt_vs_referential_null_denominator": 31494,
+    "observed_overt_fraction": 0.6302787832603035,
+    "observed_preverbal_given_overt": 0.595617128463476,
+    "subject_label_coverage": {
+      "m_003": {
+        "roots_one_clear_finite_verb": 1859,
+        "without_direct_subject_label": 865,
+        "explicit_referential_null": 6
+      },
+      "c_001": {
+        "roots_one_clear_finite_verb": 1992,
+        "without_direct_subject_label": 1,
+        "explicit_referential_null": 823
+      },
+      "o_001": {
+        "roots_one_clear_finite_verb": 1604,
+        "without_direct_subject_label": 0,
+        "explicit_referential_null": 732
+      }
+    },
+    "scope_note": "聚合核验两项测量可提取。文件之间无直接主语标签的比例差异大，缺少标签时需回看分句结构和标注口径。历时比较须明确原文时间、出生年、体裁、作者、地区和节选范围。逐条句法准确性仍待查。"
+  },
+  "per_file": [
+    {
+      "code": "a_001",
+      "filename": "a_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/a_001_psd.txt",
+      "sha256": "e1e3ff21f53a59692b7ddc7d02d546a273382ac2dc03dc7e1ad7bd1f16bc4446",
+      "bytes": 1809055,
+      "title": "Reflexões sobre a Vaidade dos Homens",
+      "author_as_listed": "Matias Aires",
+      "author_birth_as_listed": "1705",
+      "genre_as_listed": "Dissertation",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 56479,
+      "counts": {
+        "balanced_records": 4251,
+        "records_with_surface_tokens": 4074,
+        "surface_tokens": 60102,
+        "records_with_tokens_and_id": 4068
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 3797,
+        "roots_one_clear_finite_verb": 3516,
+        "overt_before_verb": 1755,
+        "null_referential": 886,
+        "overt_after_verb": 407,
+        "excluded_subject_empty_marker:*exp*": 444,
+        "other_or_unannotated_subject": 22,
+        "excluded_subject_empty_marker:*con*": 2,
+        "without_direct_subject_label": 2
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          3780
+        ],
+        [
+          "CP-QUE",
+          136
+        ],
+        [
+          "CP-EXL",
+          49
+        ],
+        [
+          "FRAG",
+          44
+        ],
+        [
+          "IP-IMP",
+          42
+        ],
+        [
+          "IP-MAT-2",
+          6
+        ],
+        [
+          "IP-MAT-1",
+          4
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "A_001_PSD,03.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "null_referential": {
+          "tree_id": "A_001_PSD,03.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_after_verb": {
+          "tree_id": "A_001_PSD,03.6",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "HV-D"
+        }
+      }
+    },
+    {
+      "code": "a_003",
+      "filename": "a_003_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/a_003_psd.txt",
+      "sha256": "5c5cdee96ea70dcb1f284191b1f78020b7e8f9e6afe042041bcfdf5346434f6c",
+      "bytes": 1618004,
+      "title": "Memórias do Marquês da Fronteira e d'Alorna",
+      "author_as_listed": "Marquês de Fronteira e d'Alorna",
+      "author_birth_as_listed": "1802",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "1861",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 54588,
+      "counts": {
+        "balanced_records": 2571,
+        "records_with_surface_tokens": 2421,
+        "surface_tokens": 57999,
+        "records_with_tokens_and_id": 2409
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 2345,
+        "roots_one_clear_finite_verb": 2196,
+        "null_referential": 844,
+        "overt_before_verb": 930,
+        "excluded_subject_empty_marker:*exp*": 144,
+        "overt_after_verb": 272,
+        "other_or_unannotated_subject": 4,
+        "excluded_subject_empty_marker:*T*": 2
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          2283
+        ],
+        [
+          "IP-MAT-1",
+          37
+        ],
+        [
+          "FRAG",
+          32
+        ],
+        [
+          "IP-MAT-SPE",
+          20
+        ],
+        [
+          "IP-MAT-2",
+          12
+        ],
+        [
+          "IP-MAT-5",
+          5
+        ],
+        [
+          "IP-MAT-3",
+          5
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "A_003_PSD,03.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-R"
+        },
+        "overt_before_verb": {
+          "tree_id": "A_003_PSD,05.22",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_after_verb": {
+          "tree_id": "A_003_PSD,06.37",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-D"
+        }
+      }
+    },
+    {
+      "code": "a_004",
+      "filename": "a_004_part_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/a_004_part_psd.txt",
+      "sha256": "ea3af758ecca3c1487211e79b99be25b7ed630e3e2b4e797cec609bb354d5606",
+      "bytes": 693435,
+      "title": "Cartas, Marquesa de Alorna",
+      "author_as_listed": "Marquesa de Alorna",
+      "author_birth_as_listed": "1750",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 49900,
+      "counts": {
+        "balanced_records": 1355,
+        "records_with_surface_tokens": 1255,
+        "surface_tokens": 23340,
+        "records_with_tokens_and_id": 1239
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1070,
+        "roots_one_clear_finite_verb": 1008,
+        "overt_before_verb": 364,
+        "null_referential": 424,
+        "overt_after_verb": 131,
+        "excluded_subject_empty_marker:*exp*": 84,
+        "other_or_unannotated_subject": 5
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1060
+        ],
+        [
+          "FRAG",
+          75
+        ],
+        [
+          "IP-IMP",
+          54
+        ],
+        [
+          "CP-QUE",
+          19
+        ],
+        [
+          "CP-EXL",
+          10
+        ],
+        [
+          "IP-MAT-1",
+          7
+        ],
+        [
+          "IP-MAT-SPE",
+          6
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "A_004_PART_PSD,03.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "null_referential": {
+          "tree_id": "A_004_PART_PSD,03.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "TR-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "A_004_PART_PSD,03.4",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "b_001",
+      "filename": "b_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/b_001_psd.txt",
+      "sha256": "75c95ddcea3ca53fe27df80fcd32992c039d9b419001b711c269dc117ec1b171",
+      "bytes": 1272033,
+      "title": "Vida do apostólico padre Antonio Vieira",
+      "author_as_listed": "André de Barros",
+      "author_birth_as_listed": "1675",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "1746",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 52055,
+      "counts": {
+        "balanced_records": 1950,
+        "records_with_surface_tokens": 1765,
+        "surface_tokens": 46251,
+        "records_with_tokens_and_id": 1760
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1735,
+        "roots_one_clear_finite_verb": 1659,
+        "null_referential": 616,
+        "overt_before_verb": 226,
+        "overt_after_verb": 729,
+        "excluded_subject_empty_marker:*exp*": 82,
+        "other_or_unannotated_subject": 5,
+        "without_direct_subject_label": 1,
+        "excluded_subject_empty_marker:*EXP*": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1650
+        ],
+        [
+          "IP-MAT-1",
+          37
+        ],
+        [
+          "IP-MAT-2",
+          20
+        ],
+        [
+          "IP-MAT-3",
+          13
+        ],
+        [
+          "FRAG",
+          12
+        ],
+        [
+          "IP-MAT-SPE",
+          8
+        ],
+        [
+          "IP-MAT-4",
+          8
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "B_001_PSD,1.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "B_001_PSD,2.4",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "B_001_PSD,2.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-R"
+        }
+      }
+    },
+    {
+      "code": "b_003",
+      "filename": "b_003_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/b_003_psd.txt",
+      "sha256": "146ab7df17719927d94e0229332af519b82a714de5da0a42252edd20a900432d",
+      "bytes": 1463459,
+      "title": "Nova Floresta",
+      "author_as_listed": "Manuel Bernardes",
+      "author_birth_as_listed": "1644",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "1704",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 52374,
+      "counts": {
+        "balanced_records": 2772,
+        "records_with_surface_tokens": 2772,
+        "surface_tokens": 54462,
+        "records_with_tokens_and_id": 2772
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1818,
+        "roots_one_clear_finite_verb": 1594,
+        "other_or_unannotated_subject": 603,
+        "without_direct_subject_label": 599,
+        "overt_before_verb": 460,
+        "excluded_subject_empty_marker:*exp*": 133,
+        "overt_after_verb": 390,
+        "null_referential": 8
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1818
+        ],
+        [
+          "QTP",
+          309
+        ],
+        [
+          "FRAG",
+          149
+        ],
+        [
+          "IP-MAT-SPE",
+          140
+        ],
+        [
+          "NP",
+          92
+        ],
+        [
+          "CP-QUE",
+          59
+        ],
+        [
+          "IP-IMP-SPE",
+          51
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "B_003,0.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "TR-R"
+        },
+        "overt_after_verb": {
+          "tree_id": "B_003,01.19",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "B_003,77.1071",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "b_005",
+      "filename": "b_005_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/b_005_psd.txt",
+      "sha256": "dd9e68c9e83002dd89ddfefe94efa4fb2518c72733c85b14c63b9c0e75940c53",
+      "bytes": 685215,
+      "title": "Maria Moisés",
+      "author_as_listed": "Camilo Castelo Branco",
+      "author_birth_as_listed": "1826",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "1875",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Whole",
+      "catalog_word_count": 24265,
+      "counts": {
+        "balanced_records": 1837,
+        "records_with_surface_tokens": 1777,
+        "surface_tokens": 22202,
+        "records_with_tokens_and_id": 1776
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 718,
+        "roots_one_clear_finite_verb": 648,
+        "overt_after_verb": 62,
+        "excluded_subject_empty_marker:*exp*": 42,
+        "overt_before_verb": 250,
+        "null_referential": 291,
+        "other_or_unannotated_subject": 3,
+        "without_direct_subject_label": 3
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          717
+        ],
+        [
+          "IP-MAT-SPE",
+          599
+        ],
+        [
+          "IP-IMP-SPE",
+          146
+        ],
+        [
+          "CP-QUE-SPE",
+          127
+        ],
+        [
+          "FRAG",
+          35
+        ],
+        [
+          "CP-EXL-SPE",
+          25
+        ],
+        [
+          "NP",
+          24
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "B_005_PSD,3.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "B_005_PSD,3.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "ET-P"
+        },
+        "null_referential": {
+          "tree_id": "B_005_PSD,4.13",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "b_008",
+      "filename": "b_008_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/b_008_psd.txt",
+      "sha256": "35ff2aceb96dd30d7f4bab5f1841bfe66ce77b7f9012f053c0f192ee9875f758",
+      "bytes": 948085,
+      "title": "Cartas, J.C. Brochado",
+      "author_as_listed": "José da Cunha Brochado",
+      "author_birth_as_listed": "1651",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1696-1703",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 35058,
+      "counts": {
+        "balanced_records": 1627,
+        "records_with_surface_tokens": 1474,
+        "surface_tokens": 33261,
+        "records_with_tokens_and_id": 1474
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1147,
+        "roots_one_clear_finite_verb": 1082,
+        "overt_before_verb": 395,
+        "null_referential": 403,
+        "overt_after_verb": 167,
+        "excluded_subject_empty_marker:*exp*": 117
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1138
+        ],
+        [
+          "IP-IMP",
+          178
+        ],
+        [
+          "NP",
+          70
+        ],
+        [
+          "FRAG",
+          26
+        ],
+        [
+          "CP-QUE",
+          23
+        ],
+        [
+          "IP-SUB",
+          9
+        ],
+        [
+          "IP-MAT-1",
+          6
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "B_008,01.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "B_008,01.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-R"
+        },
+        "overt_after_verb": {
+          "tree_id": "B_008,02.10",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-R"
+        }
+      }
+    },
+    {
+      "code": "c_001",
+      "filename": "c_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/c_001_psd.txt",
+      "sha256": "521db203313578379f01642aff55d112abbf178fd89e130f73b77eb7b81c82fb",
+      "bytes": 1535127,
+      "title": "Cartas, Cavaleiro de Oliveira",
+      "author_as_listed": "Cavaleiro de Oliveira (Fco Xavier)",
+      "author_birth_as_listed": "1702",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1741",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 51234,
+      "counts": {
+        "balanced_records": 2991,
+        "records_with_surface_tokens": 2785,
+        "surface_tokens": 52180,
+        "records_with_tokens_and_id": 2785
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 2160,
+        "roots_one_clear_finite_verb": 1992,
+        "overt_before_verb": 620,
+        "excluded_subject_empty_marker:*exp*": 271,
+        "null_referential": 823,
+        "overt_after_verb": 267,
+        "other_or_unannotated_subject": 9,
+        "without_direct_subject_label": 1,
+        "excluded_subject_empty_marker:*ICH*": 2
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          2143
+        ],
+        [
+          "IP-MAT-SPE",
+          143
+        ],
+        [
+          "IP-IMP",
+          113
+        ],
+        [
+          "FRAG",
+          110
+        ],
+        [
+          "IP-IMP-SPE",
+          63
+        ],
+        [
+          "CP-QUE-SPE",
+          61
+        ],
+        [
+          "NP",
+          40
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "C_001_PSD,01.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "null_referential": {
+          "tree_id": "C_001_PSD,01.5",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "C_001_PSD,02.19",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "c_002",
+      "filename": "c_002_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/c_002_psd.txt",
+      "sha256": "4456290a979a5bb04ed27d84e917bb1f926b829b5ad5877d6b9d243493ea632b",
+      "bytes": 803879,
+      "title": "Vida e Morte de Madre Helena da Cruz",
+      "author_as_listed": "Maria do Céu",
+      "author_birth_as_listed": "1658",
+      "genre_as_listed": "Narrative; Biography",
+      "original_text_date_as_listed": "1721",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Whole",
+      "catalog_word_count": 27419,
+      "counts": {
+        "balanced_records": 1270,
+        "records_with_surface_tokens": 1178,
+        "surface_tokens": 28375,
+        "records_with_tokens_and_id": 1178
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1093,
+        "roots_one_clear_finite_verb": 1025,
+        "null_referential": 511,
+        "overt_before_verb": 152,
+        "overt_after_verb": 289,
+        "excluded_subject_empty_marker:*exp*": 68,
+        "other_or_unannotated_subject": 5,
+        "without_direct_subject_label": 2
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1084
+        ],
+        [
+          "CONJP",
+          31
+        ],
+        [
+          "FRAG",
+          22
+        ],
+        [
+          "IP-MAT-SPE",
+          8
+        ],
+        [
+          "CP-QUE",
+          8
+        ],
+        [
+          "IP-IMP",
+          8
+        ],
+        [
+          "IP-MAT-1",
+          4
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "C_002_PSD,132.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "C_002_PSD,132.4",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-D"
+        },
+        "overt_after_verb": {
+          "tree_id": "C_002_PSD,132.6",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "c_003",
+      "filename": "c_003_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/c_003_psd.txt",
+      "sha256": "37e3fc8d172ae046f72537546a45a614dd535a1775609fba6da161ca27d77a51",
+      "bytes": 1466376,
+      "title": "Cartas Espirituais",
+      "author_as_listed": "Antonio das Chagas",
+      "author_birth_as_listed": "1631",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1662",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Exerpt",
+      "catalog_word_count": 54477,
+      "counts": {
+        "balanced_records": 2718,
+        "records_with_surface_tokens": 2718,
+        "surface_tokens": 53296,
+        "records_with_tokens_and_id": 2718
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 2253,
+        "roots_one_clear_finite_verb": 1538,
+        "overt_before_verb": 440,
+        "other_or_unannotated_subject": 697,
+        "without_direct_subject_label": 693,
+        "excluded_subject_empty_marker:*exp*": 183,
+        "overt_after_verb": 216,
+        "null_referential": 1,
+        "excluded_subject_empty_marker:*T*": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          2253
+        ],
+        [
+          "NP",
+          131
+        ],
+        [
+          "FRAG",
+          123
+        ],
+        [
+          "IP-IMP",
+          102
+        ],
+        [
+          "CP-QUE",
+          46
+        ],
+        [
+          "INTJP",
+          12
+        ],
+        [
+          "CP-EXL",
+          12
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "C_003,0.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "C_003,0.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "C_003,0.940",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "c_005",
+      "filename": "c_005_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/c_005_psd.txt",
+      "sha256": "aa802cf1db4618f9b80312e27f45267424dd7eef5b1a4a896b16d669bfaf50c6",
+      "bytes": 648312,
+      "title": "Entremezes de Cordel",
+      "author_as_listed": "Jose Daniel Rodrigues da Costa",
+      "author_birth_as_listed": "1757",
+      "genre_as_listed": "Theatre",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 24252,
+      "counts": {
+        "balanced_records": 2396,
+        "records_with_surface_tokens": 2212,
+        "surface_tokens": 19170,
+        "records_with_tokens_and_id": 2212
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 7,
+        "roots_one_clear_finite_verb": 6,
+        "overt_before_verb": 1,
+        "overt_after_verb": 1,
+        "null_referential": 3,
+        "excluded_subject_empty_marker:*exp*": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT-SPE",
+          1205
+        ],
+        [
+          "IP-IMP-SPE",
+          369
+        ],
+        [
+          "CP-QUE-SPE",
+          199
+        ],
+        [
+          "FRAG",
+          149
+        ],
+        [
+          "NP",
+          67
+        ],
+        [
+          "FRAG-SPE",
+          43
+        ],
+        [
+          "PP",
+          36
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "C_005_PSD,47.161",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "C_005_PSD,49.181",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "null_referential": {
+          "tree_id": "C_005_PSD,71.382",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "c_007",
+      "filename": "c_007_part_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/c_007_part_psd.txt",
+      "sha256": "3dd457f7ac5c213b288ab43cc7a7e7856a89486e38ead1a82c7b3502834c0c46",
+      "bytes": 957869,
+      "title": "Décadas",
+      "author_as_listed": "Diogo do Couto",
+      "author_birth_as_listed": "1542",
+      "genre_as_listed": "Narrative; Chronicle",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 47605,
+      "counts": {
+        "balanced_records": 1258,
+        "records_with_surface_tokens": 1141,
+        "surface_tokens": 31541,
+        "records_with_tokens_and_id": 1141
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1072,
+        "roots_one_clear_finite_verb": 1032,
+        "excluded_subject_empty_marker:*exp*": 32,
+        "null_referential": 569,
+        "overt_before_verb": 250,
+        "overt_after_verb": 173,
+        "other_or_unannotated_subject": 8,
+        "without_direct_subject_label": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1065
+        ],
+        [
+          "NP",
+          16
+        ],
+        [
+          "PP",
+          16
+        ],
+        [
+          "FRAG",
+          11
+        ],
+        [
+          "IP-MAT-SPE",
+          6
+        ],
+        [
+          "CP-THT",
+          5
+        ],
+        [
+          "IP-MAT-2",
+          4
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "C_007_PART_PSD,0.4",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "C_007_PART_PSD,02.12",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_after_verb": {
+          "tree_id": "C_007_PART_PSD,02.18",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "g_001",
+      "filename": "g_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/g_001_psd.txt",
+      "sha256": "bafc6f570c377e1134ce015519bfd289ca4f2cefa86f0f64daecf45ea794ad28",
+      "bytes": 737494,
+      "title": "Gazeta, Manual Galhegos",
+      "author_as_listed": "Manuel de Galhegos",
+      "author_birth_as_listed": "1597",
+      "genre_as_listed": "News",
+      "original_text_date_as_listed": "1641",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Whole",
+      "catalog_word_count": 28839,
+      "counts": {
+        "balanced_records": 1463,
+        "records_with_surface_tokens": 1372,
+        "surface_tokens": 25869,
+        "records_with_tokens_and_id": 1372
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1353,
+        "roots_one_clear_finite_verb": 1304,
+        "overt_after_verb": 432,
+        "overt_before_verb": 260,
+        "excluded_subject_empty_marker:*exp*": 81,
+        "null_referential": 531
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1342
+        ],
+        [
+          "IP-MAT-SPE",
+          8
+        ],
+        [
+          "IP-MAT-1",
+          6
+        ],
+        [
+          "FRAG",
+          2
+        ],
+        [
+          "IP-MAT-2",
+          2
+        ],
+        [
+          "IP-XXX",
+          2
+        ],
+        [
+          "IP-MAT-3",
+          2
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "G_001_PSD,02.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "G_001_PSD,02.5",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "G_001_PSD,02.10",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "g_004",
+      "filename": "g_004_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/g_004_psd.txt",
+      "sha256": "270d7ea4149f21d2e9df4cc4007a209d0b87f758dad39be50bc6cf7bb5ccb19d",
+      "bytes": 1142914,
+      "title": "Teatro, Almeida Garret",
+      "author_as_listed": "J. B. da Silva L. de Almeida Garrett",
+      "author_birth_as_listed": "1799",
+      "genre_as_listed": "Theatre",
+      "original_text_date_as_listed": "1845",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Whole",
+      "catalog_word_count": 44252,
+      "counts": {
+        "balanced_records": 4257,
+        "records_with_surface_tokens": 4257,
+        "surface_tokens": 32636,
+        "records_with_tokens_and_id": 4257
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 9,
+        "roots_one_clear_finite_verb": 7,
+        "null_referential": 2,
+        "overt_before_verb": 3,
+        "overt_after_verb": 1,
+        "other_or_unannotated_subject": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT-SPE",
+          2436
+        ],
+        [
+          "IP-IMP-SPE",
+          551
+        ],
+        [
+          "CP-QUE-SPE",
+          390
+        ],
+        [
+          "FRAG",
+          328
+        ],
+        [
+          "CP-EXL",
+          130
+        ],
+        [
+          "NP",
+          123
+        ],
+        [
+          "FRAG-EXL",
+          56
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "G_004_PSD,0.1329",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "G_004_PSD,0.2083",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "G_004_PSD,0.2724",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "g_008",
+      "filename": "g_008_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/g_008_psd.txt",
+      "sha256": "2607031dfc3121b502b5eaabc30b31c872ced712dea333a9c288550cabdbf4e3",
+      "bytes": 674867,
+      "title": "História da Província de Santa Cruz",
+      "author_as_listed": "Pero Magalhães de Gandavo",
+      "author_birth_as_listed": "1540",
+      "genre_as_listed": "Narrative; Chronicle",
+      "original_text_date_as_listed": "1576",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 22944,
+      "counts": {
+        "balanced_records": 911,
+        "records_with_surface_tokens": 880,
+        "surface_tokens": 22464,
+        "records_with_tokens_and_id": 878
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 870,
+        "roots_one_clear_finite_verb": 816,
+        "overt_after_verb": 109,
+        "null_referential": 401,
+        "overt_before_verb": 199,
+        "excluded_subject_empty_marker:*exp*": 105,
+        "other_or_unannotated_subject": 2,
+        "without_direct_subject_label": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          853
+        ],
+        [
+          "IP-MAT-3",
+          4
+        ],
+        [
+          "IP-MAT-2",
+          4
+        ],
+        [
+          "IP-MAT-4",
+          4
+        ],
+        [
+          "IP-MAT-1",
+          3
+        ],
+        [
+          "CP-THT",
+          3
+        ],
+        [
+          "IP-IMP",
+          2
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "G_008_PSD,6.1",
+          "subject_tag": "NP-SBJ-4",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "G_008_PSD,6.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "G_008_PSD,6.9",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "l_001",
+      "filename": "l_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/l_001_psd.txt",
+      "sha256": "2ce4c61438b54a09ab677bf69b6bdb85ead6474b2f87f44f316e49175d0a2047",
+      "bytes": 1711341,
+      "title": "Côrte na Aldeia e Noites de Inverno",
+      "author_as_listed": "F. Rodrigues Lobo",
+      "author_birth_as_listed": "1579",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "1619",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 59878,
+      "counts": {
+        "balanced_records": 1900,
+        "records_with_surface_tokens": 1900,
+        "surface_tokens": 55565,
+        "records_with_tokens_and_id": 1900
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1327,
+        "roots_one_clear_finite_verb": 1200,
+        "null_referential": 451,
+        "overt_before_verb": 330,
+        "overt_after_verb": 260,
+        "excluded_subject_empty_marker:*exp*": 153,
+        "other_or_unannotated_subject": 6
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1324
+        ],
+        [
+          "IP-MAT-SPE",
+          318
+        ],
+        [
+          "IP-IMP-SPE",
+          84
+        ],
+        [
+          "CP-QUE-SPE",
+          44
+        ],
+        [
+          "FRAG",
+          38
+        ],
+        [
+          "FRAG-SPE",
+          23
+        ],
+        [
+          "QTP",
+          9
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "L_001,0.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "L_001,0.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_after_verb": {
+          "tree_id": "L_001,0.5",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "m_003",
+      "filename": "m_003_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/m_003_psd.txt",
+      "sha256": "7d938b9397812c438c0e6c08a6536cff0f9de161686e81a7b3aca65cc2856765",
+      "bytes": 1490157,
+      "title": "Cartas Familiares, F.M. de Melo",
+      "author_as_listed": "Francisco Manuel de Melo",
+      "author_birth_as_listed": "1608",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1664",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 58070,
+      "counts": {
+        "balanced_records": 2853,
+        "records_with_surface_tokens": 2850,
+        "surface_tokens": 53599,
+        "records_with_tokens_and_id": 2850
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 2297,
+        "roots_one_clear_finite_verb": 1859,
+        "overt_after_verb": 292,
+        "overt_before_verb": 507,
+        "excluded_subject_empty_marker:*exp*": 187,
+        "other_or_unannotated_subject": 867,
+        "without_direct_subject_label": 865,
+        "null_referential": 6
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          2297
+        ],
+        [
+          "FRAG",
+          312
+        ],
+        [
+          "CP-QUE",
+          68
+        ],
+        [
+          "IP-IMP",
+          37
+        ],
+        [
+          "NP",
+          30
+        ],
+        [
+          "CP-ADV",
+          22
+        ],
+        [
+          "PP",
+          20
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "M_003,01.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "M_003,01.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "null_referential": {
+          "tree_id": "M_003,02.10",
+          "subject_tag": "NP-SBJ-2",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "m_008",
+      "filename": "m_008_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/m_008_psd.txt",
+      "sha256": "fa4df13b6c04cfcbf7167b00b9db2869eda23d7f340425cbf4676a2c89edf05a",
+      "bytes": 1400981,
+      "title": "Gazetas manuscritas da Biblioteca de Évora. Vol. I (1729-1731)",
+      "author_as_listed": "Francisco Xavier de Menezes",
+      "author_birth_as_listed": "1673",
+      "genre_as_listed": "News",
+      "original_text_date_as_listed": "~1729-1731",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 56771,
+      "counts": {
+        "balanced_records": 2174,
+        "records_with_surface_tokens": 1870,
+        "surface_tokens": 55544,
+        "records_with_tokens_and_id": 1870
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1861,
+        "roots_one_clear_finite_verb": 1438,
+        "other_or_unannotated_subject": 191,
+        "without_direct_subject_label": 187,
+        "overt_after_verb": 467,
+        "overt_before_verb": 654,
+        "null_referential": 14,
+        "excluded_subject_empty_marker:*exp*": 112
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1861
+        ],
+        [
+          "IP",
+          3
+        ],
+        [
+          "FRAG",
+          3
+        ],
+        [
+          "IP-SUB",
+          2
+        ],
+        [
+          "IP-INF",
+          1
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "M_008,2.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "M_008,2.8",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "M_008,2.9",
+          "subject_tag": "NP-SBJ-5",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "o_001",
+      "filename": "o_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/o_001_psd.txt",
+      "sha256": "bbd57a9801feb8730834822b7d7ab1fd911c5316971d54f61eeb9ef125a35480",
+      "bytes": 934750,
+      "title": "Cartas a Emília, Ramalho Ortigão",
+      "author_as_listed": "Ramalho Ortigão",
+      "author_birth_as_listed": "1836",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Whole",
+      "catalog_word_count": 32441,
+      "counts": {
+        "balanced_records": 2263,
+        "records_with_surface_tokens": 2132,
+        "surface_tokens": 33089,
+        "records_with_tokens_and_id": 2131
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1720,
+        "roots_one_clear_finite_verb": 1604,
+        "null_referential": 732,
+        "overt_after_verb": 127,
+        "excluded_subject_empty_marker:*exp*": 227,
+        "overt_before_verb": 515,
+        "other_or_unannotated_subject": 3
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1711
+        ],
+        [
+          "FRAG",
+          125
+        ],
+        [
+          "NP",
+          116
+        ],
+        [
+          "IP-IMP",
+          53
+        ],
+        [
+          "CP-EXL",
+          27
+        ],
+        [
+          "CP-QUE",
+          19
+        ],
+        [
+          "IP-MAT-SPE",
+          16
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "O_001_PSD,45.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "O_001_PSD,45.5",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "O_001_PSD,45.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        }
+      }
+    },
+    {
+      "code": "p_001",
+      "filename": "p_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/p_001_psd.txt",
+      "sha256": "4b8e31dd932f100745be522efd4a9acecb457240c41e4c8d455936dc778cb3e2",
+      "bytes": 1394231,
+      "title": "Perigrinação",
+      "author_as_listed": "Fernão Mendes Pinto",
+      "author_birth_as_listed": "1510",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 47580,
+      "counts": {
+        "balanced_records": 1050,
+        "records_with_surface_tokens": 944,
+        "surface_tokens": 44306,
+        "records_with_tokens_and_id": 944
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 849,
+        "roots_one_clear_finite_verb": 806,
+        "null_referential": 493,
+        "overt_before_verb": 170,
+        "overt_after_verb": 107,
+        "excluded_subject_empty_marker:*exp*": 35,
+        "other_or_unannotated_subject": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          846
+        ],
+        [
+          "IP-MAT-SPE",
+          52
+        ],
+        [
+          "IP-IMP-SPE",
+          19
+        ],
+        [
+          "IP-IMP",
+          8
+        ],
+        [
+          "FRAG",
+          4
+        ],
+        [
+          "CP-QUE-SPE",
+          3
+        ],
+        [
+          "CONJP",
+          2
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "P_001_PSD,13.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "P_001_PSD,14.6",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-D"
+        },
+        "overt_after_verb": {
+          "tree_id": "P_001_PSD,14.11",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "s_001",
+      "filename": "s_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/s_001_psd.txt",
+      "sha256": "a207b8654b5f5501834d06c2da52e6232014a5f73748c6e8dcfb192eef6afe08",
+      "bytes": 1720329,
+      "title": "A vida de Frei Bertolameu dos Mártires",
+      "author_as_listed": "Luis de Sousa",
+      "author_birth_as_listed": "1556",
+      "genre_as_listed": "Narrative",
+      "original_text_date_as_listed": "1619",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 53986,
+      "counts": {
+        "balanced_records": 2348,
+        "records_with_surface_tokens": 2173,
+        "surface_tokens": 56291,
+        "records_with_tokens_and_id": 2173
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1854,
+        "roots_one_clear_finite_verb": 1686,
+        "excluded_subject_empty_marker:*exp*": 159,
+        "null_referential": 926,
+        "overt_after_verb": 411,
+        "overt_before_verb": 188,
+        "other_or_unannotated_subject": 2
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1804
+        ],
+        [
+          "IP-MAT-SPE",
+          85
+        ],
+        [
+          "FRAG",
+          69
+        ],
+        [
+          "IP-IMP-SPE",
+          35
+        ],
+        [
+          "IP-IMP",
+          35
+        ],
+        [
+          "IP-MAT-1",
+          24
+        ],
+        [
+          "CP-QUE-SPE",
+          17
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "S_001_PSD,9.6",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "S_001_PSD,9.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "S_001_PSD,10.14",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-D"
+        }
+      }
+    },
+    {
+      "code": "s_004",
+      "filename": "s_004_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/s_004_psd.txt",
+      "sha256": "ae4506c81196d833131516e11f4f7a5eaad2163fd80fd646a5e4a519fb5385a9",
+      "bytes": 1228426,
+      "title": "Theatro comico portuguez I",
+      "author_as_listed": "António José da Silva (o Judeu)",
+      "author_birth_as_listed": "1705",
+      "genre_as_listed": "Theatre",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 26089,
+      "counts": {
+        "balanced_records": 4373,
+        "records_with_surface_tokens": 4136,
+        "surface_tokens": 39697,
+        "records_with_tokens_and_id": 4136
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 952,
+        "roots_one_clear_finite_verb": 855,
+        "overt_after_verb": 257,
+        "excluded_subject_empty_marker:*exp*": 76,
+        "null_referential": 313,
+        "overt_before_verb": 203,
+        "other_or_unannotated_subject": 6
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT-SPE",
+          1200
+        ],
+        [
+          "IP-MAT",
+          951
+        ],
+        [
+          "IP-IMP-SPE",
+          614
+        ],
+        [
+          "CP-QUE",
+          324
+        ],
+        [
+          "CP-QUE-SPE",
+          245
+        ],
+        [
+          "IP-IMP",
+          191
+        ],
+        [
+          "FRAG",
+          165
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "S_004,5.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "null_referential": {
+          "tree_id": "S_004,10.64",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "S_004,22.243",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "va_002",
+      "filename": "va_002_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_002_psd.txt",
+      "sha256": "1dc407b54f741ead4ab4b21b894af4db0c6d61f81affc9cac796a2d8d4a490a2",
+      "bytes": 1335884,
+      "title": "Atas dos Brasileiros",
+      "author_as_listed": "Various",
+      "author_birth_as_listed": "~1830",
+      "genre_as_listed": "ata",
+      "original_text_date_as_listed": "1860-1869",
+      "place_of_publication_as_listed": "",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 53529,
+      "counts": {
+        "balanced_records": 3191,
+        "records_with_surface_tokens": 2900,
+        "surface_tokens": 51703,
+        "records_with_tokens_and_id": 2900
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1987,
+        "roots_one_clear_finite_verb": 1915,
+        "overt_after_verb": 861,
+        "overt_before_verb": 454,
+        "null_referential": 508,
+        "excluded_subject_empty_marker:*exp*": 78,
+        "other_or_unannotated_subject": 5,
+        "without_direct_subject_label": 1,
+        "excluded_subject_empty_marker:*arb*": 9
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1974
+        ],
+        [
+          "NP",
+          383
+        ],
+        [
+          "IP-MAT-SPE",
+          228
+        ],
+        [
+          "FRAG",
+          122
+        ],
+        [
+          "QTP",
+          51
+        ],
+        [
+          "ADJP",
+          32
+        ],
+        [
+          "IP-IMP-SPE",
+          26
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "VA_002_PSD,1.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "VA_002_PSD,1.4",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "null_referential": {
+          "tree_id": "VA_002_PSD,1.5",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "va_009",
+      "filename": "va_009_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_009_psd.txt",
+      "sha256": "5f5bc6bde934245239ce42350824cb99921dd14a60b2f56414b1bc5c9a9b913e",
+      "bytes": 1366319,
+      "title": "Gazeta de Lisboa",
+      "author_as_listed": "Various",
+      "author_birth_as_listed": "~1700-1799",
+      "genre_as_listed": "News",
+      "original_text_date_as_listed": "1810",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 59960,
+      "counts": {
+        "balanced_records": 1799,
+        "records_with_surface_tokens": 1695,
+        "surface_tokens": 52612,
+        "records_with_tokens_and_id": 1695
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1627,
+        "roots_one_clear_finite_verb": 1446,
+        "other_or_unannotated_subject": 359,
+        "without_direct_subject_label": 356,
+        "excluded_subject_empty_marker:*exp*": 110,
+        "overt_before_verb": 668,
+        "overt_after_verb": 251,
+        "excluded_subject_empty_marker:*T*": 1,
+        "null_referential": 57
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1627
+        ],
+        [
+          "FRAG",
+          13
+        ],
+        [
+          "CP-QUE",
+          9
+        ],
+        [
+          "IP-SUB",
+          9
+        ],
+        [
+          "IP-IMP",
+          9
+        ],
+        [
+          "INTJP",
+          7
+        ],
+        [
+          "IP-MAT-SPE",
+          6
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "VA_009,1.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-R"
+        },
+        "overt_after_verb": {
+          "tree_id": "VA_009,1.13",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-R"
+        },
+        "null_referential": {
+          "tree_id": "VA_009,5.94",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-D"
+        }
+      }
+    },
+    {
+      "code": "va_013",
+      "filename": "va_013_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_013_psd.txt",
+      "sha256": "01165cc4d20c51bd805fc4ff829237873dd147a48ee9ed5009dab4829b5659ef",
+      "bytes": 2240475,
+      "title": "Cartas do Senado, volume 1, 1638-1673",
+      "author_as_listed": "Various",
+      "author_birth_as_listed": "1580-1620",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1638-1673",
+      "place_of_publication_as_listed": "Brazil",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 30175,
+      "counts": {
+        "balanced_records": 943,
+        "records_with_surface_tokens": 840,
+        "surface_tokens": 30379,
+        "records_with_tokens_and_id": 793
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 696,
+        "roots_one_clear_finite_verb": 597,
+        "overt_before_verb": 125,
+        "null_referential": 285,
+        "overt_after_verb": 96,
+        "excluded_subject_empty_marker:*exp*": 53,
+        "other_or_unannotated_subject": 38,
+        "without_direct_subject_label": 22
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          690
+        ],
+        [
+          "NP",
+          71
+        ],
+        [
+          "IP-IMP",
+          27
+        ],
+        [
+          "CP-D",
+          22
+        ],
+        [
+          "IP-IMP-PRG",
+          18
+        ],
+        [
+          "IP-MAT-1",
+          5
+        ],
+        [
+          "",
+          1
+        ]
+      ],
+      "example_record_ids": {
+        "overt_before_verb": {
+          "tree_id": "VA_013_PSD,1.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P-1S"
+        },
+        "null_referential": {
+          "tree_id": "VA_013_PSD,1.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D-1S"
+        },
+        "overt_after_verb": {
+          "tree_id": "VA_013_PSD,3.9",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-D-3P"
+        }
+      }
+    },
+    {
+      "code": "va_014",
+      "filename": "va_014_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_014_psd.txt",
+      "sha256": "279b85e25faeaf711d698eab08d65cfe33306eb84b5fc5788a1f7e2f55c6d339",
+      "bytes": 1081514,
+      "title": "Cartas do Senado, volume 2, 1673-1684",
+      "author_as_listed": "Various",
+      "author_birth_as_listed": "1620-1640",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1673-1684",
+      "place_of_publication_as_listed": "Brazil",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 12871,
+      "counts": {
+        "balanced_records": 406,
+        "records_with_surface_tokens": 376,
+        "surface_tokens": 13676,
+        "records_with_tokens_and_id": 193
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 288,
+        "roots_one_clear_finite_verb": 264,
+        "null_referential": 103,
+        "overt_after_verb": 60,
+        "excluded_subject_empty_marker:*exp*": 39,
+        "overt_before_verb": 57,
+        "other_or_unannotated_subject": 5,
+        "without_direct_subject_label": 4
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          285
+        ],
+        [
+          "NP",
+          34
+        ],
+        [
+          "IP-IMP-PRG",
+          24
+        ],
+        [
+          "IP-IMP",
+          12
+        ],
+        [
+          "CP-D",
+          10
+        ],
+        [
+          "IP-MAT-1",
+          3
+        ],
+        [
+          "CP-IMP",
+          2
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "va_014_PSD,1.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D-3S"
+        },
+        "null_referential": {
+          "tree_id": "va_014_PSD,2.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P-1P"
+        },
+        "overt_before_verb": {
+          "tree_id": "va_014_PSD,3.14",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D-3P"
+        }
+      }
+    },
+    {
+      "code": "va_015",
+      "filename": "va_015_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_015_psd.txt",
+      "sha256": "31f3bbd86c16df4b932c61c6ef71e9c22bcc6628fba44ec59625fc3ad35f17d6",
+      "bytes": 626055,
+      "title": "Cartas do Senado, volume 3, 1694-1692",
+      "author_as_listed": "Various",
+      "author_birth_as_listed": "1640",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1684-1685",
+      "place_of_publication_as_listed": "Brazil",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 8821,
+      "counts": {
+        "balanced_records": 291,
+        "records_with_surface_tokens": 262,
+        "surface_tokens": 8674,
+        "records_with_tokens_and_id": 259
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 207,
+        "roots_one_clear_finite_verb": 187,
+        "null_referential": 89,
+        "overt_after_verb": 36,
+        "excluded_subject_empty_marker:*exp*": 34,
+        "overt_before_verb": 27,
+        "other_or_unannotated_subject": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          206
+        ],
+        [
+          "NP",
+          20
+        ],
+        [
+          "IP-IMP-PRG",
+          18
+        ],
+        [
+          "CP-D",
+          10
+        ],
+        [
+          "IP-IMP",
+          4
+        ],
+        [
+          "PP",
+          1
+        ],
+        [
+          "CP-QUE",
+          1
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "VA_015_PSD,1.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P-1P"
+        },
+        "overt_after_verb": {
+          "tree_id": "VA_015_PSD,1.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-D-3S"
+        },
+        "overt_before_verb": {
+          "tree_id": "VA_015_PSD,3.23",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P-3S"
+        }
+      }
+    },
+    {
+      "code": "v_001",
+      "filename": "v_001_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/v_001_psd.txt",
+      "sha256": "63fd7908d6f74a768b14f1ff9c9db26b9a89b18dc6dd01f58193ace228433f67",
+      "bytes": 1411152,
+      "title": "Verdadeiro Método de Estudar",
+      "author_as_listed": "L. Antonio Verney",
+      "author_birth_as_listed": "1713",
+      "genre_as_listed": "Grammar",
+      "original_text_date_as_listed": "1746",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 49335,
+      "counts": {
+        "balanced_records": 2406,
+        "records_with_surface_tokens": 2406,
+        "surface_tokens": 50222,
+        "records_with_tokens_and_id": 2406
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 2261,
+        "roots_one_clear_finite_verb": 2115,
+        "overt_after_verb": 323,
+        "other_or_unannotated_subject": 693,
+        "without_direct_subject_label": 690,
+        "excluded_subject_empty_marker:*exp*": 325,
+        "overt_before_verb": 762,
+        "null_referential": 12
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          2261
+        ],
+        [
+          "FRAG",
+          87
+        ],
+        [
+          "CP-QUE",
+          24
+        ],
+        [
+          "CP-ADV",
+          10
+        ],
+        [
+          "PP",
+          9
+        ],
+        [
+          "IP-SUB",
+          5
+        ],
+        [
+          "NP",
+          3
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "V_001,17.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "V_001,18.7",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        },
+        "null_referential": {
+          "tree_id": "V_001,90.677",
+          "subject_tag": "NP-SBJ-1",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "v_002",
+      "filename": "v_002_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/v_002_psd.txt",
+      "sha256": "0585861e5bdde7f93c773ffa90b289664e956198c5df9130b77bfe7f8cd3b8dc",
+      "bytes": 1653424,
+      "title": "Cartas, Antonio Vieira",
+      "author_as_listed": "Antonio Vieira",
+      "author_birth_as_listed": "1608",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 57088,
+      "counts": {
+        "balanced_records": 1964,
+        "records_with_surface_tokens": 1963,
+        "surface_tokens": 54956,
+        "records_with_tokens_and_id": 1963
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1624,
+        "roots_one_clear_finite_verb": 1505,
+        "null_referential": 606,
+        "overt_after_verb": 353,
+        "overt_before_verb": 348,
+        "excluded_subject_empty_marker:*exp*": 193,
+        "other_or_unannotated_subject": 3,
+        "excluded_subject_empty_marker:*T*": 1,
+        "excluded_subject_empty_marker:*ep*": 1
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1597
+        ],
+        [
+          "IP-IMP",
+          155
+        ],
+        [
+          "FRAG",
+          80
+        ],
+        [
+          "CP-QUE",
+          22
+        ],
+        [
+          "NP",
+          18
+        ],
+        [
+          "IP-MAT-1",
+          15
+        ],
+        [
+          "CP-D",
+          12
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "V_002,0.1",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_after_verb": {
+          "tree_id": "V_002,0.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-D"
+        },
+        "overt_before_verb": {
+          "tree_id": "V_002,0.8",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        }
+      }
+    },
+    {
+      "code": "v_004",
+      "filename": "v_004_part_psd.txt",
+      "access": "psd.zip",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/v_004_part_psd.txt",
+      "sha256": "8e0a99c3f505290b96a3ac289efdfb59918d03053cd4a7f64724c15bd7b3646b",
+      "bytes": 1011619,
+      "title": "Sermões, Antonio Vieira",
+      "author_as_listed": "Padre A. Vieira",
+      "author_birth_as_listed": "1608",
+      "genre_as_listed": "Dissertation",
+      "original_text_date_as_listed": "1679-1695",
+      "place_of_publication_as_listed": "Portugal",
+      "source_extent_as_listed": "Excerpt",
+      "catalog_word_count": 53855,
+      "counts": {
+        "balanced_records": 2201,
+        "records_with_surface_tokens": 2108,
+        "surface_tokens": 34673,
+        "records_with_tokens_and_id": 2108
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 1362,
+        "roots_one_clear_finite_verb": 1228,
+        "null_referential": 342,
+        "overt_before_verb": 378,
+        "overt_after_verb": 339,
+        "excluded_subject_empty_marker:*exp*": 160,
+        "other_or_unannotated_subject": 9
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          1349
+        ],
+        [
+          "QTP",
+          239
+        ],
+        [
+          "CP-QUE",
+          147
+        ],
+        [
+          "IP-IMP",
+          138
+        ],
+        [
+          "FRAG",
+          127
+        ],
+        [
+          "CP-EXL",
+          20
+        ],
+        [
+          "CP-ADV",
+          15
+        ]
+      ],
+      "example_record_ids": {
+        "null_referential": {
+          "tree_id": "V_004_PART_PSD,61.3",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-P"
+        },
+        "overt_before_verb": {
+          "tree_id": "V_004_PART_PSD,63.24",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-R"
+        },
+        "overt_after_verb": {
+          "tree_id": "V_004_PART_PSD,63.26",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P"
+        }
+      }
+    },
+    {
+      "code": "va_017",
+      "filename": "va_017_psd.txt",
+      "access": "official standalone PSD file",
+      "official_psd_url": "https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_017_psd.txt",
+      "sha256": "be4635411921a35b78e7c71ff9f786ddad88ca2687ce88d6cd3284c398aba709",
+      "bytes": 3008000,
+      "title": "Cartas do Senado, volume 5, 1699-1710",
+      "author_as_listed": "Various",
+      "author_birth_as_listed": "1650-1670",
+      "genre_as_listed": "Letters",
+      "original_text_date_as_listed": "1699-1710",
+      "place_of_publication_as_listed": "Brazil",
+      "source_extent_as_listed": "",
+      "catalog_word_count": 47260,
+      "counts": {
+        "balanced_records": 1155,
+        "records_with_surface_tokens": 1034,
+        "surface_tokens": 41140,
+        "records_with_tokens_and_id": 997
+      },
+      "direct_matrix_probe": {
+        "matrix_roots": 889,
+        "roots_one_clear_finite_verb": 827,
+        "overt_after_verb": 141,
+        "overt_before_verb": 132,
+        "excluded_subject_empty_marker:*exp*": 132,
+        "null_referential": 394,
+        "other_or_unannotated_subject": 28,
+        "without_direct_subject_label": 16
+      },
+      "largest_root_classes": [
+        [
+          "IP-MAT",
+          885
+        ],
+        [
+          "NP",
+          78
+        ],
+        [
+          "IP-IMP-PRG",
+          23
+        ],
+        [
+          "CP-D",
+          21
+        ],
+        [
+          "IP-IMP",
+          20
+        ],
+        [
+          "IP-SUB",
+          2
+        ],
+        [
+          "IP-MAT=1",
+          2
+        ]
+      ],
+      "example_record_ids": {
+        "overt_after_verb": {
+          "tree_id": "VA_017,1.2",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P-3P"
+        },
+        "overt_before_verb": {
+          "tree_id": "VA_017,1.6",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "SR-P-3S"
+        },
+        "null_referential": {
+          "tree_id": "VA_017,2.15",
+          "subject_tag": "NP-SBJ",
+          "verb_tag": "VB-R-1P"
+        }
+      }
+    }
+  ]
+}

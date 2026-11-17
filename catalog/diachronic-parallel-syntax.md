@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共5个入口。资料状态与文件验收范围分别记录。
+共6个入口。资料状态与文件验收范围分别记录。
 
 <a id="r056"></a>
 
@@ -160,5 +160,47 @@
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution) · [历时机制](../docs/research-needs.md#diachronic-mechanisms)。
 
-待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R196 Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）](../catalog/diachronic-parallel-syntax.md#r196)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r196"></a>
+
+## Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）
+
+**R196** · 数据集 · 有数据发布说明
+
+官网登记95篇、3,789,646词，其中32篇标为有句法、目录对应1,359,094词。实际可读句法为ZIP内30份，加单独下载的va_017。可分别统计限定主句中的主语显现和显性主语相对动词的位置。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 历史葡萄牙语。可读句法材料涵盖葡萄牙和巴西的书信、叙事、报刊和戏剧等。单一作者篇目的出生年为1510–1836年 |
+| 数据性质 | Penn-Helsinki式成分句法树，含词类、形态和空成分标注。PSD纯文本。官方篇目元数据含体裁、出生年、原文日期与出版地；语料与标注 |
+| 获取方式 | 公开数据入口：官网ZIP与va_017无需登录即可下载。va_016列在官方目录，句法链接本次返回404，其含词类的XML已读取。ZIP有三个_part文件，另有项目目录注明节选的篇目。 |
+| 许可 | 项目条款允许免费教学与科研，要求署名。商业使用须事先许可，仅允许按学术引用惯例转载有限片段。引用Galves、Andrade与Faria（2017）并注明所用文件。 |
+| 使用边界 | 按作者出生年代、原文日期、体裁、作者和节选范围核对可比性。首层主语标签覆盖随篇目变化，例如m_003中865/1,859条初筛主句无直接主语标签，需另行判断其结构和标注口径。区分指称性零主语、虚主语、任指主语及痕迹。依存距离须先验证成分树转换规则。 |
+| 标签 | 历时、葡萄牙语、句法、成分树库、Penn、词序、零主语、主语显现、体裁 |
+| 平台 | project_website |
+| 核对依据 | 项目说明；2026-11-17 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 解析ZIP内30份及单篇va_017，合计1,239,274个表层词项。排除4条括号失配记录并记录末尾控制字符。核对主句、词类、显性主语及指称性零主语。另核实va_016句法入口404及其XML的词类层。逐条标注准确性仍待查。详见data/tycho-brahe-file-check-2026-11-17.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://www.tycho.iel.unicamp.br/corpus/)
+
+补充及核对来源：
+
+- [来源 1](https://www.tycho.iel.unicamp.br/corpus/texts/psd.zip)
+- [来源 2](https://www.tycho.iel.unicamp.br/corpus/texts/psd/va_017_psd.txt)
+- [来源 3](https://www.tycho.iel.unicamp.br/corpus/catalogo.html)
+- [来源 4](https://www.tycho.iel.unicamp.br/corpus/catalog.json)
+- [来源 5](https://www.tycho.iel.unicamp.br/manual/2-noun-phrases/2-1-subject-np-np-sbj/2-1-1-subject-in-tensed-sentences.html)
+- [来源 6](https://www.tycho.iel.unicamp.br/corpus/manual/pos2016.html)
+- [来源 7](https://www.tycho.iel.unicamp.br/corpus/en/termos.html)
+- [来源 8](https://doi.org/10.1075/lv.00004.gal)
+- [来源 9](https://github.com/leo11wu/open-language-resources/blob/main/data/tycho-brahe-file-check-2026-11-17.json)
+- [来源 10](https://www.tycho.iel.unicamp.br/corpus/texts/xml/va_016.xml)
+- [来源 11](https://www.tycho.iel.unicamp.br/manual/12-empty-categories/12-1-null-subjects.html)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution) · [历时机制](../docs/research-needs.md#diachronic-mechanisms)。
+
+待核实关联：[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

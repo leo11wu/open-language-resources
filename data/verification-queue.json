@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-17",
-  "catalog_version": "2.5.17",
+  "generated_on": "2026-11-18",
+  "catalog_version": "2.5.18",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 196,
+    "main_resource_count": 197,
     "main_by_check_state": {
       "documentation_only": 97,
       "file_preview": 2,
-      "selected_file_checked": 84,
+      "selected_file_checked": 85,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 91,
+    "main_with_recorded_file_reads": 92,
     "main_without_recorded_file_reads": 105,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6705,6 +6705,43 @@
           "read_scope": "complete_json",
           "file_role": "documentation_or_materials",
           "result": "完整读取95条元数据，核对32条PSD标注及句法下载路径，确认ZIP缺va_016、va_017。"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R197",
+      "name": "HeliPaD（古撒克逊语《救世主》句法语料库）",
+      "category": "diachronic-parallel-syntax",
+      "source_url": "https://zenodo.org/records/4395040",
+      "platforms": [
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-18",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://zenodo.org/records/4395040/files/heliand.psd?download=1",
+          "sha256": "2f83b2c0bb64b0e4dc8284a0aa56aed937f3a0b26ad9a82440d832bf702bda4d",
+          "checked_on": "2026-11-18",
+          "read_scope": "complete_text",
+          "file_role": "corpus_derived_data",
+          "result": "原始PSD全部读取并通过括号解析。与Zenodo大小和MD5一致。实查5,965个行号、5,955处有词的半行分界及句法标注与词位的对齐。"
+        },
+        {
+          "url": "https://zenodo.org/records/4395040/files/HeliPaD-manual.pdf?download=1",
+          "sha256": "a72779141a0a81c26648f9730605ddc4f3c0fd7fe03ba153ac551858e95ad4cf",
+          "checked_on": "2026-11-18",
+          "read_scope": "complete_document_text",
+          "file_role": "documentation_or_materials",
+          "result": "手册匹配归档MD5，提取整份PDF文本并核对韵律CODE、词元、拆词、句法标签及ID规则。"
         }
       ],
       "osf_audit": null,

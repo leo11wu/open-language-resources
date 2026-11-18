@@ -1,0 +1,559 @@
+{
+  "resource_id": "R197",
+  "checked_on": "2026-11-18",
+  "release": {
+    "record_url": "https://zenodo.org/records/4395040",
+    "api_metadata_url": "https://zenodo.org/api/records/4395040",
+    "api_metadata_sha256": "00e557c138adc5f3dea0610dee6ead75231583626765fc0b89bab33fd2873a51",
+    "doi": "10.5281/zenodo.4395040",
+    "version": "0.9",
+    "release_date_in_metadata": "2015-12-28",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "original_text": "Sievers (1878) edition of Cotton Caligula A VII (C)",
+    "advertised_words": 46067,
+    "advertised_last_line": 5968,
+    "files": {
+      "HeliPaD-manual.pdf": {
+        "download": "https://zenodo.org/records/4395040/files/HeliPaD-manual.pdf?download=1",
+        "api_content": "https://zenodo.org/api/records/4395040/files/HeliPaD-manual.pdf/content",
+        "bytes": 952046,
+        "md5": "78c58213d31abfb44cf1a0c0612afac8",
+        "sha256": "a72779141a0a81c26648f9730605ddc4f3c0fd7fe03ba153ac551858e95ad4cf",
+        "matches_zenodo": true
+      },
+      "heliand.psd": {
+        "download": "https://zenodo.org/records/4395040/files/heliand.psd?download=1",
+        "api_content": "https://zenodo.org/api/records/4395040/files/heliand.psd/content",
+        "bytes": 3524675,
+        "md5": "ea110d34d38b396bfef0d96f2f7e9016",
+        "sha256": "2f83b2c0bb64b0e4dc8284a0aa56aed937f3a0b26ad9a82440d832bf702bda4d",
+        "matches_zenodo": true
+      }
+    }
+  },
+  "source_documents": {
+    "article": "https://doi.org/10.1075/ijcl.21.4.05wal",
+    "author_full_text": "https://walkden.space/Walkden_2016_HeliPaD.pdf",
+    "chlg_project": "https://www.chlg.ugent.be/",
+    "ipchg_annotation": "https://ipchg.iu.edu/annotation/index.html",
+    "ud_conversion_paper": "https://aclanthology.org/2026.udw-1.25/"
+  },
+  "related_provenance": {
+    "chlg": "Corpus of Historical Low German项目把HeliPaD作为其古撒克逊语部分。",
+    "ipchg": "R194的公开标注手册引用HeliPaD作为句法标签参考。",
+    "edition_overlap": "DDD的《救世主》采用Behaghel等的校订本。对照前需核对底本、诗行与词切分。ConOS论文记录了对HeliPaD的自动依存转换及有限手工子集的评价。"
+  },
+  "file_checks": {
+    "tree_records": 3549,
+    "unique_ids": 3549,
+    "syntax_node_labels_including_empty_positions_and_suffixes": {
+      "IP-MAT": 3748,
+      "IP-SUB": 2888,
+      "NP-OB1": 3399,
+      "NP-OB2": 1801
+    },
+    "punctuation_counts": {
+      ",": 3213,
+      ".": 3300,
+      "'": 771,
+      "\"": 2
+    },
+    "code_counts": {
+      "P": 210,
+      "COM": 17,
+      "MS": 326,
+      "F": 71,
+      "verse_line": 5965,
+      "caesura": 5955
+    },
+    "metrical_coverage": {
+      "line_numbers_first_last": [
+        1,
+        5968
+      ],
+      "unique_R_line_markers": 5965,
+      "missing_line_numbers": [
+        2689,
+        3859,
+        3860
+      ],
+      "gap_notes_at_previous_line": {
+        "2688": [
+          {
+            "code": "<COM:OMISSION>",
+            "record_id": "OSHeliandC.1446.2685-2690"
+          }
+        ],
+        "3858": [
+          {
+            "code": "<COM:scribe_has_skipped_ahead_here>",
+            "record_id": "OSHeliandC.2225.3857-3862"
+          }
+        ]
+      },
+      "numbered_lines_with_words": 5961,
+      "numbered_omission_lines_without_words": [
+        2133,
+        2401,
+        4859,
+        4862
+      ],
+      "interior_caesura_lines": 5955,
+      "numbered_lines_without_caesura": [
+        2110,
+        2133,
+        2401,
+        2516,
+        2688,
+        3831,
+        3861,
+        4264,
+        4859,
+        4862
+      ]
+    },
+    "id_coverage": {
+      "unusual_format": [
+        {
+          "record_id": "OSHeliandC.2111.2128.3691.3695",
+          "position_in_file": 2128
+        },
+        {
+          "record_id": "OSHeliandC.107.2994.5078.5080",
+          "position_in_file": 2994
+        }
+      ],
+      "regular_ids_with_verse_span_disagreement": [
+        {
+          "record_id": "OSHeliandC.199.356-359",
+          "observed_verse_span": [
+            356,
+            358
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.206.378-379",
+          "observed_verse_span": [
+            378,
+            378
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.325.607-611",
+          "observed_verse_span": [
+            608,
+            611
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.518.952-953",
+          "observed_verse_span": [
+            953,
+            953
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.675.1238-1239",
+          "observed_verse_span": [
+            1238,
+            1238
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.771.1420",
+          "observed_verse_span": [
+            1420,
+            1424
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.794.1476-1478",
+          "observed_verse_span": [
+            1475,
+            1478
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.908.1721-1723",
+          "observed_verse_span": [
+            1720,
+            1723
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1062.2052-2053",
+          "observed_verse_span": [
+            2052,
+            2054
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1085.2098-2090",
+          "observed_verse_span": [
+            2098,
+            2099
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1278.2395-2397",
+          "observed_verse_span": [
+            2395,
+            2396
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1283.2401-2402",
+          "observed_verse_span": [
+            2402,
+            2402
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1310.2445-2447",
+          "observed_verse_span": [
+            2445,
+            2446
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1358.2544-2546",
+          "observed_verse_span": [
+            2544,
+            2545
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1391.2586",
+          "observed_verse_span": [
+            2586,
+            2587
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1443.2677-2678",
+          "observed_verse_span": [
+            2677,
+            2677
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1565.2867-2868",
+          "observed_verse_span": [
+            2867,
+            2869
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1698.2062",
+          "observed_verse_span": [
+            3062,
+            3062
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.1876.3313-3313",
+          "observed_verse_span": [
+            3313,
+            3317
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2174.3771-3772",
+          "observed_verse_span": [
+            3771,
+            3773
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2175.3772",
+          "observed_verse_span": [
+            3773,
+            3773
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2203.3817-3810",
+          "observed_verse_span": [
+            3817,
+            3819
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2321.3999-4000",
+          "observed_verse_span": [
+            3999,
+            4001
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2401.4129",
+          "observed_verse_span": [
+            4129,
+            4133
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2411.4144-4147",
+          "observed_verse_span": [
+            4144,
+            4146
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2527.4359",
+          "observed_verse_span": [
+            4359,
+            4366
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2624.4529",
+          "observed_verse_span": [
+            4529,
+            4532
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2642.4563",
+          "observed_verse_span": [
+            4563,
+            4567
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2812.4798",
+          "observed_verse_span": [
+            4798,
+            4799
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2930.4965-66",
+          "observed_verse_span": [
+            4965,
+            4966
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.2941.4975",
+          "observed_verse_span": [
+            4976,
+            4976
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3013.5101-5102",
+          "observed_verse_span": [
+            5100,
+            5102
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3015.5104-5",
+          "observed_verse_span": [
+            5104,
+            5105
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3115.564-5265",
+          "observed_verse_span": [
+            5264,
+            5265
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3127.5282-83",
+          "observed_verse_span": [
+            5282,
+            5283
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3160.5341",
+          "observed_verse_span": [
+            5340,
+            5341
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3172.5361-5365",
+          "observed_verse_span": [
+            5360,
+            5365
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3181.5376",
+          "observed_verse_span": [
+            5377,
+            5377
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3209.5426",
+          "observed_verse_span": [
+            5425,
+            5426
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3253.55503",
+          "observed_verse_span": [
+            5503,
+            5503
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3260.5513-514",
+          "observed_verse_span": [
+            5513,
+            5514
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3280.5546-5549",
+          "observed_verse_span": [
+            5545,
+            5549
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3321.5610-5611",
+          "observed_verse_span": [
+            5611,
+            5612
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3337.5625-5632",
+          "observed_verse_span": [
+            5632,
+            5632
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3376.5698-5700",
+          "observed_verse_span": [
+            5699,
+            5700
+          ]
+        },
+        {
+          "record_id": "OSHeliandC.3521.5931-5933",
+          "observed_verse_span": [
+            5931,
+            5934
+          ]
+        }
+      ],
+      "alignment_note": "用完整文件顺序中的CODE恢复诗行和半行。ID的行号字段有格式例外及与按词位恢复范围不一致的记录。"
+    },
+    "word_count": {
+      "word_terminal_count": 46180,
+      "rejoined_adjacent_explicit_dollar_pairs": 115,
+      "word_count_after_these_joins": 46065,
+      "difference_from_published_count_after_joins": -2,
+      "unpaired_dollar_left": [
+        {
+          "verse": 3052,
+          "record": "OSHeliandC.1690.3052-3053",
+          "word_position": 23494
+        }
+      ],
+      "unpaired_dollar_right": 0,
+      "counting_note": "表层终端计数排除标点、CODE、ID和空成分。手册以美元符号表示为解析而拆开的词。只合并同诗行同树记录内连续标成一对的词。作者报数与本次复算仍差两个。"
+    },
+    "lexical_format_issues": [
+      {
+        "record_id": "OSHeliandC.78.168-169",
+        "verse": 168,
+        "word_position": 1212,
+        "issue": "词形与词类位置疑似互换"
+      },
+      {
+        "record_id": "OSHeliandC.553.1009-1011",
+        "verse": 1009,
+        "word_position": 7603,
+        "issue": "词形与词元无连字符"
+      },
+      {
+        "record_id": "OSHeliandC.2953.4993-4995",
+        "verse": 4994,
+        "word_position": 38528,
+        "issue": "词形与词元无连字符"
+      }
+    ],
+    "syntax_metrical_alignment_check": {
+      "rule": "仅取精确标为IP-MAT或IP-SUB的节点。要求唯一直接NP-OB1有表层词，并恰有一个带限定式标签的直接动词终端。依据词位所在CODE诗行、半行及完整宾语短语跨度判定相对位置。",
+      "counts_by_exact_clause_label": {
+        "IP-SUB": {
+          "same_half_line": 261,
+          "object_crosses_caesura": 12,
+          "more_than_one_verse": 180,
+          "opposite_halves_of_one_line": 88
+        },
+        "IP-MAT": {
+          "same_half_line": 429,
+          "more_than_one_verse": 177,
+          "opposite_halves_of_one_line": 25,
+          "object_crosses_caesura": 5
+        }
+      },
+      "opposite_half_line_examples": {
+        "IP-MAT_object_after_verb": {
+          "record_id": "OSHeliandC.15.55-56",
+          "verse": 55,
+          "object_word_count": 1,
+          "object_half": 2,
+          "object_word_positions_in_psd": [
+            377
+          ],
+          "verb_half": 1,
+          "verb_tag": "HVDI^3^SG",
+          "verb_word_position_in_psd": 374
+        },
+        "IP-SUB_object_after_verb": {
+          "record_id": "OSHeliandC.15.55-56",
+          "verse": 56,
+          "object_word_count": 2,
+          "object_half": 2,
+          "object_word_positions_in_psd": [
+            383,
+            384
+          ],
+          "verb_half": 1,
+          "verb_tag": "HVDI^3^PL",
+          "verb_word_position_in_psd": 381
+        },
+        "IP-SUB_object_before_verb": {
+          "record_id": "OSHeliandC.34.85-87",
+          "verse": 86,
+          "object_word_count": 1,
+          "object_half": 1,
+          "object_word_positions_in_psd": [
+            570
+          ],
+          "verb_half": 2,
+          "verb_tag": "MDDI^3^PL",
+          "verb_word_position_in_psd": 573
+        },
+        "IP-MAT_object_before_verb": {
+          "record_id": "OSHeliandC.748.1372-1373",
+          "verse": 1372,
+          "object_word_count": 1,
+          "object_half": 1,
+          "object_word_positions_in_psd": [
+            10327
+          ],
+          "verb_half": 2,
+          "verb_tag": "VBPI^3^PL",
+          "verb_word_position_in_psd": 10331
+        }
+      },
+      "scope": "这是句法与韵律层对齐的可行性核验。覆盖范围取决于直接节点和词类规则，保留跨行、跨停顿和缺标类别。"
+    }
+  },
+  "coverage_boundary": "完整解析固定版PSD并复核结构、词位计数和诗行标记。逐词、逐句的标注准确性及与抄本页面的完整对勘仍待另查。"
+}

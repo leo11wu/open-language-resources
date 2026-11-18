@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共6个入口。资料状态与文件验收范围分别记录。
+共7个入口。资料状态与文件验收范围分别记录。
 
 <a id="r056"></a>
 
@@ -160,7 +160,7 @@
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution) · [历时机制](../docs/research-needs.md#diachronic-mechanisms)。
 
-待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R196 Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）](../catalog/diachronic-parallel-syntax.md#r196)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)、[R191 DiACL Mouton Atlas（语法编码附录）](../catalog/crossling-cultural.md#r191)、[R196 Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）](../catalog/diachronic-parallel-syntax.md#r196)、[R197 HeliPaD（古撒克逊语《救世主》句法语料库）](../catalog/diachronic-parallel-syntax.md#r197)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
 <a id="r196"></a>
 
@@ -201,6 +201,46 @@
 - [来源 11](https://www.tycho.iel.unicamp.br/manual/12-empty-categories/12-1-null-subjects.html)
 
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution) · [历时机制](../docs/research-needs.md#diachronic-mechanisms)。
+
+待核实关联：[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r197"></a>
+
+## HeliPaD（古撒克逊语《救世主》句法语料库）
+
+**R197** · 数据集 · 有数据发布说明
+
+固定版0.9含3,549条带唯一ID的树记录。诗行编号到5,968，实际读取5,965个行号标记及5,955处两侧均有词的半行分界。可按诗行和半行位置提取主从句、宾语及限定动词的关系。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 古撒克逊语。单一头韵叙事诗《救世主》，以Sievers（1878）C抄本（Cotton Caligula A VII）刊本为底本 |
+| 数据性质 | Penn式成分句法树。UTF-8 PSD同时给出词形、词元、词类、形态、宾语功能和韵律信息。CODE标有诗行、半行分界、篇章和页码；语料与标注 |
+| 获取方式 | 公开数据入口：Zenodo记录提供可直接下载的完整PSD和注释手册。两文件均匹配归档公开的MD5。可用CorpusSearch或支持成分树的程序读取。 |
+| 许可 | CC BY 4.0。署名George Walkden，注明v0.9和版本DOI 10.5281/zenodo.4395040。标注背景参见Walkden（2016）。 |
+| 使用边界 | 使用单一抄本的单一诗体。按CODE恢复行与半行，对照ID范围、缺行与空行。发布报46,067词，本次计46,180个表层词项，重并115组明确的拆词后为46,065。依存距离须说明并核对转换规则。与DDD及ConOS比较时需核对底本、分词和转换范围。 |
+| 标签 | 历时、古撒克逊语、句法、成分树库、诗体、韵律、半行、宾语、词序 |
+| 平台 | zenodo |
+| 核对依据 | 作者仓库说明；2026-11-18 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 依Zenodo的MD5核对PSD与手册。读取完整PSD并逐棵解析3,549条，核对主从句、宾语、诗行和半行标记。记录了跳号、仅含缺文标记的行、ID跨度差异及词数口径。逐词逐句标注及底本对勘待查。证据见data/helipad-file-check-2026-11-18.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://zenodo.org/records/4395040)
+
+补充及核对来源：
+
+- [来源 1](https://zenodo.org/records/4395040/files/heliand.psd?download=1)
+- [来源 2](https://zenodo.org/records/4395040/files/HeliPaD-manual.pdf?download=1)
+- [来源 3](https://doi.org/10.1075/ijcl.21.4.05wal)
+- [来源 4](https://www.chlg.ugent.be/)
+- [来源 5](https://aclanthology.org/2026.udw-1.25/)
+- [来源 6](https://ipchg.iu.edu/annotation/index.html)
+- [来源 7](https://github.com/leo11wu/open-language-resources/blob/main/data/helipad-file-check-2026-11-18.json)
+- [来源 8](https://zenodo.org/api/records/4395040)
+- [来源 9](https://walkden.space/Walkden_2016_HeliPaD.pdf)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
 待核实关联：[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 

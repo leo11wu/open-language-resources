@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.17",
-  "updated_on": "2026-11-17",
+  "catalog_version": "2.5.18",
+  "updated_on": "2026-11-18",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 196,
+  "resource_count": 197,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -172,6 +172,11 @@
           "resource_id": "R196",
           "use_for": "用根层IP-MAT和NP-SBJ分别提取主语显现率与显性主语的动词前比例。ZIP及补下载文件均有可用于抽取的标注。",
           "check_before_use": "逐篇核对没有直接主语标签的分句。显现率分母只合并可判定的显性与指称性零主语，词序条件比例以显性主语为分母。"
+        },
+        {
+          "resource_id": "R197",
+          "use_for": "把古撒克逊语诗体的宾语与限定动词先后同诗行、半行位置连接。已核对主从句中宾语和动词同一行分处两半行的实际例子。",
+          "check_before_use": "按CODE恢复行与半行。核对缺文、短语跨越边界及ID范围，区分附着成分拆词。观察范围限该刊本下的单一诗体。"
         }
       ]
     },
@@ -12563,6 +12568,87 @@
             "read_scope": "complete_json",
             "file_role": "documentation_or_materials",
             "result": "完整读取95条元数据，核对32条PSD标注及句法下载路径，确认ZIP缺va_016、va_017。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R197",
+      "name": "HeliPaD（古撒克逊语《救世主》句法语料库）",
+      "category": "diachronic-parallel-syntax",
+      "entry_type": "dataset",
+      "language_scope": "古撒克逊语。单一头韵叙事诗《救世主》，以Sievers（1878）C抄本（Cotton Caligula A VII）刊本为底本",
+      "language_codes": [
+        "osx"
+      ],
+      "data_type": "Penn式成分句法树。UTF-8 PSD同时给出词形、词元、词类、形态、宾语功能和韵律信息。CODE标有诗行、半行分界、篇章和页码",
+      "description": "固定版0.9含3,549条带唯一ID的树记录。诗行编号到5,968，实际读取5,965个行号标记及5,955处两侧均有词的半行分界。可按诗行和半行位置提取主从句、宾语及限定动词的关系。",
+      "access_mode": "open_data",
+      "access_notes": "Zenodo记录提供可直接下载的完整PSD和注释手册。两文件均匹配归档公开的MD5。可用CorpusSearch或支持成分树的程序读取。",
+      "license_note": "CC BY 4.0。署名George Walkden，注明v0.9和版本DOI 10.5281/zenodo.4395040。标注背景参见Walkden（2016）。",
+      "limitations": "使用单一抄本的单一诗体。按CODE恢复行与半行，对照ID范围、缺行与空行。发布报46,067词，本次计46,180个表层词项，重并115组明确的拆词后为46,065。依存距离须说明并核对转换规则。与DDD及ConOS比较时需核对底本、分词和转换范围。",
+      "source_url": "https://zenodo.org/records/4395040",
+      "additional_urls": [
+        "https://zenodo.org/records/4395040/files/heliand.psd?download=1",
+        "https://zenodo.org/records/4395040/files/HeliPaD-manual.pdf?download=1",
+        "https://doi.org/10.1075/ijcl.21.4.05wal",
+        "https://www.chlg.ugent.be/",
+        "https://aclanthology.org/2026.udw-1.25/",
+        "https://ipchg.iu.edu/annotation/index.html",
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/helipad-file-check-2026-11-18.json"
+      ],
+      "tags": [
+        "历时",
+        "古撒克逊语",
+        "句法",
+        "成分树库",
+        "诗体",
+        "韵律",
+        "半行",
+        "宾语",
+        "词序"
+      ],
+      "related_ids": [
+        "R194"
+      ],
+      "platforms": [
+        "zenodo"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-11-18",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://zenodo.org/records/4395040",
+          "https://zenodo.org/api/records/4395040",
+          "https://zenodo.org/records/4395040/files/HeliPaD-manual.pdf?download=1",
+          "https://walkden.space/Walkden_2016_HeliPaD.pdf",
+          "https://www.chlg.ugent.be/",
+          "https://ipchg.iu.edu/annotation/index.html",
+          "https://aclanthology.org/2026.udw-1.25/"
+        ],
+        "note": "依Zenodo的MD5核对PSD与手册。读取完整PSD并逐棵解析3,549条，核对主从句、宾语、诗行和半行标记。记录了跳号、仅含缺文标记的行、ID跨度差异及词数口径。逐词逐句标注及底本对勘待查。证据见data/helipad-file-check-2026-11-18.json。",
+        "file_checks": [
+          {
+            "url": "https://zenodo.org/records/4395040/files/heliand.psd?download=1",
+            "sha256": "2f83b2c0bb64b0e4dc8284a0aa56aed937f3a0b26ad9a82440d832bf702bda4d",
+            "checked_on": "2026-11-18",
+            "read_scope": "complete_text",
+            "file_role": "corpus_derived_data",
+            "result": "原始PSD全部读取并通过括号解析。与Zenodo大小和MD5一致。实查5,965个行号、5,955处有词的半行分界及句法标注与词位的对齐。"
+          },
+          {
+            "url": "https://zenodo.org/records/4395040/files/HeliPaD-manual.pdf?download=1",
+            "sha256": "a72779141a0a81c26648f9730605ddc4f3c0fd7fe03ba153ac551858e95ad4cf",
+            "checked_on": "2026-11-18",
+            "read_scope": "complete_document_text",
+            "file_role": "documentation_or_materials",
+            "result": "手册匹配归档MD5，提取整份PDF文本并核对韵律CODE、词元、拆词、句法标签及ID规则。"
           }
         ]
       }

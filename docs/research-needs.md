@@ -39,6 +39,7 @@
 | [R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194) | 在同一批实际文本内，分别统计主句和从句中显性主语与限定动词的先后。固定版三个时期均可提取这些结构。 | 区分IP-MAT、IP-MAT-CONJ与IP-SUB，并排除直问句等非目标CP。手册对denn和wan(de)的部分标注依赖V2判断，比较时单列。主语相对位置只测两个成分的先后。 | 已完整检查选定文件；全库未验收 |
 | [R195 BHSA（希伯来圣经形态句法语料库）](../catalog/syntax.md#r195) | 在同一卷内分别抽取叙述分句和直接引语分句，用词位、主语功能和谓语词类统计显性主语与动词的先后。按动词形式复核时，创世记以外十卷中八卷出现总体与perf层的方向反转。 | 区分txt的N、NQ及更深的引语层级。按vt分层并核对两组分母，约书亚记和列王纪下的perf方向与创世记相反。PTNK重用部分文本与形态标注。 | 已完整检查选定文件；全库未验收 |
 | [R196 Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）](../catalog/diachronic-parallel-syntax.md#r196) | 用根层IP-MAT和NP-SBJ分别提取主语显现率与显性主语的动词前比例。ZIP及补下载文件均有可用于抽取的标注。 | 逐篇核对没有直接主语标签的分句。显现率分母只合并可判定的显性与指称性零主语，词序条件比例以显性主语为分母。 | 已完整检查选定文件；全库未验收 |
+| [R197 HeliPaD（古撒克逊语《救世主》句法语料库）](../catalog/diachronic-parallel-syntax.md#r197) | 把古撒克逊语诗体的宾语与限定动词先后同诗行、半行位置连接。已核对主从句中宾语和动词同一行分处两半行的实际例子。 | 按CODE恢复行与半行。核对缺文、短语跨越边界及ID范围，区分附着成分拆词。观察范围限该刊本下的单一诗体。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need structural-distribution

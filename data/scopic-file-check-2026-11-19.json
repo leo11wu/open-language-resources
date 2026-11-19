@@ -1,0 +1,343 @@
+{
+  "resource_id": "R198",
+  "checked_on": "2026-11-19",
+  "release": {
+    "title": "SCOPIC 1.0 corpus files",
+    "archive_item": "SocCog-corp01",
+    "year": 2024,
+    "doi_url": "https://doi.org/10.26278/1YH7-J821",
+    "datacite_url": "https://api.datacite.org/dois/10.26278/1YH7-J821",
+    "archive_url": "https://catalog.paradisec.org.au/repository/SocCog/corp01",
+    "publication_url": "https://nflrc.hawaii.edu/ldc/sp12-the-social-cognition-parallax-interview-corpus-scopic/",
+    "metadata_read": "DataCite记录可读取。它确认2024年条目、档案入口与母档案关系，未列文件、下载直链或许可。",
+    "archive_gets": [
+      {
+        "url": "https://doi.org/10.26278/1YH7-J821",
+        "final_http_status": 403,
+        "files_obtained": 0
+      },
+      {
+        "url": "https://catalog.paradisec.org.au/repository/SocCog/corp01",
+        "http_status": 403,
+        "files_obtained": 0
+      },
+      {
+        "url": "https://catalog.paradisec.org.au/collections/SocCog/items/corp01",
+        "http_status": 403,
+        "files_obtained": 0
+      },
+      {
+        "url": "https://catalog.paradisec.org.au/repository/SocCog",
+        "http_status": 403,
+        "files_obtained": 0
+      }
+    ],
+    "download_tested_successfully": false,
+    "access_and_license": "匿名请求未取得主档条目文件清单、转写、EAF或媒体。PARADISEC的开放项可由同意条款的注册用户下载，具体权限按条目。本版文件的再分发许可仍待查。",
+    "access_conditions_url": "https://www.paradisec.org.au/deposit/access-conditions/",
+    "accounts_url": "https://www.paradisec.org.au/deposit/how-to-administer-your-account/"
+  },
+  "parent_collection": {
+    "catalogue_url": "https://researchdata.edu.au/social-cognition-project-problems-task/12558",
+    "doi": "10.4225/72/56E9769B1ADD9",
+    "scope": "母档案含Family Problems和Crow and Jackal等材料，提供Kómnzo逐词注释的带时间位置例子。语种与样例范围不能替代1.0文件清单。",
+    "japanese_item_metadata_url": "https://researchdata.edu.au/soccog-jpn01-social-1-kyoto/1697715"
+  },
+  "annotation_and_task": {
+    "guidelines_url": "https://www.diva-portal.org/smash/get/diva2%3A1918058/FULLTEXT01.pdf",
+    "protocol_url": "https://scopicproject.wordpress.com/run-the-task/",
+    "guidelines_project_coverage": "2024年指南报告项目当时涵盖30种语言或变体，包括Auslan。",
+    "documented_formats": "项目ELAN转写与按功能标注。1.0为转写和标注数据导出，指南引用为CSV，原始媒体按档案条目存放。",
+    "documented_tiers": [
+      "Task",
+      "FPPT_CARDS",
+      "Transcription",
+      "Human Referent",
+      "Reported Speech"
+    ],
+    "task_phases": {
+      "1": "描述图片",
+      "2": "合作排图并协商故事",
+      "3": "第三人称讲述",
+      "4": "第一人称讲述"
+    },
+    "card_scope": "FPPT_CARDS层在能识别时标注图片号。不能判定单张图片或在谈所有图时可标All。"
+  },
+  "separately_published_study_supplement": {
+    "study": "Barth 等（2026），Word choice is coupled with grammar: The case of kinship",
+    "article_url": "https://doi.org/10.1371/journal.pone.0355784",
+    "osf_url": "https://osf.io/gh69y/",
+    "listing_url": "https://api.osf.io/v2/nodes/gh69y/files/osfstorage/",
+    "scope": "作者发表的亲属称谓研究表。每行是经作者筛选的人类指称项，与整库转写、完整句法标注或原始影音的检查范围不同。",
+    "table": {
+      "name": "HR_export_2025110_melted_coded_excluded.csv",
+      "file_url": "https://osf.io/download/jvmh8/",
+      "metadata_url": "https://api.osf.io/v2/files/6912e586128b3de1cbe2f53e/",
+      "osf_file_version": 1,
+      "bytes": 8972189,
+      "sha256": "1b38adca26f02d30d75015f21df30b8ed49ff5b0adb62e17331077079e13f5b7",
+      "matches_osf_metadata": true,
+      "rows": 18841,
+      "columns": 54,
+      "language_codes": 22,
+      "rows_by_phase": {
+        "1": 9431,
+        "2": 2920,
+        "3": 3995,
+        "4": 2495
+      },
+      "rows_by_language_and_phase": {
+        "ASF": {
+          "1": 689,
+          "2": 485,
+          "3": 182,
+          "4": 122
+        },
+        "AVN": {
+          "1": 290,
+          "2": 85,
+          "3": 182
+        },
+        "BAN": {
+          "1": 2287,
+          "2": 726,
+          "3": 1308,
+          "4": 998
+        },
+        "DAL": {
+          "1": 213,
+          "2": 84,
+          "3": 19
+        },
+        "DAR": {
+          "1": 353,
+          "2": 106,
+          "3": 138
+        },
+        "DEU": {
+          "1": 225,
+          "2": 21,
+          "3": 54,
+          "4": 107
+        },
+        "DUC": {
+          "1": 103,
+          "2": 12,
+          "3": 104
+        },
+        "ENG": {
+          "1": 328,
+          "2": 36,
+          "3": 95,
+          "4": 94
+        },
+        "IDI": {
+          "1": 55
+        },
+        "ILO": {
+          "1": 37,
+          "2": 11,
+          "3": 16,
+          "4": 23
+        },
+        "JPN": {
+          "1": 168,
+          "2": 28,
+          "3": 117,
+          "4": 122
+        },
+        "KAC": {
+          "1": 468,
+          "2": 34,
+          "3": 112,
+          "4": 140
+        },
+        "KOG": {
+          "1": 118,
+          "2": 36,
+          "3": 117,
+          "4": 73
+        },
+        "KOMNZO": {
+          "1": 160,
+          "2": 35,
+          "3": 75,
+          "4": 8
+        },
+        "MJK": {
+          "1": 799,
+          "2": 314,
+          "3": 496,
+          "4": 43
+        },
+        "MON": {
+          "1": 1520,
+          "2": 257,
+          "3": 321,
+          "4": 348
+        },
+        "MUX": {
+          "1": 110,
+          "2": 138,
+          "3": 38,
+          "4": 20
+        },
+        "MWF": {
+          "1": 140,
+          "2": 18
+        },
+        "ROP": {
+          "1": 164,
+          "2": 13,
+          "3": 83,
+          "4": 22
+        },
+        "SJO": {
+          "1": 99,
+          "2": 1,
+          "3": 59,
+          "4": 33
+        },
+        "VRA": {
+          "1": 108,
+          "2": 32,
+          "3": 135,
+          "4": 92
+        },
+        "YUZ": {
+          "1": 997,
+          "2": 448,
+          "3": 344,
+          "4": 250
+        }
+      },
+      "missing_values_in_pairing_columns": 0,
+      "file_names_with_multiple_language_group_keys": 0,
+      "invalid_utf8_bytes_by_column": {
+        "English Translation": 5,
+        "Term_Notes": 24
+      },
+      "decoding": "按UTF-8读取并保留不能解码的字节。异常只出现在译文和术语备注，配对字段均可解码。"
+    },
+    "model_script": {
+      "name": "PLOS_model_building.R",
+      "file_url": "https://osf.io/download/xbk9r/",
+      "metadata_url": "https://api.osf.io/v2/files/6912e587fb1883a569fdc911/",
+      "osf_file_version": 1,
+      "bytes": 8813,
+      "sha256": "2176f50c0f9cafca39202873107463cc823e6f18e0d71352bed336d6d4e9acc8",
+      "matches_osf_metadata": true,
+      "read_scope": "阅读源代码核对处理规则。作者以ISO、Group、Individuals表示语言、组和个人，将阶段1、2归为conversation，阶段3、4归为narrative。"
+    },
+    "pairing": {
+      "unit": "补充表内的语言×小组×参与者×图片编号",
+      "key_columns": [
+        "ISO",
+        "Group",
+        "Individuals",
+        "CARD_1"
+      ],
+      "phase_column": "task.part",
+      "rule": "去除键两端空白。只保留编号1至16的图片。一个键在指定阶段各至少有一行才计入该项对照。同一小组或同一人的不同图片可重复贡献。",
+      "rows_excluded_for_no_specific_card": 3663,
+      "unique_keys_with_specific_card": 2346,
+      "comparisons": [
+        {
+          "task_parts": [
+            "2",
+            "3"
+          ],
+          "matched_keys": 375,
+          "matched_keys_by_language_code": {
+            "ASF": 46,
+            "AVN": 15,
+            "BAN": 139,
+            "DAL": 8,
+            "DAR": 18,
+            "DEU": 3,
+            "DUC": 2,
+            "ENG": 9,
+            "ILO": 2,
+            "JPN": 4,
+            "KAC": 7,
+            "KOG": 8,
+            "MJK": 37,
+            "MON": 3,
+            "ROP": 6,
+            "YUZ": 68
+          },
+          "language_codes_with_matches": 16,
+          "language_group_keys": 58,
+          "language_group_individual_keys": 72,
+          "keys_with_at_least_three_rows_per_phase": 117
+        },
+        {
+          "task_parts": [
+            "2",
+            "4"
+          ],
+          "matched_keys": 198,
+          "matched_keys_by_language_code": {
+            "ASF": 25,
+            "BAN": 77,
+            "DEU": 7,
+            "ENG": 6,
+            "ILO": 1,
+            "KAC": 9,
+            "KOG": 8,
+            "MJK": 13,
+            "MON": 2,
+            "YUZ": 50
+          },
+          "language_codes_with_matches": 10,
+          "language_group_keys": 34,
+          "language_group_individual_keys": 41,
+          "keys_with_at_least_three_rows_per_phase": 47
+        },
+        {
+          "task_parts": [
+            "3",
+            "4"
+          ],
+          "matched_keys": 241,
+          "matched_keys_by_language_code": {
+            "BAN": 131,
+            "DEU": 18,
+            "ILO": 5,
+            "JPN": 1,
+            "KAC": 12,
+            "KOG": 17,
+            "ROP": 10,
+            "YUZ": 47
+          },
+          "language_codes_with_matches": 8,
+          "language_group_keys": 30,
+          "language_group_individual_keys": 39,
+          "keys_with_at_least_three_rows_per_phase": 63
+        },
+        {
+          "task_parts": [
+            "2",
+            "3",
+            "4"
+          ],
+          "matched_keys": 120,
+          "matched_keys_by_language_code": {
+            "BAN": 75,
+            "DEU": 3,
+            "ILO": 1,
+            "KAC": 2,
+            "KOG": 5,
+            "YUZ": 34
+          },
+          "language_codes_with_matches": 6,
+          "language_group_keys": 22,
+          "language_group_individual_keys": 25,
+          "keys_with_at_least_three_rows_per_phase": 25
+        }
+      ],
+      "interpretation": "计数表示补充表内分组和图片标签的实际重合。相同卡片可有不同叙述情节或指称对象。补充表只记录作者筛选后的指称项且未逐条回听影音，缺配对不能推断原语料缺阶段。各键也不是独立参与者。",
+      "design_note": "第一人称和第三人称分别比。标准流程中复述面向新加入听者，且位于协商之后。部分场次合并前两阶段或缺新听者。比较值描述阶段差异，若要归因于一个因素需要额外证据。"
+    }
+  }
+}

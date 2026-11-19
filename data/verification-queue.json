@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-18",
-  "catalog_version": "2.5.18",
+  "generated_on": "2026-11-19",
+  "catalog_version": "2.5.19",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,9 +12,9 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 197,
+    "main_resource_count": 198,
     "main_by_check_state": {
-      "documentation_only": 97,
+      "documentation_only": 98,
       "file_preview": 2,
       "selected_file_checked": 85,
       "supporting_files_checked": 5,
@@ -22,7 +22,7 @@
       "discovery_portal": 8
     },
     "main_with_recorded_file_reads": 92,
-    "main_without_recorded_file_reads": 105,
+    "main_without_recorded_file_reads": 106,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
     "norare_source_record_count": 182,
@@ -6747,6 +6747,26 @@
       "osf_audit": null,
       "next_steps": [
         "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R198",
+      "name": "SCOPIC 1.0（跨语言社会认知互动语料库）",
+      "category": "social-interaction",
+      "source_url": "https://doi.org/10.26278/1YH7-J821",
+      "platforms": [
+        "paradisec"
+      ],
+      "osf_ids": [],
+      "check_state": "documentation_only",
+      "documentation_checked_on": "2026-11-19",
+      "download_tested": false,
+      "data_files_validated": false,
+      "recorded_file_checks": [],
+      "osf_audit": null,
+      "next_steps": [
+        "定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围。",
         "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
       ]
     }

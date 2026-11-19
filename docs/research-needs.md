@@ -78,6 +78,7 @@ python3 scripts/query.py --need processing-evidence
 | [R015 CABank](../catalog/spoken-variation.md#r015) | 寻找带精细转写和同步媒体的自然互动子库。 | 按具体子库确认获取条件、转写规范与修复标注；集合入口不是一张可直接分析的表。 | 仅核对说明；未读数据文件 |
 | [R174 SCARFS：熟人与陌生人的指称互动](../catalog/social-interaction.md#r174) | 比较熟人与陌生人的指称选择及游戏行为。 | 保留说话者、伙伴、会话与记录键的嵌套；Lost不等于理解失败，首次听者猜测仍待确认。 | 已完整检查选定文件；全库未验收 |
 | [R181 儿童—照护者语言协调与词汇学习（38组亲子）](../catalog/child-language.md#r181) | 研究亲子互动协调与词汇学习的关系。 | 区分38组亲子的不同粒度处理表与打乱对照；不能把各表行数相加为独立被试。 | 已完整检查选定文件；全库未验收 |
+| [R198 SCOPIC 1.0（跨语言社会认知互动语料库）](../catalog/social-interaction.md#r198) | 先在同一语言内配对同组、同人、同一图片编号，比较协商和讲述中的人物指称，再比较语言间变化方向。 | 先分开第三与第一人称，核对复述听者、场次变体和无具体图片号的记录。作者补充表覆盖筛选后的人类指称项。研究其他句法结构需读取对应转写并定义分母。 | 仅核对说明；未读数据文件 |
 
 ```sh
 python3 scripts/query.py --need communicative-adjustment

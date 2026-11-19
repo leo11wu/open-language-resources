@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共17个入口。资料状态与文件验收范围分别记录。
+共18个入口。资料状态与文件验收范围分别记录。
 
 <a id="r016"></a>
 
@@ -466,4 +466,44 @@ Scientific Reports的数据声明明确公开因果、情态和否定触发的�
 - [来源 1](https://www.nature.com/articles/s41598-024-80571-3)
 - [来源 2](https://osf.io/download/jyzkm/)
 - [来源 3](https://osf.io/download/hmyc9/)
+
+<a id="r198"></a>
+
+## SCOPIC 1.0（跨语言社会认知互动语料库）
+
+**R198** · 数据集 · 有数据发布说明
+
+以无字图片为共同刺激，记录描述图片、合作排图协商、第三人称讲述和第一人称讲述。可用实际指称项比较会话与叙事。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 2024年指南报告项目涉及30种语言或变体，含澳大利亚手语Auslan。1.0正式档案的逐语种和逐阶段覆盖待核对。 |
+| 数据性质 | 标准图片任务诱发的多语互动与叙事。项目用ELAN标记任务、图片、转写、翻译及人物指称、转述等功能。1.0发布转写与标注表。；语料与标注 |
+| 获取方式 | 部分开放或分层访问：正式发布为PARADISEC的SocCog-corp01。开放项须注册并同意档案条款。此次匿名访问正式条目返回403。作者另发布可直接下载的亲属称谓研究CSV。 |
+| 许可 | 主档受PARADISEC条款及各条目条件约束。DataCite未列1.0专门许可，再分发权限待确认。使用时按要求署名采录者与档案并注明DOI。 |
+| 使用边界 | 标准流程中复述发生在协商之后并面向新听者，个别场次有变体。人物指称表可以按场次、个人和图片号配对，仍需核对叙事情节、标注覆盖、谱系和语种间样本量。单一手语无法区分语言和模态差异。 |
+| 标签 | 社会认知、合作叙事、人物指称、图片任务、任务阶段、跨语言、手语、ELAN |
+| 平台 | paradisec |
+| 核对依据 | 出版方资源描述；2026-11-19 |
+| 实际文件核验 | **仅核对说明；未读数据文件** |
+| 核对范围 | 核对正式发布、任务流程及分层标注说明。PARADISEC入口返回403，主档文件未读取。另完整核对作者的18,841行指称研究表，实查16种语言有合作排图与第三人称讲述的同组、同人、同图片编号记录。该表的范围与配对统计见data/scopic-file-check-2026-11-19.json。 |
+| 下一步 | 定位并读取代表性数据文件，记录格式、行列或样本单位、变量和读取范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://doi.org/10.26278/1YH7-J821)
+
+补充及核对来源：
+
+- [来源 1](https://nflrc.hawaii.edu/ldc/sp12-the-social-cognition-parallax-interview-corpus-scopic/)
+- [来源 2](https://www.diva-portal.org/smash/get/diva2%3A1918058/FULLTEXT01.pdf)
+- [来源 3](https://researchdata.edu.au/social-cognition-project-problems-task/12558)
+- [来源 4](https://www.paradisec.org.au/deposit/access-conditions/)
+- [来源 5](https://osf.io/gh69y/)
+- [来源 6](https://doi.org/10.1371/journal.pone.0355784)
+- [来源 7](https://github.com/leo11wu/open-language-resources/blob/main/data/scopic-file-check-2026-11-19.json)
+- [来源 8](https://api.datacite.org/dois/10.26278/1YH7-J821)
+- [来源 9](https://www.paradisec.org.au/deposit/how-to-administer-your-account/)
+- [来源 10](https://researchdata.edu.au/soccog-jpn01-social-1-kyoto/1697715)
+- [来源 11](https://api.osf.io/v2/nodes/gh69y/files/osfstorage/)
+
+研究入口：[交际调整](../docs/research-needs.md#communicative-adjustment)。
 

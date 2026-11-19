@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.18",
-  "updated_on": "2026-11-18",
+  "catalog_version": "2.5.19",
+  "updated_on": "2026-11-19",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 197,
+  "resource_count": 198,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -233,6 +233,11 @@
           "resource_id": "R181",
           "use_for": "研究亲子互动协调与词汇学习的关系。",
           "check_before_use": "区分38组亲子的不同粒度处理表与打乱对照；不能把各表行数相加为独立被试。"
+        },
+        {
+          "resource_id": "R198",
+          "use_for": "先在同一语言内配对同组、同人、同一图片编号，比较协商和讲述中的人物指称，再比较语言间变化方向。",
+          "check_before_use": "先分开第三与第一人称，核对复述听者、场次变体和无具体图片号的记录。作者补充表覆盖筛选后的人类指称项。研究其他句法结构需读取对应转写并定义分母。"
         }
       ]
     },
@@ -12651,6 +12656,67 @@
             "result": "手册匹配归档MD5，提取整份PDF文本并核对韵律CODE、词元、拆词、句法标签及ID规则。"
           }
         ]
+      }
+    },
+    {
+      "id": "R198",
+      "name": "SCOPIC 1.0（跨语言社会认知互动语料库）",
+      "category": "social-interaction",
+      "entry_type": "dataset",
+      "language_scope": "2024年指南报告项目涉及30种语言或变体，含澳大利亚手语Auslan。1.0正式档案的逐语种和逐阶段覆盖待核对。",
+      "language_codes": [
+        "mul"
+      ],
+      "data_type": "标准图片任务诱发的多语互动与叙事。项目用ELAN标记任务、图片、转写、翻译及人物指称、转述等功能。1.0发布转写与标注表。",
+      "description": "以无字图片为共同刺激，记录描述图片、合作排图协商、第三人称讲述和第一人称讲述。可用实际指称项比较会话与叙事。",
+      "access_mode": "mixed_access",
+      "access_notes": "正式发布为PARADISEC的SocCog-corp01。开放项须注册并同意档案条款。此次匿名访问正式条目返回403。作者另发布可直接下载的亲属称谓研究CSV。",
+      "license_note": "主档受PARADISEC条款及各条目条件约束。DataCite未列1.0专门许可，再分发权限待确认。使用时按要求署名采录者与档案并注明DOI。",
+      "limitations": "标准流程中复述发生在协商之后并面向新听者，个别场次有变体。人物指称表可以按场次、个人和图片号配对，仍需核对叙事情节、标注覆盖、谱系和语种间样本量。单一手语无法区分语言和模态差异。",
+      "source_url": "https://doi.org/10.26278/1YH7-J821",
+      "additional_urls": [
+        "https://nflrc.hawaii.edu/ldc/sp12-the-social-cognition-parallax-interview-corpus-scopic/",
+        "https://www.diva-portal.org/smash/get/diva2%3A1918058/FULLTEXT01.pdf",
+        "https://researchdata.edu.au/social-cognition-project-problems-task/12558",
+        "https://www.paradisec.org.au/deposit/access-conditions/",
+        "https://osf.io/gh69y/",
+        "https://doi.org/10.1371/journal.pone.0355784",
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/scopic-file-check-2026-11-19.json"
+      ],
+      "tags": [
+        "社会认知",
+        "合作叙事",
+        "人物指称",
+        "图片任务",
+        "任务阶段",
+        "跨语言",
+        "手语",
+        "ELAN"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "paradisec"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-11-19",
+        "scope": "resource_description_and_access_documentation",
+        "download_tested": false,
+        "data_files_validated": false,
+        "evidence_type": "publisher_resource_description",
+        "evidence_urls": [
+          "https://nflrc.hawaii.edu/ldc/sp12-the-social-cognition-parallax-interview-corpus-scopic/",
+          "https://api.datacite.org/dois/10.26278/1YH7-J821",
+          "https://www.diva-portal.org/smash/get/diva2%3A1918058/FULLTEXT01.pdf",
+          "https://www.paradisec.org.au/deposit/how-to-administer-your-account/",
+          "https://researchdata.edu.au/social-cognition-project-problems-task/12558",
+          "https://researchdata.edu.au/soccog-jpn01-social-1-kyoto/1697715",
+          "https://doi.org/10.1371/journal.pone.0355784",
+          "https://api.osf.io/v2/nodes/gh69y/files/osfstorage/"
+        ],
+        "note": "核对正式发布、任务流程及分层标注说明。PARADISEC入口返回403，主档文件未读取。另完整核对作者的18,841行指称研究表，实查16种语言有合作排图与第三人称讲述的同组、同人、同图片编号记录。该表的范围与配对统计见data/scopic-file-check-2026-11-19.json。"
       }
     }
   ]

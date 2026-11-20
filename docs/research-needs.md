@@ -40,6 +40,7 @@
 | [R195 BHSA（希伯来圣经形态句法语料库）](../catalog/syntax.md#r195) | 在同一卷内分别抽取叙述分句和直接引语分句，用词位、主语功能和谓语词类统计显性主语与动词的先后。按动词形式复核时，创世记以外十卷中八卷出现总体与perf层的方向反转。 | 区分txt的N、NQ及更深的引语层级。按vt分层并核对两组分母，约书亚记和列王纪下的perf方向与创世记相反。PTNK重用部分文本与形态标注。 | 已完整检查选定文件；全库未验收 |
 | [R196 Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）](../catalog/diachronic-parallel-syntax.md#r196) | 用根层IP-MAT和NP-SBJ分别提取主语显现率与显性主语的动词前比例。ZIP及补下载文件均有可用于抽取的标注。 | 逐篇核对没有直接主语标签的分句。显现率分母只合并可判定的显性与指称性零主语，词序条件比例以显性主语为分母。 | 已完整检查选定文件；全库未验收 |
 | [R197 HeliPaD（古撒克逊语《救世主》句法语料库）](../catalog/diachronic-parallel-syntax.md#r197) | 把古撒克逊语诗体的宾语与限定动词先后同诗行、半行位置连接。已核对主从句中宾语和动词同一行分处两半行的实际例子。 | 按CODE恢复行与半行。核对缺文、短语跨越边界及ID范围，区分附着成分拆词。观察范围限该刊本下的单一诗体。 | 已完整检查选定文件；全库未验收 |
+| [R199 Rhapsodie（法语口语句法与韵律树库）](../catalog/syntax.md#r199) | 在实际口语中比较长、短依存弧跨越韵律边界的比例，并按独白、对话分层。原项目合表同时记录依存、停顿与韵律周期。 | 以录音为分组单位。跨原版与UD时先核对分词、说话人和词位时间。回查缺失、零长或逆序时标。UD开发集和测试集共享M0001。 | 已完整检查选定文件；全库未验收 |
 
 ```sh
 python3 scripts/query.py --need structural-distribution
@@ -132,7 +133,7 @@ python3 scripts/query.py --need diachronic-mechanisms
 | 派生自（`derived_from`） | 4 |
 | 同一批被试（`same_participants`） | 0 |
 | 同一套材料（`same_materials`） | 1 |
-| 子集（`subset_of`） | 1 |
+| 子集（`subset_of`） | 2 |
 | 已验证可连接（`verified_join`） | 0 |
 
 0表示尚未记录有充分依据的关系，不表示已证明不存在。“已验证可连接”必须另外记录两个文件的版本、完整文件哈希、连接键、匹配诊断和实际检查报告；仅共享词形、语言标识或提示词不能满足这个条件。定义与维护方法见[字段说明](data-dictionary.md#资源关系)。

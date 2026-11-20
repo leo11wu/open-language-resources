@@ -2,16 +2,16 @@
 
 用于按语言现象寻找可复用数据：儿童语言、社会互动、词汇常模、中文与双语、句法、形态、语音、眼动与神经语言。
 
-主目录 **198个资源入口、14类**，其中 **74条关联OSF**；[句法专类](catalog/syntax.md)有 **37条**。更新：**2026-11-19**。
+主目录 **199个资源入口、14类**，其中 **74条关联OSF**；[句法专类](catalog/syntax.md)有 **38条**。更新：**2026-11-20**。
 
 另附 [NoRaRe的182条具体来源记录](catalog/norare-source-index.md)和 [待核对的11条线索](catalog/discovery-candidates.md)。来源记录可能重命名、共享数据或与主目录重叠，**这些数字不相加为独立数据集总数**。
 
-**文件核验进度：98条仅核对说明、2条读取头部样例、85条完整检查选定数据文件、5条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
+**文件核验进度：98条仅核对说明、2条读取头部样例、86条完整检查选定数据文件、5条仅辅助文件已读、0条完成资源文件验收；另有8个发现入口。** [查看全部逐项状态与后续清单](catalog/verification-status.md)。
 
 ## 快速入口
 
 - [OSF语言资源索引](catalog/osf.md)：按主题浏览，并查看数据发布依据。
-- [核验进度与待检查清单](catalog/verification-status.md)：全部198条逐项状态与未完成检查。
+- [核验进度与待检查清单](catalog/verification-status.md)：全部199条逐项状态与未完成检查。
 - [OSF续查60条资源与5个候选原项目](catalog/osf-file-audit-2026-10-20.md)：实际下载、解析、样例与失败记录。
 - [不依赖OSF的资源组合与研究机会](research/nonosf-opportunities-2026-10-17.md)：结合既有研究的四条候选路线及实际对齐检查。
 - [第一条想法的初次可行性试算](research/semantic-priming-feasibility-2026-10-17.md)：原覆盖530组；后续事件审计另排除1组，见下列pilot。
@@ -30,7 +30,7 @@
 
 | 研究需要 | 入口问题 | 精选资源数 |
 | --- | --- | ---: |
-| [结构分布](docs/research-needs.md#structural-distribution) | 哪些结构更常见？词序、依存关系和跨语言差异怎样比较？ | 20 |
+| [结构分布](docs/research-needs.md#structural-distribution) | 哪些结构更常见？词序、依存关系和跨语言差异怎样比较？ | 21 |
 | [加工证据](docs/research-needs.md#processing-evidence) | 结构或词汇属性与阅读时间、眼动、神经信号有什么关系？ | 4 |
 | [交际调整](docs/research-needs.md#communicative-adjustment) | 说话者怎样随伙伴、共同知识和理解困难调整表达？ | 5 |
 | [跨模态规律](docs/research-needs.md#cross-modal-patterns) | 口语与手语的频率、感知运动属性和形式时长怎样比较？ | 4 |
@@ -47,7 +47,7 @@
 | 派生自（`derived_from`） | 4 | 原数据经转换、标注或再分析；不能算作独立重复验证。 |
 | 同一批被试（`same_participants`） | 0 | 需要明确的被试复用依据，并说明重叠范围。 |
 | 同一套材料（`same_materials`） | 1 | 明确共享哪些刺激、提示词或文本；不表示同被试或同反应。 |
-| 子集（`subset_of`） | 1 | 明确抽样范围或发行集合成员关系。 |
+| 子集（`subset_of`） | 2 | 明确抽样范围或发行集合成员关系。 |
 | 已验证可连接（`verified_join`） | 0 | 实际检查具体文件、版本、完整哈希、连接键与匹配诊断，并保留报告。 |
 
 当前有依据的具体关系如下；链接进入条目可查看原始来源与核对日期。
@@ -60,8 +60,9 @@
 | [R180](catalog/lexical-cognition.md#r180) | 同一套材料 | [R022](catalog/lexical-cognition.md#r022) | 仅指LWOW生成阶段复用SWOW-EN18（SWOW-EN.R100.csv）的英语提示词；不涵盖清洗后全量材料相等、被试、反应或SWOW其他语种。 |
 | [R189](catalog/crossling-cultural.md#r189) | 派生自 | [R045](catalog/crossling-cultural.md#r045) | 限ATLAs词序模块WO中从WALS章节提取的部分编码，部分值按ATLAs定义重核。 |
 | [R189](catalog/crossling-cultural.md#r189) | 派生自 | [R187](catalog/crossling-cultural.md#r187) | 限ATLAs指示词模块Dem中取自SAILS名词短语模块的部分编码。R187作为源项目入口，引用的具体SAILS快照有待核实。 |
+| [R199](catalog/syntax.md#r199) | 子集属于 | [R059](catalog/syntax.md#r059) | 限UD French Rhapsodie转换版作为UD发行集合成员。原项目音频及原标注另按原版使用。 |
 
-0表示尚未记录充分依据，不表示关系不存在。原关联继续标为“待核实关联”；共享词形、主题相近或统计相关都不会自动升级为同被试、同材料或已验证可连接。关系说明不改变198条资源原有的文件核验状态。[完整定义与证据要求](docs/data-dictionary.md#资源关系)。
+0表示尚未记录充分依据，不表示关系不存在。原关联继续标为“待核实关联”；共享词形、主题相近或统计相关都不会自动升级为同被试、同材料或已验证可连接。关系说明不改变199条资源原有的文件核验状态。[完整定义与证据要求](docs/data-dictionary.md#资源关系)。
 
 [原22条候选的逐项复核](catalog/candidate-audit.md)：累计11条补入主目录，11条保留具体限制或待确认事项。本轮追查5条，新增晋升1条。
 
@@ -77,7 +78,7 @@
 | 跨语言结构与社会文化 | 20 | [查看](catalog/crossling-cultural.md) |
 | 手语、成语与抽象意义 | 10 | [查看](catalog/sign-figurative.md) |
 | 历时与平行语料 | 7 | [查看](catalog/diachronic-parallel-syntax.md) |
-| 句法、可接受度与句子加工 | 37 | [查看](catalog/syntax.md) |
+| 句法、可接受度与句子加工 | 38 | [查看](catalog/syntax.md) |
 | 形态、构词与形态加工 | 6 | [查看](catalog/morphology.md) |
 | 语音、音系与声学 | 10 | [查看](catalog/speech-phonetics.md) |
 | 阅读、眼动与神经语言 | 13 | [查看](catalog/reading-neuro.md) |
@@ -294,6 +295,7 @@
 | R196 | [Tycho Brahe Parsed Corpus of Historical Portuguese（历史葡萄牙语树库）](catalog/diachronic-parallel-syntax.md#r196) | 历时与平行语料 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R197 | [HeliPaD（古撒克逊语《救世主》句法语料库）](catalog/diachronic-parallel-syntax.md#r197) | 历时与平行语料 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 | R198 | [SCOPIC 1.0（跨语言社会认知互动语料库）](catalog/social-interaction.md#r198) | 社会互动与语用 | 有数据发布说明 | 仅核对说明；未读数据文件 |
+| R199 | [Rhapsodie（法语口语句法与韵律树库）](catalog/syntax.md#r199) | 句法、可接受度与句子加工 | 有数据发布说明 | 已完整检查选定文件；全库未验收 |
 
 ## 本地筛选
 

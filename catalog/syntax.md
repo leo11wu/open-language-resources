@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共37个入口。资料状态与文件验收范围分别记录。
+共38个入口。资料状态与文件验收范围分别记录。
 
 <a id="r059"></a>
 
@@ -39,6 +39,7 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 | 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
 | --- | --- | --- | --- | --- |
 | 包含子集 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | R061 → R059 | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 | 说明核对，2026-11-02；UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
+| 包含子集 | [R199 Rhapsodie（法语口语句法与韵律树库）](../catalog/syntax.md#r199) | R199 → R059 | 限UD French Rhapsodie转换版作为UD发行集合成员。原项目音频及原标注另按原版使用。 | 说明核对，2026-11-20；UD项目页记录该树库自UD 2.2纳入发行。本次核对的是UD 2.19。 [来源1](https://universaldependencies.org/treebanks/fr_rhapsodie/) [来源2](https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0) |
 
 待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)、[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)、[R195 BHSA（希伯来圣经形态句法语料库）](../catalog/syntax.md#r195)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
@@ -1061,4 +1062,51 @@ ETCBC在Biblia Hebraica Stuttgartensia文本上提供形态句法标注。2021�
 研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
 
 待核实关联：[R059 Universal Dependencies（UD）](../catalog/syntax.md#r059)。仅保留原目录线索，未确认五类关系或具体文件可连接。
+
+<a id="r199"></a>
+
+## Rhapsodie（法语口语句法与韵律树库）
+
+**R199** · 数据集 · 有数据发布说明
+
+原版v2.0含57段录音，共30段独白和27段对话。官网统计总时长11,301秒。UD 2.19的3,209个句段、44,231个整数ID词位（含标点）来自相同的57段录音。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 法语口语。独白与对话涵盖私人和公共场合，来自多种采录来源。 |
+| 数据性质 | 音频对齐的法语口语树库。原版有录音、转写、微句法、宏句法和韵律层，提供TXT、表格与Praat TextGrid。UD版提供带词位时标和录音信息的CoNLL-U依存树；语料与标注 |
+| 获取方式 | 公开数据入口：原官网分包提供MP3、WAV、元数据及各层标注。UD固定提交提供训练、开发、测试三份CoNLL-U。两版的标注均已实际下载。 |
+| 许可 | 原版音频及标注为CC BY-NC-SA 3.0 France。UD文件按固定提交中的许可证为CC BY-SA 4.0。引用原语料按项目要求注明Rhap编号和录音出处。 |
+| 使用边界 | 原版和UD版共享全部57段录音。统计时按共同来源分组，跨版本按词使用前另核对分词与时标。开发集和测试集共用M0001但句段不同。UD有385条逆序时标，其中368条为标点。另有7,231条零时长记录。 |
+| 标签 | 法语、句法、依存树库、口语、韵律、停顿、对话、音频对齐、UD |
+| 平台 | project_website, github |
+| 核对依据 | 作者仓库说明；2026-11-20 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 读取原版元数据、宏句法、合并标注和TextGrid，完整解析UD三个分集并核对57段录音编号。从MP3包取一段独白和一段对话，校验并完整解码。其余音频只核对包内编号。时标、分集和XML问题详见data/rhapsodie-file-check-2026-11-20.json。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://rhapsodie.modyco.fr/)
+
+补充及核对来源：
+
+- [来源 1](https://rhapsodie.modyco.fr/francais-parle/)
+- [来源 2](https://rhapsodie.modyco.fr/propriete-intellectuelle/)
+- [来源 3](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/)
+- [来源 4](https://rhapsodie.modyco.fr/wp-content/uploads/2017/04/Description_Rhapsodie-fr.micromacroprosody.pdf)
+- [来源 5](https://aclanthology.org/L14-1329/)
+- [来源 6](https://rhapsodie.modyco.fr/rp/waves/Rhap-sound-mp3.zip)
+- [来源 7](https://rhapsodie.modyco.fr/rp/syntaxe/micro_macro_prosody.tgz)
+- [来源 8](https://rhapsodie.modyco.fr/rp/prosodie/finaux/Rhap-proso-all-textgrids.zip)
+- [来源 9](https://universaldependencies.org/treebanks/fr_rhapsodie/)
+- [来源 10](https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0)
+- [来源 11](https://raw.githubusercontent.com/UniversalDependencies/UD_French-Rhapsodie/328d59578edb570e3f4992dc173bf575e68084a0/LICENSE.txt)
+- [来源 12](https://github.com/leo11wu/open-language-resources/blob/main/data/rhapsodie-file-check-2026-11-20.json)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 子集属于 | [R059 Universal Dependencies（UD）](../catalog/syntax.md#r059) | R199 → R059 | 限UD French Rhapsodie转换版作为UD发行集合成员。原项目音频及原标注另按原版使用。 | 说明核对，2026-11-20；UD项目页记录该树库自UD 2.2纳入发行。本次核对的是UD 2.19。 [来源1](https://universaldependencies.org/treebanks/fr_rhapsodie/) [来源2](https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0) |
 

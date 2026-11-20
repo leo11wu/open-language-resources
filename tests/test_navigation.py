@@ -200,7 +200,7 @@ class CatalogIntegrationTests(unittest.TestCase):
 
     def test_research_need_filter_combines_with_existing_filters(self):
         rows = self.query('--need', 'structural-distribution', '--category', 'syntax')
-        self.assertEqual({'R059', 'R061', 'R195'}, {r['id'] for r in rows})
+        self.assertEqual({'R059', 'R061', 'R195', 'R199'}, {r['id'] for r in rows})
         self.assertTrue(all(r['research_need_match']['check_before_use'] for r in rows))
         rows = self.query('--need', 'processing-evidence', '--check-state', 'supporting_files_checked')
         self.assertEqual(['R040'], [r['id'] for r in rows])

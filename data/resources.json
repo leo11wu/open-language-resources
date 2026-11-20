@@ -1,11 +1,11 @@
 {
   "$schema": "../schema/resources.schema.json",
   "schema_version": "1.6.0",
-  "catalog_version": "2.5.19",
-  "updated_on": "2026-11-19",
+  "catalog_version": "2.5.20",
+  "updated_on": "2026-11-20",
   "title": "公开语言资源目录",
   "description": "面向语言学研究的可检索资源目录；扩充OSF项目、句法、形态、语音、阅读与神经语言资料，并另列聚合来源索引。",
-  "resource_count": 198,
+  "resource_count": 199,
   "access_modes": {
     "open_data": "公开数据入口",
     "free_registration": "免费注册",
@@ -177,6 +177,11 @@
           "resource_id": "R197",
           "use_for": "把古撒克逊语诗体的宾语与限定动词先后同诗行、半行位置连接。已核对主从句中宾语和动词同一行分处两半行的实际例子。",
           "check_before_use": "按CODE恢复行与半行。核对缺文、短语跨越边界及ID范围，区分附着成分拆词。观察范围限该刊本下的单一诗体。"
+        },
+        {
+          "resource_id": "R199",
+          "use_for": "在实际口语中比较长、短依存弧跨越韵律边界的比例，并按独白、对话分层。原项目合表同时记录依存、停顿与韵律周期。",
+          "check_before_use": "以录音为分组单位。跨原版与UD时先核对分词、说话人和词位时间。回查缺失、零长或逆序时标。UD开发集和测试集共享M0001。"
         }
       ]
     },
@@ -12718,6 +12723,150 @@
         ],
         "note": "核对正式发布、任务流程及分层标注说明。PARADISEC入口返回403，主档文件未读取。另完整核对作者的18,841行指称研究表，实查16种语言有合作排图与第三人称讲述的同组、同人、同图片编号记录。该表的范围与配对统计见data/scopic-file-check-2026-11-19.json。"
       }
+    },
+    {
+      "id": "R199",
+      "name": "Rhapsodie（法语口语句法与韵律树库）",
+      "category": "syntax",
+      "entry_type": "dataset",
+      "language_scope": "法语口语。独白与对话涵盖私人和公共场合，来自多种采录来源。",
+      "language_codes": [
+        "fr"
+      ],
+      "data_type": "音频对齐的法语口语树库。原版有录音、转写、微句法、宏句法和韵律层，提供TXT、表格与Praat TextGrid。UD版提供带词位时标和录音信息的CoNLL-U依存树",
+      "description": "原版v2.0含57段录音，共30段独白和27段对话。官网统计总时长11,301秒。UD 2.19的3,209个句段、44,231个整数ID词位（含标点）来自相同的57段录音。",
+      "access_mode": "open_data",
+      "access_notes": "原官网分包提供MP3、WAV、元数据及各层标注。UD固定提交提供训练、开发、测试三份CoNLL-U。两版的标注均已实际下载。",
+      "license_note": "原版音频及标注为CC BY-NC-SA 3.0 France。UD文件按固定提交中的许可证为CC BY-SA 4.0。引用原语料按项目要求注明Rhap编号和录音出处。",
+      "limitations": "原版和UD版共享全部57段录音。统计时按共同来源分组，跨版本按词使用前另核对分词与时标。开发集和测试集共用M0001但句段不同。UD有385条逆序时标，其中368条为标点。另有7,231条零时长记录。",
+      "source_url": "https://rhapsodie.modyco.fr/",
+      "additional_urls": [
+        "https://rhapsodie.modyco.fr/francais-parle/",
+        "https://rhapsodie.modyco.fr/propriete-intellectuelle/",
+        "https://creativecommons.org/licenses/by-nc-sa/3.0/fr/",
+        "https://rhapsodie.modyco.fr/wp-content/uploads/2017/04/Description_Rhapsodie-fr.micromacroprosody.pdf",
+        "https://aclanthology.org/L14-1329/",
+        "https://rhapsodie.modyco.fr/rp/waves/Rhap-sound-mp3.zip",
+        "https://rhapsodie.modyco.fr/rp/syntaxe/micro_macro_prosody.tgz",
+        "https://rhapsodie.modyco.fr/rp/prosodie/finaux/Rhap-proso-all-textgrids.zip",
+        "https://universaldependencies.org/treebanks/fr_rhapsodie/",
+        "https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0",
+        "https://raw.githubusercontent.com/UniversalDependencies/UD_French-Rhapsodie/328d59578edb570e3f4992dc173bf575e68084a0/LICENSE.txt",
+        "https://github.com/leo11wu/open-language-resources/blob/main/data/rhapsodie-file-check-2026-11-20.json"
+      ],
+      "tags": [
+        "法语",
+        "句法",
+        "依存树库",
+        "口语",
+        "韵律",
+        "停顿",
+        "对话",
+        "音频对齐",
+        "UD"
+      ],
+      "related_ids": [],
+      "platforms": [
+        "project_website",
+        "github"
+      ],
+      "osf_ids": [],
+      "data_status": "released_data",
+      "data_origin": "corpus_annotation",
+      "verification": {
+        "documentation_checked_on": "2026-11-20",
+        "scope": "resource_documentation_and_selected_file_checks",
+        "download_tested": true,
+        "data_files_validated": false,
+        "evidence_type": "repository_documentation",
+        "evidence_urls": [
+          "https://rhapsodie.modyco.fr/francais-parle/",
+          "https://rhapsodie.modyco.fr/propriete-intellectuelle/",
+          "https://rhapsodie.modyco.fr/wp-content/uploads/2017/04/Description_Rhapsodie-fr.micromacroprosody.pdf",
+          "https://universaldependencies.org/treebanks/fr_rhapsodie/",
+          "https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0",
+          "https://raw.githubusercontent.com/UniversalDependencies/UD_French-Rhapsodie/328d59578edb570e3f4992dc173bf575e68084a0/LICENSE.txt"
+        ],
+        "note": "读取原版元数据、宏句法、合并标注和TextGrid，完整解析UD三个分集并核对57段录音编号。从MP3包取一段独白和一段对话，校验并完整解码。其余音频只核对包内编号。时标、分集和XML问题详见data/rhapsodie-file-check-2026-11-20.json。",
+        "file_checks": [
+          {
+            "url": "https://rhapsodie.modyco.fr/rp/metadonnees/Rhap-meta.zip",
+            "read_scope": "archive_selected_members",
+            "file_role": "documentation_or_materials",
+            "sha256": "14eb22de809528b3e34872d7c9cc7f7970c11ed537b75e3def1fcf8a007aeb0e",
+            "checked_on": "2026-11-20",
+            "result": "读取57份分段XML及对应索引。全部录音编号可对应。D2012单段XML未通过严格解析。"
+          },
+          {
+            "url": "https://rhapsodie.modyco.fr/rp/syntaxe/Rhap-synt-txt.zip",
+            "read_scope": "archive_selected_members",
+            "file_role": "corpus_derived_data",
+            "sha256": "eb4f1743c551a1d1a93094451a0aac610d774bbb9bd8c232d30e3305ddc2043a",
+            "checked_on": "2026-11-20",
+            "result": "读取全部57份宏句法文本，均可按UTF-8解码。"
+          },
+          {
+            "url": "https://rhapsodie.modyco.fr/rp/prosodie/finaux/Rhap-proso-all-textgrids.zip",
+            "read_scope": "archive_selected_members",
+            "file_role": "corpus_derived_data",
+            "sha256": "0cdcbbf3c8cc557d971133812cb62f56e8b6476257280d1ccf957b159279be02",
+            "checked_on": "2026-11-20",
+            "result": "读取全部57份Praat TextGrid。核对层数、区间或点计数、时间范围和录音编号。"
+          },
+          {
+            "url": "https://rhapsodie.modyco.fr/rp/syntaxe/micro_macro_prosody.tgz",
+            "read_scope": "archive_selected_members",
+            "file_role": "corpus_derived_data",
+            "sha256": "60dffc2484de3636af37a444203facb54862751dbf55b34ad3e0989502751f4d",
+            "checked_on": "2026-11-20",
+            "result": "解析57份分段表与同内容的汇总表。汇总表共71,507行、63列。保留停顿字段的空白和#标记以及非唯一键的记录。"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_French-Rhapsodie/328d59578edb570e3f4992dc173bf575e68084a0/fr_rhapsodie-ud-train.conllu",
+            "read_scope": "complete_conllu",
+            "file_role": "corpus_derived_data",
+            "sha256": "bb08e7233d63f726287d25782224d700887c5557487c78d66c9b64d6f92ff25c",
+            "checked_on": "2026-11-20",
+            "result": "完整读取训练集的1,288个句段和19,138个整数ID词位。文件匹配GitHub发布项，核对句段编号、基本依存结构和词位时标。",
+            "blob_sha": "9ad4c9f5a7b9fdc208f6be09a342a8e33b709803"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_French-Rhapsodie/328d59578edb570e3f4992dc173bf575e68084a0/fr_rhapsodie-ud-dev.conllu",
+            "read_scope": "complete_conllu",
+            "file_role": "corpus_derived_data",
+            "sha256": "a51568e5a80eac1d10f2fc3e2f3458a22fb4b97387ddecd04fbae1ebe6f949ce",
+            "checked_on": "2026-11-20",
+            "result": "完整读取开发集的1,081个句段和12,906个整数ID词位。文件匹配GitHub发布项，核对句段编号、基本依存结构和词位时标。",
+            "blob_sha": "2b9425c39c560b3132114f25d6759de2574b4ee5"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_French-Rhapsodie/328d59578edb570e3f4992dc173bf575e68084a0/fr_rhapsodie-ud-test.conllu",
+            "read_scope": "complete_conllu",
+            "file_role": "corpus_derived_data",
+            "sha256": "da95aa19159c864b183105333a8afadced1659e1f342a5a36854e7994867040a",
+            "checked_on": "2026-11-20",
+            "result": "完整读取测试集的840个句段和12,187个整数ID词位。文件匹配GitHub发布项，核对句段编号、基本依存结构和词位时标。",
+            "blob_sha": "6075a3929f9132bb9448c8defb148febd9447b1c"
+          }
+        ]
+      },
+      "relations": [
+        {
+          "type": "subset_of",
+          "target_id": "R059",
+          "direction": "source_to_target",
+          "scope": "限UD French Rhapsodie转换版作为UD发行集合成员。原项目音频及原标注另按原版使用。",
+          "evidence": {
+            "basis": "documentation",
+            "checked_on": "2026-11-20",
+            "summary": "UD项目页记录该树库自UD 2.2纳入发行。本次核对的是UD 2.19。",
+            "urls": [
+              "https://universaldependencies.org/treebanks/fr_rhapsodie/",
+              "https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0"
+            ]
+          }
+        }
+      ]
     }
   ]
 }

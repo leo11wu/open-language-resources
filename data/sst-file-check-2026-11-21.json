@@ -1,0 +1,621 @@
+{
+  "resource_id": "R200",
+  "checked_on": "2026-11-21",
+  "ud_documentation": "https://universaldependencies.org/treebanks/sl_sst/",
+  "documented_hours_approximate": 10,
+  "version_count_note": "项目说明仍保留旧统计6,108个话语单元。按固定文件的sent_id重数，2.18及2.19均为6,121。",
+  "sources": {
+    "gos_transcriptions": "https://www.clarin.si/repository/xmlui/handle/11356/1863",
+    "gos_design_paper": "https://aclanthology.org/2024.lrec-main.691/",
+    "gos_media_restricted_archive": "https://www.clarin.si/repository/xmlui/handle/11356/1973",
+    "rog_sst_related_distribution": "https://www.clarin.si/repository/xmlui/handle/11356/1992",
+    "repair_guidelines": "https://universaldependencies.org/sl/dep/reparandum.html",
+    "filler_guidelines": "https://universaldependencies.org/sl/dep/discourse-filler.html",
+    "prior_parser_experiment": "https://aclanthology.org/W18-6005/",
+    "provenance": "两版LICENSE.txt都明确记录转写采样于Gos 2。文件保留Gos事件、说话人、部分词或语段标识。原始录音与SST共享来源。发布版本可对同一材料比较标注。",
+    "media_conditions": "CLARIN.SI整套Gos音视频单独列为受限使用。SST的CC BY-SA 4.0适用于其发布的标注和转写。两条样本链接可访问，媒体复用按各来源的条款。"
+  },
+  "releases": {
+    "2.18": {
+      "tag": "r2.18",
+      "commit": "d633fa98ef0e7ee834cf39d9b41dace1649aacc4",
+      "tree_url": "https://github.com/UniversalDependencies/UD_Slovenian-SST/tree/d633fa98ef0e7ee834cf39d9b41dace1649aacc4",
+      "tarball_url": "https://codeload.github.com/UniversalDependencies/UD_Slovenian-SST/tar.gz/d633fa98ef0e7ee834cf39d9b41dace1649aacc4",
+      "tarball_sha256": "38ad411646272de0c12aa7850562ae3fec74caff1e0e2de7b790dd62c7cea448",
+      "license_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/LICENSE.txt",
+      "license": "CC BY-SA 4.0",
+      "speech_events": 344,
+      "utterances": 6121,
+      "integer_id_rows": 98393,
+      "reparandum": 1578,
+      "discourse:filler": 2669,
+      "upos_punct_rows": 22052,
+      "integer_rows_with_gos_token_id": 85661,
+      "integer_rows_with_any_gos_id": 85661,
+      "utterances_with_sound_url": 6121,
+      "basic_graph_checks_failed": 0,
+      "event_counts_by_type": {
+        "entertainment": 42,
+        "info-education": 158,
+        "non-private": 45,
+        "private": 99
+      },
+      "private_event_count": 99,
+      "national_assembly_event_count": 6,
+      "events_shared_across_splits": [],
+      "splits": {
+        "train": {
+          "file_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/sl_sst-ud-train.conllu",
+          "git_blob_sha": "3791b90704742238c4fe456b3fb16b4baf258f56",
+          "bytes": 11236373,
+          "sha256": "596ceeb89b1f21bfc8299562fe31c9bbaaab18ba7dae553e441cf113184b553e",
+          "speech_events": 277,
+          "utterances": 5094,
+          "integer_id_rows": 76964,
+          "basic_graph_checks_failed": 0,
+          "utterances_with_sound_url": 5094,
+          "upos_punct_rows": 17489,
+          "discourse:filler": 1851,
+          "integer_rows_with_gos_token_id": 66090,
+          "integer_rows_with_any_gos_id": 66090,
+          "reparandum": 1243
+        },
+        "dev": {
+          "file_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/sl_sst-ud-dev.conllu",
+          "git_blob_sha": "f39f7b6fd3ec04c13bba187ea5679edbe339c083",
+          "bytes": 1444027,
+          "sha256": "05e07d9d041eeb68feacfafd6d97a71e5b4b86c5688b9f4b072435aae1e5f5d8",
+          "speech_events": 44,
+          "utterances": 595,
+          "integer_id_rows": 9986,
+          "basic_graph_checks_failed": 0,
+          "utterances_with_sound_url": 595,
+          "upos_punct_rows": 2215,
+          "integer_rows_with_gos_token_id": 8607,
+          "integer_rows_with_any_gos_id": 8607,
+          "reparandum": 155,
+          "discourse:filler": 262
+        },
+        "test": {
+          "file_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/sl_sst-ud-test.conllu",
+          "git_blob_sha": "341de0a908403158841a6c22d593cb2338d0e9ba",
+          "bytes": 1898534,
+          "sha256": "7192fa2003550eb739d7aa3f38fc35fff5c1834829473fd66f9965b72b1e0354",
+          "speech_events": 23,
+          "utterances": 432,
+          "integer_id_rows": 11443,
+          "basic_graph_checks_failed": 0,
+          "utterances_with_sound_url": 432,
+          "upos_punct_rows": 2348,
+          "integer_rows_with_gos_token_id": 10964,
+          "integer_rows_with_any_gos_id": 10964,
+          "discourse:filler": 556,
+          "reparandum": 180
+        }
+      },
+      "repetition_example": {
+        "split": "test",
+        "sent_id": "Gos206.s138",
+        "repair_id": 15,
+        "reparandum_ids": [
+          9,
+          11,
+          13
+        ],
+        "filler_ids": [
+          33,
+          51,
+          54
+        ]
+      }
+    },
+    "2.19": {
+      "tag": "r2.19",
+      "commit": "19c9e106e1704b9ad3a89b81cef40d9371d9e668",
+      "tree_url": "https://github.com/UniversalDependencies/UD_Slovenian-SST/tree/19c9e106e1704b9ad3a89b81cef40d9371d9e668",
+      "tarball_url": "https://codeload.github.com/UniversalDependencies/UD_Slovenian-SST/tar.gz/19c9e106e1704b9ad3a89b81cef40d9371d9e668",
+      "tarball_sha256": "e3566da70b07d891b2cc5ae4084384b4979eb51e665e9f09b71d432cbd407e02",
+      "license_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/LICENSE.txt",
+      "license": "CC BY-SA 4.0",
+      "speech_events": 344,
+      "utterances": 6121,
+      "integer_id_rows": 98393,
+      "reparandum": 1578,
+      "discourse:filler": 2669,
+      "upos_punct_rows": 22052,
+      "integer_rows_with_gos_token_id": 85661,
+      "integer_rows_with_any_gos_id": 85661,
+      "utterances_with_sound_url": 6121,
+      "basic_graph_checks_failed": 0,
+      "event_counts_by_type": {
+        "entertainment": 42,
+        "info-education": 158,
+        "non-private": 45,
+        "private": 99
+      },
+      "private_event_count": 99,
+      "national_assembly_event_count": 6,
+      "events_shared_across_splits": [],
+      "splits": {
+        "train": {
+          "file_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/sl_sst-ud-train.conllu",
+          "git_blob_sha": "3988688dfe7f4cc18003af0fe54136e2c948ace8",
+          "bytes": 11236024,
+          "sha256": "2626b90dd73b7a72d1c752ed19ae7cd6afa92caa29e8338cbab0b360bdbddd5d",
+          "speech_events": 277,
+          "utterances": 5094,
+          "integer_id_rows": 76964,
+          "basic_graph_checks_failed": 0,
+          "utterances_with_sound_url": 5094,
+          "upos_punct_rows": 17489,
+          "discourse:filler": 1851,
+          "integer_rows_with_gos_token_id": 66090,
+          "integer_rows_with_any_gos_id": 66090,
+          "reparandum": 1243
+        },
+        "dev": {
+          "file_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/sl_sst-ud-dev.conllu",
+          "git_blob_sha": "aed7979be17c41f06e2a2a562fa5a93dd2c875e5",
+          "bytes": 1443899,
+          "sha256": "328fd2a03df6d8fdd5d1301745f49ea44d24304ff3d14fe9055e46a147cbd8ac",
+          "speech_events": 44,
+          "utterances": 595,
+          "integer_id_rows": 9986,
+          "basic_graph_checks_failed": 0,
+          "utterances_with_sound_url": 595,
+          "upos_punct_rows": 2215,
+          "integer_rows_with_gos_token_id": 8607,
+          "integer_rows_with_any_gos_id": 8607,
+          "reparandum": 155,
+          "discourse:filler": 262
+        },
+        "test": {
+          "file_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/sl_sst-ud-test.conllu",
+          "git_blob_sha": "b31ec6f4dbf11bdfe57a275ab30082093ede7bb0",
+          "bytes": 1898534,
+          "sha256": "923a07778b813f18ba82419cfbf7163540babd857e921506f53391ce9dd79848",
+          "speech_events": 23,
+          "utterances": 432,
+          "integer_id_rows": 11443,
+          "basic_graph_checks_failed": 0,
+          "utterances_with_sound_url": 432,
+          "upos_punct_rows": 2348,
+          "integer_rows_with_gos_token_id": 10964,
+          "integer_rows_with_any_gos_id": 10964,
+          "discourse:filler": 556,
+          "reparandum": 180
+        }
+      },
+      "repetition_example": {
+        "split": "test",
+        "sent_id": "Gos206.s138",
+        "repair_id": 15,
+        "reparandum_ids": [
+          9,
+          11,
+          13
+        ],
+        "filler_ids": [
+          33,
+          51,
+          54
+        ]
+      },
+      "position_only_diagnostic": {
+        "denominator_rule": "基线和删减版均排除UPOS=PUNCT。仅统计基本树中两端均保留的非root弧。UD原头和关系保持不变，使用各版保留词位在话语内的顺序差计算距离。",
+        "removed_deprel": [
+          "discourse:filler",
+          "reparandum"
+        ],
+        "scope": "只折叠这两种标签所在的词位。较大的修复片段需另查子树。结果度量位置定义的敏感性。按该定义，删除两端之间的词位只会使同一弧的距离减少或持平。",
+        "group_definitions": {
+          "event_type_private": "event_type 等于 private",
+          "event_domain_national_assembly": "event_domain 等于 session of the National Assembly"
+        },
+        "statistics_by_group": {
+          "all": {
+            "speech_events": 344,
+            "eligible_arcs": 65437,
+            "shortened": 6050,
+            "summed_distance_before": 188284,
+            "summed_distance_after": 179741,
+            "arcs_with_a_masked_endpoint": 4783,
+            "utterances_with_eligible_arc": 5335,
+            "share_shortened": 0.092455,
+            "average_distance_before": 2.877332,
+            "average_distance_after": 2.746779
+          },
+          "event_type_private": {
+            "speech_events": 99,
+            "eligible_arcs": 24022,
+            "shortened": 2161,
+            "summed_distance_before": 67308,
+            "summed_distance_after": 64368,
+            "arcs_with_a_masked_endpoint": 1793,
+            "utterances_with_eligible_arc": 2199,
+            "share_shortened": 0.089959,
+            "average_distance_before": 2.801932,
+            "average_distance_after": 2.679544
+          },
+          "event_domain_national_assembly": {
+            "speech_events": 6,
+            "eligible_arcs": 3932,
+            "shortened": 229,
+            "summed_distance_before": 12041,
+            "summed_distance_after": 11708,
+            "arcs_with_a_masked_endpoint": 155,
+            "utterances_with_eligible_arc": 190,
+            "share_shortened": 0.05824,
+            "average_distance_before": 3.062309,
+            "average_distance_after": 2.97762
+          }
+        },
+        "statistics_by_deprel_all_events": {
+          "acl": {
+            "eligible_arcs": 1126,
+            "shortened": 222,
+            "summed_distance_before": 5387,
+            "summed_distance_after": 5071,
+            "share_shortened": 0.197158,
+            "average_distance_before": 4.784192,
+            "average_distance_after": 4.503552
+          },
+          "advcl": {
+            "eligible_arcs": 975,
+            "shortened": 214,
+            "summed_distance_before": 6331,
+            "summed_distance_after": 6000,
+            "share_shortened": 0.219487,
+            "average_distance_before": 6.493333,
+            "average_distance_after": 6.153846
+          },
+          "advmod": {
+            "eligible_arcs": 10538,
+            "shortened": 591,
+            "summed_distance_before": 21947,
+            "summed_distance_after": 21178,
+            "share_shortened": 0.056083,
+            "average_distance_before": 2.082653,
+            "average_distance_after": 2.009679
+          },
+          "amod": {
+            "eligible_arcs": 3387,
+            "shortened": 109,
+            "summed_distance_before": 4090,
+            "summed_distance_after": 3961,
+            "share_shortened": 0.032182,
+            "average_distance_before": 1.207558,
+            "average_distance_after": 1.169472
+          },
+          "appos": {
+            "eligible_arcs": 376,
+            "shortened": 62,
+            "summed_distance_before": 1257,
+            "summed_distance_after": 1174,
+            "share_shortened": 0.164894,
+            "average_distance_before": 3.343085,
+            "average_distance_after": 3.12234
+          },
+          "aux": {
+            "eligible_arcs": 3194,
+            "shortened": 164,
+            "summed_distance_before": 7248,
+            "summed_distance_after": 7041,
+            "share_shortened": 0.051346,
+            "average_distance_before": 2.269255,
+            "average_distance_after": 2.204446
+          },
+          "case": {
+            "eligible_arcs": 5431,
+            "shortened": 190,
+            "summed_distance_before": 7981,
+            "summed_distance_after": 7761,
+            "share_shortened": 0.034984,
+            "average_distance_before": 1.469527,
+            "average_distance_after": 1.429019
+          },
+          "cc": {
+            "eligible_arcs": 3183,
+            "shortened": 461,
+            "summed_distance_before": 10830,
+            "summed_distance_after": 10212,
+            "share_shortened": 0.144832,
+            "average_distance_before": 3.402451,
+            "average_distance_after": 3.208294
+          },
+          "cc:preconj": {
+            "eligible_arcs": 27,
+            "shortened": 2,
+            "summed_distance_before": 61,
+            "summed_distance_after": 59,
+            "share_shortened": 0.074074,
+            "average_distance_before": 2.259259,
+            "average_distance_after": 2.185185
+          },
+          "ccomp": {
+            "eligible_arcs": 775,
+            "shortened": 138,
+            "summed_distance_before": 3681,
+            "summed_distance_after": 3481,
+            "share_shortened": 0.178065,
+            "average_distance_before": 4.749677,
+            "average_distance_after": 4.491613
+          },
+          "conj": {
+            "eligible_arcs": 3075,
+            "shortened": 645,
+            "summed_distance_before": 18982,
+            "summed_distance_after": 17967,
+            "share_shortened": 0.209756,
+            "average_distance_before": 6.173008,
+            "average_distance_after": 5.842927
+          },
+          "cop": {
+            "eligible_arcs": 1824,
+            "shortened": 137,
+            "summed_distance_before": 4366,
+            "summed_distance_after": 4195,
+            "share_shortened": 0.07511,
+            "average_distance_before": 2.39364,
+            "average_distance_after": 2.29989
+          },
+          "csubj": {
+            "eligible_arcs": 257,
+            "shortened": 39,
+            "summed_distance_before": 1238,
+            "summed_distance_after": 1178,
+            "share_shortened": 0.151751,
+            "average_distance_before": 4.817121,
+            "average_distance_after": 4.583658
+          },
+          "dep": {
+            "eligible_arcs": 10,
+            "shortened": 0,
+            "summed_distance_before": 22,
+            "summed_distance_after": 22,
+            "share_shortened": 0.0,
+            "average_distance_before": 2.2,
+            "average_distance_after": 2.2
+          },
+          "det": {
+            "eligible_arcs": 2469,
+            "shortened": 128,
+            "summed_distance_before": 3437,
+            "summed_distance_after": 3288,
+            "share_shortened": 0.051843,
+            "average_distance_before": 1.392062,
+            "average_distance_after": 1.331713
+          },
+          "discourse": {
+            "eligible_arcs": 3072,
+            "shortened": 389,
+            "summed_distance_before": 10888,
+            "summed_distance_after": 10290,
+            "share_shortened": 0.126628,
+            "average_distance_before": 3.544271,
+            "average_distance_after": 3.349609
+          },
+          "dislocated": {
+            "eligible_arcs": 57,
+            "shortened": 13,
+            "summed_distance_before": 323,
+            "summed_distance_after": 302,
+            "share_shortened": 0.22807,
+            "average_distance_before": 5.666667,
+            "average_distance_after": 5.298246
+          },
+          "expl": {
+            "eligible_arcs": 1341,
+            "shortened": 74,
+            "summed_distance_before": 3294,
+            "summed_distance_after": 3195,
+            "share_shortened": 0.055183,
+            "average_distance_before": 2.456376,
+            "average_distance_after": 2.38255
+          },
+          "fixed": {
+            "eligible_arcs": 930,
+            "shortened": 0,
+            "summed_distance_before": 1001,
+            "summed_distance_after": 1001,
+            "share_shortened": 0.0,
+            "average_distance_before": 1.076344,
+            "average_distance_after": 1.076344
+          },
+          "flat": {
+            "eligible_arcs": 187,
+            "shortened": 2,
+            "summed_distance_before": 327,
+            "summed_distance_after": 325,
+            "share_shortened": 0.010695,
+            "average_distance_before": 1.748663,
+            "average_distance_after": 1.737968
+          },
+          "flat:foreign": {
+            "eligible_arcs": 106,
+            "shortened": 3,
+            "summed_distance_before": 227,
+            "summed_distance_after": 224,
+            "share_shortened": 0.028302,
+            "average_distance_before": 2.141509,
+            "average_distance_after": 2.113208
+          },
+          "flat:name": {
+            "eligible_arcs": 210,
+            "shortened": 2,
+            "summed_distance_before": 221,
+            "summed_distance_after": 219,
+            "share_shortened": 0.009524,
+            "average_distance_before": 1.052381,
+            "average_distance_after": 1.042857
+          },
+          "goeswith": {
+            "eligible_arcs": 11,
+            "shortened": 0,
+            "summed_distance_before": 11,
+            "summed_distance_after": 11,
+            "share_shortened": 0.0,
+            "average_distance_before": 1.0,
+            "average_distance_after": 1.0
+          },
+          "iobj": {
+            "eligible_arcs": 350,
+            "shortened": 25,
+            "summed_distance_before": 786,
+            "summed_distance_after": 757,
+            "share_shortened": 0.071429,
+            "average_distance_before": 2.245714,
+            "average_distance_after": 2.162857
+          },
+          "mark": {
+            "eligible_arcs": 3132,
+            "shortened": 323,
+            "summed_distance_before": 10389,
+            "summed_distance_after": 9943,
+            "share_shortened": 0.103129,
+            "average_distance_before": 3.31705,
+            "average_distance_after": 3.174649
+          },
+          "nmod": {
+            "eligible_arcs": 2378,
+            "shortened": 178,
+            "summed_distance_before": 4739,
+            "summed_distance_after": 4521,
+            "share_shortened": 0.074853,
+            "average_distance_before": 1.992851,
+            "average_distance_after": 1.901177
+          },
+          "nsubj": {
+            "eligible_arcs": 3885,
+            "shortened": 336,
+            "summed_distance_before": 11150,
+            "summed_distance_after": 10696,
+            "share_shortened": 0.086486,
+            "average_distance_before": 2.870013,
+            "average_distance_after": 2.753153
+          },
+          "nummod": {
+            "eligible_arcs": 566,
+            "shortened": 15,
+            "summed_distance_before": 770,
+            "summed_distance_after": 751,
+            "share_shortened": 0.026502,
+            "average_distance_before": 1.360424,
+            "average_distance_after": 1.326855
+          },
+          "obj": {
+            "eligible_arcs": 3509,
+            "shortened": 278,
+            "summed_distance_before": 7964,
+            "summed_distance_after": 7589,
+            "share_shortened": 0.079225,
+            "average_distance_before": 2.269592,
+            "average_distance_after": 2.162724
+          },
+          "obl": {
+            "eligible_arcs": 4142,
+            "shortened": 449,
+            "summed_distance_before": 14007,
+            "summed_distance_after": 13379,
+            "share_shortened": 0.108402,
+            "average_distance_before": 3.3817,
+            "average_distance_after": 3.230082
+          },
+          "orphan": {
+            "eligible_arcs": 915,
+            "shortened": 64,
+            "summed_distance_before": 2051,
+            "summed_distance_after": 1965,
+            "share_shortened": 0.069945,
+            "average_distance_before": 2.24153,
+            "average_distance_after": 2.147541
+          },
+          "parataxis": {
+            "eligible_arcs": 2355,
+            "shortened": 543,
+            "summed_distance_before": 17418,
+            "summed_distance_after": 16493,
+            "share_shortened": 0.230573,
+            "average_distance_before": 7.396178,
+            "average_distance_after": 7.003397
+          },
+          "parataxis:discourse": {
+            "eligible_arcs": 636,
+            "shortened": 111,
+            "summed_distance_before": 2434,
+            "summed_distance_after": 2283,
+            "share_shortened": 0.174528,
+            "average_distance_before": 3.827044,
+            "average_distance_after": 3.589623
+          },
+          "parataxis:restart": {
+            "eligible_arcs": 233,
+            "shortened": 92,
+            "summed_distance_before": 1661,
+            "summed_distance_after": 1506,
+            "share_shortened": 0.39485,
+            "average_distance_before": 7.128755,
+            "average_distance_after": 6.463519
+          },
+          "vocative": {
+            "eligible_arcs": 152,
+            "shortened": 9,
+            "summed_distance_before": 398,
+            "summed_distance_after": 387,
+            "share_shortened": 0.059211,
+            "average_distance_before": 2.618421,
+            "average_distance_after": 2.546053
+          },
+          "xcomp": {
+            "eligible_arcs": 623,
+            "shortened": 42,
+            "summed_distance_before": 1367,
+            "summed_distance_after": 1316,
+            "share_shortened": 0.067416,
+            "average_distance_before": 2.194222,
+            "average_distance_after": 2.11236
+          }
+        },
+        "interpretation": "组别、来源、说话人、语速和话语长度等因素仍会影响比较。本次用于核对可测量范围，未做抽样推断或录音人工复核。"
+      }
+    }
+  },
+  "version_comparison": {
+    "same_event_metadata_and_split": true,
+    "same_sentence_ids_and_events": true,
+    "same_sentence_token_key_set": true,
+    "changed_integer_rows_by_field": {
+      "head": 0,
+      "deprel": 1,
+      "form": 0,
+      "upos": 0
+    }
+  },
+  "media_link_samples": {
+    "assembly_probe": {
+      "sent_id": "Artur-P-G7001-P700192.s1_reseg.1785",
+      "recording_id": "Artur-P-G7001-P700192",
+      "event_type": "info-education",
+      "event_domain": "session of the National Assembly",
+      "sound_url": "https://nl.ijs.si/project/iriss/Artur-P-G7001-P700192.s1.mp3",
+      "http_status": 200,
+      "sample_decoded": true,
+      "bytes": 20914,
+      "sha256": "41b9de806f67769d4f02ba3a081f379ad8c5341294758e46cf7ce8f3a5168948",
+      "duration_seconds": 2.534943
+    },
+    "repeat_witness": {
+      "sent_id": "Gos206.s138",
+      "recording_id": "Gos206",
+      "event_type": "non-private",
+      "event_domain": "consulting",
+      "sound_url": "https://nl.ijs.si/project/gos20/Gos206/Gos206.s138.mp3",
+      "http_status": 200,
+      "sample_decoded": true,
+      "bytes": 50868,
+      "sha256": "b19712723b31480cecd984f491409b33b63d0ac9870df858bef2e6cb77aa38a8",
+      "duration_seconds": 16.956
+    }
+  },
+  "verification_scope": "完整解析两版三个分集，逐文件对照GitHub内容SHA并核对基本树和代号。音频结果仅代表两条抽样链接的文件检查。未复听逐条核对标注或语料代表性。"
+}

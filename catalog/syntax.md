@@ -2,7 +2,7 @@
 
 [首页](../README.md) · [按研究需要进入](../docs/research-needs.md) · [OSF索引](osf.md) · [字段说明](../docs/data-dictionary.md)
 
-共38个入口。资料状态与文件验收范围分别记录。
+共39个入口。资料状态与文件验收范围分别记录。
 
 <a id="r059"></a>
 
@@ -40,6 +40,7 @@ CoNLL-U格式的跨语言标注树库，适合依存关系、句法分布和标�
 | --- | --- | --- | --- | --- |
 | 包含子集 | [R061 UD-English-CHILDES（儿童及成人互动依存树库）](../catalog/syntax.md#r061) | R061 → R059 | UD发行集合中的英语CHILDES树库；不表示CHILDES整体都是UD的子集。 | 说明核对，2026-11-02；UD官方说明该树库自UD v2.16起纳入发行；此处子集指集合成员关系，不是新采集的独立样本。 [来源1](https://universaldependencies.org/treebanks/en_childes/) |
 | 包含子集 | [R199 Rhapsodie（法语口语句法与韵律树库）](../catalog/syntax.md#r199) | R199 → R059 | 限UD French Rhapsodie转换版作为UD发行集合成员。原项目音频及原标注另按原版使用。 | 说明核对，2026-11-20；UD项目页记录该树库自UD 2.2纳入发行。本次核对的是UD 2.19。 [来源1](https://universaldependencies.org/treebanks/fr_rhapsodie/) [来源2](https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0) |
+| 包含子集 | [R200 SST（斯洛文尼亚语口语依存树库）](../catalog/syntax.md#r200) | R200 → R059 | UD发行集合中的斯洛文尼亚语SST树库。 | 说明核对，2026-11-21；UD项目公布SST独立树库页面和CoNLL-U发布。本次核对2.18与2.19两个固定版本。 [来源1](https://universaldependencies.org/treebanks/sl_sst/) [来源2](https://github.com/UniversalDependencies/UD_Slovenian-SST/tree/19c9e106e1704b9ad3a89b81cef40d9371d9e668) |
 
 待核实关联：[R002 CHILDES（附childes-db接口）](../catalog/child-language.md#r002)、[R045 WALS](../catalog/crossling-cultural.md#r045)、[R046 Grambank](../catalog/crossling-cultural.md#r046)、[R062 CHILDES Treebank / Pearl–Sprouse（成分句法）](../catalog/syntax.md#r062)、[R194 Indiana Parsed Corpus of Historical High German（IPCHG，高地德语历时句法树库）](../catalog/diachronic-parallel-syntax.md#r194)、[R195 BHSA（希伯来圣经形态句法语料库）](../catalog/syntax.md#r195)。仅保留原目录线索，未确认五类关系或具体文件可连接。
 
@@ -1109,4 +1110,51 @@ ETCBC在Biblia Hebraica Stuttgartensia文本上提供形态句法标注。2021�
 | 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
 | --- | --- | --- | --- | --- |
 | 子集属于 | [R059 Universal Dependencies（UD）](../catalog/syntax.md#r059) | R199 → R059 | 限UD French Rhapsodie转换版作为UD发行集合成员。原项目音频及原标注另按原版使用。 | 说明核对，2026-11-20；UD项目页记录该树库自UD 2.2纳入发行。本次核对的是UD 2.19。 [来源1](https://universaldependencies.org/treebanks/fr_rhapsodie/) [来源2](https://github.com/UniversalDependencies/UD_French-Rhapsodie/tree/328d59578edb570e3f4992dc173bf575e68084a0) |
+
+<a id="r200"></a>
+
+## SST（斯洛文尼亚语口语依存树库）
+
+**R200** · 数据集 · 有数据发布说明
+
+约10小时。固定版UD 2.18和2.19均含344个言语事件、6,121个话语单元和98,393个整数ID行（含标点）。2.19可提取1,578个reparandum与2,669个discourse:filler标记。
+
+| 字段 | 内容 |
+| --- | --- |
+| 语言与人群 | 斯洛文尼亚语自然口语。Gos 2录音的人工标注转写子集，含私人交流、访谈、课堂和议会会议等语境。 |
+| 数据性质 | CoNLL-U语料。标准化转写上有人工词性、形态和UD依存标注，保留被替换项、填充音、事件类型及音频链接；语料与标注 |
+| 获取方式 | 公开数据入口：两个固定版本的训练、开发、测试CoNLL-U均可直接下载。文件内抽查的两条MP3链接可完整解码。Gos全量音视频另有受限归档。 |
+| 许可 | SST两版的标注和转写均为CC BY-SA 4.0。音视频按提供该媒体的来源条款。 |
+| 使用边界 | 与Gos共用原始言语事件。按话语内同一依存弧计算词位距离时，被删位置只有落在两端之间才改变距离。完整修复片段需核查子树。分开私人语境与议会等事件。跨语言比较还需统一分词和标注规则并考虑谱系。 |
+| 标签 | 斯洛文尼亚语、句法、口语、依存距离、自我修复、重复、填充音、语体、UD |
+| 平台 | project_website, github, institutional_repository |
+| 核对依据 | 作者仓库说明；2026-11-21 |
+| 实际文件核验 | **已完整检查选定文件；全库未验收** |
+| 核对范围 | 核对两版六个CoNLL-U文件及两个音频样本。按话语ID重数为6,121，与说明中部分旧统计的6,108有出入。测试集Gos206.s138的三个被替换项指向同一个修正词。固定弧两端的复算结果和语境分母见data/sst-file-check-2026-11-21.json。音频检查限下载与解码，未逐条复核标注。 |
+| 下一步 | 已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围；核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。 |
+
+[项目或数据入口](https://universaldependencies.org/treebanks/sl_sst/)
+
+补充及核对来源：
+
+- [来源 1](https://github.com/UniversalDependencies/UD_Slovenian-SST/tree/d633fa98ef0e7ee834cf39d9b41dace1649aacc4)
+- [来源 2](https://github.com/UniversalDependencies/UD_Slovenian-SST/tree/19c9e106e1704b9ad3a89b81cef40d9371d9e668)
+- [来源 3](https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/LICENSE.txt)
+- [来源 4](https://www.clarin.si/repository/xmlui/handle/11356/1863)
+- [来源 5](https://aclanthology.org/2024.lrec-main.691/)
+- [来源 6](https://www.clarin.si/repository/xmlui/handle/11356/1973)
+- [来源 7](https://www.clarin.si/repository/xmlui/handle/11356/1992)
+- [来源 8](https://universaldependencies.org/sl/dep/reparandum.html)
+- [来源 9](https://universaldependencies.org/sl/dep/discourse-filler.html)
+- [来源 10](https://aclanthology.org/W18-6005/)
+- [来源 11](https://github.com/leo11wu/open-language-resources/blob/main/data/sst-file-check-2026-11-21.json)
+- [来源 12](https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/LICENSE.txt)
+
+研究入口：[结构分布](../docs/research-needs.md#structural-distribution)。
+
+资源关系（有依据）：
+
+| 关系 | 另一资源 | 方向 | 适用范围 | 依据 |
+| --- | --- | --- | --- | --- |
+| 子集属于 | [R059 Universal Dependencies（UD）](../catalog/syntax.md#r059) | R200 → R059 | UD发行集合中的斯洛文尼亚语SST树库。 | 说明核对，2026-11-21；UD项目公布SST独立树库页面和CoNLL-U发布。本次核对2.18与2.19两个固定版本。 [来源1](https://universaldependencies.org/treebanks/sl_sst/) [来源2](https://github.com/UniversalDependencies/UD_Slovenian-SST/tree/19c9e106e1704b9ad3a89b81cef40d9371d9e668) |
 

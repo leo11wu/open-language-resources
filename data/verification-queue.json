@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "generated_on": "2026-11-20",
-  "catalog_version": "2.5.20",
+  "generated_on": "2026-11-21",
+  "catalog_version": "2.5.21",
   "basis": "由现有核对记录生成的待办清单；生成清单不构成新一次数据文件核验。",
   "state_labels": {
     "documentation_only": "仅核对说明；未读数据文件",
@@ -12,16 +12,16 @@
     "discovery_portal": "发现入口；不作为数据文件验收"
   },
   "summary": {
-    "main_resource_count": 199,
+    "main_resource_count": 200,
     "main_by_check_state": {
       "documentation_only": 98,
       "file_preview": 2,
-      "selected_file_checked": 86,
+      "selected_file_checked": 87,
       "supporting_files_checked": 5,
       "fully_validated": 0,
       "discovery_portal": 8
     },
-    "main_with_recorded_file_reads": 93,
+    "main_with_recorded_file_reads": 94,
     "main_without_recorded_file_reads": 106,
     "osf_associated_main_count": 74,
     "remaining_candidate_count": 11,
@@ -6843,6 +6843,99 @@
           "checked_on": "2026-11-20",
           "result": "完整读取测试集的840个句段和12,187个整数ID词位。文件匹配GitHub发布项，核对句段编号、基本依存结构和词位时标。",
           "blob_sha": "6075a3929f9132bb9448c8defb148febd9447b1c"
+        }
+      ],
+      "osf_audit": null,
+      "next_steps": [
+        "已读取和解析的范围限于记录中的选定文件；继续核对其余分析所需文件及完整发布范围。",
+        "核对数据版本、访问条件、署名和原始许可；若需申请，保留该限制。"
+      ]
+    },
+    {
+      "resource_id": "R200",
+      "name": "SST（斯洛文尼亚语口语依存树库）",
+      "category": "syntax",
+      "source_url": "https://universaldependencies.org/treebanks/sl_sst/",
+      "platforms": [
+        "project_website",
+        "github",
+        "institutional_repository"
+      ],
+      "osf_ids": [],
+      "check_state": "selected_file_checked",
+      "documentation_checked_on": "2026-11-21",
+      "download_tested": true,
+      "data_files_validated": false,
+      "recorded_file_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/sl_sst-ud-train.conllu",
+          "read_scope": "complete_conllu",
+          "file_role": "corpus_derived_data",
+          "blob_sha": "3791b90704742238c4fe456b3fb16b4baf258f56",
+          "sha256": "596ceeb89b1f21bfc8299562fe31c9bbaaab18ba7dae553e441cf113184b553e",
+          "checked_on": "2026-11-21",
+          "result": "完整解析UD 2.18 训练集。核对277个事件、5,094个话语和76,964个整数ID行。检查依存结构、修复标签和语境字段，并对照发布文件SHA。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/sl_sst-ud-dev.conllu",
+          "read_scope": "complete_conllu",
+          "file_role": "corpus_derived_data",
+          "blob_sha": "f39f7b6fd3ec04c13bba187ea5679edbe339c083",
+          "sha256": "05e07d9d041eeb68feacfafd6d97a71e5b4b86c5688b9f4b072435aae1e5f5d8",
+          "checked_on": "2026-11-21",
+          "result": "完整解析UD 2.18 开发集。核对44个事件、595个话语和9,986个整数ID行。检查依存结构、修复标签和语境字段，并对照发布文件SHA。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/d633fa98ef0e7ee834cf39d9b41dace1649aacc4/sl_sst-ud-test.conllu",
+          "read_scope": "complete_conllu",
+          "file_role": "corpus_derived_data",
+          "blob_sha": "341de0a908403158841a6c22d593cb2338d0e9ba",
+          "sha256": "7192fa2003550eb739d7aa3f38fc35fff5c1834829473fd66f9965b72b1e0354",
+          "checked_on": "2026-11-21",
+          "result": "完整解析UD 2.18 测试集。核对23个事件、432个话语和11,443个整数ID行。检查依存结构、修复标签和语境字段，并对照发布文件SHA。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/sl_sst-ud-train.conllu",
+          "read_scope": "complete_conllu",
+          "file_role": "corpus_derived_data",
+          "blob_sha": "3988688dfe7f4cc18003af0fe54136e2c948ace8",
+          "sha256": "2626b90dd73b7a72d1c752ed19ae7cd6afa92caa29e8338cbab0b360bdbddd5d",
+          "checked_on": "2026-11-21",
+          "result": "完整解析UD 2.19 训练集。核对277个事件、5,094个话语和76,964个整数ID行。检查依存结构、修复标签和语境字段，并对照发布文件SHA。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/sl_sst-ud-dev.conllu",
+          "read_scope": "complete_conllu",
+          "file_role": "corpus_derived_data",
+          "blob_sha": "aed7979be17c41f06e2a2a562fa5a93dd2c875e5",
+          "sha256": "328fd2a03df6d8fdd5d1301745f49ea44d24304ff3d14fe9055e46a147cbd8ac",
+          "checked_on": "2026-11-21",
+          "result": "完整解析UD 2.19 开发集。核对44个事件、595个话语和9,986个整数ID行。检查依存结构、修复标签和语境字段，并对照发布文件SHA。"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Slovenian-SST/19c9e106e1704b9ad3a89b81cef40d9371d9e668/sl_sst-ud-test.conllu",
+          "read_scope": "complete_conllu",
+          "file_role": "corpus_derived_data",
+          "blob_sha": "b31ec6f4dbf11bdfe57a275ab30082093ede7bb0",
+          "sha256": "923a07778b813f18ba82419cfbf7163540babd857e921506f53391ce9dd79848",
+          "checked_on": "2026-11-21",
+          "result": "完整解析UD 2.19 测试集。核对23个事件、432个话语和11,443个整数ID行。检查依存结构、修复标签和语境字段，并对照发布文件SHA。"
+        },
+        {
+          "url": "https://nl.ijs.si/project/iriss/Artur-P-G7001-P700192.s1.mp3",
+          "read_scope": "complete_audio_frames",
+          "file_role": "empirical_or_norm_data",
+          "sha256": "41b9de806f67769d4f02ba3a081f379ad8c5341294758e46cf7ce8f3a5168948",
+          "checked_on": "2026-11-21",
+          "result": "Artur-P-G7001-P700192.s1_reseg.1785所指的MP3可下载并完整解码，时长2.53秒。"
+        },
+        {
+          "url": "https://nl.ijs.si/project/gos20/Gos206/Gos206.s138.mp3",
+          "read_scope": "complete_audio_frames",
+          "file_role": "empirical_or_norm_data",
+          "sha256": "b19712723b31480cecd984f491409b33b63d0ac9870df858bef2e6cb77aa38a8",
+          "checked_on": "2026-11-21",
+          "result": "Gos206.s138所指的MP3可下载并完整解码，时长16.96秒。"
         }
       ],
       "osf_audit": null,
